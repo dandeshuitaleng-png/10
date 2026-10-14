@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-14",
+  "symptom": "63112 not listening; browser connection interrupted",
+  "fix": "Detached local experience process; original SQLite path retained",
+  "verification": {
+    "startupCommandExited": true,
+    "listenerCount": 1,
+    "parentPid": 1,
+    "repeatStartReusedExistingService": true,
+    "browserObserved": "4 themes,16 levels,normal home controls"
+  },
+  "rebootAutostart": false,
+  "privateDataCommitted": false
+}

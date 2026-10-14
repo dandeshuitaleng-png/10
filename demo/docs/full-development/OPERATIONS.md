@@ -4,6 +4,8 @@
 
 ## 启动与保存
 
+本机体验可执行 `node scripts/start-local-service.cjs`，或双击工作区根目录的 `启动小游戏.command`。服务独立于启动它的终端会话运行，重复启动会复用已健康运行的本机体验服务。它不是开机自启动，电脑重启后需要再次启动；日志保存在私有运行目录的 `service.log`，不加入源码仓库。
+
 在游戏工程目录执行 `node server/start.cjs`。默认只监听本机127.0.0.1:63112，运行数据位于工程外的 `../.rural-quiz-runtime/`，以避免微信开发工具因存档变化重新编译。管理员随机凭据、数据库和备份均应保持本机私有；不放进静态目录或交付包。
 
 可配置项：`PORT`、`QUIZ_HOST`、`QUIZ_DB_PATH`、`QUIZ_MODE`、`QUIZ_ADMIN_USERNAME`、`QUIZ_ADMIN_PASSWORD`。生产模式还须在启动适配器注入可信身份、分享验证和同步接收端；仅修改QUIZ_MODE不会完成外部接入。正式域名、TLS与网关设置依部署环境确认。
