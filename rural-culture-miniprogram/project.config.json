@@ -1,0 +1,14 @@
+{
+  "description": "趣味闯关·乡村文化知识探索 UI原型",
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "appid": "wx8384aa9ef26f5461",
+  "projectname": "rural-culture-explorer",
+  "setting": {
+    "es6": true,
+    "minified": false,
+    "urlCheck": true,
+    "compileHotReLoad": true
+  },
+  "condition": {}
+}

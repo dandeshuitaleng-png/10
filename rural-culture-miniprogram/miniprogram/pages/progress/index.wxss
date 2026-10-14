@@ -1,0 +1,3 @@
+.stats{margin-top:20px;}.continue-card{padding:20px 0 0;}.continue-card .h2{font-size:19px;margin-top:7px;}.progress-item{display:block;width:100%;background:transparent;text-align:left;margin:0;border-radius:0;border-bottom:1px solid #DEDCCD;padding:22px 0;line-height:1.65;}.progress-item .row{margin-bottom:16px;}.progress-title{font-size:19px;font-weight:500;}
+
+.progress-item.progress-item{width:100%;}

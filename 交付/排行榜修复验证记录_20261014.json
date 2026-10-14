@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-14",
+  "patch": "leaderboard-20261014",
+  "version": "0.3.0",
+  "runtimeSha256": "ea6d9604523d422d516530a7d2abcd4be01d40c57487e4df647f33c0e46a3786",
+  "connectionBefore": "63112 had no listening process; curl returned connection refused",
+  "connectionAfter": {
+    "health": 200,
+    "storage": "sqlite",
+    "wxDayRankings": {
+      "status": 200,
+      "entries": 0
+    },
+    "wxTotalRankings": {
+      "status": 200,
+      "entries": [
+        {
+          "completed": 1,
+          "points": 10,
+          "accuracy": 1
+        }
+      ]
+    }
+  },
+  "rankingBugBefore": "points omitted from API entries; client fell back to zero",
+  "regressionBefore": {
+    "tests": 1,
+    "passed": 0,
+    "failed": 1,
+    "actualPoints": "undefined",
+    "expectedPoints": [
+      11,
+      10
+    ]
+  },
+  "regressionAfter": {
+    "command": "node --test tests/server.test.cjs tests/server-dynamic.test.cjs",
+    "tests": 26,
+    "passed": 26,
+    "failed": 0
+  },
+  "browserObserved": {
+    "period": "total",
+    "completed": 1,
+    "points": 10,
+    "accuracyPercent": 100,
+    "screenshot": "排行榜连接恢复_20261014.png"
+  },
+  "data": "Existing runtime SQLite path retained; no score, progress, account or credential deletion performed. Only isolated in-memory test records used for regression.",
+  "previousDeliveryUnchanged": {
+    "name": "趣味闯关_全功能体验版_v0.3.0_20261013.zip",
+    "sha256": "a8d2d5f681a7ad4f1777ffd9f8d25a7c65e76904052ef292e103866b7496bdfa",
+    "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c"
+  },
+  "limitations": [
+    "Earlier full browser/media/dynamic/performance reports describe the 2026-10-13 runtime fingerprint, not this patched runtime.",
+    "No new all16-level native visual, phone, video, album, production integration or release acceptance."
+  ]
+}

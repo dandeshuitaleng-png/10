@@ -1,0 +1,2 @@
+const ui=require('../../utils/page');
+Page({data:{loading:true,error:'',scope:'daily',board:null},onShow(){this.refresh();},refresh(){return ui.load(this,async()=>{const scope=this.data.scope;const board=await ui.api.getLeaderboard({scope});if(scope===this.data.scope)this.setData({board});});},switchTab(e){if(this.data.loading)return;this.setData({scope:e.currentTarget.dataset.scope});this.refresh();},home:ui.home,onShareAppMessage:ui.share});

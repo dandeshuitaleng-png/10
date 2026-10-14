@@ -1,0 +1,694 @@
+{
+  "date": "2026-10-13T07:29:42.079Z",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "status": "failed",
+  "passed": false,
+  "scope": "0.3.0逐字节候选源码；原AppID及本机体验API。真实微信工具画布触摸与当前题服务端查询，无分数/进度/答案注入。目标本轮红色第1关10题，截图与控制台；不是真机、相册或全16关通过。",
+  "checks": [
+    {
+      "name": "原默认四主题16关与正式规则保持",
+      "pass": true
+    },
+    {
+      "name": "候选账号无在途挑战，未清除存档",
+      "pass": true
+    },
+    {
+      "name": "03-native-start真实微信截图",
+      "pass": true
+    },
+    {
+      "name": "04-native-red-map真实微信截图",
+      "pass": true
+    },
+    {
+      "name": "05-native-red-ready真实微信截图",
+      "pass": true
+    },
+    {
+      "name": "真实微信触摸创建红色第一关",
+      "pass": true
+    },
+    {
+      "name": "06-native-quiz真实微信截图",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "下一题题号及原服务端计时有效",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案与未答解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于授权源库",
+      "pass": true
+    },
+    {
+      "name": "真实微信作答反馈正确",
+      "pass": true
+    },
+    {
+      "name": "07-native-result真实微信截图",
+      "pass": true
+    },
+    {
+      "name": "10题微信真实通关只入账10分",
+      "pass": true
+    },
+    {
+      "name": "正确率来自首次作答",
+      "pass": true
+    },
+    {
+      "name": "本轮控制台无阻塞源码错误",
+      "pass": false
+    },
+    {
+      "name": "native-failure真实微信截图",
+      "pass": true
+    }
+  ],
+  "events": [
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 3072,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1574,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1521,
+      "success": true
+    },
+    {
+      "tool": "simulator_screenshot",
+      "elapsedMs": 2878,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1485,
+      "success": true,
+      "control": "theme-red"
+    },
+    {
+      "tool": "simulator_screenshot",
+      "elapsedMs": 3083,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1602,
+      "success": true
+    },
+    {
+      "tool": "simulator_screenshot",
+      "elapsedMs": 3048,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1691,
+      "success": true,
+      "control": "ready-start"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1485,
+      "success": true
+    },
+    {
+      "tool": "simulator_screenshot",
+      "elapsedMs": 2768,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1623,
+      "success": true,
+      "control": "option-3"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1505,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1527,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1713,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1485,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1524,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1514,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1497,
+      "success": true,
+      "control": "option-1"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1532,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1590,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1466,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1636,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1486,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1443,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1684,
+      "success": true,
+      "control": "option-0"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1390,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1445,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1594,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1646,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1477,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1774,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1475,
+      "success": true,
+      "control": "option-3"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1394,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1563,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1561,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1524,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1501,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1480,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1435,
+      "success": true,
+      "control": "option-3"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1613,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1451,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1401,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1540,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1419,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1477,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1488,
+      "success": true,
+      "control": "option-2"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1581,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1502,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1522,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1447,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1607,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1528,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1656,
+      "success": true,
+      "control": "option-1"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1646,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1423,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1633,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1456,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1516,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1479,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1480,
+      "success": true,
+      "control": "option-3"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1474,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1466,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1470,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1609,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1358,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1540,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1504,
+      "success": true,
+      "control": "option-2"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1402,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1430,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1584,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1402,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1564,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1537,
+      "success": true
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1401,
+      "success": true,
+      "control": "option-1"
+    },
+    {
+      "tool": "automation_game_action",
+      "elapsedMs": 1507,
+      "success": true,
+      "control": "confirm"
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1512,
+      "success": true
+    },
+    {
+      "tool": "automation_evaluate",
+      "elapsedMs": 1425,
+      "success": true
+    },
+    {
+      "tool": "simulator_screenshot",
+      "elapsedMs": 2975,
+      "success": true
+    },
+    {
+      "tool": "get_simulator_console",
+      "elapsedMs": 1428,
+      "success": true
+    },
+    {
+      "tool": "simulator_screenshot",
+      "elapsedMs": 2805,
+      "success": true
+    }
+  ],
+  "screenshots": [
+    "wechat-v030/03-native-start.png",
+    "wechat-v030/04-native-red-map.png",
+    "wechat-v030/05-native-red-ready.png",
+    "wechat-v030/06-native-quiz.png",
+    "wechat-v030/07-native-result.png",
+    "wechat-v030/native-failure.png"
+  ],
+  "failure": "本轮控制台无阻塞源码错误",
+  "elapsedSeconds": 133,
+  "device": {
+    "window": {
+      "pixelRatio": 3,
+      "safeArea": {
+        "top": 47,
+        "left": 0,
+        "right": 390,
+        "bottom": 810,
+        "width": 390,
+        "height": 763
+      },
+      "screenWidth": 390,
+      "screenHeight": 844,
+      "screenTop": 0,
+      "windowWidth": 390,
+      "windowHeight": 844,
+      "statusBarHeight": 47
+    },
+    "capsule": {
+      "width": 88,
+      "height": 32,
+      "left": 292,
+      "top": 44,
+      "right": 380,
+      "bottom": 76
+    }
+  },
+  "limitations": [
+    "仅模拟器，未替代iOS/Android真机",
+    "触摸坐标辅助器依据当前服务端视图、原布局及字体近似；结果必须由真实服务端反馈验证",
+    "原生复活确认、视频与相册保存未在此流程验证"
+  ]
+}

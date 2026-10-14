@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "趣味闯关",
+  "usingComponents": {
+    "ui-button": "/components/ui-button/index",
+    "study-progress": "/components/study-progress/index",
+    "page-state": "/components/page-state/index"
+  }
+}

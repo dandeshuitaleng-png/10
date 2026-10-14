@@ -1,0 +1,1004 @@
+{
+  "date": "2026-10-13T06:45:54.730Z",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "passed": true,
+  "checks": [
+    {
+      "name": "#basic-form无管理错误",
+      "pass": true
+    },
+    {
+      "name": "后台新增第五主题",
+      "pass": true
+    },
+    {
+      "name": "新增范围不自动批准规则",
+      "pass": true
+    },
+    {
+      "name": "#level-form无管理错误",
+      "pass": true
+    },
+    {
+      "name": "#level-form无管理错误",
+      "pass": true
+    },
+    {
+      "name": "#revive-form无管理错误",
+      "pass": true
+    },
+    {
+      "name": "#points-form无管理错误",
+      "pass": true
+    },
+    {
+      "name": "后台保存两次复活和11分日上限",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "第五主题键盘滚入",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "进入新主题通用地图",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "level-1实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "准备页实际5题7分",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "ready-start实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "开局动态规则",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "5题无重复",
+      "pass": true
+    },
+    {
+      "name": "最后一题真实结算",
+      "pass": true
+    },
+    {
+      "name": "第一关奖励7分",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "next实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "下一关真实ID",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "ready-start实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "当前题无答案解析",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "option-0实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "confirm实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "15题无重复",
+      "pass": true
+    },
+    {
+      "name": "最后一题真实结算",
+      "pass": true
+    },
+    {
+      "name": "日上限截断17分为4分仍通关",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "next实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "新主题真实证书",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "certificate-share-24a982ae-56f8-472e-bfd2-436febc44e46实际可点",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "证书真实PNG预览",
+      "pass": true
+    },
+    {
+      "name": "证书PNG导出",
+      "pass": true
+    },
+    {
+      "name": "配置往返保留240源题及未批准规则",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "20关地图末节点键盘滚入且44像素可达",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "键盘未绕过前置关",
+      "pass": true
+    },
+    {
+      "name": "扩展关卡保留原已获证书条件",
+      "pass": true
+    },
+    {
+      "name": "无玩家连接错误",
+      "pass": true
+    },
+    {
+      "name": "全停用目录显示空态并禁止新挑战",
+      "pass": true
+    },
+    {
+      "name": "动态流程无浏览器异常",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "dynamic-admin-config.png",
+    "dynamic-new-theme-map.png",
+    "dynamic-five-question-result.png",
+    "dynamic-daily-cap-result.png",
+    "dynamic-certificate-share.png",
+    "dynamic-twenty-level-keyboard.png",
+    "dynamic-disabled-empty-home.png"
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "隔离数据库；实际后台新增主题/关卡、5/15题、7/17奖励、11分日cap、键盘第五主题及已获证书PNG；不替代真机或新规则正式批准。"
+}

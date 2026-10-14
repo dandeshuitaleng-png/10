@@ -1,0 +1,5803 @@
+{
+  "date": "2026-10-13T06:44:23.068Z",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "passed": true,
+  "checks": [
+    {
+      "name": "首页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "全部四主题16关题库可体验",
+      "pass": true
+    },
+    {
+      "name": "源库审核未伪造通过",
+      "pass": true
+    },
+    {
+      "name": "theme-red操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 red-1",
+      "pass": true
+    },
+    {
+      "name": "答题页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 red-1",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 red-2",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 red-2",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 red-3",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 red-3",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 red-4",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 red-4",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "主题四关后查看已获得主题证书",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "一次返回首页",
+      "pass": true
+    },
+    {
+      "name": "theme-culture操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 culture-1",
+      "pass": true
+    },
+    {
+      "name": "答题页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 culture-1",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 culture-2",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 culture-2",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 culture-3",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 culture-3",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 culture-4",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 culture-4",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "主题四关后查看已获得主题证书",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "一次返回首页",
+      "pass": true
+    },
+    {
+      "name": "theme-industry操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 industry-1",
+      "pass": true
+    },
+    {
+      "name": "答题页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 industry-1",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 industry-2",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 industry-2",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 industry-3",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 industry-3",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 industry-4",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 industry-4",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "主题四关后查看已获得主题证书",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "一次返回首页",
+      "pass": true
+    },
+    {
+      "name": "theme-ecology操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 ecology-1",
+      "pass": true
+    },
+    {
+      "name": "答题页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 ecology-1",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 ecology-2",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 ecology-2",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 ecology-3",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 ecology-3",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一关准备页",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "开始正确关卡 ecology-4",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "服务端进度更新 ecology-4",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "主题四关后查看已获得主题证书",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "一次返回首页",
+      "pass": true
+    },
+    {
+      "name": "16关合计300积分",
+      "pass": true
+    },
+    {
+      "name": "刷新后服务器恢复全部进度积分",
+      "pass": true
+    },
+    {
+      "name": "ranking操作可达",
+      "pass": true
+    },
+    {
+      "name": "榜单真实16关",
+      "pass": true
+    },
+    {
+      "name": "ranking-total操作可达",
+      "pass": true
+    },
+    {
+      "name": "总榜可切换",
+      "pass": true
+    },
+    {
+      "name": "ranking-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "certificates操作可达",
+      "pass": true
+    },
+    {
+      "name": "四主题与总证书全发放",
+      "pass": true
+    },
+    {
+      "name": "certificate-6f249853-c0f5-48a6-bc52-a73957575216操作可达",
+      "pass": true
+    },
+    {
+      "name": "证书内容来自该账号",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "theme-red操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-0操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "答对进入解析",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "下一题计时从服务器开始",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-3操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第十题进入服务端通关结果",
+      "pass": true
+    },
+    {
+      "name": "十题无重复",
+      "pass": true
+    },
+    {
+      "name": "重玩不重复积分",
+      "pass": true
+    },
+    {
+      "name": "next操作可达",
+      "pass": true
+    },
+    {
+      "name": "back操作可达",
+      "pass": true
+    },
+    {
+      "name": "back操作可达",
+      "pass": true
+    },
+    {
+      "name": "管理登录不影响玩家会话",
+      "pass": true
+    },
+    {
+      "name": "五管理模块真实可读",
+      "pass": true
+    },
+    {
+      "name": "后台questions无错误",
+      "pass": true
+    },
+    {
+      "name": "全部240源题待审核",
+      "pass": true
+    },
+    {
+      "name": "真实新增审核启用",
+      "pass": true
+    },
+    {
+      "name": "真实编辑撤销旧审核",
+      "pass": true
+    },
+    {
+      "name": "UI导出保留原题和修改记录",
+      "pass": true
+    },
+    {
+      "name": "UI导入不能携带审核批准",
+      "pass": true
+    },
+    {
+      "name": "后台levels无错误",
+      "pass": true
+    },
+    {
+      "name": "关卡名称已存储",
+      "pass": true
+    },
+    {
+      "name": "后台basic无错误",
+      "pass": true
+    },
+    {
+      "name": "空封面预留稳定预览空间",
+      "pass": true
+    },
+    {
+      "name": "后台主题停用实际影响玩家入口",
+      "pass": true
+    },
+    {
+      "name": "theme-red操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "后台关卡名进入玩家准备页",
+      "pass": true
+    },
+    {
+      "name": "back操作可达",
+      "pass": true
+    },
+    {
+      "name": "back操作可达",
+      "pass": true
+    },
+    {
+      "name": "后台revive无错误",
+      "pass": true
+    },
+    {
+      "name": "复活文案保存",
+      "pass": true
+    },
+    {
+      "name": "后台points无错误",
+      "pass": true
+    },
+    {
+      "name": "恢复初始值不自动重新批准目录变更",
+      "pass": true
+    },
+    {
+      "name": "后台operations无错误",
+      "pass": true
+    },
+    {
+      "name": "缺少同步端时不允许伪同步",
+      "pass": true
+    },
+    {
+      "name": "操作有审计记录",
+      "pass": true
+    },
+    {
+      "name": "后台overview无错误",
+      "pass": true
+    },
+    {
+      "name": "1366后台无页面横溢出",
+      "pass": true
+    },
+    {
+      "name": "后台overview无错误",
+      "pass": true
+    },
+    {
+      "name": "375后台无页面横溢出",
+      "pass": true
+    },
+    {
+      "name": "后台overview无错误",
+      "pass": true
+    },
+    {
+      "name": "320后台无页面横溢出",
+      "pass": true
+    },
+    {
+      "name": "后台退出保留玩家300分",
+      "pass": true
+    },
+    {
+      "name": "320首页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking操作可达",
+      "pass": true
+    },
+    {
+      "name": "320排行榜操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "certificates操作可达",
+      "pass": true
+    },
+    {
+      "name": "320证书操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings操作可达",
+      "pass": true
+    },
+    {
+      "name": "320设置操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "音效开关实际变化",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "375首页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking操作可达",
+      "pass": true
+    },
+    {
+      "name": "375排行榜操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "certificates操作可达",
+      "pass": true
+    },
+    {
+      "name": "375证书操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings操作可达",
+      "pass": true
+    },
+    {
+      "name": "375设置操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "音效开关实际变化",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "414首页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking操作可达",
+      "pass": true
+    },
+    {
+      "name": "414排行榜操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "certificates操作可达",
+      "pass": true
+    },
+    {
+      "name": "414证书操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings操作可达",
+      "pass": true
+    },
+    {
+      "name": "414设置操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "音效开关实际变化",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "430首页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking操作可达",
+      "pass": true
+    },
+    {
+      "name": "430排行榜操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "certificates操作可达",
+      "pass": true
+    },
+    {
+      "name": "430证书操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings操作可达",
+      "pass": true
+    },
+    {
+      "name": "430设置操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "音效开关实际变化",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "1024首页操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking操作可达",
+      "pass": true
+    },
+    {
+      "name": "1024排行榜操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "ranking-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "certificates操作可达",
+      "pass": true
+    },
+    {
+      "name": "1024证书操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "certificates-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings操作可达",
+      "pass": true
+    },
+    {
+      "name": "1024设置操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "音效开关实际变化",
+      "pass": true
+    },
+    {
+      "name": "toggle-sound操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "settings操作可达",
+      "pass": true
+    },
+    {
+      "name": "toggle-motion操作可达",
+      "pass": true
+    },
+    {
+      "name": "减少动画设置跨刷新保存",
+      "pass": true
+    },
+    {
+      "name": "theme-red操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "键盘选择正确选项",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "断网重试恢复一次作答",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "option-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "提交成功响应丢失后重试不重复计次",
+      "pass": true
+    },
+    {
+      "name": "会话失效通过本机凭据恢复300分",
+      "pass": true
+    },
+    {
+      "name": "ranking操作可达",
+      "pass": true
+    },
+    {
+      "name": "游戏运行中会话失效单次重试恢复同一进度",
+      "pass": true
+    },
+    {
+      "name": "theme-ecology操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "首错进入复活且不泄露答案",
+      "pass": true
+    },
+    {
+      "name": "320复活弹窗操作尺寸与安全区",
+      "pass": true
+    },
+    {
+      "name": "revive-share操作可达",
+      "pass": true
+    },
+    {
+      "name": "一次测试复活恢复原题",
+      "pass": true
+    },
+    {
+      "name": "玩家当前题不含答案/解析",
+      "pass": true
+    },
+    {
+      "name": "题目属于真实源库",
+      "pass": true
+    },
+    {
+      "name": "option-2操作可达",
+      "pass": true
+    },
+    {
+      "name": "confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "第二错仅当前关今日锁定",
+      "pass": true
+    },
+    {
+      "name": "locked-back操作可达",
+      "pass": true
+    },
+    {
+      "name": "back操作可达",
+      "pass": true
+    },
+    {
+      "name": "theme-red操作可达",
+      "pass": true
+    },
+    {
+      "name": "level-1操作可达",
+      "pass": true
+    },
+    {
+      "name": "ready-start操作可达",
+      "pass": true
+    },
+    {
+      "name": "quiz-exit操作可达",
+      "pass": true
+    },
+    {
+      "name": "exit-confirm操作可达",
+      "pass": true
+    },
+    {
+      "name": "practice操作可达",
+      "pass": true
+    },
+    {
+      "name": "退出刷新后恢复原题与原截止时间",
+      "pass": true
+    },
+    {
+      "name": "运行无浏览器异常",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "home-375.png",
+    "red-ready.png",
+    "red-quiz.png",
+    "red-result-1.png",
+    "red-result-4.png",
+    "red-complete-certificates.png",
+    "culture-ready.png",
+    "culture-quiz.png",
+    "culture-result-1.png",
+    "culture-result-4.png",
+    "culture-complete-certificates.png",
+    "industry-ready.png",
+    "industry-quiz.png",
+    "industry-result-1.png",
+    "industry-result-4.png",
+    "industry-complete-certificates.png",
+    "ecology-ready.png",
+    "ecology-quiz.png",
+    "ecology-result-1.png",
+    "ecology-result-4.png",
+    "ecology-complete-certificates.png",
+    "all-completed-home.png",
+    "rankings-day.png",
+    "certificates-375.png",
+    "admin-overview.png",
+    "admin-questions-desktop.png",
+    "admin-overview-1366.png",
+    "admin-overview-375.png",
+    "admin-overview-320.png",
+    "home-320.png",
+    "ranking-320.png",
+    "certificates-320.png",
+    "settings-320.png",
+    "home-375.png",
+    "ranking-375.png",
+    "certificates-375.png",
+    "settings-375.png",
+    "home-414.png",
+    "ranking-414.png",
+    "certificates-414.png",
+    "settings-414.png",
+    "home-430.png",
+    "ranking-430.png",
+    "certificates-430.png",
+    "settings-430.png",
+    "home-1024.png",
+    "ranking-1024.png",
+    "certificates-1024.png",
+    "settings-1024.png",
+    "offline-retry.png",
+    "session-expired.png",
+    "session-restored.png",
+    "revive-320.png",
+    "locked-320.png",
+    "restored-320.png"
+  ],
+  "scope": "真实HTTP + SQLite + Chrome操作；四主题16关160题、300分、5证书、重玩、双会话、响应式、一次复活与日锁、退出恢复。答案由测试进程读取源库，不注入客户端。未替代微信真机或目标玩家质量验收。"
+}

@@ -1,0 +1,21 @@
+PASS 4 themes / 16 chapters / 48 configurable questions
+PASS fresh progress and certificates are empty
+PASS locked chapters reject direct URL bypass
+PASS question DTO contains no standard answer or explanation
+PASS answer submission is idempotent
+PASS wrong answer opens revival with backend token
+PASS invalid revival token is refused
+PASS repeated revival claim consumes only one allowance
+PASS second failure locks learning for the day
+PASS daily lock is enforced across themes
+PASS new day resets lock and revival allowance
+PASS server deadline rejects late correct answers
+PASS complete all 16 chapters earns 300 points
+PASS four theme certificates plus one total certificate
+PASS repeat completion does not duplicate rewards
+PASS repeated result retrieval stays completed
+PASS daily and total rankings include current user
+PASS remote adapter response envelope
+PASS remote unauthorized response is visible
+PASS remote network failure is visible
+20 checks passed

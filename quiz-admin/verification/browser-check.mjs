@@ -1,0 +1,17 @@
+import {chromium} from '/Users/huangnianpeng/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:980}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5190');await page.getByText('主题内容概览').waitFor();await page.screenshot({path:'verification/home.png',fullPage:true});
+await page.getByRole('menuitem',{name:'题库管理'}).click();await page.getByRole('button',{name:'新增题目'}).click();
+const dialog=page.getByRole('dialog');const inputs=dialog.locator('input');await inputs.nth(0).fill('UI-001');
+await dialog.locator('textarea').nth(0).fill('页面操作验证题');
+const opts=dialog.locator('.form-grid').nth(1).locator('input');for(let i=0;i<4;i++)await opts.nth(i).fill('选项'+i);
+await dialog.locator('textarea').nth(1).fill('页面新增与保存验证解析');await dialog.getByRole('button',{name:'保存',exact:true}).click();await dialog.waitFor({state:'hidden'});
+await page.reload();await page.getByRole('menuitem',{name:'题库管理'}).click();await page.getByText('页面操作验证题',{exact:true}).waitFor();
+let row=page.locator('tr').filter({hasText:'UI-001'});await row.getByRole('button',{name:'编辑'}).click();await dialog.locator('textarea').nth(0).fill('页面编辑验证题');await dialog.getByRole('button',{name:'保存',exact:true}).click();await dialog.waitFor({state:'hidden'});await page.getByText('页面编辑验证题',{exact:true}).waitFor();
+await row.getByRole('button',{name:'删除'}).click();await page.getByRole('button',{name:'删除',exact:true}).last().click();await page.getByText('页面编辑验证题',{exact:true}).waitFor({state:'hidden'});
+await page.getByRole('menuitem',{name:'关卡管理'}).click();await page.screenshot({path:'verification/levels.png',fullPage:true});
+await page.getByRole('menuitem',{name:'游戏规则'}).click();await page.locator('input').first().fill('2');await page.getByRole('button',{name:'保存游戏规则'}).click();await page.getByText('规则已保存').waitFor();await page.reload();await page.getByRole('menuitem',{name:'游戏规则'}).click();assert.equal(await page.locator('input').first().inputValue(),'2');
+await page.getByRole('menuitem',{name:'题库管理'}).click();const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'CSV导出',exact:true}).click();const exported=await downloadPromise;await exported.saveAs('verification/exported-questions.csv');await page.locator('input[type=file]').setInputFiles('verification/exported-questions.csv');await page.getByRole('button',{name:'导入',exact:true}).click();await page.getByText('已导入4条数据').waitFor();
+await page.setViewportSize({width:390,height:844});await page.screenshot({path:'verification/mobile.png',fullPage:true});assert.deepEqual(errors,[]);console.log('Browser PASS: create/edit/delete/reload/rules, no runtime errors');await browser.close();

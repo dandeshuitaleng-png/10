@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-13T06:45:58.390Z",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "passed": true,
+  "checks": [
+    {
+      "name": "备份前真实完成4关75分1证书",
+      "pass": true
+    },
+    {
+      "name": "运行中一致备份通过完整性检查",
+      "pass": true
+    },
+    {
+      "name": "备份后新成绩进入源数据库",
+      "pass": true
+    },
+    {
+      "name": "恢复校验哈希与结构一致",
+      "pass": true
+    },
+    {
+      "name": "恢复后原会话与已通关记录可用",
+      "pass": true
+    },
+    {
+      "name": "恢复后保留原题与截止时间",
+      "pass": true
+    },
+    {
+      "name": "恢复不覆盖现有运行数据库",
+      "pass": true
+    }
+  ],
+  "failure": null,
+  "scope": "隔离游戏真实HTTP完成4关、75分、1证书与活动挑战；运行中SQLite备份、源库继续计分、恢复后重新启动验证原会话/进度/证书/题目截止时间。临时数据库与凭据已清理；不是DM8/TongRDS验收。"
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-13T06:46:03.099Z",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "passed": true,
+  "checks": [
+    {
+      "name": "24账号同时完成真实10题且各得10分",
+      "pass": true
+    },
+    {
+      "name": "重复末题不重复结算且各账号进度隔离",
+      "pass": true
+    },
+    {
+      "name": "仅24条积分与通关记录",
+      "pass": true
+    },
+    {
+      "name": "总榜反映24个独立身份",
+      "pass": true
+    },
+    {
+      "name": "本组请求全部成功",
+      "pass": true
+    }
+  ],
+  "failure": null,
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "architecture": "x64",
+    "storage": "SQLite WAL",
+    "host": "loopback"
+  },
+  "concurrentAccounts": 24,
+  "requests": 553,
+  "failures": 0,
+  "latencyMs": {
+    "p50": 32.98,
+    "p95": 97.73,
+    "max": 156.16590900000006
+  },
+  "elapsedSeconds": 1.23,
+  "scope": "单进程本机HTTP与SQLite基线，24账号同时进行10题，每题分轮提交与下一题；含重复末题、积分/身份隔离和榜单。不是持续负载、生产容量、手机帧率或DM8/TongRDS验收。"
+}

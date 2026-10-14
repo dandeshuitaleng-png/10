@@ -1,0 +1,13 @@
+<view class="page home-page">
+ <view class="topbar"><view class="brand"><text class="brand-mark">书</text>湖南数字农家书屋</view><text class="tiny-label">特色资源荟</text></view>
+ <view class="home-hero fade"><image class="hero-art" src="/assets/v2/landscape.jpg" mode="aspectFill"/><view class="hero-title"><view class="eyebrow">乡村文化知识探索</view><view class="display">趣味闯关</view><view class="hero-subtitle">一卷湖湘山水 · 一程乡土新知</view></view><view class="hero-caption"><text class="seal">湖湘寻知</text></view></view>
+ <view class="exploration-dock"><view class="home-intro">循着书香，走进湖湘乡村。</view><ui-button class="action-button" label="开启探索" bind:action="explore"/></view>
+ <view class="home-meta"><text>四大文化专题</text><text class="meta-dot">·</text><text>阅读与互动同行</text></view>
+ <page-state loading="{{loading}}" error="{{error}}" bind:retry="refresh"/>
+ <block wx:if="{{!loading && !error}}">
+  <view class="section-head"><text class="h2">我的学习</text><button class="link" bindtap="progress">查看进度 →</button></view>
+  <view class="panel learning-panel"><view class="row"><view><view class="small">已完成章节</view><view class="chapter-total">{{summary.completedCount}} <text>/ {{summary.totalChapters}}</text></view></view><view class="learning-leaf">读</view></view><study-progress value="{{summary.progress}}" label="{{summary.completedCount ? '每一页探索，都留下成长的印记。' : '从第一章开始，留下你的学习足迹。'}}"/></view>
+  <view class="home-links"><button bindtap="ranking"><view class="entry-icon">积</view><view><view class="entry-title">学习积分榜</view><view class="small">我的积分 {{summary.points}}</view></view><text class="arrow">→</text></button><button bindtap="certificate"><view class="entry-icon certificate-icon">证</view><view><view class="entry-title">电子证书</view><view class="small">记录每一份收获</view></view><text class="arrow">→</text></button></view>
+ </block>
+ <view class="footer-note">特色乡村资源荟 · 阅读，让乡村更有力量</view>
+</view>

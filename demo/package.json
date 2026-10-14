@@ -1,0 +1,21 @@
+{
+  "name": "rural-quiz-minigame",
+  "version": "0.3.0",
+  "private": true,
+  "description": "趣味闯关：可配置主题关卡、题数、复活、积分日上限、证书与后台",
+  "scripts": {
+    "content:import": "node scripts/import-question-bank.cjs --install",
+    "test": "node --test tests/*.test.cjs",
+    "preview:build": "node scripts/build-preview.cjs",
+    "design:render": "node scripts/render-design.cjs",
+    "start": "node server/start.cjs",
+    "test:server": "node --test tests/server*.test.cjs",
+    "test:game": "node scripts/verify-full-game.cjs",
+    "test:media": "node scripts/verify-game-media.cjs",
+    "test:recovery": "node scripts/verify-backup-recovery.cjs",
+    "data:check": "node scripts/maintain-data.cjs check",
+    "delivery:package": "python3 scripts/package-delivery.py",
+    "verify:tests": "node scripts/verify-tests.cjs",
+    "test:dynamic": "node scripts/verify-dynamic-game.cjs"
+  }
+}

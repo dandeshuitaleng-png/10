@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-13T06:46:03.220Z",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "passed": true,
+  "checks": [
+    {
+      "name": "题目配图实际加载并保留示意说明",
+      "pass": true
+    },
+    {
+      "name": "媒体关卡真实完成1",
+      "pass": true
+    },
+    {
+      "name": "题目配图实际加载并保留示意说明",
+      "pass": true
+    },
+    {
+      "name": "媒体关卡真实完成2",
+      "pass": true
+    },
+    {
+      "name": "原创动画实际可播放",
+      "pass": true
+    },
+    {
+      "name": "看视频仍保留原截止时间",
+      "pass": true
+    },
+    {
+      "name": "视频关闭后释放播放资源",
+      "pass": true
+    },
+    {
+      "name": "媒体关卡真实完成3",
+      "pass": true
+    },
+    {
+      "name": "两张相关配图和一个原创视频已覆盖",
+      "pass": true
+    },
+    {
+      "name": "浏览器无运行异常",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "image-failed-320.png",
+    "image-question-1.png",
+    "image-question-2.png",
+    "video-playing-320.png"
+  ],
+  "scope": "隔离库每关保留10道原题，保证媒体题被抽到；实际浏览器操作30题，验证图片失败重试、视频解码播放与关闭、服务端计时。未替代微信真机。"
+}

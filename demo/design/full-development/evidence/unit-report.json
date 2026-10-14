@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-13T06:46:03.208Z",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "passed": true,
+  "tests": 131,
+  "pass": 131,
+  "fail": 0,
+  "cancelled": 0,
+  "skipped": 0,
+  "scope": "Node功能、客户端状态、服务端HTTP与SQLite、备份及微信API分支测试；不替代平台、真机与内容签审。"
+}

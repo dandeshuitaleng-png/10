@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+project.private.config.json
+
+# Private local runtime; never commit player data or generated admin credentials.
+server/data/

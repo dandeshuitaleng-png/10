@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-12",
+  "status": "partial",
+  "checks": [
+    {
+      "name": "当前代码编译与首页、红色地图、准备页真实触摸",
+      "pass": true
+    },
+    {
+      "name": "真实服务端题面、30秒超时及一次复活提示",
+      "pass": true
+    },
+    {
+      "name": "微信原生测试复活确认框出现",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "自动化画布点击不能操作微信原生确认框，未将确认框出现当作复活已完成。",
+    "微信视频/PNG相册权限仅做API分支测试，未完成本轮微信真机验收。",
+    "冷启动自动化曾有桥接未就绪；重试后可截图。运行数据库已迁移到工程外，保留原存档。",
+    "记录来自0.2.0；0.2.1生命周期与隔离修复后，未据此宣称微信全流程复测通过。"
+  ],
+  "screenshots": [
+    "wechat-home.jpg",
+    "wechat-red-map.jpg",
+    "wechat-red-ready.jpg",
+    "wechat-timeout-revive.jpg",
+    "wechat-native-confirm.jpg"
+  ],
+  "version": "0.2.0"
+}

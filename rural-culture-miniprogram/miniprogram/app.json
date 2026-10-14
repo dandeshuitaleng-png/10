@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/themes/index",
+    "pages/chapters/index",
+    "pages/quiz/index",
+    "pages/result/index",
+    "pages/certificate/index",
+    "pages/ranking/index",
+    "pages/progress/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "趣味闯关",
+    "navigationBarBackgroundColor": "#F7F3E9",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F7F3E9"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

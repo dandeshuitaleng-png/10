@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "电子证书",
+  "usingComponents": {
+    "ui-button": "/components/ui-button/index",
+    "study-progress": "/components/study-progress/index",
+    "page-state": "/components/page-state/index"
+  }
+}

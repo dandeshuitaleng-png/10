@@ -1,0 +1,2084 @@
+{
+  "date": "2026-10-14",
+  "repository": "dandeshuitaleng-png/10",
+  "sourceFiles": 414,
+  "bytes": 60903874,
+  "files": [
+    {
+      "path": "demo/.gitignore",
+      "bytes": 154,
+      "sha256": "2ed2af6ebf0cd3176462d26416c76892c7053db16590d218b17131bee47e1010"
+    },
+    {
+      "path": "demo/README.md",
+      "bytes": 4777,
+      "sha256": "c3923187775fffb47adace44c3cfde99ca255fd9b7a47fc7e2b4804f1495a9aa"
+    },
+    {
+      "path": "demo/audio/README.md",
+      "bytes": 190,
+      "sha256": "516393ebd559f8e2d1597bb606982f329912b8a27cb2b9d25fe702005f32d2a2"
+    },
+    {
+      "path": "demo/audio/complete.wav",
+      "bytes": 14594,
+      "sha256": "0702b5ba6f1864c6f876cb456984fcdf2825ddb47188eba0e3264339e30ef42d"
+    },
+    {
+      "path": "demo/audio/correct.wav",
+      "bytes": 9744,
+      "sha256": "78541ac77e60bbb8854b8800d3efb8be1c65209c415be3efad74c9a9d27b0d42"
+    },
+    {
+      "path": "demo/audio/press.wav",
+      "bytes": 4894,
+      "sha256": "faaa2bd3f1b41a6cc893215943e16fdbb2ccb4bc9ff52edc174f6041700112a0"
+    },
+    {
+      "path": "demo/audio/wrong.wav",
+      "bytes": 9744,
+      "sha256": "a853a024f2c249f434ddd2b3eacb7c79f9e3f2dd2ada1be5e5b3bf1c49e545d0"
+    },
+    {
+      "path": "demo/design/content-intake/current/bank.json",
+      "bytes": 315792,
+      "sha256": "72023a28c0df659c45a4fe5d5ec424a5608d4b78da1849288ff0d5de13f32cd2"
+    },
+    {
+      "path": "demo/design/fixtures.js",
+      "bytes": 941,
+      "sha256": "1651d46ba59c568233922b3c3233fdb5fed29e73e900c77de603aabeb28fbb67"
+    },
+    {
+      "path": "demo/design/full-development/evidence/admin-overview-1366.png",
+      "bytes": 183224,
+      "sha256": "f89450d4124d5df5932aaf27788b37d65c39a0bfc2e5e1a9a5cccf6ece112ac0"
+    },
+    {
+      "path": "demo/design/full-development/evidence/admin-overview-320.png",
+      "bytes": 146026,
+      "sha256": "6dfbba6dc3be13814aa1216710e75f4a03759ca034977c5e0feb5344ea6f3e1c"
+    },
+    {
+      "path": "demo/design/full-development/evidence/admin-overview-375.png",
+      "bytes": 152445,
+      "sha256": "a432ee0e7011c82348cdab3027fd8cfb0406e309bc11d745bc948bc8fc67b76d"
+    },
+    {
+      "path": "demo/design/full-development/evidence/admin-overview.png",
+      "bytes": 128880,
+      "sha256": "7da7ead1939b3b965401888a7cd3c8213ef5f4c11ad9189b7b55c06c60c26941"
+    },
+    {
+      "path": "demo/design/full-development/evidence/admin-questions-desktop.png",
+      "bytes": 100097,
+      "sha256": "31cf756e554c9ddcd57d718ef2bdf9614f70f2c99b6a4ce20240c546b52e8d39"
+    },
+    {
+      "path": "demo/design/full-development/evidence/all-completed-home.png",
+      "bytes": 294306,
+      "sha256": "4638d18ab0de91e4fe5fef1603fa2170521bea583fc12d6cb37b3fa4f04b16f7"
+    },
+    {
+      "path": "demo/design/full-development/evidence/browser-report.json",
+      "bytes": 108375,
+      "sha256": "6774ea34391a7fd536870e47381a5288e09b092b70edc30e80193d1fcdd71a98"
+    },
+    {
+      "path": "demo/design/full-development/evidence/certificates-1024.png",
+      "bytes": 53047,
+      "sha256": "eaa9269791bf54612c515f3ee576e25465509eb4d70031a980624f40416fbb84"
+    },
+    {
+      "path": "demo/design/full-development/evidence/certificates-320.png",
+      "bytes": 42879,
+      "sha256": "f512210b6b9ba002da22de91b40594b46c9ad89221c3c8b6c40a1f6677a05ef5"
+    },
+    {
+      "path": "demo/design/full-development/evidence/certificates-375.png",
+      "bytes": 64406,
+      "sha256": "b03f163d0cb1ae228212b54497ab483384df39ebd13a0ad91d8e5ae0a5b67800"
+    },
+    {
+      "path": "demo/design/full-development/evidence/certificates-414.png",
+      "bytes": 74348,
+      "sha256": "05264b0ff064574efdcb53c3344a407857eafd9fdeace7d0649479e25d791b64"
+    },
+    {
+      "path": "demo/design/full-development/evidence/certificates-430.png",
+      "bytes": 78036,
+      "sha256": "757d91fdf76111bcc47f9c335fc49dba9c817118b97f77ad8d2f34c84eaf67ae"
+    },
+    {
+      "path": "demo/design/full-development/evidence/culture-complete-certificates.png",
+      "bytes": 62845,
+      "sha256": "8c29fe46caa6e7416f4fe36385420b68c951cf10a1eaa5e80bcd87774b764fd6"
+    },
+    {
+      "path": "demo/design/full-development/evidence/culture-quiz.png",
+      "bytes": 238548,
+      "sha256": "82cacb205d229f4bbe75cd6a9fe10821d3685e29b7323e0ea7d6ff0f8df1ed75"
+    },
+    {
+      "path": "demo/design/full-development/evidence/culture-ready.png",
+      "bytes": 151612,
+      "sha256": "6ff71012f4563e1dbc05b6f7e47c72e0258ed4ae2138e6cc4a1725a84e7eb280"
+    },
+    {
+      "path": "demo/design/full-development/evidence/culture-result-1.png",
+      "bytes": 219764,
+      "sha256": "57d6de036ba06efabac815a7f349a7f902ec45eba07aa4890f14015eb26d9457"
+    },
+    {
+      "path": "demo/design/full-development/evidence/culture-result-4.png",
+      "bytes": 233025,
+      "sha256": "81ca8e5a6173fd1a6472de45a75a9b0e08b349942fab0cb8ce591d7f5a470aff"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-admin-config.png",
+      "bytes": 158914,
+      "sha256": "17d086457399b9b9449c9bfb0f7f9aa5583590295b98b9635574e6025c51e96e"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-certificate-share.png",
+      "bytes": 39077,
+      "sha256": "4dee436a2bcec6bbca530c325c06a65062ecedcd63b5087e8dba866d0f7ed13e"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-certificate.png",
+      "bytes": 96191,
+      "sha256": "4832ec6bd41732e744d0b16ae610021349456ad66a4dd395508ba639b17d1f93"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-daily-cap-result.png",
+      "bytes": 34818,
+      "sha256": "aa4dc07039883b4ca16c56ad3451cf025bafc90dbd2ad42c7783fa9e0c8ad43f"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-disabled-empty-home.png",
+      "bytes": 29106,
+      "sha256": "b29bf389d488cd2644c6cba7b73f8b6ab9a73d12bf7cf87dd60e8826bc798eba"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-five-question-result.png",
+      "bytes": 31363,
+      "sha256": "3e93ec1755c86f1b2fa088034da5ff890c7be9c654bb499a1a58aeae065943ba"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-new-theme-map.png",
+      "bytes": 36095,
+      "sha256": "435a8ec59af475ddd9bb46e4fb9fcdd5b9b8a7cfbf1a2ee1979df5f464d11d12"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-report.json",
+      "bytes": 18323,
+      "sha256": "d5ac91efaaa7aa92a8145b9dcd9b152c3fa99d46c790399239041f49fac8ec82"
+    },
+    {
+      "path": "demo/design/full-development/evidence/dynamic-twenty-level-keyboard.png",
+      "bytes": 51125,
+      "sha256": "1a6daf41bed320604ca0710d061c9b33d58f1a7f586b96ed58089e7ceab4be1d"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ecology-complete-certificates.png",
+      "bytes": 62651,
+      "sha256": "23568183b7662e26c49cee2d0193018b0afdf1c32ae84ff4abf6258eff951af2"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ecology-quiz.png",
+      "bytes": 243045,
+      "sha256": "73587edf61736a6ffd5d8366446fca613e1ad071baa57b04aaa0535edb3041d9"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ecology-ready.png",
+      "bytes": 144723,
+      "sha256": "0e6593d133c8e3ce2707a4ce132423f1a916e358edc070221ae6373059f04ea2"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ecology-result-1.png",
+      "bytes": 220640,
+      "sha256": "3ab11bf5325690e16ca937b8997ecadfe822641cab984cd10b64082adf85df0e"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ecology-result-4.png",
+      "bytes": 213047,
+      "sha256": "5dd3d42725b92cc5618cf69e862362c788a8dd9a5de3307eeb879a6c5fdf1609"
+    },
+    {
+      "path": "demo/design/full-development/evidence/home-1024.png",
+      "bytes": 264684,
+      "sha256": "f45969a8c93d74d2adaa8847542ef89f593a922a096080ea7462ec648c52309d"
+    },
+    {
+      "path": "demo/design/full-development/evidence/home-320.png",
+      "bytes": 189190,
+      "sha256": "7a739d5f03ba7a8f53141e7e9f7e7aa41341110b962d071db41f1bd8220a597b"
+    },
+    {
+      "path": "demo/design/full-development/evidence/home-375.png",
+      "bytes": 312508,
+      "sha256": "3adcc6599be48867301ee3002dcd709a934f3cc6d480b1a2398c59b45e16d2dd"
+    },
+    {
+      "path": "demo/design/full-development/evidence/home-414.png",
+      "bytes": 369946,
+      "sha256": "d5de17894f3f2acbc04f67676a7cc9af5067beb4bde05bd354a7dc86e7a1368e"
+    },
+    {
+      "path": "demo/design/full-development/evidence/home-430.png",
+      "bytes": 390400,
+      "sha256": "fce082337941864fa4a10a863c4a91449e1fae510660bdf10e2c7691b694302a"
+    },
+    {
+      "path": "demo/design/full-development/evidence/image-failed-320.png",
+      "bytes": 133059,
+      "sha256": "4677682577a691ae0747fd31b2f802d241026a456f23f6b9851bcbcf8002647b"
+    },
+    {
+      "path": "demo/design/full-development/evidence/image-question-1.png",
+      "bytes": 167556,
+      "sha256": "e6e2129f7548854b1b0fa3021a5499be6f2982d779c1066a2da32c1f6bedcf3a"
+    },
+    {
+      "path": "demo/design/full-development/evidence/image-question-2.png",
+      "bytes": 170226,
+      "sha256": "cc79bebdc74e56447c4845501fad64f8a408019798ce9bc03fcfe7b4baca897d"
+    },
+    {
+      "path": "demo/design/full-development/evidence/industry-complete-certificates.png",
+      "bytes": 62835,
+      "sha256": "916d5fa316cf9ddc73b7fa4101107da8c8019f8598c32c2bba13670d8a8cdcf9"
+    },
+    {
+      "path": "demo/design/full-development/evidence/industry-quiz.png",
+      "bytes": 249237,
+      "sha256": "d43d873e431419481c39106316e2e506cd77d78f7ccb748b722baf55270e4d6a"
+    },
+    {
+      "path": "demo/design/full-development/evidence/industry-ready.png",
+      "bytes": 157691,
+      "sha256": "c1dfd100ed4b8932074ea2be89dbdd5997e36886bbcff604bad7bdae64efc43f"
+    },
+    {
+      "path": "demo/design/full-development/evidence/industry-result-1.png",
+      "bytes": 235762,
+      "sha256": "18f4dda66fe716c215d3cf7d02a05e12c26c0e739815873a9b6ecfe9a870b514"
+    },
+    {
+      "path": "demo/design/full-development/evidence/industry-result-4.png",
+      "bytes": 239398,
+      "sha256": "c61037af2b01ec00563eaf8ba5368066802054237bd34f08a43c367ceef87538"
+    },
+    {
+      "path": "demo/design/full-development/evidence/locked-320.png",
+      "bytes": 157519,
+      "sha256": "77770055e23577fecf958ac25d886825c774b048f7dd0c4e963cf5497384a7cd"
+    },
+    {
+      "path": "demo/design/full-development/evidence/media-report.json",
+      "bytes": 1372,
+      "sha256": "e47d9226243820c99a91e83f563b93604da325bd1e201199d3d824ee08b2c825"
+    },
+    {
+      "path": "demo/design/full-development/evidence/offline-retry.png",
+      "bytes": 155101,
+      "sha256": "047351f12625f39a2f9ad96c4ba42ddf6f5883bfc7674ab0d28615d5c503da9e"
+    },
+    {
+      "path": "demo/design/full-development/evidence/operations-report.json",
+      "bytes": 1079,
+      "sha256": "72b48d0517bf73a74e88c1a03b2d0edb884b61946e55bc120e93258f66d48ae6"
+    },
+    {
+      "path": "demo/design/full-development/evidence/performance-report.json",
+      "bytes": 1197,
+      "sha256": "e02f18bb7c1aded8303417ecd6edbfd56bbb221b5e6f0eed3a43a6a111d0e0fc"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ranking-1024.png",
+      "bytes": 30091,
+      "sha256": "348a27ff4f6000ec8eca5fea38aabbe5a77ebdaa117efae9a44eda2c677864b5"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ranking-320.png",
+      "bytes": 25156,
+      "sha256": "74935c9d169f1633b64aeba1a08ecaa9b7b065362c3db0eb9e6cbfe520a074fe"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ranking-375.png",
+      "bytes": 29401,
+      "sha256": "43b56bc45fda5c0f5c845148c03240041c2cd52f82682c7e40937491a9582c93"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ranking-414.png",
+      "bytes": 33118,
+      "sha256": "1ea038d5e7bdbeecd0a532ca02bb614ff51bdfaa4d26822cb4c83fd8b3f3a53f"
+    },
+    {
+      "path": "demo/design/full-development/evidence/ranking-430.png",
+      "bytes": 34638,
+      "sha256": "29bfbfb29e87d308b411f61cec82b827aec4ae0bd11a9c27f741b1a945f1bfad"
+    },
+    {
+      "path": "demo/design/full-development/evidence/rankings-day.png",
+      "bytes": 29401,
+      "sha256": "43b56bc45fda5c0f5c845148c03240041c2cd52f82682c7e40937491a9582c93"
+    },
+    {
+      "path": "demo/design/full-development/evidence/red-complete-certificates.png",
+      "bytes": 59587,
+      "sha256": "87f5de080b3148ec57fd4ed1e32b30e7bc8d2b5218267ff35b41edcfc7aeb557"
+    },
+    {
+      "path": "demo/design/full-development/evidence/red-quiz.png",
+      "bytes": 264582,
+      "sha256": "dc692861d4ddfde8acd9e48c701aab730a6711b12b53b377f5942d5b1d1301b1"
+    },
+    {
+      "path": "demo/design/full-development/evidence/red-ready.png",
+      "bytes": 146204,
+      "sha256": "25ce202c4174ed853767a46d01f9aea1258db9de11516ef4f77e53cd175941b9"
+    },
+    {
+      "path": "demo/design/full-development/evidence/red-result-1.png",
+      "bytes": 232131,
+      "sha256": "5dd549c8c52ecc7616dc9b9543552212e5ed934f7980592d8484f6e4556fb911"
+    },
+    {
+      "path": "demo/design/full-development/evidence/red-result-4.png",
+      "bytes": 224179,
+      "sha256": "7f230877cb69bc5b183090dbaa3f7faa3068295b123b3a9ac6c5ca55a91644e9"
+    },
+    {
+      "path": "demo/design/full-development/evidence/restored-320.png",
+      "bytes": 132604,
+      "sha256": "c12deb66edd60c4143ab7e37788bf603adbbde7ff3f6e54e739834955c69cb44"
+    },
+    {
+      "path": "demo/design/full-development/evidence/revive-320.png",
+      "bytes": 106500,
+      "sha256": "1483cb4e430e6ee547783669194a02da6749ef286f8ad411020dad1037a1cac5"
+    },
+    {
+      "path": "demo/design/full-development/evidence/session-expired.png",
+      "bytes": 30400,
+      "sha256": "799901f20239c4ddedb66e12ebd7375482b63f6b0b46da0933b4241ccc9e81d1"
+    },
+    {
+      "path": "demo/design/full-development/evidence/session-restored.png",
+      "bytes": 265367,
+      "sha256": "900203bb92f7ad42b602c47223171210145d8235ff0069d962f7f67d7cee1b05"
+    },
+    {
+      "path": "demo/design/full-development/evidence/settings-1024.png",
+      "bytes": 58512,
+      "sha256": "44babcd5a568460dfc844f9cc7eadeef55b24f000bf05e189a41d9a697f5c4fd"
+    },
+    {
+      "path": "demo/design/full-development/evidence/settings-320.png",
+      "bytes": 44978,
+      "sha256": "0d452ab53ad1468799141018689453690593568eec30efd2814864266ef628f1"
+    },
+    {
+      "path": "demo/design/full-development/evidence/settings-375.png",
+      "bytes": 64672,
+      "sha256": "c097778797f5233e358b60a0bd628663808eedbcac26109ef6b2e9c89996ed74"
+    },
+    {
+      "path": "demo/design/full-development/evidence/settings-414.png",
+      "bytes": 75879,
+      "sha256": "803982e758ea2aca991a99479ca324c6f1e04f8e25f3e69e95a9b6b6872f9a61"
+    },
+    {
+      "path": "demo/design/full-development/evidence/settings-430.png",
+      "bytes": 81076,
+      "sha256": "4c500f26decc5dd17ca60e141b4228e7ed7bc73fb83c1a4c19d8c86b7ac51881"
+    },
+    {
+      "path": "demo/design/full-development/evidence/unit-report.json",
+      "bytes": 392,
+      "sha256": "18fdffe17a5269d9412594d63c717887197eb42438316395ef9a1e7e5d34bade"
+    },
+    {
+      "path": "demo/design/full-development/evidence/verified-certificate.svg",
+      "bytes": 1350,
+      "sha256": "9cc99246fd49046aa44bc48d0db79980e465fcb27aa8e968de04572821b9b8ec"
+    },
+    {
+      "path": "demo/design/full-development/evidence/video-playing-320.png",
+      "bytes": 79029,
+      "sha256": "88bc0acda931fbc4fd933a4f52040b0a7ca0790f8d3522065c82b42d5b05667a"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-home.jpg",
+      "bytes": 117794,
+      "sha256": "99a1b6617ead821a5320a6557cb3f7f8fe85e0e1ae4158e8d911d342e061a8cc"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-native-confirm.jpg",
+      "bytes": 50496,
+      "sha256": "a14c0647982fd6b72c49e14a85d02887aab687cd49fd15dde0ffccdab6780894"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-red-map.jpg",
+      "bytes": 126129,
+      "sha256": "07ac96e7b714cc5496bac9aa1fc26ef30c4e0eeac02c0801dd73408370461fa6"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-red-ready.jpg",
+      "bytes": 82883,
+      "sha256": "40afe82c5dbbab970c2a4cbfcbdc190b0b1eede8aed250d8bf9ab0843aedc937"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-report.json",
+      "bytes": 1030,
+      "sha256": "82f4ad625de7cbef78dd7c71a47af46705eb1601e31573db35198dd69217cf83"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-timeout-revive.jpg",
+      "bytes": 78534,
+      "sha256": "a32e12c95e1bbc49c97db193f3ec4366514433a012102594d250d2586dbab423"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/03-native-start.png",
+      "bytes": 890719,
+      "sha256": "fcaf3b0efe9cb06fedf9f1ed6abe2dcd69bf718c0096b4db44237b55715bbc7d"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/04-native-red-map.png",
+      "bytes": 1041920,
+      "sha256": "2d9cb73662ae4cea1a1e5852216896a630c7c118b751025803cd591ed789df78"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/05-native-red-ready.png",
+      "bytes": 434352,
+      "sha256": "ccad72eaaba5ee2cc909597e9f51cf5542cd7748715a059ac7b6be5c49da248a"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/06-native-quiz.png",
+      "bytes": 729349,
+      "sha256": "4b44b1c6866606179dbb8027e2c34eaa222fc1335f0b5366b15379c9c6a99a64"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/07-native-result.png",
+      "bytes": 740876,
+      "sha256": "441887a74af08f0b248d8df18753ed8e35d99378cb58176ef51f7397c74f0a5b"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/candidate.json",
+      "bytes": 7980,
+      "sha256": "66aa040173c2a85d0230f5c84b166549200202668fd769b63a7e1c77996d71d2"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/native-failure.png",
+      "bytes": 740876,
+      "sha256": "441887a74af08f0b248d8df18753ed8e35d99378cb58176ef51f7397c74f0a5b"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/preflight.json",
+      "bytes": 339,
+      "sha256": "46cc5d82043dca6a561b1b67ebde3175399c5c2c4a0c355ef74690d35dff0dd8"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/runtime-report.json",
+      "bytes": 14686,
+      "sha256": "bd7a11e04e7c1f02adfb6cac5da65259279054ca1995d789baf6461dea51c439"
+    },
+    {
+      "path": "demo/design/full-development/evidence/wechat-v030/summary.json",
+      "bytes": 2186,
+      "sha256": "7bd66f9081fc49084856cb45b1f26191a230c05afb25c8854f34b540843d46f0"
+    },
+    {
+      "path": "demo/design/runtime-bundle.js",
+      "bytes": 177460,
+      "sha256": "567647824534812c80911ea9b3468ebcfd9abf752441acf978788943128a5f86"
+    },
+    {
+      "path": "demo/docs/full-development/ADMIN-GUIDE.md",
+      "bytes": 8612,
+      "sha256": "16c33b709145cf98b5dee3a2420433de48fe39518e7e125761bc34a14b6c57d7"
+    },
+    {
+      "path": "demo/docs/full-development/API.md",
+      "bytes": 8329,
+      "sha256": "3919bf39d42991602fd6e74e8a6d932250c45ef734bd4ec8418e4d6981e9cabb"
+    },
+    {
+      "path": "demo/docs/full-development/COMPLETION-AUDIT.md",
+      "bytes": 7665,
+      "sha256": "81ff171fdde91c9e62d62821912cae950cdd950bab9e1a569fe2f8f7287ddeb3"
+    },
+    {
+      "path": "demo/docs/full-development/CONTRACT-1012-GAPS.md",
+      "bytes": 8843,
+      "sha256": "51a2798498fb754e088033733a207e69afe10dbec764d896e09eedbaf75cc29b"
+    },
+    {
+      "path": "demo/docs/full-development/DELIVERY.md",
+      "bytes": 5847,
+      "sha256": "892bffb847e20a3c5fbcf7ec23a254b47c998912a38a01011b4fc585915fa93d"
+    },
+    {
+      "path": "demo/docs/full-development/OPERATIONS.md",
+      "bytes": 5909,
+      "sha256": "0ce7e70a31efc281745501a52784d59b6bedb0540af26187172004f6cc72b180"
+    },
+    {
+      "path": "demo/docs/full-development/QUALITY.md",
+      "bytes": 6321,
+      "sha256": "f74a82a8055aa5e2b05cd460c1be8184266e749f13397f45f858ac6b4d7087f7"
+    },
+    {
+      "path": "demo/docs/full-development/README-before-20261012.md",
+      "bytes": 14929,
+      "sha256": "8906b6dca4f9e732305d59fa242029770a36bf5329f38c104535fccf87930b25"
+    },
+    {
+      "path": "demo/docs/full-development/SOURCE-GDD-v2.md",
+      "bytes": 17910,
+      "sha256": "924372648424dcb7a76224667d6776a8ec0abcee84c4ca83c1145e38c8db1477"
+    },
+    {
+      "path": "demo/game.js",
+      "bytes": 2346,
+      "sha256": "0a3eb9e2caa62bb47a97335cd30e1fc58d9370010694b172f81ea5247f312dd1"
+    },
+    {
+      "path": "demo/game.json",
+      "bytes": 38,
+      "sha256": "adfce90c444cdbf96dc51598471759bca31feb5e936833b36847f3570fd4bca0"
+    },
+    {
+      "path": "demo/images/v2-quality-20261010/map-red-runtime.jpg",
+      "bytes": 581851,
+      "sha256": "fd575e476203b4a2e7086b6f8c7658f8ced4a00479e9106b6e2d1ec58d82c582"
+    },
+    {
+      "path": "demo/images/v2-quality-20261010/theme-red-runtime.png",
+      "bytes": 538291,
+      "sha256": "d7684b500fdad7f9508ee03c7e5246dffa96c74ee5035bc085d0019017c1d704"
+    },
+    {
+      "path": "demo/images/v2-style03/ecology-map.jpg",
+      "bytes": 262756,
+      "sha256": "73f457ae3554dd71d38790625eab236b2db1e7f0def807d3736eb06e2c0ea93b"
+    },
+    {
+      "path": "demo/images/v2-style03/map-culture.jpg",
+      "bytes": 228795,
+      "sha256": "92dc97a1344079d2966538b7c9f9b77e1d0d74672d937afb712bc2f26c0db178"
+    },
+    {
+      "path": "demo/images/v2-style03/map-industry.jpg",
+      "bytes": 235820,
+      "sha256": "7475342e285c078c11a4babc8a8a301fa1bfc402d0ceb4f80f2d130891604bc8"
+    },
+    {
+      "path": "demo/images/v2-style03/theme-culture.png",
+      "bytes": 382544,
+      "sha256": "9c1f19ba367551859a2c40bdd767884a1b7bd490f9dc7ddaf557f8da5ef8ded1"
+    },
+    {
+      "path": "demo/images/v2-style03/theme-ecology.png",
+      "bytes": 314285,
+      "sha256": "5017c03b16ab68cdc49d441066604664350ad00e3fe69212c1a61bf9c93e13a7"
+    },
+    {
+      "path": "demo/images/v2-style03/theme-industry.png",
+      "bytes": 434302,
+      "sha256": "07ddf587a48cc5c89768496ac00c02d63f55fbd4d3cc1159fcc371067ac2990d"
+    },
+    {
+      "path": "demo/images/v2-style03/wetland-observation.jpg",
+      "bytes": 126259,
+      "sha256": "8e400ca7ef5ac5f7a957af18420c177a7f15406def5cdcd85a211d50faf3affc"
+    },
+    {
+      "path": "demo/js/core/challenge.js",
+      "bytes": 2662,
+      "sha256": "e2a1e07d2e80a71a3b16527271d9bb3c074198963e3922d996b61f1bddb735f2"
+    },
+    {
+      "path": "demo/js/core/input.js",
+      "bytes": 1715,
+      "sha256": "83252e59bdf457334bb075274aebf09793f848a72d6ca71881fe93bc01c3c636"
+    },
+    {
+      "path": "demo/js/core/local-content.js",
+      "bytes": 458,
+      "sha256": "b7cd727b0e0bdf4e2c285bc5e2fc53b2edeb5aeff75daa51c4756d1d3b4dfd9a"
+    },
+    {
+      "path": "demo/js/core/question.js",
+      "bytes": 1537,
+      "sha256": "000956c9d5dc0bc309ba10e969fb60301e5d88b774d7e92d01965171ec6f31c8"
+    },
+    {
+      "path": "demo/js/core/router.js",
+      "bytes": 1271,
+      "sha256": "b02bc63efadfb9eb1e4c9ac977f8771e0b38902c6b103f47b7afb433c336eded"
+    },
+    {
+      "path": "demo/js/core/viewport.js",
+      "bytes": 945,
+      "sha256": "0eebd2aabe0ce8abefa35a080c4a618a557dc6edca9041c5e2f2ffe50da246fb"
+    },
+    {
+      "path": "demo/js/data/approved-pools.js",
+      "bytes": 103,
+      "sha256": "dba629554bf94a2db35c7de7cce104c58737fddbdc96229c6135b64a473c0167"
+    },
+    {
+      "path": "demo/js/data/catalog.js",
+      "bytes": 2289,
+      "sha256": "366ff5e5a989ca9bface0b8ab1d368e4f5cbe128f79b08fd09f0f3bd0d739223"
+    },
+    {
+      "path": "demo/js/data/content.js",
+      "bytes": 879,
+      "sha256": "5f11d8ed7afd88397f73601a1f75bfb19548a7926a20dfe83ebc2e651d6cae34"
+    },
+    {
+      "path": "demo/js/data/practice.js",
+      "bytes": 3656,
+      "sha256": "d649ae89c306ae1b9db5af320aee9d48f2ac41999f2a3d2708af7149b78f1d3a"
+    },
+    {
+      "path": "demo/js/data/progress.js",
+      "bytes": 431,
+      "sha256": "e117ba9a24cebc047dea83500446ddeb9328feb8f55e2853fa9d53ae8c462a55"
+    },
+    {
+      "path": "demo/js/data/rules.js",
+      "bytes": 502,
+      "sha256": "76b04401e5c3b3aabf3f3ef5de13c30f6e078617f937a187bb1440af72be6d48"
+    },
+    {
+      "path": "demo/js/data/themes.js",
+      "bytes": 1060,
+      "sha256": "a3096b5f4258deb6d292f7bbb8e08ca1e2d4d5345c2cd8748ae29b4d1b5748e3"
+    },
+    {
+      "path": "demo/js/local-campaign.js",
+      "bytes": 4763,
+      "sha256": "163c3d52d90ef4ddb534b33f4b39bf143c058cc9e2f4c87bf3a0342464de0248"
+    },
+    {
+      "path": "demo/js/main.js",
+      "bytes": 10618,
+      "sha256": "727eec41833a8b7cb6ef97714c36a1cb693d56451575b5cad4e45cc6ff8a664c"
+    },
+    {
+      "path": "demo/js/online-app.js",
+      "bytes": 19996,
+      "sha256": "a6c0bbbffdb837d1dde4c1bfe7680f22f9466d67ecb58e2b4e60eef44c02faf6"
+    },
+    {
+      "path": "demo/js/platform/wechat-media.js",
+      "bytes": 4191,
+      "sha256": "97a7e94cc2f2766176d457dc177d6f8833260c03190fecf7058bc97bca2c021a"
+    },
+    {
+      "path": "demo/js/platform/wechat.js",
+      "bytes": 1105,
+      "sha256": "7760117b5ca6deca493f8333459fce364ad11c03e6a3e9c406b8c3c84a83032c"
+    },
+    {
+      "path": "demo/js/runtime-config.js",
+      "bytes": 188,
+      "sha256": "3d14f536f10d7cc02869d9f250f616d7f3cee872c38e387a5c2c3237aef0d63a"
+    },
+    {
+      "path": "demo/js/services/audio.js",
+      "bytes": 598,
+      "sha256": "6e6da72430785bcf57d6126545f97f943f83c1ac42943d9cfa4839eb94d3c2d5"
+    },
+    {
+      "path": "demo/js/services/backend.js",
+      "bytes": 949,
+      "sha256": "dc466dc63b8ae8b5ae0605e8d387b5ab272a1dd83fbdc106093d6fa1a5098300"
+    },
+    {
+      "path": "demo/js/services/http-client.js",
+      "bytes": 2239,
+      "sha256": "b417f89dc5e54bcc6291d51491f1a66d8f4be446bcd693dc03568d3cee99cb4c"
+    },
+    {
+      "path": "demo/js/services/local-progress.js",
+      "bytes": 11163,
+      "sha256": "f50158ac3773d9abfe73270f574aa96dbe0102ddfbb44331e7c56e85784586aa"
+    },
+    {
+      "path": "demo/js/services/question-media.js",
+      "bytes": 1505,
+      "sha256": "1c3654931d29e5665cf17a57bf3bebb21053bbaa7d0069f589ed8a143815b940"
+    },
+    {
+      "path": "demo/js/services/resources.js",
+      "bytes": 1632,
+      "sha256": "95cabb51d62b2a5172c27cea1bbfac7c5a024206e1892471e06f13ed5a315297"
+    },
+    {
+      "path": "demo/js/services/storage.js",
+      "bytes": 554,
+      "sha256": "2757053b7087a1cdab4db96eae1bc4e429cdc5071621dcc5ec53e0001c867fc3"
+    },
+    {
+      "path": "demo/js/ui/draw.js",
+      "bytes": 3810,
+      "sha256": "5f3f2b4e45d7d7e7893771ebf17a534c8e83de0e2de396bfe872c1bf19a6dd57"
+    },
+    {
+      "path": "demo/js/ui/map-layout.js",
+      "bytes": 5367,
+      "sha256": "cf49af85ee9344b9e0a1c407a8d900a77c53f918b34d47c1f2fd24e017c8a73c"
+    },
+    {
+      "path": "demo/js/ui/online-renderer.js",
+      "bytes": 54561,
+      "sha256": "17c9414570a07a8cef4cfe707d0863654bc77035d5dfb49499fff47fa617495f"
+    },
+    {
+      "path": "demo/js/ui/renderer.js",
+      "bytes": 32795,
+      "sha256": "bfb12ff8cf4b597726138ee10f9c5dc1b456da2340d12c6c6e15f25299a7e1e6"
+    },
+    {
+      "path": "demo/js/ui/tokens.js",
+      "bytes": 384,
+      "sha256": "92af2e1cc35fef7f0ace1661a83768af42e80da833931a9c030cc9dadffc179d"
+    },
+    {
+      "path": "demo/media/observation.mp4",
+      "bytes": 326470,
+      "sha256": "46692cac5a089ef47f390fad22f0efe54de3d63a8619267a9f44961bb2cb66d3"
+    },
+    {
+      "path": "demo/package.json",
+      "bytes": 937,
+      "sha256": "a5f387095e4d756a3637b7d82d316af162444caa7cb9e3939de75ecd39543864"
+    },
+    {
+      "path": "demo/project.config.json",
+      "bytes": 2722,
+      "sha256": "abfe9228e38826dfedd7bf01c1b53b33bce676404e282f56262940421564473f"
+    },
+    {
+      "path": "demo/scripts/build-preview.cjs",
+      "bytes": 1499,
+      "sha256": "8f67e1d2c074d4170c9e309b6952d74c7de1b04bd470d0ca80580640a9ae902c"
+    },
+    {
+      "path": "demo/scripts/check-day2-contrast.cjs",
+      "bytes": 1509,
+      "sha256": "bdcc4da5e1f2700b17111fb789cdcf0acf72e579db39f5f3b4425a77c8ba4f6a"
+    },
+    {
+      "path": "demo/scripts/check-day4-edge.cjs",
+      "bytes": 2798,
+      "sha256": "217e75d0808ce3ba633ef79dbe3a89b8967b78cc49012d8b85aca0f6ea166724"
+    },
+    {
+      "path": "demo/scripts/check-day4-quality-edges.cjs",
+      "bytes": 6794,
+      "sha256": "7411b28e1fd765eb8cc4dc33dfbe1fedcce3e1d382ca2989876c3ce9166f9e64"
+    },
+    {
+      "path": "demo/scripts/create-observation-video.swift",
+      "bytes": 4082,
+      "sha256": "a7f1713ecf2bb06ef17513fda6ba184d861d933fd6a76eab2fd4089c7ab465be"
+    },
+    {
+      "path": "demo/scripts/import-question-bank.cjs",
+      "bytes": 3320,
+      "sha256": "a7b12baab76b5bc776e9af67f137f411de6943edef27311709dcb23491a0d961"
+    },
+    {
+      "path": "demo/scripts/lib/question-pools.cjs",
+      "bytes": 1121,
+      "sha256": "5f16ba95e2abbdd28d9c2316907daa5771e93a9387edd51bfaf80539a31d9582"
+    },
+    {
+      "path": "demo/scripts/lib/question-workbook.py",
+      "bytes": 8717,
+      "sha256": "a43287960a097cf0917f2acaf9f7eafdac46125ce3a02da3bc9e78d15095fcf6"
+    },
+    {
+      "path": "demo/scripts/lib/runtime-evidence.cjs",
+      "bytes": 1271,
+      "sha256": "d47e848bd96dafd0722a81bb3ba0878ec3982fe3673b669b335d2927fed07e38"
+    },
+    {
+      "path": "demo/scripts/maintain-data.cjs",
+      "bytes": 1048,
+      "sha256": "1d4675dff48f57aacc219870b1129bde3d56b45c8fe4e1b2ec6f1252f328a611"
+    },
+    {
+      "path": "demo/scripts/package-delivery.py",
+      "bytes": 4996,
+      "sha256": "d7fbdc05a08686a137ffc441aac7fb0115ce098ee93971670218af18102adb9f"
+    },
+    {
+      "path": "demo/scripts/playtest-content.cjs",
+      "bytes": 7115,
+      "sha256": "ea335f0854b2cfdc2ec5006eadf16b8dc9b9e9b696c32138e6190bd5f425898a"
+    },
+    {
+      "path": "demo/scripts/playtest-day2.cjs",
+      "bytes": 19672,
+      "sha256": "742ea4e6896f3443abf48c29f9efc3a95eeffb69d1a803eaa55db3fefcaa991a"
+    },
+    {
+      "path": "demo/scripts/playtest-day3.cjs",
+      "bytes": 10687,
+      "sha256": "dd50a1ff5cb6f1472b175777c8e78ca07c8c1920864b43468eaeb914931b02f5"
+    },
+    {
+      "path": "demo/scripts/playtest-day4-quality.cjs",
+      "bytes": 12624,
+      "sha256": "60c2f44b7944b710d69a3af2d0d7bf4a792a9510a2a567f1c467943a16c84312"
+    },
+    {
+      "path": "demo/scripts/playtest-day4.cjs",
+      "bytes": 6619,
+      "sha256": "9e0992f98a10b8019dbf9bcbd38e12f1412510bc73e6af9d2fd1e427be01e2ea"
+    },
+    {
+      "path": "demo/scripts/playtest-quality-keyboard.cjs",
+      "bytes": 2218,
+      "sha256": "5f5310f70d941e52abff9aab5fb8379dc51419f78574acd3463eac4d5a4918c2"
+    },
+    {
+      "path": "demo/scripts/playtest-quality.cjs",
+      "bytes": 6327,
+      "sha256": "a53dcf40ccaf7a77c707a3c2de06c124ecb33e7c7976c9d556fb4ba210fc0620"
+    },
+    {
+      "path": "demo/scripts/playtest-v2-media.cjs",
+      "bytes": 2213,
+      "sha256": "6aaed00cdcb43c2d1e72e6bd0e860f8ed8981352012de8c26c9f181acb0e5b1f"
+    },
+    {
+      "path": "demo/scripts/playtest-v2.cjs",
+      "bytes": 4915,
+      "sha256": "542a60eacb9e2589179ec5215882679f5b46029078aaee094452b27f0fb4fb7b"
+    },
+    {
+      "path": "demo/scripts/render-design.cjs",
+      "bytes": 4163,
+      "sha256": "c0b306b3efa88590b21c6549c85adbd498fa4c37e259234cfbaecd71a7377c5b"
+    },
+    {
+      "path": "demo/scripts/verify-backup-recovery.cjs",
+      "bytes": 4235,
+      "sha256": "91fd576928316eca6514356f7fbf5f518b9513a60b8d1a5597f161feffbd7946"
+    },
+    {
+      "path": "demo/scripts/verify-concurrency.cjs",
+      "bytes": 4255,
+      "sha256": "9046de3641b178b93a9d4561052d974c61e00ca734faa52f36d4b9ceb9383062"
+    },
+    {
+      "path": "demo/scripts/verify-dynamic-game.cjs",
+      "bytes": 12186,
+      "sha256": "533002b8e20f078b412002a5d8af189210a5fe5e266c256a58ba708362e83abd"
+    },
+    {
+      "path": "demo/scripts/verify-full-game.cjs",
+      "bytes": 20643,
+      "sha256": "987976af79dd4c994fa92bd5ec3cf381dac41b8b447b9bcb8a8a8d39757d89d2"
+    },
+    {
+      "path": "demo/scripts/verify-game-media.cjs",
+      "bytes": 4848,
+      "sha256": "c6da7d0c6cc64cb59a9214d7601b21292be850c20602d61822577be66eb00ab3"
+    },
+    {
+      "path": "demo/scripts/verify-tests.cjs",
+      "bytes": 1211,
+      "sha256": "16233ccd7462833ef04acfef6adf6088575690d1912b1b4ca945e2a29b08e766"
+    },
+    {
+      "path": "demo/scripts/verify-wechat-runtime.cjs",
+      "bytes": 9798,
+      "sha256": "40cc0da9513aaedf27ce19eda5028da3090637b5c1ab7d397347aa4011b65547"
+    },
+    {
+      "path": "demo/server/application.cjs",
+      "bytes": 54509,
+      "sha256": "a2bb508dc174d0c079a316ede1b3bf263ac8e62069ce1adafb6d25ebb1c215e4"
+    },
+    {
+      "path": "demo/server/catalog-config.cjs",
+      "bytes": 10452,
+      "sha256": "56c4ed996d068cc8aac6db7a14003c8a0029c3d9ca853a2fa3c4dd58e656f1db"
+    },
+    {
+      "path": "demo/server/content-media.cjs",
+      "bytes": 1274,
+      "sha256": "1f2bc73bd0b64823fe636ebeb119aba31f1786b8154ebf0c87b4e080c8c04449"
+    },
+    {
+      "path": "demo/server/maintenance.cjs",
+      "bytes": 3198,
+      "sha256": "2325cfd9e774e37977ded2f0f3500d000ef54201b431f6e5c1a8a121977f8c27"
+    },
+    {
+      "path": "demo/server/start.cjs",
+      "bytes": 4507,
+      "sha256": "eee70af45ec41f77599fcf3d25f29df69cd411299fa7c16929f23290fcc19747"
+    },
+    {
+      "path": "demo/server/store.cjs",
+      "bytes": 2370,
+      "sha256": "ebe81ee4ec7e1a07683aed2416bae2fd93500a2a05be292a77f3b09bb12848d7"
+    },
+    {
+      "path": "demo/tests/catalog.test.cjs",
+      "bytes": 1968,
+      "sha256": "ef3dd38a28dd660c04a8f52f34f038299897098c39a1d56fe45e5cd3c257d909"
+    },
+    {
+      "path": "demo/tests/challenge.test.cjs",
+      "bytes": 3721,
+      "sha256": "fd424ea2428812252b7e0d8b4cd9bfe93e779f608b15ba3bdf36bf3d6b729b4e"
+    },
+    {
+      "path": "demo/tests/content-import.test.cjs",
+      "bytes": 2513,
+      "sha256": "e0a4a5bbc38b4e2fd79d31ae3c3f3fcc6fb11c4169ef579628eeb257828b0667"
+    },
+    {
+      "path": "demo/tests/day2-layout.test.cjs",
+      "bytes": 8803,
+      "sha256": "b6c5db4d708fb6fe1cf896079a5fc8494a7ae0b1be44e469e1af94c44cfbe86c"
+    },
+    {
+      "path": "demo/tests/day2.test.cjs",
+      "bytes": 13880,
+      "sha256": "ccea52ab0df378a3bf31b160c520f3162f45ebcaea83e49cf32d0a43d064ae13"
+    },
+    {
+      "path": "demo/tests/day3-question.test.cjs",
+      "bytes": 4654,
+      "sha256": "bc932b0cac437bd8017e3a88f7c683144f34da36d85811b8098edfef3cbae368"
+    },
+    {
+      "path": "demo/tests/day4-local.test.cjs",
+      "bytes": 10614,
+      "sha256": "c8d1720ff4704d7f6acbcad0212de7d6247dce4592c490724d99e5d37e0ecaa4"
+    },
+    {
+      "path": "demo/tests/framework.test.cjs",
+      "bytes": 6344,
+      "sha256": "b265e89d30c43f3edb5912c657dcd38c41259e3bd1429d8726628fa392c5027a"
+    },
+    {
+      "path": "demo/tests/maintenance.test.cjs",
+      "bytes": 2861,
+      "sha256": "0bea5bf1d6e64fa81a12cc08b8123376ca360258078bf7c83c021c99bd52be81"
+    },
+    {
+      "path": "demo/tests/map-drag.test.cjs",
+      "bytes": 2391,
+      "sha256": "979330156fa17800eada1a09bdc038b38347d2b221af7c4d755621eb7c912842"
+    },
+    {
+      "path": "demo/tests/online-app.test.cjs",
+      "bytes": 6021,
+      "sha256": "3d46a806a5ce347adedfaa56910dee123338a7bb9c1cd4b71f32a3f97539a521"
+    },
+    {
+      "path": "demo/tests/online-renderer.test.cjs",
+      "bytes": 25469,
+      "sha256": "318ad57d1f688f78a20b3d896465a41249625f699c761ab88a168ed5e75d8b40"
+    },
+    {
+      "path": "demo/tests/quality-exit.test.cjs",
+      "bytes": 1852,
+      "sha256": "73eec213020d0fac04bd58e758c737870435da85669e2675790775b6d6673c74"
+    },
+    {
+      "path": "demo/tests/ready-landmark.test.cjs",
+      "bytes": 2745,
+      "sha256": "a95b584bdde19c2d5b16b63c4db3e97759b5265e6bf971ff61ce23d51845ebe4"
+    },
+    {
+      "path": "demo/tests/route-toast.test.cjs",
+      "bytes": 1553,
+      "sha256": "a57c68597f23a9e1f271c00b835ece66cf6986904af35fdc3e82b693f5b60726"
+    },
+    {
+      "path": "demo/tests/server-dynamic.test.cjs",
+      "bytes": 21479,
+      "sha256": "55ab5ad3de34398ab0cdd0cf32ead9cabd45804102753db1e95454bcc219a454"
+    },
+    {
+      "path": "demo/tests/server.test.cjs",
+      "bytes": 24077,
+      "sha256": "035b06beeab9967f48ee9a9d08bf1a1fa4a87f83a2117ec91113b9bbd000eb17"
+    },
+    {
+      "path": "demo/tests/v2-scroll.test.cjs",
+      "bytes": 904,
+      "sha256": "89f9ec0c8645d8449d8c46884edfbed3a3a67a499feecf6d50e4f77d50a0d7f9"
+    },
+    {
+      "path": "demo/tests/wechat-media.test.cjs",
+      "bytes": 3481,
+      "sha256": "4255d5ab937f753eb63251e2c9bcffd2d147fa3a146a7c1df22e6fc1747bfaa2"
+    },
+    {
+      "path": "demo/web/admin.css",
+      "bytes": 27293,
+      "sha256": "8c92e302c079343ecb0b831173cd0104d67a5c97d7b88adeeacdc8f64a0d32bf"
+    },
+    {
+      "path": "demo/web/admin.html",
+      "bytes": 24640,
+      "sha256": "95bb941d27453df4a6d2e9bd3c7b091fb9070026598e0baa0baf3b18c96e1f7b"
+    },
+    {
+      "path": "demo/web/admin.js",
+      "bytes": 45861,
+      "sha256": "a993c2ee5f31ee282420f30c4809c0ab148aa56cc4026b193af44c9c216a0bd1"
+    },
+    {
+      "path": "demo/web/play.css",
+      "bytes": 3567,
+      "sha256": "48750278aea2d18a10287b162a9b09010b2a83a09f85e5176f9a0894f36ff65c"
+    },
+    {
+      "path": "demo/web/play.html",
+      "bytes": 3196,
+      "sha256": "9ab3f950e014792e55547ecc36f581e6d5eb90a2b24aaabaf7296843e028aa8a"
+    },
+    {
+      "path": "demo/web/play.js",
+      "bytes": 14142,
+      "sha256": "ccf00a5693903aa4bff635a026a1c1ee0bef726cfa5f0cdc30a029a871ba2968"
+    },
+    {
+      "path": "quiz-admin/.gitignore",
+      "bytes": 31,
+      "sha256": "dcd950aaca733cad4372d29c3314faff65b4c51103e24df518ce00aebf2e522e"
+    },
+    {
+      "path": "quiz-admin/README.md",
+      "bytes": 4061,
+      "sha256": "62771319a69ea3055806a75fc1fec82a24fb6207a43ad28e25b3c6e5c550fb02"
+    },
+    {
+      "path": "quiz-admin/examples/levels.csv",
+      "bytes": 1148,
+      "sha256": "a910fbec9b0093fc9d2e31ee7693a2a87310356629039e5ff989621e37e48cfa"
+    },
+    {
+      "path": "quiz-admin/examples/questions.csv",
+      "bytes": 81638,
+      "sha256": "ae155fcffbdbb9ec5d93b6c2119dabf71205b86a4caa8b0b431be3c83edec7ef"
+    },
+    {
+      "path": "quiz-admin/index.html",
+      "bytes": 274,
+      "sha256": "cbcea3569393423994fc3d86c32ff469cf2c6a580582a4b06fe0aca594d46d4a"
+    },
+    {
+      "path": "quiz-admin/package-lock.json",
+      "bytes": 52778,
+      "sha256": "f8e511f913e6ee0d51ed26ff05f3865856be8fddb6cbe3be6244fe9ff8e97b49"
+    },
+    {
+      "path": "quiz-admin/package.json",
+      "bytes": 376,
+      "sha256": "6cdb2410cf7c83a99ec4c25eecc18ee6e0ee0947512d6ad7a0b4e91ea17f1742"
+    },
+    {
+      "path": "quiz-admin/src/App.vue",
+      "bytes": 13909,
+      "sha256": "180095e526b51946a65b12685fa22e5385a319aadacddb39a2e4dc2acd768ee7"
+    },
+    {
+      "path": "quiz-admin/src/api/index.js",
+      "bytes": 3988,
+      "sha256": "d48e4d41413ff680b266911e2fbdb90ff113d6806755c21b9936610a60958d7e"
+    },
+    {
+      "path": "quiz-admin/src/data/questions.json",
+      "bytes": 130226,
+      "sha256": "437e038f273ff3351ac956fba68ff42abe321effb6cceb1f1d0aff8e9b5ca51f"
+    },
+    {
+      "path": "quiz-admin/src/data/seed.js",
+      "bytes": 775,
+      "sha256": "6618c9c09ca9feec17556b4cdad741670cd8b60d20dd7a28d356ba8b0650c3c5"
+    },
+    {
+      "path": "quiz-admin/src/main.js",
+      "bytes": 275,
+      "sha256": "5dbe88df8c092d43f81c03a6cb4850e740670d6a0ca68302fcdecb94550a88f3"
+    },
+    {
+      "path": "quiz-admin/src/style.css",
+      "bytes": 4298,
+      "sha256": "80be6f8cc478a5ce024076ac2fb238e5277ce2c5fc58938f0f90cc85895e51b2"
+    },
+    {
+      "path": "quiz-admin/src/utils/csv.js",
+      "bytes": 2109,
+      "sha256": "584b28ad826c9821df0505cf7556ee5bc8a64aca5bfc8d7af71fe6b87e4c2f63"
+    },
+    {
+      "path": "quiz-admin/tests/data.test.js",
+      "bytes": 2632,
+      "sha256": "014914b2d9d44474e91b058773ad457b9b69a037ebbaa7d9e763851842381922"
+    },
+    {
+      "path": "quiz-admin/verification/browser-check.mjs",
+      "bytes": 3208,
+      "sha256": "4e878079470233887401c22e10c77bddb8dec776f0147fda6188521d71d57259"
+    },
+    {
+      "path": "quiz-admin/verification/exported-questions.csv",
+      "bytes": 905,
+      "sha256": "0a05e8b9b4d44fc6c8e0ecba9b1e25155bcb123b14ed61a81d5d094fca269fa8"
+    },
+    {
+      "path": "quiz-admin/verification/home.png",
+      "bytes": 100673,
+      "sha256": "faad4e42ee77aef3fff70207e614b0aaba62ac17464981bb672400c961bcc20b"
+    },
+    {
+      "path": "quiz-admin/verification/levels.png",
+      "bytes": 152643,
+      "sha256": "c4db3d405d14a16c5237d3432ae1295b5e6d489b011a22aef150732249d57177"
+    },
+    {
+      "path": "quiz-admin/verification/mobile.png",
+      "bytes": 63160,
+      "sha256": "9aa9808bf2c62f31cfe5adf16217cae41993170fb32274d2ffdca7500a22099e"
+    },
+    {
+      "path": "quiz-admin/verification/验收记录.md",
+      "bytes": 950,
+      "sha256": "0a5bdbb0c8c8f8679d4a3915882d01f6a6fd8624b6e55e41e300c52ba0b9995e"
+    },
+    {
+      "path": "quiz-admin/vite.config.js",
+      "bytes": 198,
+      "sha256": "997e685ec5392c2aa37142e1ef6b5919776177ec29ffc3de9c799426a51e0122"
+    },
+    {
+      "path": "rural-culture-miniprogram/README.md",
+      "bytes": 4457,
+      "sha256": "6bf1eebcb76963dbb51f2b468f1be1c8693f06603578a24d4739cd74e14c6cbe"
+    },
+    {
+      "path": "rural-culture-miniprogram/art-assets/ecology.png",
+      "bytes": 3994877,
+      "sha256": "8577b551a776989ad6a5a133facd50eb6eff2645bf20fc634e4640488a8f3578"
+    },
+    {
+      "path": "rural-culture-miniprogram/art-assets/history.png",
+      "bytes": 3720412,
+      "sha256": "cb31441eec1526cfa269bd51e5ded760c9d05292c571fbf3a41351009967a13f"
+    },
+    {
+      "path": "rural-culture-miniprogram/art-assets/industry.png",
+      "bytes": 3851353,
+      "sha256": "f22b386795bebaec7539b64897f3546c3ac3a5e6bac3009a384dc455cd2e7395"
+    },
+    {
+      "path": "rural-culture-miniprogram/art-assets/landscape.png",
+      "bytes": 3755792,
+      "sha256": "92a2686ed88010213152488c6638e81f3f1f41df27dda7a57c9e3476cc502d29"
+    },
+    {
+      "path": "rural-culture-miniprogram/art-assets/red.png",
+      "bytes": 3814967,
+      "sha256": "bbb64253d27faa9c40986daf99540266a4efa2d3bc41eea8d7aba56268b65cc4"
+    },
+    {
+      "path": "rural-culture-miniprogram/delivery-manifest.json",
+      "bytes": 33188,
+      "sha256": "4ed4362a98ae2295aafa082251eabd93e7808ba2a254aeaa208b9bc36221fea8"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/UI设计方案.md",
+      "bytes": 4362,
+      "sha256": "190c4b13c9032a40b2faedaa216da3531c45d1ef033f9020bcc5e25ffe729366"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/V2插画提示词.json",
+      "bytes": 6087,
+      "sha256": "c8c4dbd249daba6b02b73d7bb58b961495fa13f41fcb23f30ab28eb670a4d200"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/V2视觉重设计.md",
+      "bytes": 1696,
+      "sha256": "1c4654b5b93b2d50b8f1023304a5eb9033d79688464069a2f99439a0acd7f9b0"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/V2验证记录.md",
+      "bytes": 1030,
+      "sha256": "2a41690414ce8e2a7385ec9fd6f9e553704587c00cf44c51aa354b5b6a29cecc"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/后端接口契约.md",
+      "bytes": 2652,
+      "sha256": "f7054daeae60d720c37415be595eb70935f50aaf083c662598833f28b68ade11"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/验证记录.md",
+      "bytes": 3100,
+      "sha256": "ea45a848fa2caf2eb39b52f6b5ad0a31a23083750860403b656d73c8a719d33e"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/app.js",
+      "bytes": 69,
+      "sha256": "4daa564a89d9f092448d7ff565ca8ff7a4493f52860dceda9eb8ebfaf63bd39a"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/app.json",
+      "bytes": 514,
+      "sha256": "ec52eee1b682d5ef6ccb2c6be661f1f338ebbfb57ed37cbafe9dc7e0781d5fb6"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/app.wxss",
+      "bytes": 3758,
+      "sha256": "557b7811c563d4e8fca456cfec8cf2009b933471504a606d8f37a4e4c4aace43"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/assets/v2/ecology.jpg",
+      "bytes": 310491,
+      "sha256": "d71435b35cd5b82ec58428b50b988708bb9a7f29f5696a465139f3d2f18daec2"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/assets/v2/history.jpg",
+      "bytes": 303016,
+      "sha256": "621defc7e0663b1aa60b836a53dffb4c329dc11fe201b16c235f7638c839f6a9"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/assets/v2/industry.jpg",
+      "bytes": 316818,
+      "sha256": "57cd2924d46e7885934c36996c907a8ba954cf8464a038a7aaa39d11f56cce66"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/assets/v2/landscape.jpg",
+      "bytes": 296939,
+      "sha256": "9b23583c250d6f11e2e9852f90d337cefd3debf4102771233d0e5d10398f35b5"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/assets/v2/red.jpg",
+      "bytes": 318333,
+      "sha256": "6bf5775e454e6ae5e9ae6767cd5546254e09286619ac7bd3eaca9689dcbabc1c"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/page-state/index.js",
+      "bytes": 226,
+      "sha256": "7e816d507bafbb1e131e774fd5c65979aa37d2c255f0c3eb729dc708dabc486e"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/page-state/index.json",
+      "bytes": 19,
+      "sha256": "6bcc2e9e536384851fcfbdd823aee8ae4331243636adc4a656a64a44d9cf9318"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/page-state/index.wxml",
+      "bytes": 406,
+      "sha256": "2a1bf2f88ec06d817b9ef5adf106a3ad7338ce00c76b2e27ebdd5855bdce1a0f"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/page-state/index.wxss",
+      "bytes": 511,
+      "sha256": "8e0072e7d88b8759491c03e2f73f38636006e580ed68733a7680b6a87ef44132"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/study-progress/index.js",
+      "bytes": 104,
+      "sha256": "bd909b81ec0de6db4899769592fb606f3c96b0bba5ea1a60b3bec6197cde4af6"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/study-progress/index.json",
+      "bytes": 19,
+      "sha256": "6bcc2e9e536384851fcfbdd823aee8ae4331243636adc4a656a64a44d9cf9318"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/study-progress/index.wxml",
+      "bytes": 164,
+      "sha256": "dab8522821073e21f66feca761774c06a9035ff33f57d9c7f17ee18c47e60c98"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/study-progress/index.wxss",
+      "bytes": 242,
+      "sha256": "76a176a000e2316502ca09278346122e967df115729913f763bcca32b5e95583"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/ui-button/index.js",
+      "bytes": 222,
+      "sha256": "900436606cc9b800c378691bcbb19218d9648aedbbc531a123c8decc2a758b0e"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/ui-button/index.json",
+      "bytes": 19,
+      "sha256": "6bcc2e9e536384851fcfbdd823aee8ae4331243636adc4a656a64a44d9cf9318"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/ui-button/index.wxml",
+      "bytes": 141,
+      "sha256": "ac21261f19fcd7905b2b5f51ed75a6e84db977860be9445e96308fedd6e3b6c8"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/components/ui-button/index.wxss",
+      "bytes": 1060,
+      "sha256": "20f17e2898a55760be24630d78926e11ac13a48a0366c50f404856324d28bc3c"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/certificate/index.js",
+      "bytes": 3421,
+      "sha256": "efd156650c313bfdf5a5b757f7a76af265d37055d268eaa07c97abd0a2b77405"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/certificate/index.json",
+      "bytes": 229,
+      "sha256": "de68acc22662063b65145052f31d3d7b97adea5bcb1821dcb2672fcee7a7fe70"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/certificate/index.wxml",
+      "bytes": 2424,
+      "sha256": "b3880e368fe61eb3963dbb37d1f29febf1482ed154bca371b60816f3d6325e4b"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/certificate/index.wxss",
+      "bytes": 2124,
+      "sha256": "21ecc353e2e807906a327665a787fab4288d04e846305165a7c9b1a040669497"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/chapters/index.js",
+      "bytes": 742,
+      "sha256": "4b5cace0b7c808159b510b32c5bfbd842c4007fa536891f21ad03dace4ccb1a5"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/chapters/index.json",
+      "bytes": 229,
+      "sha256": "5b75fbdff592433b2a7c2bccb60ec2e62171690aa36e8b6de8d00d4603f0690b"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/chapters/index.wxml",
+      "bytes": 2207,
+      "sha256": "4f66c4256b6929dc201dc9b18255370c99ae29197d2ed2a9b700c5808871997b"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/chapters/index.wxss",
+      "bytes": 1754,
+      "sha256": "1b6114a1ebae903f78f08baecfc704f142a4b28973aa2c02b348ea5e37ad5053"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/home/index.js",
+      "bytes": 428,
+      "sha256": "953c7ecc26a0f4d863c55fbe535e056f6b1046290cecf0454375a44287607fa8"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/home/index.json",
+      "bytes": 229,
+      "sha256": "7b9bfc6763dd9fbd477790c1bfa359f59a8a53e1701cb761eb9bab3f527e8516"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/home/index.wxml",
+      "bytes": 2185,
+      "sha256": "176179882324fefa3aa61a7dab22a9be70cefe9ff2785fcd60f2f317bdb71448"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/home/index.wxss",
+      "bytes": 1996,
+      "sha256": "03a526f6c24aec502d734ba6a0b109cef6260de2bf4665d6c34c1fc61d26d0c0"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/progress/index.js",
+      "bytes": 533,
+      "sha256": "24dd602f1b8e26719c42f627d7dc09e2e81ee4db1dde9e3aaf387df611fb7703"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/progress/index.json",
+      "bytes": 229,
+      "sha256": "f1091cddea928e05ce701fa8c703c42f0e0b8afd7ac0e5a2c3c00110457b1b46"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/progress/index.wxml",
+      "bytes": 2125,
+      "sha256": "758961a43b18c4ee5fde919d5a6264f1a017e32cda78e1cfa951670c2ae8811f"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/progress/index.wxss",
+      "bytes": 408,
+      "sha256": "447211319519b647f395f09da39f082c5e6037803492559bb67fcebc82a95d45"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/quiz/index.js",
+      "bytes": 3828,
+      "sha256": "e46c15aa5ed54bd52b0c961c2807ef01580376045ce653b920aa310945e7b6d8"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/quiz/index.json",
+      "bytes": 229,
+      "sha256": "47d8c28630f07422db6289836781020c7c5a1b8c5652471b57c6b4623f87df4e"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/quiz/index.wxml",
+      "bytes": 4061,
+      "sha256": "20f14354cfece48fe1805bc21144703bf5cd8e6447c3d2852ba44ab34e85b253"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/quiz/index.wxss",
+      "bytes": 4152,
+      "sha256": "cf6fdeca82bcbaeac2f3539f490cdcd28e2c16d01c8a2d8addfb2b9b8633c668"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/ranking/index.js",
+      "bytes": 448,
+      "sha256": "8c2bd4684e4369a62579089f8eef1e380ec4e872228fb120a4fc6c388715b5ad"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/ranking/index.json",
+      "bytes": 232,
+      "sha256": "44ce46d5e27fad8d3dd4016f0669d2cd331af677ac6d232d9f97b2d8efa1d79e"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/ranking/index.wxml",
+      "bytes": 1850,
+      "sha256": "cf8fc70492879d29f4ae36e515a95a4c2d1127b17d0dfc50f8ee354d48b05d68"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/ranking/index.wxss",
+      "bytes": 1377,
+      "sha256": "10b53a97cf2678220b9f826617dcd235b8f5051c0b6deb965161062dbbed50eb"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/result/index.js",
+      "bytes": 564,
+      "sha256": "29241f5db55f780387e3da2202979d6e6a183eee46da17d18d47ca5098bb2a29"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/result/index.json",
+      "bytes": 229,
+      "sha256": "cbf38c9b5912a56ecc949c0095977bcab6df2cbeed34330d36afdd62dfcc275b"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/result/index.wxml",
+      "bytes": 1894,
+      "sha256": "018db5afe84015559162954cafc1bb58e5fec4a465f415742b4080483f4f708b"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/result/index.wxss",
+      "bytes": 1140,
+      "sha256": "79c1232d1ce168fa91453b43416b215acea8d09e37719204d9d2748dbd180652"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/themes/index.js",
+      "bytes": 323,
+      "sha256": "0a02841e5f476da014c5369799bed3924d2b4d8dd05b0b574279683cc27adc41"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/themes/index.json",
+      "bytes": 229,
+      "sha256": "2286d0940863ad92eb4a96de41ffd4fa8a4e61c36c95f7da20b13b3db62f13a1"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/themes/index.wxml",
+      "bytes": 1486,
+      "sha256": "e0cf21b38f291e7536f106167118b0e62e5f9edba883c7447ad8b56bc9e910a2"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/themes/index.wxss",
+      "bytes": 1296,
+      "sha256": "aea56179d6dc28149c1e6cad4b2dace488e3e4eb6cd37ea1e990fb9e24d73ddc"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services/config.js",
+      "bytes": 269,
+      "sha256": "aaf4a9966839ef172ccb35757bd71897b0ac70968c7c85e3ca7adabdecadff90"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services/index.js",
+      "bytes": 411,
+      "sha256": "a45f342d1b303c266945c68a1362a859fc72cf85db16bb98af6a419646de7776"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services/mock-server/bank.js",
+      "bytes": 12321,
+      "sha256": "3fefe31fd372c3ef9e71063437e70d97e8260fd3db09a554eb3809da283ea41f"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services/mock-server/catalog.js",
+      "bytes": 1364,
+      "sha256": "e213b5e41d002652675111ad66ecc83739f7f538e634d3d548c68eda45f8c047"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services/mock-server/index.js",
+      "bytes": 8187,
+      "sha256": "e670e3cbb421af72cd1daa91e500a15bc1c2dae26391cb714cea8b6303e17f32"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services/remote.js",
+      "bytes": 1214,
+      "sha256": "74cb90834ca549c96031ad27701a154d582d912246b7fc3009c2fff4b278ccc5"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/sitemap.json",
+      "bytes": 71,
+      "sha256": "12b6f0d57ed0b398f31b71a07e5c8abbf3d07a24d4853d67321a83a9346b25e8"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/utils/page.js",
+      "bytes": 690,
+      "sha256": "c33362b33205d0ee556291a4f459ca1ce60fa59552594696e4402b11b4ec635d"
+    },
+    {
+      "path": "rural-culture-miniprogram/package.json",
+      "bytes": 297,
+      "sha256": "3092826f5544eb210465bebec26200ce6d3d0b176872b91d9ff295858cbb3fac"
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/index.html",
+      "bytes": 1354,
+      "sha256": "9ff39486a0a71d66f2f53f1227ee3ecea6304e2dfd3a44b3078c67c83d73a500"
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/runtime.js",
+      "bytes": 9696,
+      "sha256": "abc5c2db93c6325141b76a7eed8ebd73b3b0d1a93d4c7bf0b9bdeeba121c3f08"
+    },
+    {
+      "path": "rural-culture-miniprogram/project.config.json",
+      "bytes": 345,
+      "sha256": "181b2c9410c6133147ad1f7af1839992ccd5a49da237d1462e57851a56c6f856"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/browser-checks.json",
+      "bytes": 1009,
+      "sha256": "45768b68ceae7b43623051646d76448bc33cd32f1e72bc906f9f27c56fbdeb18"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/certificate-390.png",
+      "bytes": 155325,
+      "sha256": "e91942ab8613fc4540887841e282c74d79b6f1717615c247b02b0acac034a95f"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/certificate-all-390.png",
+      "bytes": 145902,
+      "sha256": "c618b3946c83d1da1536217982a651b8e0da36e2fa7132927629ef36d4f9180b"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/certificate-empty-390.png",
+      "bytes": 42067,
+      "sha256": "729c1ccc15042013da8ab90c5aa9f85558c2c5841311df06cab3369dcd4f8761"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/certificate-export.png",
+      "bytes": 103344,
+      "sha256": "d00ad712bf529d27d1fd44c88b43c4acd90e53c7174ac5a5b5d51bb4618dcf89"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/compile-checks.txt",
+      "bytes": 98,
+      "sha256": "31a2440b8f1561b1d46e4fd9296dc24110dc20c166a15c0820b92ec000712f60"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/compile-v2.txt",
+      "bytes": 98,
+      "sha256": "31a2440b8f1561b1d46e4fd9296dc24110dc20c166a15c0820b92ec000712f60"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/core-home-390.png",
+      "bytes": 90265,
+      "sha256": "2850d315a2c303954ba15291be6f37faae35476b54a4b1c9a4f8640c7cde330b"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/core-quiz-390.png",
+      "bytes": 55445,
+      "sha256": "d97f4d73ae2456476d6584c02bfc68b8f7926df62c12d9ce6ed33600fc36c696"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/core-themes-390.png",
+      "bytes": 132477,
+      "sha256": "ac21607caca7a0db6d720f8234f85883ad9e5462d9eb071dea63121f5355cba5"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/daily-lock-390.png",
+      "bytes": 51842,
+      "sha256": "2ce7e96830cf9a5568b4e8ea1805627ece843577322b6a963cfeb87e3ea3efba"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-certificate.png",
+      "bytes": 43029,
+      "sha256": "d553fee6bca89406f883db9821b4cb2f8cebc0b8e73782e9a88204a1339e569d"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-chapters.png",
+      "bytes": 53105,
+      "sha256": "37f707a7cf5524e1e74f35569952703a1beb6486fac4e6c53351915dddfe1a8c"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-home.png",
+      "bytes": 56625,
+      "sha256": "c9b4596e5948c7503405075be763f57e1b5c1cd7bbc5e7abdc584f3cdba7e27e"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-overview.png",
+      "bytes": 556671,
+      "sha256": "db552e728ff29cf57f94d1e1ce3d891107a532f9d4c829b9e16384d071504d3d"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-progress.png",
+      "bytes": 33796,
+      "sha256": "566f27299ce0ea9534f0eac51f4f3b4a57caf3c97870569746f6ace136dc7658"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-quiz.png",
+      "bytes": 44449,
+      "sha256": "8f8217f4145662561da8a102577bff1c8675d80134cd41f3609099c2958ff21a"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-ranking.png",
+      "bytes": 42300,
+      "sha256": "27a79ae24c73db0b659f5fb8487e5f3734cfbf942c24dadb64876f9fca1003b3"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-result.png",
+      "bytes": 32980,
+      "sha256": "a7f00d3395afdcdbc2df62f623e23d54814e762f7a8e65ecedb4c1be9a2b3c1b"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-revival.png",
+      "bytes": 45413,
+      "sha256": "92af9ea73054bd897e2a361734566d6958d40f44137f1b98da50b40c0153bf07"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-state.json",
+      "bytes": 8098,
+      "sha256": "1f1c7ada32425325539f558a96bbf1c5e71520899d5fbce31d358e5cbcd4fe6d"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-themes.png",
+      "bytes": 90649,
+      "sha256": "2a879287f9450d16aa9a769772b54d300e0f4568e6f408ffba79f50ff058c505"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-v2-home.png",
+      "bytes": 286059,
+      "sha256": "0a9ce0de4d606655cc60f808112252a9274150809ae9d731b72af302420e478b"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/figma-v2-state.json",
+      "bytes": 2979,
+      "sha256": "6f6094740191d441325b566ebad39b3387f93f9cc1868e349755bfaa6f948b1a"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/home-1280.png",
+      "bytes": 977734,
+      "sha256": "122c7af3e35ca01581963b0e884ba40ac5d2a81c10958778e32f63cb2259e1ff"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/home-320.png",
+      "bytes": 291820,
+      "sha256": "2c7340311a1507ffd2d023162b75a7f041105317a2c94683015f98de21d9e921"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/home-375.png",
+      "bytes": 362013,
+      "sha256": "155e621facdb0e88d1799d15537f9a002d8fc2f248e86509507df7d30136399e"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/home-390.png",
+      "bytes": 374814,
+      "sha256": "a2e798ad4f71815c48ff383c7af96d2d4dbc0fad75939c2fd6e45ece93a341f3"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/home-430.png",
+      "bytes": 407695,
+      "sha256": "434bfc2166cebaf4f5aa82a6d4caec9fee43bcc5bcfd8a19d0f42a537b18febb"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/home-768.png",
+      "bytes": 756038,
+      "sha256": "1e323e1ce35f1622c0c94329a029a56525bfc89ba2e9cfd385f7beea8fe85ccc"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-answer-feedback-final.png",
+      "bytes": 111366,
+      "sha256": "3634457b81f222ec4726e1e9ae37800b89729060c1ed5a31d26803abd91fd540"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-answer-feedback.png",
+      "bytes": 92537,
+      "sha256": "5529e26e3e95fb923d1b748b6e2393ade9e8270307d397666467eb5e2d140dd7"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-chapters.png",
+      "bytes": 106020,
+      "sha256": "40929472a0d660b0a4f39d25400474e88c17079456db559687b1d38ada0aba0d"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-checks.json",
+      "bytes": 548,
+      "sha256": "a6876a8e5e17c4f4be4d5f9acbadcac3414071b282cc2305c8b5a861de90063e"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-home.png",
+      "bytes": 132738,
+      "sha256": "6dcec64bd506627c622d24de7ccecfd24240d4a2a32bd7f0df1394c022757fa5"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-quiz.png",
+      "bytes": 82811,
+      "sha256": "904d10e90f45594e96c5cc07c765c48ae61ff779bdb51a1c56ca6662c184be06"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-result.png",
+      "bytes": 87121,
+      "sha256": "369a3847d846f96659c128132a4445e6610c076c72126e973cc5155b02f24c33"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-themes.png",
+      "bytes": 118772,
+      "sha256": "f1636ce7969690750661d09d21bec04f71fbe7392fa13a51a589770cb3eb61f1"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/native-v2-home.png",
+      "bytes": 831310,
+      "sha256": "0d2e9521368ceda24305688c1ce872f8867c01c866c45a5292c042903bc4bf15"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/quiz-media-390.png",
+      "bytes": 204416,
+      "sha256": "8b5515c1a586f8a9d6016ac2c91d9a9509934ff4a3412a00a14ac6b3150ff746"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/ranking-390.png",
+      "bytes": 68898,
+      "sha256": "4784734e2737c3589210d42d9e7ae5dcfea71c262b9e3247eba49a3036f1a00b"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/result-390.png",
+      "bytes": 213920,
+      "sha256": "05f240f897c334c887d414ec5e55aa292c7d23da8779806d00a071a6523d0c8d"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/revival-390.png",
+      "bytes": 49808,
+      "sha256": "b8d3da07fbf6c2c9ab2c86d864b3dd1a66288ba8e519ecdf4f38dca0a1da9736"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/services-checks.txt",
+      "bytes": 968,
+      "sha256": "083237c78cabe6c8f3cf53d95dd8713886e2ba2dfa6cc2079f8ad77a0503e009"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/services-v2.txt",
+      "bytes": 968,
+      "sha256": "083237c78cabe6c8f3cf53d95dd8713886e2ba2dfa6cc2079f8ad77a0503e009"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/themes-1280.png",
+      "bytes": 1289470,
+      "sha256": "477f9c9bd969df06f3c65ac5c184ed0740b779ab71a21a40cd9d5b5d4abfe5f8"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/themes-320.png",
+      "bytes": 707818,
+      "sha256": "4446ac5a067f820c5effe7f5e448e9f56c8966444e07f8ec837664a1c4bfd4f6"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/themes-375.png",
+      "bytes": 929375,
+      "sha256": "86a6b6fa0ae23b7a4dd7a0692f7c4a08bad3861d67f401eab947fde8bacc28b6"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/themes-390.png",
+      "bytes": 967366,
+      "sha256": "3ded26efd3aeadc4bb9955019bb660de65210a88cac18948cde3f9c2d41ad104"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/themes-430.png",
+      "bytes": 1066449,
+      "sha256": "1fdd91f5211d69585783f27ee3706535deccc51808fc7f30740a627fbe6fa0f1"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/themes-768.png",
+      "bytes": 1005349,
+      "sha256": "7a95a47ccc944f3c985467c410c693b6588c15fa4ee514df74d1d4f2f2b34845"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/v2-chapters.png",
+      "bytes": 525786,
+      "sha256": "1ec11c2f5c52a63c308aff9d27f12d76e057ba218bba318bbc26886f35b26ff2"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/v2-home.png",
+      "bytes": 371316,
+      "sha256": "dc62632f39d2eaa0a31236d9d97fd39c81e600fd6d463d2c909f12625b2d55fc"
+    },
+    {
+      "path": "rural-culture-miniprogram/qa/v2-quiz.png",
+      "bytes": 197128,
+      "sha256": "97c41dd1e11b190325eb6c7e5a50c9fb4739bb81dd76904a1b836c01b11c1cc5"
+    },
+    {
+      "path": "rural-culture-miniprogram/tests/browser.cjs",
+      "bytes": 6861,
+      "sha256": "3f6db6ab2521badd1dd4f34b766ebc3c80befb7843144f252fae7d7ad186e93d"
+    },
+    {
+      "path": "rural-culture-miniprogram/tests/core-browser.cjs",
+      "bytes": 1332,
+      "sha256": "43cefa7e5c176cbcb221dc369b25c8475e58a8fad26ae5206fa4085a470014b6"
+    },
+    {
+      "path": "rural-culture-miniprogram/tests/services.cjs",
+      "bytes": 5097,
+      "sha256": "797677c50fdd59bb73af121e19620f3f38b802f6455cba4ab4df55e92a732aa2"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check.cjs",
+      "bytes": 1270,
+      "sha256": "c02e2f23cefce7707d6bbf714493ab687d2d733b46a0771b684078dd57f30f5f"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/contact-sheet.cjs",
+      "bytes": 666,
+      "sha256": "3fa12417e63bc2cc1a61c4d08bfa3292e0ffcf434bedcb6b2b273bdd04be0bca"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/create-assets.py",
+      "bytes": 2738,
+      "sha256": "d4d85d1c5e418de227ccce37e05d1a667f3d4dcb5fe40c7efd872c832817b312"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/create-core.py",
+      "bytes": 882,
+      "sha256": "f754e3cf7f5a860fdbc3ab4a2561c84019dfcf26e4c4fd835c6a41e5a9992f32"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/figma-design.js",
+      "bytes": 14280,
+      "sha256": "b68f1aea13ee6f179b6d594a8505bc2dae92f67c84f59d3d068cfa7de794fda7"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/figma-v2.js",
+      "bytes": 8020,
+      "sha256": "55567f12458f9a11fc131e3054167c35129e9aa23a18abcf7900892526ad44a2"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/prepare-remote.cjs",
+      "bytes": 1409,
+      "sha256": "d5fb4d2a42d7d4d372670b648055545f9a179d583266e0d25464e1b131c20cfd"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/render-assets.cjs",
+      "bytes": 418,
+      "sha256": "7b2df5e7feb13e9d99d2abd7466579ab1c7b2301f62b5b3f193b47758bb6d787"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/serve.cjs",
+      "bytes": 1022,
+      "sha256": "ca871ce5ef0653f5bd26d7229d0f7633cada186fdeffb3893af81a21b9b1deb6"
+    },
+    {
+      "path": "交付/排行榜修复验证记录_20261014.json",
+      "bytes": 1864,
+      "sha256": "337ba0be7e898b10cac457940050a77825ad8baa778051b3ae16b1e72015ab4f"
+    },
+    {
+      "path": "交付/排行榜连接恢复_20261014.png",
+      "bytes": 27465,
+      "sha256": "438f873b676029c9469db282ecafb71d7457a91edd5024c5e3070c2da786055a"
+    },
+    {
+      "path": "交付/趣味闯关_交付清单_v0.3.0_20261013.json",
+      "bytes": 35385,
+      "sha256": "2c33ba0cca5e81a99e5f94a9f969a817f1d4058a3ceba7f6d5a59df06d45ffed"
+    },
+    {
+      "path": "交付/趣味闯关_微信验证补充_v0.3.0_20261013.md",
+      "bytes": 2769,
+      "sha256": "2263bbe1f3e4479bce96b52d9ac3866ac70a64bb9aa690dd78ec69096d51bab8"
+    },
+    {
+      "path": "交付/趣味闯关_排行榜修复说明_20261014.md",
+      "bytes": 1893,
+      "sha256": "2288de4c406de906094e21848628534628c220d809712c64ac0668d1c0f70219"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/01-两页总览.png",
+      "bytes": 108109,
+      "sha256": "d6f025d809523a65252b057179607bcdee49322ef8ec869e62cfcd728c8e2875"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/02-答题状态对照.png",
+      "bytes": 104416,
+      "sha256": "e8671d6ef2b76d679c2d18444b5260ab028d1125fa7d5518cd1a135531b806bc"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/01-首页-375.png",
+      "bytes": 64086,
+      "sha256": "18fbe9d8d4fb80e67d75e07877bc339c6a370af3610655d3cb9ceb5672207a1c"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/02-答题默认-375.png",
+      "bytes": 31942,
+      "sha256": "56992dc0c4007bc75f842c37ea208cb2d4d91a414a295d1187c32fc66d31d767"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/03-答题选中-375.png",
+      "bytes": 32587,
+      "sha256": "4896cca505b6eb89a4a45e921560538014dbb70aa236d1f56dd2c69813c847f8"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/04-答题正确-375.png",
+      "bytes": 37467,
+      "sha256": "64f9eb74abf089b92f4e833bed0bcf9c48ed2099b84b6b0c0ad0cfe0f9959e73"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/05-答题错误-375.png",
+      "bytes": 42852,
+      "sha256": "454de0379005fd70c7c3ae2ebd1411fb16b2c04cd95f0f6bfd8b0db61d426aec"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/06-首页-320.png",
+      "bytes": 62426,
+      "sha256": "40fc9280257640e78603f58b38799e50228aaff885e9a5c3ae2ac92e19274843"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/07-答题默认-320.png",
+      "bytes": 31281,
+      "sha256": "eb37b116cb6179895fdd5eb7f8e6fc7fe74e5f646b8e5699c28c0c00bcc6b112"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/08-首页-430.png",
+      "bytes": 64392,
+      "sha256": "c933608ccbc1d1d15e9a08a08ad709a8ccda214b17b4a079a3a5d1b8bbe82c53"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/09-答题默认-430.png",
+      "bytes": 32402,
+      "sha256": "7c846db7bd6f3b7491af60d159fd90bec43e483a397c8d267629595b1177fbd4"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/10-图片题-375.png",
+      "bytes": 61687,
+      "sha256": "41be3fc1a314c6ee0d8d0c2027edea39b8de5da1a93eb548f4cccded112b1bbd"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/11-视频题-375.png",
+      "bytes": 60240,
+      "sha256": "5ff9c486b051a81fd64d77b1d40a564732ed0d60c0cc3eef22417f5bc137d290"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/12-长题长选项-375.png",
+      "bytes": 49752,
+      "sha256": "99ec2e3402471d39d907b3a9675e91ec6fa9f79a1f4a4a175c27cb1c8938479b"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/13-图片题滚动-375.png",
+      "bytes": 58614,
+      "sha256": "b675bd8cd5410ff3433aea66432451c813116961362477f330aff8053979a61b"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/14-长题长选项-320.png",
+      "bytes": 42885,
+      "sha256": "ce10ca0870d666fc436cb5dd02dce8a9d725799b0830f2bb9da043075674daf4"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/PNG/15-长题滚动-320.png",
+      "bytes": 39726,
+      "sha256": "e57a80e887a291ea8b2b7b5d24aeaa9cd734d6216c9af1f3cf0d165187f43a8b"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/QA/03-尺寸适配对照.png",
+      "bytes": 161357,
+      "sha256": "d07de3ad7a3b6e7b2b2faef84112a3f03c8af02b0033499e112e3a80805b2992"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/QA/04-长内容与媒体对照.png",
+      "bytes": 223389,
+      "sha256": "dc77c645bab79eb90e34f205bdb09a90910f425cb7fcb386d6c753f40d1e2884"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/QA/Figma节点记录.json",
+      "bytes": 12876,
+      "sha256": "bd9844c123155b97d30aecf64475adf031e95399db5b41c977b729c97aa37fcb"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/QA/PNG清单.json",
+      "bytes": 2627,
+      "sha256": "dd6c61f18ba4573b672ae56344c4258a00d31cec93f9d3410660f2c5f85e8817"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/QA/交付检查.json",
+      "bytes": 2389,
+      "sha256": "75f990025127e3b90c6d15a046f3b6b80c7e44ec2055a684e947d045fe74f1d0"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/QA/原工程校验.json",
+      "bytes": 8148,
+      "sha256": "01dc616b7dfd3633730909e2844902e84096b684c72e2c6fc05ac3d653b58e08"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/QA/布局检查.json",
+      "bytes": 12350,
+      "sha256": "96b3d9f6872177e8ec0c08aac4436559376d5cb5661eba36d433499ef5bc09d7"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/README.md",
+      "bytes": 3560,
+      "sha256": "799e03767e92d89fcc0db7090f0ba1242c08f38c12fa5709e866de90d6167e6f"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/assets/乡村书屋插画.png",
+      "bytes": 1524730,
+      "sha256": "a77cdb1944e51e055aec0a80307c563a0462a975759653aa52bb2249ac346030"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/assets/插画制作说明.json",
+      "bytes": 1205,
+      "sha256": "1b1da751115465adc4d41ba7ce60cac69b653062ee588a9c2ef11513b87c4862"
+    },
+    {
+      "path": "趣味闯关_V3视觉预览/组件规范.md",
+      "bytes": 2839,
+      "sha256": "8339d143131b3b73b444acc42f34c1e02801bc12db918331fb4d3cdd97098bde"
+    },
+    {
+      "path": "趣味闯关_V4轻手绘预览/QA/原项目源码基线.json",
+      "bytes": 3535,
+      "sha256": "55fcd9cb2b9285d92c983df31bb7374693052748dd81ad44eedb11b102aa99d2"
+    },
+    {
+      "path": "趣味闯关_V4轻手绘预览/assets/乡村阅读小院.png",
+      "bytes": 2069343,
+      "sha256": "d26f3e9b43a2efd30d57878df7d6878841e4c053b3d0dd2821f261b77c640df2"
+    },
+    {
+      "path": "趣味闯关_V4轻手绘预览/视觉分析与设计方向.md",
+      "bytes": 3482,
+      "sha256": "80ee203da895091f4e9f01fa13c8745c4e1a1680b781275565d56502cd3f4ff2"
+    },
+    {
+      "path": "趣味闯关_V4重设计预览/QA/原项目源码基线.json",
+      "bytes": 3535,
+      "sha256": "55fcd9cb2b9285d92c983df31bb7374693052748dd81ad44eedb11b102aa99d2"
+    },
+    {
+      "path": "趣味闯关_V4重设计预览/assets/乡村轻插画.png",
+      "bytes": 1151401,
+      "sha256": "a61dca11c764eb3cc1cb4c027a7057c6ac722958a67e3dd282c734b5cb4b78f7"
+    }
+  ],
+  "excluded": [
+    "Private databases, WAL/SHM and backups",
+    "Generated admin/session credentials and local project configuration",
+    "node_modules/dist/duplicate backups and historical ZIP files",
+    "Unrelated skills repository and client original contracts"
+  ]
+}

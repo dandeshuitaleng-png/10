@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-13T07:54:40.355234+00:00",
+  "version": "0.3.0",
+  "runtimeSha256": "320b9815fa9307031146a43b9bc592bfcdecfa9ddb96977dd39cfb0fbc83295c",
+  "status": "partial",
+  "candidate": {
+    "files": 49,
+    "uncompressedSourceBytes": 3649571,
+    "byteIdenticalToSource": true,
+    "compiledPackageBytesMeasured": false
+  },
+  "buildAndStartup": {
+    "currentHomeObserved": true,
+    "mapAndPreparationObserved": true,
+    "currentQuestionObserved": true,
+    "basis": "registered simulator_screenshot and current 0.3.0 source candidate"
+  },
+  "nativeFunctionalChecks": {
+    "realTouchActions": true,
+    "injectedAnswersScoresOrProgress": false,
+    "tenQuestionCompletionObserved": true,
+    "pointsObserved": 10,
+    "completedLevelsObserved": 1,
+    "firstAttemptAccuracyObserved": 1,
+    "sourceBankApproved": false
+  },
+  "postRecompile": {
+    "httpStatusObserved": 200,
+    "pointsObserved": 10,
+    "redCompletedObserved": 1,
+    "activeChallengesObserved": 0
+  },
+  "diagnosis": {
+    "errorLevelLogObservedEmpty": true,
+    "initialConsolePredicateWasFalsePositive": true,
+    "falsePositiveCause": "grep error matched the error field in debug evaluation source; severity-specific error query returned empty",
+    "originalFailedRunPreserved": "runtime-report.json",
+    "staleCaptureObserved": "07-native-result.png showed question 7 after API completion",
+    "automatorTimeoutRepeated": true,
+    "userCanForegroundWindowNow": false
+  },
+  "unverified": [
+    "结算/重编译后最新画面与模型一致性",
+    "微信全16关完整复测",
+    "原生复活确认、视频及相册权限真实完整流程",
+    "iOS/Android手机真机、帧率和峰值内存",
+    "正式域名、身份、可信分享及同步、指定数据库、内容签审和发布"
+  ],
+  "screenshots": [
+    "wechat-v030/03-native-start.png",
+    "wechat-v030/04-native-red-map.png",
+    "wechat-v030/05-native-red-ready.png",
+    "wechat-v030/06-native-quiz.png",
+    "wechat-v030/07-native-result.png",
+    "wechat-v030/native-failure.png"
+  ],
+  "scope": "native simulator + current server; separate observed functionality from failed/unverified final visual evidence"
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.3.0",
+  "kind": "static-native-source-preflight",
+  "passed": true,
+  "requiredJSModules": 26,
+  "syntaxErrors": [],
+  "missingRuntimeModules": [],
+  "jsonRequires": [],
+  "compileType": "game",
+  "deviceOrientation": "portrait",
+  "appidUnchanged": true,
+  "compiledInWechat": false,
+  "runtimeInWechatVerified": false
+}

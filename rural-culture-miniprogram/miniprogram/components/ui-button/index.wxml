@@ -1,0 +1,1 @@
+<button class="button {{variant}}" disabled="{{disabled || busy}}" loading="{{busy}}" bindtap="tap" hover-class="pressed">{{label}}</button>

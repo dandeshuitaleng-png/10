@@ -1,0 +1,9 @@
+{
+  "tool": "OpenAI image_gen builtin",
+  "filename": "乡村书屋插画.png",
+  "size": "1536×1024",
+  "format": "RGBA PNG",
+  "transparent": true,
+  "finalPrompt": "Edit this illustration into a MUCH simpler modern premium mobile app illustration. Preserve only the little white Hunan rural reading-room house, the small stack of books and the sheaf of rice. Remove the trees, bushes, stones and all surrounding scenery. Reduce roof tiles to a few broad clean rows and remove weathered wall, wood and stone textures. Use clean uniform fine charcoal-sage outlines, smooth flat matte color fills with only one soft shading tone per object. Modern refined 2D editorial illustration, like an adult casual learning app asset, not ancient Chinese painting, not rustic watercolor, not 3D. Friendly quiet off-white walls, muted blue-grey roof, warm low saturation apricot door, sage books and golden rice. Compact horizontal composition, generous genuinely transparent background all around. No text, no UI, no character, no decorations, no gradients, no glow.",
+  "usage": "首页辅助视觉240×160；保持原PNG，不用代码拼接插画；文字、按钮、进度、图标为Figma可编辑图层。"
+}

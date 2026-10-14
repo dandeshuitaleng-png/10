@@ -1,0 +1,255 @@
+{
+  "project": "/private/tmp/quiz-wx-v030-nth9i6ne",
+  "sourceProject": "/Users/huangnianpeng/Desktop/yx/demo",
+  "kind": "native-package-source-candidate",
+  "transformedPackageMeasured": false,
+  "version": "0.3.0",
+  "bytes": 3649571,
+  "files": [
+    {
+      "path": "game.js",
+      "bytes": 2346,
+      "sha256": "0a3eb9e2caa62bb47a97335cd30e1fc58d9370010694b172f81ea5247f312dd1"
+    },
+    {
+      "path": "game.json",
+      "bytes": 38,
+      "sha256": "adfce90c444cdbf96dc51598471759bca31feb5e936833b36847f3570fd4bca0"
+    },
+    {
+      "path": "project.config.json",
+      "bytes": 2722,
+      "sha256": "abfe9228e38826dfedd7bf01c1b53b33bce676404e282f56262940421564473f"
+    },
+    {
+      "path": "js/local-campaign.js",
+      "bytes": 4763,
+      "sha256": "163c3d52d90ef4ddb534b33f4b39bf143c058cc9e2f4c87bf3a0342464de0248"
+    },
+    {
+      "path": "js/online-app.js",
+      "bytes": 19996,
+      "sha256": "a6c0bbbffdb837d1dde4c1bfe7680f22f9466d67ecb58e2b4e60eef44c02faf6"
+    },
+    {
+      "path": "js/runtime-config.js",
+      "bytes": 188,
+      "sha256": "3d14f536f10d7cc02869d9f250f616d7f3cee872c38e387a5c2c3237aef0d63a"
+    },
+    {
+      "path": "js/main.js",
+      "bytes": 10618,
+      "sha256": "727eec41833a8b7cb6ef97714c36a1cb693d56451575b5cad4e45cc6ff8a664c"
+    },
+    {
+      "path": "audio/complete.wav",
+      "bytes": 14594,
+      "sha256": "0702b5ba6f1864c6f876cb456984fcdf2825ddb47188eba0e3264339e30ef42d"
+    },
+    {
+      "path": "audio/correct.wav",
+      "bytes": 9744,
+      "sha256": "78541ac77e60bbb8854b8800d3efb8be1c65209c415be3efad74c9a9d27b0d42"
+    },
+    {
+      "path": "audio/wrong.wav",
+      "bytes": 9744,
+      "sha256": "a853a024f2c249f434ddd2b3eacb7c79f9e3f2dd2ada1be5e5b3bf1c49e545d0"
+    },
+    {
+      "path": "audio/README.md",
+      "bytes": 190,
+      "sha256": "516393ebd559f8e2d1597bb606982f329912b8a27cb2b9d25fe702005f32d2a2"
+    },
+    {
+      "path": "audio/press.wav",
+      "bytes": 4894,
+      "sha256": "faaa2bd3f1b41a6cc893215943e16fdbb2ccb4bc9ff52edc174f6041700112a0"
+    },
+    {
+      "path": "media/observation.mp4",
+      "bytes": 326470,
+      "sha256": "46692cac5a089ef47f390fad22f0efe54de3d63a8619267a9f44961bb2cb66d3"
+    },
+    {
+      "path": "js/ui/renderer.js",
+      "bytes": 32795,
+      "sha256": "bfb12ff8cf4b597726138ee10f9c5dc1b456da2340d12c6c6e15f25299a7e1e6"
+    },
+    {
+      "path": "js/ui/tokens.js",
+      "bytes": 384,
+      "sha256": "92af2e1cc35fef7f0ace1661a83768af42e80da833931a9c030cc9dadffc179d"
+    },
+    {
+      "path": "js/ui/online-renderer.js",
+      "bytes": 54561,
+      "sha256": "17c9414570a07a8cef4cfe707d0863654bc77035d5dfb49499fff47fa617495f"
+    },
+    {
+      "path": "js/ui/map-layout.js",
+      "bytes": 5367,
+      "sha256": "cf49af85ee9344b9e0a1c407a8d900a77c53f918b34d47c1f2fd24e017c8a73c"
+    },
+    {
+      "path": "js/ui/draw.js",
+      "bytes": 3810,
+      "sha256": "5f3f2b4e45d7d7e7893771ebf17a534c8e83de0e2de396bfe872c1bf19a6dd57"
+    },
+    {
+      "path": "js/core/question.js",
+      "bytes": 1537,
+      "sha256": "000956c9d5dc0bc309ba10e969fb60301e5d88b774d7e92d01965171ec6f31c8"
+    },
+    {
+      "path": "js/core/router.js",
+      "bytes": 1271,
+      "sha256": "b02bc63efadfb9eb1e4c9ac977f8771e0b38902c6b103f47b7afb433c336eded"
+    },
+    {
+      "path": "js/core/challenge.js",
+      "bytes": 2662,
+      "sha256": "e2a1e07d2e80a71a3b16527271d9bb3c074198963e3922d996b61f1bddb735f2"
+    },
+    {
+      "path": "js/core/viewport.js",
+      "bytes": 945,
+      "sha256": "0eebd2aabe0ce8abefa35a080c4a618a557dc6edca9041c5e2f2ffe50da246fb"
+    },
+    {
+      "path": "js/core/local-content.js",
+      "bytes": 458,
+      "sha256": "b7cd727b0e0bdf4e2c285bc5e2fc53b2edeb5aeff75daa51c4756d1d3b4dfd9a"
+    },
+    {
+      "path": "js/core/input.js",
+      "bytes": 1715,
+      "sha256": "83252e59bdf457334bb075274aebf09793f848a72d6ca71881fe93bc01c3c636"
+    },
+    {
+      "path": "js/platform/wechat.js",
+      "bytes": 1105,
+      "sha256": "7760117b5ca6deca493f8333459fce364ad11c03e6a3e9c406b8c3c84a83032c"
+    },
+    {
+      "path": "js/platform/wechat-media.js",
+      "bytes": 4191,
+      "sha256": "97a7e94cc2f2766176d457dc177d6f8833260c03190fecf7058bc97bca2c021a"
+    },
+    {
+      "path": "js/data/practice.js",
+      "bytes": 3656,
+      "sha256": "d649ae89c306ae1b9db5af320aee9d48f2ac41999f2a3d2708af7149b78f1d3a"
+    },
+    {
+      "path": "js/data/rules.js",
+      "bytes": 502,
+      "sha256": "76b04401e5c3b3aabf3f3ef5de13c30f6e078617f937a187bb1440af72be6d48"
+    },
+    {
+      "path": "js/data/themes.js",
+      "bytes": 1060,
+      "sha256": "a3096b5f4258deb6d292f7bbb8e08ca1e2d4d5345c2cd8748ae29b4d1b5748e3"
+    },
+    {
+      "path": "js/data/catalog.js",
+      "bytes": 2289,
+      "sha256": "366ff5e5a989ca9bface0b8ab1d368e4f5cbe128f79b08fd09f0f3bd0d739223"
+    },
+    {
+      "path": "js/data/progress.js",
+      "bytes": 431,
+      "sha256": "e117ba9a24cebc047dea83500446ddeb9328feb8f55e2853fa9d53ae8c462a55"
+    },
+    {
+      "path": "js/data/content.js",
+      "bytes": 879,
+      "sha256": "5f11d8ed7afd88397f73601a1f75bfb19548a7926a20dfe83ebc2e651d6cae34"
+    },
+    {
+      "path": "js/data/approved-pools.js",
+      "bytes": 103,
+      "sha256": "dba629554bf94a2db35c7de7cce104c58737fddbdc96229c6135b64a473c0167"
+    },
+    {
+      "path": "js/services/question-media.js",
+      "bytes": 1505,
+      "sha256": "1c3654931d29e5665cf17a57bf3bebb21053bbaa7d0069f589ed8a143815b940"
+    },
+    {
+      "path": "js/services/http-client.js",
+      "bytes": 2239,
+      "sha256": "b417f89dc5e54bcc6291d51491f1a66d8f4be446bcd693dc03568d3cee99cb4c"
+    },
+    {
+      "path": "js/services/local-progress.js",
+      "bytes": 11163,
+      "sha256": "f50158ac3773d9abfe73270f574aa96dbe0102ddfbb44331e7c56e85784586aa"
+    },
+    {
+      "path": "js/services/backend.js",
+      "bytes": 949,
+      "sha256": "dc466dc63b8ae8b5ae0605e8d387b5ab272a1dd83fbdc106093d6fa1a5098300"
+    },
+    {
+      "path": "js/services/audio.js",
+      "bytes": 598,
+      "sha256": "6e6da72430785bcf57d6126545f97f943f83c1ac42943d9cfa4839eb94d3c2d5"
+    },
+    {
+      "path": "js/services/resources.js",
+      "bytes": 1632,
+      "sha256": "95cabb51d62b2a5172c27cea1bbfac7c5a024206e1892471e06f13ed5a315297"
+    },
+    {
+      "path": "js/services/storage.js",
+      "bytes": 554,
+      "sha256": "2757053b7087a1cdab4db96eae1bc4e429cdc5071621dcc5ec53e0001c867fc3"
+    },
+    {
+      "path": "images/v2-style03/theme-industry.png",
+      "bytes": 434302,
+      "sha256": "07ddf587a48cc5c89768496ac00c02d63f55fbd4d3cc1159fcc371067ac2990d"
+    },
+    {
+      "path": "images/v2-style03/theme-ecology.png",
+      "bytes": 314285,
+      "sha256": "5017c03b16ab68cdc49d441066604664350ad00e3fe69212c1a61bf9c93e13a7"
+    },
+    {
+      "path": "images/v2-style03/wetland-observation.jpg",
+      "bytes": 126259,
+      "sha256": "8e400ca7ef5ac5f7a957af18420c177a7f15406def5cdcd85a211d50faf3affc"
+    },
+    {
+      "path": "images/v2-style03/map-industry.jpg",
+      "bytes": 235820,
+      "sha256": "7475342e285c078c11a4babc8a8a301fa1bfc402d0ceb4f80f2d130891604bc8"
+    },
+    {
+      "path": "images/v2-style03/theme-culture.png",
+      "bytes": 382544,
+      "sha256": "9c1f19ba367551859a2c40bdd767884a1b7bd490f9dc7ddaf557f8da5ef8ded1"
+    },
+    {
+      "path": "images/v2-style03/ecology-map.jpg",
+      "bytes": 262756,
+      "sha256": "73f457ae3554dd71d38790625eab236b2db1e7f0def807d3736eb06e2c0ea93b"
+    },
+    {
+      "path": "images/v2-style03/map-culture.jpg",
+      "bytes": 228795,
+      "sha256": "92dc97a1344079d2966538b7c9f9b77e1d0d74672d937afb712bc2f26c0db178"
+    },
+    {
+      "path": "images/v2-quality-20261010/theme-red-runtime.png",
+      "bytes": 538291,
+      "sha256": "d7684b500fdad7f9508ee03c7e5246dffa96c74ee5035bc085d0019017c1d704"
+    },
+    {
+      "path": "images/v2-quality-20261010/map-red-runtime.jpg",
+      "bytes": 581851,
+      "sha256": "fd575e476203b4a2e7086b6f8c7658f8ced4a00479e9106b6e2d1ec58d82c582"
+    }
+  ]
+}

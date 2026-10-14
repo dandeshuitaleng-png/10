@@ -1,0 +1,1 @@
+{"name":"rural-culture-miniprogram-ui","version":"1.0.0","private":true,"description":"Native WeChat rural culture learning UI prototype","scripts":{"preview":"node tools/serve.cjs","check":"node tools/check.cjs","test:services":"node tests/services.cjs","test:browser":"node tests/browser.cjs"}}

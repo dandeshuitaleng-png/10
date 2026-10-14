@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>趣味闯关 · 内容管理</title>
+  <link rel="stylesheet" href="/web/admin.css">
+  <script src="/web/admin.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <div id="notice" class="toast" role="status" aria-live="polite" hidden></div>
+  <main id="login-screen" class="login-layout">
+    <div class="login-story" aria-hidden="true">
+      <div class="brand"><span class="brand-mark">乡</span><span>趣味闯关</span></div>
+      <p class="eyebrow">内容管理</p>
+      <h1>把每一道题，<br>交给认真审核。</h1>
+      <p class="login-intro">主题与关卡按活动配置。<br>内容、规则与每一次更新，在这里统一管理。</p>
+      <div class="theme-list"><span>十步芳草</span><span>千年文脉</span><span>金色产业</span><span>青山绿水</span></div>
+      <div class="login-landscape"><i></i><i></i><i></i></div>
+    </div>
+    <div class="login-panel">
+      <div class="mobile-brand brand"><span class="brand-mark">乡</span><span>趣味闯关</span></div>
+      <form id="login-form" class="login-form">
+        <p class="eyebrow">管理员入口</p><h2>登录内容管理</h2>
+        <p class="muted">使用部署时配置的管理员账号。玩家账号无法访问后台。</p>
+        <label>账号<input id="username" name="username" autocomplete="username" required maxlength="120" autofocus></label>
+        <label>密码<input id="password" name="password" type="password" autocomplete="current-password" required maxlength="200"></label>
+        <p id="login-error" class="form-error" role="alert" hidden></p>
+        <button class="button primary" type="submit">登录</button>
+        <a href="/" class="text-link">返回游戏</a>
+      </form>
+    </div>
+  </main>
+  <div id="admin-screen" class="app-shell" hidden>
+    <aside class="sidebar" aria-label="后台导航">
+      <a class="brand" href="/web/admin.html"><span class="brand-mark">乡</span><span>趣味闯关<small>内容管理</small></span></a>
+      <p class="nav-label">工作台</p>
+      <nav id="navigation">
+        <button type="button" data-view="overview" class="nav-item"><span class="nav-icon" aria-hidden="true">▦</span>概览</button>
+        <button type="button" data-view="questions" class="nav-item"><span class="nav-icon" aria-hidden="true">☷</span>题库管理<span id="pending-nav" class="nav-count"></span></button>
+        <button type="button" data-view="levels" class="nav-item"><span class="nav-icon" aria-hidden="true">◇</span>关卡配置</button>
+        <button type="button" data-view="basic" class="nav-item"><span class="nav-icon" aria-hidden="true">▧</span>基础配置</button>
+        <button type="button" data-view="revive" class="nav-item"><span class="nav-icon" aria-hidden="true">↻</span>复活配置</button>
+        <button type="button" data-view="points" class="nav-item"><span class="nav-icon" aria-hidden="true">✦</span>积分配置</button>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <button type="button" data-view="operations" class="nav-item"><span class="nav-icon" aria-hidden="true">≡</span>操作与同步</button>
+      <div class="sidebar-bottom"><a class="text-link" href="/">打开游戏 ↗</a><p id="scope-summary">正在读取活动范围</p></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span id="environment" class="badge warning">正在读取环境</span><span class="topbar-note">内容更新保留操作记录</span><button id="logout" class="button subtle" type="button">退出登录</button></header>
+      <main id="main-content" class="content" tabindex="-1">
+        <div class="page-heading"><div><p class="eyebrow">趣味闯关 / 管理后台</p><h1 id="page-title">概览</h1><p id="page-description" class="muted"></p></div><button id="refresh" class="button secondary" type="button">刷新数据</button></div>
+        <div id="global-error" class="error-panel" role="alert" hidden><div><strong>数据暂时无法读取</strong><p id="global-error-text"></p></div><button id="global-retry" type="button" class="button secondary">重试</button></div>
+        <div id="loading" class="loading-panel" role="status" hidden><span class="spinner"></span>正在读取管理数据…</div>
+        <div id="configuration-notice" class="info-banner warning" role="status" hidden></div>
+        <section id="view-overview" class="view" aria-label="概览" hidden>
+          <div id="overview-banner" class="info-banner"></div>
+          <div id="overview-stats" class="stats-grid"></div>
+          <div class="split-grid"><article class="panel"><div class="panel-heading"><h2>内容与关卡</h2><button type="button" class="text-button" data-go="questions">管理题库 →</button></div><div id="overview-modules"></div></article><article class="panel"><div class="panel-heading"><h2>接入与发布条件</h2></div><p class="muted small">体验开放和正式发布分别显示。正式条件未满足时，后台会保留限制。</p><div id="overview-dependencies"></div></article></div>
+          <article class="panel"><div class="panel-heading"><h2>当前执行规则</h2><span id="approval-badge" class="badge"></span></div><div id="overview-rules" class="rule-grid"></div><p id="approval-note" class="muted small"></p></article>
+        </section>
+        <section id="view-basic" class="view" aria-label="基础配置" hidden>
+          <form id="basic-form" class="panel form-panel">
+            <div class="panel-heading"><h2>互动外观</h2><span id="theme-count" class="badge neutral"></span></div>
+            <div class="form-grid"><label>互动名称<input name="name" required maxlength="100"></label><label>背景色<div class="color-field"><input name="background" type="color"><output id="background-value"></output></div></label><label class="span-2">封面图地址<input name="cover" type="text" placeholder="https://… 或 /images/…"><span class="field-help">支持 HTTPS 或站内图片地址。留空使用游戏默认封面。</span></label></div>
+            <div id="basic-preview" class="cover-preview" hidden></div>
+            <div class="subheading section-heading"><h3>主题管理</h3><button id="new-theme" class="button secondary" type="button">＋ 新增主题</button></div>
+            <p class="muted small">可编辑名称、介绍、排序与素材。已保存主题编号不可更改；取消启用会保留题目与历史记录。主题独立场景需要对应的封面与地图素材。</p>
+            <div id="theme-configs" class="theme-configs"></div>
+            <h3 class="subheading">证书内容</h3><p class="muted small">主题证书名称与正文在各主题中设置。这里设置共同抬头、总证书与落款；已颁发证书保留原记录。</p>
+            <div class="form-grid"><label class="span-2">证书抬头<input name="certificateTitle" required maxlength="150"></label><label class="span-2">总证书名称<input name="totalCertificateName" required maxlength="150"></label><label class="span-2">总证书正文<textarea name="totalCertificateText" rows="3" required maxlength="1000"></textarea></label><label class="span-2">证书落款<input name="certificateFooter" required maxlength="1000"></label></div>
+            <h3 class="subheading">旅程分享内容</h3><div class="form-grid"><label class="span-2">分享标题<input name="shareTitle" required maxlength="100"></label><label class="span-2">分享文案<textarea name="shareText" rows="3" required maxlength="500"></textarea></label><label class="span-2">分享图片地址<input name="shareImage" placeholder="https://… 或 /images/…"></label></div><div id="activity-share-preview" class="cover-preview" hidden></div>
+            <div class="form-actions"><p class="save-status" role="status"></p><button type="submit" class="button primary">保存基础配置</button></div>
+          </form>
+          <article class="panel form-panel"><div class="panel-heading"><div><h2>活动配置导入与导出</h2><p class="muted small">一起保存主题、关卡、规则、证书和分享内容。题库审核状态独立管理。</p></div></div><div class="toolbar-actions activity-toolbar"><button id="export-activity" class="button secondary" type="button">导出活动配置</button><button id="import-activity" class="button secondary" type="button">导入活动配置</button></div></article>
+        </section>
+        <section id="view-levels" class="view" aria-label="关卡配置" hidden>
+          <div class="info-banner">可新增关卡，配置排序、题数、积分与难度说明。顺序在同一主题内不能重复。停用前关需同步停用后续关卡；旧挑战继续使用开局时的快照。</div>
+          <p id="level-scope" class="muted small scope-line"></p>
+          <div id="level-groups" class="level-groups"></div>
+        </section>
+        <section id="view-questions" class="view" aria-label="题库管理" hidden>
+          <div class="question-summary"><div><span id="question-total" class="summary-number">—</span><span>道题目</span></div><p id="question-summary-text"></p><div class="toolbar-actions"><button id="import-questions" type="button" class="button secondary">导入 JSON</button><button id="export-questions" type="button" class="button secondary">导出 JSON</button><button id="new-question" type="button" class="button primary">＋ 新增题目</button></div></div>
+          <article class="panel table-panel"><form id="question-filters" class="filter-bar"><label class="search-label"><span class="sr-only">搜索题干、题目编号</span><input name="search" type="search" placeholder="搜索题干或题目编号" maxlength="200"></label><label><span class="sr-only">主题筛选</span><select name="themeId"><option value="">全部主题</option></select></label><label><span class="sr-only">关卡筛选</span><select name="levelId"><option value="">全部关卡</option></select></label><label><span class="sr-only">审核筛选</span><select name="review"><option value="">全部审核状态</option><option value="pending">待审核</option><option value="approved">审核通过</option><option value="disabled">未启用</option></select></label><button class="button secondary" type="submit">查询</button><button id="clear-filters" class="text-button" type="button">重置</button></form><div class="table-scroll"><table class="data-table question-table"><thead><tr><th scope="col">题目</th><th scope="col">主题 / 关卡</th><th scope="col">题型 · 难度</th><th scope="col">审核 / 启用</th><th scope="col" class="actions-cell">操作</th></tr></thead><tbody id="question-rows"></tbody></table></div><div id="question-empty" class="empty-state" hidden><strong>没有符合条件的题目</strong><p>调整筛选条件，或新增一道题目。</p><button type="button" class="button secondary" data-reset-filters>清除筛选</button></div><div class="table-footer"><span id="question-range"></span><div class="pagination"><button id="previous-page" type="button" class="button subtle">上一页</button><span id="page-indicator"></span><button id="next-page" type="button" class="button subtle">下一页</button></div></div></article>
+          <p class="footnote">新增、编辑与导入的内容进入待审核。授权体验模式可运行源题，源内容的正式审核记录仍独立保留。</p>
+        </section>
+        <section id="view-revive" class="view" aria-label="复活配置" hidden>
+          <form id="revive-form" class="panel form-panel"><div class="panel-heading"><h2>分享复活</h2><span class="badge neutral">每次挑战额度</span></div><div class="info-banner">可信分享成功后重答当前题。额度耗尽后再次答错，仅锁定本关当日；0 次表示不允许复活。改变额度会进入规则待确认，旧局使用原额度。</div><div class="form-grid"><label>每次挑战复活次数<input name="limit" type="number" value="1" min="0" max="100" step="1" required><span class="field-help">默认 1 次；支持 0—100 的整数。</span></label><label>额度周期<select name="period"><option value="challenge">每次挑战</option></select></label><label class="span-2">复活分享语<textarea name="shareText" rows="3" required maxlength="300"></textarea></label><label class="span-2">复活分享图地址<input name="shareImage" placeholder="https://… 或 /images/…"><span class="field-help">正式分享需要可信验证。体验测试不会充当真实分享证据。</span></label></div><div id="share-preview" class="cover-preview" hidden></div><div class="form-actions"><p class="save-status" role="status"></p><button type="submit" class="button primary">保存复活配置</button></div></form>
+        </section>
+        <section id="view-points" class="view" aria-label="积分配置" hidden>
+          <form id="points-form" class="panel form-panel"><div class="panel-heading"><h2>积分与计时</h2><span class="badge neutral">服务端结算</span></div><p class="muted">每关奖励在关卡配置中设置。积分仅首次通关发放；修改不会重算已入账记录。</p><div id="point-fields" class="reward-summary"></div><button type="button" class="text-button" data-go="levels">设置各关奖励与题数 →</button><h3 class="subheading">每日积分上限</h3><div class="form-grid"><label class="checkbox-field span-2"><input name="noDailyPointCap" type="checkbox" checked>不限制每日积分（原默认）</label><label>每日最高积分<input name="dailyPointCap" type="number" min="0" max="9007199254740991" step="1" disabled><span class="field-help">0 表示当天不发积分；仍可答题与通关。</span></label><div class="readonly-field"><span>超过上限的体验处理</span><strong>按当日剩余额度发分</strong><p class="field-help">额度用尽仍通关，超额部分不再补发。此策略尚待业务批准。</p></div><label>重玩积分<select name="replay"><option value="first">仅首次通关发放</option></select></label><label>单题时限（秒）<input name="seconds" type="number" min="5" max="600" step="1" required></label><label>超时处理<select name="timeout"><option value="wrong">计为本题错误</option></select></label><div class="readonly-field"><span>日界线</span><strong>北京时间 00:00</strong><p class="field-help">每日积分与关卡锁定使用服务端时间。</p></div></div><div class="info-banner warning">改变时限、复活额度、奖励、题数、活动结构或每日上限后，新规则进入待确认。旧局保留原快照；实际规则是否批准以后台返回状态为准。</div><div class="form-actions"><p class="save-status" role="status"></p><button type="submit" class="button primary">保存积分与计时</button></div></form>
+        </section>
+        <section id="view-operations" class="view" aria-label="操作与同步" hidden>
+          <article class="panel table-panel"><div class="panel-heading padded"><div><h2>数据同步</h2><p id="sync-status" class="muted small"></p></div><button id="retry-sync" class="button secondary" type="button">重试待同步事件</button></div><div class="table-scroll"><table class="data-table"><thead><tr><th>事件</th><th>状态</th><th>尝试次数</th><th>最近结果</th><th>创建时间</th></tr></thead><tbody id="outbox-rows"></tbody></table></div><div id="outbox-empty" class="empty-state" hidden><strong>暂无同步事件</strong><p>玩家通关、积分和证书等事件会在这里保留记录。</p></div></article>
+          <article class="panel table-panel"><div class="panel-heading padded"><h2>管理操作记录</h2><span class="muted small">以服务端记录为准</span></div><div class="table-scroll"><table class="data-table"><thead><tr><th>操作</th><th>对象</th><th>管理员</th><th>时间</th><th>详情</th></tr></thead><tbody id="audit-rows"></tbody></table></div><div id="audit-empty" class="empty-state" hidden><strong>暂无管理操作记录</strong><p>保存配置、编辑题目和审核操作均会留下记录。</p></div></article>
+        </section>
+      </main>
+      <footer class="workspace-footer">趣味闯关内容管理 <span id="footer-rules">四选一 · 题数按关卡配置 · 全对通关</span></footer>
+    </div>
+  </div>
+  <dialog id="question-dialog" class="editor-dialog" aria-labelledby="editor-title"><form id="question-form"><header class="dialog-heading"><div><p class="eyebrow">题库管理</p><h2 id="editor-title">新增题目</h2></div><button id="close-editor" type="button" class="icon-button" aria-label="关闭题目编辑">×</button></header><div class="dialog-body"><p class="info-banner">保存后进入待审核，需审核通过后才能正式启用。活动挑战保留原题目版本。</p><div class="form-grid"><label>题目编号<input name="id" required maxlength="100" pattern="[A-Za-z0-9_-]+"><span class="field-help">字母、数字、下划线或连字符；保存后不可更改。</span></label><label>难度<select name="difficulty"><option value="basic">基础</option><option value="advanced">进阶</option><option value="comprehensive">综合</option></select></label><label>主题<select name="themeId" required></select></label><label>关卡<select name="levelId" required></select></label><label class="span-2">题干<textarea name="title" rows="3" required maxlength="2000"></textarea></label></div><fieldset class="options-fieldset"><legend>四个选项 <span>选择唯一正确答案</span></legend><div id="option-fields"></div></fieldset><label>解析<textarea name="explanation" rows="3" required maxlength="4000"></textarea></label><h3 class="subheading">图片 / 视频</h3><div class="form-grid"><label>题面素材<select name="mediaType"><option value="">纯文字</option><option value="image">图片</option><option value="video">视频</option></select></label><label class="checkbox-field"><input name="mediaRequired" type="checkbox">素材必需</label><label id="media-url-field" class="span-2">素材地址<input name="mediaSrc" placeholder="https://… 或 /images/…"><span class="field-help">仅支持 HTTPS 或受控站内地址，不接受脚本与外站 HTTP 链接。</span></label></div><div id="question-media-preview" class="media-preview" hidden></div><p id="editor-error" class="form-error" role="alert" hidden></p></div><footer class="dialog-footer"><span class="muted small">审核状态不随内容修改继承。</span><button id="cancel-editor" type="button" class="button secondary">取消</button><button type="submit" class="button primary">保存题目</button></footer></form></dialog>
+  <dialog id="review-dialog" class="compact-dialog" aria-labelledby="review-title"><form id="review-form"><header class="dialog-heading"><h2 id="review-title">审核题目</h2><button id="close-review" type="button" class="icon-button" aria-label="关闭审核">×</button></header><div class="dialog-body"><p id="review-question-title" class="review-question"></p><p class="muted small">请先检查题干、选项、正确答案、解析、事实来源与素材。审核会记录当前管理员和时间。</p><div id="review-answer" class="review-answer"></div><label>审核结论<select name="approved"><option value="true">审核通过</option><option value="false">退回待修改</option></select></label><label class="checkbox-field"><input name="enabled" type="checkbox">审核通过后启用</label><label>审核说明<textarea name="note" rows="3" maxlength="2000" placeholder="记录核对来源或退回原因" required></textarea></label><p id="review-error" class="form-error" role="alert" hidden></p></div><footer class="dialog-footer"><button id="cancel-review" type="button" class="button secondary">取消</button><button type="submit" class="button primary">保存审核结果</button></footer></form></dialog>
+  <dialog id="import-dialog" class="compact-dialog" aria-labelledby="import-title"><form id="import-form"><header class="dialog-heading"><h2 id="import-title">导入题库 JSON</h2><button id="close-import" type="button" class="icon-button" aria-label="关闭导入">×</button></header><div class="dialog-body"><p class="info-banner">整批校验通过后才会导入。导入题目默认待审核、未启用；不会自动批准原题库。</p><label>选择 JSON 文件<input name="file" type="file" accept=".json,application/json" required></label><p id="import-file-info" class="muted small">支持题目数组或包含 questions 数组的 JSON 文件。</p><p id="import-error" class="form-error" role="alert" hidden></p></div><footer class="dialog-footer"><button id="cancel-import" type="button" class="button secondary">取消</button><button type="submit" class="button primary">校验并导入</button></footer></form></dialog>
+  <dialog id="level-dialog" class="compact-dialog" aria-labelledby="level-editor-title"><form id="level-form"><header class="dialog-heading"><h2 id="level-editor-title">新增关卡</h2><button id="close-level" type="button" class="icon-button" aria-label="关闭新增关卡">×</button></header><div class="dialog-body"><p class="info-banner">关卡编号保存后不可更改。题目在题库管理中关联；有效题池不足时，玩家无法开局。</p><div class="form-grid"><label class="span-2">所属主题<select name="themeId" required></select></label><label class="span-2">关卡编号<input name="id" required maxlength="80" pattern="[a-z][a-z0-9_-]*"><span class="field-help">建议使用稳定的英文编号。</span></label><label class="span-2">关卡名称<input name="name" required maxlength="100"></label><label>排序<input name="order" type="number" min="1" max="1000000" step="1" required></label><label>每次挑战题数<input name="questionCount" type="number" min="1" max="2000" step="1" required></label><label>首次通关积分<input name="points" type="number" min="0" max="1000000" step="1" required></label><label>难度说明<input name="difficultyLabel" required maxlength="100"></label><label class="checkbox-field span-2"><input name="enabled" type="checkbox">立即启用新关卡</label></div><p id="level-error" class="form-error" role="alert" hidden></p></div><footer class="dialog-footer"><button id="cancel-level" class="button secondary" type="button">取消</button><button class="button primary" type="submit">新增关卡</button></footer></form></dialog>
+  <dialog id="activity-dialog" class="compact-dialog" aria-labelledby="activity-import-title"><form id="activity-import-form"><header class="dialog-heading"><h2 id="activity-import-title">导入活动配置</h2><button id="close-activity-import" class="icon-button" type="button" aria-label="关闭活动导入">×</button></header><div class="dialog-body"><p class="info-banner warning">整批校验后事务保存。导入可替换活动规则与配置；先导出备份。遗漏的历史关卡会保留为停用，不删除旧挑战；文件不能批准规则或题目。</p><label>活动 JSON 文件<input name="file" type="file" accept=".json,application/json" required></label><p id="activity-file-info" class="muted small">文件须包含 config 与 levels。可选 questions 默认不导入，题库审核独立保留。</p><label class="checkbox-field"><input name="includeQuestions" type="checkbox">同时导入文件中的题目（重置为待审核、未启用）</label><label class="checkbox-field"><input name="confirmed" type="checkbox" required>已备份，并确认导入这份活动配置</label><p id="activity-import-error" class="form-error" role="alert" hidden></p></div><footer class="dialog-footer"><button id="cancel-activity-import" class="button secondary" type="button">取消</button><button class="button primary" type="submit">校验并导入活动</button></footer></form></dialog>
+  <dialog id="confirm-dialog" class="compact-dialog" aria-labelledby="confirm-title"><div class="dialog-heading"><h2 id="confirm-title">确认删除题目</h2></div><div class="dialog-body"><p id="confirm-message"></p><p id="confirm-error" class="form-error" role="alert" hidden></p></div><div class="dialog-footer"><button id="confirm-cancel" type="button" class="button secondary">取消</button><button id="confirm-accept" type="button" class="button danger">删除题目</button></div></dialog>
+</body>
+</html>
