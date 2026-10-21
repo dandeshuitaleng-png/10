@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "game-button": "/components/game-button/index",
+    "game-icon": "/components/game-icon/index",
+    "mascot-actor": "/components/mascot-actor/index"
+  },
+  "disableScroll": true
+}

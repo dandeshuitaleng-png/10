@@ -1,0 +1,2957 @@
+{
+  "passed": true,
+  "scope": "Actual WeChat canvas PNG, native image preview and constrained native containers. Host simulator 390x844, not physical phone or album permission acceptance. Review certificate records are isolated.",
+  "checks": [
+    {
+      "theme": "ecology",
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 164,
+            "bottom": 404,
+            "width": 288,
+            "height": 240
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 404,
+            "bottom": 540,
+            "width": 288,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 216,
+            "bottom": 591.4609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 216,
+            "bottom": 591.4609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 605.4609375,
+            "bottom": 627.4609375,
+            "width": 264,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 292,
+            "top": 412,
+            "bottom": 464,
+            "width": 264,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 292,
+            "top": 480,
+            "bottom": 524,
+            "width": 264,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 164,
+            "bottom": 404,
+            "width": 288,
+            "height": 240
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 404,
+            "bottom": 540,
+            "width": 288,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": -49.5,
+            "bottom": 325.9609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": -49.5,
+            "bottom": 325.9609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 339.9609375,
+            "bottom": 361.9609375,
+            "width": 264,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 292,
+            "top": 412,
+            "bottom": 464,
+            "width": 264,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 292,
+            "top": 480,
+            "bottom": 524,
+            "width": 264,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "ecology-320-certificate-top.png",
+        "ecology-320-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "red",
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 307,
+            "top": 161,
+            "bottom": 407,
+            "width": 294,
+            "height": 246
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 307,
+            "top": 407,
+            "bottom": 543,
+            "width": 294,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 295,
+            "top": 213,
+            "bottom": 597,
+            "width": 270,
+            "height": 384
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 295,
+            "top": 213,
+            "bottom": 597,
+            "width": 270,
+            "height": 384
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 295,
+            "top": 611,
+            "bottom": 633,
+            "width": 270,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 295,
+            "top": 415,
+            "bottom": 467,
+            "width": 270,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 25,
+            "right": 295,
+            "top": 483,
+            "bottom": 527,
+            "width": 270,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 307,
+            "top": 161,
+            "bottom": 407,
+            "width": 294,
+            "height": 246
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 307,
+            "top": 407,
+            "bottom": 543,
+            "width": 294,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 295,
+            "top": -55,
+            "bottom": 329,
+            "width": 270,
+            "height": 384
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 295,
+            "top": -55,
+            "bottom": 329,
+            "width": 270,
+            "height": 384
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 295,
+            "top": 343,
+            "bottom": 365,
+            "width": 270,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 295,
+            "top": 415,
+            "bottom": 467,
+            "width": 270,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 25,
+            "right": 295,
+            "top": 483,
+            "bottom": 527,
+            "width": 270,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "red-320-certificate-top.png",
+        "red-320-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "culture",
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 306,
+            "top": 162,
+            "bottom": 406,
+            "width": 292,
+            "height": 244
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 306,
+            "top": 406,
+            "bottom": 542,
+            "width": 292,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 294,
+            "top": 214,
+            "bottom": 595.1484375,
+            "width": 268,
+            "height": 381.1484375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 294,
+            "top": 214,
+            "bottom": 595.1484375,
+            "width": 268,
+            "height": 381.1484375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 294,
+            "top": 609.1484375,
+            "bottom": 631.1484375,
+            "width": 268,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 294,
+            "top": 414,
+            "bottom": 466,
+            "width": 268,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 26,
+            "right": 294,
+            "top": 482,
+            "bottom": 526,
+            "width": 268,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 306,
+            "top": 162,
+            "bottom": 406,
+            "width": 292,
+            "height": 244
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 306,
+            "top": 406,
+            "bottom": 542,
+            "width": 292,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 294,
+            "top": -53,
+            "bottom": 328.1484375,
+            "width": 268,
+            "height": 381.1484375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 294,
+            "top": -53,
+            "bottom": 328.1484375,
+            "width": 268,
+            "height": 381.1484375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 294,
+            "top": 342.1484375,
+            "bottom": 364.1484375,
+            "width": 268,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 294,
+            "top": 414,
+            "bottom": 466,
+            "width": 268,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 26,
+            "right": 294,
+            "top": 482,
+            "bottom": 526,
+            "width": 268,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "culture-320-certificate-top.png",
+        "culture-320-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "industry",
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 164,
+            "bottom": 404,
+            "width": 288,
+            "height": 240
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 404,
+            "bottom": 540,
+            "width": 288,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 216,
+            "bottom": 591.4609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 216,
+            "bottom": 591.4609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 605.4609375,
+            "bottom": 627.4609375,
+            "width": 264,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 292,
+            "top": 412,
+            "bottom": 464,
+            "width": 264,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 292,
+            "top": 480,
+            "bottom": 524,
+            "width": 264,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 164,
+            "bottom": 404,
+            "width": 288,
+            "height": 240
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 404,
+            "bottom": 540,
+            "width": 288,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": -49.5,
+            "bottom": 325.9609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": -49.5,
+            "bottom": 325.9609375,
+            "width": 264,
+            "height": 375.4609375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 292,
+            "top": 339.9609375,
+            "bottom": 361.9609375,
+            "width": 264,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 292,
+            "top": 412,
+            "bottom": 464,
+            "width": 264,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 292,
+            "top": 480,
+            "bottom": 524,
+            "width": 264,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "industry-320-certificate-top.png",
+        "industry-320-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "ecology",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 194,
+            "bottom": 628,
+            "width": 343,
+            "height": 434
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 628,
+            "bottom": 764,
+            "width": 343,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 246,
+            "bottom": 699.6875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 246,
+            "bottom": 699.6875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 713.6875,
+            "bottom": 735.6875,
+            "width": 319,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 347,
+            "top": 636,
+            "bottom": 688,
+            "width": 319,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 347,
+            "top": 704,
+            "bottom": 748,
+            "width": 319,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 194,
+            "bottom": 628,
+            "width": 343,
+            "height": 434
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 628,
+            "bottom": 764,
+            "width": 343,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 96.5,
+            "bottom": 550.1875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 96.5,
+            "bottom": 550.1875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 564.1875,
+            "bottom": 586.1875,
+            "width": 319,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 347,
+            "top": 636,
+            "bottom": 688,
+            "width": 319,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 347,
+            "top": 704,
+            "bottom": 748,
+            "width": 319,
+            "height": 44
+          }
+        ]
+      },
+      "artwork": {
+        "file": "artwork/ecology-荣誉证书.png",
+        "bytes": 207718,
+        "width": 900,
+        "height": 1280
+      },
+      "screenshots": [
+        "ecology-375-certificate-top.png",
+        "ecology-375-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "red",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 362,
+            "top": 191,
+            "bottom": 631,
+            "width": 349,
+            "height": 440
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 362,
+            "top": 631,
+            "bottom": 767,
+            "width": 349,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 350,
+            "top": 243,
+            "bottom": 705.21875,
+            "width": 325,
+            "height": 462.21875
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 350,
+            "top": 243,
+            "bottom": 705.21875,
+            "width": 325,
+            "height": 462.21875
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 350,
+            "top": 719.21875,
+            "bottom": 741.21875,
+            "width": 325,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 350,
+            "top": 639,
+            "bottom": 691,
+            "width": 325,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 25,
+            "right": 350,
+            "top": 707,
+            "bottom": 751,
+            "width": 325,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 362,
+            "top": 191,
+            "bottom": 631,
+            "width": 349,
+            "height": 440
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 362,
+            "top": 631,
+            "bottom": 767,
+            "width": 349,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 350,
+            "top": 91,
+            "bottom": 553.21875,
+            "width": 325,
+            "height": 462.21875
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 350,
+            "top": 91,
+            "bottom": 553.21875,
+            "width": 325,
+            "height": 462.21875
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 350,
+            "top": 567.21875,
+            "bottom": 589.21875,
+            "width": 325,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 350,
+            "top": 639,
+            "bottom": 691,
+            "width": 325,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 25,
+            "right": 350,
+            "top": 707,
+            "bottom": 751,
+            "width": 325,
+            "height": 44
+          }
+        ]
+      },
+      "artwork": {
+        "file": "artwork/red-荣誉证书.png",
+        "bytes": 199968,
+        "width": 900,
+        "height": 1280
+      },
+      "screenshots": [
+        "red-375-certificate-top.png",
+        "red-375-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "culture",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 361,
+            "top": 192,
+            "bottom": 630,
+            "width": 347,
+            "height": 438
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 361,
+            "top": 630,
+            "bottom": 766,
+            "width": 347,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 349,
+            "top": 244,
+            "bottom": 703.375,
+            "width": 323,
+            "height": 459.375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 349,
+            "top": 244,
+            "bottom": 703.375,
+            "width": 323,
+            "height": 459.375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 349,
+            "top": 717.375,
+            "bottom": 739.375,
+            "width": 323,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 349,
+            "top": 638,
+            "bottom": 690,
+            "width": 323,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 26,
+            "right": 349,
+            "top": 706,
+            "bottom": 750,
+            "width": 323,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 361,
+            "top": 192,
+            "bottom": 630,
+            "width": 347,
+            "height": 438
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 361,
+            "top": 630,
+            "bottom": 766,
+            "width": 347,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 349,
+            "top": 92.5,
+            "bottom": 551.875,
+            "width": 323,
+            "height": 459.375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 349,
+            "top": 92.5,
+            "bottom": 551.875,
+            "width": 323,
+            "height": 459.375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 349,
+            "top": 565.875,
+            "bottom": 587.875,
+            "width": 323,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 349,
+            "top": 638,
+            "bottom": 690,
+            "width": 323,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 26,
+            "right": 349,
+            "top": 706,
+            "bottom": 750,
+            "width": 323,
+            "height": 44
+          }
+        ]
+      },
+      "artwork": {
+        "file": "artwork/culture-荣誉证书.png",
+        "bytes": 209546,
+        "width": 900,
+        "height": 1280
+      },
+      "screenshots": [
+        "culture-375-certificate-top.png",
+        "culture-375-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "industry",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 194,
+            "bottom": 628,
+            "width": 343,
+            "height": 434
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 628,
+            "bottom": 764,
+            "width": 343,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 246,
+            "bottom": 699.6875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 246,
+            "bottom": 699.6875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 713.6875,
+            "bottom": 735.6875,
+            "width": 319,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 347,
+            "top": 636,
+            "bottom": 688,
+            "width": 319,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 347,
+            "top": 704,
+            "bottom": 748,
+            "width": 319,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 194,
+            "bottom": 628,
+            "width": 343,
+            "height": 434
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 628,
+            "bottom": 764,
+            "width": 343,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 96.5,
+            "bottom": 550.1875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 96.5,
+            "bottom": 550.1875,
+            "width": 319,
+            "height": 453.6875
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 347,
+            "top": 564.1875,
+            "bottom": 586.1875,
+            "width": 319,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 347,
+            "top": 636,
+            "bottom": 688,
+            "width": 319,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 347,
+            "top": 704,
+            "bottom": 748,
+            "width": 319,
+            "height": 44
+          }
+        ]
+      },
+      "artwork": {
+        "file": "artwork/industry-荣誉证书.png",
+        "bytes": 208664,
+        "width": 900,
+        "height": 1280
+      },
+      "screenshots": [
+        "industry-375-certificate-top.png",
+        "industry-375-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "ecology",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "state": "not-earned",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "state": "not-earned",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "state": "not-earned",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "state": "not-earned",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "state": "long-recipient",
+      "passed": true,
+      "dimensions": {
+        "width": 900,
+        "height": 1586
+      }
+    },
+    {
+      "theme": "ecology",
+      "size": {
+        "w": 430,
+        "h": 932,
+        "status": 59,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 209,
+            "bottom": 748,
+            "width": 398,
+            "height": 539
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 884,
+            "width": 398,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 261,
+            "bottom": 792.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 261,
+            "bottom": 792.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 806.90625,
+            "bottom": 828.90625,
+            "width": 374,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 402,
+            "top": 756,
+            "bottom": 808,
+            "width": 374,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 402,
+            "top": 824,
+            "bottom": 868,
+            "width": 374,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 209,
+            "bottom": 748,
+            "width": 398,
+            "height": 539
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 884,
+            "width": 398,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 138,
+            "bottom": 669.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 138,
+            "bottom": 669.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 683.90625,
+            "bottom": 705.90625,
+            "width": 374,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 402,
+            "top": 756,
+            "bottom": 808,
+            "width": 374,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 402,
+            "top": 824,
+            "bottom": 868,
+            "width": 374,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "ecology-430-certificate-top.png",
+        "ecology-430-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "red",
+      "size": {
+        "w": 430,
+        "h": 932,
+        "status": 59,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 417,
+            "top": 206,
+            "bottom": 751,
+            "width": 404,
+            "height": 545
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 417,
+            "top": 751,
+            "bottom": 887,
+            "width": 404,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 405,
+            "top": 258,
+            "bottom": 798.4375,
+            "width": 380,
+            "height": 540.4375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 405,
+            "top": 258,
+            "bottom": 798.4375,
+            "width": 380,
+            "height": 540.4375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 405,
+            "top": 812.4375,
+            "bottom": 834.4375,
+            "width": 380,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 405,
+            "top": 759,
+            "bottom": 811,
+            "width": 380,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 25,
+            "right": 405,
+            "top": 827,
+            "bottom": 871,
+            "width": 380,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 417,
+            "top": 206,
+            "bottom": 751,
+            "width": 404,
+            "height": 545
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 417,
+            "top": 751,
+            "bottom": 887,
+            "width": 404,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 405,
+            "top": 132.5,
+            "bottom": 672.9375,
+            "width": 380,
+            "height": 540.4375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 405,
+            "top": 132.5,
+            "bottom": 672.9375,
+            "width": 380,
+            "height": 540.4375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 405,
+            "top": 686.9375,
+            "bottom": 708.9375,
+            "width": 380,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 405,
+            "top": 759,
+            "bottom": 811,
+            "width": 380,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 25,
+            "right": 405,
+            "top": 827,
+            "bottom": 871,
+            "width": 380,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "red-430-certificate-top.png",
+        "red-430-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "culture",
+      "size": {
+        "w": 430,
+        "h": 932,
+        "status": 59,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 416,
+            "top": 207,
+            "bottom": 750,
+            "width": 402,
+            "height": 543
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 416,
+            "top": 750,
+            "bottom": 886,
+            "width": 402,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 404,
+            "top": 259,
+            "bottom": 796.59375,
+            "width": 378,
+            "height": 537.59375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 404,
+            "top": 259,
+            "bottom": 796.59375,
+            "width": 378,
+            "height": 537.59375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 404,
+            "top": 810.59375,
+            "bottom": 832.59375,
+            "width": 378,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 404,
+            "top": 758,
+            "bottom": 810,
+            "width": 378,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 26,
+            "right": 404,
+            "top": 826,
+            "bottom": 870,
+            "width": 378,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 416,
+            "top": 207,
+            "bottom": 750,
+            "width": 402,
+            "height": 543
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 416,
+            "top": 750,
+            "bottom": 886,
+            "width": 402,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 404,
+            "top": 134.5,
+            "bottom": 672.09375,
+            "width": 378,
+            "height": 537.59375
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 404,
+            "top": 134.5,
+            "bottom": 672.09375,
+            "width": 378,
+            "height": 537.59375
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 404,
+            "top": 686.09375,
+            "bottom": 708.09375,
+            "width": 378,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 404,
+            "top": 758,
+            "bottom": 810,
+            "width": 378,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 26,
+            "right": 404,
+            "top": 826,
+            "bottom": 870,
+            "width": 378,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "culture-430-certificate-top.png",
+        "culture-430-certificate-bottom.png"
+      ]
+    },
+    {
+      "theme": "industry",
+      "size": {
+        "w": 430,
+        "h": 932,
+        "status": 59,
+        "safe": 34
+      },
+      "passed": true,
+      "issues": [],
+      "dimensions": {
+        "width": 900,
+        "height": 1280
+      },
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 209,
+            "bottom": 748,
+            "width": 398,
+            "height": 539
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 884,
+            "width": 398,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 261,
+            "bottom": 792.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 261,
+            "bottom": 792.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 806.90625,
+            "bottom": 828.90625,
+            "width": 374,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 402,
+            "top": 756,
+            "bottom": 808,
+            "width": 374,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 402,
+            "top": 824,
+            "bottom": 868,
+            "width": 374,
+            "height": 44
+          }
+        ]
+      },
+      "scrolled": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 932,
+            "width": 430,
+            "height": 932
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 209,
+            "bottom": 748,
+            "width": 398,
+            "height": 539
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 884,
+            "width": 398,
+            "height": 136
+          }
+        ],
+        ".certificate-paper": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 138,
+            "bottom": 669.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-preview": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 138,
+            "bottom": 669.90625,
+            "width": 374,
+            "height": 531.90625
+          }
+        ],
+        ".certificate-save-note": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 402,
+            "top": 683.90625,
+            "bottom": 705.90625,
+            "width": 374,
+            "height": 22
+          }
+        ],
+        ".state-block": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 402,
+            "top": 756,
+            "bottom": 808,
+            "width": 374,
+            "height": 52
+          }
+        ],
+        "#footer-secondary": [
+          {
+            "id": "footer-secondary",
+            "dataset": {
+              "action": "share-cert",
+              "route": "levels"
+            },
+            "left": 28,
+            "right": 402,
+            "top": 824,
+            "bottom": 868,
+            "width": 374,
+            "height": 44
+          }
+        ]
+      },
+      "screenshots": [
+        "industry-430-certificate-top.png",
+        "industry-430-certificate-bottom.png"
+      ]
+    }
+  ]
+}

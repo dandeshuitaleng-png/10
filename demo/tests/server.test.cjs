@@ -40,12 +40,12 @@ test('experience uses all 240 real questions without fabricating approval; serve
   const h = await harness(t); const login = await h.login();
   const catalog = await h.request('GET', '/api/catalog');
   assert.equal(catalog.data.levels.length, 16); assert.equal(catalog.data.themes.length, 4);
-  assert.ok(catalog.data.levels.every(level => level.availableQuestions === 15 && level.approvedQuestions === 0));
+  assert.ok(catalog.data.levels.every(level => level.availableQuestions === 15 && !('approvedQuestions' in level)));
   const questions = await h.app.store.list('questions'); assert.equal(questions.length, 240);
-  assert.ok(questions.every(question => !question.approved && !question.enabled && question.reviewStatus === 'pending'));
+  assert.ok(questions.every(question => question.enabled && !('approved' in question) && !('reviewStatus' in question)));
   const challenge = await h.begin(login.data.token, 'red-1');
   assert.equal(challenge.total, 10); assert.equal(challenge.position, 0); assert.equal(challenge.countdownSeconds, 30);
-  assert.equal(challenge.contentApprovalPending, true); assert.ok(!('answer' in challenge.question)); assert.ok(!('questions' in challenge));
+  assert.equal(challenge.contentApprovalPending, undefined); assert.ok(!('answer' in challenge.question)); assert.ok(!('questions' in challenge));
   const raw = await h.app.store.get('challenges', challenge.id); assert.equal(new Set(raw.questions.map(question => question.id)).size, 10);
   const other = await h.login('另一位'); assert.equal((await h.request('GET', `/api/challenges/${challenge.id}`, null, other.data.token)).status, 404);
   const denied = await h.request('POST', '/api/challenges', { levelId: 'red-2', requestId: crypto.randomUUID() }, login.data.token); assert.equal(denied.error.code, 'LEVEL_LOCKED');
@@ -129,31 +129,31 @@ test('player and administrator sessions are separate; role/name injection cannot
   await h.request('POST', '/api/auth/logout', {}, '', { Cookie: cookies }); assert.equal((await h.request('GET', '/api/me', null, first.data.token)).status, 401); assert.equal((await h.request('GET', '/api/admin/overview', null, admin.data.token)).status, 401);
 });
 
-test('admin import is atomic, review is attributable, edits reset approval and active questions keep their version', async t => {
+test('admin import is atomic, valid questions need no review, edits preserve enabled state and active questions keep their version', async t => {
   const h = await harness(t); const admin = (await h.admin()).data.token; const token = (await h.login()).data.token;
   const all = (await h.request('GET', '/api/admin/questions', null, admin)).data.questions;
   const sample = { ...all[0], id: 'new-review-question' };
   const invalidImport = await h.request('POST', '/api/admin/questions/import', { questions: [sample, { ...sample, id: 'bad', options: ['only'] }] }, admin); assert.equal(invalidImport.status, 400); assert.equal(await h.app.store.get('questions', sample.id), null);
   const imported = await h.request('POST', '/api/admin/questions/import', { questions: [sample] }, admin); assert.equal(imported.data.imported, 1);
-  assert.equal((await h.request('POST', `/api/admin/questions/${sample.id}/review`, { approved: false, enabled: true }, admin)).error.code, 'UNAPPROVED_CONTENT');
-  const reviewed = await h.request('POST', `/api/admin/questions/${sample.id}/review`, { approved: true, enabled: true, note: '测试审核' }, admin); assert.equal(reviewed.data.reviewedBy, 'administrator'); assert.ok(reviewed.data.reviewedAt);
+  assert.equal((await h.request('POST', `/api/admin/questions/${sample.id}/review`, { approved: true, enabled: true }, admin)).status,404);
+  const saved=(await h.request('GET', `/api/admin/questions/${sample.id}`,null,admin)).data;assert.equal(saved.enabled,true);assert.equal(saved.reviewStatus,undefined);
   const challenge = await h.begin(token, 'red-1'); const raw = await h.app.store.get('challenges', challenge.id); const current = raw.questions[0];
-  const changed = await h.request('PUT', `/api/admin/questions/${current.id}`, { ...current, answer: (current.answer + 1) % 4 }, admin); assert.equal(changed.data.approved, false); assert.equal(changed.data.enabled, false); assert.equal(changed.data.reviewStatus, 'pending');
+  const changed = await h.request('PUT', `/api/admin/questions/${current.id}`, { ...current, answer: (current.answer + 1) % 4 }, admin); assert.equal(changed.data.approved, undefined); assert.equal(changed.data.enabled, true); assert.equal(changed.data.reviewStatus, undefined);
   const result = await h.answer(token, challenge, current.answer); assert.equal(result.data.feedback.right, true);
   const unsafe = await h.request('PUT', `/api/admin/questions/${sample.id}`, { ...sample, media: { type: 'image', url: 'javascript:alert(1)' } }, admin); assert.equal(unsafe.error.code, 'INVALID_MEDIA');
   const badPoints = await h.request('PUT', '/api/admin/config', { points: { byLevel: [-1, 2, 3, 4] } }, admin); assert.equal(badPoints.error.code, 'INVALID_INPUT');
   const timer = await h.request('PUT', '/api/admin/config', { timer: { seconds: 45 } }, admin); assert.equal(timer.data.approval.status, 'unapproved');
   const disabled = await h.request('PUT', '/api/admin/levels/red-1', { enabled: false }, admin); assert.equal(disabled.error.code, 'LEVEL_DEPENDENCY');
-  const audit = await h.request('GET', '/api/admin/audit', null, admin); assert.ok(audit.data.entries.some(item => item.action === 'question.review')); assert.ok(!JSON.stringify(audit.data).includes(CREDS.password));
+  const audit = await h.request('GET', '/api/admin/audit', null, admin); assert.ok(audit.data.entries.some(item => item.action === 'question.update')); assert.ok(!JSON.stringify(audit.data).includes(CREDS.password));
 });
 
-test('production blocks development identity, pending content, missing integrations and test-share evidence', async t => {
+test('production uses enabled source content, blocks development identity, missing integrations and test-share evidence', async t => {
   const h = await harness(t, { mode: 'production', platformVerifier: async ticket => ({ id: ticket, name: '正式测试身份' }), shareVerifier: async () => false, syncReceiver: async () => true });
   assert.equal((await h.request('POST', '/api/auth/dev', { name: '不能开发登录' })).error.code, 'DEV_LOGIN_DISABLED');
   const login = await h.request('POST', '/api/auth/platform', { ticket: 'test-provider-ticket' }); assert.equal(login.status, 200); const token = login.data.token;
-  assert.equal((await h.request('POST', '/api/challenges', { levelId: 'red-1', requestId: crypto.randomUUID() }, token)).error.code, 'INSUFFICIENT_QUESTIONS');
+  assert.equal((await h.request('GET','/api/catalog')).data.levels.find(l=>l.id==='red-1').availableQuestions,15);
   const admin = (await h.admin()).data.token; const pool = (await h.request('GET', '/api/admin/questions?levelId=red-1', null, admin)).data.questions;
-  for (const question of pool) await h.request('POST', `/api/admin/questions/${question.id}/review`, { approved: true, enabled: true, note: '隔离测试审核' }, admin);
+  for (const question of pool) await h.request('PUT', `/api/admin/questions/${question.id}`, { enabled: true }, admin);
   let challenge = await h.begin(token, 'red-1'); const raw = await h.app.store.get('challenges', challenge.id); challenge = (await h.answer(token, challenge, (raw.questions[0].answer + 1) % 4)).data;
   const revive = await h.request('POST', `/api/challenges/${challenge.id}/revive`, { evidence: { type: 'experience-test', challengeId: challenge.id }, requestId: crypto.randomUUID() }, token); assert.equal(revive.error.code, 'SHARE_NOT_VERIFIED'); assert.equal((await h.app.store.get('challenges', challenge.id)).reviveUsed, false);
   await h.request('PUT', '/api/admin/config', { timer: { seconds: 45 } }, admin);
@@ -195,11 +195,11 @@ test('admin-only logout keeps player alive; generated experience credentials res
   assert.equal((await h.request('GET','/api/me',null,restored.data.token)).data.points,10);
 });
 
-test('original teaching media seed only experience content and remain pending review',async t=>{
+test('original teaching media preserve explicit source labels without a question-review gate',async t=>{
   const h=await harness(t);
   for(const id of ['HN-ECOLOGY-1-09','HN-ECOLOGY-2-04','HN-ECOLOGY-3-05']){
     const q=await h.app.store.get('questions',id);
-    assert.ok(q.media?.url);assert.equal(q.approved,false);assert.equal(q.enabled,false);
+    assert.ok(q.media?.url);assert.equal(q.approved,undefined);assert.equal(q.enabled,true);
     assert.ok(q.media.caption.includes('非'));
   }
 });
@@ -224,5 +224,22 @@ test('production never reuses a request result created in experience for the sam
   await app.close();app=null;app=await createApplication({...options,mode:'production'});server=await app.listen();
   const production=await call('/api/auth/platform',{ticket:'isolated-production-ticket'});
   const result=await call('/api/challenges',request,production.data.token);
-  assert.equal(result.status,409);assert.equal(result.error.code,'INSUFFICIENT_QUESTIONS');assert.ok(!result.data);
+  assert.equal(result.status,200);assert.equal(result.data.mode,'production');assert.notEqual(result.data.id,experience.data.id);
+});
+
+
+test('removing question review migrates pending content once without changing play history or explicitly disabled/deleted questions',async t=>{
+ const h=await harness(t),token=(await h.login()).data.token;await h.begin(token,'red-1');
+ const all=await h.app.store.list('questions'),pending=all[0],disabled=all[1],deleted=all[2];
+ await h.app.store.set('questions',pending.id,{...pending,enabled:false,approved:false,reviewStatus:'pending',reviewNote:'旧审核字段'});
+ await h.app.store.set('questions',disabled.id,{...disabled,enabled:false,approved:true,reviewStatus:'approved'});
+ await h.app.store.set('questions',deleted.id,{...deleted,enabled:false,deleted:true,reviewStatus:'pending'});
+ await h.app.store.delete('meta','questions-no-review-v1');
+ const collections=['users','challenges','completions','ledger','certificates'];const before=await Promise.all(collections.map(key=>h.app.store.list(key)));
+ // Re-initialization against the same store performs startup migration; this object owns no extra listener.
+ await createApplication({store:h.app.store,mode:'experience',adminCredentials:CREDS});
+ const after=await Promise.all(collections.map(key=>h.app.store.list(key)));assert.deepEqual(after,before);
+ const q=await h.app.store.get('questions',pending.id);assert.equal(q.enabled,true);assert.equal(q.version,pending.version);assert.equal(q.title,pending.title);assert.equal(q.answer,pending.answer);assert.equal(q.reviewStatus,undefined);assert.equal(q.approved,undefined);
+ assert.equal((await h.app.store.get('questions',disabled.id)).enabled,false);assert.equal((await h.app.store.get('questions',deleted.id)).deleted,true);assert.equal((await h.app.store.list('questions')).length,all.length);
+ const marker=await h.app.store.get('meta','questions-no-review-v1');await createApplication({store:h.app.store,mode:'experience',adminCredentials:CREDS});assert.deepEqual(await h.app.store.get('meta','questions-no-review-v1'),marker);
 });

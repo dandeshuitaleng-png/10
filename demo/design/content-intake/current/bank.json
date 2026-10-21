@@ -4,7 +4,6 @@
   "region": "湖南全省",
   "audience": "10—16岁",
   "createdAt": "2026-10-09",
-  "reviewStatus": "待业务审核",
   "questionCount": 240,
   "notes": [
     "情境题中的方案、样本和注明假设的数字为原创教学情境，不是实际统计。",
@@ -237,10 +236,8 @@
       "sourceTitle": "半条被子折射军民鱼水情",
       "sourceUrl": "https://www.hunan.gov.cn/topic/zl7sn/JZZZCZL/201906/t20190629_5368678.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-02",
@@ -270,10 +267,8 @@
       "sourceTitle": "半条被子折射军民鱼水情",
       "sourceUrl": "https://www.hunan.gov.cn/topic/zl7sn/JZZZCZL/201906/t20190629_5368678.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-03",
@@ -303,10 +298,8 @@
       "sourceTitle": "通道转兵纪念馆",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/ggwh/201503/t20150323_5430746.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-04",
@@ -336,10 +329,8 @@
       "sourceTitle": "平江起义纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210826_20401057.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-05",
@@ -369,10 +360,8 @@
       "sourceTitle": "芷江受降旧址和纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101485/202108/t20210827_20401962.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-06",
@@ -402,10 +391,8 @@
       "sourceTitle": "贺龙故居和纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101486/202108/t20210827_20401993.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-07",
@@ -435,10 +422,8 @@
       "sourceTitle": "彭德怀纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101476/202108/t20210827_20401941.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-08",
@@ -468,10 +453,8 @@
       "sourceTitle": "蔡和森纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101483/202108/t20210827_20403600.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-09",
@@ -501,10 +484,8 @@
       "sourceTitle": "湖南雷锋纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hslv/c101474/202108/t20210827_20403366.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-10",
@@ -534,10 +515,8 @@
       "sourceTitle": "桂东：传承红色基因打造纪律文化品牌",
       "sourceUrl": "https://www.sxfj.gov.cn/gong_zuo_dong_tai/yi_xian_kuai_bao/10945272.shtml",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-11",
@@ -567,10 +546,8 @@
       "sourceTitle": "茶陵县工农兵政府旧址",
       "sourceUrl": "https://searchs.hunan.gov.cn/hnszf/jxxx/hslv/c101475/202108/t20210827_20404519.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-12",
@@ -600,10 +577,8 @@
       "sourceTitle": "湘鄂川黔革命根据地纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101487/202108/t20210826_20401083.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-13",
@@ -633,10 +608,8 @@
       "sourceTitle": "红色旅游加速脱贫攻坚",
       "sourceUrl": "https://www.hunan.gov.cn/topic/hsttqmxk/jjhb/202011/t20201113_13957995.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-14",
@@ -666,10 +639,8 @@
       "sourceTitle": "毛泽东故居",
       "sourceUrl": "https://www.hunan.gov.cn/topic/ccjhl/ccdsz/202107/t20210726_19993630.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-1-15",
@@ -699,10 +670,8 @@
       "sourceTitle": "6条精品旅游路线感受红色潇湘",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/news/mtjj/202103/t20210330_15137479.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-01",
@@ -732,10 +701,8 @@
       "sourceTitle": "半条被子折射军民鱼水情",
       "sourceUrl": "https://www.hunan.gov.cn/topic/zl7sn/JZZZCZL/201906/t20190629_5368678.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-02",
@@ -765,10 +732,8 @@
       "sourceTitle": "通道转兵纪念馆",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/ggwh/201503/t20150323_5430746.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-03",
@@ -798,10 +763,8 @@
       "sourceTitle": "平江起义纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210826_20401057.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-04",
@@ -831,10 +794,8 @@
       "sourceTitle": "芷江受降旧址和纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101485/202108/t20210827_20401962.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-05",
@@ -864,10 +825,8 @@
       "sourceTitle": "贺龙故居和纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101486/202108/t20210827_20401993.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-06",
@@ -897,10 +856,8 @@
       "sourceTitle": "彭德怀纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101476/202108/t20210827_20401941.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-07",
@@ -930,10 +887,8 @@
       "sourceTitle": "蔡和森纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101483/202108/t20210827_20403600.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-08",
@@ -963,10 +918,8 @@
       "sourceTitle": "湖南雷锋纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hslv/c101474/202108/t20210827_20403366.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-09",
@@ -996,10 +949,8 @@
       "sourceTitle": "桂东：传承红色基因打造纪律文化品牌",
       "sourceUrl": "https://www.sxfj.gov.cn/gong_zuo_dong_tai/yi_xian_kuai_bao/10945272.shtml",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-10",
@@ -1029,10 +980,8 @@
       "sourceTitle": "茶陵县工农兵政府旧址",
       "sourceUrl": "https://searchs.hunan.gov.cn/hnszf/jxxx/hslv/c101475/202108/t20210827_20404519.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-11",
@@ -1062,10 +1011,8 @@
       "sourceTitle": "湘鄂川黔革命根据地纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101487/202108/t20210826_20401083.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-12",
@@ -1095,10 +1042,8 @@
       "sourceTitle": "6条精品旅游路线感受红色潇湘",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/news/mtjj/202103/t20210330_15137479.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-13",
@@ -1128,10 +1073,8 @@
       "sourceTitle": "红色旅游加速脱贫攻坚",
       "sourceUrl": "https://www.hunan.gov.cn/topic/hsttqmxk/jjhb/202011/t20201113_13957995.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-14",
@@ -1161,10 +1104,8 @@
       "sourceTitle": "毛泽东故居",
       "sourceUrl": "https://www.hunan.gov.cn/topic/ccjhl/ccdsz/202107/t20210726_19993630.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-2-15",
@@ -1194,10 +1135,8 @@
       "sourceTitle": "6条精品旅游路线感受红色潇湘",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/news/mtjj/202103/t20210330_15137479.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-01",
@@ -1227,10 +1166,8 @@
       "sourceTitle": "半条被子折射军民鱼水情",
       "sourceUrl": "https://www.hunan.gov.cn/topic/zl7sn/JZZZCZL/201906/t20190629_5368678.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-02",
@@ -1260,10 +1197,8 @@
       "sourceTitle": "通道转兵纪念馆",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/ggwh/201503/t20150323_5430746.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-03",
@@ -1293,10 +1228,8 @@
       "sourceTitle": "平江起义纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210826_20401057.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-04",
@@ -1326,10 +1259,8 @@
       "sourceTitle": "芷江受降旧址和纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101485/202108/t20210827_20401962.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-05",
@@ -1359,10 +1290,8 @@
       "sourceTitle": "贺龙故居和纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101486/202108/t20210827_20401993.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-06",
@@ -1392,10 +1321,8 @@
       "sourceTitle": "彭德怀纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101476/202108/t20210827_20401941.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-07",
@@ -1425,10 +1352,8 @@
       "sourceTitle": "蔡和森纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101483/202108/t20210827_20403600.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-08",
@@ -1458,10 +1383,8 @@
       "sourceTitle": "湖南雷锋纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hslv/c101474/202108/t20210827_20403366.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-09",
@@ -1492,10 +1415,8 @@
       "sourceTitle": "桂东：传承红色基因打造纪律文化品牌 / 传承军规精神锻造红色警队",
       "sourceUrl": "https://www.sxfj.gov.cn/gong_zuo_dong_tai/yi_xian_kuai_bao/10945272.shtml\nhttps://www.hnzf.gov.cn/content/646846/65/13547611.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-10",
@@ -1525,10 +1446,8 @@
       "sourceTitle": "茶陵县工农兵政府旧址",
       "sourceUrl": "https://searchs.hunan.gov.cn/hnszf/jxxx/hslv/c101475/202108/t20210827_20404519.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-11",
@@ -1558,10 +1477,8 @@
       "sourceTitle": "湘鄂川黔革命根据地纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101487/202108/t20210826_20401083.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-12",
@@ -1591,10 +1508,8 @@
       "sourceTitle": "6条精品旅游路线感受红色潇湘",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/news/mtjj/202103/t20210330_15137479.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-13",
@@ -1624,10 +1539,8 @@
       "sourceTitle": "红色旅游加速脱贫攻坚",
       "sourceUrl": "https://www.hunan.gov.cn/topic/hsttqmxk/jjhb/202011/t20201113_13957995.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-14",
@@ -1657,10 +1570,8 @@
       "sourceTitle": "毛泽东故居",
       "sourceUrl": "https://www.hunan.gov.cn/topic/ccjhl/ccdsz/202107/t20210726_19993630.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-3-15",
@@ -1690,10 +1601,8 @@
       "sourceTitle": "通道会议和通道转兵",
       "sourceUrl": "https://www.hunan.gov.cn/topic/fdbnlqhxzc/hxcbns/202106/t20210616_19643104.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-01",
@@ -1723,10 +1632,8 @@
       "sourceTitle": "半条被子折射军民鱼水情",
       "sourceUrl": "https://www.hunan.gov.cn/topic/zl7sn/JZZZCZL/201906/t20190629_5368678.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-02",
@@ -1758,10 +1665,8 @@
       "sourceTitle": "通道转兵纪念馆 / 平江起义纪念馆 / 芷江受降旧址和纪念馆",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/ggwh/201503/t20150323_5430746.html\nhttps://www.hunan.gov.cn/hnszf/c101480/202108/t20210826_20401057.html\nhttps://www.hunan.gov.cn/hnszf/c101485/202108/t20210827_20401962.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-03",
@@ -1791,10 +1696,8 @@
       "sourceTitle": "平江起义纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210826_20401057.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-04",
@@ -1824,10 +1727,8 @@
       "sourceTitle": "芷江受降旧址和纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101485/202108/t20210827_20401962.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-05",
@@ -1858,10 +1759,8 @@
       "sourceTitle": "贺龙故居和纪念馆 / 湘鄂川黔革命根据地纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101486/202108/t20210827_20401993.html\nhttps://www.hunan.gov.cn/hnszf/c101487/202108/t20210826_20401083.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-06",
@@ -1891,10 +1790,8 @@
       "sourceTitle": "彭德怀纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101476/202108/t20210827_20401941.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-07",
@@ -1925,10 +1822,8 @@
       "sourceTitle": "蔡和森纪念馆 / 里耶秦简出土二十周年座谈会",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101483/202108/t20210827_20403600.html\nhttps://wwj.hunan.gov.cn/wwj/c100310/c100311/202206/t20220624_26402639.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-08",
@@ -1958,10 +1853,8 @@
       "sourceTitle": "湖南雷锋纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hslv/c101474/202108/t20210827_20403366.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-09",
@@ -1991,10 +1884,8 @@
       "sourceTitle": "桂东：传承红色基因打造纪律文化品牌",
       "sourceUrl": "https://www.sxfj.gov.cn/gong_zuo_dong_tai/yi_xian_kuai_bao/10945272.shtml",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-10",
@@ -2024,10 +1915,8 @@
       "sourceTitle": "茶陵县工农兵政府旧址",
       "sourceUrl": "https://searchs.hunan.gov.cn/hnszf/jxxx/hslv/c101475/202108/t20210827_20404519.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-11",
@@ -2057,10 +1946,8 @@
       "sourceTitle": "湘鄂川黔革命根据地纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101487/202108/t20210826_20401083.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-12",
@@ -2090,10 +1977,8 @@
       "sourceTitle": "6条精品旅游路线感受红色潇湘",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/whhlyt/news/mtjj/202103/t20210330_15137479.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-13",
@@ -2123,10 +2008,8 @@
       "sourceTitle": "红色旅游加速脱贫攻坚",
       "sourceUrl": "https://www.hunan.gov.cn/topic/hsttqmxk/jjhb/202011/t20201113_13957995.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-14",
@@ -2156,10 +2039,8 @@
       "sourceTitle": "毛泽东故居",
       "sourceUrl": "https://www.hunan.gov.cn/topic/ccjhl/ccdsz/202107/t20210726_19993630.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-RED-4-15",
@@ -2190,10 +2071,8 @@
       "sourceTitle": "通道会议和通道转兵 / 平江起义纪念馆",
       "sourceUrl": "https://www.hunan.gov.cn/topic/fdbnlqhxzc/hxcbns/202106/t20210616_19643104.html\nhttps://www.hunan.gov.cn/hnszf/c101480/202108/t20210826_20401057.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-01",
@@ -2223,10 +2102,8 @@
       "sourceTitle": "岳麓书院",
       "sourceUrl": "https://hunan.gov.cn/hnszf/c101474/202108/t20210827_20403698.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-02",
@@ -2256,10 +2133,8 @@
       "sourceTitle": "岳麓书院",
       "sourceUrl": "https://hunan.gov.cn/hnszf/c101474/202108/t20210827_20403698.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-03",
@@ -2289,10 +2164,8 @@
       "sourceTitle": "岳阳楼",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210830_20411802.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-04",
@@ -2322,10 +2195,8 @@
       "sourceTitle": "江永女书习俗",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hxwh/gms/201711/t20171111_4685337.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-05",
@@ -2355,10 +2226,8 @@
       "sourceTitle": "滩头木版年画",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/13907.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-06",
@@ -2388,10 +2257,8 @@
       "sourceTitle": "土家族织锦技艺",
       "sourceUrl": "https://www.ihchina.cn/Article/Index/detail?id=14282",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-07",
@@ -2421,10 +2288,8 @@
       "sourceTitle": "里耶秦简出土二十周年座谈会",
       "sourceUrl": "https://wwj.hunan.gov.cn/wwj/c100310/c100311/202206/t20220624_26402639.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-08",
@@ -2454,10 +2319,8 @@
       "sourceTitle": "屈子祠",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210827_20403356.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-09",
@@ -2487,10 +2350,8 @@
       "sourceTitle": "桃花源传说",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201212/t20121220_4874896.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-10",
@@ -2520,10 +2381,8 @@
       "sourceTitle": "湖南凤凰",
       "sourceUrl": "https://zrzyt.hunan.gov.cn/zrzyt/xxgk/qtxx/sxfc/201703/t20170328_4166474.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-11",
@@ -2553,10 +2412,8 @@
       "sourceTitle": "文化地标：洪江古商城",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/news/wlyw/201804/t20180424_5372612.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-12",
@@ -2586,10 +2443,8 @@
       "sourceTitle": "传统湘绣艺术遭遇价低质劣恶性竞争",
       "sourceUrl": "https://www.ihchina.cn/news_other_details/16922.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-13",
@@ -2619,10 +2474,8 @@
       "sourceTitle": "衡州花鼓戏",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201307/t20130701_4874953.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-14",
@@ -2652,10 +2505,8 @@
       "sourceTitle": "永顺老司城正式对外开放",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/news/szyw/201909/t20190912_5483579.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-1-15",
@@ -2685,10 +2536,8 @@
       "sourceTitle": "非遗加扶贫让村民在家门口就业",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/9497.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-01",
@@ -2718,10 +2567,8 @@
       "sourceTitle": "岳麓书院",
       "sourceUrl": "https://hunan.gov.cn/hnszf/c101474/202108/t20210827_20403698.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-02",
@@ -2751,10 +2598,8 @@
       "sourceTitle": "岳阳楼",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210830_20411802.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-03",
@@ -2784,10 +2629,8 @@
       "sourceTitle": "江永女书习俗",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hxwh/gms/201711/t20171111_4685337.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-04",
@@ -2817,10 +2660,8 @@
       "sourceTitle": "滩头木版年画",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/13907.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-05",
@@ -2850,10 +2691,8 @@
       "sourceTitle": "土家族织锦技艺",
       "sourceUrl": "https://www.ihchina.cn/Article/Index/detail?id=14282",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-06",
@@ -2883,10 +2722,8 @@
       "sourceTitle": "里耶秦简出土二十周年座谈会",
       "sourceUrl": "https://wwj.hunan.gov.cn/wwj/c100310/c100311/202206/t20220624_26402639.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-07",
@@ -2916,10 +2753,8 @@
       "sourceTitle": "屈子祠",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210827_20403356.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-08",
@@ -2949,10 +2784,8 @@
       "sourceTitle": "桃花源传说",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201212/t20121220_4874896.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-09",
@@ -2982,10 +2815,8 @@
       "sourceTitle": "湖南凤凰",
       "sourceUrl": "https://zrzyt.hunan.gov.cn/zrzyt/xxgk/qtxx/sxfc/201703/t20170328_4166474.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-10",
@@ -3015,10 +2846,8 @@
       "sourceTitle": "文化地标：洪江古商城",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/news/wlyw/201804/t20180424_5372612.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-11",
@@ -3048,10 +2877,8 @@
       "sourceTitle": "传统湘绣艺术遭遇价低质劣恶性竞争",
       "sourceUrl": "https://www.ihchina.cn/news_other_details/16922.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-12",
@@ -3081,10 +2908,8 @@
       "sourceTitle": "衡州花鼓戏",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201307/t20130701_4874953.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-13",
@@ -3115,10 +2940,8 @@
       "sourceTitle": "Tusi Sites（土司遗址） / 永顺老司城正式对外开放",
       "sourceUrl": "https://whc.unesco.org/en/list/1474/\nhttps://whhlyt.hunan.gov.cn/news/szyw/201909/t20190912_5483579.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-14",
@@ -3148,10 +2971,8 @@
       "sourceTitle": "非遗加扶贫让村民在家门口就业",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/9497.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-2-15",
@@ -3181,10 +3002,8 @@
       "sourceTitle": "非遗加扶贫让村民在家门口就业",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/9497.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-01",
@@ -3214,10 +3033,8 @@
       "sourceTitle": "岳麓书院",
       "sourceUrl": "https://hunan.gov.cn/hnszf/c101474/202108/t20210827_20403698.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-02",
@@ -3247,10 +3064,8 @@
       "sourceTitle": "岳阳楼",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210830_20411802.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-03",
@@ -3280,10 +3095,8 @@
       "sourceTitle": "江永女书习俗",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hxwh/gms/201711/t20171111_4685337.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-04",
@@ -3313,10 +3126,8 @@
       "sourceTitle": "滩头木版年画",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/13907.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-05",
@@ -3346,10 +3157,8 @@
       "sourceTitle": "土家族织锦技艺",
       "sourceUrl": "https://www.ihchina.cn/Article/Index/detail?id=14282",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-06",
@@ -3379,10 +3188,8 @@
       "sourceTitle": "里耶秦简出土二十周年座谈会",
       "sourceUrl": "https://wwj.hunan.gov.cn/wwj/c100310/c100311/202206/t20220624_26402639.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-07",
@@ -3412,10 +3219,8 @@
       "sourceTitle": "屈子祠",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210827_20403356.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-08",
@@ -3445,10 +3250,8 @@
       "sourceTitle": "桃花源传说",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201212/t20121220_4874896.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-09",
@@ -3478,10 +3281,8 @@
       "sourceTitle": "湖南凤凰",
       "sourceUrl": "https://zrzyt.hunan.gov.cn/zrzyt/xxgk/qtxx/sxfc/201703/t20170328_4166474.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-10",
@@ -3511,10 +3312,8 @@
       "sourceTitle": "文化地标：洪江古商城",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/news/wlyw/201804/t20180424_5372612.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-11",
@@ -3544,10 +3343,8 @@
       "sourceTitle": "传统湘绣艺术遭遇价低质劣恶性竞争",
       "sourceUrl": "https://www.ihchina.cn/news_other_details/16922.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-12",
@@ -3577,10 +3374,8 @@
       "sourceTitle": "衡州花鼓戏",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201307/t20130701_4874953.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-13",
@@ -3610,10 +3405,8 @@
       "sourceTitle": "Tusi Sites（土司遗址）",
       "sourceUrl": "https://whc.unesco.org/en/list/1474/",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-14",
@@ -3643,10 +3436,8 @@
       "sourceTitle": "永顺老司城正式对外开放",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/news/szyw/201909/t20190912_5483579.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-3-15",
@@ -3676,10 +3467,8 @@
       "sourceTitle": "非遗加扶贫让村民在家门口就业",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/9497.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-01",
@@ -3710,10 +3499,8 @@
       "sourceTitle": "岳麓书院 / 里耶秦简出土二十周年座谈会",
       "sourceUrl": "https://hunan.gov.cn/hnszf/c101474/202108/t20210827_20403698.html\nhttps://wwj.hunan.gov.cn/wwj/c100310/c100311/202206/t20220624_26402639.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-02",
@@ -3743,10 +3530,8 @@
       "sourceTitle": "岳阳楼",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210830_20411802.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-03",
@@ -3776,10 +3561,8 @@
       "sourceTitle": "江永女书习俗",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hxwh/gms/201711/t20171111_4685337.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-04",
@@ -3809,10 +3592,8 @@
       "sourceTitle": "滩头木版年画",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/13907.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-05",
@@ -3843,10 +3624,8 @@
       "sourceTitle": "土家族织锦技艺 / 传统湘绣艺术遭遇价低质劣恶性竞争",
       "sourceUrl": "https://www.ihchina.cn/Article/Index/detail?id=14282\nhttps://www.ihchina.cn/news_other_details/16922.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-06",
@@ -3876,10 +3655,8 @@
       "sourceTitle": "里耶秦简出土二十周年座谈会",
       "sourceUrl": "https://wwj.hunan.gov.cn/wwj/c100310/c100311/202206/t20220624_26402639.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-07",
@@ -3911,10 +3688,8 @@
       "sourceTitle": "屈子祠 / 桃花源传说 / 湖南凤凰",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/c101480/202108/t20210827_20403356.html\nhttps://www.hunan.gov.cn/jxxx/hxwh/cls/201212/t20121220_4874896.html\nhttps://zrzyt.hunan.gov.cn/zrzyt/xxgk/qtxx/sxfc/201703/t20170328_4166474.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-08",
@@ -3944,10 +3719,8 @@
       "sourceTitle": "桃花源传说",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201212/t20121220_4874896.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-09",
@@ -3977,10 +3750,8 @@
       "sourceTitle": "湖南凤凰",
       "sourceUrl": "https://zrzyt.hunan.gov.cn/zrzyt/xxgk/qtxx/sxfc/201703/t20170328_4166474.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-10",
@@ -4011,10 +3782,8 @@
       "sourceTitle": "文化地标：洪江古商城 / Tusi Sites（土司遗址）",
       "sourceUrl": "https://whhlyt.hunan.gov.cn/news/wlyw/201804/t20180424_5372612.html\nhttps://whc.unesco.org/en/list/1474/",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-11",
@@ -4044,10 +3813,8 @@
       "sourceTitle": "传统湘绣艺术遭遇价低质劣恶性竞争",
       "sourceUrl": "https://www.ihchina.cn/news_other_details/16922.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-12",
@@ -4077,10 +3844,8 @@
       "sourceTitle": "衡州花鼓戏",
       "sourceUrl": "https://www.hunan.gov.cn/jxxx/hxwh/cls/201307/t20130701_4874953.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-13",
@@ -4111,10 +3876,8 @@
       "sourceTitle": "Tusi Sites（土司遗址） / 永顺老司城正式对外开放",
       "sourceUrl": "https://whc.unesco.org/en/list/1474/\nhttps://whhlyt.hunan.gov.cn/news/szyw/201909/t20190912_5483579.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-14",
@@ -4144,10 +3907,8 @@
       "sourceTitle": "非遗加扶贫让村民在家门口就业",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/9497.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-CULTURE-4-15",
@@ -4179,10 +3940,8 @@
       "sourceTitle": "滩头木版年画 / 土家族织锦技艺 / 江永女书习俗",
       "sourceUrl": "https://www.ihchina.cn/art/detail/id/13907.html\nhttps://www.ihchina.cn/Article/Index/detail?id=14282\nhttps://www.hunan.gov.cn/hnszf/jxxx/hxwh/gms/201711/t20171111_4685337.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-01",
@@ -4212,10 +3971,8 @@
       "sourceTitle": "安化黑茶",
       "sourceUrl": "https://zwfw-new.hunan.gov.cn/onething/basic/city/tszl/city_tszl_hnspecialty_details.jsp?specialty_id=NlSh7Ga1S8C-fyKGuOI4ZA",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-02",
@@ -4245,10 +4002,8 @@
       "sourceTitle": "湘潭县推进湘莲产业发展的意见",
       "sourceUrl": "https://www.hunan.gov.cn/zqt/zcsd/202004/t20200422_13574834.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-03",
@@ -4278,10 +4033,8 @@
       "sourceTitle": "龙山百合从卖产品到种风景",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/szdt/202403/t20240318_33255430.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-04",
@@ -4311,10 +4064,8 @@
       "sourceTitle": "大湘西茶叶公共品牌建设实施方案",
       "sourceUrl": "https://fgw.hunan.gov.cn/xxgk_70899/zcfg/dfxfg/201512/t20151219_2085894.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-05",
@@ -4344,10 +4095,8 @@
       "sourceTitle": "保靖黄金茶入列中欧地理标志协定",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202103/t20210305_14747785.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-06",
@@ -4377,10 +4126,8 @@
       "sourceTitle": "湖南釉下五彩瓷进博会绽放魅力",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/201911/t20191106_10508396.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-07",
@@ -4410,10 +4157,8 @@
       "sourceTitle": "安化黑茶保靖黄金茶再次出圈",
       "sourceUrl": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-08",
@@ -4443,10 +4188,8 @@
       "sourceTitle": "祁东黄花菜进入采摘期",
       "sourceUrl": "https://www.hunan.gov.cn/hnyw/szdt/202606/t20260622_34008708.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-09",
@@ -4476,10 +4219,8 @@
       "sourceTitle": "紫鹊界的神奇密码",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202008/t20200807_13352063.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-10",
@@ -4509,10 +4250,8 @@
       "sourceTitle": "炎陵黄桃商标品牌建设优秀案例",
       "sourceUrl": "https://amr.hunan.gov.cn/amr/ztx/zscqqsx/zscqqs/zscqbh/202301/t20230116_29184233.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-11",
@@ -4542,10 +4281,8 @@
       "sourceTitle": "油茶主要栽培物种",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2610844.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-12",
@@ -4575,10 +4312,8 @@
       "sourceTitle": "石门冰糖橙产业的创业之路",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202308/t20230817_29461682.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-13",
@@ -4608,10 +4343,8 @@
       "sourceTitle": "安化黑茶",
       "sourceUrl": "https://zwfw-new.hunan.gov.cn/onething/basic/city/tszl/city_tszl_hnspecialty_details.jsp?specialty_id=NlSh7Ga1S8C-fyKGuOI4ZA",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-14",
@@ -4641,10 +4374,8 @@
       "sourceTitle": "安化黑茶保靖黄金茶再次出圈",
       "sourceUrl": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-1-15",
@@ -4674,10 +4405,8 @@
       "sourceTitle": "安化黑茶",
       "sourceUrl": "https://zwfw-new.hunan.gov.cn/onething/basic/city/tszl/city_tszl_hnspecialty_details.jsp?specialty_id=NlSh7Ga1S8C-fyKGuOI4ZA",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-01",
@@ -4707,10 +4436,8 @@
       "sourceTitle": "安化黑茶",
       "sourceUrl": "https://zwfw-new.hunan.gov.cn/onething/basic/city/tszl/city_tszl_hnspecialty_details.jsp?specialty_id=NlSh7Ga1S8C-fyKGuOI4ZA",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-02",
@@ -4740,10 +4467,8 @@
       "sourceTitle": "湘潭县推进湘莲产业发展的意见",
       "sourceUrl": "https://www.hunan.gov.cn/zqt/zcsd/202004/t20200422_13574834.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-03",
@@ -4773,10 +4498,8 @@
       "sourceTitle": "龙山百合从卖产品到种风景",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/szdt/202403/t20240318_33255430.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-04",
@@ -4806,10 +4529,8 @@
       "sourceTitle": "大湘西茶叶公共品牌建设实施方案",
       "sourceUrl": "https://fgw.hunan.gov.cn/xxgk_70899/zcfg/dfxfg/201512/t20151219_2085894.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-05",
@@ -4839,10 +4560,8 @@
       "sourceTitle": "保靖黄金茶入列中欧地理标志协定",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202103/t20210305_14747785.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-06",
@@ -4872,10 +4591,8 @@
       "sourceTitle": "湖南釉下五彩瓷进博会绽放魅力",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/201911/t20191106_10508396.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-07",
@@ -4905,10 +4622,8 @@
       "sourceTitle": "安化黑茶保靖黄金茶再次出圈",
       "sourceUrl": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-08",
@@ -4938,10 +4653,8 @@
       "sourceTitle": "祁东黄花菜进入采摘期",
       "sourceUrl": "https://www.hunan.gov.cn/hnyw/szdt/202606/t20260622_34008708.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-09",
@@ -4971,10 +4684,8 @@
       "sourceTitle": "紫鹊界的神奇密码",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202008/t20200807_13352063.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-10",
@@ -5004,10 +4715,8 @@
       "sourceTitle": "炎陵黄桃商标品牌建设优秀案例",
       "sourceUrl": "https://amr.hunan.gov.cn/amr/ztx/zscqqsx/zscqqs/zscqbh/202301/t20230116_29184233.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-11",
@@ -5037,10 +4746,8 @@
       "sourceTitle": "油茶主要栽培物种",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2610844.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-12",
@@ -5070,10 +4777,8 @@
       "sourceTitle": "石门冰糖橙产业的创业之路",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202308/t20230817_29461682.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-13",
@@ -5103,10 +4808,8 @@
       "sourceTitle": "油茶丰产栽培技术",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2602802.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-14",
@@ -5136,10 +4839,8 @@
       "sourceTitle": "炎陵农旅相合桃气一夏",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202309/t20230915_29485612.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-2-15",
@@ -5169,10 +4870,8 @@
       "sourceTitle": "安化黑茶保靖黄金茶再次出圈",
       "sourceUrl": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-01",
@@ -5202,10 +4901,8 @@
       "sourceTitle": "安化黑茶",
       "sourceUrl": "https://zwfw-new.hunan.gov.cn/onething/basic/city/tszl/city_tszl_hnspecialty_details.jsp?specialty_id=NlSh7Ga1S8C-fyKGuOI4ZA",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-02",
@@ -5235,10 +4932,8 @@
       "sourceTitle": "湘潭县推进湘莲产业发展的意见",
       "sourceUrl": "https://www.hunan.gov.cn/zqt/zcsd/202004/t20200422_13574834.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-03",
@@ -5268,10 +4963,8 @@
       "sourceTitle": "龙山百合从卖产品到种风景",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/szdt/202403/t20240318_33255430.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-04",
@@ -5301,10 +4994,8 @@
       "sourceTitle": "大湘西茶叶公共品牌建设实施方案",
       "sourceUrl": "https://fgw.hunan.gov.cn/xxgk_70899/zcfg/dfxfg/201512/t20151219_2085894.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-05",
@@ -5334,10 +5025,8 @@
       "sourceTitle": "保靖黄金茶入列中欧地理标志协定",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202103/t20210305_14747785.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-06",
@@ -5367,10 +5056,8 @@
       "sourceTitle": "湖南釉下五彩瓷进博会绽放魅力",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/201911/t20191106_10508396.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-07",
@@ -5400,10 +5087,8 @@
       "sourceTitle": "安化黑茶保靖黄金茶再次出圈",
       "sourceUrl": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-08",
@@ -5433,10 +5118,8 @@
       "sourceTitle": "祁东黄花菜进入采摘期",
       "sourceUrl": "https://www.hunan.gov.cn/hnyw/szdt/202606/t20260622_34008708.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-09",
@@ -5466,10 +5149,8 @@
       "sourceTitle": "紫鹊界的神奇密码",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202008/t20200807_13352063.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-10",
@@ -5499,10 +5180,8 @@
       "sourceTitle": "炎陵黄桃商标品牌建设优秀案例",
       "sourceUrl": "https://amr.hunan.gov.cn/amr/ztx/zscqqsx/zscqqs/zscqbh/202301/t20230116_29184233.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-11",
@@ -5532,10 +5211,8 @@
       "sourceTitle": "油茶主要栽培物种",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2610844.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-12",
@@ -5565,10 +5242,8 @@
       "sourceTitle": "石门冰糖橙产业的创业之路",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202308/t20230817_29461682.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-13",
@@ -5598,10 +5273,8 @@
       "sourceTitle": "油茶丰产栽培技术",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2602802.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-14",
@@ -5631,10 +5304,8 @@
       "sourceTitle": "炎陵农旅相合桃气一夏",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202309/t20230915_29485612.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-3-15",
@@ -5665,10 +5336,8 @@
       "sourceTitle": "安化黑茶保靖黄金茶再次出圈 / 炎陵黄桃商标品牌建设优秀案例",
       "sourceUrl": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html\nhttps://amr.hunan.gov.cn/amr/ztx/zscqqsx/zscqqs/zscqbh/202301/t20230116_29184233.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-01",
@@ -5699,10 +5368,8 @@
       "sourceTitle": "安化黑茶 / 大湘西茶叶公共品牌建设实施方案",
       "sourceUrl": "https://zwfw-new.hunan.gov.cn/onething/basic/city/tszl/city_tszl_hnspecialty_details.jsp?specialty_id=NlSh7Ga1S8C-fyKGuOI4ZA\nhttps://fgw.hunan.gov.cn/xxgk_70899/zcfg/dfxfg/201512/t20151219_2085894.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-02",
@@ -5732,10 +5399,8 @@
       "sourceTitle": "湘潭县推进湘莲产业发展的意见",
       "sourceUrl": "https://www.hunan.gov.cn/zqt/zcsd/202004/t20200422_13574834.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-03",
@@ -5765,10 +5430,8 @@
       "sourceTitle": "龙山百合从卖产品到种风景",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/szdt/202403/t20240318_33255430.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-04",
@@ -5799,10 +5462,8 @@
       "sourceTitle": "大湘西茶叶公共品牌建设实施方案 / 保靖黄金茶入列中欧地理标志协定",
       "sourceUrl": "https://fgw.hunan.gov.cn/xxgk_70899/zcfg/dfxfg/201512/t20151219_2085894.html\nhttps://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202103/t20210305_14747785.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-05",
@@ -5832,10 +5493,8 @@
       "sourceTitle": "湖南釉下五彩瓷进博会绽放魅力",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/201911/t20191106_10508396.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-06",
@@ -5865,10 +5524,8 @@
       "sourceTitle": "安化黑茶保靖黄金茶再次出圈",
       "sourceUrl": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-07",
@@ -5898,10 +5555,8 @@
       "sourceTitle": "祁东黄花菜进入采摘期",
       "sourceUrl": "https://www.hunan.gov.cn/hnyw/szdt/202606/t20260622_34008708.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-08",
@@ -5931,10 +5586,8 @@
       "sourceTitle": "紫鹊界的神奇密码",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202008/t20200807_13352063.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-09",
@@ -5964,10 +5617,8 @@
       "sourceTitle": "炎陵黄桃商标品牌建设优秀案例",
       "sourceUrl": "https://amr.hunan.gov.cn/amr/ztx/zscqqsx/zscqqs/zscqbh/202301/t20230116_29184233.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-10",
@@ -5998,10 +5649,8 @@
       "sourceTitle": "油茶主要栽培物种 / 油茶丰产栽培技术",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2610844.html\nhttps://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2602802.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-11",
@@ -6031,10 +5680,8 @@
       "sourceTitle": "石门冰糖橙产业的创业之路",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202308/t20230817_29461682.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-12",
@@ -6064,10 +5711,8 @@
       "sourceTitle": "炎陵农旅相合桃气一夏",
       "sourceUrl": "https://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202309/t20230915_29485612.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-13",
@@ -6099,10 +5744,8 @@
       "sourceTitle": "湘潭县推进湘莲产业发展的意见 / 炎陵黄桃商标品牌建设优秀案例 / 石门冰糖橙产业的创业之路",
       "sourceUrl": "https://www.hunan.gov.cn/zqt/zcsd/202004/t20200422_13574834.html\nhttps://amr.hunan.gov.cn/amr/ztx/zscqqsx/zscqqs/zscqbh/202301/t20230116_29184233.html\nhttps://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202308/t20230817_29461682.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-14",
@@ -6134,10 +5777,8 @@
       "sourceTitle": "安化黑茶 / 湖南釉下五彩瓷进博会绽放魅力 / 安化黑茶保靖黄金茶再次出圈",
       "sourceUrl": "https://zwfw-new.hunan.gov.cn/onething/basic/city/tszl/city_tszl_hnspecialty_details.jsp?specialty_id=NlSh7Ga1S8C-fyKGuOI4ZA\nhttps://www.hunan.gov.cn/hnszf/hnyw/zwdt/201911/t20191106_10508396.html\nhttps://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/rdjj/202109/t20210903_20508938.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-INDUSTRY-4-15",
@@ -6168,10 +5809,8 @@
       "sourceTitle": "龙山百合从卖产品到种风景 / 石门冰糖橙产业的创业之路",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/szdt/202403/t20240318_33255430.html\nhttps://agri.hunan.gov.cn/agri/xxgk/gzdt/sxdt_1/202308/t20230817_29461682.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-01",
@@ -6201,10 +5840,8 @@
       "sourceTitle": "湖南自然地理",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hngk/zrdl/zrdl.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-02",
@@ -6234,10 +5871,8 @@
       "sourceTitle": "湖南自然地理",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hngk/zrdl/zrdl.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-03",
@@ -6267,10 +5902,8 @@
       "sourceTitle": "武陵源世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/xxgk_71167/gzdt/mtkl/202504/t20250415_33642076.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-04",
@@ -6300,10 +5933,8 @@
       "sourceTitle": "崀山世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/mtkl/202505/t20250528_33685013.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-05",
@@ -6333,10 +5964,8 @@
       "sourceTitle": "壶瓶山自然保护区先进事迹简介",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/xlkb/200402/t20040220_2835402.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-06",
@@ -6366,10 +5995,8 @@
       "sourceTitle": "湖南莽山国家级自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/slly/zrbhq/201512/t20151227_2587424.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-07",
@@ -6399,10 +6026,8 @@
       "sourceTitle": "湖南省南岳衡山自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/ztzl/gdzt/zrbhq/201512/t20151227_2587456.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-08",
@@ -6432,10 +6057,8 @@
       "sourceTitle": "东江湖多措并举呵护湘南洞庭",
       "sourceUrl": "https://slt.hunan.gov.cn/ztzl/qmtxhzz/c102489/201908/t20190823_29159051.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-09",
@@ -6465,10 +6088,8 @@
       "sourceTitle": "洞庭湖水环境综合治理实施方案",
       "sourceUrl": "https://www.hunan.gov.cn/topic/djssw/stwm/stwmzc/201911/t20191110_14137619.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-10",
@@ -6498,10 +6119,8 @@
       "sourceTitle": "湖南莽山国家级自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/slly/zrbhq/201512/t20151227_2587424.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-11",
@@ -6531,10 +6150,8 @@
       "sourceTitle": "湖南省南岳衡山自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/ztzl/gdzt/zrbhq/201512/t20151227_2587456.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-12",
@@ -6564,10 +6181,8 @@
       "sourceTitle": "湖南自然地理",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hngk/zrdl/zrdl.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-13",
@@ -6597,10 +6212,8 @@
       "sourceTitle": "湖南十四五生态环境保护规划",
       "sourceUrl": "https://www.hunan.gov.cn/xxgk/wjk/szfbgt/202110/t20211022_20838349.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-14",
@@ -6630,10 +6243,8 @@
       "sourceTitle": "紫鹊界地下灌溉水源调蓄特性研究",
       "sourceUrl": "https://slt.hunan.gov.cn/slt/ztzl/kjcg/201804/t20180413_7619982.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-1-15",
@@ -6664,10 +6275,8 @@
       "sourceTitle": "湖南生物多样性保护重点任务 / 湖南十四五生态环境保护规划",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202605/t20260527_33987347.html\nhttps://www.hunan.gov.cn/xxgk/wjk/szfbgt/202110/t20211022_20838349.html",
       "evidenceType": "来源事实改写",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-01",
@@ -6697,10 +6306,8 @@
       "sourceTitle": "湖南自然地理",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hngk/zrdl/zrdl.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-02",
@@ -6730,10 +6337,8 @@
       "sourceTitle": "武陵源世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/xxgk_71167/gzdt/mtkl/202504/t20250415_33642076.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-03",
@@ -6763,10 +6368,8 @@
       "sourceTitle": "崀山世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/mtkl/202505/t20250528_33685013.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-04",
@@ -6796,10 +6399,8 @@
       "sourceTitle": "洞庭湖水环境综合治理实施方案",
       "sourceUrl": "https://www.hunan.gov.cn/topic/djssw/stwm/stwmzc/201911/t20191110_14137619.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-05",
@@ -6829,10 +6430,8 @@
       "sourceTitle": "湖南禁捕工作开展两年来",
       "sourceUrl": "https://www.hunan.gov.cn/hnyw/zwdt/202203/t20220329_22724416.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-06",
@@ -6862,10 +6461,8 @@
       "sourceTitle": "东江湖多措并举呵护湘南洞庭",
       "sourceUrl": "https://slt.hunan.gov.cn/ztzl/qmtxhzz/c102489/201908/t20190823_29159051.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-07",
@@ -6895,10 +6492,8 @@
       "sourceTitle": "壶瓶山自然保护区先进事迹简介",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/xlkb/200402/t20040220_2835402.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-08",
@@ -6928,10 +6523,8 @@
       "sourceTitle": "湖南莽山国家级自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/slly/zrbhq/201512/t20151227_2587424.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-09",
@@ -6961,10 +6554,8 @@
       "sourceTitle": "湖南省南岳衡山自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/ztzl/gdzt/zrbhq/201512/t20151227_2587456.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-10",
@@ -6994,10 +6585,8 @@
       "sourceTitle": "南岳推动节水",
       "sourceUrl": "https://slt.hunan.gov.cn/xxgk/slxw/sxsl/202211/t20221125_29137952.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-11",
@@ -7027,10 +6616,8 @@
       "sourceTitle": "湖南十四五生态环境保护规划",
       "sourceUrl": "https://www.hunan.gov.cn/xxgk/wjk/szfbgt/202110/t20211022_20838349.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-12",
@@ -7060,10 +6647,8 @@
       "sourceTitle": "紫鹊界地下灌溉水源调蓄特性研究",
       "sourceUrl": "https://slt.hunan.gov.cn/slt/ztzl/kjcg/201804/t20180413_7619982.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-13",
@@ -7093,10 +6678,8 @@
       "sourceTitle": "省人大调研东江湖饮用水源保护",
       "sourceUrl": "https://sthjt.hunan.gov.cn/xxgk/xwdt/szxw/201409/t20140903_4649960.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-14",
@@ -7126,10 +6709,8 @@
       "sourceTitle": "湖南生物多样性保护重点任务",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202605/t20260527_33987347.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-2-15",
@@ -7159,10 +6740,8 @@
       "sourceTitle": "洞庭湖水环境综合治理实施方案",
       "sourceUrl": "https://www.hunan.gov.cn/topic/djssw/stwm/stwmzc/201911/t20191110_14137619.html",
       "evidenceType": "来源事实＋原创理解题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-01",
@@ -7192,10 +6771,8 @@
       "sourceTitle": "湖南自然地理",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hngk/zrdl/zrdl.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-02",
@@ -7225,10 +6802,8 @@
       "sourceTitle": "武陵源世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/xxgk_71167/gzdt/mtkl/202504/t20250415_33642076.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-03",
@@ -7258,10 +6833,8 @@
       "sourceTitle": "崀山世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/mtkl/202505/t20250528_33685013.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-04",
@@ -7291,10 +6864,8 @@
       "sourceTitle": "洞庭湖水环境综合治理实施方案",
       "sourceUrl": "https://www.hunan.gov.cn/topic/djssw/stwm/stwmzc/201911/t20191110_14137619.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-05",
@@ -7324,10 +6895,8 @@
       "sourceTitle": "湖南禁捕工作开展两年来",
       "sourceUrl": "https://www.hunan.gov.cn/hnyw/zwdt/202203/t20220329_22724416.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-06",
@@ -7357,10 +6926,8 @@
       "sourceTitle": "东江湖多措并举呵护湘南洞庭",
       "sourceUrl": "https://slt.hunan.gov.cn/ztzl/qmtxhzz/c102489/201908/t20190823_29159051.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-07",
@@ -7390,10 +6957,8 @@
       "sourceTitle": "壶瓶山自然保护区先进事迹简介",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/xlkb/200402/t20040220_2835402.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-08",
@@ -7423,10 +6988,8 @@
       "sourceTitle": "湖南莽山国家级自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/slly/zrbhq/201512/t20151227_2587424.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-09",
@@ -7456,10 +7019,8 @@
       "sourceTitle": "湖南省南岳衡山自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/ztzl/gdzt/zrbhq/201512/t20151227_2587456.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-10",
@@ -7489,10 +7050,8 @@
       "sourceTitle": "南岳推动节水",
       "sourceUrl": "https://slt.hunan.gov.cn/xxgk/slxw/sxsl/202211/t20221125_29137952.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-11",
@@ -7522,10 +7081,8 @@
       "sourceTitle": "湖南十四五生态环境保护规划",
       "sourceUrl": "https://www.hunan.gov.cn/xxgk/wjk/szfbgt/202110/t20211022_20838349.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-12",
@@ -7555,10 +7112,8 @@
       "sourceTitle": "紫鹊界地下灌溉水源调蓄特性研究",
       "sourceUrl": "https://slt.hunan.gov.cn/slt/ztzl/kjcg/201804/t20180413_7619982.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-13",
@@ -7588,10 +7143,8 @@
       "sourceTitle": "省人大调研东江湖饮用水源保护",
       "sourceUrl": "https://sthjt.hunan.gov.cn/xxgk/xwdt/szxw/201409/t20140903_4649960.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-14",
@@ -7621,10 +7174,8 @@
       "sourceTitle": "湖南生物多样性保护重点任务",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202605/t20260527_33987347.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-3-15",
@@ -7655,10 +7206,8 @@
       "sourceTitle": "洞庭湖水环境综合治理实施方案 / 湖南十四五生态环境保护规划",
       "sourceUrl": "https://www.hunan.gov.cn/topic/djssw/stwm/stwmzc/201911/t20191110_14137619.html\nhttps://www.hunan.gov.cn/xxgk/wjk/szfbgt/202110/t20211022_20838349.html",
       "evidenceType": "来源事实＋原创分析题",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-01",
@@ -7689,10 +7238,8 @@
       "sourceTitle": "湖南自然地理 / 省人大调研东江湖饮用水源保护",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/jxxx/hngk/zrdl/zrdl.html\nhttps://sthjt.hunan.gov.cn/xxgk/xwdt/szxw/201409/t20140903_4649960.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-02",
@@ -7723,10 +7270,8 @@
       "sourceTitle": "武陵源世界自然遗产 / 崀山世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/xxgk_71167/gzdt/mtkl/202504/t20250415_33642076.html\nhttps://lyj.hunan.gov.cn/xxgk_71167/gzdt/mtkl/202505/t20250528_33685013.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-03",
@@ -7756,10 +7301,8 @@
       "sourceTitle": "崀山世界自然遗产",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/mtkl/202505/t20250528_33685013.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-04",
@@ -7789,10 +7332,8 @@
       "sourceTitle": "洞庭湖水环境综合治理实施方案",
       "sourceUrl": "https://www.hunan.gov.cn/topic/djssw/stwm/stwmzc/201911/t20191110_14137619.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-05",
@@ -7822,10 +7363,8 @@
       "sourceTitle": "湖南禁捕工作开展两年来",
       "sourceUrl": "https://www.hunan.gov.cn/hnyw/zwdt/202203/t20220329_22724416.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-06",
@@ -7856,10 +7395,8 @@
       "sourceTitle": "东江湖多措并举呵护湘南洞庭 / 省人大调研东江湖饮用水源保护",
       "sourceUrl": "https://slt.hunan.gov.cn/ztzl/qmtxhzz/c102489/201908/t20190823_29159051.html\nhttps://sthjt.hunan.gov.cn/xxgk/xwdt/szxw/201409/t20140903_4649960.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-07",
@@ -7889,10 +7426,8 @@
       "sourceTitle": "壶瓶山自然保护区先进事迹简介",
       "sourceUrl": "https://lyj.hunan.gov.cn/xxgk_71167/gzdt/xlkb/200402/t20040220_2835402.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-08",
@@ -7922,10 +7457,8 @@
       "sourceTitle": "湖南莽山国家级自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/tslm_71206/slly/zrbhq/201512/t20151227_2587424.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-09",
@@ -7955,10 +7488,8 @@
       "sourceTitle": "湖南省南岳衡山自然保护区",
       "sourceUrl": "https://lyj.hunan.gov.cn/lyj/ztzl/gdzt/zrbhq/201512/t20151227_2587456.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-10",
@@ -7988,10 +7519,8 @@
       "sourceTitle": "南岳推动节水",
       "sourceUrl": "https://slt.hunan.gov.cn/xxgk/slxw/sxsl/202211/t20221125_29137952.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-11",
@@ -8021,10 +7550,8 @@
       "sourceTitle": "湖南十四五生态环境保护规划",
       "sourceUrl": "https://www.hunan.gov.cn/xxgk/wjk/szfbgt/202110/t20211022_20838349.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-12",
@@ -8054,10 +7581,8 @@
       "sourceTitle": "紫鹊界地下灌溉水源调蓄特性研究",
       "sourceUrl": "https://slt.hunan.gov.cn/slt/ztzl/kjcg/201804/t20180413_7619982.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-13",
@@ -8087,10 +7612,8 @@
       "sourceTitle": "省人大调研东江湖饮用水源保护",
       "sourceUrl": "https://sthjt.hunan.gov.cn/xxgk/xwdt/szxw/201409/t20140903_4649960.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-14",
@@ -8120,10 +7643,8 @@
       "sourceTitle": "湖南生物多样性保护重点任务",
       "sourceUrl": "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202605/t20260527_33987347.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     },
     {
       "id": "HN-ECOLOGY-4-15",
@@ -8154,10 +7675,8 @@
       "sourceTitle": "洞庭湖水环境综合治理实施方案 / 湖南十四五生态环境保护规划",
       "sourceUrl": "https://www.hunan.gov.cn/topic/djssw/stwm/stwmzc/201911/t20191110_14137619.html\nhttps://www.hunan.gov.cn/xxgk/wjk/szfbgt/202110/t20211022_20838349.html",
       "evidenceType": "来源事实＋原创综合情境",
-      "reviewStatus": "待业务审核",
-      "enabled": false,
-      "version": "1.0.0",
-      "reviewNote": ""
+      "enabled": true,
+      "version": "1.0.0"
     }
   ],
   "sources": [

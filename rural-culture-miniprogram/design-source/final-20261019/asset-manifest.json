@@ -1,0 +1,37 @@
+{
+  "method": "Built-in imagegen edits; production resizing/compression; original reference files preserved in design-source and QA backup.",
+  "assets": [
+    {
+      "source": "design-source/final-20261019/culture-map-neutral-parchment-fullsize.png",
+      "runtime": "miniprogram/assets/journey/culture.jpg",
+      "width": 750,
+      "height": 1280,
+      "bytes": 115261,
+      "sha256": "a9eae4651fdc9a8df15e757f8c5d564843917d6c1a8c69c6450f4685e3b78a5d"
+    },
+    {
+      "source": "design-source/final-20261019/current-node-raw.png",
+      "runtime": "miniprogram/assets/journey/node-current.png",
+      "width": 220,
+      "height": 147,
+      "bytes": 15262,
+      "sha256": "498e1e975e7a9b7240905ddecd577f6773d9a685677e791006d904d20825610f"
+    },
+    {
+      "source": "design-source/final-20261019/locked-node-clean.png",
+      "runtime": "miniprogram/assets/journey/node-locked.png",
+      "width": 220,
+      "height": 147,
+      "bytes": 12730,
+      "sha256": "f810b86638c46fbfcdd2b087f224485f22ca13d63e8400a1a5592c3c6accaf15"
+    },
+    {
+      "source": "design-source/final-20261019/completed-node-clean.png",
+      "runtime": "miniprogram/assets/journey/node-completed.png",
+      "width": 220,
+      "height": 147,
+      "bytes": 15540,
+      "sha256": "c1eda2b3013fb48c02661332cf793536e62c2493bb120fda7333cf28bb52b840"
+    }
+  ]
+}

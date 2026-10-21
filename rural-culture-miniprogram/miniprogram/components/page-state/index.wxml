@@ -1,1 +1,0 @@
-<view class="state" wx:if="{{loading}}"><view class="loader"></view><text>正在翻开文化读本…</text></view><view class="state" wx:elif="{{error}}"><text class="title">暂时无法加载</text><text>{{error}}</text><button bindtap="retry">重新加载</button></view><view class="state" wx:elif="{{empty}}"><text class="title">下一段探索，从这里开始</text><text>{{message}}</text></view>

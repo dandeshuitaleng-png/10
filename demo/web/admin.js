@@ -3,7 +3,7 @@
   const $ = id => document.getElementById(id);
   const titles = {
     overview: ['概览', '内容、关卡、当前规则与正式接入状态。'],
-    questions: ['题库管理', '按活动主题与关卡核对内容，审核后再正式启用。'],
+    questions: ['题库管理', '按活动主题与关卡维护题目，保存后即可使用。'],
     levels: ['关卡配置', '设置各主题的关卡顺序、题数、难度与通关积分。'],
     basic: ['基础配置', '维护主题、外观、证书与旅程分享内容。'],
     revive: ['复活配置', '设置每次挑战的复活额度与分享内容。'],
@@ -11,7 +11,7 @@
     operations: ['操作与同步', '管理操作有记录，未确认的同步保留待重试。'],
   };
   const state = { view: 'overview', config: null, levels: [], questions: [], page: 0, pageSize: 15,
-    editing: null, reviewing: null, busy: false, viewRequest: 0, mode: null };
+    editing: null, busy: false, viewRequest: 0, mode: null };
   const defaults = {
     certificates: { title: '趣味闯关 · 电子荣誉证书', totalName: '乡村知识闯关王',
       totalText: '已完成全部主题乡村知识挑战', footer: '学习活动纪念，不代表学历或教育资格' },
@@ -131,8 +131,8 @@
   }
   function renderOverview(data) {
     environment(data.mode);
-    $('overview-banner').textContent = data.mode === 'production' ? '正式游戏按审核内容与可信接入条件开放。' : '授权体验可运行源题，源内容仍待正式审核。新增与修改题目不会自动加入体验题池；请实际审核后启用。测试复活不代表已验证真实分享。';
-    const stats = [['题库总数', data.stats.questions, '道'], ['待审核', data.stats.pendingQuestions, '道'], ['通关记录', data.stats.completions, '次'], ['已发积分', data.stats.points, '分']];
+    $('overview-banner').textContent = data.mode === 'production' ? '正式游戏按已保存内容与接入配置运行。' : '本地体验使用已保存题库。测试复活不代表真实分享完成。';
+    const stats = [['题库总数', data.stats.questions, '道'], ['已启用', data.stats.enabledQuestions, '道'], ['通关记录', data.stats.completions, '次'], ['已发积分', data.stats.points, '分']];
     replace('overview-stats', stats.map(([name, value, unit]) => el('article', { class: 'stat' }, el('p', { class: 'stat-label' }, name), el('strong', {}, String(value)), el('span', { class: 'stat-note' }, unit))));
     replace('overview-modules', data.modules.map(m => el('div', { class: 'module-row' }, el('strong', {}, m.name), badge(m.status === 'experience-test-only' ? '测试复活' : '已实现', m.status === 'experience-test-only' ? 'warning' : 'success'))));
     replace('overview-dependencies', data.dependencies.map(d => el('div', { class: 'dependency-row' }, el('span', {}, d.name), badge(d.configured ? '已配置' : '待提供', d.configured ? 'success' : 'warning'))));
@@ -274,23 +274,22 @@
   async function loadQuestions(revision = state.viewRequest) {
     const f = $('question-filters'), prior = field(f, 'themeId').value;
     fillSelect(field(f, 'themeId'), themes().map(t => [t.id, t.name + (t.enabled === false ? '（停用）' : '')]), '全部主题', prior); filterLevelOptions();
-    const params = new URLSearchParams(), review = field(f, 'review').value;
+    const params = new URLSearchParams(), status = field(f, 'status').value;
     for (const k of ['themeId', 'levelId']) if (field(f, k).value) params.set(k, field(f, k).value);
     if (field(f, 'search').value.trim()) params.set('q', field(f, 'search').value.trim());
-    if (review && review !== 'disabled') params.set('reviewStatus', review);
     const data = await api('admin/questions?' + params); if (revision !== state.viewRequest) return;
-    state.questions = review === 'disabled' ? data.questions.filter(q => !q.enabled) : data.questions;
+    state.questions = status ? data.questions.filter(q => (q.enabled !== false) === (status === 'enabled')) : data.questions;
     state.page = Math.min(state.page, Math.max(0, Math.ceil(state.questions.length / state.pageSize) - 1)); renderQuestions();
   }
   function renderQuestions() {
     const all = state.questions, start = state.page * state.pageSize, qs = all.slice(start, start + state.pageSize);
-    $('question-total').textContent = all.length; $('question-summary-text').textContent = all.filter(q => !q.approved).length + ' 道未批准 · ' + all.filter(q => q.approved && q.enabled).length + ' 道正式启用'; $('question-empty').hidden = !!all.length;
+    $('question-total').textContent = all.length; $('question-summary-text').textContent = all.filter(q => q.enabled !== false).length + ' 道启用 · ' + all.filter(q => q.enabled === false).length + ' 道停用'; $('question-empty').hidden = !!all.length;
     replace('question-rows', qs.map(q => el('tr', { 'data-question': q.id },
       el('td', {}, el('div', { class: 'question-title' }, q.title), el('div', { class: 'question-id' }, q.id)),
       el('td', {}, themeName(q.themeId), el('div', { class: 'subtext' }, levelName(q.levelId))),
       el('td', {}, el('span', { class: 'media-label' }, q.media?.type === 'video' ? '视频题' : q.media ? '图片题' : '文字题'), q.difficulty),
-      el('td', {}, el('div', { class: 'badges' }, badge(q.approved ? '已通过' : q.reviewStatus === 'rejected' ? '已退回' : '待审核', q.approved ? 'success' : 'warning'), badge(q.enabled ? '已启用' : '未启用'), q.experienceAuthorized ? badge('体验开放') : null)),
-      el('td', { class: 'actions-cell' }, el('div', { class: 'table-actions' }, el('button', { type: 'button', onclick: () => edit(q) }, '编辑'), el('button', { type: 'button', onclick: () => review(q) }, '审核'), el('button', { type: 'button', class: 'delete-link', onclick: () => remove(q) }, '删除'))))));
+      el('td', {}, el('div', { class: 'badges' }, badge(q.enabled !== false ? '已启用' : '已停用', q.enabled !== false ? 'success' : 'neutral'))),
+      el('td', { class: 'actions-cell' }, el('div', { class: 'table-actions' }, el('button', { type: 'button', onclick: () => edit(q) }, '编辑'), el('button', { type: 'button', class: 'delete-link', onclick: () => remove(q) }, '删除'))))));
     $('question-range').textContent = all.length ? `显示 ${start + 1}—${start + qs.length} / 共 ${all.length} 道` : '共 0 道'; $('page-indicator').textContent = (state.page + 1) + ' / ' + Math.max(1, Math.ceil(all.length / state.pageSize));
     $('previous-page').disabled = state.page === 0; $('next-page').disabled = start + state.pageSize >= all.length;
   }
@@ -306,19 +305,12 @@
     state.editing = q; const f = $('question-form'); f.reset(); $('editor-error').hidden = true; $('editor-title').textContent = q ? '编辑题目' : '新增题目';
     fillSelect(field(f, 'themeId'), themes().map(t => [t.id, t.name])); set(f, 'themeId', q?.themeId || themes()[0]?.id); editorLevels(q?.levelId);
     set(f, 'id', q?.id || 'Q-' + Date.now().toString(36)); field(f, 'id').readOnly = !!q;
+    field(f,'enabled').checked = q?.enabled !== false;
     set(f, 'difficulty', ({ 基础: 'basic', 进阶: 'advanced', 综合: 'comprehensive' })[q?.difficulty] || 'basic'); set(f, 'title', q?.title || ''); set(f, 'explanation', q?.explanation || '');
     replace('option-fields', [0, 1, 2, 3].map(i => el('div', { class: 'option-row' }, label('ABCD'[i], el('input', { name: 'answer', type: 'radio', value: i, checked: (q?.answer ?? 0) === i, required: true })), textInput('option-' + i, q?.options[i], 500, { required: true, 'aria-label': '选项 ' + 'ABCD'[i] }))));
     set(f, 'mediaType', q?.media?.type || ''); set(f, 'mediaSrc', q?.media?.url || q?.media?.src || ''); field(f, 'mediaRequired').checked = !!q?.media?.required; editorMedia(); $('question-dialog').showModal();
   }
   function editorMedia() { const f = $('question-form'), type = field(f, 'mediaType').value; $('media-url-field').hidden = !type; field(f, 'mediaSrc').required = !!type; preview('question-media-preview', type ? field(f, 'mediaSrc').value : '', type); }
-  function review(q) {
-    if (state.busy) return;
-    state.reviewing = q; const f = $('review-form'); f.reset(); field(f, 'enabled').disabled = false; $('review-error').hidden = true;
-    $('review-question-title').textContent = q.title;
-    replace('review-answer', ...q.options.map((option, i) => el('p', {}, 'ABCD'[i] + ' · ' + option + (i === q.answer ? '（正确）' : ''))), el('p', {}, '解析：' + q.explanation), el('p', {}, '来源：' + (q.sourceUrl || q.source || '待补充')));
-    if (q.media && safeSrc(q.media.url || q.media.src)) $('review-answer').append(el(q.media.type === 'video' ? 'video' : 'img', { class: 'review-media', src: q.media.url || q.media.src, alt: q.media.alt || '审核题目素材', ...(q.media.type === 'video' ? { controls: 'controls', preload: 'metadata' } : {}) }));
-    set(f, 'approved', 'true'); set(f, 'note', q.reviewNote || ''); field(f, 'enabled').checked = !!q.enabled; $('review-dialog').showModal();
-  }
   function remove(q) { confirmAction('确认删除题目', '删除“' + q.title + '”？已开始的挑战保留原题版本。', '删除题目', async () => { await api('admin/questions/' + encodeURIComponent(q.id), undefined, 'DELETE'); await loadQuestions(); notify('题目已删除'); }); }
   async function renderOperations(revision = state.viewRequest) {
     const [outbox, audit] = await Promise.all([api('admin/outbox'), api('admin/audit')]); if (revision !== state.viewRequest) return;
@@ -383,32 +375,28 @@
     const type = field(f, 'mediaType').value, options = [0, 1, 2, 3].map(i => text(field(f, 'option-' + i).value, '选项 ' + 'ABCD'[i]));
     if (new Set(options).size !== 4) throw Error('四个选项不能重复。');
     const selectedAnswer = field(f, 'answer').value; if (selectedAnswer === '') throw Error('请选择唯一正确答案。');
-    const old = state.editing, question = { id: stableId(field(f, 'id').value, '题目编号'), levelId: text(field(f, 'levelId').value, '所属关卡'), title: text(field(f, 'title').value, '题干'), explanation: text(field(f, 'explanation').value, '解析'), options, answer: integer(selectedAnswer, '正确答案', 0, 3), difficulty: ({ basic: '基础', advanced: '进阶', comprehensive: '综合' })[field(f, 'difficulty').value],
+    const old = state.editing, question = { enabled:field(f,'enabled').checked,id: stableId(field(f, 'id').value, '题目编号'), levelId: text(field(f, 'levelId').value, '所属关卡'), title: text(field(f, 'title').value, '题干'), explanation: text(field(f, 'explanation').value, '解析'), options, answer: integer(selectedAnswer, '正确答案', 0, 3), difficulty: ({ basic: '基础', advanced: '进阶', comprehensive: '综合' })[field(f, 'difficulty').value],
       media: type ? { type, url: mediaURL(field(f, 'mediaSrc').value, '题目素材'), alt: old?.media?.alt || '', required: field(f, 'mediaRequired').checked } : null };
     if (question.media && !question.media.url) throw Error('选择图片或视频题后须填写素材地址。');
-    await api('admin/questions' + (old ? '/' + encodeURIComponent(old.id) : ''), question, old ? 'PUT' : 'POST'); $('question-dialog').close(); await loadQuestions(); notify('题目已保存，等待审核。');
+    await api('admin/questions' + (old ? '/' + encodeURIComponent(old.id) : ''), question, old ? 'PUT' : 'POST'); $('question-dialog').close(); await loadQuestions(); notify('题目已保存。');
   }, 'editor-error'); });
-  $('review-form').addEventListener('submit', e => { e.preventDefault(); const f = e.currentTarget; submit(f, async () => {
-    const approved = field(f, 'approved').value === 'true'; await api('admin/questions/' + encodeURIComponent(state.reviewing.id) + '/review', { approved, enabled: approved && field(f, 'enabled').checked, note: text(field(f, 'note').value, '审核说明') }); $('review-dialog').close(); await loadQuestions(); notify('审核结果已保存。');
-  }, 'review-error'); });
-  field($('review-form'), 'approved').onchange = e => { field($('review-form'), 'enabled').disabled = e.target.value !== 'true'; if (e.target.value !== 'true') field($('review-form'), 'enabled').checked = false; };
   $('import-questions').onclick = () => { if (state.busy) return; $('import-form').reset(); $('import-error').hidden = true; $('import-dialog').showModal(); };
   $('import-form').addEventListener('submit', e => { e.preventDefault(); const f = e.currentTarget; submit(f, async () => {
     const parsed = await readJSON(field(f, 'file').files[0], '题库'), questions = Array.isArray(parsed) ? parsed : parsed.questions;
-    if (!Array.isArray(questions) || !questions.length) throw Error('题库须包含非空 questions 数组。'); const data = await api('admin/questions/import', { questions }); $('import-dialog').close(); await loadQuestions(); notify('已导入 ' + data.imported + ' 题，均待审核。');
+    if (!Array.isArray(questions) || !questions.length) throw Error('题库须包含非空 questions 数组。'); const data = await api('admin/questions/import', { questions }); $('import-dialog').close(); await loadQuestions(); notify('已导入 ' + data.imported + ' 题。');
   }, 'import-error'); });
   $('export-questions').onclick = async () => { try { downloadJSON(await api('admin/questions/export'), '趣味闯关题库.json'); notify('题库已导出。'); } catch (e) { notify(e.message); } };
-  $('export-activity').onclick = async () => { try { const data = await api('admin/activity/export'); downloadJSON({ schemaVersion: data.schemaVersion, exportedAt: data.exportedAt, config: data.config, levels: data.levels }, '趣味闯关活动配置.json'); notify('活动配置已导出，题库审核状态独立管理。'); } catch (e) { notify(e.message); } };
-  $('import-activity').onclick = () => { if (state.busy) return; $('activity-import-form').reset(); $('activity-import-error').hidden = true; $('activity-file-info').textContent = '文件须包含 config 与 levels。可选 questions 默认不导入，题库审核独立保留。'; $('activity-dialog').showModal(); };
+  $('export-activity').onclick = async () => { try { const data = await api('admin/activity/export'); downloadJSON({ schemaVersion: data.schemaVersion, exportedAt: data.exportedAt, config: data.config, levels: data.levels }, '趣味闯关活动配置.json'); notify('活动配置已导出，题目启用状态独立管理。'); } catch (e) { notify(e.message); } };
+  $('import-activity').onclick = () => { if (state.busy) return; $('activity-import-form').reset(); $('activity-import-error').hidden = true; $('activity-file-info').textContent = '文件须包含 config 与 levels。可选 questions 默认不导入，题库内容与启用状态独立保留。'; $('activity-dialog').showModal(); };
   field($('activity-import-form'), 'file').onchange = async e => { try { const data = await readJSON(e.target.files[0], '活动配置'); if (!data.config || !Array.isArray(data.levels)) throw Error('活动文件须包含 config 对象与 levels 数组。'); $('activity-file-info').textContent = `文件包含 ${data.config.themes?.length || 0} 个主题、${data.levels.length} 个关卡${Array.isArray(data.questions) ? '、' + data.questions.length + ' 道题目' : ''}。`; $('activity-import-error').hidden = true; } catch (error) { showError('activity-import-error', error); } };
   $('activity-import-form').addEventListener('submit', e => { e.preventDefault(); const f = e.currentTarget; submit(f, async () => {
     if (!field(f, 'confirmed').checked) throw Error('请先备份并确认导入活动。'); const data = await readJSON(field(f, 'file').files[0], '活动配置');
     if (!data.config || typeof data.config !== 'object' || Array.isArray(data.config) || !Array.isArray(data.levels)) throw Error('活动文件须包含 config 对象与 levels 数组。');
     if (field(f, 'includeQuestions').checked && !Array.isArray(data.questions)) throw Error('此文件不含 questions 数组，请取消同时导入题目的选项。');
-    await api('admin/activity/import', { config: data.config, levels: data.levels, ...(field(f, 'includeQuestions').checked && Array.isArray(data.questions) ? { questions: data.questions } : {}) }); $('activity-dialog').close(); await refreshStructure(); renderConfig('basic'); notify('活动已导入。规则与题目不会由文件自动批准。');
+    await api('admin/activity/import', { config: data.config, levels: data.levels, ...(field(f, 'includeQuestions').checked && Array.isArray(data.questions) ? { questions: data.questions } : {}) }); $('activity-dialog').close(); await refreshStructure(); renderConfig('basic'); notify('活动已导入。题目已保存，活动规则按现有生效约定执行。');
   }, 'activity-import-error'); });
   $('retry-sync').onclick = async () => { if (state.busy) return; state.busy = true; $('retry-sync').disabled = true; try { const data = await api('admin/outbox/retry', {}); notify('已同步 ' + data.delivered + ' 条，待重试 ' + data.failed + ' 条。'); await renderOperations(); } catch (e) { notify(e.message); } finally { state.busy = false; } };
-  for (const [id, dialog] of [['close-editor', 'question-dialog'], ['cancel-editor', 'question-dialog'], ['close-review', 'review-dialog'], ['cancel-review', 'review-dialog'], ['close-import', 'import-dialog'], ['cancel-import', 'import-dialog'], ['confirm-cancel', 'confirm-dialog'], ['close-level', 'level-dialog'], ['cancel-level', 'level-dialog'], ['close-activity-import', 'activity-dialog'], ['cancel-activity-import', 'activity-dialog']]) $(id).onclick = () => { if (!state.busy) $(dialog).close(); };
+  for (const [id, dialog] of [['close-editor', 'question-dialog'], ['cancel-editor', 'question-dialog'], ['close-import', 'import-dialog'], ['cancel-import', 'import-dialog'], ['confirm-cancel', 'confirm-dialog'], ['close-level', 'level-dialog'], ['cancel-level', 'level-dialog'], ['close-activity-import', 'activity-dialog'], ['cancel-activity-import', 'activity-dialog']]) $(id).onclick = () => { if (!state.busy) $(dialog).close(); };
   document.querySelectorAll('dialog').forEach(d => d.addEventListener('cancel', e => { if (state.busy) e.preventDefault(); }));
   api('admin/overview').then(async data => { environment(data.mode); $('login-screen').hidden = true; $('admin-screen').hidden = false; await showView('overview'); }).catch(e => { if (e.status !== 401 && e.status !== 403) showError('login-error', e); });
 })();

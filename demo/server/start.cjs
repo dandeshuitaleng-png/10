@@ -3,6 +3,7 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const { createApplication } = require('./application.cjs');
+const { createLocalWorkstation } = require('./local-workstation.cjs');
 const ROOT = path.resolve(__dirname, '..');
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.mp4': 'video/mp4', '.webm': 'video/webm', '.mp3': 'audio/mpeg', '.wav': 'audio/wav', '.ogg': 'audio/ogg' };
 function staticHandler(req, res) {
@@ -20,7 +21,9 @@ function staticHandler(req, res) {
   const stat = fs.statSync(actual);
   const headers = { 'Content-Type': MIME[path.extname(actual)] || 'application/octet-stream', 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'no-cache', 'Content-Length': stat.size };
   if (path.extname(actual) === '.html') headers['Content-Security-Policy'] = "default-src 'self'; img-src 'self' https: data: blob:; media-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'";
-  res.writeHead(200, headers);
+  const range=/^bytes=(\d+)-(\d*)$/.exec(req.headers.range||'');
+  if(range){const start=Number(range[1]),end=Math.min(stat.size-1,range[2]?Number(range[2]):stat.size-1);if(start>=stat.size||end<start){res.writeHead(416,{'Content-Range':`bytes */${stat.size}`});res.end();return;}Object.assign(headers,{'Accept-Ranges':'bytes','Content-Range':`bytes ${start}-${end}/${stat.size}`,'Content-Length':end-start+1});res.writeHead(206,headers);if(req.method==='HEAD')res.end();else fs.createReadStream(actual,{start,end}).pipe(res);return;}
+  headers['Accept-Ranges']='bytes';res.writeHead(200, headers);
   if (req.method === 'HEAD') res.end(); else fs.createReadStream(actual).pipe(res);
 }
 async function start(options = {}) {
@@ -40,7 +43,11 @@ async function start(options = {}) {
     }
   }
   const app = await createApplication({ ...options, mode, adminCredentials, dbPath });
-  const server = http.createServer((req, res) => req.url.startsWith('/api/') ? app.handler(req, res) : staticHandler(req, res));
+  let server;
+  const localEnabled=mode!=='production'&&['127.0.0.1','localhost','::1'].includes(host)&&process.env.QUIZ_LOCAL_WORKSTATION!=='0'&&options.localWorkstation!==false;
+  const local=localEnabled?createLocalWorkstation({base:()=>`http://127.0.0.1:${server.address().port}`,credentialPath:options.credentialPath||path.join(path.dirname(dbPath),'.admin-credentials.json'),identityPath:path.join(path.dirname(dbPath),'.local-player.json')}):null;
+  const workspaceStatic=localEnabled?require('./workspace-static.cjs').createWorkspaceStatic(path.resolve(ROOT,'..')):null;
+  server = http.createServer(async(req,res)=>{if(local&&await local(req,res))return;if(req.url.startsWith('/api/'))return app.handler(req,res);if(workspaceStatic&&workspaceStatic(req,res))return;staticHandler(req,res);});
   server.requestTimeout = 15000; server.headersTimeout = 10000;
   await new Promise((resolve, reject) => { server.once('error', reject); server.listen(port, host, resolve); });
   return { app, server, close: async () => { await new Promise(resolve => server.close(resolve)); await app.close(); } };

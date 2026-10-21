@@ -1,0 +1,50 @@
+{
+  "source": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155353_804.png",
+  "sourceSize": [
+    3840,
+    2400
+  ],
+  "displayCoordinatesAt": [
+    1996,
+    1248
+  ],
+  "crops": {
+    "green-frame-and-title": [
+      488,
+      303,
+      1510,
+      1093
+    ],
+    "farm-tea": [
+      566,
+      738,
+      770,
+      862
+    ],
+    "farm-garden": [
+      786,
+      738,
+      990,
+      862
+    ],
+    "farm-orchard": [
+      1007,
+      738,
+      1211,
+      862
+    ],
+    "farm-lotus": [
+      1227,
+      738,
+      1431,
+      862
+    ],
+    "green-ribbon": [
+      831,
+      303,
+      1165,
+      410
+    ]
+  },
+  "usage": "Unmodified crops from user-supplied reference for style comparison only; not runtime assets."
+}

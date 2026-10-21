@@ -1,4 +1,4 @@
-const ROUTES = Object.freeze(['loading', 'home', 'map', 'level-ready', 'quiz', 'result', 'ranking', 'certificates', 'settings', 'error']);
+const ROUTES = Object.freeze(['loading', 'home', 'themes', 'points', 'map', 'level-ready', 'quiz', 'result', 'ranking', 'certificates', 'settings', 'error']);
 
 class Router {
   constructor() { this.current = { name: 'loading', params: {} }; this.history = []; }

@@ -1,1 +1,17 @@
-{"name":"rural-culture-miniprogram-ui","version":"1.0.0","private":true,"description":"Native WeChat rural culture learning UI prototype","scripts":{"preview":"node tools/serve.cjs","check":"node tools/check.cjs","test:services":"node tests/services.cjs","test:browser":"node tests/browser.cjs"}}
+{
+  "name": "rural-culture-miniprogram-ui",
+  "version": "4.1.0",
+  "private": true,
+  "description": "Native WeChat rural culture learning UI prototype",
+  "scripts": {
+    "preview": "node tools/v4-serve.cjs . 6493",
+    "check": "node tools/v4-check.cjs",
+    "test:services": "node tests/v4-services.cjs",
+    "test:browser": "node qa/v8/browser-check.cjs",
+    "preview:v4": "node tools/v4-serve.cjs . 6493",
+    "check:v4": "node tools/v4-check.cjs",
+    "test:v4": "node tests/v4-services.cjs && node tests/v4-page.cjs",
+    "build:four": "node tools/v4-build.cjs",
+    "test:finish": "node tools/verify-four-theme-finish-20261020.cjs"
+  }
+}

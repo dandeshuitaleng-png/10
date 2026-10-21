@@ -1,0 +1,11 @@
+{
+  "approvedDirection": "2026-10-20 user selected wheat-gold ribbon and wheat ears for industry; ecology stays green mountain-water.",
+  "source": "design-source/industry-wheat-20261020/banner-source.png",
+  "prompt": "design-source/industry-wheat-20261020/prompt.txt",
+  "runtime": "miniprogram/assets/industry/banner-wheat-gold-v1.png",
+  "method": "Built-in ImageGen edit of original header; resize and palette compression only. Original green header retained unchanged.",
+  "width": 1050,
+  "height": 355,
+  "bytes": 73357,
+  "sha256": "682d05e1d7884440daec895c64edf2d16c508285ce215f339339d36dd65be1c1"
+}

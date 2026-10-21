@@ -10,5 +10,138 @@
     "urlCheck": true,
     "compileHotReLoad": true
   },
-  "condition": {}
+  "condition": {},
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "services"
+      },
+      {
+        "type": "folder",
+        "value": "utils"
+      },
+      {
+        "type": "folder",
+        "value": "assets/v2"
+      },
+      {
+        "type": "folder",
+        "value": "components/ui-button"
+      },
+      {
+        "type": "folder",
+        "value": "components/study-progress"
+      },
+      {
+        "type": "folder",
+        "value": "components/page-state"
+      },
+      {
+        "type": "folder",
+        "value": "pages/home"
+      },
+      {
+        "type": "folder",
+        "value": "pages/themes"
+      },
+      {
+        "type": "folder",
+        "value": "pages/chapters"
+      },
+      {
+        "type": "folder",
+        "value": "pages/quiz"
+      },
+      {
+        "type": "folder",
+        "value": "pages/result"
+      },
+      {
+        "type": "folder",
+        "value": "pages/certificate"
+      },
+      {
+        "type": "folder",
+        "value": "pages/ranking"
+      },
+      {
+        "type": "folder",
+        "value": "pages/progress"
+      },
+      {
+        "type": "folder",
+        "value": "assets/red"
+      },
+      {
+        "type": "folder",
+        "value": "assets/industry"
+      },
+      {
+        "type": "folder",
+        "value": "assets/ecology"
+      },
+      {
+        "type": "file",
+        "value": "services-v4/SERVICE-CONTRACT.md"
+      },
+      {
+        "type": "folder",
+        "value": "assets/brand/actions"
+      },
+      {
+        "type": "folder",
+        "value": "assets/brand/reference"
+      },
+      {
+        "type": "file",
+        "value": "assets/ecology/banner.png"
+      },
+      {
+        "type": "folder",
+        "value": "assets/brand/actor"
+      },
+      {
+        "type": "file",
+        "value": "assets/brand/ip-original.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/brand/nature.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/ecology/header.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/culture/scene.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/red/scene.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/industry/scene.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/ecology/scene.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/red.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/industry.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/ecology.jpg"
+      }
+    ],
+    "include": []
+  }
 }

@@ -1,0 +1,95 @@
+/* One pixel contract for all activity home pages. Theme colors and art are independent. */
+.game-device.activity-page.home-layout .activity-header{height:var(--home-header-h);min-height:var(--home-header-h);padding:0 var(--home-gutter);box-sizing:border-box;flex-shrink:0;border:0;box-shadow:none;overflow:visible}
+.game-device.activity-page.home-layout .activity-title-block{height:var(--home-title-h);min-height:var(--home-title-h);padding:0;box-sizing:border-box}
+.game-device.activity-page.home-layout .activity-title-content{position:relative;top:var(--home-nav-clearance);height:var(--home-title-h);width:100%}
+.game-device.activity-page.home-layout .activity-hud,.game-device.activity-page.home-layout .activity-progress-row{height:var(--home-row-h);min-height:var(--home-row-h);margin:0;box-sizing:border-box}
+.game-device.activity-page.home-layout .activity-hud{padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.game-device.activity-page.home-layout .activity-progress-row{padding:0 4px;gap:12px}
+.game-device.activity-page.home-layout .activity-progress-copy{font-size:13px;line-height:20px;gap:10px}
+.game-device.activity-page.home-layout .activity-progress-value{font-size:21px;line-height:28px;text-shadow:none}
+.game-device.activity-page.home-layout .activity-progress-total{font-size:13px;line-height:20px}
+.game-device.activity-page.home-layout button.activity-points{width:76px;min-width:76px;max-width:76px;height:44px;min-height:44px;margin:0;padding:0;font-size:13px;line-height:20px;border:0;background:transparent;box-shadow:none;justify-content:flex-end}
+.game-device.activity-page.home-layout .activity-links{height:44px;min-height:44px;margin:0;gap:8px;border:0;box-shadow:inset 0 1px 0 #d9bf8b55;box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr)}
+.game-device.activity-page.home-layout .activity-links button{width:100%;min-width:0;max-width:100%;height:44px;min-height:44px;margin:0;padding:0;gap:6px;box-sizing:border-box;font-size:12px;line-height:20px;border:0;border-radius:0;background:transparent;text-shadow:none}
+.game-device.activity-page.home-layout .activity-links game-icon{width:17px;height:17px;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent}
+.game-device.activity-page.home-layout .activity-header-scene,.game-device.activity-page.home-layout .activity-header-wash,.game-device.activity-page.home-layout .activity-description,.game-device.activity-page.home-layout .activity-progress-track{display:none}
+/* Optical image windows remove export margins; type stays on a shared center line. */
+.game-device.activity-page.home-layout .title-art-window{position:absolute;overflow:hidden;pointer-events:none}
+.game-device.activity-page.home-layout .title-art-window .activity-title-art{position:absolute;right:auto;margin:0;max-width:none;object-fit:fill;display:block}
+.game-device.activity-page.home-layout .home-title-label{position:absolute;top:var(--home-title-label-top);left:0;right:auto;width:var(--home-title-area-w);height:36px;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.game-device.activity-page.home-layout .activity-title-block .activity-title{position:static;left:auto;right:auto;top:auto;font-size:28px;line-height:36px;height:36px;margin:0;letter-spacing:0;white-space:nowrap;text-align:center;font-style:normal}
+.game-device.activity-page.home-layout.skin-culture .home-title-label .activity-title{color:#a34622}
+/* Shared map geometry: all skins use the same controls and local coordinates. */
+.game-device.activity-page.home-layout .route-scene{object-fit:contain}
+.game-device.activity-page.home-layout .route-stop{width:var(--home-node-w);height:var(--home-node-h);margin-left:calc(var(--home-node-w) / -2);background:transparent}
+.game-device.activity-page.home-layout button.route-node{width:var(--home-node-w);height:var(--home-node-h);min-height:var(--home-node-h)}
+.game-device.activity-page.home-layout .route-base{width:var(--home-node-w);height:calc(var(--home-node-w) * .75);top:6px}
+.game-device.activity-page.home-layout .route-number{top:calc(var(--home-node-w) * .198);font-size:calc(var(--home-node-w) * .30);line-height:calc(var(--home-node-w) * .36)}
+.game-device.activity-page.home-layout .route-node-badge{right:7px;bottom:6px;width:26px;height:26px;border-width:2px;box-sizing:border-box}
+.game-device.activity-page.home-layout button.route-caption{width:var(--home-card-w);height:var(--home-card-h);min-height:var(--home-card-h);max-height:var(--home-card-h);box-sizing:border-box;bottom:calc((var(--home-node-h) - var(--home-card-h)) / 2);padding:5px 10px;border-radius:13px}
+.game-device.activity-page.home-layout .route-stop.right .route-caption{right:calc(var(--home-node-w) + var(--home-card-gap))}
+.game-device.activity-page.home-layout .route-stop.left .route-caption{left:calc(var(--home-node-w) + var(--home-card-gap))}
+.game-device.activity-page.home-layout .route-stop.current button.route-caption{padding:4px 9px}
+.game-device.activity-page.home-layout .route-caption-tip,.game-device.activity-page.home-layout .route-caption::after{display:none}
+.game-device.activity-page.home-layout .route-caption-label{font-size:11px;line-height:15px}
+.game-device.activity-page.home-layout .route-caption-name{font-size:18px;line-height:24px}
+.game-device.activity-page.home-layout .route-caption-state{font-size:12px;line-height:17px;margin-top:2px}
+.game-device.activity-page.home-layout .route-caption-reward{font-size:12px;line-height:16px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.game-device.activity-page.home-layout .route-guide{width:var(--home-guide-w);bottom:var(--home-guide-bottom)}
+.game-device.activity-page.home-layout .route-guide .route-guide-art{width:var(--home-guide-w);height:var(--home-guide-h)}
+.game-device.activity-page.home-layout .route-guide text{width:var(--home-guide-label-w);min-width:var(--home-guide-label-w);height:20px;line-height:18px;padding:0 8px;font-size:var(--home-guide-font);margin-top:-3px;box-sizing:border-box}
+.game-device.activity-page.home-layout .route-stop.right .route-guide{left:var(--home-guide-right)}
+.game-device.activity-page.home-layout .route-stop.left .route-guide{left:var(--home-guide-left)}
+.game-device.activity-page.home-layout .panel-footer{padding:8px 16px var(--safe-bottom);border-top:1px solid #e7c788;gap:0;box-shadow:none;box-sizing:border-box}
+
+.game-device.activity-page.home-layout .home-title-label.plain-title .activity-title{color:var(--route-ink);text-shadow:none}
+
+/* Restore the first ecology heading: outlined italic type left, original illustration right. */
+.game-device.activity-page.home-layout.skin-ecology .ecology-original-title{position:absolute;left:12px;right:4px;top:30px;height:54px;display:flex;align-items:center;justify-content:space-between}
+.game-device.activity-page.home-layout.skin-ecology .ecology-original-title .activity-title{flex:0 0 auto;min-width:0;margin-right:16px;text-align:left;font-family:-apple-system,"PingFang SC",sans-serif;font-size:24px;line-height:28px;height:28px;font-weight:800;font-style:italic;color:#fff;letter-spacing:0;text-shadow:2px 2px #20557a,-1px -1px #20557a,1px -1px #20557a,-1px 1px #20557a}
+.game-device.activity-page.home-layout.skin-ecology .ecology-original-emoji{position:static;flex:0 0 60px;width:60px;height:45px;align-self:flex-end;object-fit:contain}
+
+/* Ecology water-blue surroundings: scoped to the activity homepage; scene and card colors stay intact. */
+.game-device.activity-page.home-layout.skin-ecology{background:#EAF4F7}
+.game-device.activity-page.home-layout.skin-ecology .activity-header,.game-device.activity-page.home-layout.skin-ecology .panel-footer{background:#F3FAFC}
+.game-device.activity-page.home-layout.skin-ecology .activity-header,.game-device.activity-page.home-layout.skin-ecology .activity-progress-copy,.game-device.activity-page.home-layout.skin-ecology .activity-progress-value,.game-device.activity-page.home-layout.skin-ecology button.activity-points{color:#24556B}
+.game-device.activity-page.home-layout.skin-ecology .activity-progress-total,.game-device.activity-page.home-layout.skin-ecology .activity-links button{color:#68838F}
+.game-device.activity-page.home-layout.skin-ecology .activity-links{box-shadow:inset 0 1px 0 #CEDFE7}
+.game-device.activity-page.home-layout.skin-ecology .panel-footer{border-top-color:#CEDFE7}
+
+/* culture homepage surroundings: approved palette only; layout, title, button and scene unchanged. */
+.game-device.activity-page.home-layout.skin-culture{background:#FFF3DD}
+.game-device.activity-page.home-layout.skin-culture .activity-header,.game-device.activity-page.home-layout.skin-culture .panel-footer{background:#FFF3DD}
+.game-device.activity-page.home-layout.skin-culture .activity-progress-copy,.game-device.activity-page.home-layout.skin-culture .activity-progress-value,.game-device.activity-page.home-layout.skin-culture button.activity-points{color:#674526}
+.game-device.activity-page.home-layout.skin-culture .activity-progress-total,.game-device.activity-page.home-layout.skin-culture .activity-links button{color:#876540}
+.game-device.activity-page.home-layout.skin-culture .activity-links{box-shadow:inset 0 1px 0 #E8D6AF}
+.game-device.activity-page.home-layout.skin-culture .panel-footer{border-top-color:#E8D6AF}
+
+/* red homepage surroundings: approved palette only; layout, title, button and scene unchanged. */
+.game-device.activity-page.home-layout.skin-red{background:#FBE9DD}
+.game-device.activity-page.home-layout.skin-red .activity-header,.game-device.activity-page.home-layout.skin-red .panel-footer{background:#FFF5EE}
+.game-device.activity-page.home-layout.skin-red .activity-progress-copy,.game-device.activity-page.home-layout.skin-red .activity-progress-value,.game-device.activity-page.home-layout.skin-red button.activity-points{color:#753B31}
+.game-device.activity-page.home-layout.skin-red .activity-progress-total,.game-device.activity-page.home-layout.skin-red .activity-links button{color:#865D52}
+.game-device.activity-page.home-layout.skin-red .activity-links{box-shadow:inset 0 1px 0 #E8C9BC}
+.game-device.activity-page.home-layout.skin-red .panel-footer{border-top-color:#E8C9BC}
+
+/* industry homepage surroundings: approved palette only; layout, title, button and scene unchanged. */
+.game-device.activity-page.home-layout.skin-industry{background:#EAF1D9}
+.game-device.activity-page.home-layout.skin-industry .activity-header,.game-device.activity-page.home-layout.skin-industry .panel-footer{background:#F5F9ED}
+.game-device.activity-page.home-layout.skin-industry .activity-progress-copy,.game-device.activity-page.home-layout.skin-industry .activity-progress-value,.game-device.activity-page.home-layout.skin-industry button.activity-points{color:#315B37}
+.game-device.activity-page.home-layout.skin-industry .activity-progress-total,.game-device.activity-page.home-layout.skin-industry .activity-links button{color:#657A59}
+.game-device.activity-page.home-layout.skin-industry .activity-links{box-shadow:inset 0 1px 0 #CEDDBA}
+.game-device.activity-page.home-layout.skin-industry .panel-footer{border-top-color:#CEDDBA}
+
+/* Scroll cues stay above the map without taking space or intercepting gestures. */
+.panel-scroll-frame{position:relative;display:flex;flex:1;min-height:0;overflow:hidden}
+.panel-scroll-frame>.panel-body{height:100%;width:100%;box-sizing:border-box}
+.game-device.activity-page.home-layout .map-edge-fade{position:absolute;left:0;right:0;height:12px;z-index:3;pointer-events:none}
+.game-device.activity-page.home-layout .map-edge-top{top:0;background:linear-gradient(180deg,#fffaf0a6,#fffaf000)}
+.game-device.activity-page.home-layout .map-edge-bottom{bottom:0;background:linear-gradient(0deg,#fffaf0a6,#fffaf000)}
+.game-device.activity-page.home-layout.skin-ecology .map-edge-top{background:linear-gradient(180deg,#f3fafca6,#f3fafc00)}
+.game-device.activity-page.home-layout.skin-ecology .map-edge-bottom{background:linear-gradient(0deg,#f3fafca6,#f3fafc00)}
+.game-device.activity-page.home-layout .map-scroll-hint{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:4;pointer-events:none;white-space:nowrap;border:1px solid #ffffffc4;border-radius:16px;padding:4px 12px;background:#fffaf0f2;color:#674526;box-shadow:0 2px 6px #40321b14;font-size:12px;line-height:18px}
+.game-device.activity-page.home-layout.skin-red .map-scroll-hint{background:#fff5eef2;color:#753b31}
+.game-device.activity-page.home-layout.skin-industry .map-scroll-hint{background:#f5f9edf2;color:#315b37}
+.game-device.activity-page.home-layout.skin-ecology .map-scroll-hint{background:#f3fafcf2;color:#24556b}

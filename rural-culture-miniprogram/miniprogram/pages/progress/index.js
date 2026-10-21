@@ -1,2 +1,0 @@
-const ui=require('../../utils/page');
-Page({data:{loading:true,error:'',summary:null,themes:[]},onShow(){this.refresh();},refresh(){return ui.load(this,async()=>{this.setData(await ui.api.getProgress());});},enter(e){ui.go('/pages/chapters/index?themeId='+e.currentTarget.dataset.id);},continueStudy(){const last=this.data.summary.lastChapter;if(last)ui.go('/pages/chapters/index?themeId='+last.themeId);else ui.go('/pages/themes/index');},certificate(){ui.go('/pages/certificate/index');},home:ui.home,onShareAppMessage:ui.share});

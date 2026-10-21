@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-09T12:53:06.170Z",
+  "workbook": "/Users/huangnianpeng/Desktop/yx/题库交付/湖南乡村知识题库240题/湖南乡村知识题库240题.xlsx",
+  "workbookSha256": "8de3d78eb3ff00bf0854d7f19649868df1a0d41e3169f42bec16b21ab5001105",
+  "base": "/Users/huangnianpeng/Desktop/yx/题库交付/湖南乡村知识题库240题/湖南乡村知识题库240题.json",
+  "baseSha256": "72023a28c0df659c45a4fe5d5ec424a5608d4b78da1849288ff0d5de13f32cd2",
+  "extractedFrom": "题库总表",
+  "questionCount": 240,
+  "themeCounts": {
+    "十步芳草": 60,
+    "千年文脉": 60,
+    "金色产业": 60,
+    "青山绿水": 60
+  },
+  "poolCounts": {
+    "red-1": 15,
+    "red-2": 15,
+    "red-3": 15,
+    "red-4": 15,
+    "culture-1": 15,
+    "culture-2": 15,
+    "culture-3": 15,
+    "culture-4": 15,
+    "industry-1": 15,
+    "industry-2": 15,
+    "industry-3": 15,
+    "industry-4": 15,
+    "ecology-1": 15,
+    "ecology-2": 15,
+    "ecology-3": 15,
+    "ecology-4": 15
+  },
+  "reviewCounts": {
+    "待业务审核": 240
+  },
+  "enabledCount": 0,
+  "eligibleLevelIds": [],
+  "eligibleQuestionCount": 0,
+  "installed": true,
+  "contentFactReview": "not_performed_by_importer",
+  "backendAndScoring": "not_changed"
+}

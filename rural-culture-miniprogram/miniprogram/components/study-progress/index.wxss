@@ -1,1 +1,0 @@
-:host {display:block;} .track {height:5px;background:#E4E5DA;border-radius:10px;overflow:hidden;} .fill {height:100%;border-radius:10px;transition:width .2s;} .progress-label {font-size:14px;color:#66736C;margin-bottom:10px;line-height:1.5;}

@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "pose": "挥手迎接",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true
+    },
+    {
+      "pose": "伸手指路",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true
+    },
+    {
+      "pose": "托腮思考",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true
+    },
+    {
+      "pose": "跃起欢呼",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true
+    },
+    {
+      "pose": "展示成就",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true
+    },
+    {
+      "pose": "抱书休息",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true
+    },
+    {
+      "previewStatus": 200,
+      "images": 13,
+      "broken": 0
+    },
+    {
+      "transparencyToggle": true
+    },
+    {
+      "darkToggle": true
+    },
+    {
+      "mobileNoOverflow": true
+    }
+  ],
+  "errors": []
+}

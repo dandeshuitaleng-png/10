@@ -11,8 +11,7 @@ function selectApprovedPools(data) {
     ids.add(q.id);
     const level = known.get(q.levelId);
     if (!level || q.themeId !== level.themeId || q.levelOrder !== level.order) throw new Error('Invalid level mapping: '+q.id);
-    if (q.enabled !== true || q.reviewStatus !== '已通过') continue;
-    if (typeof q.reviewNote !== 'string' || !q.reviewNote.trim()) throw new Error('Missing review record: '+q.id);
+    if (q.enabled === false) continue;
     (grouped[q.levelId] ||= []).push(q);
   }
   return Object.fromEntries(levels.filter(l => (grouped[l.id] || []).length >= l.questionCount).map(l => [l.id, grouped[l.id]]));

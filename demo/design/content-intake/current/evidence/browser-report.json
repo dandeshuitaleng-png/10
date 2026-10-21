@@ -1,0 +1,977 @@
+{
+  "checkedAt": "2026-10-09T13:00:21.885Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "16关可切换",
+      "passed": true
+    },
+    {
+      "name": "red-1只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "red-1第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-1十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "red-1不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "red-1返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "red-1再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "red-2只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "red-2第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-2十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "red-2不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "red-2返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "red-2再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "red-3只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "red-3第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-3十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "red-3不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "red-3返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "red-3再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "red-4只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "red-4第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "red-4十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "red-4不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "red-4返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "red-4再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "culture-1只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "culture-1第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-1十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "culture-1不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "culture-1返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "culture-1再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "culture-2只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "culture-2第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-2十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "culture-2不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "culture-2返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "culture-2再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "culture-3只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "culture-3第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-3十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "culture-3不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "culture-3返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "culture-3再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "culture-4只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "culture-4第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "culture-4十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "culture-4不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "culture-4返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "culture-4再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "industry-1只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "industry-1第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-1十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "industry-1不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "industry-1返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "industry-1再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "industry-2只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "industry-2第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-2十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "industry-2不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "industry-2返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "industry-2再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "industry-3只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "industry-3第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-3十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "industry-3不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "industry-3返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "industry-3再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "industry-4只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "industry-4第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "industry-4十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "industry-4不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "industry-4返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "industry-4再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "ecology-1只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-1十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "ecology-1不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "ecology-1返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "ecology-1再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "ecology-2只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-2十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "ecology-2不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "ecology-2返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "ecology-2再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "ecology-3只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-3十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "ecology-3不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "ecology-3返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "ecology-3再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "ecology-4只抽本关且十题不重复",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第1题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第2题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第3题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第4题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第5题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第6题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第7题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第8题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4第9题显示解析",
+      "passed": true
+    },
+    {
+      "name": "ecology-4十题作答完成",
+      "passed": true
+    },
+    {
+      "name": "ecology-4不写正式进度或积分",
+      "passed": true
+    },
+    {
+      "name": "ecology-4返回所属主题",
+      "passed": true
+    },
+    {
+      "name": "ecology-4再返回一次到首页",
+      "passed": true
+    },
+    {
+      "name": "320px全部240题真实文字可见或可滚动且热区达标",
+      "passed": true
+    },
+    {
+      "name": "375px全部240题真实文字可见或可滚动且热区达标",
+      "passed": true
+    },
+    {
+      "name": "414px全部240题真实文字可见或可滚动且热区达标",
+      "passed": true
+    },
+    {
+      "name": "430px全部240题真实文字可见或可滚动且热区达标",
+      "passed": true
+    },
+    {
+      "name": "真实内容答错且复活禁用",
+      "passed": true
+    },
+    {
+      "name": "错误返回当前主题地图",
+      "passed": true
+    },
+    {
+      "name": "浏览器无异常",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "red-1-start.png",
+    "red-1-result.png",
+    "red-2-start.png",
+    "red-2-result.png",
+    "red-3-start.png",
+    "red-3-result.png",
+    "red-4-start.png",
+    "red-4-result.png",
+    "culture-1-start.png",
+    "culture-1-result.png",
+    "culture-2-start.png",
+    "culture-2-result.png",
+    "culture-3-start.png",
+    "culture-3-result.png",
+    "culture-4-start.png",
+    "culture-4-result.png",
+    "industry-1-start.png",
+    "industry-1-result.png",
+    "industry-2-start.png",
+    "industry-2-result.png",
+    "industry-3-start.png",
+    "industry-3-result.png",
+    "industry-4-start.png",
+    "industry-4-result.png",
+    "ecology-1-start.png",
+    "ecology-1-result.png",
+    "ecology-2-start.png",
+    "ecology-2-result.png",
+    "ecology-3-start.png",
+    "ecology-3-result.png",
+    "ecology-4-start.png",
+    "ecology-4-result.png",
+    "longest-320.png",
+    "longest-375.png",
+    "longest-414.png",
+    "longest-430.png",
+    "wrong-disabled.png"
+  ],
+  "scope": "Independent pending-content preview; 16 actual randomized ten-question runs, 240 actual text layouts across four sizes. Answers read solely to drive pointer checks; no formal progress or scoring.",
+  "wechatSimulator": "not_tested_for_content_preview",
+  "realDevices": "not_tested"
+}

@@ -1,0 +1,85 @@
+{
+  "method": "Built-in ImageGen edits matched to supplied reference crops. Exports use crop/resize/compression only; original generated sources and prompts retained.",
+  "nodeOpacity": "CSS opacity is 1 for every node. Generated source near-opaque alpha and antialias edges are preserved; not asserted to be all alpha255.",
+  "assets": [
+    {
+      "source": "design-source/reference-unified-20261020/ecology-map-source.png",
+      "runtime": "miniprogram/assets/journey/ecology.jpg",
+      "width": 750,
+      "height": 1280,
+      "quality": 85,
+      "bytes": 138728,
+      "sha256": "92639733fee1d37620d6508ff2222b476b7d3d2d8cd4d19380a13e8dd7608878"
+    },
+    {
+      "source": "design-source/reference-unified-20261020/culture-map-source.png",
+      "runtime": "miniprogram/assets/journey/culture.jpg",
+      "width": 750,
+      "height": 1280,
+      "quality": 85,
+      "bytes": 92651,
+      "sha256": "8dd742bb3cfc68e8269bf02b5035fed60d91000dd6db6c79fe122d552fb220ce"
+    },
+    {
+      "source": "design-source/reference-unified-20261020/red-map-source.png",
+      "runtime": "miniprogram/assets/journey/red.jpg",
+      "width": 750,
+      "height": 1280,
+      "quality": 85,
+      "bytes": 138856,
+      "sha256": "d9d77e5b2fb6bd1a5f039f90a05a3e222a2b2a2860a0cca6b698bad118782843"
+    },
+    {
+      "source": "design-source/reference-unified-20261020/industry-map-source.png",
+      "runtime": "miniprogram/assets/journey/industry.jpg",
+      "width": 750,
+      "height": 1280,
+      "quality": 85,
+      "bytes": 100281,
+      "sha256": "8f9e5e21c8565e4c0d6846cad7d79d9db6ae65f0b5b2b227a483f76da3a088a8",
+      "refinement": "design-source/industry-map-refine-20261020/source-v2.png"
+    },
+    {
+      "source": "design-source/reference-unified-20261020/node-current-source.png",
+      "runtime": "miniprogram/assets/journey/node-current.png",
+      "width": 220,
+      "height": 147,
+      "transparentMarginCrop": {
+        "left": 28,
+        "top": 55,
+        "width": 1473,
+        "height": 918
+      },
+      "bytes": 14833,
+      "sha256": "09f364f59ad6191eee2e6e229587c814da236ddf982a3f74e143ec7c7d696980"
+    },
+    {
+      "source": "design-source/reference-unified-20261020/node-locked-source.png",
+      "runtime": "miniprogram/assets/journey/node-locked.png",
+      "width": 220,
+      "height": 147,
+      "transparentMarginCrop": {
+        "left": 56,
+        "top": 71,
+        "width": 1418,
+        "height": 889
+      },
+      "bytes": 15266,
+      "sha256": "2d7da046ee429becb017c68d8deaa253be3e05b056d8feecda7bd7e4e52f3a57"
+    },
+    {
+      "source": "design-source/reference-unified-20261020/node-completed-source.png",
+      "runtime": "miniprogram/assets/journey/node-completed.png",
+      "width": 220,
+      "height": 147,
+      "transparentMarginCrop": {
+        "left": 27,
+        "top": 54,
+        "width": 1475,
+        "height": 919
+      },
+      "bytes": 15114,
+      "sha256": "ff0b07c31bdb4fbe828da2a8820c6a9780bcbb5b0e139455a7cd61e75c2e2e3d"
+    }
+  ]
+}

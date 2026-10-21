@@ -80,7 +80,7 @@ def convert(workbook, base):
             if not ok:
                 raise ValueError(f'总表第{row_number}行：{message}')
         # Review note is intentionally optional for pending/disabled rows.
-        check(all(str(r[i]).strip() for i in range(22) if i not in (12, 21)), '必填字段为空。')
+        check(all(str(r[i]).strip() for i in range(22) if i not in (12, 18, 19, 21)), '必填字段为空。')
         check(r[0] not in ids, '题目编号重复。')
         check(r[6] not in titles, '题干重复。')
         ids.add(r[0]); titles.add(r[6])
@@ -105,18 +105,14 @@ def convert(workbook, base):
         refs = [sources[s] for s in source_ids]
         check(r[15] == ' / '.join(s['title'] for s in refs), '来源标题与编号不一致。')
         check(r[16] == '\n'.join(s['url'] for s in refs), '来源链接与编号不一致。')
-        check(r[18] in ('待业务审核','修改中','已通过','已退回'), '审核状态无效。')
-        check(r[19] in ('未启用','启用'), '启用状态无效。')
-        enabled = r[19] == '启用'
-        check(not enabled or r[18] == '已通过', '未通过审核的题目不得启用。')
-        check(not enabled or bool(r[21].strip()), '启用题目须在审核意见中记录审核人、日期和结论。')
+        enabled = r[19] not in ('停用','已停用','禁用')
         theme_id = theme_ids[r[1]]
         questions.append(dict(id=r[0],themeId=theme_id,themeName=r[1],levelId=f'{theme_id}-{level}',
             levelOrder=level,difficultyLevel=level,difficultyLabel=r[3],difficulty=LEGACY[level-1],
             knowledgePoint=r[4],region=r[5],title=r[6],options=options,answer=answer,
             correctOption=r[11],correctAnswer=correct,explanation=r[13],sourceIds=source_ids,
-            sourceTitle=r[15],sourceUrl=r[16],evidenceType=r[17],reviewStatus=r[18],enabled=enabled,
-            version=r[20],reviewNote=r[21]))
+            sourceTitle=r[15],sourceUrl=r[16],evidenceType=r[17],enabled=enabled,
+            version=r[20]))
     if len(questions) != 240:
         raise ValueError(f'应为240题，实际{len(questions)}题；结构性改动需重新制作题库。')
     counts = Counter(q['levelId'] for q in questions)
@@ -124,15 +120,15 @@ def convert(workbook, base):
         raise ValueError('每个主题四关，每关必须保留15题。')
     result['questions'] = questions
     result['questionCount'] = len(questions)
-    result['reviewStatus'] = '已通过' if all(q['reviewStatus'] == '已通过' for q in questions) else '待业务审核'
+    result.pop('reviewStatus', None)
     return result
 
 def approved_pools(data):
     pools = {}
     for level in data['levels']:
         selected = [q for q in data['questions'] if q['levelId'] == level['id']
-                    and q['reviewStatus'] == '已通过' and q['enabled'] is True and q['reviewNote'].strip()]
-        # A partially reviewed level cannot open a ten-question challenge.
+                    and q['enabled'] is True]
+        # A level with insufficient enabled questions cannot start a challenge.
         if len(selected) >= level['questionCount']:
             pools[level['id']] = selected
     return pools
@@ -142,7 +138,7 @@ def main():
     parser.add_argument('--workbook',type=Path,default=ROOT/'湖南乡村知识题库240题.xlsx')
     parser.add_argument('--base',type=Path,default=ROOT/'湖南乡村知识题库240题.json')
     parser.add_argument('--output',type=Path,default=ROOT/'湖南乡村知识题库240题_重新导出.json')
-    parser.add_argument('--approved-pools',type=Path,help='可选：另存仅含已通过且启用题的关卡题池；不足10题的关卡不输出。')
+    parser.add_argument('--approved-pools',type=Path,help='可选：另存仅含已启用题的关卡题池；不足10题的关卡不输出。')
     args = parser.parse_args()
     data = convert(args.workbook,json.loads(args.base.read_text(encoding='utf-8')))
     args.output.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

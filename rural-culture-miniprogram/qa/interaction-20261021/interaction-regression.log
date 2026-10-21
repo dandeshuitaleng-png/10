@@ -1,0 +1,15 @@
+✔ 100 actual selections cannot inflate answers with subpixel native geometry (57.817617ms)
+✔ late geometry from the previous question cannot resize the next one (6.5701ms)
+✔ every one of 100 repeated taps gets feedback and returns to rest (1.611588ms)
+✔ the previous release cannot end a new press, including the same answer (1.120725ms)
+✔ scroll gestures, touch cancellation and page disposal leave no stuck press (0.24425ms)
+✔ keyboard or accessible tap also gets feedback without a preceding touch event (0.204777ms)
+✔ the actual shared button continues to emit actions after 100 taps and guards disabled/loading (3.150533ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 182.333991

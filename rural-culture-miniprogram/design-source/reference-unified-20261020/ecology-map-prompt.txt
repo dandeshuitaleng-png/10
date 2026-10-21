@@ -1,0 +1,30 @@
+Use case: precise-object-edit / style-transfer.
+Asset type: ONE vertical ecology learning-route map background for an existing Chinese cultural mini program.
+Input roles:
+Image 1 ecology.jpg is the EDIT TARGET and the sole authoritative map layout. LOCK its road, river, mountains, stones, reeds and all positions.
+Image 2 farm-tea.png is STYLE REFERENCE ONLY: bright saturated yellow-green farm cartoon scenery, softly rounded clean forms, clear layered color planes, fresh healthy green foliage and blue-green distant hills. Do NOT copy its terraces, buildings, title, characters, nodes or UI.
+Image 3 farm-lotus.png is STYLE REFERENCE ONLY: clear cheerful blue water, luminous fresh green leaf tones and round readable 2.5D farm-cartoon surfaces. Do NOT copy lotus plants, islands, characters, buildings, signs, route nodes or UI.
+Image 4 green-ribbon.png is STYLE REFERENCE ONLY: clean plump cartoon leaves, soft simple volume, fresh green highlights and crisp readable edges. Do NOT copy the ribbon, flower, text or icons.
+
+Primary request: Faithfully re-illustrate Image 1 in the same bright, full, rounded 2.5D farm-cartoon illustration family as the reference thumbnails, while preserving the exact Image 1 geometry and open scenic layout. Replace the current muted watercolor gray veil and rough paper-like brush texture with clean cheerful colors, clear shapes and soft controlled illustrated volume. This is a style/material-only edit of an accepted map, not a new map design.
+
+LOCKED GEOMETRY AND PLACEMENT:
+- Exact portrait aspect ratio 750:1280, same camera, frame, vertical scale and map extents.
+- Preserve every S-bend of the continuous winding route, the exact route silhouette, every road width, every path-edge location, same top vanishing entry and same bottom continuation out of frame. Preserve all existing dashed centerline positions and subtle warm dash colors. Do NOT thicken or narrow the road, do NOT change bend centers, do NOT add branches or interruptions.
+- Preserve the river's exact original upper-right location, course, bank shapes, widths, horizon connection and exit through the right edge. Do not extend water into empty lawn.
+- Preserve every original mountain outline and layering, mountain positions and counts, horizon height, original sky and valley spatial arrangement. Do not add hills or peaks.
+- Preserve every principal rock, grass clump, shrub and reed cluster at its original size and normalized position: especially lower-left tall reeds and stone, right-side river reeds/stones, middle/lower right rocks and foreground grass clumps. Do not add new clusters or alter the route-facing silhouettes.
+- Keep all open grass areas empty as in the source. Preserve top and bottom continuation. No extra landscape props.
+
+COLOR / MATERIAL / RENDERING:
+- Ground: bright luminous yellow-green grass (#B6DE65 to #A5D957) with fresh clear leaf-green shade planes, warm lime/cream light from upper left. Clean broad gentle color areas with subtle smooth transitions; moderate clear layering, no dirty texture.
+- Plants and reeds: lively clean greens with softly plump rounded leaf blades and clear silhouettes, cream-lime highlights and healthy rich green shadows. Match the farm thumbnail's confident simple volume.
+- River: clear bright clean sky/cyan blue (#75D5E8 with restrained #3EADC9 shading), smooth blue planes and a few simple light ripples as in the source, soft clean ivory riverbank line.
+- Road: the exact original pale creamy yellow/ivory route, high readability against vivid green lawn, same dashed centerline.
+- Mountains: original shapes and layering rendered in fresh soft teal/leaf-green with clean atmospheric separation; keep light distant valley without gray haze over the foreground.
+- Stones: clear rounded gray-lilac cartoon rocks with simple soft highlight/shadow facets, not gritty stone.
+- Overall: bright cheerful rounded 2.5D cartoon illustration, clean soft volume, upper-left diffuse sunlight, illustrated planes, no thick black outlines. It should clearly belong beside the reference farm art.
+
+AVOID: watercolor gray wash, low-saturation gray veil, rough paper grain, vintage mottling, muddy colors, gritty brush texture, photorealism, realistic 3D materials, excessive gloss, bold black outlines, new architecture, characters, nodes, pedestals, buttons, text, titles, lettering, labels, props, terraces, additional mountains, lily pads or flowers not in the original.
+
+Output: ONE opaque full-bleed portrait bitmap map, target 750x1280 or a proportionally larger image of exactly the same aspect ratio. No UI or watermark. Strictly preserve the original map's road and scene geometry.

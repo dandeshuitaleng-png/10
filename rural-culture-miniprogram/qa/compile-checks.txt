@@ -1,3 +1,0 @@
-wcc: 11 files, exit 0
-wcsc: 12 files, exit 0
-JSON / JavaScript / WeChat WXML / WXSS checks passed

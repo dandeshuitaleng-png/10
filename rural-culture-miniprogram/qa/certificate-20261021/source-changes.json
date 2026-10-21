@@ -1,0 +1,30 @@
+{
+  "十步芳草": [
+    "miniprogram/services-v4/certificate-art.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/certificate-20261021.wxss"
+  ],
+  "千年文脉": [
+    "miniprogram/services-v4/certificate-art.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/certificate-20261021.wxss"
+  ],
+  "金色产业": [
+    "miniprogram/services-v4/certificate-art.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/certificate-20261021.wxss"
+  ],
+  "青山绿水": [
+    "miniprogram/services-v4/certificate-art.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/certificate-20261021.wxss"
+  ]
+}

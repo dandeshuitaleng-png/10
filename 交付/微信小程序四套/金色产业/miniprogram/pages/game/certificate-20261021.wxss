@@ -1,0 +1,9 @@
+/* The displayed document is the same PNG that is saved to the album. */
+.game-device.feedback-20261019 .certificate-paper{position:relative;box-sizing:border-box;width:100%;padding:0;margin:0;border:0;border-radius:8px;background:transparent;box-shadow:0 6px 16px #3e321512;overflow:hidden}
+.game-device.feedback-20261019 .certificate-paper::before{display:none;content:none}
+.game-device.feedback-20261019 .certificate-preview{display:block;box-sizing:border-box;width:100%;height:auto;margin:0}
+.game-device.feedback-20261019 .certificate-placeholder{min-height:360px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;padding:24px;border:6px solid var(--accent);background:#fffbf5;text-align:center}
+.game-device.feedback-20261019 .certificate-placeholder-heading{font:bold 28px/40px "Songti SC",serif;color:#b68e45}
+.game-device.feedback-20261019 .certificate-placeholder game-button{width:100%;max-width:230px}
+.game-device.feedback-20261019 .certificate-save-note{display:block;text-align:center;font-size:12px;line-height:22px;margin:14px 0 8px;color:var(--muted)}
+.game-device.feedback-20261019[data-route="certificate"] .panel-body-inner{padding-bottom:18px}

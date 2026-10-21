@@ -1,0 +1,66 @@
+[
+  {
+    "file": "culture-header.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  },
+  {
+    "file": "culture-scene.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  },
+  {
+    "file": "ecology-header.png",
+    "width": 1448,
+    "height": 1086,
+    "mode": "RGBA",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  },
+  {
+    "file": "ecology-scene.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  },
+  {
+    "file": "industry-header.png",
+    "width": 2156,
+    "height": 729,
+    "mode": "RGBA",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  },
+  {
+    "file": "industry-scene.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  },
+  {
+    "file": "red-header.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  },
+  {
+    "file": "red-scene.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "status": "候选美术，已接入本地原型，待用户美术评审",
+    "source": "内置imagegen原始PNG；生成提示词见生成说明.json"
+  }
+]

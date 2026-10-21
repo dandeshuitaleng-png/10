@@ -1,0 +1,86 @@
+{
+  "license": "CC0 1.0",
+  "sources": [
+    {
+      "title": "JRPG Piano",
+      "author": "Joth",
+      "page": "https://opengameart.org/content/jrpg-piano",
+      "download": "https://opengameart.org/sites/default/files/JRPG%20Piano.mp3"
+    },
+    {
+      "title": "Interface Sounds",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/interface-sounds"
+    },
+    {
+      "title": "Music Jingles",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/music-jingles"
+    }
+  ],
+  "files": [
+    {
+      "file": "ambient-piano.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/JRPG-Piano.mp3",
+      "sourceSha256": "87a99f62e901b8365f1b868cd53bc015d2bf9f887e4c8a89a4fad11a36a62c16",
+      "sha256": "dfdab434d11e56df96669a6830f3e73934de5e0dc6377dc3e519042b177c9c8e",
+      "bytes": 199618,
+      "filter": "highpass=f=55,lowpass=f=11000,loudnorm=I=-20:TP=-4:LRA=8,afade=t=in:d=0.06,afade=t=out:st=24.72:d=0.12",
+      "encoding": "MP3 mono 44100Hz 64k"
+    },
+    {
+      "file": "click.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/interface/Audio/click_001.ogg",
+      "sourceSha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+      "sha256": "cb6bb299a4075dbfdde3fef8900291ac838c7ffc5a6673320c6884ced175b1b4",
+      "bytes": 1009,
+      "filter": "highpass=f=100,lowpass=f=6000,volume=0.55",
+      "encoding": "MP3 mono 44100Hz 48k"
+    },
+    {
+      "file": "select.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/interface/Audio/select_001.ogg",
+      "sourceSha256": "aec0c31ea934a35936ae0d2ab8fac8123c93aa5647f935853a58dbaf90278b7a",
+      "sha256": "4a465c1e9bc7dd699802bbeca046218d62dfa7987911d7e5853555ea06879724",
+      "bytes": 696,
+      "filter": "highpass=f=100,lowpass=f=6500,volume=0.65",
+      "encoding": "MP3 mono 44100Hz 48k"
+    },
+    {
+      "file": "correct.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/interface/Audio/confirmation_001.ogg",
+      "sourceSha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+      "sha256": "85ed3055828544d3b9f72a975ef3cb3bee58f68b5ef9ecc1003d66291ca60e64",
+      "bytes": 2968,
+      "filter": "highpass=f=100,lowpass=f=6500,volume=0.65",
+      "encoding": "MP3 mono 44100Hz 64k"
+    },
+    {
+      "file": "wrong.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/interface/Audio/question_002.ogg",
+      "sourceSha256": "46056f10c70dda860e93bd27b66f4d33c0b7154eff28def06471b50028efa5b3",
+      "sha256": "ef2e61fdd01e576dd05a8983de47ae35107e0a08bdb253f310a2158d5fcb55a6",
+      "bytes": 2420,
+      "filter": "highpass=f=100,lowpass=f=5000,volume=0.45",
+      "encoding": "MP3 mono 44100Hz 48k"
+    },
+    {
+      "file": "mascot.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/interface/Audio/pluck_001.ogg",
+      "sourceSha256": "be97ec4893a02d6eccfb678daa76c83e34cb2583b834ec2593d2641def739fa4",
+      "sha256": "89711f0848ebcaaee0aac36f2d582bf3d912e1f9691a8d45238e924d9707067b",
+      "bytes": 1009,
+      "filter": "highpass=f=100,lowpass=f=6500,volume=0.55",
+      "encoding": "MP3 mono 44100Hz 48k"
+    },
+    {
+      "file": "complete.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/jingles/Audio/Pizzicato jingles/jingles_PIZZI00.ogg",
+      "sourceSha256": "b442ade3308a2bbda4b8c572c86f9f1071c7bdbcfb1e6f915d35c605b61bd475",
+      "sha256": "6aa034afc6e2d1eb2844917a21d92b45fa29a3b333724f47b574d3b9e90d4db8",
+      "bytes": 4431,
+      "filter": "highpass=f=80,lowpass=f=8000,volume=0.65",
+      "encoding": "MP3 mono 44100Hz 64k"
+    }
+  ]
+}

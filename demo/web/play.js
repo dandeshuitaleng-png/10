@@ -93,7 +93,7 @@
     if(v.remainingSeconds<=5&&v.remainingSeconds!==lastCountdown&&a.router.current.name==='quiz'&&!v.feedback&&!v.modal){live.textContent='剩余'+v.remainingSeconds+'秒。';lastCountdown=v.remainingSeconds;}
     if(hadKeyboard&&(lost||modal!==modalKey)&&modal)targets.find(t=>!t.disabled)&&nodes.get(targets.find(t=>!t.disabled).id)?.focus();
     modalKey=modal;
-    document.querySelector('#environment').textContent=v.mode==='production'?'正式游戏':'全功能体验版 · 进度已保存\n题目内容待正式审核';
+    document.querySelector('#environment').textContent=v.mode==='production'?'正式游戏':'全功能体验版 · 进度已保存';
     const notice=document.querySelector('#connection-notice');notice.hidden=!v.connectionError;if(v.connectionError)notice.querySelector('span').textContent=v.connectionError;
   }
   platform.syncAccessibility=sync;app.start();

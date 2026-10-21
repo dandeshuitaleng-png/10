@@ -25,7 +25,7 @@ function installWechatMedia(platform, api, client, baseUrl) {
     text(certificate.title||'趣味闯关 · 电子荣誉证书',205,36,'#287d7d');
     text(certificate.name,310,58,'#214c4c','bold');text(me.user.name,420,38);
     text(certificate.description||('已完成'+(certificate.themeId?'本主题四关':'四个主题共十六关')+'乡村知识挑战'),505,27,'#456767');
-    text('完成日期：'+certificate.day+' · '+(certificate.contentApprovalPending?'体验版学习记录':'正式挑战记录'),575,25,'#456767');
+    text('完成日期：'+certificate.day+' · '+(certificate.mode!=='production'?'体验版学习记录':'正式挑战记录'),575,25,'#456767');
     text('证书编号：'+certificate.id,675,20,'#658080');text(certificate.footer||'学习活动纪念，不代表学历或教育资格',728,18,'#658080');
     const file=await new Promise((resolve,reject)=>canvas.toTempFilePath({fileType:'png',success:r=>resolve(r.tempFilePath),fail:()=>reject(Error('证书图片生成失败，请重试。'))}));
     return {file,certificate};

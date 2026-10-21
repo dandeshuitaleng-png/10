@@ -1,0 +1,1002 @@
+{
+  "generatedAt": "2026-10-09T12:55:55.983Z",
+  "scope": "Day 3 main runtime pointer-input tests. Layout fixtures explicitly labelled. Real 10-question run uses untouched randomized practice pool. Submitting is a rendering fixture only; local evaluation remains synchronous. No formal bank or device evidence.",
+  "checks": [
+    {
+      "name": "320文字题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "320文字题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "320文字题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "320文字题四选一",
+      "pass": true
+    },
+    {
+      "name": "320文字题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "320未选禁用提交",
+      "pass": true
+    },
+    {
+      "name": "320按钮按下即时反馈",
+      "pass": true
+    },
+    {
+      "name": "320拖出取消不误选",
+      "pass": true
+    },
+    {
+      "name": "320正确反馈主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "320正确反馈热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "320正确反馈选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "320正确反馈四选一",
+      "pass": true
+    },
+    {
+      "name": "320正确反馈题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "320正确后只计一次并保留旧题反馈",
+      "pass": true
+    },
+    {
+      "name": "320重复提交不加分",
+      "pass": true
+    },
+    {
+      "name": "320过期选项不影响新题",
+      "pass": true
+    },
+    {
+      "name": "320长题完整显示或可滚动",
+      "pass": true
+    },
+    {
+      "name": "320实际滑动不误选",
+      "pass": true
+    },
+    {
+      "name": "320长选项0实际可选",
+      "pass": true
+    },
+    {
+      "name": "320长选项1实际可选",
+      "pass": true
+    },
+    {
+      "name": "320长选项2实际可选",
+      "pass": true
+    },
+    {
+      "name": "320长选项3实际可选",
+      "pass": true
+    },
+    {
+      "name": "320长解析主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "320长解析热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "320长解析选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "320长解析四选一",
+      "pass": true
+    },
+    {
+      "name": "320长解析题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "320解析完整容纳不压底栏",
+      "pass": true
+    },
+    {
+      "name": "320图片题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "320图片题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "320图片题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "320图片题四选一",
+      "pass": true
+    },
+    {
+      "name": "320图片题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "320配图保持完整比例",
+      "pass": true
+    },
+    {
+      "name": "320失败图片保持当前资源",
+      "pass": true
+    },
+    {
+      "name": "320失败图片实点重试恢复",
+      "pass": true
+    },
+    {
+      "name": "320零尺寸图片安全降级不传入绘制",
+      "pass": true
+    },
+    {
+      "name": "320错误弹窗主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "320错误弹窗热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "320错误弹窗选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "320错误弹窗四选一",
+      "pass": true
+    },
+    {
+      "name": "320错误弹窗题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "320错误停留原题不计通过",
+      "pass": true
+    },
+    {
+      "name": "320弹窗隔离和无答案泄露",
+      "pass": true
+    },
+    {
+      "name": "320未开放分享按钮禁用",
+      "pass": true
+    },
+    {
+      "name": "320未验证分享不复活",
+      "pass": true
+    },
+    {
+      "name": "320错误弹窗可返回地图",
+      "pass": true
+    },
+    {
+      "name": "320再返回一次到首页",
+      "pass": true
+    },
+    {
+      "name": "375文字题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "375文字题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "375文字题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "375文字题四选一",
+      "pass": true
+    },
+    {
+      "name": "375文字题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "375未选禁用提交",
+      "pass": true
+    },
+    {
+      "name": "375按钮按下即时反馈",
+      "pass": true
+    },
+    {
+      "name": "375拖出取消不误选",
+      "pass": true
+    },
+    {
+      "name": "375正确反馈主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "375正确反馈热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "375正确反馈选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "375正确反馈四选一",
+      "pass": true
+    },
+    {
+      "name": "375正确反馈题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "375正确后只计一次并保留旧题反馈",
+      "pass": true
+    },
+    {
+      "name": "375重复提交不加分",
+      "pass": true
+    },
+    {
+      "name": "375过期选项不影响新题",
+      "pass": true
+    },
+    {
+      "name": "375长题完整显示或可滚动",
+      "pass": true
+    },
+    {
+      "name": "375实际滑动不误选",
+      "pass": true
+    },
+    {
+      "name": "375长选项0实际可选",
+      "pass": true
+    },
+    {
+      "name": "375长选项1实际可选",
+      "pass": true
+    },
+    {
+      "name": "375长选项2实际可选",
+      "pass": true
+    },
+    {
+      "name": "375长选项3实际可选",
+      "pass": true
+    },
+    {
+      "name": "375长解析主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "375长解析热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "375长解析选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "375长解析四选一",
+      "pass": true
+    },
+    {
+      "name": "375长解析题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "375解析完整容纳不压底栏",
+      "pass": true
+    },
+    {
+      "name": "375图片题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "375图片题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "375图片题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "375图片题四选一",
+      "pass": true
+    },
+    {
+      "name": "375图片题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "375配图保持完整比例",
+      "pass": true
+    },
+    {
+      "name": "375失败图片保持当前资源",
+      "pass": true
+    },
+    {
+      "name": "375失败图片实点重试恢复",
+      "pass": true
+    },
+    {
+      "name": "375零尺寸图片安全降级不传入绘制",
+      "pass": true
+    },
+    {
+      "name": "375错误弹窗主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "375错误弹窗热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "375错误弹窗选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "375错误弹窗四选一",
+      "pass": true
+    },
+    {
+      "name": "375错误弹窗题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "375错误停留原题不计通过",
+      "pass": true
+    },
+    {
+      "name": "375弹窗隔离和无答案泄露",
+      "pass": true
+    },
+    {
+      "name": "375未开放分享按钮禁用",
+      "pass": true
+    },
+    {
+      "name": "375未验证分享不复活",
+      "pass": true
+    },
+    {
+      "name": "375错误弹窗可返回地图",
+      "pass": true
+    },
+    {
+      "name": "375再返回一次到首页",
+      "pass": true
+    },
+    {
+      "name": "414文字题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "414文字题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "414文字题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "414文字题四选一",
+      "pass": true
+    },
+    {
+      "name": "414文字题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "414未选禁用提交",
+      "pass": true
+    },
+    {
+      "name": "414按钮按下即时反馈",
+      "pass": true
+    },
+    {
+      "name": "414拖出取消不误选",
+      "pass": true
+    },
+    {
+      "name": "414正确反馈主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "414正确反馈热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "414正确反馈选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "414正确反馈四选一",
+      "pass": true
+    },
+    {
+      "name": "414正确反馈题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "414正确后只计一次并保留旧题反馈",
+      "pass": true
+    },
+    {
+      "name": "414重复提交不加分",
+      "pass": true
+    },
+    {
+      "name": "414过期选项不影响新题",
+      "pass": true
+    },
+    {
+      "name": "414长题完整显示或可滚动",
+      "pass": true
+    },
+    {
+      "name": "414实际滑动不误选",
+      "pass": true
+    },
+    {
+      "name": "414长选项0实际可选",
+      "pass": true
+    },
+    {
+      "name": "414长选项1实际可选",
+      "pass": true
+    },
+    {
+      "name": "414长选项2实际可选",
+      "pass": true
+    },
+    {
+      "name": "414长选项3实际可选",
+      "pass": true
+    },
+    {
+      "name": "414长解析主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "414长解析热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "414长解析选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "414长解析四选一",
+      "pass": true
+    },
+    {
+      "name": "414长解析题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "414解析完整容纳不压底栏",
+      "pass": true
+    },
+    {
+      "name": "414图片题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "414图片题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "414图片题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "414图片题四选一",
+      "pass": true
+    },
+    {
+      "name": "414图片题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "414配图保持完整比例",
+      "pass": true
+    },
+    {
+      "name": "414失败图片保持当前资源",
+      "pass": true
+    },
+    {
+      "name": "414失败图片实点重试恢复",
+      "pass": true
+    },
+    {
+      "name": "414零尺寸图片安全降级不传入绘制",
+      "pass": true
+    },
+    {
+      "name": "414错误弹窗主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "414错误弹窗热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "414错误弹窗选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "414错误弹窗四选一",
+      "pass": true
+    },
+    {
+      "name": "414错误弹窗题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "414错误停留原题不计通过",
+      "pass": true
+    },
+    {
+      "name": "414弹窗隔离和无答案泄露",
+      "pass": true
+    },
+    {
+      "name": "414未开放分享按钮禁用",
+      "pass": true
+    },
+    {
+      "name": "414未验证分享不复活",
+      "pass": true
+    },
+    {
+      "name": "414错误弹窗可返回地图",
+      "pass": true
+    },
+    {
+      "name": "414再返回一次到首页",
+      "pass": true
+    },
+    {
+      "name": "430文字题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "430文字题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "430文字题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "430文字题四选一",
+      "pass": true
+    },
+    {
+      "name": "430文字题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "430未选禁用提交",
+      "pass": true
+    },
+    {
+      "name": "430按钮按下即时反馈",
+      "pass": true
+    },
+    {
+      "name": "430拖出取消不误选",
+      "pass": true
+    },
+    {
+      "name": "430正确反馈主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "430正确反馈热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "430正确反馈选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "430正确反馈四选一",
+      "pass": true
+    },
+    {
+      "name": "430正确反馈题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "430正确后只计一次并保留旧题反馈",
+      "pass": true
+    },
+    {
+      "name": "430重复提交不加分",
+      "pass": true
+    },
+    {
+      "name": "430过期选项不影响新题",
+      "pass": true
+    },
+    {
+      "name": "430长题完整显示或可滚动",
+      "pass": true
+    },
+    {
+      "name": "430实际滑动不误选",
+      "pass": true
+    },
+    {
+      "name": "430长选项0实际可选",
+      "pass": true
+    },
+    {
+      "name": "430长选项1实际可选",
+      "pass": true
+    },
+    {
+      "name": "430长选项2实际可选",
+      "pass": true
+    },
+    {
+      "name": "430长选项3实际可选",
+      "pass": true
+    },
+    {
+      "name": "430长解析主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "430长解析热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "430长解析选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "430长解析四选一",
+      "pass": true
+    },
+    {
+      "name": "430长解析题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "430解析完整容纳不压底栏",
+      "pass": true
+    },
+    {
+      "name": "430图片题主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "430图片题热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "430图片题选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "430图片题四选一",
+      "pass": true
+    },
+    {
+      "name": "430图片题题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "430配图保持完整比例",
+      "pass": true
+    },
+    {
+      "name": "430失败图片保持当前资源",
+      "pass": true
+    },
+    {
+      "name": "430失败图片实点重试恢复",
+      "pass": true
+    },
+    {
+      "name": "430零尺寸图片安全降级不传入绘制",
+      "pass": true
+    },
+    {
+      "name": "430错误弹窗主要热区实际至少44px",
+      "pass": true
+    },
+    {
+      "name": "430错误弹窗热区在安全区",
+      "pass": true
+    },
+    {
+      "name": "430错误弹窗选项不重叠",
+      "pass": true
+    },
+    {
+      "name": "430错误弹窗四选一",
+      "pass": true
+    },
+    {
+      "name": "430错误弹窗题目进度1至10",
+      "pass": true
+    },
+    {
+      "name": "430错误停留原题不计通过",
+      "pass": true
+    },
+    {
+      "name": "430弹窗隔离和无答案泄露",
+      "pass": true
+    },
+    {
+      "name": "430未开放分享按钮禁用",
+      "pass": true
+    },
+    {
+      "name": "430未验证分享不复活",
+      "pass": true
+    },
+    {
+      "name": "430错误弹窗可返回地图",
+      "pass": true
+    },
+    {
+      "name": "430再返回一次到首页",
+      "pass": true
+    },
+    {
+      "name": "实际随机十题全部答对才完成",
+      "pass": true
+    },
+    {
+      "name": "试玩不写正式进度积分",
+      "pass": true
+    },
+    {
+      "name": "结果返回地图后一次回首页",
+      "pass": true
+    },
+    {
+      "name": "提交中样例禁用选项与提交",
+      "pass": true
+    },
+    {
+      "name": "浏览器零未捕获异常",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "text-320.png",
+      "fixture": true
+    },
+    {
+      "file": "pressed-320.png",
+      "fixture": true
+    },
+    {
+      "file": "selected-320.png",
+      "fixture": true
+    },
+    {
+      "file": "correct-320.png",
+      "fixture": true
+    },
+    {
+      "file": "long-320.png",
+      "fixture": true
+    },
+    {
+      "file": "long-scrolled-320.png",
+      "fixture": true
+    },
+    {
+      "file": "long-explanation-320.png",
+      "fixture": true
+    },
+    {
+      "file": "image-320.png",
+      "fixture": true
+    },
+    {
+      "file": "image-failed-320.png",
+      "fixture": true
+    },
+    {
+      "file": "image-retried-320.png",
+      "fixture": true
+    },
+    {
+      "file": "image-zero-size-320.png",
+      "fixture": true
+    },
+    {
+      "file": "wrong-320.png",
+      "fixture": true
+    },
+    {
+      "file": "text-375.png",
+      "fixture": true
+    },
+    {
+      "file": "pressed-375.png",
+      "fixture": true
+    },
+    {
+      "file": "selected-375.png",
+      "fixture": true
+    },
+    {
+      "file": "correct-375.png",
+      "fixture": true
+    },
+    {
+      "file": "long-375.png",
+      "fixture": true
+    },
+    {
+      "file": "long-scrolled-375.png",
+      "fixture": true
+    },
+    {
+      "file": "long-explanation-375.png",
+      "fixture": true
+    },
+    {
+      "file": "image-375.png",
+      "fixture": true
+    },
+    {
+      "file": "image-failed-375.png",
+      "fixture": true
+    },
+    {
+      "file": "image-retried-375.png",
+      "fixture": true
+    },
+    {
+      "file": "image-zero-size-375.png",
+      "fixture": true
+    },
+    {
+      "file": "wrong-375.png",
+      "fixture": true
+    },
+    {
+      "file": "text-414.png",
+      "fixture": true
+    },
+    {
+      "file": "pressed-414.png",
+      "fixture": true
+    },
+    {
+      "file": "selected-414.png",
+      "fixture": true
+    },
+    {
+      "file": "correct-414.png",
+      "fixture": true
+    },
+    {
+      "file": "long-414.png",
+      "fixture": true
+    },
+    {
+      "file": "long-scrolled-414.png",
+      "fixture": true
+    },
+    {
+      "file": "long-explanation-414.png",
+      "fixture": true
+    },
+    {
+      "file": "image-414.png",
+      "fixture": true
+    },
+    {
+      "file": "image-failed-414.png",
+      "fixture": true
+    },
+    {
+      "file": "image-retried-414.png",
+      "fixture": true
+    },
+    {
+      "file": "image-zero-size-414.png",
+      "fixture": true
+    },
+    {
+      "file": "wrong-414.png",
+      "fixture": true
+    },
+    {
+      "file": "text-430.png",
+      "fixture": true
+    },
+    {
+      "file": "pressed-430.png",
+      "fixture": true
+    },
+    {
+      "file": "selected-430.png",
+      "fixture": true
+    },
+    {
+      "file": "correct-430.png",
+      "fixture": true
+    },
+    {
+      "file": "long-430.png",
+      "fixture": true
+    },
+    {
+      "file": "long-scrolled-430.png",
+      "fixture": true
+    },
+    {
+      "file": "long-explanation-430.png",
+      "fixture": true
+    },
+    {
+      "file": "image-430.png",
+      "fixture": true
+    },
+    {
+      "file": "image-failed-430.png",
+      "fixture": true
+    },
+    {
+      "file": "image-retried-430.png",
+      "fixture": true
+    },
+    {
+      "file": "image-zero-size-430.png",
+      "fixture": true
+    },
+    {
+      "file": "wrong-430.png",
+      "fixture": true
+    },
+    {
+      "file": "actual-random-start.png",
+      "fixture": false
+    },
+    {
+      "file": "actual-result.png",
+      "fixture": false
+    },
+    {
+      "file": "submitting-fixture.png",
+      "fixture": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

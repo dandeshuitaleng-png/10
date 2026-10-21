@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-09T21:01:37.546705+08:00",
+  "unitTests": {
+    "passed": true,
+    "count": 48,
+    "report": "evidence/unit-tests.tap"
+  },
+  "contentPreview": {
+    "passed": true,
+    "checks": 232,
+    "actualRandomTenRuns": 16,
+    "realTextLayoutCount": 960,
+    "screenshots": 37,
+    "report": "evidence/browser-report.json"
+  },
+  "mainRuntime": {
+    "passed": true,
+    "checks": 197,
+    "report": "evidence/main-runtime/browser-report.json"
+  },
+  "wechatSimulator": {
+    "scope": "main runtime startup and original ecological practice entry only",
+    "passed": true,
+    "screenshots": [
+      "evidence/wechat-smoke/home-settled.png",
+      "evidence/wechat-smoke/practice.png"
+    ],
+    "consoleErrors": []
+  },
+  "approvedRendererPreserved": true,
+  "sourceWorkbookPreserved": true,
+  "pendingQuestionsExcludedFromMainBundle": true,
+  "sourceAuditStatePreserved": true,
+  "eligibleLevels": 0,
+  "pending": [
+    "independent knowledge-content approval",
+    "target age difficulty observation",
+    "formal server challenges and scoring",
+    "verified sharing revival",
+    "iOS and Android real devices",
+    "90 score overall acceptance"
+  ]
+}

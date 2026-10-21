@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "文化专题",
-  "usingComponents": {
-    "ui-button": "/components/ui-button/index",
-    "study-progress": "/components/study-progress/index",
-    "page-state": "/components/page-state/index"
-  }
-}

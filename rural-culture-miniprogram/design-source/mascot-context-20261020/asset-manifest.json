@@ -1,0 +1,324 @@
+{
+  "source": "品牌素材/客户提供-20261016/智小谷IP形象延展设计.pdf",
+  "sourceSha256": "0e5cc8cee8f084566c30d4f94b738e1c257e69048a8f87fdd4967b5a85378cda",
+  "method": "Original PDF vector paths only; slide text/background excluded; transparent normalized exports; parts reference original path indices.",
+  "canvas": {
+    "width": 270,
+    "height": 320
+  },
+  "poses": {
+    "reader": {
+      "label": "即刻阅行",
+      "page": 5,
+      "scene": "答题阅读",
+      "duration": 2200,
+      "parts": [
+        {
+          "key": "glasses",
+          "indices": [
+            61,
+            62,
+            63
+          ],
+          "pivot": [
+            995,
+            330
+          ],
+          "file": "reader-glasses.png",
+          "bytes": 2975,
+          "sha256": "4647e5416bbe9e6c0b04fd808cefe944d951435d26614468c9558043274ab7fe",
+          "pivotPercent": [
+            51.104833647206526,
+            33.559322033898304
+          ]
+        }
+      ],
+      "svgSha256": "bff0b39abb1afecaecef32fd45a6c1c73b0b2f084a6065e9b20e96a61c5719cf",
+      "bounds": [
+        788,
+        132,
+        403,
+        590
+      ],
+      "full": {
+        "file": "reader.png",
+        "bytes": 26971,
+        "sha256": "3bda8bdbda49e1e12fe63ae5ad8a4ac990e36f31b6176e96108d79f392684a3c"
+      },
+      "base": {
+        "file": "reader-base.png",
+        "bytes": 23820,
+        "sha256": "7b4264ef2a51e83aadc59f55fcc2a2298cc5ecf06c70f339e60dd2152c3c7fd4"
+      }
+    },
+    "scholar": {
+      "label": "刻谷钻研",
+      "page": 6,
+      "scene": "我的学习",
+      "duration": 2400,
+      "parts": [
+        {
+          "key": "book",
+          "indices": [
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333
+          ],
+          "pivot": [
+            790,
+            653
+          ],
+          "file": "scholar-book.png",
+          "bytes": 3587,
+          "sha256": "67e9f668332d5fbbe71a6103e2c120fc582eb772fd215cbc9514f08a289d05a1",
+          "pivotPercent": [
+            56.77830940988836,
+            65.00448564593302
+          ]
+        }
+      ],
+      "svgSha256": "a7e83db3dcd9791744016ea1baceb3e0d26f4a51982eb5a54b688cc7d00c781b",
+      "bounds": [
+        434,
+        269,
+        627,
+        545
+      ],
+      "full": {
+        "file": "scholar.png",
+        "bytes": 43828,
+        "sha256": "0b3db29dfe9fb9607e773c6b77274078844dd03942ccfafe9e24f294a55c267c"
+      },
+      "base": {
+        "file": "scholar-base.png",
+        "bytes": 42767,
+        "sha256": "abd5796c8dc0bbb3182d45ef66ddea60f054cd2e8f158f34417322869b5b23eb"
+      }
+    },
+    "heart": {
+      "label": "爱你老己",
+      "page": 7,
+      "scene": "答错复活",
+      "duration": 2100,
+      "parts": [
+        {
+          "key": "heart",
+          "indices": [
+            33,
+            34
+          ],
+          "pivot": [
+            1322,
+            590
+          ],
+          "file": "heart-heart.png",
+          "bytes": 2288,
+          "sha256": "6e5f3b98d68466756c72e3b38e352d778cbd425afed8851ea40d895baf70ac9b",
+          "pivotPercent": [
+            63.22847348255697,
+            58.076225045372055
+          ]
+        }
+      ],
+      "svgSha256": "f5d58ff36b455cc4d679c5bcab037d2735c1f25f9d0e7e3a75034dd8395986c7",
+      "bounds": [
+        1065,
+        270,
+        391,
+        551
+      ],
+      "full": {
+        "file": "heart.png",
+        "bytes": 23153,
+        "sha256": "9123f1613ef014f585baaced3116efafc581ad358a4a5063def7aad28173a1bc"
+      },
+      "base": {
+        "file": "heart-base.png",
+        "bytes": 22268,
+        "sha256": "dfab7d2d75dc5f3f1521fcff34c43a5111d60142d1505a1abdbc901a381eac76"
+      }
+    },
+    "lotus": {
+      "label": "好运莲连",
+      "page": 3,
+      "scene": "今日锁定与休息",
+      "duration": 2600,
+      "parts": [
+        {
+          "key": "fish",
+          "indices": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "pivot": [
+            1150,
+            595
+          ],
+          "file": "lotus-fish.png",
+          "bytes": 2657,
+          "sha256": "135f9651f45f9f8daa2a04ac85eb14805d44fcc8d164fd4d3999b50f3b0d8ee7",
+          "pivotPercent": [
+            67.54850088183422,
+            75.44642857142857
+          ]
+        }
+      ],
+      "svgSha256": "6961bea6cc17bf9c8fbd4845e34efe87a36a89a6c5f91e1937b59490c48a3006",
+      "bounds": [
+        767,
+        137,
+        567,
+        574
+      ],
+      "full": {
+        "file": "lotus.png",
+        "bytes": 32358,
+        "sha256": "9dd75965aa416c93332c2e179c82c31853d3a50b80fcc164b44b9705ed6edac3"
+      },
+      "base": {
+        "file": "lotus-base.png",
+        "bytes": 30568,
+        "sha256": "3bc395ab0d96ec379ffaff9cb828c152174e00a0192fdc55334d61449b50be55"
+      }
+    },
+    "drummer": {
+      "label": "欢欣谷舞",
+      "page": 6,
+      "scene": "本关完成",
+      "duration": 2000,
+      "parts": [
+        {
+          "key": "stick-left",
+          "indices": [
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204
+          ],
+          "pivot": [
+            1120,
+            485
+          ],
+          "file": "drummer-stick-left.png",
+          "bytes": 3572,
+          "sha256": "72b7e16d5b3f48f778f4fe55dd8a1a86e96287eeccbc7f3d49d9d08facd6db0b",
+          "pivotPercent": [
+            22.05329253522025,
+            42.34079173838211
+          ]
+        },
+        {
+          "key": "stick-right",
+          "indices": [
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340
+          ],
+          "pivot": [
+            1321,
+            564
+          ],
+          "file": "drummer-stick-right.png",
+          "bytes": 4084,
+          "sha256": "6906971bac458bba004a392c45a13a65bbea912d1f5bcb0b7ab6b89bb0fc6262",
+          "pivotPercent": [
+            63.055396187926306,
+            55.93803786574871
+          ]
+        }
+      ],
+      "svgSha256": "fe346a67614ef03b306d587b086fe30a9af3915b07b1b797478fcbbfe503f4bf",
+      "bounds": [
+        1045,
+        239,
+        424,
+        581
+      ],
+      "full": {
+        "file": "drummer.png",
+        "bytes": 34977,
+        "sha256": "766e345da30e38cbbb8a6756ce32ea0ef8db97e1a9fe2dda76f95e952d3f6f45"
+      },
+      "base": {
+        "file": "drummer-base.png",
+        "bytes": 31265,
+        "sha256": "c9bed3cb97f60af3dd7b11311f9dd31f89a427c2e3f4c30eec4d27c7995247e1"
+      }
+    },
+    "skater": {
+      "label": "谷谷比耶",
+      "page": 7,
+      "scene": "学习证书",
+      "duration": 1900,
+      "parts": [
+        {
+          "key": "peace",
+          "indices": [
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "pivot": [
+            889,
+            557
+          ],
+          "file": "skater-peace.png",
+          "bytes": 3612,
+          "sha256": "0f961145f3d7fb7e189f43e5602e1e144eea79a3298d7c8f0c195a654f20152c",
+          "pivotPercent": [
+            68.427592895678,
+            52.700490998363335
+          ]
+        }
+      ],
+      "svgSha256": "34b81ed256091b8e7541a7857d14598e5efb9ab79fc277feca77d7ff2a89013d",
+      "bounds": [
+        549,
+        235,
+        490,
+        611
+      ],
+      "full": {
+        "file": "skater.png",
+        "bytes": 35838,
+        "sha256": "71b94137e6bb7a82a0effc76678db589e1bba08325b21df2d000bdfbde3f9841"
+      },
+      "base": {
+        "file": "skater-base.png",
+        "bytes": 35048,
+        "sha256": "aba5c3b5d92ad41f5234a8f7851444082186fd76aa267057b62834a38ac6eb38"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Use case: precise-object-edit.
+Asset type: one locked level-node pedestal sprite for a friendly 2D cultural learning journey map.
+Input images: Image 1 (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/miniprogram/assets/journey/node-locked.png) is the EDIT TARGET. Image 2 (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/miniprogram/assets/journey/ecology.jpg) is a STYLE REFERENCE ONLY for softly illustrated matte material and restrained, broad color treatment. Do not copy scenery or objects from Image 2.
+Primary request: edit only the pedestal's color and surface rendering. Preserve the exact original outer oval plinth silhouette, perspective, three-tier geometry, upper surface position, proportions, edge shape, original composition and bounding frame. Replace ALL blue plastic bands and blue top with quiet warm gray stone / parchment clay.
+Color palette: top surface #B8B5A5 with muted #918E7B rim; lip ivory #EEE8D8; underside #D8C7A7; shadow #BDA685. No blue anywhere.
+Style/medium: softly illustrated matte stone or ceramic in the same friendly 2D map world as the style reference. Lower contrast, restrained volume, broad flat color bands, minimal surface texture. Soft upper-left light. Calm and visually secondary because this node is locked.
+Composition/framing: landscape canvas about 1536x1024, matching the original 220:146 proportions. Keep the same relative sprite scale and original bounding frame; no excess transparent padding; do not crop the silhouette.
+Scene/backdrop: genuine transparent alpha background, fully isolated sprite. Preserve transparency.
+Constraints: a single empty oval pedestal only. Keep exact silhouette, perspective and three tiers. No new objects, numbers, icons, text, mascot or decoration. No metal, chrome, gloss, plastic, photorealism, dark grunge, floating island, scenery, ground plane, or background. No checkerboard baked into the pixels.

@@ -1,0 +1,12 @@
+✔ four themed formal certificates keep issued content, date and source records (3.846873ms)
+✔ long names, award titles and descriptions wrap without loss or overlapping the signature (0.623801ms)
+✔ the actual Page saves the very same certificate PNG shown in its preview (23.444126ms)
+✔ a failed certificate export shows retry and can regenerate without changing the issued award (7.655433ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 145.094895

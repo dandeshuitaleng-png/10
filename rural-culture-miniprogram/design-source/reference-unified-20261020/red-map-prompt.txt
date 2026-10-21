@@ -1,0 +1,25 @@
+Use case: style-transfer
+Asset type: full-screen portrait background map for the existing “十步芳草” cultural learning route.
+
+INPUT ROLES:
+Image 1, red.jpg, is the EDIT TARGET and the exact structural map template. It is a 750 x 1280 portrait scene.
+Images 2 and 3, farm-orchard.png and farm-garden.png, are STYLE REFERENCES ONLY. Use their clear, bright, rounded 2.5D farm-cartoon illustration style, soft clean volumes and well-defined plants. Never borrow their content, layouts, titles, text, characters, farms, crop beds, icons, badges, nodes, labels or UI.
+
+PRIMARY REQUEST:
+Improve only the illustration finish and palette of Image 1 into a cheerful, clear, polished rounded 2.5D farm cartoon matching Images 2 and 3, while leaving the composition and every object exactly in place. Keep the complete original portrait map and its precise route geometry. This is a style refinement of the SAME existing map, not a new map or a reinterpretation of the layout.
+
+STRICT ROAD GEOMETRY LOCK:
+Preserve ALL original S curves, every turn and its left/right extremum, the original road width at every height, perspective taper, cream path edges, original dashed centerline, entrance at the bottom and vanishing route at the horizon. Do not simplify, straighten, widen, narrow, shift, lengthen, shorten or redraw a differently shaped road. The original path footprint must match pixel-for-pixel when both images are scaled to 750 x 1280. Existing game nodes are overlaid by software along this exact path, so route registration is critical.
+
+STRICT SCENE LAYOUT LOCK:
+Same camera, view angle, horizon position, mountains, distant water, sky and framing as Image 1. Preserve the exact existing upper-right rural houses and the foreground-right rural building including its roof, wall, stone steps and red lantern. Preserve the existing red blossom branches at upper-left and lower-left, the same rocks, flowers, leaf clumps and grass patches at their original coordinates, sizes and grouping. Do not move, remove, duplicate or add anything. Keep the entire original 750:1280 aspect ratio and full uncropped composition, at a suitably enlarged portrait resolution if necessary.
+
+PALETTE:
+The soil/ground must be a distinct BRIGHT WARM VERMILION / WARM CORAL RED, approximately #EC8276 and #F29A89 highlights with soft restrained warm-red shade. It should read immediately as a red/coral terrain theme, not yellow, amber, ochre, peach-orange or golden industrial land. Keep the road creamy ivory, bright and easy to distinguish from the red ground. Give existing foliage full rounded bright fresh green leaves, existing flowers clean saturated red petals, and warm clean stone grays with soft cartoon modeling. Keep the same atmosphere and landscape features but lift the original dusty muted watercolor into lively clean farm-cartoon color.
+
+ILLUSTRATION FINISH:
+Bright rounded 2.5D cartoon painting. Clear intentional plant and rock silhouettes, smooth simple leaf clusters, clean gentle volume shading, softly rounded surfaces, moderate saturation, warm welcoming light and readable forms at mobile size. Crisp enough to match the two reference farm illustrations, with restrained soft edge treatment and no heavy outlines. Clean color areas with a little soft illustrated variation rather than watercolor mottling.
+
+EXCLUSIONS:
+No new buildings, houses, trees, flowers, rocks, grasses, fields, fences, objects, props, characters, animals, people, nodes, numbered disks, circles, markers, locks, check marks, text, letters, labels, title, UI or decorations. No photorealism, realistic product render, coarse paper texture, watercolor grain, grainy material, gray veil, muted dusty overlay, oily gloss, strong specular reflections, black thick outlines, dark heavy shadow, lens effect or cropped composition. Do not copy any text or objects from the style references.
+Backdrop: full opaque map scene, no transparency.

@@ -1,0 +1,82 @@
+{
+  "canvas": [
+    384,
+    456
+  ],
+  "feetY": 443,
+  "poses": {
+    "welcome": [
+      "body",
+      "head",
+      "eyes",
+      "mouth",
+      "arm-left-rest",
+      "arm-right-wave"
+    ],
+    "observe": [
+      "body",
+      "head",
+      "eyes-think",
+      "mouth",
+      "prop-observe",
+      "arm-left-rest",
+      "arm-right-point"
+    ],
+    "think": [
+      "body",
+      "head",
+      "eyes-think",
+      "mouth-think",
+      "arm-right-rest",
+      "arm-left-think",
+      "prop-think"
+    ],
+    "celebrate": [
+      "body",
+      "head",
+      "eyes-happy",
+      "mouth-happy",
+      "prop-celebrate",
+      "arm-left-celebrate",
+      "arm-right-wave"
+    ]
+  },
+  "parts": [
+    "body",
+    "head",
+    "eyes",
+    "eyes-think",
+    "eyes-happy",
+    "mouth",
+    "mouth-think",
+    "mouth-happy",
+    "arm-left-rest",
+    "arm-left-think",
+    "arm-left-celebrate",
+    "arm-right-rest",
+    "arm-right-wave",
+    "arm-right-point",
+    "prop-observe",
+    "prop-think",
+    "prop-celebrate"
+  ],
+  "pivots": {
+    "head": [
+      192,
+      285
+    ],
+    "leftArm": [
+      128,
+      318
+    ],
+    "rightArm": [
+      259,
+      319
+    ],
+    "eyes": [
+      192,
+      213
+    ]
+  },
+  "provenance": "Native editable SVG redraw from the supplied 2D 智小谷 references. No raster reference modified."
+}

@@ -1,0 +1,21 @@
+{
+  "selected": "source-v2.png",
+  "rejected": "source-v1.png",
+  "reason": "User requested matching existing three theme illustrations. Selected version uses sparse decorations, small wheat tufts and sibling map brushwork.",
+  "source": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/design-source/reference-unified-20261020/industry-map-source.png",
+  "runtime": "miniprogram/assets/journey/industry.jpg",
+  "width": 750,
+  "height": 1280,
+  "quality": 85,
+  "bytes": 100281,
+  "sha256": "8f9e5e21c8565e4c0d6846cad7d79d9db6ae65f0b5b2b227a483f76da3a088a8",
+  "syncedTo": [
+    "rural-culture-miniprogram",
+    "交付/微信小程序四套/十步芳草",
+    "交付/微信小程序四套/千年文脉",
+    "交付/微信小程序四套/金色产业",
+    "交付/微信小程序四套/青山绿水",
+    "平台总入口"
+  ],
+  "scope": "Only industry background asset. No title, typography, layout, mascot, game logic, account or API changes."
+}

@@ -1,0 +1,23 @@
+Use case: precise-object-edit / style-transfer.
+Asset type: ONE seamless-feeling vertical cultural learning route map background for a Chinese mini program.
+Input images and roles:
+1. Original culture.jpg (golden yellow) is the EDIT TARGET and absolute composition/geometry reference.
+2. Screenshot 微信图片_2026-10-15_155402_621.png is STYLE REFERENCE ONLY: use the cheerful rounded wood sign at the upper left and the plump bright green leaves / simple bright flowers at the upper right as material/color vocabulary. Do not copy the screenshot layout, screenshot UI, text, dark overlay, or photographic inset.
+3. Screenshot 微信图片_2026-10-15_155353_804.png is STYLE REFERENCE ONLY: cheerful clean lively green rounded shapes, simple soft highlights, approachable polished cartoon illustration. Do not copy its panel, banner or text.
+
+Primary request: Edit the original cultural route map into this BRIGHT, ROUNDED, CHEERFUL CARTOON art family. Keep the original route and every scene item exactly in place, and change only palette and consistent illustrated material. The previous dull gray-parchment version was rejected. This output must have clearly fresh color, warm clean contrast, soft rounded forms, cream light, and lively foliage.
+
+GROUND COLOR DIRECTION: bright warm wood-brown / light caramel / terracotta-beige, like the warm cheerful wooden sign reference translated into an open ground field. Main clean light caramel approximately #E2AF7C with creamy light #F5D29D and restrained clean warm brown shadow #BE8050. Ground must read distinctly warm caramel tan, neither gold/yellow nor gray/beige paper. Keep the entire scene bright and cheerful. Use smooth large simple color masses and extremely restrained texture. NO paper grain, mottled old parchment, vintage wash, grunge, gray haze or desaturated muddy shading. NO gold wheat-field atmosphere.
+ROAD: retain the exact original broad winding cream route and centerline. Path pale creamy #FFF3D5, visibly distinct from the warmer caramel ground. Centerline gentle light warm tan, same existing dash positions.
+VEGETATION / OBJECTS: keep every object, position and size. Bamboo and shrubs use clean lively spring/leaf greens, with cream upper-left highlights and richer green shaded planes. Flowers keep bright clean yellow and a few lively clear accents as already in the source. Wooden bench and traditional building have warm rounded cartoon wood shading related to the reference sign; blue-gray roof remains clearly separate. Rocks and books remain in their original positions and colors, with clean round cartoon surfaces.
+
+ABSOLUTE COMPOSITION INVARIANTS:
+- Same portrait camera, framing, overall map scale and aspect ratio 750:1280.
+- Keep the exact continuous vertical S-shaped road, all bend locations, all path widths, all path edges, top entry and bottom exit positions unchanged. Do not shift, stretch, widen or narrow the road. Preserve the dashed centerline.
+- Preserve the top-right traditional building cropped by the frame, its existing stair geometry, left-middle bamboo, right-middle bench, lower-left flower pot, lower-right books, every principal rock and grass cluster, all at the same normalized coordinates and sizes as Image 1.
+- Preserve open empty areas and the top/bottom continuation beyond the frame. NO horizon, sky, distant mountains, landforms or changed roadmap.
+- Do not add characters, animals, route nodes, pedestals, buildings, words, numbers, icons, titles, steps, buttons, frames, badges, panels, or any other new object.
+
+STYLE: polished bright friendly rounded cartoon illustration with soft simple volume and left-upper diffuse light, as in the reference wooden sign, leaves and flowers. Gentle cushion-like foliage and rounded object edges, with broad painted color shapes. Crisp clean readability at mobile scale. Not photorealistic and not physically rendered realistic 3D. No flat gray stone finish. No dull watercolor wash.
+
+Output ONE opaque full-bleed portrait map, target 750x1280 or a larger image of the same aspect ratio. No text, no watermark. Preserve the original map and existing source identity; do not invent a title or IP.

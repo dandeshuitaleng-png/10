@@ -1,0 +1,21 @@
+Use case: precise-object-edit
+Asset type: a single CURRENT LEVEL pedestal sprite for a bright cartoon cultural learning game, consumed by an existing native route-base UI component.
+
+INPUT ROLES:
+Image 1 (node-current.png, original 220 x 147 transparent sprite) is the EDIT TARGET and the strict geometry/composition template.
+Image 2 is a STYLE REFERENCE ONLY. Match the bright, cheerful, rounded cartoon illustration language visible in its green ribbon and rounded plants. Do not copy any content, plants, ribbon, frame, lettering, scene, or decorations from it.
+
+PRIMARY REQUEST:
+Re-illustrate only the existing pedestal from Image 1 as clean bright cartoon game art. Preserve its original low, wide oval outer silhouette, exact thickness and tier proportions, identical camera view and perspective, centered placement, transparent margin relationship, and the position and size of the upper standing surface. The character's feet will be placed on this surface by code, so the top ellipse and its position must remain stable. This must remain the same simple oval pedestal, closely registered to Image 1, never a redesigned platform.
+
+COLOR AND STYLE:
+A clear sunny golden top, main color #FFD247, cheerful and clean with restrained soft cartoon shading. A smoothly rounded milk-white/ivory rim. Lower layer is light warm milky yellow / creamy off-white, with warm gentle shade. Replace every blue part from Image 1 with this warm creamy palette. Soft light from the upper left. Simple broad smooth cartoon color bands and modest illustrated volume; softly rounded clean edges. Visually belongs beside the bright green ribbon and rounded illustrated plants in Image 2. Color should feel lively, welcoming and clear at 220 x 147 pixels.
+
+COMPOSITION:
+One oval pedestal only, landscape about 1536 x 1024 matching the original 220:147 aspect ratio, subject filling the frame at the same scale and position as Image 1. Preserve original transparent whitespace distribution and do not add padding, change tilt, raise the standing surface, thicken the base, flatten the ellipse, or crop the object. Original width-to-height relationship is essential.
+
+ALPHA:
+True transparent background outside the object. The entire colored subject must be fully opaque (alpha 255); use transparency only outside it and very narrow edge antialiasing. No translucent fill, no semitransparent internal material. Clean silhouette with no edge debris, no white/black matte, no painted checkerboard. Very small external shadow or none, no dark heavy cast shadow.
+
+STRICT EXCLUSIONS:
+No gray stone, rock, concrete, sand, grit, grain, speckles, material texture, dark brown stone shading, realistic ceramic, photorealistic product rendering, realistic plastic, metallic reflection, chrome, glossy 3D rendering, product lighting, strong glare or deep black shadow. No characters, people, feet, numbers, lock, text, icons, symbols, objects, props, foliage, leaves, flowers, scenery, island, ground, coins, sparkles or decorations.

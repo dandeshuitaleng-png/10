@@ -1,0 +1,11 @@
+Use case: precise-object-edit.
+Asset type: completed-node pedestal UI sprite for an existing friendly cultural-learning map.
+Input image: node-completed.png is the EDIT TARGET, original 220x143 RGBA. Preserve this exact accepted pedestal design.
+
+Primary request: recolor and gently unify the matte illustrated finish of this single existing sprite. Keep the SAME EXACT elliptical stacked pedestal shape, perspective, silhouette, all ellipse sizes, heights and relative locations, same proportions and camera angle, same top-surface placement, same layered band widths. Do not redesign it. Preserve the composition's near-full frame occupancy and the same small transparent margins. Preserve its contact shadow inside the sprite bounds with a soft restrained stone tone.
+
+Color assignment: top oval soft sage green #B6CC89, top narrow rim #80985C, surrounding ivory lip #EEE8D8. Replace the original BLUE underside/plastic band completely with warm pale stone/parchment clay #D8C7A7, with soft shaded underside #BDA685. No blue remains. Use broad quiet flat color bands with just gentle upper-left diffuse lighting and soft simple volume.
+
+Style: friendly matte 2D illustrated stone or ceramic game UI, low contrast, clean intentional edges, soft simple shading, minimal texture. No realistic 3D, no photorealism, no glossy plastic, metal, chrome, harsh reflections, glass effects, noisy texture, extra decorative details or flourishes. No new objects, text, checkmarks, numerals, icons, characters, plants, rings or badges.
+
+Output: ONE isolated pedestal sprite, true transparent background with alpha, landscape with the exact original aspect ratio 220:143. Keep its upper surface and whole silhouette in the same relative positions. Object fills the frame like the original, without cropping. Background must be truly transparent, not black or white, no checkerboard drawn into the image.

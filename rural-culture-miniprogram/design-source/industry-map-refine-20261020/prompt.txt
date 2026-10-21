@@ -1,0 +1,17 @@
+Edit the vertical game map in reference image 1. Reference images 2 and 3 are the client's approved STYLE references: bright, friendly, rounded cartoon farm game illustration, crisp shapes, softly shaded objects, fresh readable colors. This is the actual background of a Chinese cultural quiz mini program titled 金色产业 (Golden Industries), on a small phone screen.
+
+The current background is visually strange: gigantic individual wheat ears look like plastic bananas pasted onto a flat yellow lawn, the crop scale jumps, the distant wheat terraces are overinflated, and everything is flooded with acid yellow. Correct those issues with a coherent, natural harvest-farm illustration.
+
+COMPOSITION INVARIANTS:
+Keep the full portrait aspect ratio of image 1 (750 by 1280, ~0.586). Keep the EXACT pale cream winding S path, including its full width, dashed center line, every bend, road borders and entrance/exit positions. The app overlays chapter platforms at source pixel centers approximately (503,1088), (225,819), (503,538), (195,307). Those exact spots must remain on the road. Do not move the camera or zoom/crop. Preserve large quiet negative spaces beside these road bends for the app's chapter labels. No visible UI/cards/platforms in the generated art.
+
+REBUILD THE FIELD AND PLANT DECOR:
+Replace ALL the giant isolated wheat ears with modest, naturally scaled planted clumps with slim stems and small warm amber seed heads. No giant individual shiny seeds, no corn-like ears, no plants towering over the road. Keep decoration mostly at the outside edges and corners, away from the clear road and label areas.
+Create a readable rural harvest landscape: honey-gold ripe grain, subtle muted yellow-green field margins, small groups of orderly planted rows, an understated farm/terrace at the far upper right, a few rounded bushes and very small rocks. Use perspective consistently: finer distant rows near the horizon, restrained larger grain tufts only in the foreground corners. The midground should be calm, not filled with dense stripes and objects.
+The ground should feel like cultivated farmland and tidy pathsides, NOT generic green grass repainted bright yellow. Break up the large yellow mass with soft ochre field boundaries and small fresh green margins; avoid harsh patterns that would compete with UI text.
+Keep the distant warm farm roofs, clean blue sky, white puffy clouds and gentle rounded green hills. The upper 45% of this same image is also cropped into a landscape share card, so it should read as a pleasant coherent harvest farm scene.
+
+STYLE AND PALETTE:
+Match the client's reference cartoon FARM style. Warm natural wheat-gold, pale butter and amber, restrained orange shadows; green leaves in small accents. Bright and welcoming, but no fluorescent yellow or orange blanket. Rounded clean graphic contours, simple airy 2.5D shading, coherent lighting. It must belong to the same illustrated world as the other ecology and culture maps. The detailed title ribbon and original flat 2D mascot are separate UI assets and must NOT appear in this artwork.
+No photorealism, no realistic glossy 3D toy render, no oil paint, no speckled watercolor or grunge, no photographic textures, no gray haze, no dark muddy contrast.
+No text, Chinese characters, logos, people, mascots, characters, UI, badges, chapter number circles, or standalone props. Deliver one production-ready full-bleed portrait background.

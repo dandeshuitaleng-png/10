@@ -1,5 +1,5 @@
 'use strict';
-// Add relevant, original teaching media to pending experience content only.
+// Add relevant, original teaching media to the configured source content.
 const MEDIA = {
   'HN-ECOLOGY-1-09':{type:'image',url:'/images/v2-style03/wetland-observation.jpg',alt:'湿地生态观察插画，场景示意，不是洞庭湖实景。',caption:'湿地生态观察示意 · 非实景',required:false},
   'HN-ECOLOGY-2-04':{type:'image',url:'/images/v2-style03/wetland-observation.jpg',alt:'水面、浅滩与周边植物组成多样湿地生境的插画。',caption:'湿地生境示意 · 非实景',required:false},
@@ -10,7 +10,7 @@ async function installContentMedia(store) {
     if(await tx.get('meta','experience-media-v1'))return;
     for(const [id,media]of Object.entries(MEDIA)){
       const q=await tx.get('questions',id);
-      if(q && q.source==='source-bank-pending-review'&&!q.approved&&!q.deleted&&!q.media){q.media=media;q.version++;await tx.set('questions',id,q);}
+      if(q && ['source-bank','source-bank-pending-review'].includes(q.source)&&!q.deleted&&!q.media){q.media=media;q.version++;await tx.set('questions',id,q);}
     }
     await tx.set('meta','experience-media-v1',{version:1});
   });

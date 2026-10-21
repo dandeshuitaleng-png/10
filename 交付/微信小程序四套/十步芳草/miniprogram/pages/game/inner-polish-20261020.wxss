@@ -1,0 +1,97 @@
+/* Shared inner-page rhythm. Original banners and homepage geometry are preserved. */
+.game-device.feedback-20261019 .theme-heading + .panel-content{padding-top:48px}
+.game-device.feedback-20261019[data-route="quiz"] .quiz-fixed{padding:0 12px}
+.game-device.feedback-20261019[data-route="quiz"] .quiz-meta{margin:0 0 8px;min-height:44px;gap:6px}
+.game-device.feedback-20261019[data-route="quiz"] .quiz-meta .chapter-title{font-size:13px;line-height:20px;font-weight:600;min-width:0}
+.game-device.feedback-20261019[data-route="quiz"] .timer{width:70px;flex:0 0 70px;gap:3px;font-size:13px;line-height:24px;font-weight:500}
+.game-device.feedback-20261019[data-route="quiz"] .timer game-icon{width:17px;height:17px}
+.game-device.feedback-20261019[data-route="quiz"] .timer .b{font-size:18px;line-height:24px;font-weight:600}
+.game-device.feedback-20261019[data-route="quiz"] .quiz-progress{margin-bottom:10px}
+.game-device.feedback-20261019[data-route="quiz"] .progress-caption{font-size:12px;line-height:20px;margin-bottom:6px}
+.game-device.feedback-20261019[data-route="quiz"] .progress-caption .strong{font-size:17px;font-weight:600}
+.game-device.feedback-20261019[data-route="quiz"] .panel-body{padding:0 12px;scrollbar-width:none;scrollbar-color:transparent transparent}
+.game-device.feedback-20261019[data-route="quiz"] .panel-body-inner{padding-bottom:16px}
+.game-device.feedback-20261019 .quest-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:72px;padding:8px 12px;margin:2px 0 8px;border-radius:14px;overflow:visible}
+.game-device.feedback-20261019 .quest-banner-copy{flex:1;min-width:0}
+.game-device.feedback-20261019 .quest-eyebrow{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;font-size:14px;line-height:22px;font-weight:600;letter-spacing:0}
+.game-device.feedback-20261019 .quest-line{font-size:12px;line-height:20px;margin-top:2px;max-width:none;color:var(--muted);opacity:1}
+.game-device.feedback-20261019 .inline-actor.quest-companion{position:relative;right:auto;bottom:auto;align-self:center;flex:0 0 44px;width:44px;height:54px;margin:0 2px 0 0}
+.game-device.feedback-20261019 .question-card{padding:14px;margin-bottom:8px;border-radius:16px}
+.game-device.feedback-20261019 .question-card .question-title{display:block;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;font-size:20px;line-height:30px;font-weight:600;letter-spacing:0;color:var(--ink);padding-right:8px;word-break:normal;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .question-corner{right:12px;top:0;width:10px;height:18px;opacity:.22}
+.game-device.feedback-20261019 .option-text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;font-size:15px;line-height:24px;font-weight:400}
+.game-device.feedback-20261019 .modal-topbar > .h2{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;font-size:20px;line-height:28px;font-weight:600;letter-spacing:0}
+.game-device.feedback-20261019 .theme-modal .modal-inner .p{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;font-size:14px;line-height:24px;font-weight:400}
+.game-device.feedback-20261019 .theme-modal .modal-inner .modal-lead{font-size:16px!important;line-height:24px;font-weight:600}
+.game-device.feedback-20261019 .theme-modal .modal-inner .micro-copy{font-size:12px!important;line-height:20px;font-weight:400;opacity:1;color:var(--muted)}
+.game-device.feedback-20261019 .theme-modal.modal-revive .modal-inner,.game-device.feedback-20261019 .theme-modal.modal-locked .modal-inner{padding:8px 20px 4px}
+.game-device.feedback-20261019 .theme-modal.modal-revive .modal-actor,.game-device.feedback-20261019 .theme-modal.modal-locked .modal-actor{width:64px;height:76px;flex:none;margin:10px auto 16px}
+.game-device.feedback-20261019 .theme-modal.modal-revive .modal-lead,.game-device.feedback-20261019 .theme-modal.modal-locked .modal-lead{margin:0 0 12px}
+.game-device.feedback-20261019 .theme-modal.modal-revive .modal-lead + .p,.game-device.feedback-20261019 .theme-modal.modal-locked .modal-lead + .p{margin:0;line-height:24px}
+.game-device.feedback-20261019 .theme-modal.modal-revive .micro-copy,.game-device.feedback-20261019 .theme-modal.modal-locked .micro-copy{margin:14px 0 0}
+@media(max-width:350px){.game-device.feedback-20261019 .quest-banner{min-height:70px;padding:8px 10px;gap:8px}.game-device.feedback-20261019 .quest-line{font-size:11px;line-height:18px}.game-device.feedback-20261019 .quest-companion.inline-actor{width:40px;height:50px;flex-basis:40px}.game-device.feedback-20261019 .question-card{padding:14px}.game-device.feedback-20261019 .question-card .question-title{font-size:19px;line-height:29px}.game-device.feedback-20261019 .theme-modal.modal-revive .modal-actor,.game-device.feedback-20261019 .theme-modal.modal-locked .modal-actor{width:56px;height:66px;margin:8px auto 12px}}
+
+.game-device.feedback-20261019[data-route="quiz"] .options{gap:8px}
+
+/* Wider original study illustration is optically sized without moving the profile copy. */
+.game-device.feedback-20261019 .inline-actor.profile-avatar{width:112px;height:100px}
+.game-device.feedback-20261019 .panel-body{scrollbar-width:none;scrollbar-color:transparent transparent}
+@media(max-width:350px){.game-device.feedback-20261019 .inline-actor.profile-avatar{width:100px;height:90px}}
+
+/* Shared detail pass: long content keeps room for the adjacent controls. */
+.game-device.feedback-20261019 .record-copy{flex:1;min-width:0}
+.game-device.feedback-20261019 .record-copy .strong{line-height:22px;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .record-row>.b,.game-device.feedback-20261019 .rank-score{flex-shrink:0;white-space:nowrap;text-align:right}
+.game-device.feedback-20261019 .rank-name .small{color:var(--muted);line-height:18px}
+.game-device.feedback-20261019 .profile-card>.h2{max-width:100%;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .stat-pair .stat{min-width:0}
+.game-device.feedback-20261019 .certificate-paper .h3,.game-device.feedback-20261019 .certificate-paper .h4{max-width:100%;overflow-wrap:anywhere;line-height:30px}
+.game-device.feedback-20261019 .certificate-switch button{min-height:44px;box-sizing:border-box;font-size:13px}
+.game-device.feedback-20261019 .media-recovery button,.game-device.feedback-20261019 .persistence-retry{min-height:44px;box-sizing:border-box}
+.game-device.feedback-20261019.activity-page.home-layout button.activity-points{height:44px;min-height:44px;margin-top:-4px;margin-bottom:-4px;align-self:center}
+
+/* Short phones keep the question and first option together; remaining answers scroll above the fixed action. */
+.game-device.feedback-20261019.small-screen[data-route="quiz"] .quiz-meta{margin-bottom:4px}
+.game-device.feedback-20261019.small-screen[data-route="quiz"] .quiz-progress{margin-bottom:6px}
+.game-device.feedback-20261019.small-screen[data-route="quiz"] .quest-banner{min-height:56px;padding:4px 10px;margin:0 0 6px;gap:8px}
+.game-device.feedback-20261019.small-screen[data-route="quiz"] .quest-companion.inline-actor{width:40px;height:48px;flex-basis:40px}
+.game-device.feedback-20261019.small-screen[data-route="quiz"] .question-card{padding:12px;margin-bottom:6px}
+.game-device.feedback-20261019.small-screen[data-route="quiz"] .question-card .question-title{line-height:28px}
+
+/* Compact sound control shares the native capsule center line and never takes card space. */
+.game-device.feedback-20261019 .sound-button{position:absolute;z-index:6;left:12px;top:var(--status,44px);display:flex;align-items:center;justify-content:center;width:44px;min-width:44px;height:44px;min-height:44px;margin:0;padding:10px;background:transparent;border:0;border-radius:50%;box-shadow:none;line-height:1}
+.game-device.feedback-20261019 .sound-button::after{display:none}
+.game-device.feedback-20261019 .sound-button::before{content:"";position:absolute;inset:6px;background:#ffffffbf;border:1px solid var(--edge);border-radius:50%;pointer-events:none}
+.game-device.feedback-20261019 .sound-button image{position:relative;z-index:1;width:22px;height:22px;object-fit:contain}
+.game-device.feedback-20261019 .sound-button.sound-pressed::before{background:var(--pale)}
+
+/* Audio controls stay in one optional sheet, with the same paper and palette as its theme. */
+.game-device.feedback-20261019 .sound-settings-mask{position:absolute;z-index:30;inset:0;background:#1f2b263d;display:flex;align-items:flex-end;justify-content:center;padding:16px 16px calc(var(--safe-bottom,0px) + 12px);box-sizing:border-box}
+.game-device.feedback-20261019 .sound-settings-panel{width:100%;max-width:398px;max-height:calc(100% - 48px);overflow-y:auto;padding:16px 18px 18px;box-sizing:border-box;border:1px solid var(--edge);border-radius:24px;background:linear-gradient(180deg,#fffefa,var(--pale));box-shadow:0 12px 36px #24311c26;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+.game-device.feedback-20261019 .sound-settings-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.game-device.feedback-20261019 .sound-settings-title{display:block;font-size:20px;line-height:28px;font-weight:600;letter-spacing:0}
+.game-device.feedback-20261019 .sound-settings-caption{display:block;font-size:12px;line-height:20px;color:var(--muted);margin-top:2px}
+.game-device.feedback-20261019 .sound-settings-close{width:44px;height:44px;min-width:44px;flex:none;margin:-4px -8px 0 0;padding:10px;background:transparent;border:0;line-height:1}
+.game-device.feedback-20261019 .sound-settings-close game-icon{width:24px;height:24px}
+.game-device.feedback-20261019 .sound-settings-panel button::after{display:none}
+.game-device.feedback-20261019 .sound-settings-group{padding:8px 0;border-top:1px solid var(--edge)}
+.game-device.feedback-20261019 .sound-settings-row{display:flex;align-items:center;justify-content:space-between;min-height:44px;gap:12px}
+.game-device.feedback-20261019 .sound-settings-label{display:flex;align-items:center;gap:10px;font-size:15px;line-height:24px;font-weight:600}
+.game-device.feedback-20261019 .sound-settings-label game-icon{width:20px;height:20px;opacity:.72}
+.game-device.feedback-20261019 .sound-switch-hit{min-width:60px;min-height:44px;display:flex;align-items:center;justify-content:flex-end}
+.game-device.feedback-20261019 .sound-slider-row{display:flex;align-items:center;gap:10px;min-height:44px}
+.game-device.feedback-20261019 .sound-slider-row slider{flex:1;min-width:0;margin:8px 6px 8px 4px}
+.game-device.feedback-20261019 .sound-volume-value{width:40px;flex:none;text-align:right;font-size:13px;line-height:24px;color:var(--muted);font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .sound-settings-note{display:block;margin:6px 0 14px;font-size:12px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .sound-settings-actions{display:flex;gap:12px}
+.game-device.feedback-20261019 .sound-settings-actions button{flex:1;min-width:0;min-height:48px;margin:0;padding:0 12px;border-radius:24px;font-size:15px;line-height:48px;font-weight:600;box-sizing:border-box;letter-spacing:0}
+.game-device.feedback-20261019 .sound-mute-button{color:var(--ink);background:#ffffffa6;border:1px solid var(--edge)}
+.game-device.feedback-20261019 .sound-done-button{color:var(--ink);background:var(--theme-fill);border:1px solid var(--panel-edge);box-shadow:inset 0 1px 0 #ffffffb3}
+@media(max-width:350px){.game-device.feedback-20261019 .sound-settings-mask{padding-left:12px;padding-right:12px}.game-device.feedback-20261019 .sound-settings-panel{padding:14px 16px 16px;border-radius:20px}.game-device.feedback-20261019 .sound-settings-heading{margin-bottom:8px}.game-device.feedback-20261019 .sound-settings-title{font-size:18px;line-height:26px}}
+
+/* Native range/switch equivalents in the source-based browser preview. */
+.game-device.feedback-20261019 .sound-slider-row input[type="range"]{flex:1;min-width:0;min-height:44px;margin:0 4px;accent-color:var(--accent)}
+.game-device.feedback-20261019 .sound-switch-hit input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:50px;height:30px;margin:0;border:1px solid var(--edge);border-radius:18px;background:#dde2d9;position:relative}
+.game-device.feedback-20261019 .sound-switch-hit input[type="checkbox"]::before{content:"";position:absolute;width:24px;height:24px;left:2px;top:2px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0002}
+.game-device.feedback-20261019 .sound-switch-hit input[type="checkbox"]:checked{background:var(--accent);border-color:var(--accent)}
+.game-device.feedback-20261019 .sound-switch-hit input[type="checkbox"]:checked::before{left:22px}

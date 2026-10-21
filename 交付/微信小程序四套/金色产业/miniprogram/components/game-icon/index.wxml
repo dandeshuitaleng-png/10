@@ -1,0 +1,1 @@
+<image class="icon" src="{{'/assets/icons/'+name+(white?'-white':'')+'.png'}}" mode="aspectFit" aria-hidden="true" />

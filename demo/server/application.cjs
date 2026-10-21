@@ -28,6 +28,7 @@ function safeUser(user) { return { id: user.id, name: user.name, role: user.role
 const defaultConfig = catalogConfig.defaultConfig;
 function normalizeQuestion(input, levels, old = null) {
   requireValue(input && typeof input === 'object', 'INVALID_QUESTION', '题目须为对象');
+  requireValue(input.enabled === undefined || typeof input.enabled === 'boolean', 'INVALID_QUESTION', '启用状态须为布尔值');
   const levelId = text(input.levelId, '关卡ID', 80);
   const level = levels.find(item => item.id === levelId);
   requireValue(level, 'INVALID_LEVEL', '题目关卡不存在');
@@ -45,15 +46,15 @@ function normalizeQuestion(input, levels, old = null) {
   }
   return { id: input.id ? text(input.id, '题目ID', 100) : uuid(), levelId, themeId: level.themeId, title: text(input.title, '题干', 2000), options, answer: input.answer,
     explanation: text(input.explanation, '解析', 4000), difficulty, media, version: (old ? old.version : 0) + 1,
-    approved: false, enabled: false, reviewStatus: 'pending', reviewNote: '', reviewedBy: null, reviewedAt: null,
+    enabled: input.enabled === undefined ? (old ? old.enabled !== false : true) : input.enabled !== false,
     source: old ? old.source : 'admin', sourceIds: Array.isArray(input.sourceIds) ? input.sourceIds.slice(0, 50) : [],
     sourceUrl: typeof input.sourceUrl === 'string' ? input.sourceUrl.slice(0, 2048) : '',
-    experienceAuthorized: old ? old.experienceAuthorized : false, deleted: false };
+    deleted: false, ...(old&&old.developmentOnly?{developmentOnly:true}:{}) };
 }
 const validateConfig = catalogConfig.validateConfig;
 function xml(value) { return String(value).replace(/[<>&"']/g, char => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&apos;' }[char])); }
 function certificateSVG(certificate, user) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850"><rect width="1200" height="850" fill="#f8f5e9"/><rect x="40" y="40" width="1120" height="770" rx="24" fill="none" stroke="#287d7d" stroke-width="5"/><rect x="65" y="65" width="1070" height="720" rx="18" fill="none" stroke="#dba747"/><text x="600" y="205" text-anchor="middle" font-size="36" fill="#287d7d" font-family="sans-serif">${xml(certificate.title||'趣味闯关 · 电子荣誉证书')}</text><text x="600" y="310" text-anchor="middle" font-size="58" font-weight="bold" fill="#214c4c" font-family="sans-serif">${xml(certificate.name)}</text><text x="600" y="420" text-anchor="middle" font-size="38" fill="#214c4c" font-family="sans-serif">${xml(user.name)}</text><text x="600" y="505" text-anchor="middle" font-size="27" fill="#456767" font-family="sans-serif">${xml(certificate.description||'已完成乡村知识挑战')}</text><text x="600" y="575" text-anchor="middle" font-size="25" fill="#456767" font-family="sans-serif">完成日期：${xml(certificate.day)}　·　${certificate.contentApprovalPending ? '体验版学习记录' : '正式挑战记录'}</text><text x="600" y="675" text-anchor="middle" font-size="20" fill="#658080" font-family="sans-serif">证书编号：${xml(certificate.id)}</text><text x="600" y="728" text-anchor="middle" font-size="18" fill="#658080" font-family="sans-serif">${xml(certificate.footer||'学习活动纪念，不代表学历或教育资格')}</text></svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850"><rect width="1200" height="850" fill="#f8f5e9"/><rect x="40" y="40" width="1120" height="770" rx="24" fill="none" stroke="#287d7d" stroke-width="5"/><rect x="65" y="65" width="1070" height="720" rx="18" fill="none" stroke="#dba747"/><text x="600" y="205" text-anchor="middle" font-size="36" fill="#287d7d" font-family="sans-serif">${xml(certificate.title||'趣味闯关 · 电子荣誉证书')}</text><text x="600" y="310" text-anchor="middle" font-size="58" font-weight="bold" fill="#214c4c" font-family="sans-serif">${xml(certificate.name)}</text><text x="600" y="420" text-anchor="middle" font-size="38" fill="#214c4c" font-family="sans-serif">${xml(user.name)}</text><text x="600" y="505" text-anchor="middle" font-size="27" fill="#456767" font-family="sans-serif">${xml(certificate.description||'已完成乡村知识挑战')}</text><text x="600" y="575" text-anchor="middle" font-size="25" fill="#456767" font-family="sans-serif">完成日期：${xml(certificate.day)}　·　${certificate.mode !== 'production' ? '体验版学习记录' : '正式挑战记录'}</text><text x="600" y="675" text-anchor="middle" font-size="20" fill="#658080" font-family="sans-serif">证书编号：${xml(certificate.id)}</text><text x="600" y="728" text-anchor="middle" font-size="18" fill="#658080" font-family="sans-serif">${xml(certificate.footer||'学习活动纪念，不代表学历或教育资格')}</text></svg>`;
 }
 
 async function createApplication(options = {}) {
@@ -87,7 +88,7 @@ async function createApplication(options = {}) {
     await tx.set('meta', 'levels', levels);
     for (const raw of seedBank.questions || []) {
       const question = normalizeQuestion(raw, levels);
-      question.source = 'source-bank-pending-review'; question.experienceAuthorized = true;
+      question.source = 'source-bank'; question.enabled = true;
       await tx.set('questions', question.id, question);
     }
     if (mode === 'development' || mode === 'test') {
@@ -95,7 +96,7 @@ async function createApplication(options = {}) {
         const answer = index % 4;
         const opts = [`${index + 5}`, `${index + 6}`, `${index + 7}`, `${index + 8}`];
         const question = normalizeQuestion({ id: `DEV-${level.id}-${index}`, levelId: level.id, title: `【开发测试】${index}加${5 + answer}等于多少？`, options: opts, answer, explanation: '这是独立开发测试题，不属于正式乡村题库。' }, levels);
-        question.source = 'development-test'; question.developmentOnly = true; question.approved = true; question.enabled = true; question.reviewStatus = 'development-test';
+        question.source = 'development-test'; question.developmentOnly = true; question.enabled = true;
         await tx.set('questions', question.id, question);
       }
     }
@@ -129,7 +130,19 @@ async function createApplication(options = {}) {
     }
     await tx.set('meta','catalog-v2',{schemaVersion:2,at:now()});
   });
-  const isEligible = question => !question.deleted && (question.approved && question.enabled && (!question.developmentOnly || (mode === 'development' || mode === 'test')) || (mode === 'experience' && question.experienceAuthorized));
+  // Retire the old question-review workflow without rewriting gameplay history.
+  await store.transaction(async tx => {
+    if(await tx.get('meta','questions-no-review-v1'))return;
+    let count=0;
+    for(const q of await tx.list('questions')) {
+      if(q.reviewStatus==='pending'||q.reviewStatus==='待审核')q.enabled=!q.deleted;
+      for(const k of ['approved','reviewStatus','reviewNote','reviewedBy','reviewedAt','experienceAuthorized'])delete q[k];
+      if(q.source==='source-bank-pending-review')q.source='source-bank';
+      await tx.set('questions',q.id,q);count++;
+    }
+    await tx.set('meta','questions-no-review-v1',{at:now(),questionCount:count});
+  });
+  const isEligible = question => !question.deleted && question.enabled !== false && (!question.developmentOnly || mode === 'development' || mode === 'test');
   async function config(tx) { return tx.get('meta', 'config'); }
   async function levels(tx) { return tx.get('meta', 'levels'); }
   function dependencies() { return [ { id: 'identity', name: '甲方身份验证', configured: Boolean(options.platformVerifier), requiredForProduction: true }, { id: 'share', name: '可靠分享验证', configured: Boolean(options.shareVerifier), requiredForProduction: true }, { id: 'sync', name: '甲方数据同步', configured: Boolean(options.syncReceiver), requiredForProduction: true } ]; }
@@ -159,7 +172,7 @@ async function createApplication(options = {}) {
     const token = crypto.randomBytes(32).toString('base64url');
     const session = { id: HASH(token), userId: user.id, createdAt: now(), expiresAt: now() + 7 * 86400000, revoked: false, mode };
     await tx.set('users', user.id, user); await tx.set('sessions', session.id, session);
-    return { status: 200, data: { user: safeUser(user), mode, contentApprovalPending: mode === 'experience', token }, headers: { 'Set-Cookie': `${user.role === 'admin' ? ADMIN_COOKIE : COOKIE}=${token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=604800${nonProduction ? '' : '; Secure'}` } };
+    return { status: 200, data: { user: safeUser(user), mode, token }, headers: { 'Set-Cookie': `${user.role === 'admin' ? ADMIN_COOKIE : COOKIE}=${token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=604800${nonProduction ? '' : '; Secure'}` } };
   }
   function requirePlayer(auth) { requireValue(auth, 'UNAUTHENTICATED', '请先登录', 401); requireValue(auth.user.role === 'player', 'PLAYER_REQUIRED', '此操作仅限玩家', 403); return auth.user; }
   function requireAdmin(auth) { requireValue(auth, 'UNAUTHENTICATED', '请先登录', 401); requireValue(auth.user.role === 'admin', 'FORBIDDEN', '需要管理员权限', 403); return auth.user; }
@@ -188,7 +201,7 @@ async function createApplication(options = {}) {
       solved:challenge.questions.length,reviveUsed:challenge.reviveCount>0,rulesVersion:challenge.rules.version};
     let event=null;
     if(!prior){
-      const completion={id:key,mode,userId:challenge.userId,levelId:challenge.levelId,themeId:challenge.themeId,challengeId:challenge.id,at:now(),day,correct,totalAnswered:firstAnswers.length,accuracy:challenge.result.accuracy,contentApprovalPending:challenge.contentApprovalPending,rulesVersion:challenge.rules.version};
+      const completion={id:key,mode,userId:challenge.userId,levelId:challenge.levelId,themeId:challenge.themeId,challengeId:challenge.id,at:now(),day,correct,totalAnswered:firstAnswers.length,accuracy:challenge.result.accuracy,rulesVersion:challenge.rules.version};
       await tx.set('completions',key,completion);
       await tx.set('ledger',key,{id:key,mode,userId:challenge.userId,challengeId:challenge.id,levelId:challenge.levelId,points,awarded:points,requested,dailyPointCap:cap,dailyCapReached:challenge.result.dailyCapReached,day,at:now(),rulesVersion:challenge.rules.version});
       event={id:uuid(),type:'level.completed',userId:challenge.userId,payload:{...completion,points,awarded:points,requested,dailyCapReached:challenge.result.dailyCapReached},at:now(),attempts:0,status:'pending',lastError:options.syncReceiver?'':'接收端未配置'};
@@ -206,7 +219,7 @@ async function createApplication(options = {}) {
       const hash=catalogConfig.requirementHash(definition.levelIds);
       if(existing.some(item=>item.themeId===definition.themeId&&catalogConfig.requirementHash(item.levelIds||[])===hash))continue;
       const certKey=entityKey(challenge.userId,`certificate:${definition.scope}:${hash}`);
-      const cert={id:uuid(),mode,key:certKey,userId:challenge.userId,themeId:definition.themeId,name:definition.name,title:book.certificates.title,description:definition.description,footer:book.certificates.footer,levelIds:definition.levelIds,requirementsVersion:book.version,issuedAt:now(),day,contentApprovalPending:completions.filter(item=>definition.levelIds.includes(item.levelId)).some(item=>item.contentApprovalPending)};
+      const cert={id:uuid(),mode,key:certKey,userId:challenge.userId,themeId:definition.themeId,name:definition.name,title:book.certificates.title,description:definition.description,footer:book.certificates.footer,levelIds:definition.levelIds,requirementsVersion:book.version,issuedAt:now(),day};
       await tx.set('certificates',certKey,cert);issued.push(cert);
     }
     if(event){event.payload.certificates=issued;await tx.set('outbox',event.id,event);}
@@ -251,7 +264,7 @@ async function createApplication(options = {}) {
       levelName:challenge.rules.levelName,themeName:challenge.rules.themeName,levelOrder:challenge.rules.levelOrder,difficultyLabel:challenge.rules.difficultyLabel,nextLevelId:challenge.rules.nextLevelId,themeComplete:challenge.themeComplete||false,certificateRequirements:challenge.rules.certificateRequirements,
       selected: challenge.selected ?? null, question: current ? { id: current.id, title: current.title, options: current.options, media: current.media, difficulty: current.difficulty } : null,
       feedback: challenge.feedback || null, result: challenge.result ? {...challenge.result,levelName:challenge.rules.levelName,themeName:challenge.rules.themeName,levelOrder:challenge.rules.levelOrder,difficultyLabel:challenge.rules.difficultyLabel,nextLevelId:challenge.rules.nextLevelId,themeComplete:challenge.themeComplete||false} : null, deadline: challenge.deadline, serverTime: now(), reviveUsed: challenge.reviveUsed, lockedUntil: challenge.lockedUntil || null,
-      mode, contentApprovalPending: challenge.contentApprovalPending, rulesVersion: challenge.rules.version, countdownSeconds: challenge.rules.seconds, testShareAvailable: nonProduction,
+      mode, rulesVersion: challenge.rules.version, countdownSeconds: challenge.rules.seconds, testShareAvailable: nonProduction,
     };
   }
   async function playerProgress(tx,user) {
@@ -271,7 +284,7 @@ async function createApplication(options = {}) {
   }
   async function catalog(tx) {
     const allQuestions = await tx.list('questions'); const cfg = await config(tx);
-    return { themes: cfg.themes.filter(item=>!item.deleted), certificateDefinitions:catalogConfig.manifest(cfg,await levels(tx)), levels: (await levels(tx)).filter(level=>!level.deleted&&cfg.themes.some(theme=>theme.id===level.themeId&&!theme.deleted)).map(level => ({ ...level, availableQuestions: allQuestions.filter(question => question.levelId === level.id && isEligible(question)).length, approvedQuestions: allQuestions.filter(question => question.levelId === level.id && question.approved && question.enabled && !question.developmentOnly && !question.deleted).length })), config: cfg, mode, contentApprovalPending: mode === 'experience', readiness: await readiness(tx) };
+    return { themes: cfg.themes.filter(item=>!item.deleted), certificateDefinitions:catalogConfig.manifest(cfg,await levels(tx)), levels: (await levels(tx)).filter(level=>!level.deleted&&cfg.themes.some(theme=>theme.id===level.themeId&&!theme.deleted)).map(level => ({ ...level, availableQuestions: allQuestions.filter(question => question.levelId === level.id && isEligible(question)).length })), config: cfg, mode, readiness: await readiness(tx) };
   }
   async function ranking(tx, period) {
     requireValue(['day', 'total'].includes(period), 'INVALID_PERIOD', '榜单周期须为day或total');
@@ -287,13 +300,13 @@ async function createApplication(options = {}) {
     const entries = [];
     for (const row of grouped.values()) { const user = await tx.get('users', row.userId); entries.push({ userId: row.userId, name: user ? user.name : '玩家', completed: row.completed, points: awardedPoints.get(row.userId) || 0, correct: row.correct, totalAnswered: row.totalAnswered, accuracy: row.correct / row.totalAnswered, firstCompletion: row.firstCompletion }); }
     entries.sort((a, b) => b.completed - a.completed || b.accuracy - a.accuracy || a.firstCompletion - b.firstCompletion || a.userId.localeCompare(b.userId));
-    return { entries: entries.map((entry, index) => ({ ...entry, rank: index + 1 })), period, day, mode, contentApprovalPending: mode === 'experience' };
+    return { entries: entries.map((entry, index) => ({ ...entry, rank: index + 1 })), period, day, mode, };
   }
 
   async function route(tx, req, url, body) {
     const pathname = url.pathname;
     const method = req.method;
-    if (method === 'GET' && pathname === '/api/health') return { data: { ok: true, mode, storage: store.kind || 'injected', contentApprovalPending: mode === 'experience', readiness: await readiness(tx) } };
+    if (method === 'GET' && pathname === '/api/health') return { data: { ok: true, mode, storage: store.kind || 'injected', readiness: await readiness(tx) } };
     if (method === 'GET' && pathname === '/api/catalog') return { data: await catalog(tx) };
     const auth = await authenticate(tx, req);
     if (method === 'POST' && pathname === '/api/auth/dev') {
@@ -346,8 +359,8 @@ async function createApplication(options = {}) {
         const current=await expire(tx,item);
         if(!['completed','locked'].includes(current.state))active.push(snapshot(current));
       }
-      const cfg=await config(tx),ledger=(await tx.list('ledger')).filter(item=>item.userId===user.id&&acceptedRecord(item));const dailyPoints=ledger.filter(item=>(item.day||dayAt(item.at))===dayAt(now())).reduce((sum,item)=>sum+item.points,0);const dailyPointCap=cfg.points.dailyPointCap;
-      return { data: { user:safeUser(user),progress:await playerProgress(tx,user),points:ledger.reduce((sum,item)=>sum+item.points,0),dailyPoints,dailyPointCap,dailyRemaining:dailyPointCap===null?null:Math.max(0,dailyPointCap-dailyPoints),config:cfg,activeChallenges:active,activeChallenge:active[0]||null,mode,contentApprovalPending:mode==='experience'} };
+      const cfg=await config(tx),ledger=(await tx.list('ledger')).filter(item=>item.userId===user.id&&acceptedRecord(item));const dailyPoints=ledger.filter(item=>(item.day||dayAt(item.at))===dayAt(now())).reduce((sum,item)=>sum+item.points,0);const dailyPointCap=cfg.points.dailyPointCap;const completions=(await tx.list('completions')).filter(item=>item.userId===user.id&&acceptedRecord(item)),activeBook=catalogConfig.manifest(cfg,await levels(tx)),series={total:activeBook.levels.length,completed:activeBook.levels.filter(l=>completions.some(c=>c.levelId===l.id)).length};
+      return { data: { user:safeUser(user),progress:await playerProgress(tx,user),points:ledger.reduce((sum,item)=>sum+item.points,0),dailyPoints,dailyPointCap,dailyRemaining:dailyPointCap===null?null:Math.max(0,dailyPointCap-dailyPoints),config:cfg,ledger,completions,series,activeChallenges:active,activeChallenge:active[0]||null,mode,} };
     }
     if (method === 'POST' && pathname === '/api/challenges') return { data: await idempotent(tx, user, 'challenge.create', body, async () => {
       // Resume an existing immutable challenge even when its catalogue is now disabled.
@@ -361,10 +374,10 @@ async function createApplication(options = {}) {
       const progress=await playerProgress(tx,user),nodeIndex=progress[level.themeId].levelIds.indexOf(level.id),state=progress[level.themeId].nodes[nodeIndex];
       requireValue(state!=='locked','LEVEL_LOCKED','请先通过上一关',409);requireValue(state!=='today-locked','LEVEL_TODAY_LOCKED','本关今日无答题机会，明日再来',409);
       const pool=(await tx.list('questions')).filter(question=>question.levelId===level.id&&isEligible(question));
-      requireValue(pool.length>=level.questionCount,'INSUFFICIENT_QUESTIONS',`本关有效题目不足${level.questionCount}题，待审核配置`,409);
+      requireValue(pool.length>=level.questionCount,'INSUFFICIENT_QUESTIONS',`本关有效题目不足${level.questionCount}题，请补充题库`,409);
       for(let index=pool.length-1;index>0;index--){const pick=crypto.randomInt(index+1);[pool[index],pool[pick]]=[pool[pick],pool[index]];}
       const rules=catalogConfig.ruleSnapshot(cfg,all,level);
-      const challenge={id:uuid(),mode,userId:user.id,levelId:level.id,themeId:level.themeId,state:'answering',position:0,questions:pool.slice(0,level.questionCount),answers:[],selected:null,feedback:null,result:null,deadline:now()+cfg.timer.seconds*1000,reviveCount:0,reviveUsed:false,settled:false,createdAt:now(),contentApprovalPending:mode==='experience',rules};
+      const challenge={id:uuid(),mode,userId:user.id,levelId:level.id,themeId:level.themeId,state:'answering',position:0,questions:pool.slice(0,level.questionCount),answers:[],selected:null,feedback:null,result:null,deadline:now()+cfg.timer.seconds*1000,reviveCount:0,reviveUsed:false,settled:false,createdAt:now(),rules};
       await tx.set('challenges', challenge.id, challenge); return snapshot(challenge);
     }) };
     const challengeMatch = /^\/api\/challenges\/([^/]+)(?:\/(answer|advance|revive|exit))?$/.exec(pathname);
@@ -419,7 +432,7 @@ async function createApplication(options = {}) {
     if (method === 'GET' && pathname === '/api/admin/overview') {
       const [users, questions, challenges, completions, ledger, certificates, outbox] = await Promise.all(['users', 'questions', 'challenges', 'completions', 'ledger', 'certificates', 'outbox'].map(name => tx.list(name)));
       const existing = questions.filter(item => !item.deleted);
-      return { data: { mode, modules: [ { id: 'basic', name: '基础配置', status: 'implemented' }, { id: 'levels', name: '关卡配置', status: 'implemented' }, { id: 'questions', name: '题库管理', status: 'implemented' }, { id: 'revive', name: '复活配置', status: options.shareVerifier ? 'configured' : 'experience-test-only' }, { id: 'points', name: '积分配置', status: 'implemented' } ], stats: { users: users.filter(item => item.role === 'player').length, questions: existing.length, approvedQuestions: existing.filter(item => item.approved && !item.developmentOnly).length, pendingQuestions: existing.filter(item => !item.approved).length, enabledQuestions: existing.filter(isEligible).length, challenges: challenges.length, completions: completions.length, points: ledger.reduce((sum, item) => sum + item.points, 0), certificates: certificates.length, outboxPending: outbox.filter(item => item.status !== 'delivered').length }, dependencies: dependencies(), config: await config(tx) } };
+      return { data: { mode, modules: [ { id: 'basic', name: '基础配置', status: 'implemented' }, { id: 'levels', name: '关卡配置', status: 'implemented' }, { id: 'questions', name: '题库管理', status: 'implemented' }, { id: 'revive', name: '复活配置', status: options.shareVerifier ? 'configured' : 'experience-test-only' }, { id: 'points', name: '积分配置', status: 'implemented' } ], stats: { users: users.filter(item => item.role === 'player').length, questions: existing.length, enabledQuestions: existing.filter(isEligible).length, challenges: challenges.length, completions: completions.length, points: ledger.reduce((sum, item) => sum + item.points, 0), certificates: certificates.length, outboxPending: outbox.filter(item => item.status !== 'delivered').length }, dependencies: dependencies(), config: await config(tx) } };
     }
     async function saveCatalog(next,all,action,targetId,details={}) {
       const old=await config(tx),previous=await levels(tx);
@@ -447,10 +460,10 @@ async function createApplication(options = {}) {
       for(const level of body.levels){const before=previous.find(item=>item.id===level.id);requireValue(!before||before.themeId===level.themeId,'STABLE_ID','已有关卡的主题归属不可改变');}
       merged=catalogConfig.validateLevels(merged,next);
       const normalized=[];
-      if(body.questions!==undefined){requireValue(Array.isArray(body.questions)&&body.questions.length<=2000,'INVALID_IMPORT','题库一次最多导入2000题');for(const input of body.questions){const before=input.id?await tx.get('questions',input.id):null;const question=normalizeQuestion(input,merged,before);question.experienceAuthorized=false;normalized.push(question);}requireValue(new Set(normalized.map(q=>q.id)).size===normalized.length,'DUPLICATE_ID','导入题号重复');}
+      if(body.questions!==undefined){requireValue(Array.isArray(body.questions)&&body.questions.length<=2000,'INVALID_IMPORT','题库一次最多导入2000题');for(const input of body.questions){const before=input.id?await tx.get('questions',input.id):null;const question=normalizeQuestion(input,merged,before);normalized.push(question);}requireValue(new Set(normalized.map(q=>q.id)).size===normalized.length,'DUPLICATE_ID','导入题号重复');}
       await saveCatalog(next,merged,'activity.import','activity',{questions:normalized.length});
       for(const question of normalized)await tx.set('questions',question.id,question);
-      return {data:{config:next,levels:merged,importedQuestions:normalized.length,approved:0,enabled:0}};
+      return {data:{config:next,levels:merged,importedQuestions:normalized.length,enabled:normalized.filter(q=>q.enabled).length}};
     }
     if(pathname==='/api/admin/levels'||pathname.startsWith('/api/admin/levels/')){
       let all=await levels(tx);const levelId=pathname.split('/')[4];const cfg=await config(tx);
@@ -473,30 +486,23 @@ async function createApplication(options = {}) {
       const allLevels = await levels(tx); const normalized = [];
       for (const input of body.questions) { const old = input.id ? await tx.get('questions', input.id) : null; normalized.push(normalizeQuestion(input, allLevels, old)); }
       requireValue(new Set(normalized.map(item => item.id)).size === normalized.length, 'DUPLICATE_ID', '导入题号重复');
-      for (const item of normalized) { item.experienceAuthorized = false; await tx.set('questions', item.id, item); }
-      await audit(tx, admin, 'questions.import', 'batch', { count: normalized.length }); return { data: { imported: normalized.length, approved: 0, enabled: 0 } };
+      for (const item of normalized) { await tx.set('questions', item.id, item); }
+      await audit(tx, admin, 'questions.import', 'batch', { count: normalized.length }); return { data: { imported: normalized.length, enabled: normalized.filter(q=>q.enabled).length } };
     }
     if (pathname === '/api/admin/questions') {
       if (method === 'GET') {
-        const themeId = url.searchParams.get('themeId'); const levelId = url.searchParams.get('levelId'); const review = url.searchParams.get('reviewStatus'); const keyword = url.searchParams.get('q') || url.searchParams.get('keyword');
-        const questions = (await tx.list('questions')).filter(item => !item.deleted && (!themeId || item.themeId === themeId) && (!levelId || item.levelId === levelId) && (!review || item.reviewStatus === review) && (!keyword || item.title.includes(keyword) || item.id.includes(keyword)));
+        const themeId = url.searchParams.get('themeId'); const levelId = url.searchParams.get('levelId'); const keyword = url.searchParams.get('q') || url.searchParams.get('keyword');
+        const questions = (await tx.list('questions')).filter(item => !item.deleted && (!themeId || item.themeId === themeId) && (!levelId || item.levelId === levelId) && (!keyword || item.title.includes(keyword) || item.id.includes(keyword)));
         return { data: { questions, total: questions.length } };
       }
       if (method === 'POST') { const question = normalizeQuestion(body, await levels(tx)); requireValue(!await tx.get('questions', question.id), 'DUPLICATE_ID', '题号已存在', 409); await tx.set('questions', question.id, question); await audit(tx, admin, 'question.create', question.id); return { status: 201, data: question }; }
     }
-    const questionMatch = /^\/api\/admin\/questions\/([^/]+)(?:\/(review))?$/.exec(pathname);
+    const questionMatch = /^\/api\/admin\/questions\/([^/]+)$/.exec(pathname);
     if (questionMatch) {
       const id = decodeURIComponent(questionMatch[1]); const current = await tx.get('questions', id); requireValue(current && !current.deleted, 'QUESTION_NOT_FOUND', '题目不存在', 404);
-      if (method === 'POST' && questionMatch[2]) {
-        requireValue(typeof body.approved === 'boolean' && typeof body.enabled === 'boolean', 'INVALID_REVIEW', '审核及启用状态须为布尔值');
-        requireValue(!body.enabled || body.approved, 'UNAPPROVED_CONTENT', '未经审核不能启用');
-        requireValue(!current.developmentOnly, 'DEVELOPMENT_CONTENT', '开发测试题不能转为正式内容');
-        current.approved = body.approved; current.enabled = body.enabled; current.reviewStatus = body.approved ? 'approved' : 'rejected'; current.reviewNote = String(body.note || '').slice(0, 2000); current.reviewedBy = admin.id; current.reviewedAt = now();
-        await tx.set('questions', id, current); await audit(tx, admin, 'question.review', id, { approved: current.approved, enabled: current.enabled, version: current.version }); return { data: current };
-      }
       if (method === 'GET') return { data: current };
-      if (method === 'PUT' && !questionMatch[2]) { const question = normalizeQuestion({ ...current, ...body, id }, await levels(tx), current); question.experienceAuthorized = false; await tx.set('questions', id, question); await audit(tx, admin, 'question.update', id, { version: question.version, reviewReset: true }); return { data: question }; }
-      if (method === 'DELETE' && !questionMatch[2]) { current.deleted = true; current.enabled = false; current.approved = false; current.experienceAuthorized = false; await tx.set('questions', id, current); await audit(tx, admin, 'question.delete', id); return { data: { deleted: true, id } }; }
+      if (method === 'PUT') { const question = normalizeQuestion({ ...current, ...body, id }, await levels(tx), current); await tx.set('questions', id, question); await audit(tx, admin, 'question.update', id, { version: question.version }); return { data: question }; }
+      if (method === 'DELETE') { current.deleted = true; current.enabled = false; await tx.set('questions', id, current); await audit(tx, admin, 'question.delete', id); return { data: { deleted: true, id } }; }
     }
     if (method === 'GET' && pathname === '/api/admin/audit') return { data: { entries: (await tx.list('audit')).sort((a, b) => b.at - a.at) } };
     if (method === 'GET' && pathname === '/api/admin/outbox') return { data: { entries: (await tx.list('outbox')).sort((a, b) => b.at - a.at), configured: Boolean(options.syncReceiver) } };

@@ -1,0 +1,23 @@
+Use case: precise-object-edit
+Asset type: transparent COMPLETED LEVEL pedestal sprite for a bright rounded cartoon cultural learning game.
+
+INPUT ROLES:
+Image 1, node-current-source.png, is the EDIT TARGET. It is the strict source for geometry, silhouette, material, perspective, composition, light and framing.
+Image 2, green-ribbon.png, is STYLE REFERENCE ONLY for the cheerful clean green cartoon illustration finish; never copy its ribbon, flowers, leaves, stars, lettering, decorations or background.
+
+EDIT ONLY THE GOLDEN TOP:
+Replace only the golden yellow oval standing surface and its golden inner rim with a clear, soft mint-leaf green palette. Use a bright friendly leafy mint green approximately #A1D991 for the top, a slightly deeper soft leaf green for its inner rim, and a light fresh mint highlight. This completed-node green should have moderate cheerful saturation, a little more saturated than an extremely pale future-stage node, while still gentle and soft.
+Keep the milk-white/ivory rounded outer rim and the pale warm milky-yellow/cream lower layer visually unchanged. Keep all original broad shading bands, soft upper-left lighting, smooth rounded cartoon finish, original opacity and tier boundaries. No changes to the pedestal design.
+
+STRICT GEOMETRY AND COMPOSITION LOCK:
+Match Image 1 exactly: same low wide oval exterior, same tier thicknesses, same outer contour, same upper ellipse dimensions and standing-surface location, same perspective and angle, same overall scale, same canvas proportions, same centered position and transparent margin distribution. Do not stretch, rotate, tilt, recenter, crop, add padding, enlarge or reshape the pedestal. The standing surface must stay fixed because a separately overlaid character places its feet there.
+Produce one landscape image at the same framing and approximately the same 1534 x 1025 dimensions as Image 1.
+
+ALPHA AND EDGES:
+True transparent background outside the pedestal. Make every interior colored subject pixel fully opaque, alpha 255. Only a very narrow antialiasing boundary may have partial alpha. No translucent subject, no semiopaque broad color regions. Clean smooth edge with no debris, stray pixels, pale outline fringe or dark matte. No external cast shadow.
+
+STYLE:
+Bright, clean, friendly rounded 2D cartoon game illustration matching Image 1 and the green reference ribbon's illustration language. Broad clean color areas, simple soft cartoon shading, no texture, no granularity, no realism.
+
+EXCLUSIONS:
+No text, number, person, character, feet, check mark, tick, symbol, icon, lock, badge, leaves, flowers, plants, ribbon, star, sparkles, props, scenery, island or ground. Completion check marks are added separately in the UI and must never appear in this bitmap. No gray stone, grain, grit, speckles, realistic ceramic or plastic product rendering, metal, reflections, glare, glossy 3D, heavy shadow or background.

@@ -1,0 +1,29 @@
+{
+  "backup": "/Users/huangnianpeng/Desktop/yx/demo-十题试玩前备份-20261007.zip",
+  "updatedFiles": [
+    "README.md",
+    "design/index.html",
+    "design/key-screens-v1.png",
+    "design/play.html",
+    "design/playtest/browser-home.png",
+    "design/playtest/browser-mobile-quiz.png",
+    "design/playtest/browser-quiz.png",
+    "design/playtest/browser-result.png",
+    "design/playtest/browser-revive.png",
+    "design/playtest/report.json",
+    "design/runtime-bundle.js",
+    "design/screen-home-v1.png",
+    "docs/architecture.md",
+    "docs/checks.md",
+    "docs/playtest.md",
+    "js/core/challenge.js",
+    "js/data/practice.js",
+    "js/main.js",
+    "js/ui/draw.js",
+    "js/ui/renderer.js",
+    "package.json",
+    "tests/challenge.test.cjs"
+  ],
+  "originalConfigsPreserved": true,
+  "formalProgressNotGranted": true
+}

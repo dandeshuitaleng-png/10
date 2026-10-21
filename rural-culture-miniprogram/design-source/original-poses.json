@@ -1,0 +1,57 @@
+{
+  "method": "Lossless PNG re-encoding; all RGBA pixels identical, including transparent pixels.",
+  "poses": [
+    {
+      "name": "spring",
+      "source": "assets/brand/reference/spring.png",
+      "runtime": "assets/brand/original-poses/spring.png",
+      "sourceBytes": 76517,
+      "runtimeBytes": 57858,
+      "sourceSha256": "eec536726c55108d03e2e8541e86268cf33174001ef030dde6289c4f32fa6405",
+      "runtimeSha256": "aeea691c61f452584f4fe9d9230caca256d2dca6461273dfbc14333981aa3571",
+      "rgbaSha256": "ca12421f10fccb024babe6b40d417ebb00765e0850323916b1c4bbd56a6dfbaf",
+      "rgbaPixelIdentical": true,
+      "width": 504,
+      "height": 796
+    },
+    {
+      "name": "autumn",
+      "source": "assets/brand/reference/autumn.png",
+      "runtime": "assets/brand/original-poses/autumn.png",
+      "sourceBytes": 76895,
+      "runtimeBytes": 56683,
+      "sourceSha256": "fb7371ec4b5849ef5cce123be57abe286e68a975abac03a21f44af2638e2bab3",
+      "runtimeSha256": "540520c2d9f5ba3e3b73c08215748cef7ee5e46eff3344906fa82f772bc61240",
+      "rgbaSha256": "dff4c070ba51b45d59c360280c95c0ab3e3339f6bb0ad0a57fdefd2ab1714bb5",
+      "rgbaPixelIdentical": true,
+      "width": 475,
+      "height": 796
+    },
+    {
+      "name": "winter",
+      "source": "assets/brand/reference/winter.png",
+      "runtime": "assets/brand/original-poses/winter.png",
+      "sourceBytes": 78770,
+      "runtimeBytes": 57554,
+      "sourceSha256": "3ade3af3fa5fa76658a81a6928fe754a2ae75d291ec1b9e1458f1994c67b28a9",
+      "runtimeSha256": "cd7f4f4818a50f71a8454d2f29c013ba3e9015aacedc40a13ccab33f2f4ec7fc",
+      "rgbaSha256": "94e4c36853ae5024946f2e48561110c0288cb3ff8abaab36003ce615255eca69",
+      "rgbaPixelIdentical": true,
+      "width": 486,
+      "height": 796
+    },
+    {
+      "name": "summer",
+      "source": "assets/brand/reference/summer.png",
+      "runtime": "assets/brand/original-poses/summer.png",
+      "sourceBytes": 68356,
+      "runtimeBytes": 52471,
+      "sourceSha256": "0db7163257f60a0010a3f215cf9fc15b0fb113ceb661dd8e4cf209bafd0b5e95",
+      "runtimeSha256": "6a03a8829c5b715bc39fe7eda987ca0bb28d4860ea23cf0431215bbc905c0571",
+      "rgbaSha256": "8f757f9b7be5f99cccca9c3e910b8090ebeb047a830036d95001e2c74b1c1248",
+      "rgbaPixelIdentical": true,
+      "width": 457,
+      "height": 796
+    }
+  ]
+}

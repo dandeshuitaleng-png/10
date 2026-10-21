@@ -1,0 +1,13 @@
+Use case: precise-object-edit.
+Asset type: final cultural-learning journey map background for an existing Chinese cultural quiz mini program.
+Input images: Image 1, culture.jpg, is the EDIT TARGET and authoritative composition. Image 2, ecology.jpg, is STYLE REFERENCE ONLY for friendly light 2D painterly finish and fresh soft green vegetation; do not copy its objects, horizon, mountains, river, or composition.
+
+Primary request: Edit only the color treatment of Image 1. Recolor the dominant golden-yellow earth into bright warm neutral parchment / tan / pale clay so this culture map clearly differs from a golden harvest map. Keep the target's composition EXACTLY as it is. This is a careful color-only final polish of one accepted asset, not a redesign.
+
+Color palette: broad ground midtone #D5BFA2, highlights #EADBC4, soft subtle shadows #B48E6D. Keep the overall result bright, fresh and readable, warm neutral rather than yellow-orange or sepia. The broad winding path must be distinct pale warm ivory #FFF0D6. Preserve its dashed centerline, with a quiet warm sand accent. Bamboo and foliage should be muted but lively natural green; preserve existing local object colors and identity.
+
+Composition and geometry invariants: Retain Image 1's exact portrait framing, top-down camera, all scene positions, object sizes, roadmap curve, path widths, path endpoints and every dashed centerline location. Preserve the large continuous vertical S-shaped route with all its left and right bends exactly aligned to the source. The path enters the top center and exits near the lower center exactly as in Image 1. Preserve the upper-right traditional building cropped by the frame, the left-middle bamboo, right-middle wooden bench, lower-left flower pot, all scattered grass tufts and stones, and the lower-right stack of books at the exact source locations. Do not move, redraw, resize, replace, add or remove any scene object. Do not introduce a horizon or scenery from Image 2.
+
+Style/medium: Match the source's friendly two-dimensional painterly children's map illustration, with soft simple volumes and gentle brush texture, clean smooth color fields, restrained object shading. No photorealism, no realistic 3D, no hard glossy rendering, no aged parchment stains, no heavy vintage grunge.
+
+Output: ONE portrait edited image, same aspect ratio as original 750x1280 (75:128), full bleed, opaque background. No UI, characters, labels, numbers, logos, watermark, text, stage markers or new objects. Preserve the original structure absolutely; change only the palette described above.

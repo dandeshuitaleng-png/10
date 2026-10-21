@@ -30,7 +30,7 @@ test('new dynamic theme and arbitrary stable level IDs play configured question 
  assert.equal(config.approval.status,'unapproved');
  for(const [index,levelId]of ['intro-learning','practice-learning'].entries()){
   const level=await h.call('POST','/api/admin/levels',{id:levelId,themeId:'new-theme',order:10+index*10,name:`自定义关${index+1}`,difficultyLabel:'原创练习',enabled:true,points:7+index,questionCount:3+index},h.admin);assert.equal(level.status,201);
-  for(let q=0;q<4;q++){const id=`CUSTOM-${index}-${q}`;const created=await h.call('POST','/api/admin/questions',{id,levelId,title:`原创测试${q}+1等于多少？`,options:[String(q+1),String(q+2),String(q+3),String(q+4)],answer:0,explanation:'按题目所给数字计算',difficulty:'基础'},h.admin);assert.equal(created.status,201);await h.call('POST',`/api/admin/questions/${id}/review`,{approved:true,enabled:true,note:'隔离测试内容审核'},h.admin);}
+  for(let q=0;q<4;q++){const id=`CUSTOM-${index}-${q}`;const created=await h.call('POST','/api/admin/questions',{id,levelId,title:`原创测试${q}+1等于多少？`,options:[String(q+1),String(q+2),String(q+3),String(q+4)],answer:0,explanation:'按题目所给数字计算',difficulty:'基础'},h.admin);assert.equal(created.status,201);await h.call('PUT',`/api/admin/questions/${id}`,{enabled:true},h.admin);}
  }
  const token=await h.player();let me=(await h.call('GET','/api/me',null,token)).data;assert.deepEqual(me.progress['new-theme'].levelIds,['intro-learning','practice-learning']);assert.equal(me.progress['new-theme'].total,2);assert.deepEqual(me.progress['new-theme'].nodes,['available','locked']);
  const first=await h.through(token,'intro-learning');assert.equal(first.total,3);assert.equal(first.levelName,'自定义关1');assert.equal(first.themeName,'新主题');assert.equal(first.nextLevelId,'practice-learning');assert.equal(first.result.points,7);assert.equal(first.result.themeComplete,false);
@@ -96,7 +96,7 @@ test('fifth level works without ID suffix parsing; dynamic pool checks, soft del
  const h=await harness(t);const added=await h.call('POST','/api/admin/levels',{id:'red-extra',themeId:'red',order:5,name:'第五关',difficultyLabel:'综合延展',enabled:true,points:33,questionCount:1},h.admin);assert.equal(added.status,201);
  const token=await h.player();for(let i=1;i<=4;i++)await h.through(token,`red-${i}`);
  const noPool=await h.call('POST','/api/challenges',{levelId:'red-extra',requestId:requestId()},token);assert.equal(noPool.error.code,'INSUFFICIENT_QUESTIONS');
- const create=await h.call('POST','/api/admin/questions',{id:'EXTRA-QUESTION',levelId:'red-extra',title:'一次新增关卡需要先完成什么？',options:['配置并审核有效题目','修改玩家积分','跳过所有题目','绕过验证'],answer:0,explanation:'配置有效题库后才能开始',difficulty:'综合'},h.admin);assert.equal(create.status,201);await h.call('POST','/api/admin/questions/EXTRA-QUESTION/review',{approved:true,enabled:true},h.admin);
+ const create=await h.call('POST','/api/admin/questions',{id:'EXTRA-QUESTION',levelId:'red-extra',title:'一次新增关卡需要先完成什么？',options:['配置有效题目','修改玩家积分','跳过所有题目','绕过验证'],answer:0,explanation:'配置有效题库后才能开始',difficulty:'综合'},h.admin);assert.equal(create.status,201);await h.call('PUT','/api/admin/questions/EXTRA-QUESTION',{enabled:true},h.admin);
  const complete=await h.through(token,'red-extra');assert.equal(complete.total,1);assert.equal(complete.result.points,33);assert.equal(complete.themeComplete,true);
  const certs=(await h.call('GET','/api/certificates',null,token)).data.certificates;assert.equal(certs.find(c=>c.themeId==='red').levelIds.length,5);
  assert.equal((await h.call('DELETE','/api/admin/levels/red-extra',{},h.admin)).status,200);assert.ok(await h.app.store.get('questions','EXTRA-QUESTION'));
@@ -107,14 +107,14 @@ test('activity import validates atomically, exports dynamic configuration and ca
  const h=await harness(t);const exported=(await h.call('GET','/api/admin/activity/export',null,h.admin)).data;assert.equal(exported.schemaVersion,'activity-2');assert.ok(!('questions' in exported));exported.questions=(await h.call('GET','/api/admin/questions/export',null,h.admin)).data.questions;assert.equal(exported.questions.length,240);
  const before=(await h.app.store.get('meta','config')).version;
  const bad={config:{...exported.config,points:{...exported.config.points,dailyPointCap:20}},levels:exported.levels,questions:[{...exported.questions[0],options:['invalid']}]};assert.equal((await h.call('POST','/api/admin/activity/import',bad,h.admin)).status,400);assert.equal((await h.app.store.get('meta','config')).version,before);
- const approved=await h.call('POST',`/api/admin/questions/${exported.questions[0].id}/review`,{approved:true,enabled:true},h.admin);assert.equal(approved.status,200);
- const good=await h.call('POST','/api/admin/activity/import',{config:{...exported.config,points:{...exported.config.points,dailyPointCap:20},approval:{status:'approved'}},levels:exported.levels,questions:[{...exported.questions[0],approved:true,enabled:true}]},h.admin);assert.equal(good.status,200);assert.equal(good.data.config.approval.status,'unapproved');const q=await h.app.store.get('questions',exported.questions[0].id);assert.equal(q.approved,false);assert.equal(q.enabled,false);assert.equal(q.experienceAuthorized,false);
+ const approved=await h.call('PUT',`/api/admin/questions/${exported.questions[0].id}`,{enabled:true},h.admin);assert.equal(approved.status,200);
+ const good=await h.call('POST','/api/admin/activity/import',{config:{...exported.config,points:{...exported.config.points,dailyPointCap:20},approval:{status:'approved'}},levels:exported.levels,questions:[{...exported.questions[0],approved:true,enabled:true}]},h.admin);assert.equal(good.status,200);assert.equal(good.data.config.approval.status,'unapproved');const q=await h.app.store.get('questions',exported.questions[0].id);assert.equal(q.approved,undefined);assert.equal(q.enabled,true);assert.equal(q.experienceAuthorized,undefined);
  const pool=await h.call('PUT','/api/admin/levels/red-1',{questionCount:30},h.admin);assert.equal(pool.status,200);const token=await h.player();assert.equal((await h.call('POST','/api/challenges',{levelId:'red-1',requestId:requestId()},token)).error.code,'INSUFFICIENT_QUESTIONS');
 });
 
 test('production refuses unapproved dynamic rewards or cap, and never returns the experience request cache',async t=>{
  const h=await harness(t,{mode:'production',platformVerifier:async()=>({id:'dynamic-platform-id',name:'正式隔离测试'}),shareVerifier:async()=>true,syncReceiver:async()=>true});const token=(await h.call('POST','/api/auth/platform',{ticket:'test-platform-ticket'})).data.token;
- for(const question of(await h.call('GET','/api/admin/questions?levelId=red-1',null,h.admin)).data.questions)await h.call('POST',`/api/admin/questions/${question.id}/review`,{approved:true,enabled:true},h.admin);
+ for(const question of(await h.call('GET','/api/admin/questions?levelId=red-1',null,h.admin)).data.questions)await h.call('PUT',`/api/admin/questions/${question.id}`,{enabled:true},h.admin);
  const approved=await h.begin(token,'red-1');await h.call('POST',`/api/challenges/${approved.id}/exit`,{requestId:requestId()},token);await h.cfg({points:{dailyPointCap:20}});
  const resumed=await h.begin(token,'red-1');assert.equal(resumed.id,approved.id);assert.equal(resumed.rulesVersion,approved.rulesVersion);
  const fresh=await h.call('POST','/api/challenges',{levelId:'culture-1',requestId:requestId()},token);assert.equal(fresh.error.code,'PRODUCTION_NOT_READY');
@@ -132,7 +132,7 @@ test('legacy transaction migration preserves exact identity, earned ledger and c
 });
 
 
-test('activity config roundtrip preserves every question review and experience flag, and cannot restore revoked rule approval',async t=>{
+test('activity config roundtrip preserves every question and enabled flag, and cannot restore revoked rule approval',async t=>{
  const h=await harness(t);const exportOne=(await h.call('GET','/api/admin/activity/export',null,h.admin)).data;const before=await h.app.store.list('questions');
  const restored=await h.call('POST','/api/admin/activity/import',exportOne,h.admin);assert.equal(restored.status,200);assert.equal(restored.data.config.approval.status,'user-approved');assert.deepEqual(await h.app.store.list('questions'),before);
  await h.cfg({revive:{limit:2}});const exportTwo=(await h.call('GET','/api/admin/activity/export',null,h.admin)).data;exportTwo.config.approval={status:'user-approved',approvedAt:'forged'};

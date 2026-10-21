@@ -1,0 +1,61 @@
+{
+  "prompts": {
+    "headers": [
+      {
+        "key": "culture",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155350_395.png",
+        "prompt": "Use case: ui-mockup. Generate ONE TRANSPARENT game UI HEADER asset for an independent Chinese cultural quiz game. The attached screenshot is the exact style reference, not an edit target. Recreate the premium warm-gold 2.5D parchment scroll header visual language at its top center: curved cream parchment, peach-gold rolled vertical ends, thin golden edge and subtle red-gold edging, soft convincing thickness and small warm shadow, restrained golden cloud flourishes immediately behind. Wide horizontal composition about 3:1, all parts fully inside frame, centered. Central title surface must be completely blank and clear, no text, no logos, no symbols resembling letters. Keep the bright cream-gold luminous polished material from the screenshot; absolutely no rough pen outlines, no muted olive palette, no flat hand-drawn book banner. Do not draw any white content cards, buttons, full screen, portal webpage or sample illustrations. Only the scroll and small flowing gold cloud ornament isolated on genuine transparent alpha. This is a UI asset to place behind editable title text."
+      },
+      {
+        "key": "red",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155357_673.png",
+        "prompt": "Use case: ui-mockup. Generate ONE transparent UI HEADER decoration for a Chinese red-culture quiz game. Attached screenshot is exact visual styling reference, not an edit target. Match its top-center orange-red curved ribbon plaque: glossy orange upper face fading vivid red-orange bottom, subtle ivory edge, softly folded raised tips, convincing shallow 2.5D extrusion and soft drop shadow, a pair of tiny golden wheat sprigs around it and a very small polished harvest spiral ornament. Wide approximately 3:1 composition, central 65% blank clean orange face reserved for editable white Chinese title, no text at all. Use bright orange #FF6B00 to red-orange #FF3B0A as in screenshot, with warm gold and white. Do not turn this into brown or dusty cinnabar, no ink outlines, no cottage/landscape. Render only the ribbon and its restrained surrounding wheat/harvest decoration on genuine transparent alpha; all edges inside canvas. Not a complete UI screenshot, no content cards or buttons."
+      },
+      {
+        "key": "industry",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155353_804.png",
+        "prompt": "Use case: ui-mockup. Generate ONE transparent game UI HEADER asset matching the green folded ribbon at the top center of the provided screenshot. Exact style reference: bright spring green folded ribbon, lime green center facing viewer, dark leaf-green folded tails with soft dimensional shadows, subtle smooth bevels, a small pink flower and leaves emerging from upper left, two tiny white star-shaped accents near sides. Wide about 3:1 composition, leave middle 65% ribbon blank for an editable white Chinese title, NO text or logos. Bright #5CD62B and #7DDD38, clean polished 2.5D casual mobile farm-game art; no washed-out sage, no rough ink outlines, no cream parchment scroll. Only this completed ribbon, flower, leaves and little stars isolated on genuine transparent alpha. No panel, no webpage, no buttons or landscape, no huge flowers, all elements within image."
+      },
+      {
+        "key": "ecology",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155344_845.png",
+        "prompt": "Use case: stylized-concept. Generate ONE transparent pop-game UI ornament matching the top-right decoration in the attached sky-blue reference screenshot. Subject: a glossy 3D yellow round happy face with expressive brows and bright open mouth, raising a thumbs-up hand, accompanied by ONE glossy pink heart and two small yellow glints, with thick clean white sticker rim. Keep the same modern polished emoji material, warm yellow, clear highlights, clean round forms, playful confident expression. Compact landscape roughly 4:3 composition, all objects entirely inside frame, transparent alpha around them. No text including WOW, no blue banner or panel, no UI cards/buttons, no background, no brush textures, no flat ink drawing. This ornament will overlap the top-right edge of a blue quiz panel, so the bottom-left can be a simple curved silhouette; maintain generous clean transparent margin."
+      }
+    ],
+    "scenes": [
+      {
+        "key": "culture",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155350_395.png",
+        "prompt": "Use case: illustration-story. Generate a standalone 16:9 landscape image for the homepage of a premium Chinese culture quiz game named 千年文脉. The attached screenshot is the exact UI art direction reference: match the rich, polished illustrated environment of its featured story card and warm luminous amber-gold palette, not its webpage layout. Scene: an elegant Hunan academy courtyard inspired by Yuelu Academy, recognizable traditional Chinese academy gateway, dark grey tiled roof, orange and red timber details, stone steps, open book and wooden reading desk subtly in foreground; leafy camphor trees, hills receding beyond. Foreground, middle ground and background with coherent lighting. Rich 2D painted casual-game environment art with dimensional shading and precise clean architectural shapes, warm golden late afternoon, clear cream/amber/green balance, refined vivid colors. Avoid photoreal texture, over-detail, noisy leaf scribbles, gritty hand-ink outlines, flat vector shapes or faded sage palette. No people needed. No text, Chinese characters, logos, UI, frames, title banners, buttons or reward objects. Full landscape scene, excellent clarity when displayed 335x180px. This is an illustration asset, not a UI screenshot."
+      },
+      {
+        "key": "red",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155357_673.png",
+        "prompt": "Use case: illustration-story. Generate one standalone 16:9 landscape scene for a Hunan village red-history knowledge quiz. Use the attached screenshot as style reference for bright polished commercial casual-game illustrations, warm inviting peach/orange sunlight and clear layered environments. Depict a dignified southern Chinese village memory site: whitewashed brick buildings with dark tile roofs around a clean stone courtyard, a modest red flag beside a small village reading exhibition room, distant green Hunan hills and neat paddy fields; in foreground a tasteful open illustrated book on a low wooden bench, a few warm flower beds. No monumental propaganda sculpture or large crowd, no readable signage or text. Premium clean 2D environment illustration with slight 2.5D rounded volume and restrained shading, bright warm red-orange accents and green trees, natural cream architecture, clean sunlit sky. Not photoreal, not old ink wash, no rough pen outlines, no desaturated brown image, no toy mascot. No UI, banner, buttons, coins, treasure, logos, watermarks or letters. Balanced foreground/middle/far depth; everything important readable at 335x180px."
+      },
+      {
+        "key": "industry",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155353_804.png",
+        "prompt": "Use case: stylized-concept. Generate one 16:9 polished mobile farm-game environment illustration that closely follows the cheerful small '我的农场' thumbnails in the attached reference screenshot: bright clean green/yellow, well-defined 2D shapes with smooth soft volume, slightly elevated view, premium commercial casual farm art. Hunan landscape: a winding path beside golden rice terraces, lush bright green tea rows on a hill, a small white and timber rural granary/processing house with dark tiled roof, a neat bamboo basket of tea leaves and red peppers in foreground, forested hills and a small blue stream behind. Sunny clear light, unified shading, crisp readable objects, no rough black pen outlines, no pastel sage, no painted watercolor wash, no realistic lens textures. Full cohesive scene with foreground crops, central building and layered distant hills. No people or characters. No text, signs, logos, numbers, game nodes, buttons, coin/reward objects or interface frame. Wide composition readable when displayed 335x180px."
+      },
+      {
+        "key": "ecology",
+        "ref": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155344_845.png",
+        "prompt": "Use case: stylized-concept. Generate one standalone 16:9 landscape illustration for an independent Chinese countryside ecology quiz game. Match the fresh sky blue/aqua, polished modern casual-game language in the attached reference screenshot and its colorful farm thumbnails. Scene: a clear turquoise river curving past green Hunan hills, karst-like soft peaks and a tidy white rural village with dark grey roofs, wooden river footbridge, water plants and a white egret in foreground, airy blue sky with simple soft clouds. Premium clean 2D scenery with slight dimensional softness, bright blue/cyan water and clear fresh green vegetation, sunlit coherent shading, layered foreground/middle/distance. Avoid photorealism, muddy watercolor, rough hand-ink strokes, desaturated colors, heavy elaborate Chinese ornament. No emoji in this scene because separate UI ornament already exists; no characters, no text, no signage, no logo, no interface, no buttons or decorative borders. Wide landscape with main village and river center, readable at335x180px."
+      }
+    ],
+    "mode": "built-in image_gen; reference-guided generation",
+    "status": "候选美术，已接入本地原型，已完成浏览器画面检查，待用户美术评审；Figma尚未同步",
+    "date": "2026-10-15"
+  },
+  "files": {
+    "header-culture": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-0b1accb1-bac7-4916-8278-767ceec5abbf.png",
+    "header-red": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-f278b925-7009-4258-b36c-dcf0a1c68361.png",
+    "header-industry": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-d0c261b7-7584-4824-9ead-17d4ff9f5abe.png",
+    "header-ecology": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-bd144503-062e-44cf-a9dc-ca8977ed7b36.png",
+    "scene-culture": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-74305901-e06c-40d4-afe7-036697f4d3b2.png",
+    "scene-red": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-56875e53-dcfd-4897-b769-af13561c4c2e.png",
+    "scene-industry": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-3d04fb1d-7ed1-46a2-959e-32b86e5a05c7.png",
+    "scene-ecology": "/Users/huangnianpeng/.codex/generated_images/01a13577-9ced-7dd3-b8af-36be960c889d/exec-a861789c-9794-473e-b995-8263d517c865.png"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "十步芳草": [
+    "miniprogram/services-v4/press-feedback.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/interaction-20261021.wxss",
+    "miniprogram/components/game-button/index.wxml",
+    "miniprogram/components/game-button/index.js",
+    "miniprogram/components/game-button/index.wxss"
+  ],
+  "千年文脉": [
+    "miniprogram/services-v4/press-feedback.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/interaction-20261021.wxss",
+    "miniprogram/components/game-button/index.wxml",
+    "miniprogram/components/game-button/index.js",
+    "miniprogram/components/game-button/index.wxss"
+  ],
+  "金色产业": [
+    "miniprogram/services-v4/press-feedback.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/interaction-20261021.wxss",
+    "miniprogram/components/game-button/index.wxml",
+    "miniprogram/components/game-button/index.js",
+    "miniprogram/components/game-button/index.wxss"
+  ],
+  "青山绿水": [
+    "miniprogram/services-v4/press-feedback.js",
+    "miniprogram/pages/game/index.wxml",
+    "miniprogram/pages/game/index.js",
+    "miniprogram/pages/game/index.wxss",
+    "miniprogram/pages/game/interaction-20261021.wxss",
+    "miniprogram/components/game-button/index.wxml",
+    "miniprogram/components/game-button/index.js",
+    "miniprogram/components/game-button/index.wxss"
+  ]
+}

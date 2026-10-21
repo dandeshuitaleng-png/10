@@ -1,2 +1,0 @@
-const ui=require('../../utils/page');
-Page({data:{loading:true,error:'',result:null},onLoad(p){this.sessionId=p.sessionId;},onShow(){this.refresh();},refresh(){return ui.load(this,async()=>{this.setData({result:await ui.api.getResult({sessionId:this.sessionId})});});},next(){wx.redirectTo({url:'/pages/quiz/index?chapterId='+this.data.result.nextChapterId});},theme(){wx.redirectTo({url:'/pages/chapters/index?themeId='+this.data.result.themeId});},certificate(){ui.go('/pages/certificate/index?themeId='+this.data.result.themeId);},onShareAppMessage:ui.share});

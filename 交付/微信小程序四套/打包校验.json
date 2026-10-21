@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-10-18T09:59:40.250210+00:00",
+  "scope": "原生微信小程序联网客户端交付；须配合统一后端，不包含数据库、账号凭据或运行存档。",
+  "packages": [
+    {
+      "name": "千年文脉",
+      "file": "千年文脉-微信原生项目.zip",
+      "bytes": 771124,
+      "sha256": "2206445f75af5f2ca6bd07d63014d1a74843776c602feaf67595067c67fd4f24",
+      "sourceFileCount": 75,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "十步芳草",
+      "file": "十步芳草-微信原生项目.zip",
+      "bytes": 746184,
+      "sha256": "1480bc6bb7957b1d33ae143956d545e4f017012ffe20af5687e9c3a6d4ee7201",
+      "sourceFileCount": 75,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "金色产业",
+      "file": "金色产业-微信原生项目.zip",
+      "bytes": 798299,
+      "sha256": "f027fc147149266341b6c8e51faa2964389567f58a47662075035b37883274de",
+      "sourceFileCount": 75,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "青山绿水",
+      "file": "青山绿水-微信原生项目.zip",
+      "bytes": 721979,
+      "sha256": "cfb373d268053380a2cc8460da670ae21febb8e2455957ce5855e4d5d86a5737",
+      "sourceFileCount": 75,
+      "matchesCurrentSource": true
+    }
+  ],
+  "platformEntry": {
+    "file": "平台总入口-微信原生项目.zip",
+    "bytes": 5407642,
+    "sha256": "7f8d7575651f2d581e1d0a73840913cddd969c336b502f12d215d9ad7266dbce",
+    "scope": "已集成四主题原生页的总入口；进度从共同后端读取。",
+    "sourceFileCount": 75,
+    "matchesCurrentSource": true
+  },
+  "combined": {
+    "file": "四套微信原生项目-完整交付.zip",
+    "bytes": 219251699,
+    "sha256": "3b951ea5d46d99116b5851277b6e783b7efb6be8954cf2fba3db949c23532bea",
+    "matchesCurrentSource": true,
+    "reviewEntry": "共享开发工具与验收/preview/评审入口.html"
+  }
+}

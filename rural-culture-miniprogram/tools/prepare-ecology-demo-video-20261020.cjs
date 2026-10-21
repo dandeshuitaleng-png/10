@@ -1,0 +1,12 @@
+'use strict';
+// Disposable recording project. Production code, account and progress are untouched.
+const fs=require('fs'),path=require('path');
+const project=path.resolve(__dirname,'..'),workspace=path.dirname(project),out=path.join(workspace,'.rural-quiz-runtime/ecology-demo-video');fs.mkdirSync(out,{recursive:true});fs.cpSync(path.join(project,'miniprogram'),path.join(out,'miniprogram'),{recursive:true});
+const skins=structuredClone(require('../miniprogram/services-v4/skins'));for(const skin of Object.values(skins)){skin.mode='mock';skin.reviewEnabled=true;skin.allowThemeSwitch=false;delete skin.connection;}
+const bank=JSON.parse(fs.readFileSync(path.join(workspace,'demo/design/content-intake/current/bank.json'))),themes=[{id:'ecology',name:'青山绿水',enabled:true,certificateName:'绿水青山守护者'}];
+const levels=Array.from({length:4},(_,i)=>({id:'ecology-'+(i+1),themeId:'ecology',order:i+1,label:'第'+(i+1)+'关',name:['基础认知','进阶理解','深度应用','综合挑战'][i],enabled:true,questionCount:10,points:[10,15,20,30][i]}));
+const questions=levels.flatMap(l=>bank.questions.filter(q=>q.levelId===l.id).slice(0,10).map(q=>({...q,enabled:true})));const catalog={timerSeconds:30,reviveLimit:1,questionApproval:'Recording fixture: repository example bank; not production content approval',themes,levels,questions};
+for(const [name,value] of Object.entries({'game-config.js':skins.ecology,'services-v4/skins.js':skins,'services-v4/catalog.js':catalog}))fs.writeFileSync(path.join(out,'miniprogram',name),'module.exports='+JSON.stringify(value,null,2)+';\n');
+const presentation=path.join(out,'miniprogram/services-v4/presentation.js');fs.writeFileSync(presentation,fs.readFileSync(presentation,'utf8').replace("nickname:'乡村阅读者'","nickname:'乡村阅读者'").replace("badge:'体验用户'","badge:'演示账号'"));
+const config=JSON.parse(fs.readFileSync(path.join(project,'project.config.json')));config.projectname='ecology-demo-video';config.description='青山绿水演示录制，独立离线数据，不写入真实账号';config.packOptions.ignore=config.packOptions.ignore.filter(x=>!['assets/ecology','assets/industry','assets/red'].includes(x.value));fs.writeFileSync(path.join(out,'project.config.json'),JSON.stringify(config,null,2)+'\n');
+fs.writeFileSync(path.join(out,'README.md'),'Isolated native video recording project. Ten questions per chapter, real countdown, demo-only progress, no backend connection. Do not ship as production.\n');console.log(JSON.stringify({project:out,questions:questions.length,questionCountPerChapter:10}));

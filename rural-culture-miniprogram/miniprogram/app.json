@@ -1,21 +1,15 @@
 {
   "pages": [
-    "pages/home/index",
-    "pages/themes/index",
-    "pages/chapters/index",
-    "pages/quiz/index",
-    "pages/result/index",
-    "pages/certificate/index",
-    "pages/ranking/index",
-    "pages/progress/index"
+    "pages/game/index"
   ],
   "window": {
-    "navigationBarTitleText": "趣味闯关",
-    "navigationBarBackgroundColor": "#F7F3E9",
-    "navigationBarTextStyle": "black",
-    "backgroundColor": "#F7F3E9"
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#504B3A",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
   },
-  "sitemapLocation": "sitemap.json",
   "style": "v2",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
 }

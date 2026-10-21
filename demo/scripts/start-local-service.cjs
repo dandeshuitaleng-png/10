@@ -13,7 +13,7 @@ async function healthy() {
   } catch { return false; }
 }
 async function main() {
-  if (await healthy()) { console.log('本机体验服务已在运行：http://127.0.0.1:63112/web/play.html'); return; }
+  if (await healthy()) { console.log('本机体验服务已在运行：http://127.0.0.1:63112/play'); return; }
   const runtime = path.resolve(root, '../.rural-quiz-runtime');
   fs.mkdirSync(runtime, { recursive: true, mode: 0o700 });
   const logPath = path.join(runtime, 'service.log');
@@ -27,7 +27,7 @@ async function main() {
   await new Promise((resolve, reject) => { child.once('spawn', resolve); child.once('error', reject); });
   child.unref();
   for (let i = 0; i < 10; i++) {
-    if (await healthy()) { console.log('本机体验服务已在后台运行：http://127.0.0.1:63112/web/play.html'); return; }
+    if (await healthy()) { console.log('本机体验服务已在后台运行：http://127.0.0.1:63112/play'); return; }
     await new Promise(resolve => setTimeout(resolve, 500));
   }
   throw new Error('服务尚未就绪，请检查本机端口占用及私有运行目录中的service.log；不要清除存档。');

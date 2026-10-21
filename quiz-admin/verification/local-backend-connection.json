@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-18T06:57:42.100201+00:00",
+  "backend": "http://127.0.0.1:63112",
+  "checks": [
+    {
+      "operation": "admin login",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "operation": "GET /api/health",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "operation": "GET /api/catalog",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "operation": "GET /api/admin/config",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "operation": "GET /api/admin/levels",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "operation": "GET /api/admin/questions",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "operation": "GET /api/admin/state",
+      "status": 404,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "themes": 4,
+    "levels": 16,
+    "questions": 240,
+    "publicThemes": 4,
+    "publicLevels": 16,
+    "mode": "experience",
+    "storage": "sqlite",
+    "approvalPending": true
+  },
+  "adminAuthenticatedReadsPassed": true,
+  "adminStateEndpointExists": false,
+  "clientStatus": {
+    "quizAdmin": "localStorage adapter by default; existing HTTP adapter expects /api/admin/state and proxy port 8080; current service exposes separate config/levels/questions endpoints at 63112",
+    "nativeMiniprogram": "mode mock; no remote adapter configured"
+  },
+  "writes": "Created a temporary administrator session for the connection test; no content, rules, player progress or points changed.",
+  "testSessionRevoked": true
+}

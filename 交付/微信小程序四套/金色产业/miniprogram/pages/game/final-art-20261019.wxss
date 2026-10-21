@@ -1,0 +1,42 @@
+/* Final art: warm matte material, readable paper, restrained emphasis. */
+.game-device.feedback-20261019.skin-culture{--ink:#583D2B;--accent:#8B5E3C;--pale:#F4EBDD;--muted:#7B654F;--edge:#DFCEB5;--panel-edge:#C4A17F;--route-paper:#F4EBDD;--route-ink:#583D2B;--theme-fill:#E1C5A3;--button-top:#9B653F;--button-bottom:#89532F;--panel:linear-gradient(150deg,#FFFBF1,#F4EBDD);--ribbon-shadow:#835B3426;background:#F4EBDD;color:#583D2B}
+.game-device.feedback-20261019.skin-red{--ink:#6A3023;--accent:#B5462B;--pale:#FFF2E9;--muted:#8E5D49;--edge:#EFCDB8;--panel-edge:#D8A080;--route-paper:#FFF2E9;--route-ink:#6A3023;--theme-fill:#F3B691;--button-top:#C24F30;--button-bottom:#AD3D28;--panel:linear-gradient(150deg,#FFFBF1,#FFF2E9);--ribbon-shadow:#B6533026;background:#FFF2E9;color:#6A3023}
+.game-device.feedback-20261019.skin-industry{--ink:#634715;--accent:#966C1B;--pale:#FFF8E3;--muted:#806B3B;--edge:#E7D7A5;--panel-edge:#C8A45D;--route-paper:#FFF8E3;--route-ink:#634715;--theme-fill:#F1D687;--button-top:#F2CB62;--button-bottom:#DFAE3A;--panel:linear-gradient(150deg,#FFFDF2,#FFF8E3);--ribbon-shadow:#9D792426;background:#FFF8E3;color:#634715}
+.game-device.feedback-20261019.skin-ecology{--ink:#2E542B;--accent:#497B36;--pale:#F3F9EC;--muted:#61734A;--edge:#D1DEBC;--panel-edge:#AAC38C;--route-paper:#F3F9EC;--route-ink:#2E542B;--theme-fill:#D8E9BB;--button-top:#C8E99B;--button-bottom:#9BCF79;--panel:linear-gradient(150deg,#FEFCF0,#F3F9EC);--ribbon-shadow:#60814324;background:#F3F9EC;color:#2E542B}
+.game-device.feedback-20261019.activity-page.home-layout .activity-links>button.activity-shortcut{font-weight:500}
+.game-device.feedback-20261019.activity-page.home-layout .shortcut-mark{background:#fffdf5c9;box-shadow:none}
+.game-device.feedback-20261019.activity-page.home-layout button.route-caption{background:#fffcf2f5;border:1px solid #eee1c9;box-shadow:0 2px 5px #69543212;border-radius:13px;padding:6px 10px}
+.game-device.feedback-20261019.activity-page.home-layout .route-stop.is-reached button.route-caption{background:#fffdf6;border:1px solid var(--panel-edge);box-shadow:0 2px 5px #69543218;color:var(--ink)}
+.game-device.feedback-20261019.activity-page.home-layout .route-stop.completed button.route-caption{background:#fffdf0ed;border-color:#c6cea8;box-shadow:0 2px 4px #69543210;color:var(--ink)}
+.game-device.feedback-20261019.activity-page.home-layout .route-stop.locked button.route-caption{background:#fff9e9e8;border-color:#f2e5ce;box-shadow:none;color:#757263}
+.game-device.feedback-20261019.activity-page.home-layout .route-caption-label{font-size:11px;line-height:15px;color:var(--muted)}
+.game-device.feedback-20261019.activity-page.home-layout .route-caption-name{font-size:18px;line-height:24px;font-weight:700;text-shadow:none}
+.game-device.feedback-20261019.activity-page.home-layout .current .route-caption-name{font-size:19px;line-height:25px}
+.game-device.feedback-20261019.activity-page.home-layout .route-caption-state{font-size:13px;line-height:18px;margin-top:1px;font-weight:500;color:var(--muted)}
+.game-device.feedback-20261019.activity-page.home-layout .route-caption-reward{font-size:11px;line-height:15px;margin-top:2px;color:var(--muted);background:transparent;border:0;box-shadow:none;padding:0}
+.game-device.feedback-20261019.activity-page.home-layout .route-stop.locked .route-base{opacity:.8}
+.game-device.feedback-20261019.activity-page.home-layout .route-number{top:calc(var(--home-node-w) * .55);font-size:17px;line-height:20px;font-weight:800;color:#68583c;text-shadow:0 1px #fff8}
+.game-device.feedback-20261019.activity-page.home-layout .route-halo{border:2px solid #fff7d6;box-shadow:0 0 0 4px #f8e4aa65;opacity:.9}
+.game-device.feedback-20261019.activity-page.home-layout .route-stop.today-locked .route-halo{opacity:.72}
+.game-device.feedback-20261019.activity-page.home-layout .route-node-badge{border-color:#fffaf0;background:var(--paper,#fffdf6);box-shadow:0 1px 3px #66543720,inset 0 0 0 1px var(--edge)}
+.game-device.feedback-20261019.activity-page.home-layout .route-node-badge.done{background:#6c8a49}
+/* Native UI shadow keeps the original character pixels intact. */
+.game-device.feedback-20261019.activity-page.home-layout button.chapter-mascot::before{content:"";position:absolute;left:29%;right:29%;bottom:0;height:2px;border-radius:50%;box-shadow:0 1px 2px 1px #5f573b26;pointer-events:none}
+.game-device.feedback-20261019.activity-page.home-layout .chapter-mascot mascot-actor{position:relative;z-index:1}
+.game-device.feedback-20261019 .theme-panel{border-width:1px;box-shadow:0 4px 14px #65522e0b,inset 0 1px #fff9}
+.game-device.feedback-20261019.activity-page.home-layout .theme-panel{border:0;box-shadow:none}
+.game-device.feedback-20261019 .white-card{background:#fffdf6;border:1px solid var(--edge);box-shadow:0 2px 5px #6754340d}
+.game-device.feedback-20261019 .theme-modal{border:1px solid var(--panel-edge);box-shadow:0 12px 30px #34332430;background:var(--panel);border-radius:22px}
+.game-device.feedback-20261019 .theme-modal .chapter-welcome{border:0;box-shadow:none;background:transparent;padding:6px 2px 14px}
+.game-device.feedback-20261019 .theme-modal .rule-grid{gap:0;border:1px solid var(--edge);border-radius:12px;background:#ffffff70;overflow:hidden}
+.game-device.feedback-20261019 .theme-modal .rule-grid .rule-cell{border:0;border-right:1px solid var(--edge);border-radius:0;box-shadow:none;background:transparent;padding:12px 4px;color:var(--ink)}
+.game-device.feedback-20261019 .theme-modal .rule-grid .rule-cell:last-child{border-right:0}
+.game-device.feedback-20261019 .theme-modal .rule-grid .b{font-size:25px;line-height:32px;color:var(--ink)}
+.game-device.feedback-20261019 .theme-modal .p{font-size:14px;line-height:24px}
+.game-device.feedback-20261019 .theme-modal .modal-lead{font-size:17px!important}
+.game-device.feedback-20261019 .quest-banner{background:linear-gradient(115deg,#fffdf6,var(--pale));box-shadow:none}
+.game-device.feedback-20261019 .option{border-color:var(--edge);background:#fffdf7;box-shadow:0 1px 3px #6754340b}
+.game-device.feedback-20261019 .option.selected{background:var(--pale);border-color:var(--accent);box-shadow:0 0 0 1px var(--panel-edge)}
+.game-device.feedback-20261019 .option.correct{background:#edf5e5;border-color:#769a5d;color:#35572c;box-shadow:none}
+.game-device.feedback-20261019 .profile-badge,.game-device.feedback-20261019 .question-tag{color:var(--ink);border-color:var(--edge)}
+@media(max-width:350px){.game-device.feedback-20261019.activity-page.home-layout .route-caption-reward{font-size:10px;line-height:14px}.game-device.feedback-20261019.activity-page.home-layout .today-locked .route-caption-state{font-size:12px}}

@@ -1,5 +1,6 @@
 const App = require('./main');
-const {OnlineRenderer} = require('./ui/online-renderer');
+const {HandRenderer, HAND_ART} = require('./ui/hand-renderer');
+const {Resources} = require('./services/resources');
 const {catalogTheme, catalogThemes, catalogLevel, catalogLevels} = require('./data/catalog');
 const {HttpClient} = require('./services/http-client');
 
@@ -18,7 +19,8 @@ function nextLevelId(challenge, catalog) {
 }
 class OnlineApp extends App {
   constructor(platform, {client = new HttpClient(), authenticate, share, download, shareCertificate, reducedMotion = false} = {}) {
-    super(platform); this.renderer = new OnlineRenderer(this.ctx); this.client = client;
+    super(platform); this.renderer = new HandRenderer(this.ctx); this.client = client;
+    this.resources = new Resources(platform, {extraArt: HAND_ART});
     this.authenticate = authenticate; this.shareAction = share; this.download = download; this.shareCertificate=shareCertificate;
     this.reducedMotion = reducedMotion; this.online = null; this.me = null; this.rankingPeriod = 'day';
     try { const preference=platform.api.getStorageSync('quiz:accessibility:v1');if(preference&&typeof preference.reducedMotion==='boolean')this.reducedMotion=preference.reducedMotion; } catch (_) {}
@@ -146,6 +148,7 @@ class OnlineApp extends App {
         this.activeLevelId = snapshot.levelId;
         this.router.navigate('map', {themeId:snapshot.themeId}); this.router.navigate('quiz', {themeId:snapshot.themeId,levelId:snapshot.levelId}); this.synchronize(snapshot);
       });
+      if(action.chooseTheme){this.router.navigate('themes');return;}
       const candidates=catalogThemes(this.catalog).flatMap(theme=>catalogLevels(this.catalog,theme.id).map(level=>({theme,level,state:this.levelState(level)})));
       const choice=candidates.find(item=>item.state==='current') || candidates.find(item=>item.state==='complete');
       if(!choice){this.notify('暂无可开始的关卡，请查看主题状态。');return;}

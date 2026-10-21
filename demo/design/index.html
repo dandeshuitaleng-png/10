@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>趣味闯关 · Day 1视觉提案</title>
+<style>
+:root{--paper:#f5f3e9;--lake:#176b80;--orange:#e89246;--ink:#203d43}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "PingFang SC","Noto Sans SC",sans-serif}main{max-width:1980px;margin:auto;padding:48px 32px}header{display:flex;gap:32px;justify-content:space-between;align-items:flex-end;margin-bottom:32px}h1{font-size:clamp(30px,4vw,56px);line-height:1.2;letter-spacing:-.03em;margin:8px 0 16px}h2{font-size:28px;margin:36px 0 20px}p{margin:6px 0}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--lake);font-weight:700}.note{max-width:630px;font-size:14px;color:#587079}.board{display:block;width:100%;border-radius:16px;border:1px solid #a7bbb8}.screens{display:grid;grid-template-columns:repeat(5,minmax(260px,1fr));gap:22px;overflow:auto;padding:0 0 20px}figure{margin:0;min-width:0}canvas{display:block;background:#fffef9;width:100%;height:auto;border-radius:24px;border:1px solid #a7bbb8;touch-action:none}figcaption{padding:14px 4px 0;font-size:14px}button{font:inherit;background:#fffef9;color:var(--ink);border:1px solid #a7bbb8;border-radius:12px;padding:10px 16px;cursor:pointer}button:hover,button:focus-visible{outline:2px solid var(--lake);outline-offset:3px}button:active{transform:translateY(2px)}.tools{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.status{min-height:26px;color:var(--lake);font-size:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{border-top:2px solid var(--ink);padding:18px 0}.panel strong{font-size:19px}.panel p{font-size:15px;color:#587079}a{color:var(--lake)}@media(max-width:800px){main{padding:28px 16px}header{display:block}.screens{grid-template-columns:repeat(5,300px)}.grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<main>
+<header><div><div class="eyebrow">趣味闯关 / DAY 1 · 视觉提案 V1</div><h1>沿着乡间小路，<br>发现家乡的知识。</h1><p>湖蓝与暖橙 · 平面套色插画 · 四主题知识闯关</p></div><p class="note">这是供审阅的风格与关键状态样板。页面使用与工程相同的绘制模块；答题、复活和结算为独立设计样例，未接入真实题库、分享、积分和后端。</p></header>
+<img class="board" src="styleboard-v1.png" alt="趣味闯关风格板，展示湖蓝暖橙色板、套色乡村插画、字体与四主题符号">
+<p><a href="play.html">进入连续十题试玩 →</a>（示例题，不计正式积分）</p><h2>五个关键画面</h2><p class="note">地图固定4个节点；题面固定四选一。倒计时显示占位符，实际时长待确认。以下画面为各自独立的状态样例，不代表完整十题通关。</p>
+<div class="tools"><button id="reset">恢复样板初始状态</button><button id="press">查看选项按下反馈</button></div><p class="status" id="status" aria-live="polite">点击主题可查看该主题地图；答题画面可切换选项。</p>
+<section class="screens" id="screens"></section>
+<section class="grid"><div class="panel"><strong>视觉基准</strong><p>乡村场景负责识别与探索感；文字、路径节点、选项和按钮由代码独立绘制。主要面色为湖蓝、暖橙和暖纸白。控件统一12/16圆角，保留即时按压与边界反馈。</p></div><div class="panel"><strong>本次工程边界</strong><p>启动、资源加载、首页、地图、页面切换、生命周期与触摸输入已建立。正式题库、十题挑战、真实计时、分享验证、积分、榜单、证书与管理端按后续计划实现。</p></div></section>
+</main>
+<script src="runtime-bundle.js"></script>
+<script>
+const {Renderer}=quizRequire('/js/ui/renderer');const {Input}=quizRequire('/js/core/input');const F=quizRequire('/design/fixtures');
+const viewport={width:375,height:812,top:64,bottom:780};const fixtures=F.screens.map(s=>({ ...s,route:structuredClone(s.route),view:{...s.view,question:F.question}}));const images={};const panels=[];const status=document.getElementById('status');
+Promise.all([['landscape','../images/rural-landscape-v1.jpg'],['map','../images/ecology-map-v1.jpg']].map(([key,src])=>new Promise(resolve=>{const image=new Image();image.onload=()=>{images[key]=image;resolve()};image.onerror=resolve;image.src=src}))).then(init);
+function init(){fixtures.forEach((fixture,i)=>{const figure=document.createElement('figure'),canvas=document.createElement('canvas');canvas.width=750;canvas.height=1624;canvas.setAttribute('aria-label',fixture.name);const caption=document.createElement('figcaption');caption.textContent=fixture.name;figure.append(canvas,caption);document.getElementById('screens').append(figure);const ctx=canvas.getContext('2d');ctx.scale(2,2);const renderer=new Renderer(ctx),panel={fixture,renderer};const input=new Input(action=>{
+if(action.type==='option'){fixture.view.selected=action.index;status.textContent='已切换选项；此处仅演示选中状态，不判分。'}
+else if(action.type==='theme'){fixture.route={name:'map',params:{themeId:action.themeId}};status.textContent='已切换地图；另外三主题的独立场景资产尚待制作。'}
+else if(action.type==='back'){fixture.route=structuredClone(F.screens[i].route);fixture.view.modal=F.screens[i].view.modal;}
+else if(action.type==='level'){status.textContent=action.index===0?'本关正式题库尚未接入；答题设计样例见第三张画面。':'完成上一关后解锁。'}
+else if(action.type==='share'){status.textContent='分享按钮仅作设计审阅；没有调用分享，也没有发放复活或积分。'}
+else{status.textContent='这是独立状态样板，未执行真实游戏结算或数据操作。'}draw();});panel.input=input;panels.push(panel);
+const point=e=>{const rect=canvas.getBoundingClientRect();return{x:(e.clientX-rect.left)*375/rect.width,y:(e.clientY-rect.top)*812/rect.height}};
+canvas.addEventListener('pointerdown',e=>{canvas.setPointerCapture(e.pointerId);input.start(point(e),e.pointerId);draw()});canvas.addEventListener('pointermove',e=>{input.move(point(e),e.pointerId);draw()});canvas.addEventListener('pointerup',e=>{input.end(point(e),e.pointerId);draw()});canvas.addEventListener('pointercancel',()=>{input.cancel();draw()});
+});draw();}
+function draw(){panels.forEach(({fixture,renderer,input})=>input.setTargets(renderer.render(fixture.route,viewport,{...fixture.view,images,pressedId:input.pressedId})));}
+document.getElementById('reset').onclick=()=>{fixtures.forEach((f,i)=>{f.route=structuredClone(F.screens[i].route);f.view={...F.screens[i].view,question:F.question}});status.textContent='已恢复五个独立状态样板。';draw()};document.getElementById('press').onclick=()=>{fixtures[2].view.selected=1;status.textContent='答题样板已切换选中项；拖出选项后松手不会触发。';draw()};
+</script>
+</html>

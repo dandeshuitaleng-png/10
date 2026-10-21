@@ -1,4 +1,4 @@
-// Only approved, enabled questions enter the runtime; authoring data stays outside it.
+// Valid enabled questions enter the runtime without a review workflow.
 const { validateQuestion } = require('../core/question');
 const QUESTION_POOLS = require('./approved-pools');
 
@@ -9,8 +9,7 @@ function inspectPool(levelId) {
   try {
     for (const q of questions) {
       validateQuestion(q);
-      if (q.levelId !== levelId || q.reviewStatus !== '已通过' || q.enabled !== true ||
-          typeof q.reviewNote !== 'string' || !q.reviewNote.trim() || ids.has(q.id)) return { ready: false, reason: 'unreviewed-content' };
+      if (q.levelId !== levelId || q.enabled === false || ids.has(q.id)) return { ready: false, reason: 'invalid-content' };
       ids.add(q.id);
     }
   } catch (_) { return { ready: false, reason: 'invalid-content' }; }

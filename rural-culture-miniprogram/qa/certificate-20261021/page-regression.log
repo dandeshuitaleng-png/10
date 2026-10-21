@@ -1,0 +1,35 @@
+PASS option press feedback survives 100 selection refreshes and cancels on scroll, navigation and background
+PASS sound settings preserve music/effect levels and never suspend quiz time or overlay answer feedback
+PASS red full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS red timeout revival and next-day release survive a cold restart
+PASS culture full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS culture timeout revival and next-day release survive a cold restart
+PASS industry full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS industry timeout revival and next-day release survive a cold restart
+PASS ecology full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS ecology timeout revival and next-day release survive a cold restart
+PASS scene-specific original poses stay distinct and tapping them never changes the challenge or account
+PASS share previews use composed artwork and interface labels do not expose environment modes
+PASS sharing keeps the active theme and only uses certificate routing on certificate pages
+PASS direct profile entry sends the route through setData to the native view
+PASS onShow replaces an existing timer; hide/unload leave no live interval
+PASS ordinary hide/show preserves the active question, selection and absolute deadline
+PASS returning after a background timeout opens revival without revealing an answer
+PASS background timeout after revival updates the page to the real locked state
+PASS midnight foreground refresh releases a stale today-locked card and permits starting
+PASS tapping a stale lock card after midnight checks service state even without onShow
+PASS foreground refresh updates yesterday daily ranking without changing total earned points
+PASS saving an old certificate after catalog expansion draws only its issued level scope
+PASS failed writes preserve the previous checkpoint and retry restores the active answer without restarting
+PASS retry that still fails keeps the warning and does not report a successful save
+PASS corrupt checkpoints show a non-destructive notice without a misleading retry control
+PASS theme homepage starts the current configured level directly and empty content stays disabled
+PASS homepage exposes locked explanation and earned rewards retain the historical ledger value
+PASS returning to activity homepage offers continue without changing the pending question
+PASS opening a route resets scrolling and the map focuses its current configured level
+PASS original-figure motion follows map/modal visibility, background and the reduced-motion setting without changing progress
+PASS non-character overlays pause map motion and quiz revival uses its own visible actor
+PASS mascots follow actual learning progress, keep completed poses and hide all future nodes
+PASS touching a figure responds without opening a level or changing progress, including today lock
+PASS inline figures animate on quiz, profile and points, and pause outside their scroll panel
+{"checks":34,"result":"passed","report":"/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/qa/v4/page-service-checks.json"}

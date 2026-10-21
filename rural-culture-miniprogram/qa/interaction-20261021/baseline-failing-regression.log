@@ -1,0 +1,43 @@
+✖ 100 actual selections cannot inflate answers with subpixel native geometry (56.029145ms)
+✖ late geometry from the previous question cannot resize the next one (7.640763ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 182.827446
+
+✖ failing tests:
+
+test at tests/option-measurement.test.cjs:6:1
+✖ 100 actual selections cannot inflate answers with subpixel native geometry (56.029145ms)
+  AssertionError [ERR_ASSERTION]: repeated native measurements inflated answer height
+      at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/option-measurement.test.cjs:8:105)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/option-measurement.test.cjs:10:1
+✖ late geometry from the previous question cannot resize the next one (7.640763ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  148 !== 56
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/option-measurement.test.cjs:12:220)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 148,
+    expected: 56,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

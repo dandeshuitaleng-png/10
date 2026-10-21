@@ -1,0 +1,13 @@
+Use case: precise-object-edit.
+Asset type: completed-node UI pedestal sprite for a cultural learning map, final targeted material polish.
+Input images: Image 1, completed-node-raw.png, is the EDIT TARGET and authoritative green pedestal geometry. Image 2, current-node-raw.png, is the CLEAN MATERIAL AND EDGE REFERENCE only. Do not copy its yellow top.
+
+Primary request: Make ONE targeted correction to Image 1: completely REMOVE the dark broad outer drop shadow surrounding and underneath its base. The area outside the actual pale sandstone pedestal silhouette must be fully transparent. Do not replace the dark shadow with an opaque ellipse. A very faint contact shadow directly below the actual lower edge, less than 1% of image height deep, is allowed; omitting the exterior contact shadow completely is preferred. No outer halo, no dark ring, no shadow protruding to left or right.
+
+Preserve exact geometry: Keep Image 1's identical green top oval, ellipse widths and heights, stacked layers, pedestal shape, perspective, bevels, camera angle, framing, and relative object position. Remove only the exterior shadow, not any part of the stone base. Retain the soft sage green top #B6CC89 and muted green top rim #80985C. Match Image 2's clean ivory lip #EEE8D8 and warm pale sandstone underside #D8C7A7 with softly shaded #BDA685; low contrast, matte 2D illustration, broad flat color bands, soft simple volumes, upper-left diffuse lighting, minimal texture.
+
+Critical alpha/edge instructions: Truly transparent background, clean alpha cutout exactly following the actual pedestal's outer contour. No pale stray flecks, white residue, specks, halo, checkerboard or background paint outside the contour. No black or gray shadow outside the base. Retain only the object's internal band shading.
+
+Avoid: any geometry change, recentering, resizing relative to frame, altered top color, yellow top, blue band, new objects, decorations, text, logos, checks, gloss, plastic shine, metallic highlights, photorealism or realistic 3D.
+
+Output: ONE landscape image, same aspect ratio as target (220:143 nominal), same composition with transparent margins. True RGBA transparent background.

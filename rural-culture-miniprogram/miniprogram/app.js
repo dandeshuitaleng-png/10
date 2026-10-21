@@ -1,1 +1,1 @@
-App({ onLaunch() {}, globalData: { projectName: '趣味闯关' } });
+App({globalData:{projectName:require('./game-config').name}});

@@ -1,0 +1,1 @@
+Component({properties:{name:{type:String,value:'book'},white:{type:Boolean,value:false}}});

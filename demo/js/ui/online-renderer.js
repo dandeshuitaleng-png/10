@@ -553,7 +553,7 @@ class OnlineRenderer extends Renderer {
     D.rounded(ctx, 24, y + 110, 327, 96, 16, C.surface, C.line); D.text(ctx, '减少动画', 44, y + 128, this.size(18), C.ink, 600); D.text(ctx, '保留清晰反馈，关闭结算粒子', 44, y + 167, this.size(13), C.muted);
     this.smallControl('toggle-motion', this.view.reducedMotion ? '已开启' : '已关闭', 255, y + 124, 80, { type: 'toggle-motion' }, !!this.view.reducedMotion);
     D.rounded(ctx, 24, y + 220, 327, 65 + ruleH, 16, C.surface, C.line); D.text(ctx, '挑战规则', 44, y + 239, this.size(18), C.ink, 600); D.wrap(ctx, rule, 44, y + 277, 287, font, C.muted);
-    D.rounded(ctx, 24, y + 297 + ruleH, 327, 68, 14, C.lakeLight); D.text(ctx, ['development', 'experience'].includes(this.view.mode) ? '体验版 · 内容待正式审核' : '乡村知识挑战', 44, y + 310 + ruleH, this.size(14), C.lake, 600); D.text(ctx, this.view.reducedMotion ? '已开启减少动画' : '声音偏好会保存到当前设备', 44, y + 337 + ruleH, this.size(12), C.muted);
+    D.rounded(ctx, 24, y + 297 + ruleH, 327, 68, 14, C.lakeLight); D.text(ctx, ['development', 'experience'].includes(this.view.mode) ? '本地体验版' : '乡村知识挑战', 44, y + 310 + ruleH, this.size(14), C.lake, 600); D.text(ctx, this.view.reducedMotion ? '已开启减少动画' : '声音偏好会保存到当前设备', 44, y + 337 + ruleH, this.size(12), C.muted);
     this.endContent(total); this.button('settings-back', '返回', 24, b - 52, 327, { type: 'back' }, true);
     this.layout.settings = { soundEnabled: enabled, scrollMax: this.scrollMax };
   }

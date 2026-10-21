@@ -1,0 +1,73 @@
+{
+  "revision": "natural-20261020",
+  "license": "CC0 1.0",
+  "direction": "Recorded paper, wood and leaf textures; no electronic beeps. Ordinary navigation and wrong-answer alerts stay silent.",
+  "files": [
+    {
+      "file": "ambient-piano.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/JRPG-Piano.mp3",
+      "sourceSha256": "87a99f62e901b8365f1b868cd53bc015d2bf9f887e4c8a89a4fad11a36a62c16",
+      "sha256": "dfdab434d11e56df96669a6830f3e73934de5e0dc6377dc3e519042b177c9c8e",
+      "bytes": 199618,
+      "filter": "highpass=f=55,lowpass=f=11000,loudnorm=I=-20:TP=-4:LRA=8,afade=t=in:d=0.06,afade=t=out:st=24.72:d=0.12",
+      "encoding": "MP3 mono 44100Hz 64k",
+      "author": "Joth",
+      "page": "https://opengameart.org/content/jrpg-piano"
+    },
+    {
+      "file": "paper.mp3",
+      "source": ".rural-quiz-runtime/audio-natural-20261020/pages/book_flip.4.ogg",
+      "author": "StarNinjas",
+      "page": "https://opengameart.org/content/10-book-page-flips",
+      "sourceSha256": "4b66e2f2222ad5365f417cdb66a14c81254f4ccac59598e2b9cf334cbca136c4",
+      "sha256": "df6fbe91130c9677090f83e41a23e49a7f255b5f1508b0ca8269b56d93426c01",
+      "bytes": 4640,
+      "filter": "silenceremove=start_periods=1:start_threshold=-45dB:start_duration=0.008,atrim=duration=0.50,highpass=f=180,lowpass=f=3000,afade=t=in:d=0.025,afade=t=out:st=0.30:d=0.20,volume=0.5713899645381333",
+      "encoding": "MP3 mono 44100Hz 64k"
+    },
+    {
+      "file": "wood.mp3",
+      "source": ".rural-quiz-runtime/audio-natural-20261020/steps/wood02.ogg",
+      "author": "TinyWorlds",
+      "page": "https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud",
+      "sourceSha256": "588bb121bd3db005b4c2a5b55c1cf39b8ec620f820c2123ac1f62748d132dac2",
+      "sha256": "2e85fd801f975de4338942039302fb5447883ad88cf86e645bb154a8a218b4d7",
+      "bytes": 2550,
+      "filter": "highpass=f=180,lowpass=f=2200,afade=t=in:d=0.012,afade=t=out:st=0.12:d=0.12,volume=4.987891251488421",
+      "encoding": "MP3 mono 44100Hz 64k"
+    },
+    {
+      "file": "confirm-wood.mp3",
+      "source": ".rural-quiz-runtime/audio-natural-20261020/steps/wood01.ogg",
+      "author": "TinyWorlds",
+      "page": "https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud",
+      "sourceSha256": "482d97c5e1e6eb7b239be46f25d093ebebb94cefb56eedb04807b6a5dc68e972",
+      "sha256": "6fbb19b508ece07f97eda7fa489c6b60349fddf0eefe3b52d892df31df76916c",
+      "bytes": 2550,
+      "filter": "highpass=f=150,lowpass=f=2600,afade=t=in:d=0.018,afade=t=out:st=0.12:d=0.12,volume=3.3541873527940864",
+      "encoding": "MP3 mono 44100Hz 64k"
+    },
+    {
+      "file": "leaf-rustle.mp3",
+      "source": ".rural-quiz-runtime/audio-natural-20261020/steps/leaves02.ogg",
+      "author": "TinyWorlds",
+      "page": "https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud",
+      "sourceSha256": "477c35bfd3f740915b24f93cb66364523217692d2749057f9b8be162eb8209f4",
+      "sha256": "4bc7f7f18b6c368bbe640e19ff1fb22d36c4cd51a2ec28844449e3a405eae065",
+      "bytes": 4431,
+      "filter": "highpass=f=220,lowpass=f=3200,afade=t=in:d=0.04,afade=t=out:st=0.23:d=0.24,volume=24.06620788365071",
+      "encoding": "MP3 mono 44100Hz 64k"
+    },
+    {
+      "file": "piano-close.mp3",
+      "source": ".rural-quiz-runtime/audio-source-20261020/JRPG-Piano.mp3",
+      "author": "Joth",
+      "page": "https://opengameart.org/content/jrpg-piano",
+      "sourceSha256": "87a99f62e901b8365f1b868cd53bc015d2bf9f887e4c8a89a4fad11a36a62c16",
+      "sha256": "a42f2b9bd7eee2fa176fb82f4fb1a5aa20b3cfbb22b35813240b39cc8e6e390d",
+      "bytes": 8887,
+      "filter": "atrim=start=0.025:end=1.035,asetpts=PTS-STARTPTS,highpass=f=100,lowpass=f=4500,afade=t=in:d=0.045,afade=t=out:st=0.65:d=0.36,volume=1.2285432617118548",
+      "encoding": "MP3 mono 44100Hz 64k"
+    }
+  ]
+}
