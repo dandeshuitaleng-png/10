@@ -1,0 +1,13 @@
+✔ every one of 100 repeated taps gets feedback and returns to rest (1.507454ms)
+✔ the previous release cannot end a new press, including the same answer (0.961196ms)
+✔ scroll gestures, touch cancellation and page disposal leave no stuck press (0.225044ms)
+✔ keyboard or accessible tap also gets feedback without a preceding touch event (0.154187ms)
+✔ the actual shared button continues to emit actions after 100 taps and guards disabled/loading (2.756426ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 107.162205

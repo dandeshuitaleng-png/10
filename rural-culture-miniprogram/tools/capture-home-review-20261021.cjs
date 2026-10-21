@@ -25,8 +25,9 @@ async function call(tool,args=[]){return new Promise((resolve,reject)=>{const c=
   await call('simulator_screenshot',['--path',path.join(out,'capture-ready.png'),'--optimize','false']);
   await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);
  }
- const captures=[];
- for(const design of ['map','guide'])for(const theme of ['ecology','red','culture','industry']){
+ const designs=process.argv.includes('--guide-only')?['guide']:['map','guide'];
+ const captures=designs.length===1?JSON.parse(fs.readFileSync(path.join(out,'review-captures.json'))).captures.filter(c=>!designs.includes(c.design)):[];
+ for(const design of designs)for(const theme of ['ecology','red','culture','industry']){
   await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme='+theme+'&review=1&controls=0&scenario=home&homeDesign='+design]);
   // Let the first-visit scroll hint dismiss naturally before the still image.
   await new Promise(resolve=>setTimeout(resolve,4200));

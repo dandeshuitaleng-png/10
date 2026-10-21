@@ -13,19 +13,36 @@
 .game-device.activity-page.home-layout.home-design-map .route-caption{background:#fffdf4f5;box-shadow:0 4px 10px #33522514}
 .game-device.activity-page.home-layout.home-design-map .panel-footer{background:var(--pale);border-top:0;padding-top:10px}
 
-.game-device.activity-page.home-layout.home-design-guide .activity-header{padding-bottom:12px}
-.game-device.activity-page.home-layout.home-design-guide .activity-hud{display:none}
-.game-device.activity-page.home-layout .home-guide-card{box-sizing:border-box;height:104px;margin:0 0 12px;padding:12px 14px;display:flex;align-items:center;gap:10px;border:1px solid var(--edge);border-radius:20px;background:linear-gradient(110deg,#fffdf5,#ffffff);box-shadow:0 4px 0 var(--shadow)}
-.home-guide-copy{flex:1;min-width:0}
-.home-guide-eyebrow{display:block;font-size:11px;line-height:18px;color:var(--muted)}
-.home-guide-chapter{display:block;max-width:100%;font-size:19px;line-height:30px;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.home-guide-summary{display:block;font-size:12px;line-height:22px;color:var(--muted)}
-.home-guide-track{height:4px;width:100%;margin-top:4px;background:var(--edge);border-radius:4px;overflow:hidden}
-.home-guide-track view{height:4px;background:var(--accent);border-radius:4px}
-.home-guide-avatar{display:block;width:68px;height:80px;flex:none;object-fit:contain}
-.game-device.activity-page.home-layout.home-design-guide .activity-links{height:48px;min-height:48px;box-shadow:none;gap:6px}
-.game-device.activity-page.home-layout.home-design-guide .activity-links button{height:48px;min-height:48px;background:transparent;border:1px solid var(--edge);border-radius:12px;font-size:12px;color:var(--ink)}
-.game-device.activity-page.home-layout.home-design-guide .panel-scroll-frame{margin:0 12px 12px;border:3px solid #fffdf7;border-radius:22px;box-shadow:0 0 0 1px var(--edge);box-sizing:border-box;background:#fffdf7}
-.game-device.activity-page.home-layout.home-design-guide .panel-footer{padding-left:12px;padding-right:12px;padding-top:0;border-top:0;background:var(--pale)}
-.game-device.activity-page.home-layout.home-design-guide .route-caption{background:#fffef9;box-shadow:0 2px 5px #29441412}
-@media(max-width:350px){.home-guide-chapter{font-size:17px}.home-guide-avatar{width:58px;height:74px}.game-device.activity-page.home-layout .home-guide-card{padding-left:12px;padding-right:10px;gap:8px}.game-device.activity-page.home-layout.home-design-map .activity-hud{padding-left:8px;padding-right:8px}}
+/* B: softer pigments, warm paper and matte ink. One illustrated journey only. */
+.game-device.home-design-guide.skin-ecology{--paper:#ECF0E3;--paper-ink:#385C47;--paper-muted:#6B7F68;--paper-edge:#CDD5BD;--paper-accent:#4E755D}
+.game-device.home-design-guide.skin-red{--paper:#F4E6DE;--paper-ink:#793E35;--paper-muted:#966F62;--paper-edge:#DEC2B5;--paper-accent:#A64F40}
+.game-device.home-design-guide.skin-culture{--paper:#F0E7D5;--paper-ink:#624631;--paper-muted:#8D775D;--paper-edge:#D8C8AC;--paper-accent:#77533C}
+.game-device.home-design-guide.skin-industry{--paper:#F5EBCF;--paper-ink:#725021;--paper-muted:#927A4F;--paper-edge:#DCCD9C;--paper-accent:#8C6426}
+.game-device.activity-page.home-layout.home-design-guide{--ink:var(--paper-ink);--muted:var(--paper-muted);--accent:var(--paper-accent);--edge:var(--paper-edge);--pale:var(--paper);background:var(--paper)}
+.game-device.activity-page.home-layout.home-design-guide .activity-header{background:var(--paper);padding-bottom:14px;color:var(--paper-ink)}
+.game-device.activity-page.home-layout.home-design-guide .activity-title-art{opacity:.94}
+.home-paper-intro{height:24px;display:flex;justify-content:center;align-items:center;gap:8px;font-size:11px;line-height:18px;color:var(--paper-muted)}
+.home-paper-series{padding:0 7px;border:1px solid var(--paper-edge);border-radius:3px;font-size:9px;letter-spacing:1px;color:var(--paper-ink)}
+.game-device.activity-page.home-layout.home-design-guide .activity-hud,
+.game-device.activity-page.home-layout.home-design-guide .activity-progress-row{height:44px;min-height:44px}
+.game-device.activity-page.home-layout.home-design-guide .activity-progress-row{border-bottom:1px solid var(--paper-edge)}
+.game-device.activity-page.home-layout.home-design-guide .activity-progress-copy,
+.game-device.activity-page.home-layout.home-design-guide .activity-progress-value,
+.game-device.activity-page.home-layout.home-design-guide .activity-points{color:var(--paper-ink)}
+.game-device.activity-page.home-layout.home-design-guide .activity-progress-total{color:var(--paper-muted)}
+.game-device.activity-page.home-layout.home-design-guide .activity-links{height:44px;min-height:44px;margin-top:8px;gap:6px;box-shadow:none}
+.game-device.activity-page.home-layout.home-design-guide .activity-links button{height:44px;min-height:44px;background:#FFFBF1;border:1px solid var(--paper-edge);border-radius:8px;font-size:12px;font-weight:500;color:var(--paper-ink);box-shadow:0 2px 0 #6856370A}
+.game-device.activity-page.home-layout.home-design-guide .panel-scroll-frame{margin:0 12px 12px;padding:5px;border:1px solid var(--paper-edge);border-radius:18px;box-sizing:border-box;background:#FFFBF1;box-shadow:0 3px 8px #6856370A}
+.game-device.activity-page.home-layout.home-design-guide .route-canvas{background-color:#F7F0DF!important}
+.game-device.activity-page.home-layout.home-design-guide .route-scene{opacity:.76}
+.game-device.activity-page.home-layout.home-design-guide .route-caption{background:#FFFCF4F5;border:1px solid #E2D6BA;color:var(--paper-ink);box-shadow:0 2px 0 #6856370D;border-radius:8px}
+.game-device.activity-page.home-layout.home-design-guide .route-caption-name{font-size:17px;font-weight:600;color:var(--paper-ink)}
+.game-device.activity-page.home-layout.home-design-guide .route-caption-label,
+.game-device.activity-page.home-layout.home-design-guide .route-caption-state,
+.game-device.activity-page.home-layout.home-design-guide .route-caption-reward{color:var(--paper-muted)}
+.game-device.activity-page.home-layout.home-design-guide .route-stop.current .route-caption{border:2px solid var(--paper-accent)}
+.game-device.activity-page.home-layout.home-design-guide .route-stop.current .route-caption-state{color:var(--paper-accent);font-weight:700}
+.game-device.activity-page.home-layout.home-design-guide .panel-footer{padding:8px 12px var(--safe-bottom);border-top:0;background:var(--paper)}
+.game-device.activity-page.home-layout.home-design-guide .map-edge-top{background:linear-gradient(180deg,#F7F0DF99,#F7F0DF00)}
+.game-device.activity-page.home-layout.home-design-guide .map-edge-bottom{background:linear-gradient(0deg,#F7F0DF99,#F7F0DF00)}
+@media(max-width:350px){.game-device.activity-page.home-layout.home-design-map .activity-hud{padding-left:8px;padding-right:8px}.home-paper-intro{gap:6px;font-size:10px}}

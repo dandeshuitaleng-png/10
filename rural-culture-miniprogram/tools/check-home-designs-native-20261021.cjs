@@ -2,8 +2,9 @@
 // Constrained native containers in an isolated review project. No real player writes.
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{spawn}=require('node:child_process');
 const root=path.resolve(__dirname,'..'),project=path.resolve(root,'../.rural-quiz-runtime/theme-content-review'),out=path.join(root,'qa/home-designs-20261021');fs.mkdirSync(out,{recursive:true});
-const widths=process.argv.slice(2).map(Number),previous=widths.length&&fs.existsSync(path.join(out,'native-checks.json'))?JSON.parse(fs.readFileSync(path.join(out,'native-checks.json'))).checks:[];
-const checks=previous.filter(c=>c.size&&!widths.includes(c.size.w));
+const widths=process.argv.slice(2).map(Number).filter(n=>n>0),designs=process.argv.includes('--guide-only')?['guide']:['map','guide'];
+const previous=(widths.length||designs.length===1)&&fs.existsSync(path.join(out,'native-checks.json'))?JSON.parse(fs.readFileSync(path.join(out,'native-checks.json'))).checks:[];
+const checks=previous.filter(c=>c.size?!(designs.includes(c.design)&&(!widths.length||widths.includes(c.size.w))):!designs.includes(c.design));
 async function call(tool,args=[]){return new Promise((resolve,reject)=>{const c=spawn('/usr/local/bin/wechatide',['-c','Codex',tool,'--project',project,...args]);let s='';c.stdout.on('data',b=>s+=b);c.stderr.on('data',b=>s+=b);const timer=setTimeout(()=>{c.kill();reject(Error(tool+' timeout'));},45000);c.on('close',code=>{clearTimeout(timer);let r;try{r=JSON.parse(s.slice(s.indexOf('{'),s.lastIndexOf('}')+1));}catch{return reject(Error(s.slice(0,600)));}if(code||!r.ok||r.result?.success===false)return reject(Error(r.message||s.slice(0,600)));resolve(r.result);});});}
 async function evaluate(fn){let r=await call('automation_evaluate',['--fn-source',fn]);for(let i=0;i<6&&r?.result!==undefined;i++)r=r.result;return r;}
 function stage(size){
@@ -22,8 +23,9 @@ function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.string
   await call('open_project_window',['--window-mode','liteMode']);
   await call('close_project_window');stage(size);
   await call('open_project_window',['--window-mode','liteMode']);
+  await call('simulator_screenshot',['--path',path.join(project,'qa-ready.png'),'--optimize','false']);
   await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);
-  for(const design of ['map','guide'])for(const theme of ['ecology','red','culture','industry']){
+  for(const design of designs)for(const theme of ['ecology','red','culture','industry']){
    await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme='+theme+'&review=1&controls=0&scenario=home&homeDesign='+design]);
    const d=await measure(),issues=[],test=(ok,label)=>{if(!ok)issues.push(label);},r=d.rect,body=r['.panel-body'][0],header=r['.activity-header'][0],title=r['.title-art-window'][0],label=r['.home-title-label'][0],caption=r['.route-stop.current .route-caption'][0],mascot=r['.route-stop.current .chapter-mascot'][0];
    test(d.design===design&&d.theme===theme,'review selects requested direction and theme');
@@ -34,13 +36,13 @@ function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.string
    test(caption.left>=body.left-1&&caption.right<=body.right+1&&caption.top>=body.top-1&&caption.bottom<=body.bottom+1,'current caption visible within map');
    test(mascot.top>=body.top-1&&mascot.bottom<=body.bottom+1,'current mascot visible within map');
    test(r['#footer-primary'][0].bottom<=size.h-size.safe+1&&r['#footer-primary'][0].height>=44,'footer safe and touchable');
-   if(design==='guide'){const card=r['.home-guide-card'][0],avatar=r['.home-guide-avatar'][0],chapter=r['.home-guide-chapter'][0];test(avatar.top>=card.top&&avatar.bottom<=card.bottom&&chapter.right<=avatar.left,'guide copy and illustration separate');}
+   if(design==='guide')test(!r['.home-guide-card'].length&&!r['.home-guide-avatar'].length,'no repeated header portrait or illustration card');
    if(size.w===375){const filename=theme+'-'+design+'-375-container.png';await call('simulator_screenshot',['--path',path.join(out,filename),'--optimize','false','--wait-for-selector','.route-canvas']);d.screenshot=filename;}
    checks.push({size,...d,passed:!issues.length,issues});save();console.log((issues.length?'FAIL ':'PASS ')+theme+' '+design+' '+size.w+' '+issues.join('; '));
   }
  }
  // Each direction keeps navigation and the primary interaction on the actual Page.
- for(const design of ['map','guide']){
+ for(const design of designs){
   await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme=ecology&review=1&controls=0&scenario=home&homeDesign='+design]);
   await call('automation_element_action',['--action','trigger','--selector','#footer-primary','--type','action','--detail','{}']);
   const d=await evaluate('function(){const p=getCurrentPages().slice(-1)[0];const modal=p.data.modal;p.action({currentTarget:{dataset:{action:"close"}}});p.go("profile");const route=p.data.route;p.go("home");return {modal,route,returned:p.data.route,design:p.data.homeDesign};}');

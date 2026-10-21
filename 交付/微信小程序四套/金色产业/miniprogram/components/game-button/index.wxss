@@ -20,3 +20,11 @@
 .game-button[disabled] .action-emblem,.game-button[disabled] .action-forward{opacity:.55}
 @media(max-width:350px){.game-button.primary.is-home-action{padding-left:12px;padding-right:12px;gap:8px;font-size:17px;line-height:24px}.action-emblem{flex-basis:22px;width:22px}.action-emblem image{width:21px;height:21px}}
 @media(prefers-reduced-motion:reduce){.game-button{transition:none}.game-button.is-touching,.game-button.native-pressed,.game-button:active{transform:none}}
+
+/* Review B uses matte theme ink instead of the vivid gradient home button. */
+.game-button.primary.appearance-paper{--paper-button:#77533C;border:1px solid var(--paper-button);border-radius:14px;background:var(--paper-button);color:#FFFCF4;box-shadow:0 3px 0 #4B39282B,inset 0 1px #FFFFFF33;font-weight:600}
+.game-button.appearance-paper.skin-ecology{--paper-button:#4E755D}
+.game-button.appearance-paper.skin-red{--paper-button:#A64F40}
+.game-button.appearance-paper.skin-culture{--paper-button:#77533C}
+.game-button.appearance-paper.skin-industry{--paper-button:#8C6426}
+.game-button.appearance-paper[disabled]{background:#E4DED1;color:#797364;border-color:#DAD2C1;box-shadow:none}

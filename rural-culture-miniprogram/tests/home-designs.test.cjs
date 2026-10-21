@@ -23,7 +23,7 @@ test('both directions retain the original art ratio and a visible current chapte
   const base=home.metrics({windowWidth:w,windowHeight:h,statusBarHeight:status,screenHeight:h,safeArea:{bottom:h-safe}});
   for(const design of ['map','guide'])for(const theme of ['red','culture','industry','ecology']){
    const m=designs.metrics(base,design),rows=Array.from({length:4},(_,i)=>({id:'l'+i,status:i===0?'current':'locked'})),j=layout(rows,theme,m.mapWidth,m.mapViewport),node=j.nodes[0],geometry=home.mapMetrics(m.mapWidth);
-   assert.equal(m.mapWidth,w-(design==='guide'?30:0));
+   assert.equal(m.mapWidth,w-(design==='guide'?36:0));
    assert.equal(j.height,m.mapWidth*1280/750);
    const center=j.height-node.distance-j.focusTop;
    assert.ok(center+45<=m.mapViewport-15);
