@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-21T04:07:06.038Z",
-  "revision": "20261021-explore-cards",
+  "date": "2026-10-21T06:41:18.931Z",
+  "revision": "20261021-reference-colors",
   "passed": true,
   "scope": "HTTP payload/source integrity and asset availability only; not browser rendering or interaction evidence.",
   "checks": [
     {
-      "item": "review and iframe revision",
+      "item": "review and iframe color revision",
       "passed": true
     },
     {
@@ -16,12 +16,22 @@
     {
       "item": "pages/game/home-designs-20261021.wxss",
       "passed": true,
-      "sha256": "6f79f578bdeb12d6fd0809210cbc38d5421651705bc93c60a496742d485e6648"
+      "sha256": "a564729c38cfdf577649728d8355a677d43d905639cea761a14c38536c801dbe"
     },
     {
       "item": "services-v4/home-designs.js",
       "passed": true,
       "sha256": "28bedcf42f23404b41d12f362d4d45f70be31ef1fd7032f32e0fefd191e4ff5a"
+    },
+    {
+      "item": "components/game-button/index.wxml",
+      "passed": true,
+      "sha256": "70a8bf24bfe0b5ec968dc76d2aea50a417ac155100c905256f37f9d6ac262815"
+    },
+    {
+      "item": "components/game-button/index.wxss",
+      "passed": true,
+      "sha256": "10c47740de21a9452f35476f28f76b6ecd6f0c347958d82272b066bfa62cb9f0"
     },
     {
       "item": "ecology-map.png",

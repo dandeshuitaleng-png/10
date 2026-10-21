@@ -15,11 +15,9 @@
 
 /* B — Figma 1:67 (color blocks) + image74 / 1:76 (story-card album).
    Approved theme art in picture windows, original IP, equal collectible cards. */
-.game-device.home-design-guide.skin-ecology{--chapter-board:#8DB596;--chapter-frame:#39593F;--chapter-page:#EAF3E7;--chapter-ink:#193F2D;--chapter-accent:#268354;--chapter-soft:#BCE5BD;--chapter-tint:#DAEED5;--chapter-muted:#58715C;--chapter-line:#CDDFCC}
-.game-device.home-design-guide.skin-red{--chapter-board:#D99480;--chapter-frame:#874733;--chapter-page:#FBE8E2;--chapter-ink:#622B25;--chapter-accent:#CA503B;--chapter-soft:#FFB998;--chapter-tint:#F9D7CB;--chapter-muted:#916559;--chapter-line:#EBD0C6}
-.game-device.home-design-guide.skin-culture{--chapter-board:#B99A7A;--chapter-frame:#684B36;--chapter-page:#EFE6DC;--chapter-ink:#4E3729;--chapter-accent:#805739;--chapter-soft:#D8B899;--chapter-tint:#E8D7C4;--chapter-muted:#806E5C;--chapter-line:#DDCDBE}
-.game-device.home-design-guide.skin-industry{--chapter-board:#E7C45E;--chapter-frame:#88651D;--chapter-page:#FFF3CC;--chapter-ink:#5E410C;--chapter-accent:#97620A;--chapter-soft:#FFD757;--chapter-tint:#FFE9A1;--chapter-muted:#8C722F;--chapter-line:#EFDB9C}
-.game-device.activity-page.home-layout.home-design-guide{--ink:var(--chapter-ink);--muted:var(--chapter-muted);--pale:var(--chapter-page);--accent:var(--chapter-accent);--edge:var(--chapter-line);background:var(--chapter-page)}
+/* Reuse the approved reference-20261020 tokens; no separate muted B palette. */
+.game-device.home-design-guide{--chapter-frame:var(--panel-edge);--chapter-page:var(--pale);--chapter-ink:var(--ink);--chapter-accent:var(--accent);--chapter-soft:var(--theme-fill);--chapter-tint:var(--pale);--chapter-muted:var(--muted);--chapter-line:var(--edge);--chapter-shadow:var(--ribbon-shadow)}
+.game-device.activity-page.home-layout.home-design-guide{background:var(--chapter-page)}
 .game-device.activity-page.home-layout.home-design-guide .environment,.game-device.activity-page.home-layout.home-design-guide .theme-panel::before,.game-device.activity-page.home-layout.home-design-guide .theme-panel::after{display:none}
 .game-device.activity-page.home-layout.home-design-guide .activity-header{background:var(--chapter-page);padding-bottom:8px;color:var(--chapter-ink)}
 .home-paper-intro{height:20px;display:flex;justify-content:center;align-items:center;gap:7px;font-size:11px;line-height:18px;color:var(--chapter-muted)}
@@ -34,9 +32,9 @@
 .game-device.activity-page.home-layout.home-design-guide .activity-points{font-size:13px;min-height:44px;color:var(--chapter-ink)}
 .game-device.activity-page.home-layout.home-design-guide .panel-scroll-frame{margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
 .game-device.activity-page.home-layout.home-design-guide .panel-body-inner{padding:0}
-.chapter-board{position:relative;background:var(--chapter-board);box-sizing:border-box;border-top:1px solid #FFFFFF70;box-shadow:inset 0 3px 8px #263D2012}
+.chapter-board{position:relative;background:var(--panel);box-sizing:border-box;border-top:1px solid #FFFFFF;box-shadow:inset 0 3px 8px var(--chapter-shadow)}
 .chapter-tools{position:absolute;top:16px;left:16px;right:16px;height:60px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.game-device.activity-page.home-layout.home-design-guide .chapter-tools button.chapter-tool{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;margin:0;padding:5px 3px;width:100%;max-width:100%;box-sizing:border-box;height:60px;min-height:60px;min-width:0;border:1px solid var(--chapter-frame);border-radius:10px;background:linear-gradient(180deg,#FFFCED,#F5ECD4);color:var(--chapter-ink);box-shadow:0 3px 0 var(--chapter-frame),0 5px 8px #22351F15,inset 0 1px #FFFFFF;font-size:12px;line-height:18px;font-weight:600}
+.game-device.activity-page.home-layout.home-design-guide .chapter-tools button.chapter-tool{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;margin:0;padding:5px 3px;width:100%;max-width:100%;box-sizing:border-box;height:60px;min-height:60px;min-width:0;border:1px solid var(--chapter-line);border-radius:10px;background:linear-gradient(180deg,#FFFFFF,#FFFFFFF0);color:var(--chapter-ink);box-shadow:0 3px 0 var(--chapter-shadow),0 5px 8px var(--chapter-shadow),inset 0 1px #FFFFFF;font-size:12px;line-height:18px;font-weight:600}
 .chapter-tool-mark{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:27px;height:27px;border:1px solid var(--chapter-line);border-radius:50%;background:linear-gradient(155deg,#FFFFFF,var(--chapter-tint));box-shadow:0 1px 0 var(--chapter-line),inset 0 1px #FFFFFF}
 .chapter-tool-mark game-icon{display:block;width:17px;height:17px}
 .chapter-tool>game-icon:last-child{display:none}
@@ -50,34 +48,34 @@
 .chapter-progress-stamp game-icon{width:9px;height:9px}
 .chapter-progress-dot{width:4px;height:4px;border-radius:50%;background:var(--chapter-accent)}
 .chapter-card{position:absolute;box-sizing:border-box;min-width:0;border-radius:10px;color:var(--chapter-ink)}
-.chapter-card::before{content:"";position:absolute;left:4px;right:-3px;top:-3px;bottom:3px;border:1px solid var(--chapter-frame);border-radius:10px;background:#E7DCC1;transform:rotate(1.2deg);box-shadow:0 3px 0 #30422C16;pointer-events:none}
-.game-device.activity-page.home-layout.home-design-guide button.chapter-open{position:relative;width:100%;height:100%;box-sizing:border-box;display:block;margin:0;padding:0;border:2px solid var(--chapter-frame);border-radius:10px;background:linear-gradient(150deg,#FFFCED,#F8EED6);text-align:left;line-height:1.4;white-space:normal;overflow:hidden;color:var(--chapter-ink);box-shadow:0 3px 0 var(--chapter-frame),0 6px 8px #24381A18,inset 0 1px #FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}
-.game-device.activity-page.home-layout.home-design-guide .chapter-card.current button.chapter-open,.game-device.activity-page.home-layout.home-design-guide .chapter-card.today-locked button.chapter-open{background:linear-gradient(150deg,#FFF4B7,#FFE28A);box-shadow:0 3px 0 var(--chapter-frame),0 0 0 2px #FFEDAB,0 6px 8px #24381A25}
-.game-device.activity-page.home-layout.home-design-guide .chapter-card.completed button.chapter-open{background:linear-gradient(150deg,#FFFFF2,#EAF3DC)}
-.chapter-art-window{position:absolute;left:8px;right:8px;top:8px;height:72px;overflow:hidden;border:1px solid var(--chapter-frame);border-radius:5px;background:var(--chapter-tint);box-sizing:border-box;pointer-events:none}
+.chapter-card::before{content:"";position:absolute;left:4px;right:-3px;top:-3px;bottom:3px;border:1px solid var(--chapter-line);border-radius:10px;background:#FFFFFF;transform:rotate(1.2deg);box-shadow:0 3px 0 var(--chapter-shadow);pointer-events:none}
+.game-device.activity-page.home-layout.home-design-guide button.chapter-open{position:relative;width:100%;height:100%;box-sizing:border-box;display:block;margin:0;padding:0;border:2px solid var(--chapter-line);border-radius:10px;background:#FFFFFF;text-align:left;line-height:1.4;white-space:normal;overflow:hidden;color:var(--chapter-ink);box-shadow:0 3px 0 var(--chapter-shadow),0 6px 8px var(--chapter-shadow),inset 0 1px #FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}
+.game-device.activity-page.home-layout.home-design-guide .chapter-card.current button.chapter-open,.game-device.activity-page.home-layout.home-design-guide .chapter-card.today-locked button.chapter-open{border-color:var(--chapter-frame);background:linear-gradient(150deg,#FFFFFF,var(--chapter-page));box-shadow:0 3px 0 var(--chapter-shadow),0 0 0 2px var(--chapter-soft),0 6px 8px var(--chapter-shadow)}
+.game-device.activity-page.home-layout.home-design-guide .chapter-card.completed button.chapter-open{background:#FFFFFF}
+.chapter-art-window{position:absolute;left:8px;right:8px;top:8px;height:72px;overflow:hidden;border:1px solid var(--chapter-line);border-radius:5px;background:var(--chapter-tint);box-sizing:border-box;pointer-events:none}
 .chapter-art-image{position:absolute;left:0;width:100%;display:block;pointer-events:none}
-.chapter-card.locked .chapter-art-image{filter:saturate(.5);opacity:.55}
-.chapter-mystery{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#FFF7D75C,var(--chapter-tint));color:var(--chapter-accent)}
-.chapter-mystery>text{font-size:47px;font-weight:800;line-height:62px;text-shadow:0 2px #FFFEED;opacity:.65;transform:rotate(-8deg)}
-.chapter-sequence{position:absolute;left:3px;top:6px;z-index:2;color:#594215;font-weight:800;display:flex;align-items:center;justify-content:center;box-sizing:border-box;height:22px;padding:0 5px;border:1px solid #967426;border-radius:4px;background:linear-gradient(180deg,#FFF0A6,#F3CD59);box-shadow:0 2px 0 #654D2626,inset 0 1px #FFFFFFC9;font-size:11px;line-height:20px}
-.chapter-status-mark{position:absolute;right:2px;bottom:2px;display:flex;align-items:center;gap:2px;padding:1px 4px;border:1px solid #FFFFFFA6;border-radius:4px;font-size:9px;line-height:16px;background:var(--chapter-accent);color:#FFFFFF;box-shadow:0 1px 0 #294A1820}
+.chapter-card.locked .chapter-art-image{filter:saturate(.8);opacity:.55}
+.chapter-mystery{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#FFFFFF80,var(--chapter-page));color:var(--chapter-accent)}
+.chapter-mystery>text{font-size:47px;font-weight:800;line-height:62px;text-shadow:0 2px #FFFFFF;opacity:.75;transform:rotate(-8deg)}
+.chapter-sequence{position:absolute;left:3px;top:6px;z-index:2;color:var(--chapter-ink);font-weight:800;display:flex;align-items:center;justify-content:center;box-sizing:border-box;height:22px;padding:0 5px;border:1px solid var(--chapter-frame);border-radius:4px;background:linear-gradient(180deg,#FFFFFF,var(--chapter-soft));box-shadow:0 2px 0 var(--chapter-shadow),inset 0 1px #FFFFFFC9;font-size:11px;line-height:20px}
+.chapter-status-mark{position:absolute;right:2px;bottom:2px;display:flex;align-items:center;gap:2px;padding:1px 4px;border:1px solid #FFFFFFA6;border-radius:4px;font-size:9px;line-height:16px;background:var(--chapter-accent);color:#FFFFFF;box-shadow:0 1px 0 var(--chapter-shadow)}
 .chapter-status-mark game-icon{display:block;width:13px;height:13px}
 .chapter-status-mark{box-sizing:border-box;width:22px;height:22px;justify-content:center;padding:2px}
 .chapter-status-mark text{display:none}
-.chapter-complete-stamp{position:absolute;right:3px;bottom:3px;width:36px;height:36px;box-sizing:border-box;border:2px solid #38734A;border-radius:50%;background:#EEF9D9;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);color:#346340;box-shadow:0 1px 0 #FFFFFF80}
+.chapter-complete-stamp{position:absolute;right:3px;bottom:3px;width:36px;height:36px;box-sizing:border-box;border:2px solid var(--chapter-accent);border-radius:50%;background:#FFFFFF;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);color:var(--chapter-ink);box-shadow:0 1px 0 #FFFFFF80}
 .chapter-complete-stamp game-icon{display:block;width:19px;height:17px}
 .chapter-complete-stamp text{font-size:8px;font-weight:700;line-height:10px}
 .chapter-card-copy{position:absolute;left:10px;right:10px;top:86px}
 .chapter-card-title{display:block;font-size:17px;line-height:23px;font-weight:700;letter-spacing:0}
 .chapter-card-state{display:block;margin-top:2px;font-size:11px;line-height:16px;color:var(--chapter-muted)}
 .chapter-card.current .chapter-card-state,.chapter-card.today-locked .chapter-card-state{color:var(--chapter-ink)}
-.chapter-card-reward{position:absolute;left:10px;right:10px;bottom:7px;display:flex;align-items:center;gap:4px;padding-top:4px;border-top:1px solid #987B3833;font-size:10px;line-height:14px;color:var(--chapter-ink)}
+.chapter-card-reward{position:absolute;left:10px;right:10px;bottom:7px;display:flex;align-items:center;gap:4px;padding-top:4px;border-top:1px solid var(--chapter-line);font-size:10px;line-height:14px;color:var(--chapter-ink)}
 .chapter-card-reward game-icon{display:block;width:12px;height:12px}
-.chapter-seal{position:absolute;right:5px;bottom:4px;display:flex;align-items:center;justify-content:center;width:23px;height:26px;box-sizing:border-box;border:1px solid #967426;border-radius:7px;background:linear-gradient(150deg,#FFF3B9,#E7C66E);box-shadow:0 2px 0 #9B7A3D40,inset 0 1px #FFFFFF}
+.chapter-seal{position:absolute;right:5px;bottom:4px;display:flex;align-items:center;justify-content:center;width:23px;height:26px;box-sizing:border-box;border:1px solid var(--chapter-line);border-radius:7px;background:linear-gradient(150deg,#FFFFFF,var(--chapter-tint));box-shadow:0 2px 0 var(--chapter-shadow),inset 0 1px #FFFFFF}
 .chapter-seal game-icon{width:15px;height:15px}
 .game-device.activity-page.home-layout.home-design-guide .chapter-card .chapter-mascot{position:absolute;left:50%;right:auto;top:12px;bottom:auto;z-index:3;margin:0 0 0 -30px;width:60px;height:70px;padding:0;min-height:44px;border:0;background:transparent;box-shadow:none;overflow:visible;border-radius:10px}
 .game-device.activity-page.home-layout.home-design-guide .chapter-mascot::after{display:none;border:0}
-.chapter-cheer{position:absolute;z-index:4;right:5px;top:29px;padding:3px 5px;border:1px solid var(--chapter-frame);border-radius:7px 7px 7px 0;background:#FFFBEB;color:var(--chapter-ink);font-size:10px;line-height:14px;font-weight:700;box-shadow:0 2px 0 #30422C20;pointer-events:none}
+.chapter-cheer{position:absolute;z-index:4;right:5px;top:29px;padding:3px 5px;border:1px solid var(--chapter-frame);border-radius:7px 7px 7px 0;background:#FFFFFF;color:var(--chapter-ink);font-size:10px;line-height:14px;font-weight:700;box-shadow:0 2px 0 var(--chapter-shadow);pointer-events:none}
 .game-device.activity-page.home-layout.home-design-guide .panel-footer{background:var(--chapter-page);border:0;padding-top:8px;box-shadow:none}
 .game-device.activity-page.home-layout.home-design-guide .map-scroll-hint{display:none}
 .chapter-tool::after,.chapter-open::after{display:none;border:0}

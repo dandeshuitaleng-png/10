@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21T04:08:10.775Z",
+  "date": "2026-10-21T06:42:25.898Z",
   "passed": true,
   "scope": "Actual native Page with isolated review data. Failure scenario is a review error, not a measured physical network disconnection. Repeated presses/cancellation are covered separately by controller/component tests. No physical phone evidence.",
   "checks": [

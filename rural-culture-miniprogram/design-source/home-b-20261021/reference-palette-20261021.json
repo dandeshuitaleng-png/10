@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-21T04:13:55.808990+00:00",
+  "scope": "Direct RGB pixel readings from user references. Samples record particular pixels, not exact full-gradient endpoints. B now aliases the existing approved reference stylesheet and button theme tokens.",
+  "references": [
+    {
+      "source": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155357_673.png",
+      "sha256": "eb42abb1d09270ddeb000ef03379769bf045a22c2826cf9398bc7a0f45b97796",
+      "size": [
+        3840,
+        2400
+      ],
+      "samples": {
+        "top-fill": {
+          "pixel": [
+            1539,
+            788
+          ],
+          "hex": "#FFEDD7",
+          "sRGB": "#FFEDD7"
+        },
+        "body-fill": {
+          "pixel": [
+            1039,
+            1885
+          ],
+          "hex": "#FFF3F4",
+          "sRGB": "#FFF3F4"
+        },
+        "button-top": {
+          "pixel": [
+            2289,
+            1187
+          ],
+          "hex": "#FF7201",
+          "sRGB": "#FF7201"
+        },
+        "button-bottom": {
+          "pixel": [
+            2289,
+            1227
+          ],
+          "hex": "#F34613",
+          "sRGB": "#F34613"
+        }
+      },
+      "colorProfile": "sRGB assumed (no embedded ICC)"
+    },
+    {
+      "source": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155353_804.png",
+      "sha256": "6b6ba4057d62ba28fd7a5da46e0c630dc7fdcf82888d6af3e44516b4c9f360f9",
+      "size": [
+        3840,
+        2400
+      ],
+      "samples": {
+        "top-fill": {
+          "pixel": [
+            1539,
+            788
+          ],
+          "hex": "#E0FFB8",
+          "sRGB": "#E0FFB8"
+        },
+        "body-fill": {
+          "pixel": [
+            1039,
+            1885
+          ],
+          "hex": "#F1FFF1",
+          "sRGB": "#F1FFF1"
+        },
+        "button-top": {
+          "pixel": [
+            2289,
+            1187
+          ],
+          "hex": "#E0FFC3",
+          "sRGB": "#E0FFC3"
+        },
+        "button-bottom": {
+          "pixel": [
+            2289,
+            1227
+          ],
+          "hex": "#E0FFC3",
+          "sRGB": "#E0FFC3"
+        }
+      },
+      "colorProfile": "sRGB assumed (no embedded ICC)"
+    },
+    {
+      "source": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155344_845.png",
+      "sha256": "4cf164e246cc5a1515d73cfa5a92d8d49f268ae43e2d50737c58001fb5991569",
+      "size": [
+        3840,
+        2400
+      ],
+      "samples": {
+        "top-fill": {
+          "pixel": [
+            1539,
+            788
+          ],
+          "hex": "#7CE3FD",
+          "sRGB": "#7CE3FD"
+        },
+        "body-fill": {
+          "pixel": [
+            1039,
+            1885
+          ],
+          "hex": "#E7FAFF",
+          "sRGB": "#E7FAFF"
+        },
+        "button-top": {
+          "pixel": [
+            2289,
+            1187
+          ],
+          "hex": "#30BFFF",
+          "sRGB": "#30BFFF"
+        },
+        "button-bottom": {
+          "pixel": [
+            2289,
+            1227
+          ],
+          "hex": "#30C0FF",
+          "sRGB": "#30C0FF"
+        }
+      },
+      "colorProfile": "sRGB assumed (no embedded ICC)"
+    },
+    {
+      "source": "/Users/huangnianpeng/Desktop/微信图片_2026-10-15_155402_621.png",
+      "sha256": "99ccca0f789885247a86adf7a836e6b0e9ac686f74c5c8a1abde2a7a2c8266d8",
+      "size": [
+        3840,
+        2400
+      ],
+      "samples": {
+        "top-fill": {
+          "pixel": [
+            1539,
+            788
+          ],
+          "hex": "#FAEFB2",
+          "sRGB": "#FAEFB2"
+        },
+        "body-fill": {
+          "pixel": [
+            1039,
+            1885
+          ],
+          "hex": "#F7F5DE",
+          "sRGB": "#F7F5DE"
+        },
+        "button-top": {
+          "pixel": [
+            2289,
+            1187
+          ],
+          "hex": "#FFDE1C",
+          "sRGB": "#FFDE1C"
+        },
+        "button-bottom": {
+          "pixel": [
+            2289,
+            1227
+          ],
+          "hex": "#FFDE1C",
+          "sRGB": "#FFDE1C"
+        }
+      },
+      "colorProfile": "sRGB assumed (no embedded ICC)"
+    }
+  ],
+  "classification": {
+    "red": "red/orange-red reference",
+    "ecology": "green reference, blue remains water accent only",
+    "industry": "bright yellow/gold reference",
+    "culture": "previously approved bright wood-brown classification; no blue reassignment"
+  },
+  "canonicalPalette": "miniprogram/services-v4/visual-feedback.js palettes and pages/game/reference-20261020.wxss",
+  "implementation": "B white cards and sampled reference gradients; card geometry and motion unchanged"
+}

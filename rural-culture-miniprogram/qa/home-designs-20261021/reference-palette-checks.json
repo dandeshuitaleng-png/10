@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-21T06:40:28.352Z",
+  "passed": true,
+  "scope": "Fresh native element styles for four B themes: page, board, white card and current edge. Buttons are separately reviewed in fresh native screenshots. Original three-width geometry is retained from the prior unchanged layout. This is not browser or physical phone acceptance.",
+  "checks": [
+    {
+      "theme": "ecology",
+      "passed": true,
+      "issues": [],
+      "expected": {
+        "ink": "#254C16",
+        "accent": "#34841C",
+        "light": "#F1FFF1",
+        "theme": "清亮草绿",
+        "top": "#E4FFC2",
+        "bottom": "#B6FFD9",
+        "buttonText": "#254C16",
+        "buttonEdge": "#B1E6A0",
+        "muted": "#58764B",
+        "edge": "#D9EED3",
+        "panelEdge": "#52D228",
+        "paper": "#FFFFFF",
+        "fill": "#C5F59D",
+        "shadow": "#59B62B25",
+        "panelTop": "#E0FFB8",
+        "panelBottom": "#F1FFF0",
+        "frameWidth": 4,
+        "buttonAngle": "100deg"
+      },
+      "rendered": {
+        "page": "rgb(241, 255, 241)",
+        "board": "linear-gradient(165deg, rgb(224, 255, 184), rgb(241, 255, 240) 68%)",
+        "card": "rgb(255, 255, 255)",
+        "currentEdge": "rgb(82, 210, 40)"
+      }
+    },
+    {
+      "theme": "red",
+      "passed": true,
+      "issues": [],
+      "expected": {
+        "ink": "#57251F",
+        "accent": "#CF3E16",
+        "light": "#FFF3F0",
+        "theme": "明亮朱红",
+        "top": "#FF7201",
+        "bottom": "#F03D17",
+        "buttonText": "#FFFFFF",
+        "buttonEdge": "#F88B52",
+        "muted": "#885143",
+        "edge": "#F7DDD4",
+        "panelEdge": "#FFC0AB",
+        "paper": "#FFFFFF",
+        "fill": "#FF9B76",
+        "shadow": "#EF4F242B",
+        "panelTop": "#FFF5DA",
+        "panelBottom": "#FFF2F3",
+        "frameWidth": 1,
+        "buttonAngle": "180deg"
+      },
+      "rendered": {
+        "page": "rgb(255, 243, 240)",
+        "board": "linear-gradient(165deg, rgb(255, 245, 218), rgb(255, 242, 243) 68%)",
+        "card": "rgb(255, 255, 255)",
+        "currentEdge": "rgb(255, 192, 171)"
+      }
+    },
+    {
+      "theme": "culture",
+      "passed": true,
+      "issues": [],
+      "expected": {
+        "ink": "#59371E",
+        "accent": "#9E561D",
+        "light": "#FFF6E7",
+        "theme": "明亮木棕",
+        "top": "#A85F2A",
+        "bottom": "#8D451B",
+        "buttonText": "#FFFFFF",
+        "buttonEdge": "#C98245",
+        "muted": "#795633",
+        "edge": "#F0DEC6",
+        "panelEdge": "#D49958",
+        "paper": "#FFFFFF",
+        "fill": "#EDB576",
+        "shadow": "#A3632630",
+        "panelTop": "#FFE8C6",
+        "panelBottom": "#FFF9ED",
+        "frameWidth": 2,
+        "buttonAngle": "180deg"
+      },
+      "rendered": {
+        "page": "rgb(255, 246, 231)",
+        "board": "linear-gradient(165deg, rgb(255, 232, 198), rgb(255, 249, 237) 68%)",
+        "card": "rgb(255, 255, 255)",
+        "currentEdge": "rgb(212, 153, 88)"
+      }
+    },
+    {
+      "theme": "industry",
+      "passed": true,
+      "issues": [],
+      "expected": {
+        "ink": "#674310",
+        "accent": "#98640D",
+        "light": "#FFFBE5",
+        "theme": "清亮谷金",
+        "top": "#FFDE1C",
+        "bottom": "#FFE84D",
+        "buttonText": "#674310",
+        "buttonEdge": "#F3CB26",
+        "muted": "#82652C",
+        "edge": "#F0E8BD",
+        "panelEdge": "#FEC620",
+        "paper": "#FFFFFF",
+        "fill": "#FFE86A",
+        "shadow": "#D6A91A2B",
+        "panelTop": "#FFF0A6",
+        "panelBottom": "#F9F8E7",
+        "frameWidth": 4,
+        "buttonAngle": "100deg"
+      },
+      "rendered": {
+        "page": "rgb(255, 251, 229)",
+        "board": "linear-gradient(165deg, rgb(255, 240, 166), rgb(249, 248, 231) 68%)",
+        "card": "rgb(255, 255, 255)",
+        "currentEdge": "rgb(254, 198, 32)"
+      }
+    }
+  ]
+}

@@ -7857,5 +7857,6 @@
       }
     }
   ],
-  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding."
+  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding.",
+  "paletteRevisionNote": "Geometry records retained from 20261021-explore-cards: this color-only revision does not change card dimensions, typography, layout or motion. Fresh screenshots and palette evidence are recorded separately."
 }
