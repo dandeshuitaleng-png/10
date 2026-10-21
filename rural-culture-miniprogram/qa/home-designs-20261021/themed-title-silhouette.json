@@ -1,0 +1,230 @@
+{
+  "scope": "Source alpha >=128 mapped through actual title geometry; eight-pixel capsule clearance. Computed layout evidence, not native multi-device evidence.",
+  "passed": true,
+  "checks": [
+    {
+      "id": "culture",
+      "width": 320,
+      "capsuleOffset": 94,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "culture",
+      "width": 320,
+      "capsuleOffset": 110,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "culture",
+      "width": 375,
+      "capsuleOffset": 94,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "culture",
+      "width": 375,
+      "capsuleOffset": 110,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "culture",
+      "width": 390,
+      "capsuleOffset": 94,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "culture",
+      "width": 390,
+      "capsuleOffset": 110,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "culture",
+      "width": 430,
+      "capsuleOffset": 94,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "culture",
+      "width": 430,
+      "capsuleOffset": 110,
+      "source": "/assets/culture/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 320,
+      "capsuleOffset": 94,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 320,
+      "capsuleOffset": 110,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 375,
+      "capsuleOffset": 94,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 375,
+      "capsuleOffset": 110,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 390,
+      "capsuleOffset": 94,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 390,
+      "capsuleOffset": 110,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 430,
+      "capsuleOffset": 94,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "red",
+      "width": 430,
+      "capsuleOffset": 110,
+      "source": "/assets/red/banner-themed-v3.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 320,
+      "capsuleOffset": 94,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 320,
+      "capsuleOffset": 110,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 375,
+      "capsuleOffset": 94,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 375,
+      "capsuleOffset": 110,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 390,
+      "capsuleOffset": 94,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 390,
+      "capsuleOffset": 110,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 430,
+      "capsuleOffset": 94,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "industry",
+      "width": 430,
+      "capsuleOffset": 110,
+      "source": "/assets/industry/banner-wheat-gold-v1.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 320,
+      "capsuleOffset": 94,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 320,
+      "capsuleOffset": 110,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 375,
+      "capsuleOffset": 94,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 375,
+      "capsuleOffset": 110,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 390,
+      "capsuleOffset": 94,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 390,
+      "capsuleOffset": 110,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 430,
+      "capsuleOffset": 94,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    },
+    {
+      "id": "ecology",
+      "width": 430,
+      "capsuleOffset": 110,
+      "source": "/assets/ecology/banner-cartoon-v2.png",
+      "overlap": 0
+    }
+  ]
+}

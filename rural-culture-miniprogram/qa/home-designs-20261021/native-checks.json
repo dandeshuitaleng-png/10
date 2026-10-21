@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21T07:25:35.863Z",
+  "date": "2026-10-21T07:51:03.873Z",
   "passed": true,
   "scope": "Actual WeChat renderer with constrained 320x568, 375x812 and 430x844 CSS-pixel containers. Both A and B rerun with shared client-requested ribbons and local-hand motion. 430 height stays within the host simulator viewport to avoid offscreen component culling; not a 430x932 device test. No physical iOS/Android acceptance and no real player data.",
   "checks": [
@@ -13,8 +13,8 @@
       "design": "map",
       "theme": "ecology",
       "mapWidth": 320,
-      "mapViewport": 218,
-      "scroll": 308,
+      "mapViewport": 214,
+      "scroll": 312,
       "rect": {
         ".game-device": [
           {
@@ -39,9 +39,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 264,
+            "bottom": 268,
             "width": 320,
-            "height": 244
+            "height": 248
           }
         ],
         ".title-art-window": [
@@ -50,8 +50,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 48.515625,
-            "bottom": 135.8828125,
+            "top": 52.515625,
+            "bottom": 139.8828125,
             "width": 272,
             "height": 87.3671875
           }
@@ -62,8 +62,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 69.9296875,
-            "bottom": 105.9296875,
+            "top": 73.9296875,
+            "bottom": 109.9296875,
             "width": 288,
             "height": 36
           }
@@ -81,8 +81,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -95,8 +95,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -109,8 +109,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           }
@@ -121,10 +121,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 264,
+            "top": 268,
             "bottom": 482,
             "width": 320,
-            "height": 218
+            "height": 214
           }
         ],
         ".route-canvas": [
@@ -273,8 +273,8 @@
       "design": "map",
       "theme": "red",
       "mapWidth": 320,
-      "mapViewport": 218,
-      "scroll": 308,
+      "mapViewport": 214,
+      "scroll": 312,
       "rect": {
         ".game-device": [
           {
@@ -299,9 +299,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 264,
+            "bottom": 268,
             "width": 320,
-            "height": 244
+            "height": 248
           }
         ],
         ".title-art-window": [
@@ -310,10 +310,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 76.59375,
-            "bottom": 133.1796875,
+            "top": 62.28125,
+            "bottom": 138.8203125,
             "width": 272,
-            "height": 56.5859375
+            "height": 76.5390625
           }
         ],
         ".home-title-label": [
@@ -322,8 +322,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 76.5,
-            "bottom": 112.5,
+            "top": 80.5,
+            "bottom": 116.5,
             "width": 288,
             "height": 36
           }
@@ -341,8 +341,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -355,8 +355,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -369,8 +369,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           }
@@ -381,10 +381,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 264,
+            "top": 268,
             "bottom": 482,
             "width": 320,
-            "height": 218
+            "height": 214
           }
         ],
         ".route-canvas": [
@@ -533,8 +533,8 @@
       "design": "map",
       "theme": "culture",
       "mapWidth": 320,
-      "mapViewport": 218,
-      "scroll": 308,
+      "mapViewport": 214,
+      "scroll": 312,
       "rect": {
         ".game-device": [
           {
@@ -559,9 +559,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 264,
+            "bottom": 268,
             "width": 320,
-            "height": 244
+            "height": 248
           }
         ],
         ".title-art-window": [
@@ -570,10 +570,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 76.5,
-            "bottom": 133.2734375,
+            "top": 66.53125,
+            "bottom": 138.3359375,
             "width": 272,
-            "height": 56.7734375
+            "height": 71.8046875
           }
         ],
         ".home-title-label": [
@@ -582,8 +582,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 76.5,
-            "bottom": 112.5,
+            "top": 80.5,
+            "bottom": 116.5,
             "width": 288,
             "height": 36
           }
@@ -601,8 +601,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -615,8 +615,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -629,8 +629,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           }
@@ -641,10 +641,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 264,
+            "top": 268,
             "bottom": 482,
             "width": 320,
-            "height": 218
+            "height": 214
           }
         ],
         ".route-canvas": [
@@ -793,8 +793,8 @@
       "design": "map",
       "theme": "industry",
       "mapWidth": 320,
-      "mapViewport": 218,
-      "scroll": 308,
+      "mapViewport": 214,
+      "scroll": 312,
       "rect": {
         ".game-device": [
           {
@@ -819,9 +819,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 264,
+            "bottom": 268,
             "width": 320,
-            "height": 244
+            "height": 248
           }
         ],
         ".title-art-window": [
@@ -830,8 +830,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 53.515625,
-            "bottom": 133.078125,
+            "top": 57.515625,
+            "bottom": 137.078125,
             "width": 272,
             "height": 79.5625
           }
@@ -842,8 +842,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 75.4375,
-            "bottom": 111.4375,
+            "top": 79.4375,
+            "bottom": 115.4375,
             "width": 288,
             "height": 36
           }
@@ -861,8 +861,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -875,8 +875,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           },
@@ -889,8 +889,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 210,
-            "bottom": 254,
+            "top": 214,
+            "bottom": 258,
             "width": 90.6640625,
             "height": 44
           }
@@ -901,10 +901,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 264,
+            "top": 268,
             "bottom": 482,
             "width": 320,
-            "height": 218
+            "height": 214
           }
         ],
         ".route-canvas": [
@@ -1053,8 +1053,8 @@
       "design": "guide",
       "theme": "ecology",
       "mapWidth": 320,
-      "mapViewport": 276,
-      "scroll": 10,
+      "mapViewport": 272,
+      "scroll": 14,
       "rect": {
         ".game-device": [
           {
@@ -1079,9 +1079,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 208,
+            "bottom": 212,
             "width": 320,
-            "height": 188
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -1090,8 +1090,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 48.515625,
-            "bottom": 135.8828125,
+            "top": 52.515625,
+            "bottom": 139.8828125,
             "width": 272,
             "height": 87.3671875
           }
@@ -1102,8 +1102,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 69.9296875,
-            "bottom": 105.9296875,
+            "top": 73.9296875,
+            "bottom": 109.9296875,
             "width": 288,
             "height": 36
           }
@@ -1161,10 +1161,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 208,
+            "top": 212,
             "bottom": 484,
             "width": 320,
-            "height": 276
+            "height": 272
           }
         ],
         ".route-canvas": [
@@ -1507,8 +1507,8 @@
       "design": "guide",
       "theme": "red",
       "mapWidth": 320,
-      "mapViewport": 276,
-      "scroll": 10,
+      "mapViewport": 272,
+      "scroll": 14,
       "rect": {
         ".game-device": [
           {
@@ -1533,9 +1533,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 208,
+            "bottom": 212,
             "width": 320,
-            "height": 188
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -1544,10 +1544,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 76.59375,
-            "bottom": 133.1796875,
+            "top": 62.28125,
+            "bottom": 138.8203125,
             "width": 272,
-            "height": 56.5859375
+            "height": 76.5390625
           }
         ],
         ".home-title-label": [
@@ -1556,8 +1556,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 76.5,
-            "bottom": 112.5,
+            "top": 80.5,
+            "bottom": 116.5,
             "width": 288,
             "height": 36
           }
@@ -1615,10 +1615,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 208,
+            "top": 212,
             "bottom": 484,
             "width": 320,
-            "height": 276
+            "height": 272
           }
         ],
         ".route-canvas": [
@@ -1961,8 +1961,8 @@
       "design": "guide",
       "theme": "culture",
       "mapWidth": 320,
-      "mapViewport": 276,
-      "scroll": 10,
+      "mapViewport": 272,
+      "scroll": 14,
       "rect": {
         ".game-device": [
           {
@@ -1987,9 +1987,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 208,
+            "bottom": 212,
             "width": 320,
-            "height": 188
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -1998,10 +1998,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 76.5,
-            "bottom": 133.2734375,
+            "top": 66.53125,
+            "bottom": 138.3359375,
             "width": 272,
-            "height": 56.7734375
+            "height": 71.8046875
           }
         ],
         ".home-title-label": [
@@ -2010,8 +2010,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 76.5,
-            "bottom": 112.5,
+            "top": 80.5,
+            "bottom": 116.5,
             "width": 288,
             "height": 36
           }
@@ -2069,10 +2069,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 208,
+            "top": 212,
             "bottom": 484,
             "width": 320,
-            "height": 276
+            "height": 272
           }
         ],
         ".route-canvas": [
@@ -2415,8 +2415,8 @@
       "design": "guide",
       "theme": "industry",
       "mapWidth": 320,
-      "mapViewport": 276,
-      "scroll": 10,
+      "mapViewport": 272,
+      "scroll": 14,
       "rect": {
         ".game-device": [
           {
@@ -2441,9 +2441,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 208,
+            "bottom": 212,
             "width": 320,
-            "height": 188
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -2452,8 +2452,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 53.515625,
-            "bottom": 133.078125,
+            "top": 57.515625,
+            "bottom": 137.078125,
             "width": 272,
             "height": 79.5625
           }
@@ -2464,8 +2464,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 75.4375,
-            "bottom": 111.4375,
+            "top": 79.4375,
+            "bottom": 115.4375,
             "width": 288,
             "height": 36
           }
@@ -2523,10 +2523,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 208,
+            "top": 212,
             "bottom": 484,
             "width": 320,
-            "height": 276
+            "height": 272
           }
         ],
         ".route-canvas": [
@@ -3167,10 +3167,10 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 100.75,
-            "bottom": 160.2421875,
+            "top": 81.4921875,
+            "bottom": 161.96875,
             "width": 286,
-            "height": 59.4921875
+            "height": 80.4765625
           }
         ],
         ".home-title-label": [
@@ -3428,10 +3428,10 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 100.65625,
-            "bottom": 160.3515625,
+            "top": 85.9609375,
+            "bottom": 161.4609375,
             "width": 286,
-            "height": 59.6953125
+            "height": 75.5
           }
         ],
         ".home-title-label": [
@@ -4405,10 +4405,10 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 100.75,
-            "bottom": 160.2421875,
+            "top": 81.4921875,
+            "bottom": 161.96875,
             "width": 286,
-            "height": 59.4921875
+            "height": 80.4765625
           }
         ],
         ".home-title-label": [
@@ -4860,10 +4860,10 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 100.65625,
-            "bottom": 160.3515625,
+            "top": 85.9609375,
+            "bottom": 161.4609375,
             "width": 286,
-            "height": 59.6953125
+            "height": 75.5
           }
         ],
         ".home-title-label": [
@@ -6030,10 +6030,10 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 115.75,
-            "bottom": 175.2421875,
+            "top": 96.4921875,
+            "bottom": 176.96875,
             "width": 286,
-            "height": 59.4921875
+            "height": 80.4765625
           }
         ],
         ".home-title-label": [
@@ -6290,10 +6290,10 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 115.65625,
-            "bottom": 175.3515625,
+            "top": 100.9609375,
+            "bottom": 176.4609375,
             "width": 286,
-            "height": 59.6953125
+            "height": 75.5
           }
         ],
         ".home-title-label": [
@@ -7264,10 +7264,10 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 115.75,
-            "bottom": 175.2421875,
+            "top": 96.4921875,
+            "bottom": 176.96875,
             "width": 286,
-            "height": 59.4921875
+            "height": 80.4765625
           }
         ],
         ".home-title-label": [
@@ -7718,10 +7718,10 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 115.65625,
-            "bottom": 175.3515625,
+            "top": 100.9609375,
+            "bottom": 176.4609375,
             "width": 286,
-            "height": 59.6953125
+            "height": 75.5
           }
         ],
         ".home-title-label": [

@@ -1,37 +1,37 @@
 {
-  "date": "2026-10-21T07:28:27.931Z",
+  "date": "2026-10-21T07:53:39.513Z",
   "branch": "design/home-two-directions",
   "main": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
   "baselineCommit": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
-  "previousDesignCommit": "f1de7cc8a185d9b55fad3ef643904c2ed17bbeb9",
+  "previousDesignCommit": "72621d4e650fc4e17c4da4bd78ad1ff5e6a2f276",
   "aScreenshots": [
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/ecology-map.png",
-      "previousSha256": "b18ef0c0f4c745ab3dd5af43876fef8a33716d832ab9f063beee41aae7d3c477",
-      "sha256": "c1fd34dd3b7bcd0a35564e99417483482bd7bc564a7cdfe5a3e3c6b1f2531423",
+      "previousSha256": "c1fd34dd3b7bcd0a35564e99417483482bd7bc564a7cdfe5a3e3c6b1f2531423",
+      "sha256": "3136057812f4d710bce131a2f8a714970b2a203475fca0147d864257ffdde3a1",
       "changed": true,
-      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
+      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
     },
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/red-map.png",
-      "previousSha256": "4e0bfbd1c9cab11d8844e40e265fa3df5359470d348e19fbf72163f58cfcda8d",
-      "sha256": "439364b3254ed0af79ef6c0d1a250c216a450bf4854bd0d81665ec3451c1a737",
+      "previousSha256": "439364b3254ed0af79ef6c0d1a250c216a450bf4854bd0d81665ec3451c1a737",
+      "sha256": "4814cf272ea166ffa3bbe961ba55c923929858a304cdc9bd612ac4afae7c7121",
       "changed": true,
-      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
+      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
     },
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/culture-map.png",
-      "previousSha256": "7e73da13a45dcc4b5751db9682730a1ae3e99070093abcb91adba711611ca2b0",
-      "sha256": "5cf902bcc489a80bc378d35ff19b45b71be4c9148a79238d8d3e47727279cc4e",
+      "previousSha256": "5cf902bcc489a80bc378d35ff19b45b71be4c9148a79238d8d3e47727279cc4e",
+      "sha256": "422e5ac85c5ddaf5e61ed88510a9ff3ec59d29a908ac3ed9f6e12a658046bf12",
       "changed": true,
-      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
+      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
     },
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/industry-map.png",
-      "previousSha256": "1899100fc2f32c042751ba30e4d51ec20d34358aa341590080d0d1cb857ccff1",
-      "sha256": "7dbfd7c288f6574d0f26f5b3b974eb33d185c3ef8bf9d4b815a803c4e852e9f0",
+      "previousSha256": "7dbfd7c288f6574d0f26f5b3b974eb33d185c3ef8bf9d4b815a803c4e852e9f0",
+      "sha256": "4b45680e565f1ddb46f68d7a19c72265cd49e888941d1cf6003d8ba6a3469cf0",
       "changed": true,
-      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
+      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
     }
   ],
   "productionConfigs": [

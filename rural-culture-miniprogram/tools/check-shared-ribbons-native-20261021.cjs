@@ -11,7 +11,7 @@ async function call(tool,args=[]){return new Promise((resolve,reject)=>{const c=
   const modal=scenario==='home',selector=modal?'.modal-decoration .modal-game-name':'.theme-heading .h1';
   let r=await call('automation_evaluate',['--fn-source','async function(){await new Promise(r=>setTimeout(r,250));const p=getCurrentPages().slice(-1)[0],q=wx.createSelectorQuery();q.select('+JSON.stringify(selector)+').boundingClientRect();q.select('+JSON.stringify(modal?'.modal-decoration':'.theme-heading')+').boundingClientRect();return {route:p.data.route,modal:p.data.modal,header:p.data.header,rect:await new Promise(r=>q.exec(r))};}']);
   for(let i=0;i<6&&r?.result!==undefined;i++)r=r.result;
-  assert(r.header.endsWith('/'+theme+'/banner-folded-v2.png'));
+  assert(r.header.endsWith('/'+theme+'/banner-themed-v3.png'));
   assert(modal?r.modal==='rules':r.route==='quiz');
   const [label,frame]=r.rect;assert(label&&frame);assert(label.top>=frame.top&&label.bottom<=frame.bottom&&label.left>=frame.left&&label.right<=frame.right);
   const file='shared-ribbon-'+theme+'-'+(modal?'rules':'quiz')+'.png';

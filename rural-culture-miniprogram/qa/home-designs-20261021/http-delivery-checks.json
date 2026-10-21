@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-21T07:28:44.677Z",
-  "revision": "20261021-local-motion-ribbons",
+  "date": "2026-10-21T07:54:10.115Z",
+  "revision": "20261021-themed-ribbons",
   "passed": true,
   "scope": "HTTP payload/source integrity only; not browser rendering or interaction acceptance.",
   "checks": [
@@ -36,67 +36,67 @@
     {
       "item": "services-v4/home-layout.js",
       "passed": true,
-      "sha256": "e1658dd7e624743e5feede634cfc1e4984ef42cafaf99ba0efa61c3f1f3b0431"
+      "sha256": "62d3e69b68bb48fc91ee48a711dc8a2a0d3fb56d085d980d7af65404f66083e0"
     },
     {
       "item": "services-v4/visual-feedback.js",
       "passed": true,
-      "sha256": "3e4edf5b60c5d290b225a390b1aade95ebfae65867ef252c4ccfe3f30bf0450e"
+      "sha256": "0395764ff8a4a41563c6e4aa74b002f98f1e2cd31a29895cf7a4b2ebc3bca1a0"
     },
     {
       "item": "services-v4/share-cover.js",
       "passed": true,
-      "sha256": "0e59cd17587d67f51c41073f96fcac18e54994f14f6d395c853ba3059e01cfae"
+      "sha256": "c31caccebe3015b3521693f7f6b88c0c9562420996ea04b01125fe89ed297c83"
     },
     {
-      "item": "assets/red/banner-folded-v2.png",
+      "item": "assets/red/banner-themed-v3.png",
       "passed": true,
-      "sha256": "9dcfac3753a1d48c9e078e53f7ffa93cecf0629f0b708ad4452fd134c52158cd"
+      "sha256": "b620c8107c181507c2c109c3f6fdbc49b9e2b9e15fa015a9761598f5e39823e3"
     },
     {
-      "item": "assets/culture/banner-folded-v2.png",
+      "item": "assets/culture/banner-themed-v3.png",
       "passed": true,
-      "sha256": "7fc1f81e43f3fc69db71c8aeb08abd997f8e2cd3814ca3fed077c05c191c18ac"
+      "sha256": "85894d54f6b09878f07657efb186736957ecf95b5a3e445d5c370cbf88660eef"
     },
     {
       "item": "ecology-map.png",
       "passed": true,
-      "sha256": "c1fd34dd3b7bcd0a35564e99417483482bd7bc564a7cdfe5a3e3c6b1f2531423"
+      "sha256": "3136057812f4d710bce131a2f8a714970b2a203475fca0147d864257ffdde3a1"
     },
     {
       "item": "ecology-guide.png",
       "passed": true,
-      "sha256": "e49cd9b43963d26855ffa94ee4af03ac8334e60c6221e639424beb3f484e9e7f"
+      "sha256": "5375288e8655e9b08bd8e9d3a872828ae7a138b81c3d28d7a2509b4f64280eb0"
     },
     {
       "item": "red-map.png",
       "passed": true,
-      "sha256": "439364b3254ed0af79ef6c0d1a250c216a450bf4854bd0d81665ec3451c1a737"
+      "sha256": "4814cf272ea166ffa3bbe961ba55c923929858a304cdc9bd612ac4afae7c7121"
     },
     {
       "item": "red-guide.png",
       "passed": true,
-      "sha256": "d082a405968684e38cf4b650b35cb9b7758771441770689dfae934283f002915"
+      "sha256": "43bbbc3b52fb7df254b5b63a642a2c21f3140826c84884957a615f5d32dfa306"
     },
     {
       "item": "culture-map.png",
       "passed": true,
-      "sha256": "5cf902bcc489a80bc378d35ff19b45b71be4c9148a79238d8d3e47727279cc4e"
+      "sha256": "422e5ac85c5ddaf5e61ed88510a9ff3ec59d29a908ac3ed9f6e12a658046bf12"
     },
     {
       "item": "culture-guide.png",
       "passed": true,
-      "sha256": "53e087e873ecbca70429a69c492253c3d876659c3408640632d850e963ed4f66"
+      "sha256": "08c91ec4042e275f3a82f741d61c5957ad0f2cf6fc077359de34ba715213b27a"
     },
     {
       "item": "industry-map.png",
       "passed": true,
-      "sha256": "7dbfd7c288f6574d0f26f5b3b974eb33d185c3ef8bf9d4b815a803c4e852e9f0"
+      "sha256": "4b45680e565f1ddb46f68d7a19c72265cd49e888941d1cf6003d8ba6a3469cf0"
     },
     {
       "item": "industry-guide.png",
       "passed": true,
-      "sha256": "db20498528031f588567a083e95d297ff164760fbdf20707791cb830f637bdf7"
+      "sha256": "6cfc985b39c9578f4d9cefc22584fc014d923551ff434ae08bcc8e6646041cf9"
     }
   ]
 }

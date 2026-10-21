@@ -1,0 +1,19 @@
+{
+  "method": "Built-in image_gen edit, transparent output; references explicitly role-labelled.",
+  "references": {
+    "red": [
+      "assets/red/banner-folded-v2.png",
+      "assets/industry/banner-wheat-gold-v1.png",
+      "assets/ecology/banner-cartoon-v2.png"
+    ],
+    "culture": [
+      "assets/culture/banner-folded-v2.png",
+      "assets/industry/banner-wheat-gold-v1.png",
+      "assets/ecology/banner-cartoon-v2.png"
+    ]
+  },
+  "prompts": {
+    "red": "Use case: precise-object-edit. Edit target: image 1, the existing blank red folded ribbon for a Chinese rural cultural quiz. Supporting style references: image 2 is approved wheat industry ribbon, image 3 approved green mountain/water ribbon. Keep image 1's ribbon width, curve, folded tails, bright orange-red satin gradient, thin warm ivory rim and clean central blank face. Client says it is too generic: integrate RED CULTURAL HERITAGE cues with the ribbon in the same polished two-dimensional game UI illustration family as images 2 and 3. Replace the generic wheat/grain sprigs with a small flowing RED FLAG and a very simple warm-red village memorial roof/building silhouette, growing just behind the upper-left shoulder of the ribbon; balance with one restrained small gold five-point star and tiny red leaf accents near the right fold. These are compact thematic accents, about the same prominence as the wheat ears of reference 2, not a large separate scene. Never draw a real named monument. The central 60 percent of the FRONT ribbon remains fully blank, uncluttered, with no objects over the writing area. No words, no letters, no numerals, no mascot, no landscape panorama, no wheat, no photorealism, no glossy 3D toys, no extra badge or panel. Preserve a broad readable central face and continuous curved folds. Wide 3:1 canvas, whole asset fully visible with safe transparent margins, genuine transparent background. Reference 1 is the shape and palette authority; references 2 and 3 are only ornament integration and rendering-style references.",
+    "culture": "Use case: precise-object-edit. Edit target: image 1, the existing blank brown folded ribbon for the Chinese theme 千年文脉, which is about Hunan literary heritage, academies, historical architecture and crafts. Supporting style references: image 2 is approved wheat industry ribbon, image 3 approved green mountain/water ribbon. Preserve the exact ribbon family: broad arched blank writing face, curling lower folds, outward split tails, thin ivory rim, and polished TWO-DIMENSIONAL game UI painting with restrained volume. It needs recognizable cultural heritage, not just a color swap. Integrate one compact open IVORY BOOK and rolled manuscript behind the upper-left shoulder of the ribbon, and a simplified traditional Chinese ACADEMY ROOFLINE with dark umber tiled eaves behind the upper-right shoulder; faint cloud-scroll motifs may remain on the side edges. The accents should look composed together with the ribbon, similar in prominence and treatment to wheat ears in reference 2 and mountains in reference 3. Keep accents small and low, leaving ample clear top margin. Change the ribbon main color to unmistakable warm WALNUT/WOOD BROWN, around #A85F2A to #8D451B, not orange-gold, so it is clearly different from the industry gold. Cream paper and dark brown outlines can be secondary colors. Do not make a dark antique or realistic museum painting. The center 60 percent of the FRONT face must be completely blank for real UI text. No text, letters, numbers, calligraphy, mascot, wheat, green foliage, red flag, added frame or new scene. Keep the full ribbon intact, no cropping. Wide 3:1 canvas, clean transparent margins and genuine alpha background. Reference 1 controls shape; reference 2 and 3 control consistent light illustration style and thematic ornament integration."
+  }
+}

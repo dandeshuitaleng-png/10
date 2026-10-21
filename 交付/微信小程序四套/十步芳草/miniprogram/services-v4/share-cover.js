@@ -1,5 +1,5 @@
 'use strict';
-// Compose existing game artwork at the share-card ratio; no new bitmap assets.
+// Compose the current versioned theme artwork at the share-card ratio.
 const layout=require('./home-layout');
 const actors={culture:'scholar',red:'drummer',industry:'reader',ecology:'lotus'};
 const captions={culture:['读一段湖湘往事','和智小谷一起探寻文脉'],red:['寻访家乡红色记忆','和智小谷一起读懂故事'],industry:['从一粒稻谷出发','和智小谷一起发现丰饶'],ecology:['认识一方青山绿水','和智小谷一起探索自然']};
@@ -17,7 +17,7 @@ async function render(wx,page,skin){
  const wash=ctx.createLinearGradient(0,250,0,480);wash.addColorStop(0,'rgba(255,255,255,0)');wash.addColorStop(1,skin.light);ctx.fillStyle=wash;ctx.fillRect(0,250,600,230);
  const b=layout.artBounds[id]||layout.artBounds.culture,fit=500/b.w,x=50,y=18;
  ctx.drawImage(ribbon,b.x,b.y,b.w,b.h,x,y,500,b.h*fit);
- const faces={culture:129,red:138,industry:172,ecology:116};
+ const faces={culture:152,red:160,industry:172,ecology:116};
  ctx.textAlign='center';ctx.textBaseline='middle';ctx.font='bold 40px sans-serif';ctx.fillStyle=id==='industry'?skin.ink:'#FFFFFF';
  ctx.fillText(skin.name,300,y+((faces[id]||163)-b.y)*fit-2,320);
  const lines=captions[id]||captions.culture;ctx.textAlign='left';ctx.fillStyle=skin.ink;ctx.font='bold 30px sans-serif';ctx.fillText(lines[0],30,360,340);ctx.font='24px sans-serif';ctx.fillText(lines[1],30,405,340);

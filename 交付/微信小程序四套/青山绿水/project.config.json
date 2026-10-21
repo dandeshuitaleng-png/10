@@ -63,6 +63,14 @@
       },
       {
         "type": "file",
+        "value": "assets/red/banner-folded-v2.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/culture/banner-folded-v2.png"
+      },
+      {
+        "type": "file",
         "value": "assets/journey/culture.jpg"
       },
       {
@@ -75,11 +83,11 @@
       },
       {
         "type": "file",
-        "value": "assets/red/banner-folded-v2.png"
+        "value": "assets/red/banner-themed-v3.png"
       },
       {
         "type": "file",
-        "value": "assets/culture/banner-folded-v2.png"
+        "value": "assets/culture/banner-themed-v3.png"
       }
     ],
     "include": []

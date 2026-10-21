@@ -1,9 +1,10 @@
 {
-  "date": "2026-10-21T07:22:01.949Z",
+  "date": "2026-10-21T07:47:27.426Z",
+  "revision": "20261021-themed-ribbons",
   "passed": true,
   "results": [
     {
-      "date": "2026-10-21T07:21:50.181Z",
+      "date": "2026-10-21T07:47:17.409Z",
       "project": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/miniprogram",
       "passed": true,
@@ -12,7 +13,7 @@
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 167
+          "fileCount": 169
         },
         {
           "name": "wcc",
@@ -27,94 +28,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 3725859,
-      "physicalFiles": 167,
+      "physicalBytes": 3873863,
+      "physicalFiles": 169,
       "packedFiles": 119,
-      "bytes": 1586081,
-      "mib": 1.513,
-      "mainPackageUnder2MiB": true,
-      "excludedFiles": [
-        "assets/brand/actions/01-welcome.png",
-        "assets/brand/actions/02-guide.png",
-        "assets/brand/actions/03-think.png",
-        "assets/brand/actions/04-cheer.png",
-        "assets/brand/actions/05-achievement.png",
-        "assets/brand/actions/06-rest.png",
-        "assets/brand/actor/arm-left-celebrate.png",
-        "assets/brand/actor/arm-left-rest.png",
-        "assets/brand/actor/arm-left-think.png",
-        "assets/brand/actor/arm-right-point.png",
-        "assets/brand/actor/arm-right-rest.png",
-        "assets/brand/actor/arm-right-wave.png",
-        "assets/brand/actor/body.png",
-        "assets/brand/actor/celebrate.png",
-        "assets/brand/actor/eyes-happy.png",
-        "assets/brand/actor/eyes-think.png",
-        "assets/brand/actor/eyes.png",
-        "assets/brand/actor/head.png",
-        "assets/brand/actor/mouth-happy.png",
-        "assets/brand/actor/mouth-think.png",
-        "assets/brand/actor/mouth.png",
-        "assets/brand/actor/observe.png",
-        "assets/brand/actor/prop-celebrate.png",
-        "assets/brand/actor/prop-observe.png",
-        "assets/brand/actor/prop-think.png",
-        "assets/brand/actor/think.png",
-        "assets/brand/actor/welcome.png",
-        "assets/brand/ip-original.png",
-        "assets/brand/nature.png",
-        "assets/brand/reference/autumn.png",
-        "assets/brand/reference/spring.png",
-        "assets/brand/reference/summer.png",
-        "assets/brand/reference/winter.png",
-        "assets/culture/scene.jpg",
-        "assets/ecology/banner-cartoon-v2.png",
-        "assets/ecology/banner.png",
-        "assets/ecology/header.png",
-        "assets/ecology/scene.jpg",
-        "assets/industry/banner-wheat-gold-v1.png",
-        "assets/industry/header.png",
-        "assets/industry/scene.jpg",
-        "assets/journey/ecology.jpg",
-        "assets/journey/industry.jpg",
-        "assets/journey/red.jpg",
-        "assets/red/banner-folded-v2.png",
-        "assets/red/header.png",
-        "assets/red/scene.jpg",
-        "services-v4/SERVICE-CONTRACT.md"
-      ],
-      "errors": []
-    },
-    {
-      "date": "2026-10-21T07:21:53.532Z",
-      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草",
-      "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草/miniprogram",
-      "passed": true,
-      "evidenceScope": "JSON/JS static syntax plus native WXML/WXSS compiler; effective package bytes follow packOptions file/folder/prefix/suffix excludes; not runtime, device, backend or upload acceptance",
-      "checks": [
-        {
-          "name": "JSON and JavaScript syntax",
-          "passed": true,
-          "fileCount": 159
-        },
-        {
-          "name": "wcc",
-          "passed": true,
-          "fileCount": 4,
-          "exitCode": 0
-        },
-        {
-          "name": "wcsc",
-          "passed": true,
-          "fileCount": 13,
-          "exitCode": 0
-        }
-      ],
-      "physicalBytes": 2834773,
-      "physicalFiles": 159,
-      "packedFiles": 120,
-      "bytes": 1665132,
-      "mib": 1.588,
+      "bytes": 1605653,
+      "mib": 1.531,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -151,25 +69,36 @@
         "assets/brand/reference/summer.png",
         "assets/brand/reference/winter.png",
         "assets/culture/banner-folded-v2.png",
-        "assets/journey/culture.jpg",
+        "assets/culture/scene.jpg",
+        "assets/ecology/banner-cartoon-v2.png",
+        "assets/ecology/banner.png",
+        "assets/ecology/header.png",
+        "assets/ecology/scene.jpg",
+        "assets/industry/banner-wheat-gold-v1.png",
+        "assets/industry/header.png",
+        "assets/industry/scene.jpg",
         "assets/journey/ecology.jpg",
         "assets/journey/industry.jpg",
+        "assets/journey/red.jpg",
+        "assets/red/banner-folded-v2.png",
+        "assets/red/banner-themed-v3.png",
+        "assets/red/header.png",
         "assets/red/scene.jpg",
         "services-v4/SERVICE-CONTRACT.md"
       ],
       "errors": []
     },
     {
-      "date": "2026-10-21T07:21:56.569Z",
-      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉",
-      "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉/miniprogram",
+      "date": "2026-10-21T07:47:19.852Z",
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草",
+      "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草/miniprogram",
       "passed": true,
       "evidenceScope": "JSON/JS static syntax plus native WXML/WXSS compiler; effective package bytes follow packOptions file/folder/prefix/suffix excludes; not runtime, device, backend or upload acceptance",
       "checks": [
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 159
+          "fileCount": 161
         },
         {
           "name": "wcc",
@@ -184,11 +113,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 2881413,
-      "physicalFiles": 159,
+      "physicalBytes": 2982777,
+      "physicalFiles": 161,
       "packedFiles": 120,
-      "bytes": 1659566,
-      "mib": 1.583,
+      "bytes": 1674687,
+      "mib": 1.597,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -224,26 +153,28 @@
         "assets/brand/reference/spring.png",
         "assets/brand/reference/summer.png",
         "assets/brand/reference/winter.png",
-        "assets/culture/scene.jpg",
+        "assets/culture/banner-folded-v2.png",
+        "assets/culture/banner-themed-v3.png",
+        "assets/journey/culture.jpg",
         "assets/journey/ecology.jpg",
         "assets/journey/industry.jpg",
-        "assets/journey/red.jpg",
         "assets/red/banner-folded-v2.png",
+        "assets/red/scene.jpg",
         "services-v4/SERVICE-CONTRACT.md"
       ],
       "errors": []
     },
     {
-      "date": "2026-10-21T07:21:59.392Z",
-      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业",
-      "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业/miniprogram",
+      "date": "2026-10-21T07:47:22.528Z",
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉",
+      "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉/miniprogram",
       "passed": true,
       "evidenceScope": "JSON/JS static syntax plus native WXML/WXSS compiler; effective package bytes follow packOptions file/folder/prefix/suffix excludes; not runtime, device, backend or upload acceptance",
       "checks": [
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 159
+          "fileCount": 161
         },
         {
           "name": "wcc",
@@ -258,10 +189,86 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 2899389,
-      "physicalFiles": 159,
+      "physicalBytes": 3029417,
+      "physicalFiles": 161,
+      "packedFiles": 120,
+      "bytes": 1679138,
+      "mib": 1.601,
+      "mainPackageUnder2MiB": true,
+      "excludedFiles": [
+        "assets/brand/actions/01-welcome.png",
+        "assets/brand/actions/02-guide.png",
+        "assets/brand/actions/03-think.png",
+        "assets/brand/actions/04-cheer.png",
+        "assets/brand/actions/05-achievement.png",
+        "assets/brand/actions/06-rest.png",
+        "assets/brand/actor/arm-left-celebrate.png",
+        "assets/brand/actor/arm-left-rest.png",
+        "assets/brand/actor/arm-left-think.png",
+        "assets/brand/actor/arm-right-point.png",
+        "assets/brand/actor/arm-right-rest.png",
+        "assets/brand/actor/arm-right-wave.png",
+        "assets/brand/actor/body.png",
+        "assets/brand/actor/celebrate.png",
+        "assets/brand/actor/eyes-happy.png",
+        "assets/brand/actor/eyes-think.png",
+        "assets/brand/actor/eyes.png",
+        "assets/brand/actor/head.png",
+        "assets/brand/actor/mouth-happy.png",
+        "assets/brand/actor/mouth-think.png",
+        "assets/brand/actor/mouth.png",
+        "assets/brand/actor/observe.png",
+        "assets/brand/actor/prop-celebrate.png",
+        "assets/brand/actor/prop-observe.png",
+        "assets/brand/actor/prop-think.png",
+        "assets/brand/actor/think.png",
+        "assets/brand/actor/welcome.png",
+        "assets/brand/ip-original.png",
+        "assets/brand/nature.png",
+        "assets/brand/reference/autumn.png",
+        "assets/brand/reference/spring.png",
+        "assets/brand/reference/summer.png",
+        "assets/brand/reference/winter.png",
+        "assets/culture/banner-folded-v2.png",
+        "assets/culture/scene.jpg",
+        "assets/journey/ecology.jpg",
+        "assets/journey/industry.jpg",
+        "assets/journey/red.jpg",
+        "assets/red/banner-folded-v2.png",
+        "assets/red/banner-themed-v3.png",
+        "services-v4/SERVICE-CONTRACT.md"
+      ],
+      "errors": []
+    },
+    {
+      "date": "2026-10-21T07:47:25.196Z",
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业",
+      "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业/miniprogram",
+      "passed": true,
+      "evidenceScope": "JSON/JS static syntax plus native WXML/WXSS compiler; effective package bytes follow packOptions file/folder/prefix/suffix excludes; not runtime, device, backend or upload acceptance",
+      "checks": [
+        {
+          "name": "JSON and JavaScript syntax",
+          "passed": true,
+          "fileCount": 161
+        },
+        {
+          "name": "wcc",
+          "passed": true,
+          "fileCount": 4,
+          "exitCode": 0
+        },
+        {
+          "name": "wcsc",
+          "passed": true,
+          "fileCount": 13,
+          "exitCode": 0
+        }
+      ],
+      "physicalBytes": 3047393,
+      "physicalFiles": 161,
       "packedFiles": 119,
-      "bytes": 1589030,
+      "bytes": 1589028,
       "mib": 1.515,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
@@ -299,17 +306,19 @@
         "assets/brand/reference/summer.png",
         "assets/brand/reference/winter.png",
         "assets/culture/banner-folded-v2.png",
+        "assets/culture/banner-themed-v3.png",
         "assets/industry/scene.jpg",
         "assets/journey/culture.jpg",
         "assets/journey/ecology.jpg",
         "assets/journey/red.jpg",
         "assets/red/banner-folded-v2.png",
+        "assets/red/banner-themed-v3.png",
         "services-v4/SERVICE-CONTRACT.md"
       ],
       "errors": []
     },
     {
-      "date": "2026-10-21T07:22:01.938Z",
+      "date": "2026-10-21T07:47:27.416Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水/miniprogram",
       "passed": true,
@@ -318,7 +327,7 @@
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 161
+          "fileCount": 163
         },
         {
           "name": "wcc",
@@ -333,10 +342,10 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 3098725,
-      "physicalFiles": 161,
+      "physicalBytes": 3246729,
+      "physicalFiles": 163,
       "packedFiles": 119,
-      "bytes": 1774872,
+      "bytes": 1774870,
       "mib": 1.693,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
@@ -374,6 +383,7 @@
         "assets/brand/reference/summer.png",
         "assets/brand/reference/winter.png",
         "assets/culture/banner-folded-v2.png",
+        "assets/culture/banner-themed-v3.png",
         "assets/ecology/banner.png",
         "assets/ecology/header.png",
         "assets/ecology/scene.jpg",
@@ -381,6 +391,7 @@
         "assets/journey/industry.jpg",
         "assets/journey/red.jpg",
         "assets/red/banner-folded-v2.png",
+        "assets/red/banner-themed-v3.png",
         "services-v4/SERVICE-CONTRACT.md"
       ],
       "errors": []

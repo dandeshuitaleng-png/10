@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21T07:34:37.397Z",
+  "date": "2026-10-21T07:54:13.772Z",
   "passed": true,
   "scope": "Actual host simulator, isolated review fixture. Source and label/frame rectangle checks plus screenshot inspection; not physical-device acceptance.",
   "checks": [
@@ -10,15 +10,15 @@
       "result": {
         "route": "quiz",
         "modal": "",
-        "header": "/assets/red/banner-folded-v2.png",
+        "header": "/assets/red/banner-themed-v3.png",
         "rect": [
           {
             "id": "",
             "dataset": {},
             "left": 50,
             "right": 340,
-            "top": 99.875,
-            "bottom": 139.875,
+            "top": 107.796875,
+            "bottom": 147.796875,
             "width": 290,
             "height": 40
           },
@@ -43,15 +43,15 @@
       "result": {
         "route": "home",
         "modal": "rules",
-        "header": "/assets/red/banner-folded-v2.png",
+        "header": "/assets/red/banner-themed-v3.png",
         "rect": [
           {
             "id": "",
             "dataset": {},
             "left": 53,
             "right": 337,
-            "top": 144.8671875,
-            "bottom": 174.8671875,
+            "top": 152.5,
+            "bottom": 182.5,
             "width": 284,
             "height": 30
           },
@@ -76,15 +76,15 @@
       "result": {
         "route": "quiz",
         "modal": "",
-        "header": "/assets/culture/banner-folded-v2.png",
+        "header": "/assets/culture/banner-themed-v3.png",
         "rect": [
           {
             "id": "",
             "dataset": {},
             "left": 51,
             "right": 339,
-            "top": 97.6328125,
-            "bottom": 137.6328125,
+            "top": 105.9140625,
+            "bottom": 145.9140625,
             "width": 288,
             "height": 40
           },
@@ -109,15 +109,15 @@
       "result": {
         "route": "home",
         "modal": "rules",
-        "header": "/assets/culture/banner-folded-v2.png",
+        "header": "/assets/culture/banner-themed-v3.png",
         "rect": [
           {
             "id": "",
             "dataset": {},
             "left": 54,
             "right": 336,
-            "top": 141.8359375,
-            "bottom": 171.8359375,
+            "top": 149.765625,
+            "bottom": 179.765625,
             "width": 282,
             "height": 30
           },

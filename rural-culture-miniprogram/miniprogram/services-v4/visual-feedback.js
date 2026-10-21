@@ -18,7 +18,7 @@ function sceneActor(route,status){
  return {profile:'scholar',points:'observe',result:'drummer',certificate:'skater'}[route]||'welcome';
 }
 function modalActor(modal,rulePose){return {rules:rulePose||'welcome',revive:'heart',locked:'lotus'}[modal]||'';}
-function header(gameId){if(gameId==='red'||gameId==='culture')return '/assets/'+gameId+'/banner-folded-v2.png';return '/assets/'+gameId+(gameId==='ecology'?'/banner-cartoon-v2.png':gameId==='industry'?'/banner-wheat-gold-v1.png':'/header.png');}
+function header(gameId){if(gameId==='red'||gameId==='culture')return '/assets/'+gameId+'/banner-themed-v3.png';return '/assets/'+gameId+(gameId==='ecology'?'/banner-cartoon-v2.png':gameId==='industry'?'/banner-wheat-gold-v1.png':'/header.png');}
 function scene(gameId){return '/assets/journey/'+gameId+'.jpg';}
 // User-facing labels do not expose connection modes or fixture account names.
 function readerName(name){return /^(本地联调用户|本地联网用户|本地联网体验者|演示用户|演示账号)$/.test(name||'')?'乡村阅读者':name;}
