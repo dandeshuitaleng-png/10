@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-21T03:20:13.766Z",
+  "branch": "design/home-two-directions",
+  "main": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
+  "baselineCommit": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
+  "aScreenshots": [
+    {
+      "file": "rural-culture-miniprogram/preview/home-directions-20261021/ecology-map.png",
+      "sha256": "b18ef0c0f4c745ab3dd5af43876fef8a33716d832ab9f063beee41aae7d3c477",
+      "unchanged": true
+    },
+    {
+      "file": "rural-culture-miniprogram/preview/home-directions-20261021/red-map.png",
+      "sha256": "4e0bfbd1c9cab11d8844e40e265fa3df5359470d348e19fbf72163f58cfcda8d",
+      "unchanged": true
+    },
+    {
+      "file": "rural-culture-miniprogram/preview/home-directions-20261021/culture-map.png",
+      "sha256": "7e73da13a45dcc4b5751db9682730a1ae3e99070093abcb91adba711611ca2b0",
+      "unchanged": true
+    },
+    {
+      "file": "rural-culture-miniprogram/preview/home-directions-20261021/industry-map.png",
+      "sha256": "1899100fc2f32c042751ba30e4d51ec20d34358aa341590080d0d1cb857ccff1",
+      "unchanged": true
+    }
+  ]
+}

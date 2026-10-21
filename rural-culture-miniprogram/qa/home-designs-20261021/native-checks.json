@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "scope": "Actual WeChat renderer with constrained 320/375/430 CSS-pixel containers and original scene images. Host simulator 390x844; not physical iOS/Android acceptance. No real player data.",
+  "scope": "Actual native renderer; B color-block chapter dashboard at 320/375/430 CSS px. A records retained from the unchanged earlier version. Not physical iPhone/Android evidence.",
   "checks": [
     {
       "size": {
@@ -2395,798 +2395,6 @@
     },
     {
       "size": {
-        "w": 320,
-        "h": 568,
-        "status": 20,
-        "safe": 0
-      },
-      "design": "guide",
-      "theme": "ecology",
-      "mapWidth": 284,
-      "mapViewport": 189,
-      "scroll": 284,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "ecology",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 320,
-            "top": 0,
-            "bottom": 568,
-            "width": 320,
-            "height": 568
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 20,
-            "bottom": 271,
-            "width": 320,
-            "height": 251
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 24,
-            "right": 296,
-            "top": 49.515625,
-            "bottom": 136.8828125,
-            "width": 272,
-            "height": 87.3671875
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 304,
-            "top": 70.9296875,
-            "bottom": 106.9296875,
-            "width": 288,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 108,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 114,
-            "right": 206,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 212,
-            "right": 304,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": 277,
-            "bottom": 466,
-            "width": 284,
-            "height": 189
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": -7,
-            "bottom": 477.6875,
-            "width": 284,
-            "height": 484.6875
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "ecology-1",
-              "pressKey": "press-12-ecology-1"
-            },
-            "left": 30.2734375,
-            "right": 154.2734375,
-            "top": 321.484375,
-            "bottom": 411.484375,
-            "width": 124,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "ecology-1"
-            },
-            "left": 180.2734375,
-            "right": 236.2734375,
-            "top": 329.484375,
-            "bottom": 395.484375,
-            "width": 56,
-            "height": 66
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 484,
-            "bottom": 568,
-            "width": 320,
-            "height": 84
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "ecology-1",
-              "route": ""
-            },
-            "left": 12,
-            "right": 308,
-            "top": 492,
-            "bottom": 544,
-            "width": 296,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 320,
-        "h": 568,
-        "status": 20,
-        "safe": 0
-      },
-      "design": "guide",
-      "theme": "red",
-      "mapWidth": 284,
-      "mapViewport": 189,
-      "scroll": 284,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "red",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 320,
-            "top": 0,
-            "bottom": 568,
-            "width": 320,
-            "height": 568
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 20,
-            "bottom": 271,
-            "width": 320,
-            "height": 251
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 24,
-            "right": 296,
-            "top": 73.1640625,
-            "bottom": 119.109375,
-            "width": 272,
-            "height": 45.9453125
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 304,
-            "top": 72.2734375,
-            "bottom": 108.2734375,
-            "width": 288,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 108,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 114,
-            "right": 206,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 212,
-            "right": 304,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": 277,
-            "bottom": 466,
-            "width": 284,
-            "height": 189
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": -7,
-            "bottom": 477.6875,
-            "width": 284,
-            "height": 484.6875
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "red-1",
-              "pressKey": "press-12-red-1"
-            },
-            "left": 30.2734375,
-            "right": 154.2734375,
-            "top": 321.484375,
-            "bottom": 411.484375,
-            "width": 124,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "red-1"
-            },
-            "left": 180.2734375,
-            "right": 236.2734375,
-            "top": 329.484375,
-            "bottom": 395.484375,
-            "width": 56,
-            "height": 66
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 484,
-            "bottom": 568,
-            "width": 320,
-            "height": 84
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "red-1",
-              "route": ""
-            },
-            "left": 12,
-            "right": 308,
-            "top": 492,
-            "bottom": 544,
-            "width": 296,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 320,
-        "h": 568,
-        "status": 20,
-        "safe": 0
-      },
-      "design": "guide",
-      "theme": "culture",
-      "mapWidth": 284,
-      "mapViewport": 189,
-      "scroll": 284,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "culture",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 320,
-            "top": 0,
-            "bottom": 568,
-            "width": 320,
-            "height": 568
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 20,
-            "bottom": 271,
-            "width": 320,
-            "height": 251
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 24,
-            "right": 296,
-            "top": 66.71875,
-            "bottom": 122.859375,
-            "width": 272,
-            "height": 56.140625
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 304,
-            "top": 74.7265625,
-            "bottom": 110.7265625,
-            "width": 288,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 108,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 114,
-            "right": 206,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 212,
-            "right": 304,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": 277,
-            "bottom": 466,
-            "width": 284,
-            "height": 189
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": -7,
-            "bottom": 477.6875,
-            "width": 284,
-            "height": 484.6875
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "culture-1",
-              "pressKey": "press-12-culture-1"
-            },
-            "left": 30.2734375,
-            "right": 154.2734375,
-            "top": 321.484375,
-            "bottom": 411.484375,
-            "width": 124,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "culture-1"
-            },
-            "left": 180.2734375,
-            "right": 236.2734375,
-            "top": 329.484375,
-            "bottom": 395.484375,
-            "width": 56,
-            "height": 66
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 484,
-            "bottom": 568,
-            "width": 320,
-            "height": 84
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "culture-1",
-              "route": ""
-            },
-            "left": 12,
-            "right": 308,
-            "top": 492,
-            "bottom": 544,
-            "width": 296,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 320,
-        "h": 568,
-        "status": 20,
-        "safe": 0
-      },
-      "design": "guide",
-      "theme": "industry",
-      "mapWidth": 284,
-      "mapViewport": 189,
-      "scroll": 284,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "industry",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 320,
-            "top": 0,
-            "bottom": 568,
-            "width": 320,
-            "height": 568
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 20,
-            "bottom": 271,
-            "width": 320,
-            "height": 251
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 24,
-            "right": 296,
-            "top": 54.515625,
-            "bottom": 134.078125,
-            "width": 272,
-            "height": 79.5625
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 304,
-            "top": 76.4375,
-            "bottom": 112.4375,
-            "width": 288,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 108,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 114,
-            "right": 206,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 212,
-            "right": 304,
-            "top": 213,
-            "bottom": 257,
-            "width": 92,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": 277,
-            "bottom": 466,
-            "width": 284,
-            "height": 189
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 18,
-            "right": 302,
-            "top": -7,
-            "bottom": 477.6875,
-            "width": 284,
-            "height": 484.6875
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "industry-1",
-              "pressKey": "press-12-industry-1"
-            },
-            "left": 30.2734375,
-            "right": 154.2734375,
-            "top": 321.484375,
-            "bottom": 411.484375,
-            "width": 124,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "industry-1"
-            },
-            "left": 180.2734375,
-            "right": 236.2734375,
-            "top": 329.484375,
-            "bottom": 395.484375,
-            "width": 56,
-            "height": 66
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 320,
-            "top": 484,
-            "bottom": 568,
-            "width": 320,
-            "height": 84
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "industry-1",
-              "route": ""
-            },
-            "left": 12,
-            "right": 308,
-            "top": 492,
-            "bottom": 544,
-            "width": 296,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
         "w": 375,
         "h": 812,
         "status": 44,
@@ -3194,9 +2402,9 @@
       },
       "design": "guide",
       "theme": "ecology",
-      "mapWidth": 339,
-      "mapViewport": 385,
-      "scroll": 168,
+      "mapWidth": 375,
+      "mapViewport": 471,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -3221,9 +2429,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 299,
+            "bottom": 237,
             "width": 375,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -3258,99 +2466,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 126.328125,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.328125,
-            "height": 44
+            "right": 125,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 132.328125,
-            "right": 242.6640625,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "left": 133,
+            "right": 242,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 248.6640625,
+            "left": 250,
             "right": 359,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 305,
-            "bottom": 690,
-            "width": 339,
-            "height": 385
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 708,
+            "width": 375,
+            "height": 471
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 137,
-            "bottom": 715.5546875,
-            "width": 339,
-            "height": 578.5546875
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 803,
+            "width": 375,
+            "height": 566
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "ecology-1",
-              "pressKey": "press-12-ecology-1"
+              "pressKey": "b-level-ecology-1"
             },
-            "left": 67.125,
-            "right": 191.125,
-            "top": 545.2734375,
-            "bottom": 635.2734375,
-            "width": 124,
-            "height": 90
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "ecology-1"
             },
-            "left": 213.125,
-            "right": 277.125,
-            "top": 543.2734375,
-            "bottom": 619.2734375,
-            "width": 64,
-            "height": 76
+            "left": 249,
+            "right": 345,
+            "top": 363,
+            "bottom": 475,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 193.5,
+            "right": 359,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 659,
+            "bottom": 775,
+            "width": 165.5,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -3371,11 +2625,11 @@
               "id": "ecology-1",
               "route": ""
             },
-            "left": 12,
-            "right": 363,
+            "left": 16,
+            "right": 359,
             "top": 716,
             "bottom": 768,
-            "width": 351,
+            "width": 343,
             "height": 52
           }
         ]
@@ -3393,9 +2647,9 @@
       },
       "design": "guide",
       "theme": "red",
-      "mapWidth": 339,
-      "mapViewport": 385,
-      "scroll": 168,
+      "mapWidth": 375,
+      "mapViewport": 471,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -3420,9 +2674,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 299,
+            "bottom": 237,
             "width": 375,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -3457,99 +2711,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 126.328125,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.328125,
-            "height": 44
+            "right": 125,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 132.328125,
-            "right": 242.6640625,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "left": 133,
+            "right": 242,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 248.6640625,
+            "left": 250,
             "right": 359,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 305,
-            "bottom": 690,
-            "width": 339,
-            "height": 385
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 708,
+            "width": 375,
+            "height": 471
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 137,
-            "bottom": 715.5546875,
-            "width": 339,
-            "height": 578.5546875
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 803,
+            "width": 375,
+            "height": 566
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "red-1",
-              "pressKey": "press-12-red-1"
+              "pressKey": "b-level-red-1"
             },
-            "left": 67.125,
-            "right": 191.125,
-            "top": 545.2734375,
-            "bottom": 635.2734375,
-            "width": 124,
-            "height": 90
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "red-1"
             },
-            "left": 213.125,
-            "right": 277.125,
-            "top": 543.2734375,
-            "bottom": 619.2734375,
-            "width": 64,
-            "height": 76
+            "left": 249,
+            "right": 345,
+            "top": 363,
+            "bottom": 475,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 193.5,
+            "right": 359,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 659,
+            "bottom": 775,
+            "width": 165.5,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -3570,11 +2870,11 @@
               "id": "red-1",
               "route": ""
             },
-            "left": 12,
-            "right": 363,
+            "left": 16,
+            "right": 359,
             "top": 716,
             "bottom": 768,
-            "width": 351,
+            "width": 343,
             "height": 52
           }
         ]
@@ -3592,9 +2892,9 @@
       },
       "design": "guide",
       "theme": "culture",
-      "mapWidth": 339,
-      "mapViewport": 385,
-      "scroll": 168,
+      "mapWidth": 375,
+      "mapViewport": 471,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -3619,9 +2919,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 299,
+            "bottom": 237,
             "width": 375,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -3656,99 +2956,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 126.328125,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.328125,
-            "height": 44
+            "right": 125,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 132.328125,
-            "right": 242.6640625,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "left": 133,
+            "right": 242,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 248.6640625,
+            "left": 250,
             "right": 359,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 305,
-            "bottom": 690,
-            "width": 339,
-            "height": 385
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 708,
+            "width": 375,
+            "height": 471
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 137,
-            "bottom": 715.5546875,
-            "width": 339,
-            "height": 578.5546875
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 803,
+            "width": 375,
+            "height": 566
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "culture-1",
-              "pressKey": "press-12-culture-1"
+              "pressKey": "b-level-culture-1"
             },
-            "left": 67.125,
-            "right": 191.125,
-            "top": 545.2734375,
-            "bottom": 635.2734375,
-            "width": 124,
-            "height": 90
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "culture-1"
             },
-            "left": 213.125,
-            "right": 277.125,
-            "top": 543.2734375,
-            "bottom": 619.2734375,
-            "width": 64,
-            "height": 76
+            "left": 249,
+            "right": 345,
+            "top": 363,
+            "bottom": 475,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 193.5,
+            "right": 359,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 659,
+            "bottom": 775,
+            "width": 165.5,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -3769,11 +3115,11 @@
               "id": "culture-1",
               "route": ""
             },
-            "left": 12,
-            "right": 363,
+            "left": 16,
+            "right": 359,
             "top": 716,
             "bottom": 768,
-            "width": 351,
+            "width": 343,
             "height": 52
           }
         ]
@@ -3791,9 +3137,9 @@
       },
       "design": "guide",
       "theme": "industry",
-      "mapWidth": 339,
-      "mapViewport": 385,
-      "scroll": 168,
+      "mapWidth": 375,
+      "mapViewport": 471,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -3818,9 +3164,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 299,
+            "bottom": 237,
             "width": 375,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -3855,99 +3201,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 126.328125,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.328125,
-            "height": 44
+            "right": 125,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 132.328125,
-            "right": 242.6640625,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "left": 133,
+            "right": 242,
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 248.6640625,
+            "left": 250,
             "right": 359,
-            "top": 241,
-            "bottom": 285,
-            "width": 110.3359375,
-            "height": 44
+            "top": 253,
+            "bottom": 313,
+            "width": 109,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 305,
-            "bottom": 690,
-            "width": 339,
-            "height": 385
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 708,
+            "width": 375,
+            "height": 471
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 357,
-            "top": 137,
-            "bottom": 715.5546875,
-            "width": 339,
-            "height": 578.5546875
+            "left": 0,
+            "right": 375,
+            "top": 237,
+            "bottom": 803,
+            "width": 375,
+            "height": 566
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "industry-1",
-              "pressKey": "press-12-industry-1"
+              "pressKey": "b-level-industry-1"
             },
-            "left": 67.125,
-            "right": 191.125,
-            "top": 545.2734375,
-            "bottom": 635.2734375,
-            "width": 124,
-            "height": 90
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "industry-1"
             },
-            "left": 213.125,
-            "right": 277.125,
-            "top": 543.2734375,
-            "bottom": 619.2734375,
-            "width": 64,
-            "height": 76
+            "left": 249,
+            "right": 345,
+            "top": 363,
+            "bottom": 475,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 325,
+            "bottom": 489,
+            "width": 343,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 193.5,
+            "right": 359,
+            "top": 531,
+            "bottom": 647,
+            "width": 165.5,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 181.5,
+            "top": 659,
+            "bottom": 775,
+            "width": 165.5,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -3968,11 +3360,11 @@
               "id": "industry-1",
               "route": ""
             },
-            "left": 12,
-            "right": 363,
+            "left": 16,
+            "right": 359,
             "top": 716,
             "bottom": 768,
-            "width": 351,
+            "width": 343,
             "height": 52
           }
         ]
@@ -3990,9 +3382,9 @@
       },
       "design": "guide",
       "theme": "ecology",
-      "mapWidth": 394,
-      "mapViewport": 490,
-      "scroll": 143,
+      "mapWidth": 430,
+      "mapViewport": 576,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -4017,9 +3409,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 314,
+            "bottom": 252,
             "width": 430,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -4054,99 +3446,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 144.6640625,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "right": 143.328125,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.328125,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 150.6640625,
-            "right": 279.328125,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 285.328125,
+            "left": 286.6640625,
             "right": 414,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.671875,
-            "height": 44
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 320,
-            "bottom": 810,
-            "width": 394,
-            "height": 490
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 177,
-            "bottom": 849.421875,
-            "width": 394,
-            "height": 672.421875
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "ecology-1",
-              "pressKey": "press-12-ecology-1"
+              "pressKey": "b-level-ecology-1"
             },
-            "left": 83.4765625,
-            "right": 221.4765625,
-            "top": 659.5625,
-            "bottom": 749.5625,
-            "width": 138,
-            "height": 90
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "ecology-1"
             },
-            "left": 249.9765625,
-            "right": 313.9765625,
-            "top": 657.5625,
-            "bottom": 733.5625,
-            "width": 64,
-            "height": 76
+            "left": 304,
+            "right": 400,
+            "top": 378,
+            "bottom": 490,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 221,
+            "right": 414,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 674,
+            "bottom": 790,
+            "width": 193,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -4167,11 +3605,11 @@
               "id": "ecology-1",
               "route": ""
             },
-            "left": 12,
-            "right": 418,
+            "left": 16,
+            "right": 414,
             "top": 836,
             "bottom": 888,
-            "width": 406,
+            "width": 398,
             "height": 52
           }
         ]
@@ -4188,9 +3626,9 @@
       },
       "design": "guide",
       "theme": "red",
-      "mapWidth": 394,
-      "mapViewport": 490,
-      "scroll": 143,
+      "mapWidth": 430,
+      "mapViewport": 576,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -4215,9 +3653,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 314,
+            "bottom": 252,
             "width": 430,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -4252,99 +3690,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 144.6640625,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "right": 143.328125,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.328125,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 150.6640625,
-            "right": 279.328125,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 285.328125,
+            "left": 286.6640625,
             "right": 414,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.671875,
-            "height": 44
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 320,
-            "bottom": 810,
-            "width": 394,
-            "height": 490
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 177,
-            "bottom": 849.421875,
-            "width": 394,
-            "height": 672.421875
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "red-1",
-              "pressKey": "press-12-red-1"
+              "pressKey": "b-level-red-1"
             },
-            "left": 83.4765625,
-            "right": 221.4765625,
-            "top": 659.5625,
-            "bottom": 749.5625,
-            "width": 138,
-            "height": 90
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "red-1"
             },
-            "left": 249.9765625,
-            "right": 313.9765625,
-            "top": 657.5625,
-            "bottom": 733.5625,
-            "width": 64,
-            "height": 76
+            "left": 304,
+            "right": 400,
+            "top": 378,
+            "bottom": 490,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 221,
+            "right": 414,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 674,
+            "bottom": 790,
+            "width": 193,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -4365,11 +3849,11 @@
               "id": "red-1",
               "route": ""
             },
-            "left": 12,
-            "right": 418,
+            "left": 16,
+            "right": 414,
             "top": 836,
             "bottom": 888,
-            "width": 406,
+            "width": 398,
             "height": 52
           }
         ]
@@ -4386,9 +3870,9 @@
       },
       "design": "guide",
       "theme": "culture",
-      "mapWidth": 394,
-      "mapViewport": 490,
-      "scroll": 143,
+      "mapWidth": 430,
+      "mapViewport": 576,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -4413,9 +3897,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 314,
+            "bottom": 252,
             "width": 430,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -4450,99 +3934,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 144.6640625,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "right": 143.328125,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.328125,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 150.6640625,
-            "right": 279.328125,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 285.328125,
+            "left": 286.6640625,
             "right": 414,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.671875,
-            "height": 44
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 320,
-            "bottom": 810,
-            "width": 394,
-            "height": 490
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 177,
-            "bottom": 849.421875,
-            "width": 394,
-            "height": 672.421875
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "culture-1",
-              "pressKey": "press-12-culture-1"
+              "pressKey": "b-level-culture-1"
             },
-            "left": 83.4765625,
-            "right": 221.4765625,
-            "top": 659.5625,
-            "bottom": 749.5625,
-            "width": 138,
-            "height": 90
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "culture-1"
             },
-            "left": 249.9765625,
-            "right": 313.9765625,
-            "top": 657.5625,
-            "bottom": 733.5625,
-            "width": 64,
-            "height": 76
+            "left": 304,
+            "right": 400,
+            "top": 378,
+            "bottom": 490,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 221,
+            "right": 414,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 674,
+            "bottom": 790,
+            "width": 193,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -4563,11 +4093,11 @@
               "id": "culture-1",
               "route": ""
             },
-            "left": 12,
-            "right": 418,
+            "left": 16,
+            "right": 414,
             "top": 836,
             "bottom": 888,
-            "width": 406,
+            "width": 398,
             "height": 52
           }
         ]
@@ -4584,9 +4114,9 @@
       },
       "design": "guide",
       "theme": "industry",
-      "mapWidth": 394,
-      "mapViewport": 490,
-      "scroll": 143,
+      "mapWidth": 430,
+      "mapViewport": 576,
+      "scroll": 0,
       "rect": {
         ".game-device": [
           {
@@ -4611,9 +4141,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 314,
+            "bottom": 252,
             "width": 430,
-            "height": 255
+            "height": 193
           }
         ],
         ".title-art-window": [
@@ -4648,99 +4178,145 @@
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-6",
+              "pressKey": "b-ranking",
               "route": "ranking"
             },
             "left": 16,
-            "right": 144.6640625,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "right": 143.328125,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.328125,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-7",
+              "pressKey": "b-certificate",
               "route": "certificate"
             },
-            "left": 150.6640625,
-            "right": 279.328125,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.6640625,
-            "height": 44
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           },
           {
             "id": "",
             "dataset": {
               "action": "go",
-              "pressKey": "press-8",
+              "pressKey": "b-profile",
               "route": "profile"
             },
-            "left": 285.328125,
+            "left": 286.6640625,
             "right": 414,
-            "top": 256,
-            "bottom": 300,
-            "width": 128.671875,
-            "height": 44
+            "top": 268,
+            "bottom": 328,
+            "width": 127.3359375,
+            "height": 60
           }
         ],
         ".panel-body": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 320,
-            "bottom": 810,
-            "width": 394,
-            "height": 490
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
         ".route-canvas": [
           {
             "id": "",
             "dataset": {},
-            "left": 18,
-            "right": 412,
-            "top": 177,
-            "bottom": 849.421875,
-            "width": 394,
-            "height": 672.421875
+            "left": 0,
+            "right": 430,
+            "top": 252,
+            "bottom": 828,
+            "width": 430,
+            "height": 576
           }
         ],
-        ".route-stop.current .route-caption": [
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
           {
             "id": "",
             "dataset": {
               "action": "level",
               "id": "industry-1",
-              "pressKey": "press-12-industry-1"
+              "pressKey": "b-level-industry-1"
             },
-            "left": 83.4765625,
-            "right": 221.4765625,
-            "top": 659.5625,
-            "bottom": 749.5625,
-            "width": 138,
-            "height": 90
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
           }
         ],
-        ".route-stop.current .chapter-mascot": [
+        ".chapter-feature .chapter-mascot": [
           {
             "id": "",
             "dataset": {
               "id": "industry-1"
             },
-            "left": 249.9765625,
-            "right": 313.9765625,
-            "top": 657.5625,
-            "bottom": 733.5625,
-            "width": 64,
-            "height": 76
+            "left": 304,
+            "right": 400,
+            "top": 378,
+            "bottom": 490,
+            "width": 96,
+            "height": 112
           }
         ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 340,
+            "bottom": 504,
+            "width": 398,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 221,
+            "right": 414,
+            "top": 546,
+            "bottom": 662,
+            "width": 193,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 209,
+            "top": 674,
+            "bottom": 790,
+            "width": 193,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
         ".panel-footer": [
           {
             "id": "",
@@ -4761,11 +4337,987 @@
               "id": "industry-1",
               "route": ""
             },
-            "left": 12,
-            "right": 418,
+            "left": 16,
+            "right": 414,
             "top": 836,
             "bottom": 888,
-            "width": 406,
+            "width": 398,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "design": "guide",
+      "theme": "ecology",
+      "mapWidth": 320,
+      "mapViewport": 275,
+      "scroll": 0,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 20,
+            "bottom": 209,
+            "width": 320,
+            "height": 189
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 296,
+            "top": 49.515625,
+            "bottom": 136.8828125,
+            "width": 272,
+            "height": 87.3671875
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 70.9296875,
+            "bottom": 106.9296875,
+            "width": 288,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-ranking",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 106.6640625,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-certificate",
+              "route": "certificate"
+            },
+            "left": 114.6640625,
+            "right": 205.328125,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-profile",
+              "route": "profile"
+            },
+            "left": 213.328125,
+            "right": 303.9921875,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 484,
+            "width": 320,
+            "height": 275
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 775,
+            "width": 320,
+            "height": 566
+          }
+        ],
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "pressKey": "b-level-ecology-1"
+            },
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          }
+        ],
+        ".chapter-feature .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "ecology-1"
+            },
+            "left": 206,
+            "right": 294,
+            "top": 335,
+            "bottom": 447,
+            "width": 88,
+            "height": 112
+          }
+        ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 166,
+            "right": 304,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 631,
+            "bottom": 747,
+            "width": 138,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 484,
+            "bottom": 568,
+            "width": 320,
+            "height": 84
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 304,
+            "top": 492,
+            "bottom": 544,
+            "width": 288,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "design": "guide",
+      "theme": "red",
+      "mapWidth": 320,
+      "mapViewport": 275,
+      "scroll": 0,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 20,
+            "bottom": 209,
+            "width": 320,
+            "height": 189
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 296,
+            "top": 73.1640625,
+            "bottom": 119.109375,
+            "width": 272,
+            "height": 45.9453125
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 72.2734375,
+            "bottom": 108.2734375,
+            "width": 288,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-ranking",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 106.6640625,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-certificate",
+              "route": "certificate"
+            },
+            "left": 114.6640625,
+            "right": 205.328125,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-profile",
+              "route": "profile"
+            },
+            "left": 213.328125,
+            "right": 303.9921875,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 484,
+            "width": 320,
+            "height": 275
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 775,
+            "width": 320,
+            "height": 566
+          }
+        ],
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "pressKey": "b-level-red-1"
+            },
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          }
+        ],
+        ".chapter-feature .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "red-1"
+            },
+            "left": 206,
+            "right": 294,
+            "top": 335,
+            "bottom": 447,
+            "width": 88,
+            "height": 112
+          }
+        ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 166,
+            "right": 304,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 631,
+            "bottom": 747,
+            "width": 138,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 484,
+            "bottom": 568,
+            "width": 320,
+            "height": 84
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 304,
+            "top": 492,
+            "bottom": 544,
+            "width": 288,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "design": "guide",
+      "theme": "culture",
+      "mapWidth": 320,
+      "mapViewport": 275,
+      "scroll": 0,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 20,
+            "bottom": 209,
+            "width": 320,
+            "height": 189
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 296,
+            "top": 66.71875,
+            "bottom": 122.859375,
+            "width": 272,
+            "height": 56.140625
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 74.7265625,
+            "bottom": 110.7265625,
+            "width": 288,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-ranking",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 106.6640625,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-certificate",
+              "route": "certificate"
+            },
+            "left": 114.6640625,
+            "right": 205.328125,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-profile",
+              "route": "profile"
+            },
+            "left": 213.328125,
+            "right": 303.9921875,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 484,
+            "width": 320,
+            "height": 275
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 775,
+            "width": 320,
+            "height": 566
+          }
+        ],
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "pressKey": "b-level-culture-1"
+            },
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          }
+        ],
+        ".chapter-feature .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "culture-1"
+            },
+            "left": 206,
+            "right": 294,
+            "top": 335,
+            "bottom": 447,
+            "width": 88,
+            "height": 112
+          }
+        ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 166,
+            "right": 304,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 631,
+            "bottom": 747,
+            "width": 138,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 484,
+            "bottom": 568,
+            "width": 320,
+            "height": 84
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 304,
+            "top": 492,
+            "bottom": 544,
+            "width": 288,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "design": "guide",
+      "theme": "industry",
+      "mapWidth": 320,
+      "mapViewport": 275,
+      "scroll": 0,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 20,
+            "bottom": 209,
+            "width": 320,
+            "height": 189
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 296,
+            "top": 54.515625,
+            "bottom": 134.078125,
+            "width": 272,
+            "height": 79.5625
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 76.4375,
+            "bottom": 112.4375,
+            "width": 288,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-ranking",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 106.6640625,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-certificate",
+              "route": "certificate"
+            },
+            "left": 114.6640625,
+            "right": 205.328125,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "b-profile",
+              "route": "profile"
+            },
+            "left": 213.328125,
+            "right": 303.9921875,
+            "top": 225,
+            "bottom": 285,
+            "width": 90.6640625,
+            "height": 60
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 484,
+            "width": 320,
+            "height": 275
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 209,
+            "bottom": 775,
+            "width": 320,
+            "height": 566
+          }
+        ],
+        ".route-stop.current .route-caption": [],
+        ".route-stop.current .chapter-mascot": [],
+        ".chapter-feature .chapter-open": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "pressKey": "b-level-industry-1"
+            },
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          }
+        ],
+        ".chapter-feature .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "industry-1"
+            },
+            "left": 206,
+            "right": 294,
+            "top": 335,
+            "bottom": 447,
+            "width": 88,
+            "height": 112
+          }
+        ],
+        ".chapter-card": [
+          {
+            "id": "chapter-0",
+            "dataset": {},
+            "left": 16,
+            "right": 304,
+            "top": 297,
+            "bottom": 461,
+            "width": 288,
+            "height": 164
+          },
+          {
+            "id": "chapter-1",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-2",
+            "dataset": {},
+            "left": 166,
+            "right": 304,
+            "top": 503,
+            "bottom": 619,
+            "width": 138,
+            "height": 116
+          },
+          {
+            "id": "chapter-3",
+            "dataset": {},
+            "left": 16,
+            "right": 154,
+            "top": 631,
+            "bottom": 747,
+            "width": 138,
+            "height": 116
+          }
+        ],
+        ".route-scene": [],
+        ".route-base": [],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": 484,
+            "bottom": 568,
+            "width": 320,
+            "height": 84
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 304,
+            "top": 492,
+            "bottom": 544,
+            "width": 288,
             "height": 52
           }
         ]
@@ -4785,5 +5337,6 @@
       }
     }
   ],
-  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding."
+  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding.",
+  "bRevision": "Figma 1:67 selected color-block chapters"
 }

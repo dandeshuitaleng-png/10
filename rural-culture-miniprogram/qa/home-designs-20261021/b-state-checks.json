@@ -1,0 +1,542 @@
+{
+  "date": "2026-10-21T03:17:06.587Z",
+  "passed": true,
+  "scope": "Actual native Page with isolated review data. Failure scenario is a review error, not a measured physical network disconnection. Repeated presses/cancellation are covered separately by controller/component tests. No physical phone evidence.",
+  "checks": [
+    {
+      "theme": "ecology",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "ecology-2",
+            "status": "current",
+            "featured": true,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "ecology-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "ecology-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false,
+        "screenshot": "b-state-chapter-2.png"
+      }
+    },
+    {
+      "theme": "ecology",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "today-locked",
+            "featured": true,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "ecology-2",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "observe"
+          },
+          {
+            "id": "ecology-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "ecology-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false,
+        "screenshot": "b-state-locked.png"
+      }
+    },
+    {
+      "theme": "ecology",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "ecology-2",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "ecology-3",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "think"
+          },
+          {
+            "id": "ecology-4",
+            "status": "completed",
+            "featured": true,
+            "showMascot": true,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true,
+        "screenshot": "b-state-certificate.png"
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "red-2",
+            "status": "current",
+            "featured": true,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "red-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "red-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "today-locked",
+            "featured": true,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "red-2",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "observe"
+          },
+          {
+            "id": "red-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "red-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "red-2",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "red-3",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "think"
+          },
+          {
+            "id": "red-4",
+            "status": "completed",
+            "featured": true,
+            "showMascot": true,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "culture-2",
+            "status": "current",
+            "featured": true,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "culture-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "culture-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "today-locked",
+            "featured": true,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "culture-2",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "observe"
+          },
+          {
+            "id": "culture-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "culture-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "culture-2",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "culture-3",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "think"
+          },
+          {
+            "id": "culture-4",
+            "status": "completed",
+            "featured": true,
+            "showMascot": true,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "industry-2",
+            "status": "current",
+            "featured": true,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "industry-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "industry-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "today-locked",
+            "featured": true,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "industry-2",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "observe"
+          },
+          {
+            "id": "industry-3",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "think"
+          },
+          {
+            "id": "industry-4",
+            "status": "locked",
+            "featured": false,
+            "showMascot": false,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "guide",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "welcome"
+          },
+          {
+            "id": "industry-2",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "observe"
+          },
+          {
+            "id": "industry-3",
+            "status": "completed",
+            "featured": false,
+            "showMascot": true,
+            "pose": "think"
+          },
+          {
+            "id": "industry-4",
+            "status": "completed",
+            "featured": true,
+            "showMascot": true,
+            "pose": "celebrate"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true
+      }
+    },
+    {
+      "scenario": "empty",
+      "passed": true,
+      "result": {
+        "route": "levels",
+        "levels": 0,
+        "error": "",
+        "rows": 0
+      }
+    },
+    {
+      "scenario": "failure",
+      "passed": true,
+      "result": {
+        "route": "levels",
+        "levels": 4,
+        "error": "当前为加载失败评审状态，请重试。",
+        "rows": 5
+      }
+    },
+    {
+      "scenario": "ranking-empty",
+      "passed": true,
+      "result": {
+        "route": "ranking",
+        "levels": 4,
+        "error": "",
+        "rows": 0
+      }
+    },
+    {
+      "scenario": "mascot reaction and background pause",
+      "passed": true,
+      "result": {
+        "responding": "ecology-1",
+        "expected": "ecology-1",
+        "hidden": "",
+        "foreground": true
+      }
+    }
+  ]
+}

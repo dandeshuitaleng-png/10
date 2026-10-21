@@ -12,9 +12,9 @@ function stage(size){
  const info={windowWidth:size.w,windowHeight:size.h,screenWidth:size.w,screenHeight:size.h,statusBarHeight:size.status,safeArea:{bottom:size.h-size.safe}},menu={left:size.w-94,bottom:size.status+38};
  const source=fs.readFileSync(path.join(root,'miniprogram/pages/game/index.js'),'utf8'),from='const i=wx.getWindowInfo?wx.getWindowInfo():wx.getSystemInfoSync(),m=homeLayout.metrics(i,wx.getMenuButtonBoundingClientRect?wx.getMenuButtonBoundingClientRect():null,skin.gameId);';assert(source.includes(from));fs.writeFileSync(path.join(project,'miniprogram/pages/game/index.js'),source.replace(from,'const i='+JSON.stringify(info)+',m=homeLayout.metrics(i,'+JSON.stringify(menu)+',skin.gameId);'));
 }
-const selectors=['.game-device','.activity-header','.title-art-window','.home-title-label','.home-guide-card','.home-guide-avatar','.home-guide-chapter','.activity-shortcut','.panel-body','.route-canvas','.route-stop.current .route-caption','.route-stop.current .chapter-mascot','.panel-footer','#footer-primary'];
+const selectors=['.game-device','.activity-header','.title-art-window','.home-title-label','.home-guide-card','.home-guide-avatar','.home-guide-chapter','.activity-shortcut','.panel-body','.route-canvas','.route-stop.current .route-caption','.route-stop.current .chapter-mascot','.chapter-feature .chapter-open','.chapter-feature .chapter-mascot','.chapter-card','.route-scene','.route-base','.panel-footer','#footer-primary'];
 async function measure(){return evaluate('async function(){const p=getCurrentPages().slice(-1)[0];await new Promise(r=>setTimeout(r,160));const selectors='+JSON.stringify(selectors)+',q=wx.createSelectorQuery();selectors.forEach(s=>q.selectAll(s).boundingClientRect());const rect=await new Promise(r=>q.exec(rows=>r(Object.fromEntries(selectors.map((s,i)=>[s,rows[i]])))));return {design:p.data.homeDesign,theme:p.data.skin.gameId,mapWidth:p.data.mapWidth,mapViewport:p.data.mapViewport,scroll:p.data.mapScrollTop,rect};}');}
-function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.stringify({passed:checks.every(c=>c.passed),scope:'Actual WeChat renderer with constrained 320/375/430 CSS-pixel containers and original scene images. Host simulator 390x844; not physical iOS/Android acceptance. No real player data.',checks},null,2)+'\n');}
+function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.stringify({passed:checks.every(c=>c.passed),scope:'Actual WeChat renderer with constrained 320/375/430 CSS-pixel containers. B is the selected color-block chapter dashboard; A records are retained from its earlier unchanged version. No physical iOS/Android acceptance and no real player data.',checks},null,2)+'\n');}
 (async()=>{try{
  for(const size of [{w:320,h:568,status:20,safe:0},{w:375,h:812,status:44,safe:34},{w:430,h:932,status:59,safe:34}]){
   if(widths.length&&!widths.includes(size.w))continue;
@@ -27,16 +27,16 @@ function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.string
   await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);
   for(const design of designs)for(const theme of ['ecology','red','culture','industry']){
    await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme='+theme+'&review=1&controls=0&scenario=home&homeDesign='+design]);
-   const d=await measure(),issues=[],test=(ok,label)=>{if(!ok)issues.push(label);},r=d.rect,body=r['.panel-body'][0],header=r['.activity-header'][0],title=r['.title-art-window'][0],label=r['.home-title-label'][0],caption=r['.route-stop.current .route-caption'][0],mascot=r['.route-stop.current .chapter-mascot'][0];
+   const d=await measure(),issues=[],test=(ok,label)=>{if(!ok)issues.push(label);},r=d.rect,body=r['.panel-body'][0],header=r['.activity-header'][0],title=r['.title-art-window'][0],label=r['.home-title-label'][0],caption=r[design==='guide'?'.chapter-feature .chapter-open':'.route-stop.current .route-caption'][0],mascot=r[design==='guide'?'.chapter-feature .chapter-mascot':'.route-stop.current .chapter-mascot'][0];
    test(d.design===design&&d.theme===theme,'review selects requested direction and theme');
    test(title.top>=size.status&&title.bottom<=header.bottom&&Math.abs(title.left+title.width/2-size.w/2)<1,'title safely centered');
    test(label.top>=title.top-5&&label.bottom<=title.bottom+5,'title lettering stays inside front face');
    test(r['.activity-shortcut'].length===3&&r['.activity-shortcut'].every(b=>b.height>=44&&b.left>=0&&b.right<=size.w+.5),'three accessible shortcuts');
-   test(Math.abs(body.height-d.mapViewport)<1.5&&Math.abs(r['.route-canvas'][0].width-d.mapWidth)<1.5,'map physical geometry matches layout metrics');
+   test(Math.abs(body.height-d.mapViewport)<1.5&&Math.abs(r['.route-canvas'][0].width-d.mapWidth)<1.5,'body/canvas physical geometry matches layout metrics');
    test(caption.left>=body.left-1&&caption.right<=body.right+1&&caption.top>=body.top-1&&caption.bottom<=body.bottom+1,'current caption visible within map');
    test(mascot.top>=body.top-1&&mascot.bottom<=body.bottom+1,'current mascot visible within map');
    test(r['#footer-primary'][0].bottom<=size.h-size.safe+1&&r['#footer-primary'][0].height>=44,'footer safe and touchable');
-   if(design==='guide')test(!r['.home-guide-card'].length&&!r['.home-guide-avatar'].length,'no repeated header portrait or illustration card');
+   if(design==='guide'){test(!r['.home-guide-card'].length&&!r['.home-guide-avatar'].length,'no repeated header portrait');test(!r['.route-scene'].length&&!r['.route-base'].length,'B excludes A landscape and circular podiums');test(r['.chapter-card'].length===4,'all catalog chapters displayed');}
    if(size.w===375){const filename=theme+'-'+design+'-375-container.png';await call('simulator_screenshot',['--path',path.join(out,filename),'--optimize','false','--wait-for-selector','.route-canvas']);d.screenshot=filename;}
    checks.push({size,...d,passed:!issues.length,issues});save();console.log((issues.length?'FAIL ':'PASS ')+theme+' '+design+' '+size.w+' '+issues.join('; '));
   }

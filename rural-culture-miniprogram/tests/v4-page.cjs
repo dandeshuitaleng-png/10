@@ -21,14 +21,14 @@ function catalog(levelCount = 2, gameId = 'culture', questionCount = 1) {
   };
 }
 
-function environment({ at = '2026-10-15T12:00:00+08:00', gameId = 'culture', levelCount = 2, questionCount = 1, query = {}, storedCheckpoint, storageWriteFails = false, memory: sharedMemory, geometry, canvasExportFails = false } = {}) {
+function environment({ at = '2026-10-15T12:00:00+08:00', gameId = 'culture', levelCount = 2, questionCount = 1, query = {}, storedCheckpoint, storageWriteFails = false, memory: sharedMemory, geometry, canvasExportFails = false, homeDesign } = {}) {
   let now = Date.parse(at), definition, nextTimer = 1, canvasExports = 0, albumRequests = 0;
   const timers = new Map(), memory = sharedMemory || new Map(), canvasText = [], patches = [], toasts = [], albumPaths = [], imagePreviews = [];
   const book = catalog(levelCount,gameId,questionCount);
   if (storedCheckpoint !== undefined) memory.set('rural-quiz-native-v4:'+gameId, clone(storedCheckpoint));
   const storage = { getStorageSync: key => memory.has(key) ? clone(memory.get(key)) : '', setStorageSync: (key, value) => { if(storageWriteFails) throw Error('TEST_STORAGE_FULL'); memory.set(key, clone(value)); } };
   const service = createService({ gameId, catalog: book, storage, clock: () => now, random: () => 0.5, delay: async () => {}, reviewEnabled: false });
-  const skin = {...require('../miniprogram/services-v4/skins')[gameId],mode:'mock',connection:undefined,allowThemeSwitch:false,reviewEnabled:false};
+  const skin = {...require('../miniprogram/services-v4/skins')[gameId],mode:'mock',connection:undefined,allowThemeSwitch:false,reviewEnabled:false,...(homeDesign?{homeDesign}: {})};
   const drawing = {font:'20px sans-serif',clearRect(){},beginPath(){},moveTo(){},lineTo(){},quadraticCurveTo(){},closePath(){},fill(){},stroke(){},arc(){},createLinearGradient(){return {addColorStop(){}};},measureText(text){const size=Number((this.font.match(/([\d.]+)px/)||[])[1]||20);return {width:Array.from(text).reduce((n,c)=>n+size*(c.charCodeAt(0)>255?1:.55),0)};},fillRect() {}, strokeRect() {}, fillText(text, x, y) { canvasText.push({ text, x, y }); } };
   const canvas = { getContext: type => { assert.equal(type, '2d'); return drawing; } };
   const wx = {

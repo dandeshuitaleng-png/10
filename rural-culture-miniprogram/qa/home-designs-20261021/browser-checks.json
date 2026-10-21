@@ -1,129 +1,136 @@
 {
-  "passed": true,
-  "scope": "In-app browser source-based preview; separate from native renderer and phone acceptance.",
-  "gallery": [
-    {
-      "theme": "十步芳草",
-      "images": [
-        {
-          "alt": "十步芳草 A款插画漫游首页",
-          "height": 1840,
-          "loaded": true
-        },
-        {
-          "alt": "十步芳草 B款柔彩绘本首页",
-          "height": 1840,
-          "loaded": true
-        }
-      ]
-    },
-    {
-      "theme": "千年文脉",
-      "images": [
-        {
-          "alt": "千年文脉 A款插画漫游首页",
-          "height": 1840,
-          "loaded": true
-        },
-        {
-          "alt": "千年文脉 B款柔彩绘本首页",
-          "height": 1840,
-          "loaded": true
-        }
-      ]
-    },
-    {
-      "theme": "金色产业",
-      "images": [
-        {
-          "alt": "金色产业 A款插画漫游首页",
-          "height": 1840,
-          "loaded": true
-        },
-        {
-          "alt": "金色产业 B款柔彩绘本首页",
-          "height": 1840,
-          "loaded": true
-        }
-      ]
-    },
-    {
-      "theme": "青山绿水",
-      "images": [
-        {
-          "alt": "青山绿水 A款插画漫游首页",
-          "height": 1840,
-          "loaded": true
-        },
-        {
-          "alt": "青山绿水 B款柔彩绘本首页",
-          "height": 1840,
-          "loaded": true
-        }
-      ]
-    }
-  ],
-  "paperPalette": [
-    {
-      "theme": "十步芳草",
-      "background": "rgb(244, 230, 222)",
-      "buttonColor": "rgb(166, 79, 64)",
-      "buttonFill": "none",
-      "duplicatePortraits": 0,
-      "mapOpacity": "0.76",
-      "themeId": "red"
-    },
-    {
-      "theme": "千年文脉",
-      "background": "rgb(240, 231, 213)",
-      "buttonColor": "rgb(119, 83, 60)",
-      "buttonFill": "none",
-      "duplicatePortraits": 0,
-      "mapOpacity": "0.76",
-      "themeId": "culture"
-    },
-    {
-      "theme": "金色产业",
-      "background": "rgb(245, 235, 207)",
-      "buttonColor": "rgb(140, 100, 38)",
-      "buttonFill": "none",
-      "duplicatePortraits": 0,
-      "mapOpacity": "0.76",
-      "themeId": "industry"
-    },
-    {
-      "theme": "青山绿水",
-      "background": "rgb(236, 240, 227)",
-      "buttonColor": "rgb(78, 117, 93)",
-      "buttonFill": "none",
-      "duplicatePortraits": 0,
-      "mapOpacity": "0.76",
-      "themeId": "ecology"
-    }
-  ],
-  "interactions": [
-    {
-      "design": "map",
-      "checks": [
-        "open homepage",
-        "primary opens rules",
-        "dismiss rules",
-        "open My Learning",
-        "return preserves homepage"
-      ],
-      "passed": true
-    },
-    {
-      "design": "guide",
-      "checks": [
-        "open redesigned homepage",
-        "no duplicate portrait or guide card",
-        "primary opens rules",
-        "dismiss rules",
-        "close returns to review"
-      ],
-      "passed": true
-    }
-  ],
-  "overview": "overview.png"
+  "date": "2026-10-21T03:16:39.465Z",
+  "revision": "Figma 1:67 color-block chapters",
+  "status": "not_run",
+  "passed": null,
+  "reason": "Local browser use is disabled in Work settings. No current browser interaction/visual verification claimed.",
+  "previousEvidence": {
+    "passed": true,
+    "scope": "In-app browser source-based preview; separate from native renderer and phone acceptance.",
+    "gallery": [
+      {
+        "theme": "十步芳草",
+        "images": [
+          {
+            "alt": "十步芳草 A款插画漫游首页",
+            "height": 1840,
+            "loaded": true
+          },
+          {
+            "alt": "十步芳草 B款柔彩绘本首页",
+            "height": 1840,
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "theme": "千年文脉",
+        "images": [
+          {
+            "alt": "千年文脉 A款插画漫游首页",
+            "height": 1840,
+            "loaded": true
+          },
+          {
+            "alt": "千年文脉 B款柔彩绘本首页",
+            "height": 1840,
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "theme": "金色产业",
+        "images": [
+          {
+            "alt": "金色产业 A款插画漫游首页",
+            "height": 1840,
+            "loaded": true
+          },
+          {
+            "alt": "金色产业 B款柔彩绘本首页",
+            "height": 1840,
+            "loaded": true
+          }
+        ]
+      },
+      {
+        "theme": "青山绿水",
+        "images": [
+          {
+            "alt": "青山绿水 A款插画漫游首页",
+            "height": 1840,
+            "loaded": true
+          },
+          {
+            "alt": "青山绿水 B款柔彩绘本首页",
+            "height": 1840,
+            "loaded": true
+          }
+        ]
+      }
+    ],
+    "paperPalette": [
+      {
+        "theme": "十步芳草",
+        "background": "rgb(244, 230, 222)",
+        "buttonColor": "rgb(166, 79, 64)",
+        "buttonFill": "none",
+        "duplicatePortraits": 0,
+        "mapOpacity": "0.76",
+        "themeId": "red"
+      },
+      {
+        "theme": "千年文脉",
+        "background": "rgb(240, 231, 213)",
+        "buttonColor": "rgb(119, 83, 60)",
+        "buttonFill": "none",
+        "duplicatePortraits": 0,
+        "mapOpacity": "0.76",
+        "themeId": "culture"
+      },
+      {
+        "theme": "金色产业",
+        "background": "rgb(245, 235, 207)",
+        "buttonColor": "rgb(140, 100, 38)",
+        "buttonFill": "none",
+        "duplicatePortraits": 0,
+        "mapOpacity": "0.76",
+        "themeId": "industry"
+      },
+      {
+        "theme": "青山绿水",
+        "background": "rgb(236, 240, 227)",
+        "buttonColor": "rgb(78, 117, 93)",
+        "buttonFill": "none",
+        "duplicatePortraits": 0,
+        "mapOpacity": "0.76",
+        "themeId": "ecology"
+      }
+    ],
+    "interactions": [
+      {
+        "design": "map",
+        "checks": [
+          "open homepage",
+          "primary opens rules",
+          "dismiss rules",
+          "open My Learning",
+          "return preserves homepage"
+        ],
+        "passed": true
+      },
+      {
+        "design": "guide",
+        "checks": [
+          "open redesigned homepage",
+          "no duplicate portrait or guide card",
+          "primary opens rules",
+          "dismiss rules",
+          "close returns to review"
+        ],
+        "passed": true
+      }
+    ],
+    "overview": "overview.png"
+  }
 }
