@@ -25,9 +25,9 @@
 test at tests/mascot-motion.test.cjs:47:1
 ✖ a partly clipped figure uses its static image; animation stops before it can cross the map edge (1.102574ms)
   AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-  
+
   'one' !== ''
-  
+
       at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/mascot-motion.test.cjs:50:51)
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1382:25)

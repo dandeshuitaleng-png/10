@@ -18,9 +18,9 @@
 test at tests/local-mascot-motion.test.cjs:45:1
 ✖ idle, scroll/modal pause and component disposal leave a transparent canvas, not an un-clipped original frame (1.075427ms)
   AssertionError [ERR_ASSERTION]: component ready must not paint a duplicate still figure
-  
+
   true !== false
-  
+
       at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/local-mascot-motion.test.cjs:49:60)
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1382:25)
