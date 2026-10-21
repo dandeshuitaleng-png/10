@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-21T03:19:35.631Z",
+  "date": "2026-10-21T03:37:24.925Z",
   "passed": true,
   "scope": "native wcc/wcsc and effective main-package bytes; not platform upload or physical-device testing",
   "projects": [
     {
-      "date": "2026-10-21T03:19:27.771Z",
+      "date": "2026-10-21T03:37:16.777Z",
       "project": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/miniprogram",
       "passed": true,
@@ -28,11 +28,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 3604542,
+      "physicalBytes": 3607697,
       "physicalFiles": 165,
       "packedFiles": 118,
-      "bytes": 1519115,
-      "mib": 1.449,
+      "bytes": 1522270,
+      "mib": 1.452,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -86,7 +86,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T03:19:29.808Z",
+      "date": "2026-10-21T03:37:18.800Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉/miniprogram",
       "passed": true,
@@ -110,11 +110,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 2760096,
+      "physicalBytes": 2763251,
       "physicalFiles": 157,
       "packedFiles": 119,
-      "bytes": 1592600,
-      "mib": 1.519,
+      "bytes": 1595755,
+      "mib": 1.522,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -159,7 +159,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T03:19:31.782Z",
+      "date": "2026-10-21T03:37:20.839Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草/miniprogram",
       "passed": true,
@@ -183,11 +183,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 2713456,
+      "physicalBytes": 2716611,
       "physicalFiles": 157,
       "packedFiles": 119,
-      "bytes": 1608339,
-      "mib": 1.534,
+      "bytes": 1611494,
+      "mib": 1.537,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -232,7 +232,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T03:19:33.705Z",
+      "date": "2026-10-21T03:37:22.776Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业/miniprogram",
       "passed": true,
@@ -256,11 +256,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 2778072,
+      "physicalBytes": 2781227,
       "physicalFiles": 157,
       "packedFiles": 119,
-      "bytes": 1586588,
-      "mib": 1.513,
+      "bytes": 1589743,
+      "mib": 1.516,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -305,7 +305,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T03:19:35.621Z",
+      "date": "2026-10-21T03:37:24.914Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水/miniprogram",
       "passed": true,
@@ -329,11 +329,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 2977408,
+      "physicalBytes": 2980563,
       "physicalFiles": 159,
       "packedFiles": 119,
-      "bytes": 1772430,
-      "mib": 1.69,
+      "bytes": 1775585,
+      "mib": 1.693,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",

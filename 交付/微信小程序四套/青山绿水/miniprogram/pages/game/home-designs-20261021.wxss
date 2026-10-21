@@ -36,42 +36,46 @@
 .game-device.activity-page.home-layout.home-design-guide .panel-body-inner{padding:0}
 .chapter-board{position:relative;background:transparent;box-sizing:border-box}
 .chapter-tools{position:absolute;top:16px;left:16px;right:16px;height:60px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.game-device.activity-page.home-layout.home-design-guide .chapter-tools button.chapter-tool{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;margin:0;padding:8px 3px;width:100%;max-width:100%;box-sizing:border-box;height:60px;min-height:60px;min-width:0;border:0;border-radius:17px;background:#FFFFFFD9;color:var(--chapter-ink);box-shadow:none;font-size:12px;line-height:18px;font-weight:600}
-.chapter-tool game-icon{display:block;width:20px;height:20px}
-.chapter-tool game-icon:last-child{display:none}
+.game-device.activity-page.home-layout.home-design-guide .chapter-tools button.chapter-tool{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;margin:0;padding:5px 3px;width:100%;max-width:100%;box-sizing:border-box;height:60px;min-height:60px;min-width:0;border:1px solid #FFFFFF;border-radius:17px;background:linear-gradient(180deg,#FFFFFF,#FAFCF8);color:var(--chapter-ink);box-shadow:0 3px 0 var(--chapter-line),0 5px 8px #22351F09,inset 0 1px #FFFFFF;font-size:12px;line-height:18px;font-weight:600}
+.chapter-tool-mark{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:27px;height:27px;border:1px solid var(--chapter-line);border-radius:50%;background:linear-gradient(155deg,#FFFFFF,var(--chapter-tint));box-shadow:0 1px 0 var(--chapter-line),inset 0 1px #FFFFFF}
+.chapter-tool-mark game-icon{display:block;width:17px;height:17px}
+.chapter-tool>game-icon:last-child{display:none}
 .chapter-directory-heading{position:absolute;left:18px;right:18px;height:24px;display:flex;align-items:center;justify-content:space-between;font-size:15px;line-height:24px;font-weight:700;color:var(--chapter-ink)}
-.chapter-directory-count{font-size:11px;font-weight:400;color:var(--chapter-muted)}
-.chapter-card{position:absolute;box-sizing:border-box;min-width:0;border-radius:20px;background:#FFFFFFE8;color:var(--chapter-ink)}
-.game-device.activity-page.home-layout.home-design-guide button.chapter-open{position:relative;width:100%;height:100%;box-sizing:border-box;display:block;margin:0;padding:12px 14px;border:0;border-radius:20px;background:transparent;text-align:left;line-height:1.4;white-space:normal;overflow:hidden;color:var(--chapter-ink);box-shadow:none;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}
-.chapter-card-top{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:11px;line-height:16px}
-.chapter-sequence{color:var(--chapter-muted)}
-.chapter-status-mark{display:flex;align-items:center;gap:3px;flex-shrink:0;font-size:10px;line-height:18px}
-.chapter-status-mark game-icon{display:block;width:14px;height:14px}
-.chapter-card-title{display:block;margin-top:7px;font-size:17px;line-height:23px;font-weight:700;letter-spacing:0}
-.chapter-card-state{display:block;margin-top:4px;font-size:11px;line-height:17px;color:var(--chapter-muted)}
-.chapter-card-reward{display:block;margin-top:5px;font-size:10px;line-height:16px;color:var(--chapter-muted)}
-.chapter-card.locked{background:#FFFFFF99}
+.chapter-directory-progress{display:flex;align-items:center;gap:8px}
+.chapter-directory-count{font-size:11px;font-weight:500;color:var(--chapter-muted)}
+.chapter-progress-stamps{display:flex;gap:3px;width:76px;height:13px;align-items:center;overflow:hidden}
+.chapter-progress-stamp{flex:1;min-width:2px;max-width:16px;height:10px;border:1px solid var(--chapter-line);border-radius:3px;background:#FFFFFFB3;display:flex;align-items:center;justify-content:center}
+.chapter-progress-stamp.completed{background:var(--chapter-tint);border-color:var(--chapter-accent)}
+.chapter-progress-stamp.current,.chapter-progress-stamp.today-locked{border-color:var(--chapter-accent);background:#FFFFFF}
+.chapter-progress-stamp game-icon{width:9px;height:9px}
+.chapter-progress-dot{width:4px;height:4px;border-radius:50%;background:var(--chapter-accent)}
+.chapter-card{position:absolute;box-sizing:border-box;min-width:0;border-radius:20px;color:var(--chapter-ink)}
+.game-device.activity-page.home-layout.home-design-guide button.chapter-open{position:relative;width:100%;height:100%;box-sizing:border-box;display:block;margin:0;padding:12px 12px;border:2px solid #FFFFFF;border-radius:20px;background:linear-gradient(165deg,#FFFFFF,#F7FAF4);text-align:left;line-height:1.4;white-space:normal;overflow:hidden;color:var(--chapter-ink);box-shadow:0 3px 0 var(--chapter-line),0 6px 10px #24381A08,inset 0 1px #FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}
+.game-device.activity-page.home-layout.home-design-guide .chapter-card.current button.chapter-open,.game-device.activity-page.home-layout.home-design-guide .chapter-card.today-locked button.chapter-open{border-color:var(--chapter-accent);background:linear-gradient(145deg,var(--chapter-soft),var(--chapter-tint));box-shadow:0 3px 0 var(--chapter-accent),0 6px 10px #24381A10,inset 0 1px #FFFFFFBB}
+.game-device.activity-page.home-layout.home-design-guide .chapter-card.completed button.chapter-open{border-color:var(--chapter-tint);background:linear-gradient(145deg,#FFFFFF,var(--chapter-tint))}
+.game-device.activity-page.home-layout.home-design-guide .chapter-card.locked button.chapter-open{background:linear-gradient(155deg,#FFFFFFD9,#FFFFFF91);box-shadow:0 2px 0 var(--chapter-line),inset 0 1px #FFFFFF;border-color:#FFFFFFC9}
+.chapter-card-top{display:flex;align-items:center;justify-content:space-between;gap:4px;font-size:11px;line-height:18px;min-height:20px}
+.chapter-sequence{color:#594215;font-weight:700;flex-shrink:0;display:inline-flex;align-items:center;box-sizing:border-box;height:20px;padding:0 4px;border:1px solid #DFC15C;border-radius:5px;background:linear-gradient(180deg,#FFF1AA,#F4D56B);box-shadow:0 2px 0 #D6BA5926,inset 0 1px #FFFFFFC9;font-size:10px;line-height:18px}
+.chapter-status-mark{display:flex;align-items:center;gap:2px;flex-shrink:0;padding:1px 4px;border-radius:8px;font-size:9px;line-height:16px;background:#FFFFFFC9;color:var(--chapter-ink);box-shadow:0 1px 0 #294A1812}
+.chapter-status-mark game-icon{display:block;width:12px;height:12px}
+.chapter-card.completed .chapter-status-mark{width:22px;height:22px;box-sizing:border-box;justify-content:center;padding:0;border:2px solid #5F965F;border-radius:50%;background:#E7F5DF;box-shadow:0 1px 0 #325D2E20;transform:rotate(-7deg)}
+.chapter-card.completed .chapter-status-mark text{display:none}
+.chapter-card.completed .chapter-status-mark game-icon{width:14px;height:14px}
+.chapter-card.current .chapter-status-mark,.chapter-card.today-locked .chapter-status-mark{color:#FFFFFF;background:var(--chapter-accent);box-shadow:inset 0 1px #FFFFFF35,0 1px 0 #294A1820}
+.chapter-card-title{display:block;margin-top:6px;font-size:17px;line-height:23px;font-weight:700;letter-spacing:0}
+.chapter-card-state{display:block;margin-top:3px;font-size:11px;line-height:16px;color:var(--chapter-muted)}
+.chapter-card.current .chapter-card-state,.chapter-card.today-locked .chapter-card-state{color:var(--chapter-ink)}
 .chapter-card.locked .chapter-card-title{color:var(--chapter-muted)}
-.chapter-card.completed{background:var(--chapter-tint)}
-.chapter-card.has-actor:not(.chapter-feature) .chapter-card-title,.chapter-card.has-actor:not(.chapter-feature) .chapter-card-state{position:relative;max-width:calc(100% - 44px)}
-.chapter-card.chapter-feature{background:var(--chapter-soft);border:0;border-radius:24px}
-.game-device.activity-page.home-layout.home-design-guide .chapter-feature button.chapter-open{padding:16px 18px;border-radius:24px}
-.chapter-feature .chapter-open::before{content:'';position:absolute;right:-30px;bottom:-90px;width:230px;height:230px;border-radius:50%;background:#FFFFFF38;pointer-events:none}
-.chapter-feature .chapter-card-top{max-width:calc(100% - 94px)}
-.chapter-feature .chapter-status-mark{padding:1px 7px;border-radius:10px;background:#FFFFFFBA}
-.chapter-feature .chapter-sequence{color:var(--chapter-ink);font-weight:600}
-.chapter-feature .chapter-card-title{font-size:26px;line-height:34px;margin-top:8px;max-width:calc(100% - 94px)}
-.chapter-feature .chapter-card-state{margin-top:4px;font-size:12px;line-height:18px;color:var(--chapter-ink);max-width:calc(100% - 94px)}
-.chapter-feature .chapter-card-reward{font-size:11px;line-height:18px;margin-top:3px;color:var(--chapter-ink);max-width:calc(100% - 94px)}
-.chapter-card-link{display:flex;align-items:center;gap:4px;margin-top:11px;font-size:11px;line-height:18px;font-weight:600;color:var(--chapter-ink)}
-.chapter-card-link game-icon{width:12px;height:12px}
-.game-device.activity-page.home-layout.home-design-guide .chapter-card .chapter-mascot{position:absolute;left:auto;right:6px;bottom:14px;z-index:3;margin:0;width:54px;height:64px;padding:0;min-height:44px;border:0;background:transparent;box-shadow:none;overflow:visible;border-radius:10px}
-.game-device.activity-page.home-layout.home-design-guide .chapter-feature .chapter-mascot{right:14px;bottom:14px;width:96px;height:112px}
+.chapter-card-reward{position:absolute;left:12px;bottom:12px;width:calc(100% - 88px);display:flex;flex-direction:column;gap:2px;font-size:10px;line-height:14px;color:var(--chapter-muted)}
+.chapter-reward-value{font-size:13px;line-height:17px;font-weight:700;color:var(--chapter-ink)}
+.chapter-seal{position:absolute;right:12px;bottom:22px;display:flex;align-items:center;justify-content:center;width:38px;height:38px;box-sizing:border-box;border:1px solid var(--chapter-line);border-radius:50%;background:linear-gradient(150deg,#FFFFFF,var(--chapter-page));box-shadow:0 2px 0 var(--chapter-line),inset 0 1px #FFFFFF}
+.chapter-seal game-icon{width:18px;height:18px;opacity:.75}
+.game-device.activity-page.home-layout.home-design-guide .chapter-card .chapter-mascot{position:absolute;left:auto;right:10px;bottom:14px;z-index:3;margin:0;width:54px;height:64px;padding:0;min-height:44px;border:0;background:transparent;box-shadow:none;overflow:visible;border-radius:10px}
 .game-device.activity-page.home-layout.home-design-guide .chapter-mascot::after{display:none;border:0}
 .game-device.activity-page.home-layout.home-design-guide .panel-footer{background:var(--chapter-page);border:0;padding-top:8px;box-shadow:none}
 .game-device.activity-page.home-layout.home-design-guide .map-scroll-hint{display:none}
 .chapter-tool::after,.chapter-open::after{display:none;border:0}
-.chapter-tool.is-touching,.chapter-tool.native-pressed,.chapter-open.is-touching,.chapter-open.native-pressed{transform:scale(.975);filter:brightness(.97)}
-.chapter-open,.chapter-tool{transition:transform .12s,filter .12s}
-@media(max-width:350px){.home-paper-intro{font-size:10px}.chapter-feature .chapter-card-title{font-size:23px;line-height:32px}.chapter-feature .chapter-card-top{max-width:calc(100% - 82px)}.chapter-feature .chapter-status-mark{padding:1px 5px}.game-device.activity-page.home-layout.home-design-guide .chapter-feature .chapter-mascot{right:10px;width:88px}.chapter-card-title{font-size:16px}.chapter-card-reward{font-size:10px}}
-@media(prefers-reduced-motion:reduce){.chapter-open,.chapter-tool{transition:none}.chapter-tool.is-touching,.chapter-tool.native-pressed,.chapter-open.is-touching,.chapter-open.native-pressed{transform:none}}
+.game-device.activity-page.home-layout.home-design-guide button.chapter-tool.is-touching,.game-device.activity-page.home-layout.home-design-guide button.chapter-tool.native-pressed,.game-device.activity-page.home-layout.home-design-guide button.chapter-open.is-touching,.game-device.activity-page.home-layout.home-design-guide button.chapter-open.native-pressed{transform:translateY(2px) scale(.985);filter:brightness(.98);box-shadow:0 1px 0 var(--chapter-line),inset 0 1px #FFFFFF80}
+.chapter-open,.chapter-tool{transition:transform .12s,box-shadow .12s,filter .12s}
+@media(max-width:350px){.home-paper-intro{font-size:10px}.chapter-card-title{font-size:16px}.chapter-card-reward{font-size:10px}.chapter-status-mark{padding:1px 3px;font-size:9px;gap:1px}.chapter-reward-value{font-size:12px}.chapter-progress-stamps{width:62px}}
+@media(prefers-reduced-motion:reduce){.chapter-open,.chapter-tool{transition:none}.game-device.activity-page.home-layout.home-design-guide button.chapter-tool.is-touching,.game-device.activity-page.home-layout.home-design-guide button.chapter-tool.native-pressed,.game-device.activity-page.home-layout.home-design-guide button.chapter-open.is-touching,.game-device.activity-page.home-layout.home-design-guide button.chapter-open.native-pressed{transform:none}}

@@ -13,7 +13,7 @@ async function evaluate(fn){let r=await call('automation_evaluate',['--fn-source
   if(scenario==='chapter-2'){assert.equal(r.nodes[0].status,'completed');assert.equal(r.nodes[1].status,'current');assert.equal(r.nodes[1].pose,'observe');}
   if(scenario==='locked'){assert(r.nodes.some(n=>n.status==='today-locked'&&n.featured&&n.showMascot));assert(r.footer.includes('锁定'));}
   if(scenario==='certificate'){assert(r.nodes.every(n=>n.status==='completed'));assert(r.certificate);assert(r.footer.includes('证书'));}
-  if(theme==='ecology'){const file='b-state-'+scenario+'.png';await call('simulator_screenshot',['--path',path.join(out,file),'--optimize','false','--wait-for-selector','.chapter-feature']);r.screenshot=file;}
+  if(theme==='ecology'){const file='b-state-'+scenario+'.png';await call('simulator_screenshot',['--path',path.join(out,file),'--optimize','false','--wait-for-selector','.chapter-active']);r.screenshot=file;}
   checks.push({theme,scenario,passed:true,result:r});console.log('PASS '+theme+' '+scenario);
  }
  for(const scenario of ['empty','failure','ranking-empty']){

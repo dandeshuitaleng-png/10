@@ -21,10 +21,12 @@
 @media(max-width:350px){.game-button.primary.is-home-action{padding-left:12px;padding-right:12px;gap:8px;font-size:17px;line-height:24px}.action-emblem{flex-basis:22px;width:22px}.action-emblem image{width:21px;height:21px}}
 @media(prefers-reduced-motion:reduce){.game-button{transition:none}.game-button.is-touching,.game-button.native-pressed,.game-button:active{transform:none}}
 
-/* B: solid color-block action, matching the selected Figma dashboard. */
-.game-button.primary.appearance-paper{--paper-button:#805739;border:1px solid var(--paper-button);border-radius:14px;background:var(--paper-button);color:#FFFCF4;box-shadow:0 3px 0 #4B39282B,inset 0 1px #FFFFFF33;font-weight:600}
-.game-button.appearance-paper.skin-ecology{--paper-button:#268354}
-.game-button.appearance-paper.skin-red{--paper-button:#CA503B}
-.game-button.appearance-paper.skin-culture{--paper-button:#805739}
-.game-button.appearance-paper.skin-industry{--paper-button:#97620A}
-.game-button.appearance-paper[disabled]{background:#E4DED1;color:#797364;border-color:#DAD2C1;box-shadow:none}
+/* B: beveled theme buttons. Padding and hit-area sizes remain unchanged. */
+.game-button.primary.appearance-paper{--paper-button:#805739;--paper-top:#A57A52;--paper-base:#67432D;border:1px solid var(--paper-base);border-radius:16px;background:linear-gradient(180deg,var(--paper-top),var(--paper-button));color:#FFFFFF;box-shadow:0 4px 0 var(--paper-base),0 7px 10px #2F361516,inset 0 1px #FFFFFF80;font-weight:700;text-shadow:0 1px #163E1B20}
+.game-button.appearance-paper.skin-ecology{--paper-button:#268354;--paper-top:#439D68;--paper-base:#206C44}
+.game-button.appearance-paper.skin-red{--paper-button:#CA503B;--paper-top:#EB7554;--paper-base:#AA3D2B}
+.game-button.appearance-paper.skin-culture{--paper-button:#805739;--paper-top:#A57A52;--paper-base:#67432D}
+.game-button.appearance-paper.skin-industry{--paper-button:#97620A;--paper-top:#BD8A20;--paper-base:#80510A}
+.game-button.primary.appearance-paper.is-touching,.game-button.primary.appearance-paper.native-pressed,.game-button.primary.appearance-paper:active{transform:translateY(2px) scale(.985);box-shadow:0 1px 0 var(--paper-base),inset 0 2px 3px #173B1515}
+.game-button.appearance-paper[disabled]{background:#E4DED1;color:#797364;border-color:#DAD2C1;box-shadow:none;text-shadow:none}
+@media(prefers-reduced-motion:reduce){.game-button.primary.appearance-paper.is-touching,.game-button.primary.appearance-paper.native-pressed,.game-button.primary.appearance-paper:active{transform:none}}

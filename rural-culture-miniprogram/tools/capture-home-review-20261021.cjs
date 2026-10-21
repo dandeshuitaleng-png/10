@@ -23,7 +23,7 @@ async function call(tool,args=[]){return new Promise((resolve,reject)=>{const c=
  if(!process.argv.includes('--reuse-window')){
   await call('open_project_window',['--window-mode','liteMode']);await call('close_project_window');await call('open_project_window',['--window-mode','liteMode']);
   await call('simulator_screenshot',['--path',path.join(out,'capture-ready.png'),'--optimize','false']);
-  await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);
+  try{await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);}catch(e){if(!/waitForAutomatorReady|waiting for automator/.test(e.message))throw e;await call('simulator_screenshot',['--path',path.join(out,'capture-ready.png'),'--optimize','false']);await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);}
  }
  const designs=process.argv.includes('--guide-only')?['guide']:['map','guide'];
  const captures=designs.length===1?JSON.parse(fs.readFileSync(path.join(out,'review-captures.json'))).captures.filter(c=>!designs.includes(c.design)):[];

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21T03:17:06.587Z",
+  "date": "2026-10-21T03:39:46.659Z",
   "passed": true,
   "scope": "Actual native Page with isolated review data. Failure scenario is a review error, not a measured physical network disconnection. Repeated presses/cancellation are covered separately by controller/component tests. No physical phone evidence.",
   "checks": [
@@ -522,7 +522,7 @@
       "scenario": "ranking-empty",
       "passed": true,
       "result": {
-        "route": "ranking",
+        "route": "home",
         "levels": 4,
         "error": "",
         "rows": 0

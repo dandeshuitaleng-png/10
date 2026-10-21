@@ -64,7 +64,17 @@ test('actual B Page preserves learning, today lock, resume and completion flows'
 test('B grows for long chapter names without overlapping the following row',()=>{
  const rows=Array.from({length:8},(_,i)=>({id:'long'+i,name:'认识乡村文化和自然生态的阅读旅程',status:i===0?'current':i<3?'completed':'locked'}));
  for(const width of [320,375,430]){
-  const b=designs.chapters(rows,width,300),hero=b.nodes.find(n=>n.featured);assert(hero.height>164);assert.equal(hero.actorBottom-b.focusTop,270);
+  const b=designs.chapters(rows,width,300),hero=b.nodes.find(n=>n.featured);assert(hero.height>164);assert.equal(hero.actorBottom-b.focusTop,274);
   const grid=b.nodes.filter(n=>!n.featured);for(let i=2;i<grid.length;i++)assert(grid[i].top>=grid[i-2].top+grid[i-2].height+12);
+ }
+});
+
+test('B chapters keep identical sizes and catalog positions across every progress state',()=>{
+ for(const width of [320,375,430])for(const current of [0,1,2,3])for(const status of ['current','today-locked']){
+  const rows=Array.from({length:4},(_,i)=>({id:'l'+i,name:['基础认知','进阶理解','深度应用','综合挑战'][i],status:i<current?'completed':i===current?status:'locked'}));
+  const b=designs.chapters(rows,width,275),active=b.nodes[current];assert.equal(b.guideId,rows[current].id);
+  assert(b.nodes.every(n=>n.width===active.width&&n.height===active.height));assert.deepEqual(b.nodes.map(n=>n.id),rows.map(n=>n.id));
+  assert(active.top-b.focusTop>=0&&active.top+active.height-b.focusTop<=275);
+  for(const n of b.nodes)assert.equal(n.showMascot,n.status!=='locked');
  }
 });
