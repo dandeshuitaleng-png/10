@@ -1,0 +1,61 @@
+{
+  "scope": "Actual native host simulator, original window geometry restored; not constrained-container captures or physical phone tests.",
+  "captures": [
+    {
+      "theme": "ecology",
+      "design": "map",
+      "file": "ecology-map.png",
+      "width": 852,
+      "height": 1840
+    },
+    {
+      "theme": "red",
+      "design": "map",
+      "file": "red-map.png",
+      "width": 852,
+      "height": 1840
+    },
+    {
+      "theme": "culture",
+      "design": "map",
+      "file": "culture-map.png",
+      "width": 852,
+      "height": 1840
+    },
+    {
+      "theme": "industry",
+      "design": "map",
+      "file": "industry-map.png",
+      "width": 852,
+      "height": 1840
+    },
+    {
+      "theme": "ecology",
+      "design": "guide",
+      "file": "ecology-guide.png",
+      "width": 852,
+      "height": 1840
+    },
+    {
+      "theme": "red",
+      "design": "guide",
+      "file": "red-guide.png",
+      "width": 852,
+      "height": 1840
+    },
+    {
+      "theme": "culture",
+      "design": "guide",
+      "file": "culture-guide.png",
+      "width": 852,
+      "height": 1840
+    },
+    {
+      "theme": "industry",
+      "design": "guide",
+      "file": "industry-guide.png",
+      "width": 852,
+      "height": 1840
+    }
+  ]
+}

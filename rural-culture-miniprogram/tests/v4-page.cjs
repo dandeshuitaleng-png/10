@@ -66,6 +66,7 @@ function environment({ at = '2026-10-15T12:00:00+08:00', gameId = 'culture', lev
     require(id) {
       if (id === '../../game-config') return skin;
       if (id === '../../services-v4/index') return service;
+      if (id === '../../services-v4/home-designs') return require('../miniprogram/services-v4/home-designs');
       if (id === '../../services-v4/home-layout') return require('../miniprogram/services-v4/home-layout');
       if (id === '../../services-v4/theme-content') return require('../miniprogram/services-v4/theme-content');
       if (id === '../../services-v4/certificate-art') return require('../miniprogram/services-v4/certificate-art');

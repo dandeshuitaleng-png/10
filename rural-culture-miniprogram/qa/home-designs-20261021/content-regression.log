@@ -1,0 +1,11 @@
+✔ chapter presentation stays theme-specific without replacing configured layout or business names (2.870467ms)
+✔ generic share defaults become themed while authored campaign copy remains intact (0.401397ms)
+✔ four themes share to their own home and earned certificates do not hijack other page links (0.660103ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 177.745497

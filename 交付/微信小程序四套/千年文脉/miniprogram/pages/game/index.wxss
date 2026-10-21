@@ -313,3 +313,5 @@ page{margin:0;background:#e9e8e5;color:var(--ink);font-family:-apple-system,Blin
 @import "interaction-20261021.wxss";
 
 @import "certificate-20261021.wxss";
+
+@import "home-designs-20261021.wxss";

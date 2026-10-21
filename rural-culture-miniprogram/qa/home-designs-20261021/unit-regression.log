@@ -1,0 +1,17 @@
+✔ new homepage selection is review-only unless explicitly configured (106.999636ms)
+✔ current production geometry is unchanged (0.894836ms)
+✔ both directions retain the original art ratio and a visible current chapter at three widths (1.335061ms)
+✔ 实际Page.resize四主题共用完整标题区域，覆盖三个视口 (97.141479ms)
+✔ 390×844原生屏幕：地图246至739、底栏105px，水纹不越出标题区域 (1.492114ms)
+✔ 不同进度和短屏按实际卡片边界定位，保留16px下方间距 (64.1037ms)
+✔ 宽横幅布局下当前产业关卡仍保留16px底部间距 (0.280421ms)
+✔ 浏览器WXSS导入器会内联实际共享样式，保持与原生的加载顺序 (7.445395ms)
+✔ 四主题标题保留屏幕中轴和光学基线，所有可见素材均位于标题区内 (1.146868ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 290.456109

@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "scope": "In-app browser, source-based preview; separate from native renderer and phone acceptance.",
+  "gallery": [
+    {
+      "theme": "十步芳草",
+      "images": [
+        {
+          "alt": "十步芳草 A款插画漫游首页",
+          "height": 1840,
+          "loaded": true
+        },
+        {
+          "alt": "十步芳草 B款智小谷导览首页",
+          "height": 1840,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "theme": "千年文脉",
+      "images": [
+        {
+          "alt": "千年文脉 A款插画漫游首页",
+          "height": 1840,
+          "loaded": true
+        },
+        {
+          "alt": "千年文脉 B款智小谷导览首页",
+          "height": 1840,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "theme": "金色产业",
+      "images": [
+        {
+          "alt": "金色产业 A款插画漫游首页",
+          "height": 1840,
+          "loaded": true
+        },
+        {
+          "alt": "金色产业 B款智小谷导览首页",
+          "height": 1840,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "theme": "青山绿水",
+      "images": [
+        {
+          "alt": "青山绿水 A款插画漫游首页",
+          "height": 1840,
+          "loaded": true
+        },
+        {
+          "alt": "青山绿水 B款智小谷导览首页",
+          "height": 1840,
+          "loaded": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "design": "map",
+      "checks": [
+        "review opens correct homepage",
+        "primary button opens chapter rules",
+        "rules dismiss to homepage",
+        "My Learning opens profile",
+        "return preserves selected homepage"
+      ],
+      "passed": true
+    },
+    {
+      "design": "guide",
+      "checks": [
+        "review opens correct homepage",
+        "primary button opens chapter rules",
+        "rules dismiss to homepage",
+        "close returns to review"
+      ],
+      "passed": true
+    }
+  ],
+  "overview": "overview.png"
+}
