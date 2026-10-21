@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-21T13:41:10.585Z",
+  "passed": true,
+  "scope": "HTTP source byte integrity; browser control disabled, not browser visual acceptance.",
+  "checks": [
+    {
+      "file": "v4-runtime.js",
+      "status": 200,
+      "matches": true,
+      "sha256": "52b33b30da3fb439f15ccff9d10dc345e64c72d9085aa46ea7f52f360f5bb78e"
+    },
+    {
+      "file": "首页方案A-20261021.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "7feac7f441d2a2a31ce76fdc8fce266fd55df2e77a25cd390bc566c2d671bd66"
+    }
+  ]
+}

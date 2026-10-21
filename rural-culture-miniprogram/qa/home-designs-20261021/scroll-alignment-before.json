@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-21T13:36:38.006Z",
+  "passed": true,
+  "scope": "Native isolated renderer; a held real animation frame and the still image must follow their parent scroll displacement. Red-theme cyan pixels identify the face; this is not arbitrary-image recognition or physical-phone acceptance.",
+  "checks": [
+    {
+      "mode": "active",
+      "passed": true,
+      "expected": 40,
+      "actual": 39.913875479463286,
+      "drift": 0.08612452053671404,
+      "before": {
+        "scroll": 183,
+        "playing": true,
+        "rect": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 390,
+            "top": 294,
+            "bottom": 738,
+            "width": 390,
+            "height": 444
+          },
+          {
+            "id": "",
+            "dataset": {
+              "id": "red-1"
+            },
+            "left": 229.296875,
+            "right": 293.296875,
+            "top": 586.2578125,
+            "bottom": 662.2578125,
+            "width": 64,
+            "height": 76
+          }
+        ]
+      },
+      "after": {
+        "scroll": 143,
+        "playing": true,
+        "rect": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 390,
+            "top": 294,
+            "bottom": 738,
+            "width": 390,
+            "height": 444
+          },
+          {
+            "id": "",
+            "dataset": {
+              "id": "red-1"
+            },
+            "left": 229.296875,
+            "right": 293.296875,
+            "top": 626.2578125,
+            "bottom": 702.2578125,
+            "width": 64,
+            "height": 76
+          }
+        ]
+      },
+      "cyanBefore": {
+        "count": 2466,
+        "x": 258.5408522733825,
+        "y": 615.5562810622572
+      },
+      "cyanAfter": {
+        "count": 2475,
+        "x": 258.52058020967974,
+        "y": 655.4701565417205
+      },
+      "screenshots": [
+        "scroll-alignment-before-active-before.png",
+        "scroll-alignment-before-active-after.png"
+      ]
+    },
+    {
+      "mode": "still",
+      "passed": true,
+      "expected": 40,
+      "actual": 39.83505917233026,
+      "drift": 0.1649408276697386,
+      "before": {
+        "scroll": 183,
+        "playing": false,
+        "rect": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 390,
+            "top": 294,
+            "bottom": 738,
+            "width": 390,
+            "height": 444
+          },
+          {
+            "id": "",
+            "dataset": {
+              "id": "red-1"
+            },
+            "left": 229.296875,
+            "right": 293.296875,
+            "top": 586.2578125,
+            "bottom": 662.2578125,
+            "width": 64,
+            "height": 76
+          }
+        ]
+      },
+      "after": {
+        "scroll": 143,
+        "playing": false,
+        "rect": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 390,
+            "top": 294,
+            "bottom": 738,
+            "width": 390,
+            "height": 444
+          },
+          {
+            "id": "",
+            "dataset": {
+              "id": "red-1"
+            },
+            "left": 229.296875,
+            "right": 293.296875,
+            "top": 626.2578125,
+            "bottom": 702.2578125,
+            "width": 64,
+            "height": 76
+          }
+        ]
+      },
+      "cyanBefore": {
+        "count": 2414,
+        "x": 258.47164742006544,
+        "y": 615.4465214762229
+      },
+      "cyanAfter": {
+        "count": 2434,
+        "x": 258.4831932691297,
+        "y": 655.2815806485531
+      },
+      "screenshots": [
+        "scroll-alignment-before-still-before.png",
+        "scroll-alignment-before-still-after.png"
+      ]
+    }
+  ]
+}

@@ -53,7 +53,10 @@
     if (previous.nodeType !== next.nodeType || previous.nodeName !== next.nodeName) { previous.replaceWith(next); return next; }
     if (next.nodeType === 3) { if (previous.textContent !== next.textContent) previous.textContent = next.textContent; return previous; }
     if (next.nodeType !== 1) return previous;
-    for (const attribute of [...previous.attributes]) if (!next.hasAttribute(attribute.name)) previous.removeAttribute(attribute.name);
+    // The animator owns its drawing-buffer dimensions. Removing these runtime
+    // attributes resets Canvas2D's buffer and transform on a scroll repaint.
+    const liveCanvas = previous.tagName === 'CANVAS' && previous._mascotAnimator;
+    for (const attribute of [...previous.attributes]) if (!next.hasAttribute(attribute.name) && !(liveCanvas && ['width','height'].includes(attribute.name))) previous.removeAttribute(attribute.name);
     for (const attribute of next.attributes) if (previous.getAttribute(attribute.name) !== attribute.value) previous.setAttribute(attribute.name, attribute.value);
     if(next.tagName==='INPUT'){previous.checked=next.checked;if(previous.value!==next.value)previous.value=next.value;}
     for (const event of ['onpointerdown','onpointermove','onpointerup','onpointercancel','onclick', 'oninput', 'onchange', 'onerror', 'onloadedmetadata','onload', 'ontimeupdate', 'onended', 'onscroll']) previous[event] = next[event];

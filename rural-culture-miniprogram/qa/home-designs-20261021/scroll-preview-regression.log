@@ -1,0 +1,34 @@
+✔ seasonal figures render one original bitmap without cutout arms, painted patches or whole-body keyframes (1.265305ms)
+✔ all original RGBA files are byte-identical and the local deformation stays above the feet (4.600978ms)
+✔ shared vertices remain joined, fixed outer edges match the static body, and no triangle inverts at any motion frame (50.679084ms)
+✔ canvas playback is bounded and repeated property refresh does not restart it; disposal cancels the pending frame (1.106942ms)
+✔ a canvas drawing failure stops its frame loop and invokes the original-image fallback (0.316348ms)
+✔ idle, scroll/modal pause and component disposal leave a transparent canvas, not an un-clipped original frame (0.332142ms)
+✔ visible current node plays once, finishes its full gesture, restarts exactly 8s after start (2.162562ms)
+✔ a reached noncurrent node has its own full thinking action; future nodes cannot play (0.329649ms)
+✔ background, offscreen and reduced-motion each cancel playback and scheduled work (0.349946ms)
+✔ frequent service refresh does not continually restart animation or postpone repeat (0.530453ms)
+✔ a catalog of 9 enabled nodes retains business IDs/order and cycles all four poses (1.379988ms)
+✔ a scheduled repeat lets a manual one-shot finish before resuming the current node (0.267822ms)
+✔ today-locked reached node still animates; all-completed map celebrates at the last reached node (0.584839ms)
+✔ rapid repeated taps do not reset a playing figure or delay its next automatic gesture (0.312068ms)
+✔ direct touch immediately upgrades idle action, deduplicates repeated touch and clears linked feedback (0.364192ms)
+✔ changing a visible scene pose cancels the previous gesture and uses the replacement duration (0.376554ms)
+✔ every supplied extension completes its own action and remains interruptible (0.32142ms)
+✔ each seasonal tap completes its shorter gesture; repeated taps refresh feedback without restarting the hand (1.608455ms)
+✔ a partly clipped figure uses its static image; animation stops before it can cross the map edge (0.256007ms)
+✔ scroll-driven DOM morph preserves the live canvas buffer, transform and original-pixel frame for all four poses (2352.768108ms)
+✔ 实际Page.resize四主题共用完整标题区域，覆盖三个视口 (31.553885ms)
+✔ 390×844原生屏幕：A地图294至738、标题与操作区可达，水纹不越出标题区域 (1.318689ms)
+✔ 不同进度和短屏按实际卡片边界定位，保留16px下方间距 (47.062801ms)
+✔ 宽横幅布局下当前产业关卡仍保留16px底部间距 (0.254361ms)
+✔ 浏览器WXSS导入器会内联实际共享样式，保持与原生的加载顺序 (5.370955ms)
+✔ 四主题标题保留屏幕中轴和光学基线，所有可见素材均位于标题区内 (0.761183ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2695.136695

@@ -10,6 +10,7 @@ fs.copyFileSync(path.join(root,'docs/20261021-A方案确认与四项细化.md'),
 fs.copyFileSync(path.join(root,'docs/20261021-人物点击动作与轮廓接缝修正.md'),path.join(dest,'20261021-人物点击动作与轮廓接缝修正.md'));
 fs.copyFileSync(path.join(root,'docs/20261021-横幅标题字号与留白修正.md'),path.join(dest,'20261021-横幅标题字号与留白修正.md'));
 fs.copyFileSync(path.join(root,'docs/20261021-人物画布越界与底部遮挡修正.md'),path.join(dest,'20261021-人物画布越界与底部遮挡修正.md'));
+fs.copyFileSync(path.join(root,'docs/20261021-地图滚动人物对齐修正.md'),path.join(dest,'20261021-地图滚动人物对齐修正.md'));
 const old=path.resolve(root,'../交付/首页两款设计-20261021/评审.html');if(fs.existsSync(old))fs.writeFileSync(old,'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../首页方案A-20261021/评审.html"><title>A方案已确认</title></head><body><a href="../首页方案A-20261021/评审.html">查看已确认 A 方案</a></body></html>\n');
 const zip=path.join(path.dirname(dest),'首页方案A-20261021.zip');
 const script='import sys, zipfile\nfrom pathlib import Path\nroot=Path(sys.argv[1])\nwith zipfile.ZipFile(sys.argv[2], "w", compression=zipfile.ZIP_DEFLATED) as archive:\n for source in sorted(root.rglob("*")):\n  if source.is_file() and source.name != ".DS_Store": archive.write(source, source.relative_to(root.parent).as_posix())\n';

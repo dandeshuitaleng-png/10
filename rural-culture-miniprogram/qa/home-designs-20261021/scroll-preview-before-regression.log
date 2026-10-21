@@ -1,0 +1,28 @@
+✖ scroll-driven DOM morph preserves the live canvas buffer, transform and original-pixel frame for all four poses (13.973029ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2343.574388
+
+✖ failing tests:
+
+test at tests/preview-mascot-scroll.test.cjs:23:1
+✖ scroll-driven DOM morph preserves the live canvas buffer, transform and original-pixel frame for all four poses (13.973029ms)
+  AssertionError [ERR_ASSERTION]: welcome live width reset during scrolling
+
+  300 !== 76
+
+      at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/preview-mascot-scroll.test.cjs:31:11)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 300,
+    expected: 76,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
