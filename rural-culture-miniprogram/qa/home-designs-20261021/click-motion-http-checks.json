@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-21T12:31:05.773Z",
+  "passed": true,
+  "scope": "HTTP source integrity only; browser interaction unavailable because Work browser controls are disabled.",
+  "checks": [
+    {
+      "file": "preview/首页方案A-20261021.html",
+      "passed": true
+    },
+    {
+      "file": "preview/v4-runtime.js",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/components/mascot-actor/index.js",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/components/mascot-actor/index.wxml",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/components/mascot-actor/index.wxss",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/services-v4/mascot-motion.js",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/services-v4/mascot-rig.js",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/services-v4/mascot-mesh.js",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/services-v4/mascot-canvas.js",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/pages/game/index.wxml",
+      "passed": true
+    },
+    {
+      "file": "miniprogram/pages/game/index.js",
+      "passed": true
+    }
+  ]
+}

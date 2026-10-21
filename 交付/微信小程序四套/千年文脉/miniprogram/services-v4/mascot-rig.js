@@ -19,23 +19,16 @@ const rigs={
  think:rig('winter',486,[[141,310,50,66],[202,318,55,46]],[202,410,7,10],'candy','视线下移，稍作停顿后眨眼回应',2300),
  celebrate:rig('summer',457,[[186,325,35,53],[246,330,39,41]],[150,238,170,17],'goggles','轻快回应，泳镜掠光后柔和回稳',1900)
 };
-// Original-pixel arm cutouts. Body, head and feet keep a fixed transform.
-const limbs={
- welcome:{pivot:[342,520],outline:[[321,516],[343,514],[364,518],[378,533],[380,552],[371,575],[352,590],[332,595],[312,591],[298,580],[291,564],[293,546],[304,529]],underlays:[{fill:'#FFFFFF',polygon:[[280,505],[346,505],[346,600],[280,600]]}],label:'托风车的手腕轻抬，身体与脚底保持固定'},
- observe:{pivot:[150,489],outline:[[139,488],[158,472],[176,445],[185,420],[197,402],[212,394],[226,391],[241,397],[254,408],[262,424],[265,441],[261,462],[251,484],[236,505],[215,522],[193,532],[177,537],[141,531]],underlays:[{fill:'#FFFFFF',polygon:[[137,389],[267,389],[267,540],[137,540]]},{fill:'#89D1EB',polygon:[[137,389],[267,389],[267,419],[137,419]]}],label:'举手打招呼，配合相机快门，身体不左右摇摆'},
- think:{pivot:[131,490],outline:[[133,482],[153,487],[164,505],[166,517],[180,536],[185,553],[181,570],[171,583],[154,592],[136,592],[120,585],[107,574],[100,557],[98,540],[102,521],[112,503]],underlays:[{fill:'#FFFFFF',polygon:[[125,480],[194,480],[194,600],[131,600]]}],label:'拿糖葫芦的手轻抬，视线回应，脚底固定'},
- celebrate:{pivot:[332,512],outline:[[316,496],[335,505],[348,522],[357,543],[360,561],[353,581],[338,597],[320,605],[303,605],[288,600],[278,589],[271,575],[274,555],[284,542],[301,529]],underlays:[{fill:'#FFFFFF',polygon:[[278,500],[329,500],[337,542],[329,590],[278,590]]}],label:'持冰淇淋的手腕小幅转动，身体不跳动'}
+// A continuous bitmap mesh replaces cutout arms. No painted underlays or gaps.
+const gestures={
+ welcome:{box:[76,378,147,169],pivot:[184,503],angles:[12,-8,9,-5,1.5],responseDuration:1350,label:'春季抬手招呼，身体和脚底固定'},
+ celebrate:{box:[220,430,156,184],pivot:[332,512],angles:[-9,-9,3,-2,0.5],responseDuration:1350,label:'夏季举起冰淇淋回应，身体和游泳圈固定'},
+ observe:{box:[290,332,158,205],pivot:[316,513],angles:[-7,-7,1.5,-0.8,0.3],responseDuration:1450,label:'秋季举相机回应，身体与脚底固定'},
+ think:{box:[93,386,157,215],pivot:[131,490],angles:[7,7,-4,3,-1],responseDuration:1500,label:'冬季抬手轻晃糖葫芦，身体与雪人固定'}
 };
-const polygon=(points,w)=>points.map(([x,y])=>percent(x/w)+' '+percent(y/H)).join(',');
-for(const [pose,part] of Object.entries(limbs)){
- const r=rigs[pose],center=part.outline.reduce((a,p)=>[a[0]+p[0]/part.outline.length,a[1]+p[1]/part.outline.length],[0,0]);
- part.outline=part.outline.map(([x,y])=>{const dx=x-center[0],dy=y-center[1],distance=Math.hypot(dx,dy)||1;return [x+dx/distance*6,y+dy/distance*6];});
- const outside=[[0,0],[r.width,0],[r.width,H],[0,H],[0,0],...part.outline,[...part.outline[0]],[0,0]];
- r.limb={style:'transform-origin:'+percent(part.pivot[0]/r.width)+' '+percent(part.pivot[1]/H)+';',imageStyle:'clip-path:polygon('+polygon(part.outline,r.width)+');'};
- // Even-odd fill removes only the arm silhouette from the stationary image.
- r.limbBaseStyle='clip-path:polygon(evenodd,'+polygon(outside,r.width)+');';
- r.limbUnderlays=part.underlays.map(p=>({style:'position:absolute;inset:0;background:'+p.fill+';clip-path:polygon('+polygon(p.polygon,r.width)+');'}));
- r.label=part.label;
+for(const [pose,g] of Object.entries(gestures)){
+ const r=rigs[pose];r.gesture=g;
+ r.responseDuration=g.responseDuration;r.label=g.label;
 }
 Object.assign(rigs,require('./mascot-extensions'));
 module.exports={rigs};

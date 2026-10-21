@@ -7,6 +7,7 @@ let html=fs.readFileSync(path.join(root,'preview/首页方案A-20261021.html'),'
 html=html.replace('</head>','<style>.experience{display:none!important}</style></head>').replace('交互入口采用相同页面源码；本轮以微信模拟器核查为准，实体 iPhone、安卓微信效果仍需复核。','切换四个主题查看 A 方案，并下载单张原图。手机微信中的最终显示与触摸效果仍需复核。');
 fs.writeFileSync(path.join(dest,'评审.html'),html);
 fs.copyFileSync(path.join(root,'docs/20261021-A方案确认与四项细化.md'),path.join(dest,'设计说明.md'));
+fs.copyFileSync(path.join(root,'docs/20261021-人物点击动作与轮廓接缝修正.md'),path.join(dest,'20261021-人物点击动作与轮廓接缝修正.md'));
 const old=path.resolve(root,'../交付/首页两款设计-20261021/评审.html');if(fs.existsSync(old))fs.writeFileSync(old,'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../首页方案A-20261021/评审.html"><title>A方案已确认</title></head><body><a href="../首页方案A-20261021/评审.html">查看已确认 A 方案</a></body></html>\n');
 const zip=path.join(path.dirname(dest),'首页方案A-20261021.zip');
 const script='import sys, zipfile\nfrom pathlib import Path\nroot=Path(sys.argv[1])\nwith zipfile.ZipFile(sys.argv[2], "w", compression=zipfile.ZIP_DEFLATED) as archive:\n for source in sorted(root.rglob("*")):\n  if source.is_file() and source.name != ".DS_Store": archive.write(source, source.relative_to(root.parent).as_posix())\n';

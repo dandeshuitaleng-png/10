@@ -32,3 +32,14 @@ test('every supplied extension completes its own action and remains interruptibl
   e.controller.hide();assert.equal(e.timers.size,0);assert.equal(e.controller.state().respondingId,'');e.controller.dispose();
  }
 });
+
+test('each seasonal tap completes its shorter gesture; repeated taps refresh feedback without restarting the hand',()=>{
+ const {responseDurations}=require('../miniprogram/services-v4/mascot-motion');
+ for(const pose of ['welcome','celebrate','observe','think']){
+  const e=env(pose);e.controller.update(e.context);e.controller.react('one');const started=e.controller.state().sequence,next=e.controller.state().nextAt;
+  for(let i=0;i<100;i++)e.controller.react('one');
+  assert.equal(e.controller.state().touchSequence,101);assert.equal(e.controller.state().sequence,started);assert.equal(e.controller.state().nextAt,next);assert(e.timers.size<=2);
+  assert.equal(e.changes.at(-1).touchSequence,101);e.advance(responseDurations[pose]-1);assert.equal(e.controller.state().respondingId,'one');e.advance(1);assert.equal(e.controller.state().playingId,'');
+  e.controller.react('one');assert.equal(e.controller.state().sequence,started+1);assert.equal(e.controller.state().touchSequence,102);e.controller.hide();assert.equal(e.controller.state().respondingId,'');e.controller.dispose();
+ }
+});

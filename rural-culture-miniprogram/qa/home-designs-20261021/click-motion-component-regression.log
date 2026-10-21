@@ -1,0 +1,36 @@
+✔ approved A is the only active homepage; stale B links cannot reactivate B (102.561197ms)
+✔ mother and four independent projects explicitly use A with review controls disabled (1.525965ms)
+✔ A retains illustration ratio and visible current chapter at three widths (2.004723ms)
+✔ catalog owns counts and sequence; four original seasons cycle in the client order (1.003847ms)
+✔ each theme has its own scene and podium with explicit state and reached-only figures (0.996332ms)
+✔ actual A Page preserves chapter start, completion, next unlock and resume (12.89681ms)
+✔ seasonal figures render one original bitmap without cutout arms, painted patches or whole-body keyframes (1.329904ms)
+✔ all original RGBA files are byte-identical and the local deformation stays above the feet (2.404816ms)
+✔ shared vertices remain joined, fixed outer edges match the static body, and no triangle inverts at any motion frame (44.217701ms)
+✔ canvas playback is bounded and repeated property refresh does not restart it; disposal cancels the pending frame (1.179328ms)
+✔ a canvas drawing failure stops its frame loop and invokes the original-image fallback (0.331416ms)
+✔ visible current node plays once, finishes its full gesture, restarts exactly 8s after start (1.73153ms)
+✔ a reached noncurrent node has its own full thinking action; future nodes cannot play (0.294218ms)
+✔ background, offscreen and reduced-motion each cancel playback and scheduled work (0.351073ms)
+✔ frequent service refresh does not continually restart animation or postpone repeat (0.584679ms)
+✔ a catalog of 9 enabled nodes retains business IDs/order and cycles all four poses (1.410495ms)
+✔ a scheduled repeat lets a manual one-shot finish before resuming the current node (0.281264ms)
+✔ today-locked reached node still animates; all-completed map celebrates at the last reached node (1.161247ms)
+✔ rapid repeated taps do not reset a playing figure or delay its next automatic gesture (0.21027ms)
+✔ direct touch immediately upgrades idle action, deduplicates repeated touch and clears linked feedback (0.299655ms)
+✔ changing a visible scene pose cancels the previous gesture and uses the replacement duration (0.28369ms)
+✔ every supplied extension completes its own action and remains interruptible (0.235991ms)
+✔ each seasonal tap completes its shorter gesture; repeated taps refresh feedback without restarting the hand (0.788291ms)
+✔ every one of 100 repeated taps gets feedback and returns to rest (1.622143ms)
+✔ the previous release cannot end a new press, including the same answer (1.005823ms)
+✔ scroll gestures, touch cancellation and page disposal leave no stuck press (0.238526ms)
+✔ keyboard or accessible tap also gets feedback without a preceding touch event (0.155118ms)
+✔ the actual shared button continues to emit actions after 100 taps and guards disabled/loading (2.757801ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 240.304136

@@ -10,8 +10,7 @@
 .is-playing .antenna-region{display:block}
 .antenna-pivot{position:relative;width:100%;height:100%;pointer-events:none}
 .antenna-window{position:relative;width:100%;height:100%;overflow:hidden;pointer-events:none}
-.limb-pivot{position:absolute;inset:0;pointer-events:none}
-.limb-pivot,.eye-copy,.prop-glint{animation-duration:var(--actor-duration);animation-fill-mode:both;animation-iteration-count:1;animation-timing-function:cubic-bezier(.4,0,.2,1)}
+.eye-copy,.prop-glint{animation-duration:var(--actor-duration);animation-fill-mode:both;animation-iteration-count:1;animation-timing-function:cubic-bezier(.4,0,.2,1)}
 .prop-glint{position:absolute;overflow:hidden;opacity:0;pointer-events:none}
 .prop-shine{position:absolute;inset:0;background:linear-gradient(135deg,#ffffffe0,#ffffff08);border-radius:50%}
 .glint-camera,.glint-candy{border-radius:50%}
@@ -39,22 +38,6 @@
 .pose-observe .actor-source-plane{left:53.84%;top:50.45%;width:99.491018%}
 .pose-think .actor-source-plane{left:53.2%;top:49.37%;width:101.795020%}
 .pose-celebrate .actor-source-plane{left:47.87%;top:49.19%;width:95.720832%}}
-.pose-welcome.is-playing.phase-0 .limb-pivot{animation-name:welcome-limb-0}
-@keyframes welcome-limb-0{0%,100%{transform:rotate(0.0deg)}24%{transform:rotate(-3.9deg)}44%{transform:rotate(2.6deg)}66%{transform:rotate(-1.95deg)}84%{transform:rotate(0.65deg)}}
-.pose-welcome.is-playing.phase-1 .limb-pivot{animation-name:welcome-limb-1}
-@keyframes welcome-limb-1{0%,100%{transform:rotate(0.0deg)}24%{transform:rotate(-3.9deg)}44%{transform:rotate(2.6deg)}66%{transform:rotate(-1.95deg)}84%{transform:rotate(0.65deg)}}
-.pose-observe.is-playing.phase-0 .limb-pivot{animation-name:observe-limb-0}
-@keyframes observe-limb-0{0%,100%{transform:rotate(0.0deg)}25%{transform:rotate(-5.2deg)}44%{transform:rotate(3.25deg)}64%{transform:rotate(-3.25deg)}83%{transform:rotate(0.98deg)}}
-.pose-observe.is-playing.phase-1 .limb-pivot{animation-name:observe-limb-1}
-@keyframes observe-limb-1{0%,100%{transform:rotate(0.0deg)}25%{transform:rotate(-5.2deg)}44%{transform:rotate(3.25deg)}64%{transform:rotate(-3.25deg)}83%{transform:rotate(0.98deg)}}
-.pose-think.is-playing.phase-0 .limb-pivot{animation-name:think-limb-0}
-@keyframes think-limb-0{0%,100%{transform:rotate(0.0deg)}32%,56%{transform:rotate(3.9deg)}74%{transform:rotate(-1.3deg)}88%{transform:rotate(0.65deg)}}
-.pose-think.is-playing.phase-1 .limb-pivot{animation-name:think-limb-1}
-@keyframes think-limb-1{0%,100%{transform:rotate(0.0deg)}32%,56%{transform:rotate(3.9deg)}74%{transform:rotate(-1.3deg)}88%{transform:rotate(0.65deg)}}
-.pose-celebrate.is-playing.phase-0 .limb-pivot{animation-name:celebrate-limb-0}
-@keyframes celebrate-limb-0{0%,100%{transform:rotate(0.0deg)}25%{transform:rotate(-4.55deg)}46%{transform:rotate(2.6deg)}67%{transform:rotate(-1.95deg)}84%{transform:rotate(0.65deg)}}
-.pose-celebrate.is-playing.phase-1 .limb-pivot{animation-name:celebrate-limb-1}
-@keyframes celebrate-limb-1{0%,100%{transform:rotate(0.0deg)}25%{transform:rotate(-4.55deg)}46%{transform:rotate(2.6deg)}67%{transform:rotate(-1.95deg)}84%{transform:rotate(0.65deg)}}
 .pose-welcome.is-playing.phase-0 .eye-copy{animation-name:welcome-eyes-0}
 @keyframes welcome-eyes-0{0%,14%,40%,78%,100%{transform:translateY(0) scaleY(1)}25%,31%{transform:translateY(-3%) scaleY(.42)}57%,63%{transform:translateY(-2%) scaleY(.72)}}
 .pose-welcome.is-playing.phase-1 .eye-copy{animation-name:welcome-eyes-1}
@@ -87,22 +70,6 @@
 @keyframes celebrate-prop-0{0%,24%,82%,100%{opacity:0}38%,62%{opacity:.62}}
 .pose-celebrate.is-playing.phase-1 .prop-glint{animation-name:celebrate-prop-1}
 @keyframes celebrate-prop-1{0%,24%,82%,100%{opacity:0}38%,62%{opacity:.62}}
-.pose-welcome.is-playing.is-responding.phase-0 .limb-pivot{animation-name:welcome-limb-touch-0}
-@keyframes welcome-limb-touch-0{0%,100%{transform:rotate(0.00deg)}24%{transform:rotate(-5.46deg)}44%{transform:rotate(3.64deg)}66%{transform:rotate(-2.73deg)}84%{transform:rotate(0.91deg)}}
-.pose-welcome.is-playing.is-responding.phase-1 .limb-pivot{animation-name:welcome-limb-touch-1}
-@keyframes welcome-limb-touch-1{0%,100%{transform:rotate(0.00deg)}24%{transform:rotate(-5.46deg)}44%{transform:rotate(3.64deg)}66%{transform:rotate(-2.73deg)}84%{transform:rotate(0.91deg)}}
-.pose-observe.is-playing.is-responding.phase-0 .limb-pivot{animation-name:observe-limb-touch-0}
-@keyframes observe-limb-touch-0{0%,100%{transform:rotate(0.00deg)}25%{transform:rotate(-7.28deg)}44%{transform:rotate(4.55deg)}64%{transform:rotate(-4.55deg)}83%{transform:rotate(1.37deg)}}
-.pose-observe.is-playing.is-responding.phase-1 .limb-pivot{animation-name:observe-limb-touch-1}
-@keyframes observe-limb-touch-1{0%,100%{transform:rotate(0.00deg)}25%{transform:rotate(-7.28deg)}44%{transform:rotate(4.55deg)}64%{transform:rotate(-4.55deg)}83%{transform:rotate(1.37deg)}}
-.pose-think.is-playing.is-responding.phase-0 .limb-pivot{animation-name:think-limb-touch-0}
-@keyframes think-limb-touch-0{0%,100%{transform:rotate(0.00deg)}32%,56%{transform:rotate(5.46deg)}74%{transform:rotate(-1.82deg)}88%{transform:rotate(0.91deg)}}
-.pose-think.is-playing.is-responding.phase-1 .limb-pivot{animation-name:think-limb-touch-1}
-@keyframes think-limb-touch-1{0%,100%{transform:rotate(0.00deg)}32%,56%{transform:rotate(5.46deg)}74%{transform:rotate(-1.82deg)}88%{transform:rotate(0.91deg)}}
-.pose-celebrate.is-playing.is-responding.phase-0 .limb-pivot{animation-name:celebrate-limb-touch-0}
-@keyframes celebrate-limb-touch-0{0%,100%{transform:rotate(0.00deg)}25%{transform:rotate(-6.37deg)}46%{transform:rotate(3.64deg)}67%{transform:rotate(-2.73deg)}84%{transform:rotate(0.91deg)}}
-.pose-celebrate.is-playing.is-responding.phase-1 .limb-pivot{animation-name:celebrate-limb-touch-1}
-@keyframes celebrate-limb-touch-1{0%,100%{transform:rotate(0.00deg)}25%{transform:rotate(-6.37deg)}46%{transform:rotate(3.64deg)}67%{transform:rotate(-2.73deg)}84%{transform:rotate(0.91deg)}}
 .actor-response-marks{display:none;position:absolute;inset:0;pointer-events:none}.is-responding .actor-response-marks{display:block}.response-mark{position:absolute;opacity:0;background:var(--accent,#42835a);animation:response-accent var(--actor-duration) ease-out both}.pose-welcome .response-mark{width:9%;height:3%;border-radius:3px;left:-3%;top:38%;transform:rotate(-25deg)}.pose-welcome .mark-2{left:-9%;top:50%;transform:rotate(8deg)}.pose-welcome .mark-3{left:0;top:61%;transform:rotate(35deg)}.pose-observe .response-mark{background:transparent;right:0;top:38%;width:24%;height:20%;border:2px solid #fffde0;border-radius:5px;box-shadow:0 0 0 1px #8b71334d}.pose-observe .mark-2,.pose-observe .mark-3{display:none}.pose-think .response-mark{width:6%;height:5%;border-radius:50%;right:5%;top:9%}.pose-think .mark-2{right:-4%;top:0;animation-delay:140ms}.pose-think .mark-3{right:1%;top:-11%;animation-delay:280ms}.pose-celebrate .response-mark{width:3%;height:10%;border-radius:3px;left:16%;top:0;transform:rotate(-33deg)}.pose-celebrate .mark-2{left:50%;top:-7%;transform:rotate(0deg)}.pose-celebrate .mark-3{left:83%;top:0;transform:rotate(33deg)}@keyframes response-accent{0%,15%,85%,100%{opacity:0}30%,58%{opacity:.9}}
 .extension-plane{position:absolute;inset:0;animation-duration:var(--actor-duration);animation-fill-mode:both;animation-timing-function:cubic-bezier(.33,0,.2,1)}.pose-scholar .extension-plane{inset:-12%}.extension-art{display:block;position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.extension-layered{opacity:0}.is-playing .extension-still{opacity:0}.is-playing .extension-layered{opacity:1}.extension-part{animation-duration:var(--actor-duration);animation-fill-mode:both;animation-timing-function:cubic-bezier(.33,0,.2,1)}
 .pose-reader.is-playing.phase-0 .part-glasses{animation-name:reader-glasses-0}@keyframes reader-glasses-0{0%,100%{transform:translateY(0) rotate(0deg)}24%,52%{transform:translateY(-.8%) rotate(-2deg)}72%{transform:translateY(0) rotate(.7deg)}}
@@ -135,4 +102,17 @@
 .pose-skater.is-playing.is-responding.phase-1 .part-peace{animation-name:skater-peace-touch-1}@keyframes skater-peace-touch-1{0%,100%{transform:rotate(0.00deg)}24%{transform:rotate(-8.40deg)}43%{transform:rotate(7.00deg)}61%{transform:rotate(-5.60deg)}80%{transform:rotate(2.10deg)}}
 .actor-extension.is-responding .extension-part{animation-timing-function:cubic-bezier(.22,.7,.25,1)}.actor-extension .response-mark{width:4%;height:6%;border-radius:50%;right:7%;top:15%}.actor-extension .mark-2{right:0;top:24%;animation-delay:100ms}.actor-extension .mark-3{right:5%;top:33%;animation-delay:200ms}
 @keyframes glass-sheen{0%,28%{transform:translateX(-120%)}74%,100%{transform:translateX(470%)}}
-@media(prefers-reduced-motion:reduce){.actor-original .actor-response-marks,.actor-original .eye-region,.actor-original .prop-glint,.actor-original .antenna-region{display:none!important}.actor-original .eye-copy,.actor-original .prop-shine,.actor-original .gesture-plane,.actor-original .limb-pivot,.actor-original .antenna-pivot{animation:none!important;transform:none!important}.actor-original .limb-pivot,.actor-original .limb-underlay{display:none!important}.actor-original .actor-art{clip-path:none!important}.actor-extension .extension-plane,.actor-extension .extension-part{animation:none!important;transform:none!important}.actor-extension .extension-still{opacity:1!important}.actor-extension .extension-layered{opacity:0!important}}
+/* Deliberate touch: fast first movement, complete one local gesture, immediate per-tap accents. */
+.pose-welcome.is-responding,.pose-celebrate.is-responding{--actor-duration:1350ms}
+.pose-observe.is-responding{--actor-duration:1450ms}
+.pose-think.is-responding{--actor-duration:1500ms}
+.is-responding .response-mark{animation-duration:300ms;animation-timing-function:cubic-bezier(.16,1,.3,1);animation-delay:0ms}
+.is-responding.touch-phase-0 .response-mark{animation-name:touch-accent-0}
+.is-responding.touch-phase-1 .response-mark{animation-name:touch-accent-1}
+@keyframes touch-accent-0{0%,100%{opacity:0}8%,54%{opacity:.9}}
+@keyframes touch-accent-1{0%,100%{opacity:0}8%,54%{opacity:.9}}
+
+.mascot-motion-canvas{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;pointer-events:none}
+.canvas-ready.is-playing .mascot-motion-canvas{opacity:1}
+.canvas-ready.is-playing .gesture-original{opacity:0}
+@media(prefers-reduced-motion:reduce){.actor-original .actor-response-marks,.actor-original .eye-region,.actor-original .prop-glint,.actor-original .antenna-region,.actor-original .mascot-motion-canvas{display:none!important}.actor-original .gesture-original{opacity:1!important}.actor-original .eye-copy,.actor-original .prop-shine,.actor-original .gesture-plane,.actor-original .antenna-pivot{animation:none!important;transform:none!important}.actor-extension .extension-plane,.actor-extension .extension-part{animation:none!important;transform:none!important}.actor-extension .extension-still{opacity:1!important}.actor-extension .extension-layered{opacity:0!important}}

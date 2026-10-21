@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-21T12:27:35.549Z",
+  "passed": true,
+  "scope": "Actual native Page/Canvas 2D in disposable project: four seasons, four themes, 100 Page-handler taps per season, original snapshot preserved, background cancels Canvas frame loop. Not physical phone touch/performance acceptance.",
+  "checks": [
+    {
+      "scenario": "home",
+      "passed": true,
+      "result": {
+        "id": "ecology-1",
+        "pose": "welcome",
+        "ready": true,
+        "responding": "ecology-1",
+        "touches": 100,
+        "unchanged": true,
+        "active": true,
+        "hidden": "",
+        "canvasStopped": true
+      }
+    },
+    {
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "id": "ecology-2",
+        "pose": "celebrate",
+        "ready": true,
+        "responding": "ecology-2",
+        "touches": 100,
+        "unchanged": true,
+        "active": true,
+        "hidden": "",
+        "canvasStopped": true
+      }
+    },
+    {
+      "scenario": "chapter-3",
+      "passed": true,
+      "result": {
+        "id": "ecology-3",
+        "pose": "observe",
+        "ready": true,
+        "responding": "ecology-3",
+        "touches": 100,
+        "unchanged": true,
+        "active": true,
+        "hidden": "",
+        "canvasStopped": true
+      }
+    },
+    {
+      "scenario": "chapter-4",
+      "passed": true,
+      "result": {
+        "id": "ecology-4",
+        "pose": "think",
+        "ready": true,
+        "responding": "ecology-4",
+        "touches": 100,
+        "unchanged": true,
+        "active": true,
+        "hidden": "",
+        "canvasStopped": true
+      }
+    },
+    {
+      "theme": "red",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "ready": true,
+        "responding": "red-1",
+        "id": "red-1"
+      }
+    },
+    {
+      "theme": "culture",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "ready": true,
+        "responding": "culture-1",
+        "id": "culture-1"
+      }
+    },
+    {
+      "theme": "industry",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "ready": true,
+        "responding": "industry-1",
+        "id": "industry-1"
+      }
+    },
+    {
+      "theme": "ecology",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "ready": true,
+        "responding": "ecology-1",
+        "id": "ecology-1"
+      }
+    },
+    {
+      "scenario": "native WXML tap binding",
+      "passed": true,
+      "before": 1,
+      "after": 2
+    }
+  ]
+}

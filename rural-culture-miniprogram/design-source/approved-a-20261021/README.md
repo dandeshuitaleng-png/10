@@ -14,3 +14,5 @@
 导出仅使用 Sharp 作尺寸适配、JPEG 压缩和透明边界裁切，不用代码重绘插画。地图统一为 750×1280，底座使用 220×165 透明容器以 contain 保留比例。每张运行地图低于 240KiB；独立工程仅打包自己的新版地图与底座。源文件命名为 `<theme>-map-source.png` 和 `<theme>-node-source.png`，运行文件为 `<theme>-a-v4.jpg` 和 `<theme>-node-a-v4.png`。
 
 原智小谷源路径为 `miniprogram/assets/brand/original-poses/`，顺序是 spring、summer、autumn、winter。局部手部和道具动作沿用现有组件，不使用全身左右晃动。内页使用策略及验收记录见 `docs/20261021-A方案确认与四项细化.md`。
+
+后续人物点击动作采用原 PNG 的连续局部绘制，不再将手臂裁切为独立贴片；原 PNG 文件仍完全不变。修正说明见 `docs/20261021-人物点击动作与轮廓接缝修正.md`。

@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-21T11:23:55.738Z",
+  "date": "2026-10-21T12:30:11.720Z",
   "selection": "approved A",
   "checks": [
     {
-      "date": "2026-10-21T11:23:55.707Z",
+      "date": "2026-10-21T12:30:11.689Z",
       "project": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/miniprogram",
       "passed": true,
@@ -12,7 +12,7 @@
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 178
+          "fileCount": 180
         },
         {
           "name": "wcc",
@@ -27,11 +27,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 4482353,
-      "physicalFiles": 178,
-      "packedFiles": 121,
-      "bytes": 1634060,
-      "mib": 1.558,
+      "physicalBytes": 4484378,
+      "physicalFiles": 180,
+      "packedFiles": 123,
+      "bytes": 1636085,
+      "mib": 1.56,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -95,7 +95,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T11:23:55.714Z",
+      "date": "2026-10-21T12:30:11.709Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草/miniprogram",
       "passed": true,
@@ -104,7 +104,7 @@
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 170
+          "fileCount": 172
         },
         {
           "name": "wcc",
@@ -119,11 +119,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 3591267,
-      "physicalFiles": 170,
-      "packedFiles": 122,
-      "bytes": 1701462,
-      "mib": 1.623,
+      "physicalBytes": 3593292,
+      "physicalFiles": 172,
+      "packedFiles": 124,
+      "bytes": 1703487,
+      "mib": 1.625,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -178,7 +178,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T11:23:55.722Z",
+      "date": "2026-10-21T12:30:11.691Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉/miniprogram",
       "passed": true,
@@ -187,7 +187,7 @@
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 170
+          "fileCount": 172
         },
         {
           "name": "wcc",
@@ -202,11 +202,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 3637907,
-      "physicalFiles": 170,
-      "packedFiles": 122,
-      "bytes": 1707545,
-      "mib": 1.628,
+      "physicalBytes": 3639932,
+      "physicalFiles": 172,
+      "packedFiles": 124,
+      "bytes": 1709570,
+      "mib": 1.63,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -261,7 +261,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T11:23:55.704Z",
+      "date": "2026-10-21T12:30:11.689Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业/miniprogram",
       "passed": true,
@@ -270,7 +270,7 @@
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 170
+          "fileCount": 172
         },
         {
           "name": "wcc",
@@ -285,11 +285,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 3655883,
-      "physicalFiles": 170,
-      "packedFiles": 121,
-      "bytes": 1634660,
-      "mib": 1.559,
+      "physicalBytes": 3657908,
+      "physicalFiles": 172,
+      "packedFiles": 123,
+      "bytes": 1636685,
+      "mib": 1.561,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
@@ -345,7 +345,7 @@
       "errors": []
     },
     {
-      "date": "2026-10-21T11:23:55.725Z",
+      "date": "2026-10-21T12:30:11.701Z",
       "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水",
       "miniprogramRoot": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水/miniprogram",
       "passed": true,
@@ -354,7 +354,7 @@
         {
           "name": "JSON and JavaScript syntax",
           "passed": true,
-          "fileCount": 172
+          "fileCount": 174
         },
         {
           "name": "wcc",
@@ -369,11 +369,11 @@
           "exitCode": 0
         }
       ],
-      "physicalBytes": 3855219,
-      "physicalFiles": 172,
-      "packedFiles": 121,
-      "bytes": 1817373,
-      "mib": 1.733,
+      "physicalBytes": 3857244,
+      "physicalFiles": 174,
+      "packedFiles": 123,
+      "bytes": 1819398,
+      "mib": 1.735,
       "mainPackageUnder2MiB": true,
       "excludedFiles": [
         "assets/brand/actions/01-welcome.png",
