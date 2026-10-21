@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-21T07:34:37.397Z",
+  "passed": true,
+  "scope": "Actual host simulator, isolated review fixture. Source and label/frame rectangle checks plus screenshot inspection; not physical-device acceptance.",
+  "checks": [
+    {
+      "theme": "red",
+      "scenario": "quiz",
+      "passed": true,
+      "result": {
+        "route": "quiz",
+        "modal": "",
+        "header": "/assets/red/banner-folded-v2.png",
+        "rect": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 50,
+            "right": 340,
+            "top": 99.875,
+            "bottom": 139.875,
+            "width": 290,
+            "height": 40
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 390,
+            "top": 69,
+            "bottom": 195,
+            "width": 390,
+            "height": 126
+          }
+        ]
+      },
+      "screenshot": "shared-ribbon-red-quiz.png"
+    },
+    {
+      "theme": "red",
+      "scenario": "rules",
+      "passed": true,
+      "result": {
+        "route": "home",
+        "modal": "rules",
+        "header": "/assets/red/banner-folded-v2.png",
+        "rect": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 53,
+            "right": 337,
+            "top": 144.8671875,
+            "bottom": 174.8671875,
+            "width": 284,
+            "height": 30
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 377,
+            "top": 108.5,
+            "bottom": 234.5,
+            "width": 364,
+            "height": 126
+          }
+        ]
+      },
+      "screenshot": "shared-ribbon-red-rules.png"
+    },
+    {
+      "theme": "culture",
+      "scenario": "quiz",
+      "passed": true,
+      "result": {
+        "route": "quiz",
+        "modal": "",
+        "header": "/assets/culture/banner-folded-v2.png",
+        "rect": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 51,
+            "right": 339,
+            "top": 97.6328125,
+            "bottom": 137.6328125,
+            "width": 288,
+            "height": 40
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 1,
+            "right": 389,
+            "top": 70,
+            "bottom": 196,
+            "width": 388,
+            "height": 126
+          }
+        ]
+      },
+      "screenshot": "shared-ribbon-culture-quiz.png"
+    },
+    {
+      "theme": "culture",
+      "scenario": "rules",
+      "passed": true,
+      "result": {
+        "route": "home",
+        "modal": "rules",
+        "header": "/assets/culture/banner-folded-v2.png",
+        "rect": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 54,
+            "right": 336,
+            "top": 141.8359375,
+            "bottom": 171.8359375,
+            "width": 282,
+            "height": 30
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 376,
+            "top": 108.5,
+            "bottom": 234.5,
+            "width": 362,
+            "height": 126
+          }
+        ]
+      },
+      "screenshot": "shared-ribbon-culture-rules.png"
+    }
+  ]
+}

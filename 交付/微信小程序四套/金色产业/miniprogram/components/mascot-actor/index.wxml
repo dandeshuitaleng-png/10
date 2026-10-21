@@ -1,4 +1,4 @@
-<view class="actor actor-original {{rigs[pose].extension?'actor-extension':''}} pose-{{pose}} phase-{{cycle%2}} {{playing?'is-playing':''}} {{responding?'is-responding':''}}" data-pose="{{pose}}" data-playing="{{playing}}" data-artwork="user-original" data-movement="original-vector-parts" aria-hidden="true">
+<view class="actor actor-original {{rigs[pose].extension?'actor-extension':''}} pose-{{pose}} phase-{{cycle%2}} {{playing?'is-playing':''}} {{responding?'is-responding':''}}" data-pose="{{pose}}" data-playing="{{playing}}" data-artwork="user-original" data-movement="original-local-parts" aria-hidden="true">
   <view wx:if="{{rigs[pose].extension}}" class="extension-plane" style="{{rigs[pose].gestureStyle}}">
     <image class="extension-art extension-still" src="{{rigs[pose].source}}" mode="aspectFit" />
     <image class="extension-art extension-layered" src="{{rigs[pose].baseSource}}" mode="aspectFit" />
@@ -6,8 +6,9 @@
   </view>
   <block wx:else="">
   <view class="actor-source-plane"><view class="gesture-plane" style="{{rigs[pose].gestureStyle}}">
-    <image class="actor-original-image actor-art" src="{{rigs[pose].source}}" style="{{playing?rigs[pose].antenna.baseStyle:''}}" mode="scaleToFill" />
-    <view class="antenna-region" style="{{rigs[pose].antenna.style}}"><view class="antenna-pivot" style="{{rigs[pose].antenna.pivotStyle}}"><view class="antenna-window" style="{{rigs[pose].antenna.windowStyle}}"><image class="antenna-source" src="{{rigs[pose].source}}" style="{{rigs[pose].antenna.imageStyle}}" mode="scaleToFill" /></view></view></view>
+    <view wx:for="{{rigs[pose].limbUnderlays}}" wx:key="index" class="limb-underlay" style="{{item.style}}" />
+    <image class="actor-original-image actor-art" src="{{rigs[pose].source}}" style="{{rigs[pose].limbBaseStyle}}" mode="scaleToFill" />
+    <view class="limb-pivot" style="{{rigs[pose].limb.style}}"><image class="limb-source actor-art" src="{{rigs[pose].source}}" style="{{rigs[pose].limb.imageStyle}}" mode="scaleToFill" /></view>
     <block wx:if="{{playing}}">
       <view wx:for="{{rigs[pose].eyes}}" wx:key="key" class="eye-region" style="{{item.style}}"><view class="eye-copy"><image class="eye-source" src="{{rigs[pose].source}}" style="{{item.imageStyle}}" mode="scaleToFill" /></view></view>
       <view class="prop-glint glint-{{rigs[pose].kind}}" style="{{rigs[pose].glint.style}}"><view class="prop-shine" /></view>

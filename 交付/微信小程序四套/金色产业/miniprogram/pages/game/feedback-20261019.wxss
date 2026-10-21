@@ -86,7 +86,7 @@
 .game-device.feedback-20261019.activity-page.home-layout .route-stop.today-locked .route-halo{animation:none;opacity:.78}
 .game-device.feedback-20261019.activity-page.home-layout button.chapter-mascot::after{border:0}
 .game-device.feedback-20261019.activity-page.home-layout button.chapter-mascot:focus-visible{outline:2px solid var(--accent);outline-offset:5px;border-radius:18px}
-.game-device.feedback-20261019.activity-page.home-layout .chapter-mascot.mascot-pressed{transform:scale(.96);transform-origin:50% 100%}
+.game-device.feedback-20261019.activity-page.home-layout .chapter-mascot.mascot-pressed{transform:none}
 .mascot-touch-ring{position:absolute;left:12%;right:12%;height:15%;bottom:-1%;border:2px solid var(--accent);border-radius:50%;opacity:0;pointer-events:none}
 .is-responding .mascot-touch-ring{animation:mascot-touch-ring 650ms ease-out both}
 @keyframes mascot-touch-ring{0%{opacity:.65;transform:scale(.7)}100%{opacity:0;transform:scale(1.65)}}

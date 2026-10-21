@@ -72,6 +72,14 @@
       {
         "type": "file",
         "value": "assets/journey/industry.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/red/banner-folded-v2.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/culture/banner-folded-v2.png"
       }
     ],
     "include": []

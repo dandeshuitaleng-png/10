@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-21T06:41:18.931Z",
-  "revision": "20261021-reference-colors",
+  "date": "2026-10-21T07:28:44.677Z",
+  "revision": "20261021-local-motion-ribbons",
   "passed": true,
-  "scope": "HTTP payload/source integrity and asset availability only; not browser rendering or interaction evidence.",
+  "scope": "HTTP payload/source integrity only; not browser rendering or interaction acceptance.",
   "checks": [
     {
-      "item": "review and iframe color revision",
+      "item": "review iframe revision",
       "passed": true
     },
     {
@@ -14,56 +14,89 @@
       "sha256": "a64adea0840b64b104ab7ac0a2e9f2f6c97c61f6b1ec62a72ddafd3edb0defe5"
     },
     {
-      "item": "pages/game/home-designs-20261021.wxss",
+      "item": "pages/game/reference-20261020.wxss",
       "passed": true,
-      "sha256": "a564729c38cfdf577649728d8355a677d43d905639cea761a14c38536c801dbe"
+      "sha256": "fb2dbe23e553f8b03e8fb2721e5abb2e65b195d85b3455f8442bb562ca34c3b6"
     },
     {
-      "item": "services-v4/home-designs.js",
+      "item": "components/mascot-actor/index.wxml",
       "passed": true,
-      "sha256": "28bedcf42f23404b41d12f362d4d45f70be31ef1fd7032f32e0fefd191e4ff5a"
+      "sha256": "d70f696853f780fe56431f09e87f3a61d2f74d3b89de60a46108814c481c9efd"
     },
     {
-      "item": "components/game-button/index.wxml",
+      "item": "components/mascot-actor/index.wxss",
       "passed": true,
-      "sha256": "70a8bf24bfe0b5ec968dc76d2aea50a417ac155100c905256f37f9d6ac262815"
+      "sha256": "4a4cb823e7285e384b65385b671e98b8c223d545bf3b63b299f4b8b5edcc8a28"
     },
     {
-      "item": "components/game-button/index.wxss",
+      "item": "services-v4/mascot-rig.js",
       "passed": true,
-      "sha256": "10c47740de21a9452f35476f28f76b6ecd6f0c347958d82272b066bfa62cb9f0"
+      "sha256": "010c9fb779df0f93d262c80bd63d8d50d7e9159978f09c40825f2d75cf29abde"
+    },
+    {
+      "item": "services-v4/home-layout.js",
+      "passed": true,
+      "sha256": "e1658dd7e624743e5feede634cfc1e4984ef42cafaf99ba0efa61c3f1f3b0431"
+    },
+    {
+      "item": "services-v4/visual-feedback.js",
+      "passed": true,
+      "sha256": "3e4edf5b60c5d290b225a390b1aade95ebfae65867ef252c4ccfe3f30bf0450e"
+    },
+    {
+      "item": "services-v4/share-cover.js",
+      "passed": true,
+      "sha256": "0e59cd17587d67f51c41073f96fcac18e54994f14f6d395c853ba3059e01cfae"
+    },
+    {
+      "item": "assets/red/banner-folded-v2.png",
+      "passed": true,
+      "sha256": "9dcfac3753a1d48c9e078e53f7ffa93cecf0629f0b708ad4452fd134c52158cd"
+    },
+    {
+      "item": "assets/culture/banner-folded-v2.png",
+      "passed": true,
+      "sha256": "7fc1f81e43f3fc69db71c8aeb08abd997f8e2cd3814ca3fed077c05c191c18ac"
     },
     {
       "item": "ecology-map.png",
-      "passed": true
+      "passed": true,
+      "sha256": "c1fd34dd3b7bcd0a35564e99417483482bd7bc564a7cdfe5a3e3c6b1f2531423"
     },
     {
       "item": "ecology-guide.png",
-      "passed": true
+      "passed": true,
+      "sha256": "e49cd9b43963d26855ffa94ee4af03ac8334e60c6221e639424beb3f484e9e7f"
     },
     {
       "item": "red-map.png",
-      "passed": true
+      "passed": true,
+      "sha256": "439364b3254ed0af79ef6c0d1a250c216a450bf4854bd0d81665ec3451c1a737"
     },
     {
       "item": "red-guide.png",
-      "passed": true
+      "passed": true,
+      "sha256": "d082a405968684e38cf4b650b35cb9b7758771441770689dfae934283f002915"
     },
     {
       "item": "culture-map.png",
-      "passed": true
+      "passed": true,
+      "sha256": "5cf902bcc489a80bc378d35ff19b45b71be4c9148a79238d8d3e47727279cc4e"
     },
     {
       "item": "culture-guide.png",
-      "passed": true
+      "passed": true,
+      "sha256": "53e087e873ecbca70429a69c492253c3d876659c3408640632d850e963ed4f66"
     },
     {
       "item": "industry-map.png",
-      "passed": true
+      "passed": true,
+      "sha256": "7dbfd7c288f6574d0f26f5b3b974eb33d185c3ef8bf9d4b815a803c4e852e9f0"
     },
     {
       "item": "industry-guide.png",
-      "passed": true
+      "passed": true,
+      "sha256": "db20498528031f588567a083e95d297ff164760fbdf20707791cb830f637bdf7"
     }
   ]
 }

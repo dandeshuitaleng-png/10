@@ -57,3 +57,8 @@
 .game-device.feedback-20261019 .segmented .tab.active{background:var(--accent);color:#ffffff}
 .game-device.feedback-20261019 .state-block{color:var(--ink)}
 @media(max-width:350px){.game-device.feedback-20261019.activity-page.home-layout .route-caption-reward{font-size:10px;line-height:14px}.game-device.feedback-20261019.activity-page.home-layout .today-locked .route-caption-state{font-size:12px}.game-device.feedback-20261019 .theme-modal .chapter-welcome{padding:8px}}
+
+/* Client-requested folded ribbon family: culture now has a brown face. */
+.game-device.feedback-20261019.activity-page.home-layout.skin-culture .home-title-label .activity-title,.game-device.feedback-20261019.skin-culture .theme-heading .h1,.game-device.feedback-20261019.skin-culture .modal-decoration .modal-game-name{color:#FFFFFF;font-family:-apple-system,"PingFang SC",sans-serif;text-shadow:0 1px 1px #69431D}
+
+.game-device.feedback-20261019.activity-page.home-layout.skin-red .home-title-label .activity-title,.game-device.feedback-20261019.activity-page.home-layout.skin-culture .home-title-label .activity-title{font-size:24px}

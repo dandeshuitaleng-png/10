@@ -1,6 +1,7 @@
 {
+  "date": "2026-10-21T07:25:35.863Z",
   "passed": true,
-  "scope": "Actual WeChat renderer with constrained 320/375/430 CSS-pixel containers. B is the selected story-card album; A records are retained from its earlier unchanged version. No physical iOS/Android acceptance and no real player data.",
+  "scope": "Actual WeChat renderer with constrained 320x568, 375x812 and 430x844 CSS-pixel containers. Both A and B rerun with shared client-requested ribbons and local-hand motion. 430 height stays within the host simulator viewport to avoid offscreen component culling; not a 430x932 device test. No physical iOS/Android acceptance and no real player data.",
   "checks": [
     {
       "size": {
@@ -12,8 +13,8 @@
       "design": "map",
       "theme": "ecology",
       "mapWidth": 320,
-      "mapViewport": 217,
-      "scroll": 309,
+      "mapViewport": 218,
+      "scroll": 308,
       "rect": {
         ".game-device": [
           {
@@ -38,9 +39,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 265,
+            "bottom": 264,
             "width": 320,
-            "height": 245
+            "height": 244
           }
         ],
         ".title-art-window": [
@@ -49,8 +50,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 49.515625,
-            "bottom": 136.8828125,
+            "top": 48.515625,
+            "bottom": 135.8828125,
             "width": 272,
             "height": 87.3671875
           }
@@ -61,8 +62,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 70.9296875,
-            "bottom": 106.9296875,
+            "top": 69.9296875,
+            "bottom": 105.9296875,
             "width": 288,
             "height": 36
           }
@@ -80,8 +81,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -94,8 +95,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -108,8 +109,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           }
@@ -120,10 +121,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 265,
+            "top": 264,
             "bottom": 482,
             "width": 320,
-            "height": 217
+            "height": 218
           }
         ],
         ".route-canvas": [
@@ -165,6 +166,68 @@
             "top": 344.71875,
             "bottom": 410.71875,
             "width": 56,
+            "height": 66
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": -44,
+            "bottom": 502.1328125,
+            "width": 320,
+            "height": 546.1328125
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 386.71875,
+            "bottom": 452.71875,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 52,
+            "right": 140,
+            "top": 272.03125,
+            "bottom": 338.03125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 151.8828125,
+            "bottom": 217.8828125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 39.1953125,
+            "right": 127.1953125,
+            "top": 53.578125,
+            "bottom": 119.578125,
+            "width": 88,
             "height": 66
           }
         ],
@@ -210,8 +273,8 @@
       "design": "map",
       "theme": "red",
       "mapWidth": 320,
-      "mapViewport": 217,
-      "scroll": 309,
+      "mapViewport": 218,
+      "scroll": 308,
       "rect": {
         ".game-device": [
           {
@@ -236,9 +299,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 265,
+            "bottom": 264,
             "width": 320,
-            "height": 245
+            "height": 244
           }
         ],
         ".title-art-window": [
@@ -247,10 +310,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 73.1640625,
-            "bottom": 119.109375,
+            "top": 76.59375,
+            "bottom": 133.1796875,
             "width": 272,
-            "height": 45.9453125
+            "height": 56.5859375
           }
         ],
         ".home-title-label": [
@@ -259,8 +322,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 72.2734375,
-            "bottom": 108.2734375,
+            "top": 76.5,
+            "bottom": 112.5,
             "width": 288,
             "height": 36
           }
@@ -278,8 +341,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -292,8 +355,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -306,8 +369,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           }
@@ -318,10 +381,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 265,
+            "top": 264,
             "bottom": 482,
             "width": 320,
-            "height": 217
+            "height": 218
           }
         ],
         ".route-canvas": [
@@ -363,6 +426,68 @@
             "top": 344.71875,
             "bottom": 410.71875,
             "width": 56,
+            "height": 66
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": -44,
+            "bottom": 502.1328125,
+            "width": 320,
+            "height": 546.1328125
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 386.71875,
+            "bottom": 452.71875,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 52,
+            "right": 140,
+            "top": 272.03125,
+            "bottom": 338.03125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 151.8828125,
+            "bottom": 217.8828125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 39.1953125,
+            "right": 127.1953125,
+            "top": 53.578125,
+            "bottom": 119.578125,
+            "width": 88,
             "height": 66
           }
         ],
@@ -408,8 +533,8 @@
       "design": "map",
       "theme": "culture",
       "mapWidth": 320,
-      "mapViewport": 217,
-      "scroll": 309,
+      "mapViewport": 218,
+      "scroll": 308,
       "rect": {
         ".game-device": [
           {
@@ -434,9 +559,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 265,
+            "bottom": 264,
             "width": 320,
-            "height": 245
+            "height": 244
           }
         ],
         ".title-art-window": [
@@ -445,10 +570,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 66.71875,
-            "bottom": 122.859375,
+            "top": 76.5,
+            "bottom": 133.2734375,
             "width": 272,
-            "height": 56.140625
+            "height": 56.7734375
           }
         ],
         ".home-title-label": [
@@ -457,8 +582,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 74.7265625,
-            "bottom": 110.7265625,
+            "top": 76.5,
+            "bottom": 112.5,
             "width": 288,
             "height": 36
           }
@@ -476,8 +601,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -490,8 +615,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -504,8 +629,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           }
@@ -516,10 +641,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 265,
+            "top": 264,
             "bottom": 482,
             "width": 320,
-            "height": 217
+            "height": 218
           }
         ],
         ".route-canvas": [
@@ -561,6 +686,68 @@
             "top": 344.71875,
             "bottom": 410.71875,
             "width": 56,
+            "height": 66
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": -44,
+            "bottom": 502.1328125,
+            "width": 320,
+            "height": 546.1328125
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 386.71875,
+            "bottom": 452.71875,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 52,
+            "right": 140,
+            "top": 272.03125,
+            "bottom": 338.03125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 151.8828125,
+            "bottom": 217.8828125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 39.1953125,
+            "right": 127.1953125,
+            "top": 53.578125,
+            "bottom": 119.578125,
+            "width": 88,
             "height": 66
           }
         ],
@@ -606,8 +793,8 @@
       "design": "map",
       "theme": "industry",
       "mapWidth": 320,
-      "mapViewport": 217,
-      "scroll": 309,
+      "mapViewport": 218,
+      "scroll": 308,
       "rect": {
         ".game-device": [
           {
@@ -632,9 +819,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 265,
+            "bottom": 264,
             "width": 320,
-            "height": 245
+            "height": 244
           }
         ],
         ".title-art-window": [
@@ -643,8 +830,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 54.515625,
-            "bottom": 134.078125,
+            "top": 53.515625,
+            "bottom": 133.078125,
             "width": 272,
             "height": 79.5625
           }
@@ -655,8 +842,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 76.4375,
-            "bottom": 112.4375,
+            "top": 75.4375,
+            "bottom": 111.4375,
             "width": 288,
             "height": 36
           }
@@ -674,8 +861,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -688,8 +875,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           },
@@ -702,8 +889,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 211,
-            "bottom": 255,
+            "top": 210,
+            "bottom": 254,
             "width": 90.6640625,
             "height": 44
           }
@@ -714,10 +901,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 265,
+            "top": 264,
             "bottom": 482,
             "width": 320,
-            "height": 217
+            "height": 218
           }
         ],
         ".route-canvas": [
@@ -762,6 +949,68 @@
             "height": 66
           }
         ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 320,
+            "top": -44,
+            "bottom": 502.1328125,
+            "width": 320,
+            "height": 546.1328125
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 386.71875,
+            "bottom": 452.71875,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 52,
+            "right": 140,
+            "top": 272.03125,
+            "bottom": 338.03125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 170.3984375,
+            "right": 258.3984375,
+            "top": 151.8828125,
+            "bottom": 217.8828125,
+            "width": 88,
+            "height": 66
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 39.1953125,
+            "right": 127.1953125,
+            "top": 53.578125,
+            "bottom": 119.578125,
+            "width": 88,
+            "height": 66
+          }
+        ],
         ".panel-footer": [
           {
             "id": "",
@@ -793,1605 +1042,6 @@
       },
       "passed": true,
       "issues": []
-    },
-    {
-      "size": {
-        "w": 375,
-        "h": 812,
-        "status": 44,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "ecology",
-      "mapWidth": 375,
-      "mapViewport": 413,
-      "scroll": 192,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "ecology",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 375,
-            "top": 0,
-            "bottom": 812,
-            "width": 375,
-            "height": 812
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 44,
-            "bottom": 293,
-            "width": 375,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 44.5,
-            "right": 330.5,
-            "top": 72.2265625,
-            "bottom": 164.09375,
-            "width": 286,
-            "height": 91.8671875
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 359,
-            "top": 95.796875,
-            "bottom": 131.796875,
-            "width": 343,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 125,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 133,
-            "right": 242,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 250,
-            "right": 359,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 293,
-            "bottom": 706,
-            "width": 375,
-            "height": 413
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 101,
-            "bottom": 741,
-            "width": 375,
-            "height": 640
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "ecology-1",
-              "pressKey": "press-12-ecology-1"
-            },
-            "left": 62.25,
-            "right": 193.25,
-            "top": 558,
-            "bottom": 648,
-            "width": 131,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "ecology-1"
-            },
-            "left": 219.25,
-            "right": 283.25,
-            "top": 556,
-            "bottom": 632,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 706,
-            "bottom": 812,
-            "width": 375,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "ecology-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 359,
-            "top": 716,
-            "bottom": 768,
-            "width": 343,
-            "height": 52
-          }
-        ]
-      },
-      "screenshot": "ecology-map-375-container.png",
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 375,
-        "h": 812,
-        "status": 44,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "red",
-      "mapWidth": 375,
-      "mapViewport": 413,
-      "scroll": 192,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "red",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 375,
-            "top": 0,
-            "bottom": 812,
-            "width": 375,
-            "height": 812
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 44,
-            "bottom": 293,
-            "width": 375,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 44.5,
-            "right": 330.5,
-            "top": 97.09375,
-            "bottom": 145.3984375,
-            "width": 286,
-            "height": 48.3046875
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 359,
-            "top": 97.2109375,
-            "bottom": 133.2109375,
-            "width": 343,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 125,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 133,
-            "right": 242,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 250,
-            "right": 359,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 293,
-            "bottom": 706,
-            "width": 375,
-            "height": 413
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 101,
-            "bottom": 741,
-            "width": 375,
-            "height": 640
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "red-1",
-              "pressKey": "press-12-red-1"
-            },
-            "left": 62.25,
-            "right": 193.25,
-            "top": 558,
-            "bottom": 648,
-            "width": 131,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "red-1"
-            },
-            "left": 219.25,
-            "right": 283.25,
-            "top": 556,
-            "bottom": 632,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 706,
-            "bottom": 812,
-            "width": 375,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "red-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 359,
-            "top": 716,
-            "bottom": 768,
-            "width": 343,
-            "height": 52
-          }
-        ]
-      },
-      "screenshot": "red-map-375-container.png",
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 375,
-        "h": 812,
-        "status": 44,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "culture",
-      "mapWidth": 375,
-      "mapViewport": 413,
-      "scroll": 192,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "culture",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 375,
-            "top": 0,
-            "bottom": 812,
-            "width": 375,
-            "height": 812
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 44,
-            "bottom": 293,
-            "width": 375,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 44.5,
-            "right": 330.5,
-            "top": 90.3125,
-            "bottom": 149.34375,
-            "width": 286,
-            "height": 59.03125
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 359,
-            "top": 99.75,
-            "bottom": 135.75,
-            "width": 343,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 125,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 133,
-            "right": 242,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 250,
-            "right": 359,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 293,
-            "bottom": 706,
-            "width": 375,
-            "height": 413
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 101,
-            "bottom": 741,
-            "width": 375,
-            "height": 640
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "culture-1",
-              "pressKey": "press-12-culture-1"
-            },
-            "left": 62.25,
-            "right": 193.25,
-            "top": 558,
-            "bottom": 648,
-            "width": 131,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "culture-1"
-            },
-            "left": 219.25,
-            "right": 283.25,
-            "top": 556,
-            "bottom": 632,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 706,
-            "bottom": 812,
-            "width": 375,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "culture-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 359,
-            "top": 716,
-            "bottom": 768,
-            "width": 343,
-            "height": 52
-          }
-        ]
-      },
-      "screenshot": "culture-map-375-container.png",
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 375,
-        "h": 812,
-        "status": 44,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "industry",
-      "mapWidth": 375,
-      "mapViewport": 413,
-      "scroll": 192,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "industry",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 375,
-            "top": 0,
-            "bottom": 812,
-            "width": 375,
-            "height": 812
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 44,
-            "bottom": 293,
-            "width": 375,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 44.5,
-            "right": 330.5,
-            "top": 77.484375,
-            "bottom": 161.140625,
-            "width": 286,
-            "height": 83.65625
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 359,
-            "top": 101.4609375,
-            "bottom": 137.4609375,
-            "width": 343,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 125,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 133,
-            "right": 242,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 250,
-            "right": 359,
-            "top": 239,
-            "bottom": 283,
-            "width": 109,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 293,
-            "bottom": 706,
-            "width": 375,
-            "height": 413
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 101,
-            "bottom": 741,
-            "width": 375,
-            "height": 640
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "industry-1",
-              "pressKey": "press-12-industry-1"
-            },
-            "left": 62.25,
-            "right": 193.25,
-            "top": 558,
-            "bottom": 648,
-            "width": 131,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "industry-1"
-            },
-            "left": 219.25,
-            "right": 283.25,
-            "top": 556,
-            "bottom": 632,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 375,
-            "top": 706,
-            "bottom": 812,
-            "width": 375,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "industry-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 359,
-            "top": 716,
-            "bottom": 768,
-            "width": 343,
-            "height": 52
-          }
-        ]
-      },
-      "screenshot": "industry-map-375-container.png",
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 430,
-        "h": 932,
-        "status": 59,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "ecology",
-      "mapWidth": 430,
-      "mapViewport": 518,
-      "scroll": 172,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "ecology",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 430,
-            "top": 0,
-            "bottom": 932,
-            "width": 430,
-            "height": 932
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 59,
-            "bottom": 308,
-            "width": 430,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 72,
-            "right": 358,
-            "top": 87.2265625,
-            "bottom": 179.09375,
-            "width": 286,
-            "height": 91.8671875
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 414,
-            "top": 110.796875,
-            "bottom": 146.796875,
-            "width": 398,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 143.328125,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.328125,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 151.328125,
-            "right": 278.6640625,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 286.6640625,
-            "right": 414,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 308,
-            "bottom": 826,
-            "width": 430,
-            "height": 518
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 136,
-            "bottom": 869.859375,
-            "width": 430,
-            "height": 733.859375
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "ecology-1",
-              "pressKey": "press-12-ecology-1"
-            },
-            "left": 73.09375,
-            "right": 223.09375,
-            "top": 666.28125,
-            "bottom": 756.28125,
-            "width": 150,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "ecology-1"
-            },
-            "left": 256.09375,
-            "right": 320.09375,
-            "top": 664.28125,
-            "bottom": 740.28125,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 826,
-            "bottom": 932,
-            "width": 430,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "ecology-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 414,
-            "top": 836,
-            "bottom": 888,
-            "width": 398,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 430,
-        "h": 932,
-        "status": 59,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "red",
-      "mapWidth": 430,
-      "mapViewport": 518,
-      "scroll": 172,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "red",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 430,
-            "top": 0,
-            "bottom": 932,
-            "width": 430,
-            "height": 932
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 59,
-            "bottom": 308,
-            "width": 430,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 72,
-            "right": 358,
-            "top": 112.09375,
-            "bottom": 160.3984375,
-            "width": 286,
-            "height": 48.3046875
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 414,
-            "top": 112.2109375,
-            "bottom": 148.2109375,
-            "width": 398,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 143.328125,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.328125,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 151.328125,
-            "right": 278.6640625,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 286.6640625,
-            "right": 414,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 308,
-            "bottom": 826,
-            "width": 430,
-            "height": 518
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 136,
-            "bottom": 869.859375,
-            "width": 430,
-            "height": 733.859375
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "red-1",
-              "pressKey": "press-12-red-1"
-            },
-            "left": 73.09375,
-            "right": 223.09375,
-            "top": 666.28125,
-            "bottom": 756.28125,
-            "width": 150,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "red-1"
-            },
-            "left": 256.09375,
-            "right": 320.09375,
-            "top": 664.28125,
-            "bottom": 740.28125,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 826,
-            "bottom": 932,
-            "width": 430,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "red-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 414,
-            "top": 836,
-            "bottom": 888,
-            "width": 398,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 430,
-        "h": 932,
-        "status": 59,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "culture",
-      "mapWidth": 430,
-      "mapViewport": 518,
-      "scroll": 172,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "culture",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 430,
-            "top": 0,
-            "bottom": 932,
-            "width": 430,
-            "height": 932
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 59,
-            "bottom": 308,
-            "width": 430,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 72,
-            "right": 358,
-            "top": 105.3125,
-            "bottom": 164.34375,
-            "width": 286,
-            "height": 59.03125
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 414,
-            "top": 114.75,
-            "bottom": 150.75,
-            "width": 398,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 143.328125,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.328125,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 151.328125,
-            "right": 278.6640625,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 286.6640625,
-            "right": 414,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 308,
-            "bottom": 826,
-            "width": 430,
-            "height": 518
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 136,
-            "bottom": 869.859375,
-            "width": 430,
-            "height": 733.859375
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "culture-1",
-              "pressKey": "press-12-culture-1"
-            },
-            "left": 73.09375,
-            "right": 223.09375,
-            "top": 666.28125,
-            "bottom": 756.28125,
-            "width": 150,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "culture-1"
-            },
-            "left": 256.09375,
-            "right": 320.09375,
-            "top": 664.28125,
-            "bottom": 740.28125,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 826,
-            "bottom": 932,
-            "width": 430,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "culture-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 414,
-            "top": 836,
-            "bottom": 888,
-            "width": 398,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "size": {
-        "w": 430,
-        "h": 932,
-        "status": 59,
-        "safe": 34
-      },
-      "design": "map",
-      "theme": "industry",
-      "mapWidth": 430,
-      "mapViewport": 518,
-      "scroll": 172,
-      "rect": {
-        ".game-device": [
-          {
-            "id": "",
-            "dataset": {
-              "game": "industry",
-              "modal": "",
-              "route": "home"
-            },
-            "left": 0,
-            "right": 430,
-            "top": 0,
-            "bottom": 932,
-            "width": 430,
-            "height": 932
-          }
-        ],
-        ".activity-header": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 59,
-            "bottom": 308,
-            "width": 430,
-            "height": 249
-          }
-        ],
-        ".title-art-window": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 72,
-            "right": 358,
-            "top": 92.484375,
-            "bottom": 176.140625,
-            "width": 286,
-            "height": 83.65625
-          }
-        ],
-        ".home-title-label": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 16,
-            "right": 414,
-            "top": 116.4609375,
-            "bottom": 152.4609375,
-            "width": 398,
-            "height": 36
-          }
-        ],
-        ".home-guide-card": [],
-        ".home-guide-avatar": [],
-        ".home-guide-chapter": [],
-        ".activity-shortcut": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-6",
-              "route": "ranking"
-            },
-            "left": 16,
-            "right": 143.328125,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.328125,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-7",
-              "route": "certificate"
-            },
-            "left": 151.328125,
-            "right": 278.6640625,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          },
-          {
-            "id": "",
-            "dataset": {
-              "action": "go",
-              "pressKey": "press-8",
-              "route": "profile"
-            },
-            "left": 286.6640625,
-            "right": 414,
-            "top": 254,
-            "bottom": 298,
-            "width": 127.3359375,
-            "height": 44
-          }
-        ],
-        ".panel-body": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 308,
-            "bottom": 826,
-            "width": 430,
-            "height": 518
-          }
-        ],
-        ".route-canvas": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 136,
-            "bottom": 869.859375,
-            "width": 430,
-            "height": 733.859375
-          }
-        ],
-        ".route-stop.current .route-caption": [
-          {
-            "id": "",
-            "dataset": {
-              "action": "level",
-              "id": "industry-1",
-              "pressKey": "press-12-industry-1"
-            },
-            "left": 73.09375,
-            "right": 223.09375,
-            "top": 666.28125,
-            "bottom": 756.28125,
-            "width": 150,
-            "height": 90
-          }
-        ],
-        ".route-stop.current .chapter-mascot": [
-          {
-            "id": "",
-            "dataset": {
-              "id": "industry-1"
-            },
-            "left": 256.09375,
-            "right": 320.09375,
-            "top": 664.28125,
-            "bottom": 740.28125,
-            "width": 64,
-            "height": 76
-          }
-        ],
-        ".panel-footer": [
-          {
-            "id": "",
-            "dataset": {},
-            "left": 0,
-            "right": 430,
-            "top": 826,
-            "bottom": 932,
-            "width": 430,
-            "height": 106
-          }
-        ],
-        "#footer-primary": [
-          {
-            "id": "footer-primary",
-            "dataset": {
-              "action": "level",
-              "id": "industry-1",
-              "route": ""
-            },
-            "left": 16,
-            "right": 414,
-            "top": 836,
-            "bottom": 888,
-            "width": 398,
-            "height": 52
-          }
-        ]
-      },
-      "passed": true,
-      "issues": []
-    },
-    {
-      "design": "map",
-      "state": "navigation",
-      "passed": true,
-      "result": {
-        "modal": "rules",
-        "route": "profile",
-        "returned": "home",
-        "design": "map"
-      }
     },
     {
       "size": {
@@ -2403,8 +1053,8 @@
       "design": "guide",
       "theme": "ecology",
       "mapWidth": 320,
-      "mapViewport": 275,
-      "scroll": 11,
+      "mapViewport": 276,
+      "scroll": 10,
       "rect": {
         ".game-device": [
           {
@@ -2429,9 +1079,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 209,
+            "bottom": 208,
             "width": 320,
-            "height": 189
+            "height": 188
           }
         ],
         ".title-art-window": [
@@ -2440,8 +1090,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 49.515625,
-            "bottom": 136.8828125,
+            "top": 48.515625,
+            "bottom": 135.8828125,
             "width": 272,
             "height": 87.3671875
           }
@@ -2452,8 +1102,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 70.9296875,
-            "bottom": 106.9296875,
+            "top": 69.9296875,
+            "bottom": 105.9296875,
             "width": 288,
             "height": 36
           }
@@ -2511,10 +1161,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 209,
+            "top": 208,
             "bottom": 484,
             "width": 320,
-            "height": 275
+            "height": 276
           }
         ],
         ".route-canvas": [
@@ -2857,8 +1507,8 @@
       "design": "guide",
       "theme": "red",
       "mapWidth": 320,
-      "mapViewport": 275,
-      "scroll": 11,
+      "mapViewport": 276,
+      "scroll": 10,
       "rect": {
         ".game-device": [
           {
@@ -2883,9 +1533,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 209,
+            "bottom": 208,
             "width": 320,
-            "height": 189
+            "height": 188
           }
         ],
         ".title-art-window": [
@@ -2894,10 +1544,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 73.1640625,
-            "bottom": 119.109375,
+            "top": 76.59375,
+            "bottom": 133.1796875,
             "width": 272,
-            "height": 45.9453125
+            "height": 56.5859375
           }
         ],
         ".home-title-label": [
@@ -2906,8 +1556,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 72.2734375,
-            "bottom": 108.2734375,
+            "top": 76.5,
+            "bottom": 112.5,
             "width": 288,
             "height": 36
           }
@@ -2965,10 +1615,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 209,
+            "top": 208,
             "bottom": 484,
             "width": 320,
-            "height": 275
+            "height": 276
           }
         ],
         ".route-canvas": [
@@ -3311,8 +1961,8 @@
       "design": "guide",
       "theme": "culture",
       "mapWidth": 320,
-      "mapViewport": 275,
-      "scroll": 11,
+      "mapViewport": 276,
+      "scroll": 10,
       "rect": {
         ".game-device": [
           {
@@ -3337,9 +1987,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 209,
+            "bottom": 208,
             "width": 320,
-            "height": 189
+            "height": 188
           }
         ],
         ".title-art-window": [
@@ -3348,10 +1998,10 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 66.71875,
-            "bottom": 122.859375,
+            "top": 76.5,
+            "bottom": 133.2734375,
             "width": 272,
-            "height": 56.140625
+            "height": 56.7734375
           }
         ],
         ".home-title-label": [
@@ -3360,8 +2010,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 74.7265625,
-            "bottom": 110.7265625,
+            "top": 76.5,
+            "bottom": 112.5,
             "width": 288,
             "height": 36
           }
@@ -3419,10 +2069,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 209,
+            "top": 208,
             "bottom": 484,
             "width": 320,
-            "height": 275
+            "height": 276
           }
         ],
         ".route-canvas": [
@@ -3765,8 +2415,8 @@
       "design": "guide",
       "theme": "industry",
       "mapWidth": 320,
-      "mapViewport": 275,
-      "scroll": 11,
+      "mapViewport": 276,
+      "scroll": 10,
       "rect": {
         ".game-device": [
           {
@@ -3791,9 +2441,9 @@
             "left": 0,
             "right": 320,
             "top": 20,
-            "bottom": 209,
+            "bottom": 208,
             "width": 320,
-            "height": 189
+            "height": 188
           }
         ],
         ".title-art-window": [
@@ -3802,8 +2452,8 @@
             "dataset": {},
             "left": 24,
             "right": 296,
-            "top": 54.515625,
-            "bottom": 134.078125,
+            "top": 53.515625,
+            "bottom": 133.078125,
             "width": 272,
             "height": 79.5625
           }
@@ -3814,8 +2464,8 @@
             "dataset": {},
             "left": 16,
             "right": 304,
-            "top": 76.4375,
-            "bottom": 112.4375,
+            "top": 75.4375,
+            "bottom": 111.4375,
             "width": 288,
             "height": 36
           }
@@ -3873,10 +2523,10 @@
             "dataset": {},
             "left": 0,
             "right": 320,
-            "top": 209,
+            "top": 208,
             "bottom": 484,
             "width": 320,
-            "height": 275
+            "height": 276
           }
         ],
         ".route-canvas": [
@@ -4216,10 +2866,1054 @@
         "status": 44,
         "safe": 34
       },
+      "design": "map",
+      "theme": "ecology",
+      "mapWidth": 375,
+      "mapViewport": 414,
+      "scroll": 191,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 44,
+            "bottom": 292,
+            "width": 375,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 44.5,
+            "right": 330.5,
+            "top": 71.2265625,
+            "bottom": 163.09375,
+            "width": 286,
+            "height": 91.8671875
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 94.796875,
+            "bottom": 130.796875,
+            "width": 343,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 125,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 133,
+            "right": 242,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 250,
+            "right": 359,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 292,
+            "bottom": 706,
+            "width": 375,
+            "height": 414
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "pressKey": "press-12-ecology-1"
+            },
+            "left": 62.25,
+            "right": 193.25,
+            "top": 558,
+            "bottom": 648,
+            "width": 131,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "ecology-1"
+            },
+            "left": 219.25,
+            "right": 283.25,
+            "top": 556,
+            "bottom": 632,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 608,
+            "bottom": 680,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 64.5,
+            "right": 160.5,
+            "top": 473.6015625,
+            "bottom": 545.6015625,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 332.8046875,
+            "bottom": 404.8046875,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 49.5,
+            "right": 145.5,
+            "top": 217.6015625,
+            "bottom": 289.6015625,
+            "width": 96,
+            "height": 72
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 706,
+            "bottom": 812,
+            "width": 375,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 359,
+            "top": 716,
+            "bottom": 768,
+            "width": 343,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-map-375-container.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "design": "map",
+      "theme": "red",
+      "mapWidth": 375,
+      "mapViewport": 414,
+      "scroll": 191,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 44,
+            "bottom": 292,
+            "width": 375,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 44.5,
+            "right": 330.5,
+            "top": 100.75,
+            "bottom": 160.2421875,
+            "width": 286,
+            "height": 59.4921875
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 101.5,
+            "bottom": 137.5,
+            "width": 343,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 125,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 133,
+            "right": 242,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 250,
+            "right": 359,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 292,
+            "bottom": 706,
+            "width": 375,
+            "height": 414
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "pressKey": "press-12-red-1"
+            },
+            "left": 62.25,
+            "right": 193.25,
+            "top": 558,
+            "bottom": 648,
+            "width": 131,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "red-1"
+            },
+            "left": 219.25,
+            "right": 283.25,
+            "top": 556,
+            "bottom": 632,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 608,
+            "bottom": 680,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 64.5,
+            "right": 160.5,
+            "top": 473.6015625,
+            "bottom": 545.6015625,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 332.8046875,
+            "bottom": 404.8046875,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 49.5,
+            "right": 145.5,
+            "top": 217.6015625,
+            "bottom": 289.6015625,
+            "width": 96,
+            "height": 72
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 706,
+            "bottom": 812,
+            "width": 375,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 359,
+            "top": 716,
+            "bottom": 768,
+            "width": 343,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-map-375-container.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "design": "map",
+      "theme": "culture",
+      "mapWidth": 375,
+      "mapViewport": 414,
+      "scroll": 191,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 44,
+            "bottom": 292,
+            "width": 375,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 44.5,
+            "right": 330.5,
+            "top": 100.65625,
+            "bottom": 160.3515625,
+            "width": 286,
+            "height": 59.6953125
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 101.5,
+            "bottom": 137.5,
+            "width": 343,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 125,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 133,
+            "right": 242,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 250,
+            "right": 359,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 292,
+            "bottom": 706,
+            "width": 375,
+            "height": 414
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "pressKey": "press-12-culture-1"
+            },
+            "left": 62.25,
+            "right": 193.25,
+            "top": 558,
+            "bottom": 648,
+            "width": 131,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "culture-1"
+            },
+            "left": 219.25,
+            "right": 283.25,
+            "top": 556,
+            "bottom": 632,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 608,
+            "bottom": 680,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 64.5,
+            "right": 160.5,
+            "top": 473.6015625,
+            "bottom": 545.6015625,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 332.8046875,
+            "bottom": 404.8046875,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 49.5,
+            "right": 145.5,
+            "top": 217.6015625,
+            "bottom": 289.6015625,
+            "width": 96,
+            "height": 72
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 706,
+            "bottom": 812,
+            "width": 375,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 359,
+            "top": 716,
+            "bottom": 768,
+            "width": 343,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-map-375-container.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "design": "map",
+      "theme": "industry",
+      "mapWidth": 375,
+      "mapViewport": 414,
+      "scroll": 191,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "bottom": 812,
+            "width": 375,
+            "height": 812
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 44,
+            "bottom": 292,
+            "width": 375,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 44.5,
+            "right": 330.5,
+            "top": 76.484375,
+            "bottom": 160.140625,
+            "width": 286,
+            "height": 83.65625
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 359,
+            "top": 100.4609375,
+            "bottom": 136.4609375,
+            "width": 343,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 125,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 133,
+            "right": 242,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 250,
+            "right": 359,
+            "top": 238,
+            "bottom": 282,
+            "width": 109,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 292,
+            "bottom": 706,
+            "width": 375,
+            "height": 414
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "pressKey": "press-12-industry-1"
+            },
+            "left": 62.25,
+            "right": 193.25,
+            "top": 558,
+            "bottom": 648,
+            "width": 131,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "industry-1"
+            },
+            "left": 219.25,
+            "right": 283.25,
+            "top": 556,
+            "bottom": 632,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 101,
+            "bottom": 741,
+            "width": 375,
+            "height": 640
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 608,
+            "bottom": 680,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 64.5,
+            "right": 160.5,
+            "top": 473.6015625,
+            "bottom": 545.6015625,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.25,
+            "right": 299.25,
+            "top": 332.8046875,
+            "bottom": 404.8046875,
+            "width": 96,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 49.5,
+            "right": 145.5,
+            "top": 217.6015625,
+            "bottom": 289.6015625,
+            "width": 96,
+            "height": 72
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 375,
+            "top": 706,
+            "bottom": 812,
+            "width": 375,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 359,
+            "top": 716,
+            "bottom": 768,
+            "width": 343,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-map-375-container.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
       "design": "guide",
       "theme": "ecology",
       "mapWidth": 375,
-      "mapViewport": 471,
+      "mapViewport": 472,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -4245,9 +3939,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 237,
+            "bottom": 236,
             "width": 375,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -4256,8 +3950,8 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 72.2265625,
-            "bottom": 164.09375,
+            "top": 71.2265625,
+            "bottom": 163.09375,
             "width": 286,
             "height": 91.8671875
           }
@@ -4268,8 +3962,8 @@
             "dataset": {},
             "left": 16,
             "right": 359,
-            "top": 95.796875,
-            "bottom": 131.796875,
+            "top": 94.796875,
+            "bottom": 130.796875,
             "width": 343,
             "height": 36
           }
@@ -4287,8 +3981,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -4301,8 +3995,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -4315,8 +4009,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           }
@@ -4327,10 +4021,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-canvas": [
@@ -4339,10 +4033,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -4357,8 +4051,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           }
@@ -4371,8 +4065,8 @@
             },
             "left": 68.75,
             "right": 128.75,
-            "top": 364,
-            "bottom": 434,
+            "top": 363,
+            "bottom": 433,
             "width": 60,
             "height": 70
           }
@@ -4383,8 +4077,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -4393,8 +4087,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -4403,8 +4097,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           },
@@ -4413,8 +4107,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           }
@@ -4425,8 +4119,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -4435,8 +4129,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -4445,8 +4139,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           },
@@ -4455,8 +4149,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           }
@@ -4467,8 +4161,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -4477,8 +4171,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -4487,8 +4181,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           },
@@ -4497,8 +4191,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           }
@@ -4509,8 +4203,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -4519,8 +4213,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -4529,8 +4223,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           },
@@ -4539,8 +4233,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           }
@@ -4551,8 +4245,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -4561,8 +4255,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -4571,8 +4265,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           },
@@ -4581,8 +4275,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           }
@@ -4593,8 +4287,8 @@
             "dataset": {},
             "left": 248.53125,
             "right": 264.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -4603,8 +4297,8 @@
             "dataset": {},
             "left": 267.53125,
             "right": 283.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -4613,8 +4307,8 @@
             "dataset": {},
             "left": 286.53125,
             "right": 302.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -4623,8 +4317,8 @@
             "dataset": {},
             "left": 305.53125,
             "right": 321.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           }
@@ -4674,7 +4368,7 @@
       "design": "guide",
       "theme": "red",
       "mapWidth": 375,
-      "mapViewport": 471,
+      "mapViewport": 472,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -4700,9 +4394,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 237,
+            "bottom": 236,
             "width": 375,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -4711,10 +4405,10 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 97.09375,
-            "bottom": 145.3984375,
+            "top": 100.75,
+            "bottom": 160.2421875,
             "width": 286,
-            "height": 48.3046875
+            "height": 59.4921875
           }
         ],
         ".home-title-label": [
@@ -4723,8 +4417,8 @@
             "dataset": {},
             "left": 16,
             "right": 359,
-            "top": 97.2109375,
-            "bottom": 133.2109375,
+            "top": 101.5,
+            "bottom": 137.5,
             "width": 343,
             "height": 36
           }
@@ -4742,8 +4436,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -4756,8 +4450,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -4770,8 +4464,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           }
@@ -4782,10 +4476,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-canvas": [
@@ -4794,10 +4488,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -4812,8 +4506,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           }
@@ -4826,8 +4520,8 @@
             },
             "left": 68.75,
             "right": 128.75,
-            "top": 364,
-            "bottom": 434,
+            "top": 363,
+            "bottom": 433,
             "width": 60,
             "height": 70
           }
@@ -4838,8 +4532,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -4848,8 +4542,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -4858,8 +4552,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           },
@@ -4868,8 +4562,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           }
@@ -4880,8 +4574,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -4890,8 +4584,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -4900,8 +4594,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           },
@@ -4910,8 +4604,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           }
@@ -4922,8 +4616,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -4932,8 +4626,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -4942,8 +4636,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           },
@@ -4952,8 +4646,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           }
@@ -4964,8 +4658,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -4974,8 +4668,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -4984,8 +4678,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           },
@@ -4994,8 +4688,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           }
@@ -5006,8 +4700,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -5016,8 +4710,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -5026,8 +4720,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           },
@@ -5036,8 +4730,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           }
@@ -5048,8 +4742,8 @@
             "dataset": {},
             "left": 248.53125,
             "right": 264.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5058,8 +4752,8 @@
             "dataset": {},
             "left": 267.53125,
             "right": 283.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5068,8 +4762,8 @@
             "dataset": {},
             "left": 286.53125,
             "right": 302.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5078,8 +4772,8 @@
             "dataset": {},
             "left": 305.53125,
             "right": 321.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           }
@@ -5129,7 +4823,7 @@
       "design": "guide",
       "theme": "culture",
       "mapWidth": 375,
-      "mapViewport": 471,
+      "mapViewport": 472,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -5155,9 +4849,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 237,
+            "bottom": 236,
             "width": 375,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -5166,10 +4860,10 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 90.3125,
-            "bottom": 149.34375,
+            "top": 100.65625,
+            "bottom": 160.3515625,
             "width": 286,
-            "height": 59.03125
+            "height": 59.6953125
           }
         ],
         ".home-title-label": [
@@ -5178,8 +4872,8 @@
             "dataset": {},
             "left": 16,
             "right": 359,
-            "top": 99.75,
-            "bottom": 135.75,
+            "top": 101.5,
+            "bottom": 137.5,
             "width": 343,
             "height": 36
           }
@@ -5197,8 +4891,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -5211,8 +4905,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -5225,8 +4919,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           }
@@ -5237,10 +4931,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-canvas": [
@@ -5249,10 +4943,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -5267,8 +4961,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           }
@@ -5281,8 +4975,8 @@
             },
             "left": 68.75,
             "right": 128.75,
-            "top": 364,
-            "bottom": 434,
+            "top": 363,
+            "bottom": 433,
             "width": 60,
             "height": 70
           }
@@ -5293,8 +4987,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -5303,8 +4997,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -5313,8 +5007,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           },
@@ -5323,8 +5017,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           }
@@ -5335,8 +5029,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -5345,8 +5039,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -5355,8 +5049,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           },
@@ -5365,8 +5059,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           }
@@ -5377,8 +5071,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -5387,8 +5081,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -5397,8 +5091,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           },
@@ -5407,8 +5101,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           }
@@ -5419,8 +5113,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -5429,8 +5123,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -5439,8 +5133,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           },
@@ -5449,8 +5143,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           }
@@ -5461,8 +5155,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -5471,8 +5165,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -5481,8 +5175,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           },
@@ -5491,8 +5185,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           }
@@ -5503,8 +5197,8 @@
             "dataset": {},
             "left": 248.53125,
             "right": 264.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5513,8 +5207,8 @@
             "dataset": {},
             "left": 267.53125,
             "right": 283.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5523,8 +5217,8 @@
             "dataset": {},
             "left": 286.53125,
             "right": 302.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5533,8 +5227,8 @@
             "dataset": {},
             "left": 305.53125,
             "right": 321.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           }
@@ -5584,7 +5278,7 @@
       "design": "guide",
       "theme": "industry",
       "mapWidth": 375,
-      "mapViewport": 471,
+      "mapViewport": 472,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -5610,9 +5304,9 @@
             "left": 0,
             "right": 375,
             "top": 44,
-            "bottom": 237,
+            "bottom": 236,
             "width": 375,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -5621,8 +5315,8 @@
             "dataset": {},
             "left": 44.5,
             "right": 330.5,
-            "top": 77.484375,
-            "bottom": 161.140625,
+            "top": 76.484375,
+            "bottom": 160.140625,
             "width": 286,
             "height": 83.65625
           }
@@ -5633,8 +5327,8 @@
             "dataset": {},
             "left": 16,
             "right": 359,
-            "top": 101.4609375,
-            "bottom": 137.4609375,
+            "top": 100.4609375,
+            "bottom": 136.4609375,
             "width": 343,
             "height": 36
           }
@@ -5652,8 +5346,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -5666,8 +5360,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           },
@@ -5680,8 +5374,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 254,
-            "bottom": 314,
+            "top": 253,
+            "bottom": 313,
             "width": 109,
             "height": 60
           }
@@ -5692,10 +5386,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-canvas": [
@@ -5704,10 +5398,10 @@
             "dataset": {},
             "left": 0,
             "right": 375,
-            "top": 237,
+            "top": 236,
             "bottom": 708,
             "width": 375,
-            "height": 471
+            "height": 472
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -5722,8 +5416,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           }
@@ -5736,8 +5430,8 @@
             },
             "left": 68.75,
             "right": 128.75,
-            "top": 364,
-            "bottom": 434,
+            "top": 363,
+            "bottom": 433,
             "width": 60,
             "height": 70
           }
@@ -5748,8 +5442,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -5758,8 +5452,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 352,
-            "bottom": 512,
+            "top": 351,
+            "bottom": 511,
             "width": 165.5,
             "height": 160
           },
@@ -5768,8 +5462,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           },
@@ -5778,8 +5472,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 524,
-            "bottom": 684,
+            "top": 523,
+            "bottom": 683,
             "width": 165.5,
             "height": 160
           }
@@ -5790,8 +5484,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -5800,8 +5494,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 440,
-            "bottom": 463,
+            "top": 439,
+            "bottom": 462,
             "width": 141.5,
             "height": 23
           },
@@ -5810,8 +5504,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           },
@@ -5820,8 +5514,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 612,
-            "bottom": 635,
+            "top": 611,
+            "bottom": 634,
             "width": 141.5,
             "height": 23
           }
@@ -5832,8 +5526,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -5842,8 +5536,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 465,
-            "bottom": 481,
+            "top": 464,
+            "bottom": 480,
             "width": 141.5,
             "height": 16
           },
@@ -5852,8 +5546,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           },
@@ -5862,8 +5556,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 637,
-            "bottom": 653,
+            "top": 636,
+            "bottom": 652,
             "width": 141.5,
             "height": 16
           }
@@ -5874,8 +5568,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -5884,8 +5578,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 362,
-            "bottom": 434,
+            "top": 361,
+            "bottom": 433,
             "width": 145.5,
             "height": 72
           },
@@ -5894,8 +5588,8 @@
             "dataset": {},
             "left": 26,
             "right": 171.5,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           },
@@ -5904,8 +5598,8 @@
             "dataset": {},
             "left": 203.5,
             "right": 349,
-            "top": 534,
-            "bottom": 606,
+            "top": 533,
+            "bottom": 605,
             "width": 145.5,
             "height": 72
           }
@@ -5916,8 +5610,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -5926,8 +5620,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 484,
-            "bottom": 503,
+            "top": 483,
+            "bottom": 502,
             "width": 141.5,
             "height": 19
           },
@@ -5936,8 +5630,8 @@
             "dataset": {},
             "left": 28,
             "right": 169.5,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           },
@@ -5946,8 +5640,8 @@
             "dataset": {},
             "left": 205.5,
             "right": 347,
-            "top": 656,
-            "bottom": 675,
+            "top": 655,
+            "bottom": 674,
             "width": 141.5,
             "height": 19
           }
@@ -5958,8 +5652,8 @@
             "dataset": {},
             "left": 248.53125,
             "right": 264.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5968,8 +5662,8 @@
             "dataset": {},
             "left": 267.53125,
             "right": 283.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5978,8 +5672,8 @@
             "dataset": {},
             "left": 286.53125,
             "right": 302.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           },
@@ -5988,8 +5682,8 @@
             "dataset": {},
             "left": 305.53125,
             "right": 321.53125,
-            "top": 329,
-            "bottom": 339,
+            "top": 328,
+            "bottom": 338,
             "width": 16,
             "height": 10
           }
@@ -6032,14 +5726,1054 @@
     {
       "size": {
         "w": 430,
-        "h": 932,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "design": "map",
+      "theme": "ecology",
+      "mapWidth": 430,
+      "mapViewport": 431,
+      "scroll": 259,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 844,
+            "width": 430,
+            "height": 844
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 59,
+            "bottom": 307,
+            "width": 430,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 72,
+            "right": 358,
+            "top": 86.2265625,
+            "bottom": 178.09375,
+            "width": 286,
+            "height": 91.8671875
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 109.796875,
+            "bottom": 145.796875,
+            "width": 398,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 143.328125,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.328125,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 286.6640625,
+            "right": 414,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 307,
+            "bottom": 738,
+            "width": 430,
+            "height": 431
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "pressKey": "press-12-ecology-1"
+            },
+            "left": 73.09375,
+            "right": 223.09375,
+            "top": 578.28125,
+            "bottom": 668.28125,
+            "width": 150,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "ecology-1"
+            },
+            "left": 256.09375,
+            "right": 320.09375,
+            "top": 576.28125,
+            "bottom": 652.28125,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 628.28125,
+            "bottom": 710.78125,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 74,
+            "right": 184,
+            "top": 474.171875,
+            "bottom": 556.671875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 312.71875,
+            "bottom": 395.21875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 56.796875,
+            "right": 166.796875,
+            "top": 180.625,
+            "bottom": 263.125,
+            "width": 110,
+            "height": 82.5
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 738,
+            "bottom": 844,
+            "width": 430,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 800,
+            "width": 398,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "design": "map",
+      "theme": "red",
+      "mapWidth": 430,
+      "mapViewport": 431,
+      "scroll": 259,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 844,
+            "width": 430,
+            "height": 844
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 59,
+            "bottom": 307,
+            "width": 430,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 72,
+            "right": 358,
+            "top": 115.75,
+            "bottom": 175.2421875,
+            "width": 286,
+            "height": 59.4921875
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 116.5,
+            "bottom": 152.5,
+            "width": 398,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 143.328125,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.328125,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 286.6640625,
+            "right": 414,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 307,
+            "bottom": 738,
+            "width": 430,
+            "height": 431
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "pressKey": "press-12-red-1"
+            },
+            "left": 73.09375,
+            "right": 223.09375,
+            "top": 578.28125,
+            "bottom": 668.28125,
+            "width": 150,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "red-1"
+            },
+            "left": 256.09375,
+            "right": 320.09375,
+            "top": 576.28125,
+            "bottom": 652.28125,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 628.28125,
+            "bottom": 710.78125,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 74,
+            "right": 184,
+            "top": 474.171875,
+            "bottom": 556.671875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 312.71875,
+            "bottom": 395.21875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 56.796875,
+            "right": 166.796875,
+            "top": 180.625,
+            "bottom": 263.125,
+            "width": 110,
+            "height": 82.5
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 738,
+            "bottom": 844,
+            "width": 430,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 800,
+            "width": 398,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "design": "map",
+      "theme": "culture",
+      "mapWidth": 430,
+      "mapViewport": 431,
+      "scroll": 259,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 844,
+            "width": 430,
+            "height": 844
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 59,
+            "bottom": 307,
+            "width": 430,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 72,
+            "right": 358,
+            "top": 115.65625,
+            "bottom": 175.3515625,
+            "width": 286,
+            "height": 59.6953125
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 116.5,
+            "bottom": 152.5,
+            "width": 398,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 143.328125,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.328125,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 286.6640625,
+            "right": 414,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 307,
+            "bottom": 738,
+            "width": 430,
+            "height": 431
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "pressKey": "press-12-culture-1"
+            },
+            "left": 73.09375,
+            "right": 223.09375,
+            "top": 578.28125,
+            "bottom": 668.28125,
+            "width": 150,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "culture-1"
+            },
+            "left": 256.09375,
+            "right": 320.09375,
+            "top": 576.28125,
+            "bottom": 652.28125,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 628.28125,
+            "bottom": 710.78125,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 74,
+            "right": 184,
+            "top": 474.171875,
+            "bottom": 556.671875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 312.71875,
+            "bottom": 395.21875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 56.796875,
+            "right": 166.796875,
+            "top": 180.625,
+            "bottom": 263.125,
+            "width": 110,
+            "height": 82.5
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 738,
+            "bottom": 844,
+            "width": 430,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 800,
+            "width": 398,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "design": "map",
+      "theme": "industry",
+      "mapWidth": 430,
+      "mapViewport": 431,
+      "scroll": 259,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 430,
+            "top": 0,
+            "bottom": 844,
+            "width": 430,
+            "height": 844
+          }
+        ],
+        ".activity-header": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 59,
+            "bottom": 307,
+            "width": 430,
+            "height": 248
+          }
+        ],
+        ".title-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 72,
+            "right": 358,
+            "top": 91.484375,
+            "bottom": 175.140625,
+            "width": 286,
+            "height": 83.65625
+          }
+        ],
+        ".home-title-label": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 414,
+            "top": 115.4609375,
+            "bottom": 151.4609375,
+            "width": 398,
+            "height": 36
+          }
+        ],
+        ".home-guide-card": [],
+        ".home-guide-avatar": [],
+        ".home-guide-chapter": [],
+        ".activity-shortcut": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-6",
+              "route": "ranking"
+            },
+            "left": 16,
+            "right": 143.328125,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.328125,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-7",
+              "route": "certificate"
+            },
+            "left": 151.328125,
+            "right": 278.6640625,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "go",
+              "pressKey": "press-8",
+              "route": "profile"
+            },
+            "left": 286.6640625,
+            "right": 414,
+            "top": 253,
+            "bottom": 297,
+            "width": 127.3359375,
+            "height": 44
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 307,
+            "bottom": 738,
+            "width": 430,
+            "height": 431
+          }
+        ],
+        ".route-canvas": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-stop.current .route-caption": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "pressKey": "press-12-industry-1"
+            },
+            "left": 73.09375,
+            "right": 223.09375,
+            "top": 578.28125,
+            "bottom": 668.28125,
+            "width": 150,
+            "height": 90
+          }
+        ],
+        ".route-stop.current .chapter-mascot": [
+          {
+            "id": "",
+            "dataset": {
+              "id": "industry-1"
+            },
+            "left": 256.09375,
+            "right": 320.09375,
+            "top": 576.28125,
+            "bottom": 652.28125,
+            "width": 64,
+            "height": 76
+          }
+        ],
+        ".chapter-active .chapter-open": [],
+        ".chapter-active .chapter-mascot": [],
+        ".chapter-card": [],
+        ".chapter-card-title": [],
+        ".chapter-card-state": [],
+        ".chapter-art-window": [],
+        ".chapter-card-reward": [],
+        ".chapter-progress-stamp": [],
+        ".route-scene": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 48,
+            "bottom": 781.859375,
+            "width": 430,
+            "height": 733.859375
+          }
+        ],
+        ".route-base": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 628.28125,
+            "bottom": 710.78125,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 74,
+            "right": 184,
+            "top": 474.171875,
+            "bottom": 556.671875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233.09375,
+            "right": 343.09375,
+            "top": 312.71875,
+            "bottom": 395.21875,
+            "width": 110,
+            "height": 82.5
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 56.796875,
+            "right": 166.796875,
+            "top": 180.625,
+            "bottom": 263.125,
+            "width": 110,
+            "height": 82.5
+          }
+        ],
+        ".panel-footer": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 0,
+            "right": 430,
+            "top": 738,
+            "bottom": 844,
+            "width": 430,
+            "height": 106
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 414,
+            "top": 748,
+            "bottom": 800,
+            "width": 398,
+            "height": 52
+          }
+        ]
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
         "status": 59,
         "safe": 34
       },
       "design": "guide",
       "theme": "ecology",
       "mapWidth": 430,
-      "mapViewport": 576,
+      "mapViewport": 489,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -6053,9 +6787,9 @@
             "left": 0,
             "right": 430,
             "top": 0,
-            "bottom": 932,
+            "bottom": 844,
             "width": 430,
-            "height": 932
+            "height": 844
           }
         ],
         ".activity-header": [
@@ -6065,9 +6799,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 252,
+            "bottom": 251,
             "width": 430,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -6076,8 +6810,8 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 87.2265625,
-            "bottom": 179.09375,
+            "top": 86.2265625,
+            "bottom": 178.09375,
             "width": 286,
             "height": 91.8671875
           }
@@ -6088,8 +6822,8 @@
             "dataset": {},
             "left": 16,
             "right": 414,
-            "top": 110.796875,
-            "bottom": 146.796875,
+            "top": 109.796875,
+            "bottom": 145.796875,
             "width": 398,
             "height": 36
           }
@@ -6107,8 +6841,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.328125,
             "height": 60
           },
@@ -6121,8 +6855,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           },
@@ -6135,8 +6869,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           }
@@ -6147,10 +6881,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-canvas": [
@@ -6159,10 +6893,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -6177,8 +6911,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           }
@@ -6191,8 +6925,8 @@
             },
             "left": 82.5,
             "right": 142.5,
-            "top": 379,
-            "bottom": 449,
+            "top": 378,
+            "bottom": 448,
             "width": 60,
             "height": 70
           }
@@ -6203,8 +6937,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -6213,8 +6947,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -6223,8 +6957,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           },
@@ -6233,8 +6967,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           }
@@ -6245,8 +6979,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -6255,8 +6989,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -6265,8 +6999,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           },
@@ -6275,8 +7009,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           }
@@ -6287,8 +7021,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -6297,8 +7031,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -6307,8 +7041,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           },
@@ -6317,8 +7051,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           }
@@ -6329,8 +7063,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -6339,8 +7073,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -6349,8 +7083,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           },
@@ -6359,8 +7093,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           }
@@ -6371,8 +7105,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -6381,8 +7115,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -6391,8 +7125,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           },
@@ -6401,8 +7135,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           }
@@ -6413,8 +7147,8 @@
             "dataset": {},
             "left": 303.53125,
             "right": 319.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -6423,8 +7157,8 @@
             "dataset": {},
             "left": 322.53125,
             "right": 338.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -6433,8 +7167,8 @@
             "dataset": {},
             "left": 341.53125,
             "right": 357.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -6443,8 +7177,8 @@
             "dataset": {},
             "left": 360.53125,
             "right": 376.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           }
@@ -6457,8 +7191,8 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 828,
-            "bottom": 932,
+            "top": 740,
+            "bottom": 844,
             "width": 430,
             "height": 104
           }
@@ -6473,8 +7207,8 @@
             },
             "left": 16,
             "right": 414,
-            "top": 836,
-            "bottom": 888,
+            "top": 748,
+            "bottom": 800,
             "width": 398,
             "height": 52
           }
@@ -6486,14 +7220,14 @@
     {
       "size": {
         "w": 430,
-        "h": 932,
+        "h": 844,
         "status": 59,
         "safe": 34
       },
       "design": "guide",
       "theme": "red",
       "mapWidth": 430,
-      "mapViewport": 576,
+      "mapViewport": 489,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -6507,9 +7241,9 @@
             "left": 0,
             "right": 430,
             "top": 0,
-            "bottom": 932,
+            "bottom": 844,
             "width": 430,
-            "height": 932
+            "height": 844
           }
         ],
         ".activity-header": [
@@ -6519,9 +7253,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 252,
+            "bottom": 251,
             "width": 430,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -6530,10 +7264,10 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 112.09375,
-            "bottom": 160.3984375,
+            "top": 115.75,
+            "bottom": 175.2421875,
             "width": 286,
-            "height": 48.3046875
+            "height": 59.4921875
           }
         ],
         ".home-title-label": [
@@ -6542,8 +7276,8 @@
             "dataset": {},
             "left": 16,
             "right": 414,
-            "top": 112.2109375,
-            "bottom": 148.2109375,
+            "top": 116.5,
+            "bottom": 152.5,
             "width": 398,
             "height": 36
           }
@@ -6561,8 +7295,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.328125,
             "height": 60
           },
@@ -6575,8 +7309,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           },
@@ -6589,8 +7323,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           }
@@ -6601,10 +7335,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-canvas": [
@@ -6613,10 +7347,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -6631,8 +7365,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           }
@@ -6645,8 +7379,8 @@
             },
             "left": 82.5,
             "right": 142.5,
-            "top": 379,
-            "bottom": 449,
+            "top": 378,
+            "bottom": 448,
             "width": 60,
             "height": 70
           }
@@ -6657,8 +7391,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -6667,8 +7401,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -6677,8 +7411,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           },
@@ -6687,8 +7421,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           }
@@ -6699,8 +7433,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -6709,8 +7443,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -6719,8 +7453,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           },
@@ -6729,8 +7463,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           }
@@ -6741,8 +7475,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -6751,8 +7485,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -6761,8 +7495,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           },
@@ -6771,8 +7505,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           }
@@ -6783,8 +7517,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -6793,8 +7527,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -6803,8 +7537,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           },
@@ -6813,8 +7547,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           }
@@ -6825,8 +7559,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -6835,8 +7569,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -6845,8 +7579,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           },
@@ -6855,8 +7589,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           }
@@ -6867,8 +7601,8 @@
             "dataset": {},
             "left": 303.53125,
             "right": 319.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -6877,8 +7611,8 @@
             "dataset": {},
             "left": 322.53125,
             "right": 338.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -6887,8 +7621,8 @@
             "dataset": {},
             "left": 341.53125,
             "right": 357.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -6897,8 +7631,8 @@
             "dataset": {},
             "left": 360.53125,
             "right": 376.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           }
@@ -6911,8 +7645,8 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 828,
-            "bottom": 932,
+            "top": 740,
+            "bottom": 844,
             "width": 430,
             "height": 104
           }
@@ -6927,8 +7661,8 @@
             },
             "left": 16,
             "right": 414,
-            "top": 836,
-            "bottom": 888,
+            "top": 748,
+            "bottom": 800,
             "width": 398,
             "height": 52
           }
@@ -6940,14 +7674,14 @@
     {
       "size": {
         "w": 430,
-        "h": 932,
+        "h": 844,
         "status": 59,
         "safe": 34
       },
       "design": "guide",
       "theme": "culture",
       "mapWidth": 430,
-      "mapViewport": 576,
+      "mapViewport": 489,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -6961,9 +7695,9 @@
             "left": 0,
             "right": 430,
             "top": 0,
-            "bottom": 932,
+            "bottom": 844,
             "width": 430,
-            "height": 932
+            "height": 844
           }
         ],
         ".activity-header": [
@@ -6973,9 +7707,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 252,
+            "bottom": 251,
             "width": 430,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -6984,10 +7718,10 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 105.3125,
-            "bottom": 164.34375,
+            "top": 115.65625,
+            "bottom": 175.3515625,
             "width": 286,
-            "height": 59.03125
+            "height": 59.6953125
           }
         ],
         ".home-title-label": [
@@ -6996,8 +7730,8 @@
             "dataset": {},
             "left": 16,
             "right": 414,
-            "top": 114.75,
-            "bottom": 150.75,
+            "top": 116.5,
+            "bottom": 152.5,
             "width": 398,
             "height": 36
           }
@@ -7015,8 +7749,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.328125,
             "height": 60
           },
@@ -7029,8 +7763,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           },
@@ -7043,8 +7777,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           }
@@ -7055,10 +7789,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-canvas": [
@@ -7067,10 +7801,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -7085,8 +7819,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           }
@@ -7099,8 +7833,8 @@
             },
             "left": 82.5,
             "right": 142.5,
-            "top": 379,
-            "bottom": 449,
+            "top": 378,
+            "bottom": 448,
             "width": 60,
             "height": 70
           }
@@ -7111,8 +7845,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -7121,8 +7855,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -7131,8 +7865,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           },
@@ -7141,8 +7875,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           }
@@ -7153,8 +7887,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -7163,8 +7897,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -7173,8 +7907,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           },
@@ -7183,8 +7917,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           }
@@ -7195,8 +7929,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -7205,8 +7939,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -7215,8 +7949,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           },
@@ -7225,8 +7959,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           }
@@ -7237,8 +7971,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -7247,8 +7981,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -7257,8 +7991,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           },
@@ -7267,8 +8001,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           }
@@ -7279,8 +8013,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -7289,8 +8023,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -7299,8 +8033,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           },
@@ -7309,8 +8043,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           }
@@ -7321,8 +8055,8 @@
             "dataset": {},
             "left": 303.53125,
             "right": 319.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -7331,8 +8065,8 @@
             "dataset": {},
             "left": 322.53125,
             "right": 338.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -7341,8 +8075,8 @@
             "dataset": {},
             "left": 341.53125,
             "right": 357.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -7351,8 +8085,8 @@
             "dataset": {},
             "left": 360.53125,
             "right": 376.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           }
@@ -7365,8 +8099,8 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 828,
-            "bottom": 932,
+            "top": 740,
+            "bottom": 844,
             "width": 430,
             "height": 104
           }
@@ -7381,8 +8115,8 @@
             },
             "left": 16,
             "right": 414,
-            "top": 836,
-            "bottom": 888,
+            "top": 748,
+            "bottom": 800,
             "width": 398,
             "height": 52
           }
@@ -7394,14 +8128,14 @@
     {
       "size": {
         "w": 430,
-        "h": 932,
+        "h": 844,
         "status": 59,
         "safe": 34
       },
       "design": "guide",
       "theme": "industry",
       "mapWidth": 430,
-      "mapViewport": 576,
+      "mapViewport": 489,
       "scroll": 0,
       "rect": {
         ".game-device": [
@@ -7415,9 +8149,9 @@
             "left": 0,
             "right": 430,
             "top": 0,
-            "bottom": 932,
+            "bottom": 844,
             "width": 430,
-            "height": 932
+            "height": 844
           }
         ],
         ".activity-header": [
@@ -7427,9 +8161,9 @@
             "left": 0,
             "right": 430,
             "top": 59,
-            "bottom": 252,
+            "bottom": 251,
             "width": 430,
-            "height": 193
+            "height": 192
           }
         ],
         ".title-art-window": [
@@ -7438,8 +8172,8 @@
             "dataset": {},
             "left": 72,
             "right": 358,
-            "top": 92.484375,
-            "bottom": 176.140625,
+            "top": 91.484375,
+            "bottom": 175.140625,
             "width": 286,
             "height": 83.65625
           }
@@ -7450,8 +8184,8 @@
             "dataset": {},
             "left": 16,
             "right": 414,
-            "top": 116.4609375,
-            "bottom": 152.4609375,
+            "top": 115.4609375,
+            "bottom": 151.4609375,
             "width": 398,
             "height": 36
           }
@@ -7469,8 +8203,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.328125,
             "height": 60
           },
@@ -7483,8 +8217,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           },
@@ -7497,8 +8231,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 269,
-            "bottom": 329,
+            "top": 268,
+            "bottom": 328,
             "width": 127.3359375,
             "height": 60
           }
@@ -7509,10 +8243,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-canvas": [
@@ -7521,10 +8255,10 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 252,
-            "bottom": 828,
+            "top": 251,
+            "bottom": 740,
             "width": 430,
-            "height": 576
+            "height": 489
           }
         ],
         ".route-stop.current .route-caption": [],
@@ -7539,8 +8273,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           }
@@ -7553,8 +8287,8 @@
             },
             "left": 82.5,
             "right": 142.5,
-            "top": 379,
-            "bottom": 449,
+            "top": 378,
+            "bottom": 448,
             "width": 60,
             "height": 70
           }
@@ -7565,8 +8299,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -7575,8 +8309,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 367,
-            "bottom": 527,
+            "top": 366,
+            "bottom": 526,
             "width": 193,
             "height": 160
           },
@@ -7585,8 +8319,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           },
@@ -7595,8 +8329,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 539,
-            "bottom": 699,
+            "top": 538,
+            "bottom": 698,
             "width": 193,
             "height": 160
           }
@@ -7607,8 +8341,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -7617,8 +8351,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 455,
-            "bottom": 478,
+            "top": 454,
+            "bottom": 477,
             "width": 169,
             "height": 23
           },
@@ -7627,8 +8361,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           },
@@ -7637,8 +8371,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 627,
-            "bottom": 650,
+            "top": 626,
+            "bottom": 649,
             "width": 169,
             "height": 23
           }
@@ -7649,8 +8383,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -7659,8 +8393,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 480,
-            "bottom": 496,
+            "top": 479,
+            "bottom": 495,
             "width": 169,
             "height": 16
           },
@@ -7669,8 +8403,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           },
@@ -7679,8 +8413,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 652,
-            "bottom": 668,
+            "top": 651,
+            "bottom": 667,
             "width": 169,
             "height": 16
           }
@@ -7691,8 +8425,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -7701,8 +8435,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 377,
-            "bottom": 449,
+            "top": 376,
+            "bottom": 448,
             "width": 173,
             "height": 72
           },
@@ -7711,8 +8445,8 @@
             "dataset": {},
             "left": 26,
             "right": 199,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           },
@@ -7721,8 +8455,8 @@
             "dataset": {},
             "left": 231,
             "right": 404,
-            "top": 549,
-            "bottom": 621,
+            "top": 548,
+            "bottom": 620,
             "width": 173,
             "height": 72
           }
@@ -7733,8 +8467,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -7743,8 +8477,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 499,
-            "bottom": 518,
+            "top": 498,
+            "bottom": 517,
             "width": 169,
             "height": 19
           },
@@ -7753,8 +8487,8 @@
             "dataset": {},
             "left": 28,
             "right": 197,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           },
@@ -7763,8 +8497,8 @@
             "dataset": {},
             "left": 233,
             "right": 402,
-            "top": 671,
-            "bottom": 690,
+            "top": 670,
+            "bottom": 689,
             "width": 169,
             "height": 19
           }
@@ -7775,8 +8509,8 @@
             "dataset": {},
             "left": 303.53125,
             "right": 319.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -7785,8 +8519,8 @@
             "dataset": {},
             "left": 322.53125,
             "right": 338.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -7795,8 +8529,8 @@
             "dataset": {},
             "left": 341.53125,
             "right": 357.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           },
@@ -7805,8 +8539,8 @@
             "dataset": {},
             "left": 360.53125,
             "right": 376.53125,
-            "top": 344,
-            "bottom": 354,
+            "top": 343,
+            "bottom": 353,
             "width": 16,
             "height": 10
           }
@@ -7819,8 +8553,8 @@
             "dataset": {},
             "left": 0,
             "right": 430,
-            "top": 828,
-            "bottom": 932,
+            "top": 740,
+            "bottom": 844,
             "width": 430,
             "height": 104
           }
@@ -7835,8 +8569,8 @@
             },
             "left": 16,
             "right": 414,
-            "top": 836,
-            "bottom": 888,
+            "top": 748,
+            "bottom": 800,
             "width": 398,
             "height": 52
           }
@@ -7844,6 +8578,17 @@
       },
       "passed": true,
       "issues": []
+    },
+    {
+      "design": "map",
+      "state": "navigation",
+      "passed": true,
+      "result": {
+        "modal": "rules",
+        "route": "profile",
+        "returned": "home",
+        "design": "map"
+      }
     },
     {
       "design": "guide",
@@ -7857,6 +8602,5 @@
       }
     }
   ],
-  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding.",
-  "paletteRevisionNote": "Geometry records retained from 20261021-explore-cards: this color-only revision does not change card dimensions, typography, layout or motion. Fresh screenshots and palette evidence are recorded separately."
+  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding."
 }

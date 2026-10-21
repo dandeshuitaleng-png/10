@@ -30,10 +30,10 @@ function metrics(info={},menu,gameId){
  return {width,height,status,safeBottom,footer,navigationClearance,header,title,titleAreaWidth,titleArtWidth,titleCenterY,mapViewport:Math.max(120,height-status-header-footer),smallScreen:height<700,style:Object.keys(vars).map(k=>'--'+k+':'+vars[k]).join(';')+';'};
 }
 // Alpha>=8 source bounds; faint export noise outside these bounds is visually transparent.
-const artBounds={culture:{width:1050,height:350,x:15,y:58,w:1027,h:212,centerY:161},red:{width:1050,height:350,x:81,y:107,w:888,h:150,centerY:175},industry:{width:1050,height:355,x:32,y:27,w:988,h:289,centerY:170.4},ecology:{width:750,height:250,x:31,y:10,w:688,h:221,centerY:122.5}};
+const artBounds={culture:{"width":1050,"height":350,"x":22,"y":68,"w":1006,"h":210,"centerY":129},red:{"width":1050,"height":350,"x":28,"y":78,"w":995,"h":207,"centerY":138},industry:{width:1050,height:355,x:32,y:27,w:988,h:289,centerY:170.4},ecology:{width:750,height:250,x:31,y:10,w:688,h:221,centerY:122.5}};
 // Midpoint of the usable front face at the central lettering area, in source pixels.
 // Leaves, scroll ends and water are outside that face. Glyph ink sits below its line-box center.
-const titleFaces={culture:{centerY:163,optical:1.8,frame:2},red:{centerY:171,optical:2.5,frame:1},industry:{centerY:172,optical:0,frame:4},ecology:{centerY:116,optical:2.5,frame:4}};
+const titleFaces={culture:{"centerY":129,"optical":-1.5,"frame":2},red:{"centerY":138,"optical":-1.5,"frame":1},industry:{centerY:172,optical:0,frame:4},ecology:{centerY:116,optical:2.5,frame:4}};
 function faceLabelTop(b,face,width,height,line,optical){
  const fit=Math.min(width/b.width,height/b.height);
  return height/2+(face.centerY-b.height/2)*fit-line/2-optical;

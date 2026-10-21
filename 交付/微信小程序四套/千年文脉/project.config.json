@@ -72,6 +72,10 @@
       {
         "type": "file",
         "value": "assets/journey/ecology.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/red/banner-folded-v2.png"
       }
     ],
     "include": []

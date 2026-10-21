@@ -14,9 +14,9 @@ function stage(size){
 }
 const selectors=['.game-device','.activity-header','.title-art-window','.home-title-label','.home-guide-card','.home-guide-avatar','.home-guide-chapter','.activity-shortcut','.panel-body','.route-canvas','.route-stop.current .route-caption','.route-stop.current .chapter-mascot','.chapter-active .chapter-open','.chapter-active .chapter-mascot','.chapter-card','.chapter-card-title','.chapter-card-state','.chapter-art-window','.chapter-card-reward','.chapter-progress-stamp','.route-scene','.route-base','.panel-footer','#footer-primary'];
 async function measure(){return evaluate('async function(){const p=getCurrentPages().slice(-1)[0];await new Promise(r=>setTimeout(r,160));const selectors='+JSON.stringify(selectors)+',q=wx.createSelectorQuery();selectors.forEach(s=>q.selectAll(s).boundingClientRect());const rect=await new Promise(r=>q.exec(rows=>r(Object.fromEntries(selectors.map((s,i)=>[s,rows[i]])))));return {design:p.data.homeDesign,theme:p.data.skin.gameId,mapWidth:p.data.mapWidth,mapViewport:p.data.mapViewport,scroll:p.data.mapScrollTop,rect};}');}
-function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.stringify({passed:checks.every(c=>c.passed),scope:'Actual WeChat renderer with constrained 320/375/430 CSS-pixel containers. B is the selected story-card album; A records are retained from its earlier unchanged version. No physical iOS/Android acceptance and no real player data.',checks},null,2)+'\n');}
+function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.stringify({date:new Date().toISOString(),passed:checks.every(c=>c.passed),scope:'Actual WeChat renderer with constrained 320x568, 375x812 and 430x844 CSS-pixel containers. Both A and B rerun with shared client-requested ribbons and local-hand motion. 430 height stays within the host simulator viewport to avoid offscreen component culling; not a 430x932 device test. No physical iOS/Android acceptance and no real player data.',checks},null,2)+'\n');}
 (async()=>{try{
- for(const size of [{w:320,h:568,status:20,safe:0},{w:375,h:812,status:44,safe:34},{w:430,h:932,status:59,safe:34}]){
+ for(const size of [{w:320,h:568,status:20,safe:0},{w:375,h:812,status:44,safe:34},{w:430,h:844,status:59,safe:34}]){
   if(widths.length&&!widths.includes(size.w))continue;
   // Reopen this disposable window after a geometry change. Hot refresh may leave
   // the automator attached to an obsolete Page even though rendering succeeded.
@@ -44,7 +44,7 @@ function save(){fs.writeFileSync(path.join(out,'native-checks.json'),JSON.string
  // Each direction keeps navigation and the primary interaction on the actual Page.
  for(const design of designs){
   await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme=ecology&review=1&controls=0&scenario=home&homeDesign='+design]);
-  await call('automation_element_action',['--action','trigger','--selector','#footer-primary','--type','action','--detail','{}']);
+  await call('automation_element_action',['--action','trigger','--selector','#footer-primary','--type','action','--detail','{}','--wait-for-selector','.route-canvas','--wait','0.3']);
   const d=await evaluate('function(){const p=getCurrentPages().slice(-1)[0];const modal=p.data.modal;p.action({currentTarget:{dataset:{action:"close"}}});p.go("profile");const route=p.data.route;p.go("home");return {modal,route,returned:p.data.route,design:p.data.homeDesign};}');
   const passed=d.modal==='rules'&&d.route==='profile'&&d.returned==='home'&&d.design===design;checks.push({design,state:'navigation',passed,result:d});save();console.log((passed?'PASS ':'FAIL ')+design+' navigation');
  }

@@ -1,0 +1,13 @@
+{
+  "method": "Built-in image_gen image editing, not CLI",
+  "references": [
+    "assets/industry/banner-wheat-gold-v1.png",
+    "assets/ecology/banner-cartoon-v2.png",
+    "assets/<theme>/header.png"
+  ],
+  "transparent_background": true,
+  "prompts": {
+    "red": "Edit an existing game UI banner asset only. Reference 1 is the approved golden folded ribbon: match its broad central writing face, curled lower folds, split outward tails, fine light rim, smooth polished 2.5D highlights and shadow exactly. Reference 2 confirms the same accepted folded-ribbon family. Reference 3 is the red theme's current banner: preserve its bright orange-red gradient (#FF7201 to #F03D17) and its two small ivory grain sprigs, but replace the shallow bowl shape with the same folded ribbon structure as reference 1. REMOVE ALL golden wheat stalks, leaves and flowers from reference 1. One horizontal RED folded ribbon, blank middle 65% for real UI text. No text, symbols, letters, characters, landscape, frame, panel or extra ornaments. No redesign or new art direction. Genuine transparent background; the whole asset including tails fully inside the canvas. Wide 3:1 composition, centered, ample transparent margin. Preserve light dimensional material of approved reference ribbons.",
+    "culture": "Edit an existing game UI banner asset only. Reference 1 is the approved golden folded ribbon: match its broad central writing face, curled lower folds, split outward tails, fine light rim, smooth polished 2.5D highlights and shadow exactly. Reference 2 confirms the same accepted folded-ribbon family. Reference 3 is the culture theme's current parchment scroll, which must now be unified with the folded-ribbon shape instead of a scroll. Produce a warm clear WOOD-BROWN folded ribbon (#A85F2A upper highlights to #8D451B lower middle tones, warm ivory fine rim); it must be visibly brown, NOT golden yellow. Retain only a very subtle ivory cloud-scroll motif at left and right of the writing face as a link to reference 3; no scroll rods. REMOVE ALL wheat stalks, leaves and flowers from reference 1. One horizontal BROWN folded ribbon, blank middle 65% for real UI text. No text, symbols, letters, characters, landscape, frame, panel or extra ornaments. No redesign or new art direction. Genuine transparent background; the whole asset including tails fully inside the canvas. Wide 3:1 composition, centered, ample transparent margin. Preserve light dimensional material of approved reference ribbons."
+  }
+}

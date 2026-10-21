@@ -1,28 +1,69 @@
 {
-  "date": "2026-10-21T04:17:07.534Z",
+  "date": "2026-10-21T07:28:27.931Z",
   "branch": "design/home-two-directions",
   "main": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
   "baselineCommit": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
+  "previousDesignCommit": "f1de7cc8a185d9b55fad3ef643904c2ed17bbeb9",
   "aScreenshots": [
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/ecology-map.png",
-      "sha256": "b18ef0c0f4c745ab3dd5af43876fef8a33716d832ab9f063beee41aae7d3c477",
-      "unchanged": true
+      "previousSha256": "b18ef0c0f4c745ab3dd5af43876fef8a33716d832ab9f063beee41aae7d3c477",
+      "sha256": "c1fd34dd3b7bcd0a35564e99417483482bd7bc564a7cdfe5a3e3c6b1f2531423",
+      "changed": true,
+      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
     },
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/red-map.png",
-      "sha256": "4e0bfbd1c9cab11d8844e40e265fa3df5359470d348e19fbf72163f58cfcda8d",
-      "unchanged": true
+      "previousSha256": "4e0bfbd1c9cab11d8844e40e265fa3df5359470d348e19fbf72163f58cfcda8d",
+      "sha256": "439364b3254ed0af79ef6c0d1a250c216a450bf4854bd0d81665ec3451c1a737",
+      "changed": true,
+      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
     },
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/culture-map.png",
-      "sha256": "7e73da13a45dcc4b5751db9682730a1ae3e99070093abcb91adba711611ca2b0",
-      "unchanged": true
+      "previousSha256": "7e73da13a45dcc4b5751db9682730a1ae3e99070093abcb91adba711611ca2b0",
+      "sha256": "5cf902bcc489a80bc378d35ff19b45b71be4c9148a79238d8d3e47727279cc4e",
+      "changed": true,
+      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
     },
     {
       "file": "rural-culture-miniprogram/preview/home-directions-20261021/industry-map.png",
-      "sha256": "1899100fc2f32c042751ba30e4d51ec20d34358aa341590080d0d1cb857ccff1",
-      "unchanged": true
+      "previousSha256": "1899100fc2f32c042751ba30e4d51ec20d34358aa341590080d0d1cb857ccff1",
+      "sha256": "7dbfd7c288f6574d0f26f5b3b974eb33d185c3ef8bf9d4b815a803c4e852e9f0",
+      "changed": true,
+      "reason": "A layout retained; recaptured after client-requested shared ribbons and local-hand motion update."
+    }
+  ],
+  "productionConfigs": [
+    {
+      "project": "rural-culture-miniprogram",
+      "gameId": "culture",
+      "reviewEnabled": false,
+      "defaultHome": "current"
+    },
+    {
+      "project": "交付/微信小程序四套/十步芳草",
+      "gameId": "red",
+      "reviewEnabled": false,
+      "defaultHome": "current"
+    },
+    {
+      "project": "交付/微信小程序四套/千年文脉",
+      "gameId": "culture",
+      "reviewEnabled": false,
+      "defaultHome": "current"
+    },
+    {
+      "project": "交付/微信小程序四套/金色产业",
+      "gameId": "industry",
+      "reviewEnabled": false,
+      "defaultHome": "current"
+    },
+    {
+      "project": "交付/微信小程序四套/青山绿水",
+      "gameId": "ecology",
+      "reviewEnabled": false,
+      "defaultHome": "current"
     }
   ]
 }

@@ -5,29 +5,29 @@
       "theme": "ecology",
       "design": "map",
       "file": "ecology-map.png",
-      "width": 852,
-      "height": 1840
+      "width": 774,
+      "height": 1672
     },
     {
       "theme": "red",
       "design": "map",
       "file": "red-map.png",
-      "width": 852,
-      "height": 1840
+      "width": 774,
+      "height": 1672
     },
     {
       "theme": "culture",
       "design": "map",
       "file": "culture-map.png",
-      "width": 852,
-      "height": 1840
+      "width": 774,
+      "height": 1672
     },
     {
       "theme": "industry",
       "design": "map",
       "file": "industry-map.png",
-      "width": 852,
-      "height": 1840
+      "width": 774,
+      "height": 1672
     },
     {
       "theme": "ecology",

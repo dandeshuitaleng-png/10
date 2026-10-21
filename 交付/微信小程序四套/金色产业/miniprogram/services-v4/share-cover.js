@@ -9,7 +9,7 @@ async function render(wx,page,skin){
  const canvas=await new Promise((resolve,reject)=>wx.createSelectorQuery().in(page).select('#share-cover-canvas').fields({node:true,size:true}).exec(rows=>rows&&rows[0]&&rows[0].node?resolve(rows[0].node):reject(Error('SHARE_CANVAS_MISSING'))));
  if(!canvas.createImage)return '';
  const load=src=>new Promise((resolve,reject)=>{const image=canvas.createImage(),timer=setTimeout(()=>reject(Error('SHARE_ART_TIMEOUT')),4000);image.onload=()=>{clearTimeout(timer);resolve(image);};image.onerror=()=>{clearTimeout(timer);reject(Error('SHARE_ART_UNAVAILABLE'));};image.src=src;});
- const id=skin.gameId,header='/assets/'+id+(id==='ecology'?'/banner-cartoon-v2.png':id==='industry'?'/banner-wheat-gold-v1.png':'/header.png');
+ const id=skin.gameId,header=require('./visual-feedback').header(id);
  const [scene,ribbon,actor]=await Promise.all([load('/assets/journey/'+id+'.jpg'),load(header),load('/assets/brand/original-extensions/'+(actors[id]||actors.culture)+'.png')]);
  canvas.width=600;canvas.height=480;const ctx=canvas.getContext('2d');
  // Keep the illustrated horizon and river, rather than the middle of the tall map.
@@ -17,8 +17,8 @@ async function render(wx,page,skin){
  const wash=ctx.createLinearGradient(0,250,0,480);wash.addColorStop(0,'rgba(255,255,255,0)');wash.addColorStop(1,skin.light);ctx.fillStyle=wash;ctx.fillRect(0,250,600,230);
  const b=layout.artBounds[id]||layout.artBounds.culture,fit=500/b.w,x=50,y=18;
  ctx.drawImage(ribbon,b.x,b.y,b.w,b.h,x,y,500,b.h*fit);
- const faces={culture:163,red:171,industry:172,ecology:116};
- ctx.textAlign='center';ctx.textBaseline='middle';ctx.font='bold 40px sans-serif';ctx.fillStyle=id==='red'||id==='ecology'?'#FFFFFF':skin.ink;
+ const faces={culture:129,red:138,industry:172,ecology:116};
+ ctx.textAlign='center';ctx.textBaseline='middle';ctx.font='bold 40px sans-serif';ctx.fillStyle=id==='industry'?skin.ink:'#FFFFFF';
  ctx.fillText(skin.name,300,y+((faces[id]||163)-b.y)*fit-2,320);
  const lines=captions[id]||captions.culture;ctx.textAlign='left';ctx.fillStyle=skin.ink;ctx.font='bold 30px sans-serif';ctx.fillText(lines[0],30,360,340);ctx.font='24px sans-serif';ctx.fillText(lines[1],30,405,340);
  ctx.drawImage(actor,383,240,187,222);
