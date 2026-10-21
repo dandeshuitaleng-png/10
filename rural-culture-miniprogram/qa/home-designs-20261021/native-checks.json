@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "scope": "Actual native renderer at 320/375/430 CSS px: equal card dimensions, catalog order, readable title geometry and progress states. A records retained unchanged. Not physical iPhone/Android evidence.",
+  "scope": "Actual WeChat renderer with constrained 320/375/430 CSS-pixel containers. B is the selected story-card album; A records are retained from its earlier unchanged version. No physical iOS/Android acceptance and no real player data.",
   "checks": [
     {
       "size": {
@@ -2471,8 +2471,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -2485,8 +2485,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -2499,8 +2499,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           }
@@ -2541,8 +2541,8 @@
             },
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           }
@@ -2553,12 +2553,12 @@
             "dataset": {
               "id": "ecology-1"
             },
-            "left": 90,
-            "right": 144,
-            "top": 394,
-            "bottom": 458,
-            "width": 54,
-            "height": 64
+            "left": 55,
+            "right": 115,
+            "top": 325,
+            "bottom": 395,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -2567,8 +2567,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -2577,8 +2577,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -2587,8 +2587,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           },
@@ -2597,8 +2597,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           }
@@ -2607,41 +2607,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           }
         ],
@@ -2649,82 +2649,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 207.828125,
-            "right": 221.078125,
-            "top": 289,
-            "bottom": 299,
+            "left": 207.53125,
+            "right": 220.78125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 224.078125,
-            "right": 237.328125,
-            "top": 289,
-            "bottom": 299,
+            "left": 223.78125,
+            "right": 237.03125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 240.328125,
-            "right": 253.578125,
-            "top": 289,
-            "bottom": 299,
+            "left": 240.03125,
+            "right": 253.28125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 256.578125,
-            "right": 269.828125,
-            "top": 289,
-            "bottom": 299,
+            "left": 256.28125,
+            "right": 269.53125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           }
@@ -2841,8 +2925,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -2855,8 +2939,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -2869,8 +2953,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           }
@@ -2911,8 +2995,8 @@
             },
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           }
@@ -2923,12 +3007,12 @@
             "dataset": {
               "id": "red-1"
             },
-            "left": 90,
-            "right": 144,
-            "top": 394,
-            "bottom": 458,
-            "width": 54,
-            "height": 64
+            "left": 55,
+            "right": 115,
+            "top": 325,
+            "bottom": 395,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -2937,8 +3021,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -2947,8 +3031,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -2957,8 +3041,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           },
@@ -2967,8 +3051,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           }
@@ -2977,41 +3061,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           }
         ],
@@ -3019,82 +3103,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 207.828125,
-            "right": 221.078125,
-            "top": 289,
-            "bottom": 299,
+            "left": 207.53125,
+            "right": 220.78125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 224.078125,
-            "right": 237.328125,
-            "top": 289,
-            "bottom": 299,
+            "left": 223.78125,
+            "right": 237.03125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 240.328125,
-            "right": 253.578125,
-            "top": 289,
-            "bottom": 299,
+            "left": 240.03125,
+            "right": 253.28125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 256.578125,
-            "right": 269.828125,
-            "top": 289,
-            "bottom": 299,
+            "left": 256.28125,
+            "right": 269.53125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           }
@@ -3211,8 +3379,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -3225,8 +3393,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -3239,8 +3407,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           }
@@ -3281,8 +3449,8 @@
             },
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           }
@@ -3293,12 +3461,12 @@
             "dataset": {
               "id": "culture-1"
             },
-            "left": 90,
-            "right": 144,
-            "top": 394,
-            "bottom": 458,
-            "width": 54,
-            "height": 64
+            "left": 55,
+            "right": 115,
+            "top": 325,
+            "bottom": 395,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -3307,8 +3475,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -3317,8 +3485,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -3327,8 +3495,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           },
@@ -3337,8 +3505,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           }
@@ -3347,41 +3515,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           }
         ],
@@ -3389,82 +3557,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 207.828125,
-            "right": 221.078125,
-            "top": 289,
-            "bottom": 299,
+            "left": 207.53125,
+            "right": 220.78125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 224.078125,
-            "right": 237.328125,
-            "top": 289,
-            "bottom": 299,
+            "left": 223.78125,
+            "right": 237.03125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 240.328125,
-            "right": 253.578125,
-            "top": 289,
-            "bottom": 299,
+            "left": 240.03125,
+            "right": 253.28125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 256.578125,
-            "right": 269.828125,
-            "top": 289,
-            "bottom": 299,
+            "left": 256.28125,
+            "right": 269.53125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           }
@@ -3581,8 +3833,8 @@
             },
             "left": 16,
             "right": 106.6640625,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -3595,8 +3847,8 @@
             },
             "left": 114.6640625,
             "right": 205.328125,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           },
@@ -3609,8 +3861,8 @@
             },
             "left": 213.328125,
             "right": 303.9921875,
-            "top": 214,
-            "bottom": 274,
+            "top": 215,
+            "bottom": 275,
             "width": 90.6640625,
             "height": 60
           }
@@ -3651,8 +3903,8 @@
             },
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           }
@@ -3663,12 +3915,12 @@
             "dataset": {
               "id": "industry-1"
             },
-            "left": 90,
-            "right": 144,
-            "top": 394,
-            "bottom": 458,
-            "width": 54,
-            "height": 64
+            "left": 55,
+            "right": 115,
+            "top": 325,
+            "bottom": 395,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -3677,8 +3929,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -3687,8 +3939,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 312,
-            "bottom": 472,
+            "top": 313,
+            "bottom": 473,
             "width": 138,
             "height": 160
           },
@@ -3697,8 +3949,8 @@
             "dataset": {},
             "left": 16,
             "right": 154,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           },
@@ -3707,8 +3959,8 @@
             "dataset": {},
             "left": 166,
             "right": 304,
-            "top": 484,
-            "bottom": 644,
+            "top": 485,
+            "bottom": 645,
             "width": 138,
             "height": 160
           }
@@ -3717,41 +3969,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 352,
-            "bottom": 375,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 401,
+            "bottom": 424,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 524,
-            "bottom": 547,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 573,
+            "bottom": 596,
+            "width": 114,
             "height": 23
           }
         ],
@@ -3759,82 +4011,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 378,
-            "bottom": 394,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 426,
+            "bottom": 442,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 140,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 28,
+            "right": 142,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 180,
-            "right": 290,
-            "top": 550,
-            "bottom": 566,
-            "width": 110,
+            "left": 178,
+            "right": 292,
+            "top": 598,
+            "bottom": 614,
+            "width": 114,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 323,
+            "bottom": 395,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 144,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 176,
+            "right": 294,
+            "top": 495,
+            "bottom": 567,
+            "width": 118,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 445,
+            "bottom": 464,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 142,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 178,
+            "right": 292,
+            "top": 617,
+            "bottom": 636,
+            "width": 114,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 207.828125,
-            "right": 221.078125,
-            "top": 289,
-            "bottom": 299,
+            "left": 207.53125,
+            "right": 220.78125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 224.078125,
-            "right": 237.328125,
-            "top": 289,
-            "bottom": 299,
+            "left": 223.78125,
+            "right": 237.03125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 240.328125,
-            "right": 253.578125,
-            "top": 289,
-            "bottom": 299,
+            "left": 240.03125,
+            "right": 253.28125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 256.578125,
-            "right": 269.828125,
-            "top": 289,
-            "bottom": 299,
+            "left": 256.28125,
+            "right": 269.53125,
+            "top": 290,
+            "bottom": 300,
             "width": 13.25,
             "height": 10
           }
@@ -3951,8 +4287,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -3965,8 +4301,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -3979,8 +4315,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           }
@@ -4021,8 +4357,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           }
@@ -4033,12 +4369,12 @@
             "dataset": {
               "id": "ecology-1"
             },
-            "left": 117.5,
-            "right": 171.5,
-            "top": 433,
-            "bottom": 497,
-            "width": 54,
-            "height": 64
+            "left": 68.75,
+            "right": 128.75,
+            "top": 364,
+            "bottom": 434,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -4047,8 +4383,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -4057,8 +4393,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -4067,8 +4403,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           },
@@ -4077,8 +4413,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           }
@@ -4087,41 +4423,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           }
         ],
@@ -4129,82 +4465,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 248.828125,
-            "right": 264.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 248.53125,
+            "right": 264.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 267.828125,
-            "right": 283.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 267.53125,
+            "right": 283.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 286.828125,
-            "right": 302.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 286.53125,
+            "right": 302.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 305.828125,
-            "right": 321.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 305.53125,
+            "right": 321.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           }
@@ -4322,8 +4742,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -4336,8 +4756,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -4350,8 +4770,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           }
@@ -4392,8 +4812,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           }
@@ -4404,12 +4824,12 @@
             "dataset": {
               "id": "red-1"
             },
-            "left": 117.5,
-            "right": 171.5,
-            "top": 433,
-            "bottom": 497,
-            "width": 54,
-            "height": 64
+            "left": 68.75,
+            "right": 128.75,
+            "top": 364,
+            "bottom": 434,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -4418,8 +4838,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -4428,8 +4848,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -4438,8 +4858,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           },
@@ -4448,8 +4868,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           }
@@ -4458,41 +4878,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           }
         ],
@@ -4500,82 +4920,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 248.828125,
-            "right": 264.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 248.53125,
+            "right": 264.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 267.828125,
-            "right": 283.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 267.53125,
+            "right": 283.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 286.828125,
-            "right": 302.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 286.53125,
+            "right": 302.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 305.828125,
-            "right": 321.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 305.53125,
+            "right": 321.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           }
@@ -4693,8 +5197,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -4707,8 +5211,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -4721,8 +5225,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           }
@@ -4763,8 +5267,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           }
@@ -4775,12 +5279,12 @@
             "dataset": {
               "id": "culture-1"
             },
-            "left": 117.5,
-            "right": 171.5,
-            "top": 433,
-            "bottom": 497,
-            "width": 54,
-            "height": 64
+            "left": 68.75,
+            "right": 128.75,
+            "top": 364,
+            "bottom": 434,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -4789,8 +5293,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -4799,8 +5303,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -4809,8 +5313,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           },
@@ -4819,8 +5323,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           }
@@ -4829,41 +5333,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           }
         ],
@@ -4871,82 +5375,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 248.828125,
-            "right": 264.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 248.53125,
+            "right": 264.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 267.828125,
-            "right": 283.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 267.53125,
+            "right": 283.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 286.828125,
-            "right": 302.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 286.53125,
+            "right": 302.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 305.828125,
-            "right": 321.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 305.53125,
+            "right": 321.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           }
@@ -5064,8 +5652,8 @@
             },
             "left": 16,
             "right": 125,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -5078,8 +5666,8 @@
             },
             "left": 133,
             "right": 242,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           },
@@ -5092,8 +5680,8 @@
             },
             "left": 250,
             "right": 359,
-            "top": 253,
-            "bottom": 313,
+            "top": 254,
+            "bottom": 314,
             "width": 109,
             "height": 60
           }
@@ -5134,8 +5722,8 @@
             },
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           }
@@ -5146,12 +5734,12 @@
             "dataset": {
               "id": "industry-1"
             },
-            "left": 117.5,
-            "right": 171.5,
-            "top": 433,
-            "bottom": 497,
-            "width": 54,
-            "height": 64
+            "left": 68.75,
+            "right": 128.75,
+            "top": 364,
+            "bottom": 434,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -5160,8 +5748,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -5170,8 +5758,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 351,
-            "bottom": 511,
+            "top": 352,
+            "bottom": 512,
             "width": 165.5,
             "height": 160
           },
@@ -5180,8 +5768,8 @@
             "dataset": {},
             "left": 16,
             "right": 181.5,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           },
@@ -5190,8 +5778,8 @@
             "dataset": {},
             "left": 193.5,
             "right": 359,
-            "top": 523,
-            "bottom": 683,
+            "top": 524,
+            "bottom": 684,
             "width": 165.5,
             "height": 160
           }
@@ -5200,41 +5788,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 391,
-            "bottom": 414,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 440,
+            "bottom": 463,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 563,
-            "bottom": 586,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 612,
+            "bottom": 635,
+            "width": 141.5,
             "height": 23
           }
         ],
@@ -5242,82 +5830,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 417,
-            "bottom": 433,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 465,
+            "bottom": 481,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 167.5,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 28,
+            "right": 169.5,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 207.5,
-            "right": 345,
-            "top": 589,
-            "bottom": 605,
-            "width": 137.5,
+            "left": 205.5,
+            "right": 347,
+            "top": 637,
+            "bottom": 653,
+            "width": 141.5,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 362,
+            "bottom": 434,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 171.5,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 203.5,
+            "right": 349,
+            "top": 534,
+            "bottom": 606,
+            "width": 145.5,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 484,
+            "bottom": 503,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 169.5,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 205.5,
+            "right": 347,
+            "top": 656,
+            "bottom": 675,
+            "width": 141.5,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 248.828125,
-            "right": 264.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 248.53125,
+            "right": 264.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 267.828125,
-            "right": 283.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 267.53125,
+            "right": 283.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 286.828125,
-            "right": 302.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 286.53125,
+            "right": 302.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 305.828125,
-            "right": 321.828125,
-            "top": 328,
-            "bottom": 338,
+            "left": 305.53125,
+            "right": 321.53125,
+            "top": 329,
+            "bottom": 339,
             "width": 16,
             "height": 10
           }
@@ -5435,8 +6107,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.328125,
             "height": 60
           },
@@ -5449,8 +6121,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           },
@@ -5463,8 +6135,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           }
@@ -5505,8 +6177,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           }
@@ -5517,12 +6189,12 @@
             "dataset": {
               "id": "ecology-1"
             },
-            "left": 145,
-            "right": 199,
-            "top": 448,
-            "bottom": 512,
-            "width": 54,
-            "height": 64
+            "left": 82.5,
+            "right": 142.5,
+            "top": 379,
+            "bottom": 449,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -5531,8 +6203,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -5541,8 +6213,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -5551,8 +6223,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           },
@@ -5561,8 +6233,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           }
@@ -5571,41 +6243,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           }
         ],
@@ -5613,82 +6285,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 303.828125,
-            "right": 319.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 303.53125,
+            "right": 319.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 322.828125,
-            "right": 338.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 322.53125,
+            "right": 338.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 341.828125,
-            "right": 357.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 341.53125,
+            "right": 357.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 360.828125,
-            "right": 376.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 360.53125,
+            "right": 376.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           }
@@ -5805,8 +6561,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.328125,
             "height": 60
           },
@@ -5819,8 +6575,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           },
@@ -5833,8 +6589,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           }
@@ -5875,8 +6631,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           }
@@ -5887,12 +6643,12 @@
             "dataset": {
               "id": "red-1"
             },
-            "left": 145,
-            "right": 199,
-            "top": 448,
-            "bottom": 512,
-            "width": 54,
-            "height": 64
+            "left": 82.5,
+            "right": 142.5,
+            "top": 379,
+            "bottom": 449,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -5901,8 +6657,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -5911,8 +6667,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -5921,8 +6677,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           },
@@ -5931,8 +6687,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           }
@@ -5941,41 +6697,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           }
         ],
@@ -5983,82 +6739,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 303.828125,
-            "right": 319.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 303.53125,
+            "right": 319.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 322.828125,
-            "right": 338.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 322.53125,
+            "right": 338.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 341.828125,
-            "right": 357.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 341.53125,
+            "right": 357.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 360.828125,
-            "right": 376.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 360.53125,
+            "right": 376.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           }
@@ -6175,8 +7015,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.328125,
             "height": 60
           },
@@ -6189,8 +7029,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           },
@@ -6203,8 +7043,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           }
@@ -6245,8 +7085,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           }
@@ -6257,12 +7097,12 @@
             "dataset": {
               "id": "culture-1"
             },
-            "left": 145,
-            "right": 199,
-            "top": 448,
-            "bottom": 512,
-            "width": 54,
-            "height": 64
+            "left": 82.5,
+            "right": 142.5,
+            "top": 379,
+            "bottom": 449,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -6271,8 +7111,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -6281,8 +7121,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -6291,8 +7131,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           },
@@ -6301,8 +7141,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           }
@@ -6311,41 +7151,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           }
         ],
@@ -6353,82 +7193,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 303.828125,
-            "right": 319.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 303.53125,
+            "right": 319.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 322.828125,
-            "right": 338.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 322.53125,
+            "right": 338.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 341.828125,
-            "right": 357.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 341.53125,
+            "right": 357.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 360.828125,
-            "right": 376.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 360.53125,
+            "right": 376.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           }
@@ -6545,8 +7469,8 @@
             },
             "left": 16,
             "right": 143.328125,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.328125,
             "height": 60
           },
@@ -6559,8 +7483,8 @@
             },
             "left": 151.328125,
             "right": 278.6640625,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           },
@@ -6573,8 +7497,8 @@
             },
             "left": 286.6640625,
             "right": 414,
-            "top": 268,
-            "bottom": 328,
+            "top": 269,
+            "bottom": 329,
             "width": 127.3359375,
             "height": 60
           }
@@ -6615,8 +7539,8 @@
             },
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           }
@@ -6627,12 +7551,12 @@
             "dataset": {
               "id": "industry-1"
             },
-            "left": 145,
-            "right": 199,
-            "top": 448,
-            "bottom": 512,
-            "width": 54,
-            "height": 64
+            "left": 82.5,
+            "right": 142.5,
+            "top": 379,
+            "bottom": 449,
+            "width": 60,
+            "height": 70
           }
         ],
         ".chapter-card": [
@@ -6641,8 +7565,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -6651,8 +7575,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 366,
-            "bottom": 526,
+            "top": 367,
+            "bottom": 527,
             "width": 193,
             "height": 160
           },
@@ -6661,8 +7585,8 @@
             "dataset": {},
             "left": 16,
             "right": 209,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           },
@@ -6671,8 +7595,8 @@
             "dataset": {},
             "left": 221,
             "right": 414,
-            "top": 538,
-            "bottom": 698,
+            "top": 539,
+            "bottom": 699,
             "width": 193,
             "height": 160
           }
@@ -6681,41 +7605,41 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 406,
-            "bottom": 429,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 455,
+            "bottom": 478,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 578,
-            "bottom": 601,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 627,
+            "bottom": 650,
+            "width": 169,
             "height": 23
           }
         ],
@@ -6723,82 +7647,166 @@
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 432,
-            "bottom": 448,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 480,
+            "bottom": 496,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 30,
-            "right": 195,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 28,
+            "right": 197,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
           },
           {
             "id": "",
             "dataset": {},
-            "left": 235,
-            "right": 400,
-            "top": 604,
-            "bottom": 620,
-            "width": 165,
+            "left": 233,
+            "right": 402,
+            "top": 652,
+            "bottom": 668,
+            "width": 169,
             "height": 16
+          }
+        ],
+        ".chapter-art-window": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 377,
+            "bottom": 449,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 199,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 231,
+            "right": 404,
+            "top": 549,
+            "bottom": 621,
+            "width": 173,
+            "height": 72
+          }
+        ],
+        ".chapter-card-reward": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 499,
+            "bottom": 518,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 197,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 233,
+            "right": 402,
+            "top": 671,
+            "bottom": 690,
+            "width": 169,
+            "height": 19
           }
         ],
         ".chapter-progress-stamp": [
           {
             "id": "",
             "dataset": {},
-            "left": 303.828125,
-            "right": 319.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 303.53125,
+            "right": 319.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 322.828125,
-            "right": 338.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 322.53125,
+            "right": 338.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 341.828125,
-            "right": 357.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 341.53125,
+            "right": 357.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           },
           {
             "id": "",
             "dataset": {},
-            "left": 360.828125,
-            "right": 376.828125,
-            "top": 343,
-            "bottom": 353,
+            "left": 360.53125,
+            "right": 376.53125,
+            "top": 344,
+            "bottom": 354,
             "width": 16,
             "height": 10
           }
@@ -6849,6 +7857,5 @@
       }
     }
   ],
-  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding.",
-  "bRevision": "Equal-size cardbook; specified Figma image74 / node 1:76; original color-block form retained"
+  "safeAreaAssertion": "Primary button bottom is above the system safe area; footer background includes its own safe padding."
 }

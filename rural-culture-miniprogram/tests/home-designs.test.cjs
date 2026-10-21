@@ -32,12 +32,12 @@ test('A retains the original art ratio and visible current chapter at three widt
  }
 });
 
-test('B chapter dashboard follows catalog states and counts without scene assets',()=>{
+test('B story cards follow catalog states and counts with nondistorted art crops',()=>{
  for(const count of [0,1,4,7,8])for(const width of [320,375,430]){
   const rows=Array.from({length:count},(_,i)=>({id:'l'+i,label:'第'+(i+1)+'关',name:'章节'+i,status:i===0?'current':'locked'}));
   const b=designs.chapters(rows,width,260);assert.equal(b.nodes.length,count);assert.deepEqual(b.tiles,[]);
   if(!count)continue;const current=b.nodes.find(n=>n.featured);assert.equal(current.id,'l0');assert(current.showMascot);assert(current.actorTop>=0&&current.actorBottom<=260);
-  for(const n of b.nodes){assert(n.left>=16&&n.left+n.width<=width-15);assert(n.top+n.height<=b.height);if(n.status==='locked')assert(!n.showMascot);}
+  for(const n of b.nodes){assert(n.left>=16&&n.left+n.width<=width-15);assert(n.top+n.height<=b.height);if(n.status==='locked')assert(!n.showMascot);assert.equal(n.actorBottom-n.actorTop,70);assert(n.actorTop>=n.top&&n.actorBottom<n.top+86);assert.equal(n.artHeight,(n.width-22)*1280/750);assert(n.artOffset<=0&&n.artOffset+ n.artHeight>=72);}
  }
  for(const status of ['current','today-locked','completed']){
   const b=designs.chapters([{id:'one',status},{id:'two',status:'locked'}],375,300);assert(b.nodes[0].featured&&b.nodes[0].showMascot);assert(!b.nodes[1].showMascot);
@@ -64,7 +64,7 @@ test('actual B Page preserves learning, today lock, resume and completion flows'
 test('B grows for long chapter names without overlapping the following row',()=>{
  const rows=Array.from({length:8},(_,i)=>({id:'long'+i,name:'认识乡村文化和自然生态的阅读旅程',status:i===0?'current':i<3?'completed':'locked'}));
  for(const width of [320,375,430]){
-  const b=designs.chapters(rows,width,300),hero=b.nodes.find(n=>n.featured);assert(hero.height>164);assert.equal(hero.actorBottom-b.focusTop,274);
+  const b=designs.chapters(rows,width,300),hero=b.nodes.find(n=>n.featured);assert(hero.height>164);assert(hero.actorTop-b.focusTop>=0&&hero.actorBottom-b.focusTop<=300);
   const grid=b.nodes.filter(n=>!n.featured);for(let i=2;i<grid.length;i++)assert(grid[i].top>=grid[i-2].top+grid[i-2].height+12);
  }
 });

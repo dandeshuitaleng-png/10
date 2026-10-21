@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-21T04:07:06.038Z",
+  "revision": "20261021-explore-cards",
+  "passed": true,
+  "scope": "HTTP payload/source integrity and asset availability only; not browser rendering or interaction evidence.",
+  "checks": [
+    {
+      "item": "review and iframe revision",
+      "passed": true
+    },
+    {
+      "item": "pages/game/index.wxml",
+      "passed": true,
+      "sha256": "a64adea0840b64b104ab7ac0a2e9f2f6c97c61f6b1ec62a72ddafd3edb0defe5"
+    },
+    {
+      "item": "pages/game/home-designs-20261021.wxss",
+      "passed": true,
+      "sha256": "6f79f578bdeb12d6fd0809210cbc38d5421651705bc93c60a496742d485e6648"
+    },
+    {
+      "item": "services-v4/home-designs.js",
+      "passed": true,
+      "sha256": "28bedcf42f23404b41d12f362d4d45f70be31ef1fd7032f32e0fefd191e4ff5a"
+    },
+    {
+      "item": "ecology-map.png",
+      "passed": true
+    },
+    {
+      "item": "ecology-guide.png",
+      "passed": true
+    },
+    {
+      "item": "red-map.png",
+      "passed": true
+    },
+    {
+      "item": "red-guide.png",
+      "passed": true
+    },
+    {
+      "item": "culture-map.png",
+      "passed": true
+    },
+    {
+      "item": "culture-guide.png",
+      "passed": true
+    },
+    {
+      "item": "industry-map.png",
+      "passed": true
+    },
+    {
+      "item": "industry-guide.png",
+      "passed": true
+    }
+  ]
+}

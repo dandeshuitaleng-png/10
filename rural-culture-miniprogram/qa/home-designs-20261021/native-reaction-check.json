@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-21T04:08:29.598Z",
+  "passed": true,
+  "scope": "Native isolated ecology B Page: direct mascot reaction renders within the picture window without progress changes.",
+  "result": {
+    "id": "ecology-1",
+    "responding": "ecology-1",
+    "unchanged": true,
+    "rect": [
+      {
+        "id": "",
+        "dataset": {},
+        "left": 122,
+        "right": 184,
+        "top": 382,
+        "bottom": 404,
+        "width": 62,
+        "height": 22
+      },
+      {
+        "id": "chapter-0",
+        "dataset": {},
+        "left": 16,
+        "right": 189,
+        "top": 353,
+        "bottom": 513,
+        "width": 173,
+        "height": 160
+      },
+      {
+        "id": "",
+        "dataset": {},
+        "left": 26,
+        "right": 179,
+        "top": 363,
+        "bottom": 435,
+        "width": 153,
+        "height": 72
+      }
+    ]
+  },
+  "evaluationSource": "async function(){const p=getCurrentPages().slice(-1)[0],before=JSON.stringify(p.data.snapshot),id=p.data.journey.guideId;p.mascotTap({currentTarget:{dataset:{id}}});await new Promise(r=>setTimeout(r,120));const q=wx.createSelectorQuery();q.select(\".chapter-cheer\").boundingClientRect();q.select(\".chapter-active\").boundingClientRect();q.select(\".chapter-active .chapter-art-window\").boundingClientRect();const rect=await new Promise(r=>q.exec(r));return {id,responding:p.data.motion.respondingId,unchanged:before===JSON.stringify(p.data.snapshot),rect};}"
+}
