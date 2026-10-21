@@ -19,14 +19,14 @@ async function call(tool,args=[]){return new Promise((resolve,reject)=>{const c=
   }
  }
  report.passed=report.checks.every(c=>c.passed);report.safeAreaAssertion='Primary button bottom is above the system safe area; footer background includes its own safe padding.';
- fs.writeFileSync(file,JSON.stringify(report,null,2)+'\n');assert(report.passed,'native geometry/navigation checks must pass');assert.equal(report.checks.length,26);
+ fs.writeFileSync(file,JSON.stringify(report,null,2)+'\n');assert(report.passed,'native geometry/navigation checks must pass');assert.equal(report.checks.length,13);
  if(!process.argv.includes('--reuse-window')){
   await call('open_project_window',['--window-mode','liteMode']);await call('close_project_window');await call('open_project_window',['--window-mode','liteMode']);
   await call('simulator_screenshot',['--path',path.join(out,'capture-ready.png'),'--optimize','false']);
   try{await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);}catch(e){if(!/waitForAutomatorReady|waiting for automator/.test(e.message))throw e;await call('simulator_screenshot',['--path',path.join(out,'capture-ready.png'),'--optimize','false']);await call('automation_page_action',['--action','getData','--data-path','route','--wait-for-selector','.game-device']);}
  }
- const designs=process.argv.includes('--guide-only')?['guide']:['map','guide'];
- const captures=designs.length===1?JSON.parse(fs.readFileSync(path.join(out,'review-captures.json'))).captures.filter(c=>!designs.includes(c.design)):[];
+ const designs=['map'];
+ const captures=[];
  for(const design of designs)for(const theme of ['ecology','red','culture','industry']){
   await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme='+theme+'&review=1&controls=0&scenario=home&homeDesign='+design]);
   // Let the first-visit scroll hint dismiss naturally before the still image.

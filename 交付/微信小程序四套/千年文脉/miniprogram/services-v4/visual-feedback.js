@@ -7,22 +7,22 @@ const palettes={
  ecology:{ink:'#254C16',accent:'#34841C',light:'#F1FFF1',theme:'清亮草绿',top:'#E4FFC2',bottom:'#B6FFD9',buttonText:'#254C16',buttonEdge:'#B1E6A0',muted:'#58764B',edge:'#D9EED3',panelEdge:'#52D228',paper:'#FFFFFF',fill:'#C5F59D',shadow:'#59B62B25',panelTop:'#E0FFB8',panelBottom:'#F1FFF0',frameWidth:4,buttonAngle:'100deg'}
 };
 const base='/assets/brand/original-poses/';
-const poses=['welcome','observe','think','celebrate'];
+const poses=['welcome','celebrate','observe','think'];
+const seasons=['春','夏','秋','冬'];
 const artwork={welcome:base+'spring.png',observe:base+'autumn.png',think:base+'winter.png',celebrate:base+'summer.png'};
 const actions={welcome:artwork.welcome,guide:artwork.observe,think:artwork.think,cheer:artwork.celebrate,achievement:artwork.celebrate,rest:artwork.think};
 function apply(skin){return Object.assign({},skin,palettes[skin.gameId]||palettes.culture);}
-function nodePose(index){const pose=poses[index%poses.length];return {mascot:artwork[pose],pose};}
+function nodePose(index){const pose=poses[index%poses.length];return {mascot:artwork[pose],pose,season:seasons[index%seasons.length]};}
 // Scene roles stay stable across timer updates and themes, separate from map progress.
-function sceneActor(route,status){
- if(route==='quiz')return status==='correct'?'celebrate':'reader';
- return {profile:'scholar',points:'observe',result:'drummer',certificate:'skater'}[route]||'welcome';
-}
+function sceneActor(route){return route==='result'?'drummer':'';}
+
 function modalActor(modal,rulePose){return {rules:rulePose||'welcome',revive:'heart',locked:'lotus'}[modal]||'';}
 function header(gameId){if(gameId==='red'||gameId==='culture')return '/assets/'+gameId+'/banner-themed-v3.png';return '/assets/'+gameId+(gameId==='ecology'?'/banner-cartoon-v2.png':gameId==='industry'?'/banner-wheat-gold-v1.png':'/header.png');}
-function scene(gameId){return '/assets/journey/'+gameId+'.jpg';}
+function scene(gameId){return '/assets/journey/'+gameId+'-a-v4.jpg';}
+function nodeBase(gameId){return '/assets/journey/'+gameId+'-node-a-v4.png';}
 // User-facing labels do not expose connection modes or fixture account names.
 function readerName(name){return /^(本地联调用户|本地联网用户|本地联网体验者|演示用户|演示账号)$/.test(name||'')?'乡村阅读者':name;}
 function readerProfile(value){return Object.assign({},value,{nickname:readerName(value.nickname),badge:/本地|模拟|演示|联调|体验/.test(value.badge||'')?'阅读探索者':value.badge});}
 function certificateLabel(value){return Object.assign({},value,{userName:readerName(value.userName),displayId:/^DEMO-/i.test(value.id||'')?'':value.id,footer:!value.footer||/本地|模拟|演示|联调|非正式/.test(value.footer)?'学习活动纪念，不代表学历或教育资格':value.footer});}
 function errorMessage(message){return /BACKEND_NOT_CONFIGURED/.test(message||'')?'服务暂不可用，请稍后重试。':message;}
-module.exports={palettes,actions,apply,nodePose,sceneActor,modalActor,header,scene,readerName,readerProfile,certificateLabel,errorMessage,motionReady:true};
+module.exports={palettes,actions,apply,nodePose,sceneActor,modalActor,header,scene,nodeBase,readerName,readerProfile,certificateLabel,errorMessage,motionReady:true};

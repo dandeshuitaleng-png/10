@@ -1,8 +1,9 @@
 'use strict';
 const layout=require('./home-layout');
 const presentation=require('./visual-feedback');
-const keys=['current','map','guide'];
-function resolve(config={},query={},review=false){return review&&keys.includes(query.homeDesign)?query.homeDesign:keys.includes(config.homeDesign)?config.homeDesign:'current';}
+// Client approved A on 2026-10-21. Old review links cannot reactivate B.
+const keys=['map'];
+function resolve(){return 'map';}
 function metrics(base,design){
  const guide=design==='guide',map=design==='map',width=base.width,m=layout.mapMetrics(width);
  const extra=guide?-8:map?48:0,frame=0;

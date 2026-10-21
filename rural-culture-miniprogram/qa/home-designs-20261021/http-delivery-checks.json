@@ -1,102 +1,88 @@
 {
-  "date": "2026-10-21T07:54:10.115Z",
-  "revision": "20261021-themed-ribbons",
+  "date": "2026-10-21T11:56:21.039Z",
   "passed": true,
-  "scope": "HTTP payload/source integrity only; not browser rendering or interaction acceptance.",
+  "scope": "HTTP resource/source integrity only. Browser controls disabled in Work settings; not browser visual QA.",
+  "base": "http://127.0.0.1:6499",
   "checks": [
     {
-      "item": "review iframe revision",
-      "passed": true
+      "name": "首页方案A-20261021.html",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "pages/game/index.wxml",
-      "passed": true,
-      "sha256": "a64adea0840b64b104ab7ac0a2e9f2f6c97c61f6b1ec62a72ddafd3edb0defe5"
+      "name": "首页两款评审-20261021.html",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "pages/game/reference-20261020.wxss",
-      "passed": true,
-      "sha256": "fb2dbe23e553f8b03e8fb2721e5abb2e65b195d85b3455f8442bb562ca34c3b6"
+      "name": "pages/game/index.js",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "components/mascot-actor/index.wxml",
-      "passed": true,
-      "sha256": "d70f696853f780fe56431f09e87f3a61d2f74d3b89de60a46108814c481c9efd"
+      "name": "pages/game/index.wxml",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "components/mascot-actor/index.wxss",
-      "passed": true,
-      "sha256": "4a4cb823e7285e384b65385b671e98b8c223d545bf3b63b299f4b8b5edcc8a28"
+      "name": "pages/game/approved-a-20261021.wxss",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "services-v4/mascot-rig.js",
-      "passed": true,
-      "sha256": "010c9fb779df0f93d262c80bd63d8d50d7e9159978f09c40825f2d75cf29abde"
+      "name": "services-v4/home-designs.js",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "services-v4/home-layout.js",
-      "passed": true,
-      "sha256": "62d3e69b68bb48fc91ee48a711dc8a2a0d3fb56d085d980d7af65404f66083e0"
+      "name": "services-v4/journey.js",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "services-v4/visual-feedback.js",
-      "passed": true,
-      "sha256": "0395764ff8a4a41563c6e4aa74b002f98f1e2cd31a29895cf7a4b2ebc3bca1a0"
+      "name": "services-v4/visual-feedback.js",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "services-v4/share-cover.js",
-      "passed": true,
-      "sha256": "c31caccebe3015b3521693f7f6b88c0c9562420996ea04b01125fe89ed297c83"
+      "name": "assets/journey/red-a-v4.jpg",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "assets/red/banner-themed-v3.png",
-      "passed": true,
-      "sha256": "b620c8107c181507c2c109c3f6fdbc49b9e2b9e15fa015a9761598f5e39823e3"
+      "name": "assets/journey/red-node-a-v4.png",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "assets/culture/banner-themed-v3.png",
-      "passed": true,
-      "sha256": "85894d54f6b09878f07657efb186736957ecf95b5a3e445d5c370cbf88660eef"
+      "name": "assets/journey/culture-a-v4.jpg",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "ecology-map.png",
-      "passed": true,
-      "sha256": "3136057812f4d710bce131a2f8a714970b2a203475fca0147d864257ffdde3a1"
+      "name": "assets/journey/culture-node-a-v4.png",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "ecology-guide.png",
-      "passed": true,
-      "sha256": "5375288e8655e9b08bd8e9d3a872828ae7a138b81c3d28d7a2509b4f64280eb0"
+      "name": "assets/journey/industry-a-v4.jpg",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "red-map.png",
-      "passed": true,
-      "sha256": "4814cf272ea166ffa3bbe961ba55c923929858a304cdc9bd612ac4afae7c7121"
+      "name": "assets/journey/industry-node-a-v4.png",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "red-guide.png",
-      "passed": true,
-      "sha256": "43bbbc3b52fb7df254b5b63a642a2c21f3140826c84884957a615f5d32dfa306"
+      "name": "assets/journey/ecology-a-v4.jpg",
+      "status": 200,
+      "sourceMatches": true
     },
     {
-      "item": "culture-map.png",
-      "passed": true,
-      "sha256": "422e5ac85c5ddaf5e61ed88510a9ff3ec59d29a908ac3ed9f6e12a658046bf12"
-    },
-    {
-      "item": "culture-guide.png",
-      "passed": true,
-      "sha256": "08c91ec4042e275f3a82f741d61c5957ad0f2cf6fc077359de34ba715213b27a"
-    },
-    {
-      "item": "industry-map.png",
-      "passed": true,
-      "sha256": "4b45680e565f1ddb46f68d7a19c72265cd49e888941d1cf6003d8ba6a3469cf0"
-    },
-    {
-      "item": "industry-guide.png",
-      "passed": true,
-      "sha256": "6cfc985b39c9578f4d9cefc22584fc014d923551ff434ae08bcc8e6646041cf9"
+      "name": "assets/journey/ecology-node-a-v4.png",
+      "status": 200,
+      "sourceMatches": true
     }
   ]
 }

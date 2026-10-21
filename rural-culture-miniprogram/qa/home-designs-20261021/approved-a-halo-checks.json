@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-21T11:58:22.837Z",
+  "passed": true,
+  "scope": "Actual native oval bounds and refreshed ecology state screenshots, plus source binding check for zero border/shadow and declared theme gradient. Visual inspection separately confirms no hard ring. Computed style collection was unavailable in automator.",
+  "checks": [
+    {
+      "theme": "ecology",
+      "passed": true,
+      "halo": {
+        "id": "",
+        "dataset": {},
+        "left": 207.296875,
+        "right": 315.296875,
+        "top": 651.2578125,
+        "bottom": 698.2578125,
+        "width": 108,
+        "height": 47
+      }
+    },
+    {
+      "theme": "red",
+      "passed": true,
+      "halo": {
+        "id": "",
+        "dataset": {},
+        "left": 207.296875,
+        "right": 315.296875,
+        "top": 651.2578125,
+        "bottom": 698.2578125,
+        "width": 108,
+        "height": 47
+      }
+    },
+    {
+      "theme": "culture",
+      "passed": true,
+      "halo": {
+        "id": "",
+        "dataset": {},
+        "left": 207.296875,
+        "right": 315.296875,
+        "top": 651.2578125,
+        "bottom": 698.2578125,
+        "width": 108,
+        "height": 47
+      }
+    },
+    {
+      "theme": "industry",
+      "passed": true,
+      "halo": {
+        "id": "",
+        "dataset": {},
+        "left": 207.296875,
+        "right": 315.296875,
+        "top": 651.2578125,
+        "bottom": 698.2578125,
+        "width": 108,
+        "height": 47
+      }
+    }
+  ]
+}

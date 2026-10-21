@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = {homeDesign:'map',
   "gameId": "ecology",
   "name": "青山绿水",
   "eyebrow": "湖南生态 · 山川风光",

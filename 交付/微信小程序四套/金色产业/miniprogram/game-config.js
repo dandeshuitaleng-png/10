@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = {homeDesign:'map',
   "gameId": "industry",
   "name": "金色产业",
   "eyebrow": "特色物产 · 乡村产业",

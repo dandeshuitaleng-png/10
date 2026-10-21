@@ -136,13 +136,13 @@ async function main() {
       const restored=env.service.exportState().challenges[0];assert.equal(restored.id,before.id);assert.equal(restored.deadline,before.deadline);assert.deepEqual(restored.questionIds,before.questionIds);assert.equal(env.page.data.challenge.selected,0);
       async function finish(){for(let n=0;n<10;n++){await env.answer(0);assert.equal(env.page.data.challenge.status,'correct');await env.action('next');}assert.equal(env.page.data.route,'result');}
       await finish();assert.equal(env.page.data.result.accuracy,90);assert.equal(env.page.data.result.points,10);assert.equal(env.page.data.snapshot.progress.completed,1);
-      env.page.go('home');assert.deepEqual(env.page.data.journey.nodes.filter(n=>n.showMascot).map(n=>n.pose),['welcome','observe']);
+      env.page.go('home');assert.deepEqual(env.page.data.journey.nodes.filter(n=>n.showMascot).map(n=>n.pose),['welcome','celebrate']);
       await env.begin();await finish();assert.equal(env.page.data.result.points,0);assert.equal(env.page.data.snapshot.points,10);assert.equal(env.page.data.ledger.length,1);
       for(let i=2;i<=4;i++){await env.begin(gameId+'-'+i);await finish();assert.equal(env.page.data.result.points,[10,15,20,30][i-1]);}
-      env.page.go('profile');assert.equal(env.page.data.pageActorPose,'scholar');assert.equal(env.page.data.snapshot.progress.completed,4);assert.equal(env.page.data.snapshot.points,75);
-      env.page.go('points');assert.equal(env.page.data.ledger.length,4);assert.equal(env.page.data.pageActorPose,'observe');
+      env.page.go('profile');assert.equal(env.page.data.pageActorPose,'');assert.equal(env.page.data.snapshot.progress.completed,4);assert.equal(env.page.data.snapshot.points,75);
+      env.page.go('points');assert.equal(env.page.data.ledger.length,4);assert.equal(env.page.data.pageActorPose,'');
       env.page.go('ranking');await env.action('period',{period:'total'});assert.equal(env.page.data.ranking.me.points,75);
-      env.page.go('certificate');assert.equal(env.page.data.certificates.length,1);assert.equal(env.page.data.certificate.gameId,gameId);assert.equal(env.page.data.certificate.levelIds.length,4);assert.equal(env.page.data.pageActorPose,'skater');
+      env.page.go('certificate');assert.equal(env.page.data.certificates.length,1);assert.equal(env.page.data.certificate.gameId,gameId);assert.equal(env.page.data.certificate.levelIds.length,4);assert.equal(env.page.data.pageActorPose,'');
       const certificate=env.page.data.certificate.id;await env.page.saveCertificate();assert.deepEqual(env.canvasStats(),{canvasExports:1,albumRequests:1});
       await env.action('share-cert');assert.equal(env.page.onShareAppMessage().path,'/pages/game/index?theme='+gameId+'&route=certificate');await env.action('dismiss');
       env.page.onUnload();const memory=env.memory;env=environment({...opts,memory});assert.equal(env.page.data.snapshot.points,75);assert.equal(env.page.data.certificate.id,certificate);assert.equal(env.page.data.footerRoute,'certificate');env.page.onUnload();
@@ -156,14 +156,14 @@ async function main() {
       env.page.onHide();env.advance(13*3600000);env.page.onShow();assert.equal(env.page.data.levels[0].status,'current');await env.begin();assert.equal(env.page.data.challenge.reviveRemaining,1);assert.equal(env.page.data.challenge.remaining,30);assert.equal(env.page.data.snapshot.points,0);env.page.onUnload();
     });
   }
-  await test('scene-specific original poses stay distinct and tapping them never changes the challenge or account', async () => {
+  await test('information pages omit decorative figures; contextual figures react without changing progress', async () => {
     const env=environment({levelCount:1}),page=env.page;
-    page.go('profile');assert.equal(page.data.pageActorPose,'scholar');
-    const beforeProfile=env.service.exportState();page.inlineMascotTap();assert.equal(page.data.motion.respondingId,'page-profile');assert.deepEqual(env.service.exportState(),beforeProfile);
-    await env.begin();assert.equal(page.data.pageActorPose,'reader');const beforeQuestion=env.service.exportState();page.inlineMascotTap();assert.deepEqual(env.service.exportState(),beforeQuestion);
+    page.go('profile');assert.equal(page.data.pageActorPose,'');
+    const beforeProfile=env.service.exportState();page.inlineMascotTap();assert.equal(page.data.motion.respondingId,'');assert.deepEqual(env.service.exportState(),beforeProfile);
+    await env.begin();assert.equal(page.data.pageActorPose,'');const beforeQuestion=env.service.exportState();page.inlineMascotTap();assert.deepEqual(env.service.exportState(),beforeQuestion);
     await env.answer(1);assert.equal(page.data.modalActorPose,'heart');const beforeRevive=env.service.exportState();page.inlineMascotTap();assert.equal(page.data.motion.respondingId,'modal-revive');assert.deepEqual(env.service.exportState(),beforeRevive);
-    await env.action('revive-share');await env.action('share-success');await env.answer(0);assert.equal(page.data.pageActorPose,'celebrate');
-    await env.action('next');assert.equal(page.data.pageActorPose,'drummer');page.go('certificate');assert.equal(page.data.pageActorPose,'skater');
+    await env.action('revive-share');await env.action('share-success');await env.answer(0);assert.equal(page.data.pageActorPose,'');
+    await env.action('next');assert.equal(page.data.pageActorPose,'drummer');page.go('certificate');assert.equal(page.data.pageActorPose,'');
     page._systemReduced=true;page.readMotionPreference();const still=page.data.motion.sequence;page.inlineMascotTap();assert.equal(page.data.motion.sequence,still);assert.equal(page.data.motion.playingId,'');page.onUnload();
     const locked=environment();await locked.lock();assert.equal(locked.page.data.modalActorPose,'lotus');locked.page.onUnload();
   });
@@ -348,7 +348,7 @@ async function main() {
     const env=environment();env.page.showModal('certificate-share');
     assert.equal(env.page._motion.state().playingId,'');
     await env.action('dismiss');assert.equal(env.page._motion.state().playingId,'culture-1');
-    await env.begin();assert.equal(env.page._motion.state().playingId,'page-quiz');
+    await env.begin();assert.equal(env.page._motion.state().playingId,'');
     await env.answer(1);assert.equal(env.page.data.modal,'revive');assert.equal(env.page._motion.state().playingId,'modal-revive');
     env.page.onUnload();assert.equal(env.page._motion.state().playingId,'');
   });
@@ -357,7 +357,7 @@ async function main() {
     const visible=()=>page.data.journey.nodes.filter(n=>n.showMascot).map(n=>n.id);
     assert.deepEqual(visible(),['culture-1']);assert.equal(page.data.journey.nodes[0].pose,'welcome');
     await env.begin();await env.answer(0);await env.action('next');page.go('home');
-    assert.deepEqual(visible(),['culture-1','culture-2']);assert.equal(page.data.journey.nodes[0].status,'completed');assert.equal(page.data.journey.nodes[1].pose,'observe');
+    assert.deepEqual(visible(),['culture-1','culture-2']);assert.equal(page.data.journey.nodes[0].status,'completed');assert.equal(page.data.journey.nodes[1].pose,'celebrate');
     await env.begin('culture-2');await env.answer(1);await env.action('revive-share');await env.action('share-success');await env.answer(1);page.go('home');
     assert.deepEqual(visible(),['culture-1','culture-2']);assert.equal(page.data.journey.nodes[1].status,'today-locked');assert.equal(page._motion.state().playingId,'culture-2');
     assert.equal(page._motion.play('culture-3'),false);page.onUnload();
@@ -376,13 +376,14 @@ async function main() {
     await env.action('level',{id:'culture-1'});assert.equal(page.data.modal,'locked');page.onUnload();
   });
 
-  await test('inline figures animate on quiz, profile and points, and pause outside their scroll panel', async () => {
-    const env=environment(),page=env.page;page.go('profile');assert.equal(page._motion.state().playingId,'page-profile');
-    page.go('points');assert.equal(page._motion.state().playingId,'page-points');assert.equal(page.data.pageActorPose,'observe');
+  await test('only the result inline figure animates and pauses offscreen or in the background', async () => {
+    const env=environment(),page=env.page;
+    for(const route of ['profile','points','certificate']){page.go(route);assert.equal(page._motion.state().playingId,'');assert.equal(page.data.pageActorPose,'');}
+    await env.begin();assert.equal(page._motion.state().playingId,'');await env.answer(0);assert.equal(page.data.pageActorPose,'');
+    await env.action('next');assert.equal(page._motion.state().playingId,'page-result');
     page._inlineActorVisible=false;page.syncMotion();assert.equal(page._motion.state().playingId,'');
-    page._inlineActorVisible=true;page.syncMotion();assert.equal(page._motion.state().playingId,'page-points');
-    await env.begin();assert.equal(page._motion.state().playingId,'page-quiz');await env.answer(0);assert.equal(page.data.pageActorPose,'celebrate');
-    await env.action('next');assert.equal(page._motion.state().playingId,'page-result');page.onUnload();
+    page._inlineActorVisible=true;page.syncMotion();assert.equal(page._motion.state().playingId,'page-result');
+    page.onHide();assert.equal(page._motion.state().playingId,'');page.onShow();assert.equal(page._motion.state().playingId,'page-result');page.onUnload();
   });
 
 }

@@ -1,0 +1,36 @@
+✔ 红色场景不随可视高度压缩或拉长，三个宽度保持原图比例 (3.476308ms)
+✔ 配置少于四关时仍保留完整场景，不截掉山景 (1.690573ms)
+✔ 文化场景也采用原图比例，不再压成可视高度 (0.359652ms)
+✔ 另外两套场景沿用相同自然比例 (0.400142ms)
+✔ four theme covers keep the original horizon, header and character inside a 5:4 image (8.842278ms)
+✔ presentation cleanup preserves real names, formal certificate copy and source records (0.606295ms)
+✔ chapter presentation stays theme-specific without replacing configured layout or business names (1.852042ms)
+✔ generic share defaults become themed while authored campaign copy remains intact (0.590909ms)
+✔ four themes share to their own home and earned certificates do not hijack other page links (0.459369ms)
+✔ 首次地图定位提示保持3.5秒，返回首页不重复提示 (20.138832ms)
+✔ 实际滑动收起提示，上下边缘只在还有内容时渐隐且不改受控位置 (2.823954ms)
+✔ 无需滚动时没有提示和渐隐，其他页面滚动不改变地图状态 (3.093957ms)
+✔ 四主题在三个手机视口和四种进度下都有真实滚动范围，节点局部位置一致 (10.06732ms)
+✔ 卡片与人物提示在320/375/390/430下不横向溢出，四种状态共用90px卡片 (0.276476ms)
+✔ 空目录、少于四关和超高视口不会制造空白滚动，超过四关继续铺完整地图 (0.692228ms)
+✔ 界面读取体验身份，没有伪造平台账号 (13.53022ms)
+✔ 明确提供的平台资料通过服务层读取 (0.251181ms)
+✔ 四种题板来自目录顺序，不要求固定关卡ID (3.85476ms)
+✔ 配置可指定视觉变体，未知样式回退且不影响关卡规则 (0.224293ms)
+✔ 新增关卡视觉评审不写入玩家存档 (5.893533ms)
+✔ 关卡节点展示只跟随当前启用目录 (0.999115ms)
+✔ 空目录不生成假节点或底图 (2.092465ms)
+✔ 目录数量不限于四关，映射保留ID、名称与状态 (4.479197ms)
+✔ 当前节点获得定位锚点，主题底座不参与规则判断 (0.339857ms)
+✔ 四套底图共享节点位置并保留独立图片，320与430宽度下节点仍在画布内 (1.090872ms)
+✔ 今日锁定保留已到达主题底座，业务状态仍不可挑战 (0.392802ms)
+✔ 配置停用与改序后，地图仅跟随当前服务目录 (3.905489ms)
+✔ 人物只出现在已到达与已完成节点，解锁后按启用目录顺序换动作 (0.317788ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 192.989999

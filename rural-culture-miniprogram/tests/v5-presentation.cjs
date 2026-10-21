@@ -1,7 +1,9 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict');
 const {createService}=require('../miniprogram/services-v4/index');
-const catalog=require('../miniprogram/services-v4/catalog');
+const catalog=structuredClone(require('../miniprogram/services-v4/catalog'));
+// Formal catalog deliberately contains no answer bank. Review tests own explicit fixtures.
+catalog.questions=catalog.levels.flatMap(l=>Array.from({length:l.questionCount||10},(_,i)=>({id:l.id+'-fixture-'+i,themeId:l.themeId,levelId:l.id,title:'选择测试正确项',options:['正确项','错误项'],answer:0,explanation:'隔离测试解析',enabled:true})));
 const make=options=>createService(Object.assign({gameId:'culture',catalog,reviewEnabled:true,clock:()=>1792137600000,delay:async()=>{},storage:{getStorageSync(){return '';},setStorageSync(){}}},options));
 test('界面读取体验身份，没有伪造平台账号',()=>{
  const service=make();assert.equal(service.profile().source,'preview');assert.equal(service.profile().badge,'体验用户');assert.equal(service.profile().nickname,'乡村阅读者');

@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-21T09:16:22.149Z",
+  "method": "Built-in ImageGen edits. Maps resized/JPEG-compressed; podium alpha-bounds crop and contain export only, preserving proportions.",
+  "records": [
+    {
+      "theme": "red",
+      "kind": "scene",
+      "source": "design-source/approved-a-20261021/red-map-source.png",
+      "runtime": "miniprogram/assets/journey/red-a-v4.jpg",
+      "bytes": 151833,
+      "width": 750,
+      "height": 1280,
+      "quality": 84,
+      "sha256": "36faf7bfd1998be4add766b62171a6aacd941fa0a8bf1da55ec7565e901073a2"
+    },
+    {
+      "theme": "red",
+      "kind": "node",
+      "source": "design-source/approved-a-20261021/red-node-source.png",
+      "runtime": "miniprogram/assets/journey/red-node-a-v4.png",
+      "crop": {
+        "left": 29,
+        "top": 277,
+        "width": 1391,
+        "height": 625
+      },
+      "width": 220,
+      "height": 165,
+      "resize": "contain, preserves proportions",
+      "bytes": 12017,
+      "sha256": "514cf6b1b00e53932df13bdd3b18eb6a19cf6573b8f37fad16dd77faee12051f"
+    },
+    {
+      "theme": "culture",
+      "kind": "scene",
+      "source": "design-source/approved-a-20261021/culture-map-source.png",
+      "runtime": "miniprogram/assets/journey/culture-a-v4.jpg",
+      "bytes": 107392,
+      "width": 750,
+      "height": 1280,
+      "quality": 84,
+      "sha256": "ceffcd3375e6e2bef8dd4fe7ed55d81d10eb2d4a5cad1073a291b641a6d6052d"
+    },
+    {
+      "theme": "culture",
+      "kind": "node",
+      "source": "design-source/approved-a-20261021/culture-node-source.png",
+      "runtime": "miniprogram/assets/journey/culture-node-a-v4.png",
+      "crop": {
+        "left": 30,
+        "top": 281,
+        "width": 1388,
+        "height": 532
+      },
+      "width": 220,
+      "height": 165,
+      "resize": "contain, preserves proportions",
+      "bytes": 11885,
+      "sha256": "1cabe002cf701f37a0aab2698177edac57b3fabc82b10756d2e5f2e114bd45c5"
+    },
+    {
+      "theme": "industry",
+      "kind": "scene",
+      "source": "design-source/approved-a-20261021/industry-map-source.png",
+      "runtime": "miniprogram/assets/journey/industry-a-v4.jpg",
+      "bytes": 132256,
+      "width": 750,
+      "height": 1280,
+      "quality": 84,
+      "sha256": "3ecfa3ff9aa9d2cd35f782876ade34fe3f5a1f6afa5b1486e77c451ba21dcdcc"
+    },
+    {
+      "theme": "industry",
+      "kind": "node",
+      "source": "design-source/approved-a-20261021/industry-node-source.png",
+      "runtime": "miniprogram/assets/journey/industry-node-a-v4.png",
+      "crop": {
+        "left": 31,
+        "top": 243,
+        "width": 1387,
+        "height": 616
+      },
+      "width": 220,
+      "height": 165,
+      "resize": "contain, preserves proportions",
+      "bytes": 11876,
+      "sha256": "12e80e114ee2fc84dac3c501a0e22934b0f0d1780669ee0be7c3103e68a78d8f"
+    },
+    {
+      "theme": "ecology",
+      "kind": "scene",
+      "source": "design-source/approved-a-20261021/ecology-map-source.png",
+      "runtime": "miniprogram/assets/journey/ecology-a-v4.jpg",
+      "bytes": 168669,
+      "width": 750,
+      "height": 1280,
+      "quality": 84,
+      "sha256": "ee3022fd870e7b74402dce29c55fa0b738e16291f3e151a41fb15d162789ad62"
+    },
+    {
+      "theme": "ecology",
+      "kind": "node",
+      "source": "design-source/approved-a-20261021/ecology-node-source.png",
+      "runtime": "miniprogram/assets/journey/ecology-node-a-v4.png",
+      "crop": {
+        "left": 42,
+        "top": 242,
+        "width": 1364,
+        "height": 617
+      },
+      "width": 220,
+      "height": 165,
+      "resize": "contain, preserves proportions",
+      "bytes": 10781,
+      "sha256": "3967dce91028d7a3ae45934584af17b41cd064754136bfb19ef75af4ec98c7e4"
+    }
+  ]
+}

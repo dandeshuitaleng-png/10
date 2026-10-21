@@ -1,0 +1,32 @@
+✔ no music autoplays; first gesture starts one looping context with a gentle fade (4.737556ms)
+✔ only confirmed feedback plays once despite repeated refreshes and route changes (1.733303ms)
+✔ muting persists, stops every channel, and does not queue missed feedback (0.475744ms)
+✔ background pauses immediately and return resumes the same music without seeking to zero (0.990342ms)
+✔ video questions pause music and the next text question restores the quieter quiz level (0.322339ms)
+✔ repeated fast taps are limited and a failed music start can recover on a later gesture (0.285086ms)
+✔ loading an old result stays quiet; unavailable audio never blocks the page (0.723823ms)
+✔ natural feedback is sparse: no negative alarm and different rapid cues cannot overlap (0.350142ms)
+✔ music and effects have independent switches, levels, and durable preferences (0.547979ms)
+✔ dragging changes volume live, writes on commit, and mute restores prior active channels (0.510137ms)
+✔ effect volume commits preview one cue, clamp input, and respect video pause (0.26176ms)
+✔ four themed formal certificates keep issued content, date and source records (5.004918ms)
+✔ long names, award titles and descriptions wrap without loss or overlapping the signature (0.805553ms)
+✔ the actual Page saves the very same certificate PNG shown in its preview (112.763005ms)
+✔ a failed certificate export shows retry and can regenerate without changing the issued award (10.93187ms)
+✔ tapping a certificate previews the current document and a lost image can be regenerated (36.682261ms)
+✔ Chinese punctuation cannot be stranded at the beginning of a wrapped line (5.444574ms)
+✔ 100 actual selections cannot inflate answers with subpixel native geometry (124.978648ms)
+✔ late geometry from the previous question cannot resize the next one (7.694571ms)
+✔ every one of 100 repeated taps gets feedback and returns to rest (1.671187ms)
+✔ the previous release cannot end a new press, including the same answer (1.498821ms)
+✔ scroll gestures, touch cancellation and page disposal leave no stuck press (0.280738ms)
+✔ keyboard or accessible tap also gets feedback without a preceding touch event (0.173519ms)
+✔ the actual shared button continues to emit actions after 100 taps and guards disabled/loading (3.565688ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 401.982096

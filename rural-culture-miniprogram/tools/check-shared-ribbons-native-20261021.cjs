@@ -6,7 +6,7 @@ async function call(tool,args=[]){return new Promise((resolve,reject)=>{const c=
 (async()=>{
  const checks=[];
  for(const theme of ['red','culture'])for(const scenario of ['quiz','home']){
-  await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme='+theme+'&review=1&controls=0&scenario='+scenario+'&homeDesign=guide']);
+  await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme='+theme+'&review=1&controls=0&scenario='+scenario+'&homeDesign=map']);
   if(scenario==='home')await call('automation_element_action',['--action','trigger','--selector','#footer-primary','--type','action','--detail','{}','--wait','0.3']);
   const modal=scenario==='home',selector=modal?'.modal-decoration .modal-game-name':'.theme-heading .h1';
   let r=await call('automation_evaluate',['--fn-source','async function(){await new Promise(r=>setTimeout(r,250));const p=getCurrentPages().slice(-1)[0],q=wx.createSelectorQuery();q.select('+JSON.stringify(selector)+').boundingClientRect();q.select('+JSON.stringify(modal?'.modal-decoration':'.theme-heading')+').boundingClientRect();return {route:p.data.route,modal:p.data.modal,header:p.data.header,rect:await new Promise(r=>q.exec(r))};}']);

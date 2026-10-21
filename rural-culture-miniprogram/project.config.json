@@ -131,7 +131,27 @@
       },
       {
         "type": "file",
+        "value": "assets/red/banner-folded-v2.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/culture/banner-folded-v2.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/culture.jpg"
+      },
+      {
+        "type": "file",
         "value": "assets/journey/red.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/red-a-v4.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/red-node-a-v4.png"
       },
       {
         "type": "file",
@@ -139,19 +159,27 @@
       },
       {
         "type": "file",
+        "value": "assets/journey/industry-a-v4.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/industry-node-a-v4.png"
+      },
+      {
+        "type": "file",
         "value": "assets/journey/ecology.jpg"
       },
       {
         "type": "file",
-        "value": "assets/red/banner-folded-v2.png"
+        "value": "assets/journey/ecology-a-v4.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/ecology-node-a-v4.png"
       },
       {
         "type": "file",
         "value": "assets/red/banner-themed-v3.png"
-      },
-      {
-        "type": "file",
-        "value": "assets/culture/banner-folded-v2.png"
       }
     ],
     "include": []

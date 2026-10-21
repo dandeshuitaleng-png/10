@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = {homeDesign:'map',
   "gameId": "culture",
   "name": "千年文脉",
   "eyebrow": "湖南人文 · 地方文化",

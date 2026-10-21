@@ -1,0 +1,1184 @@
+{
+  "date": "2026-10-21T09:31:34.408Z",
+  "passed": true,
+  "scope": "Actual native Page using isolated review data. Scenario error is not physical disconnection. Device touch and fluid motion still need iOS/Android review.",
+  "checks": [
+    {
+      "theme": "ecology",
+      "scenario": "home",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "current",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          }
+        ],
+        "footer": "开始第1关 · 基础认知",
+        "certificate": false,
+        "screenshot": "a-state-home.png"
+      }
+    },
+    {
+      "theme": "ecology",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-2",
+            "status": "current",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false,
+        "screenshot": "a-state-chapter-2.png"
+      }
+    },
+    {
+      "theme": "ecology",
+      "scenario": "chapter-3",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-3",
+            "status": "current",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第3关 · 深度应用",
+        "certificate": false,
+        "screenshot": "a-state-chapter-3.png"
+      }
+    },
+    {
+      "theme": "ecology",
+      "scenario": "chapter-4",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-4",
+            "status": "current",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第4关 · 综合挑战",
+        "certificate": false,
+        "screenshot": "a-state-chapter-4.png"
+      }
+    },
+    {
+      "theme": "ecology",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "today-locked",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false,
+        "screenshot": "a-state-locked.png"
+      }
+    },
+    {
+      "theme": "ecology",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "ecology",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "ecology-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          },
+          {
+            "id": "ecology-4",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/ecology-node-a-v4.png"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true,
+        "screenshot": "a-state-certificate.png"
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "home",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "current",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          }
+        ],
+        "footer": "开始第1关 · 基础认知",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-2",
+            "status": "current",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "chapter-3",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-3",
+            "status": "current",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第3关 · 深度应用",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "chapter-4",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-4",
+            "status": "current",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第4关 · 综合挑战",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "today-locked",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "red",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "red",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "red-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          },
+          {
+            "id": "red-4",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/red-node-a-v4.png"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "home",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "current",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          }
+        ],
+        "footer": "开始第1关 · 基础认知",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-2",
+            "status": "current",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "chapter-3",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-3",
+            "status": "current",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第3关 · 深度应用",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "chapter-4",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-4",
+            "status": "current",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第4关 · 综合挑战",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "today-locked",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "culture",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "culture",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "culture-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          },
+          {
+            "id": "culture-4",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/culture-node-a-v4.png"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "home",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "current",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          }
+        ],
+        "footer": "开始第1关 · 基础认知",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "chapter-2",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-2",
+            "status": "current",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第2关 · 进阶理解",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "chapter-3",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-3",
+            "status": "current",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第3关 · 深度应用",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "chapter-4",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-4",
+            "status": "current",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          }
+        ],
+        "footer": "继续第4关 · 综合挑战",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "locked",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "today-locked",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-2",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-3",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-4",
+            "status": "locked",
+            "showMascot": false,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          }
+        ],
+        "footer": "查看今日锁定说明",
+        "certificate": false
+      }
+    },
+    {
+      "theme": "industry",
+      "scenario": "certificate",
+      "passed": true,
+      "result": {
+        "theme": "industry",
+        "design": "map",
+        "nodes": [
+          {
+            "id": "industry-1",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "welcome",
+            "season": "春",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-2",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "celebrate",
+            "season": "夏",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-3",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "observe",
+            "season": "秋",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          },
+          {
+            "id": "industry-4",
+            "status": "completed",
+            "showMascot": true,
+            "pose": "think",
+            "season": "冬",
+            "nodeImage": "/assets/journey/industry-node-a-v4.png"
+          }
+        ],
+        "footer": "查看学习证书",
+        "certificate": true
+      }
+    },
+    {
+      "scenario": "IP placement quiz",
+      "passed": true,
+      "result": {
+        "route": "quiz",
+        "actorId": "",
+        "pose": "",
+        "count": 0
+      }
+    },
+    {
+      "scenario": "IP placement profile",
+      "passed": true,
+      "result": {
+        "route": "profile",
+        "actorId": "",
+        "pose": "",
+        "count": 0
+      }
+    },
+    {
+      "scenario": "IP placement points",
+      "passed": true,
+      "result": {
+        "route": "points",
+        "actorId": "",
+        "pose": "",
+        "count": 0
+      }
+    },
+    {
+      "scenario": "IP placement certificate",
+      "passed": true,
+      "result": {
+        "route": "certificate",
+        "actorId": "",
+        "pose": "",
+        "count": 0
+      }
+    },
+    {
+      "scenario": "IP placement result",
+      "passed": true,
+      "result": {
+        "route": "result",
+        "actorId": "page-result",
+        "pose": "drummer",
+        "count": 1
+      }
+    },
+    {
+      "scenario": "empty",
+      "passed": true,
+      "result": {
+        "route": "levels",
+        "levels": 0,
+        "error": "",
+        "rows": 0
+      }
+    },
+    {
+      "scenario": "failure",
+      "passed": true,
+      "result": {
+        "route": "levels",
+        "levels": 4,
+        "error": "当前为加载失败评审状态，请重试。",
+        "rows": 5
+      }
+    },
+    {
+      "scenario": "ranking-empty",
+      "passed": true,
+      "result": {
+        "route": "ranking",
+        "levels": 4,
+        "error": "",
+        "rows": 0
+      }
+    },
+    {
+      "scenario": "100 mascot taps, progress preserved, background pause",
+      "passed": true,
+      "result": {
+        "responding": "ecology-1",
+        "expected": "ecology-1",
+        "hidden": "",
+        "unchanged": true,
+        "foreground": true
+      }
+    }
+  ]
+}

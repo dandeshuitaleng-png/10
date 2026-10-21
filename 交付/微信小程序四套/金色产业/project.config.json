@@ -75,11 +75,39 @@
       },
       {
         "type": "file",
+        "value": "assets/journey/culture-a-v4.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/culture-node-a-v4.png"
+      },
+      {
+        "type": "file",
         "value": "assets/journey/red.jpg"
       },
       {
         "type": "file",
+        "value": "assets/journey/red-a-v4.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/red-node-a-v4.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/industry.jpg"
+      },
+      {
+        "type": "file",
         "value": "assets/journey/ecology.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/ecology-a-v4.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/journey/ecology-node-a-v4.png"
       },
       {
         "type": "file",

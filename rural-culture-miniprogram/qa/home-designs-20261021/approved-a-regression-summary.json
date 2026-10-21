@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-21T11:58:50.380Z",
+  "passed": true,
+  "scope": "Node service/Page/component tests and isolated HTTP integration; separate from native renderer and physical phones",
+  "total": 154,
+  "runs": [
+    {
+      "file": "approved-a-services-regression.log",
+      "checks": 39,
+      "passed": true
+    },
+    {
+      "file": "approved-a-page-regression.log",
+      "checks": 34,
+      "passed": true
+    },
+    {
+      "file": "approved-a-components-regression.log",
+      "checks": 24,
+      "passed": true
+    },
+    {
+      "file": "approved-a-home-motion-regression.log",
+      "checks": 25,
+      "passed": true
+    },
+    {
+      "file": "approved-a-presentation-regression.log",
+      "checks": 28,
+      "passed": true
+    },
+    {
+      "file": "approved-a-network-regression.log",
+      "checks": 4,
+      "passed": true
+    }
+  ],
+  "latestHaloChange": "Presentation CSS only; compiled in all five projects; native screenshot/style-binding QA separate."
+}

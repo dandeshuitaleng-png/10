@@ -10,7 +10,7 @@ test('four theme covers keep the original horizon, header and character inside a
   const wx={createSelectorQuery(){const q={in(){return q;},select(s){assert.equal(s,'#share-cover-canvas');return q;},fields(){return q;},exec(cb){cb([{node:canvas}]);}};return q;},canvasToTempFilePath(o){exports++;assert.equal(o.destWidth,600);assert.equal(o.destHeight,480);o.success({tempFilePath:'/tmp/'+id+'.jpg'});}};
   const result=await cover.render(wx,{},presentation.apply({gameId:id,name}));
   assert.equal(result,'/tmp/'+id+'.jpg');assert.equal(exports,1);assert.equal(canvas.width/canvas.height,1.25);
-  assert.equal(drawings[0][0].source,'/assets/journey/'+id+'.jpg');assert.deepEqual(drawings[0].slice(1),[0,0,750,600,0,0,600,480]);
+  assert.equal(drawings[0][0].source,'/assets/journey/'+id+'-a-v4.jpg');assert.deepEqual(drawings[0].slice(1),[0,0,750,600,0,0,600,480]);
   assert.equal(drawings[1][0].source,presentation.header(id));
   assert.equal(drawings[2][0].source,'/assets/brand/original-extensions/'+cover.actors[id]+'.png');
   for(const [text,x,y,max] of texts){assert(x>=0&&x<=600);assert(y>=0&&y<=480);assert(max<=600);assert(!/模拟|本地|演示|联调/.test(text));}

@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = {homeDesign:'map',
   "gameId": "red",
   "name": "十步芳草",
   "eyebrow": "湖南乡村 · 红色故事",

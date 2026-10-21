@@ -10,7 +10,7 @@ async function render(wx,page,skin){
  if(!canvas.createImage)return '';
  const load=src=>new Promise((resolve,reject)=>{const image=canvas.createImage(),timer=setTimeout(()=>reject(Error('SHARE_ART_TIMEOUT')),4000);image.onload=()=>{clearTimeout(timer);resolve(image);};image.onerror=()=>{clearTimeout(timer);reject(Error('SHARE_ART_UNAVAILABLE'));};image.src=src;});
  const id=skin.gameId,header=require('./visual-feedback').header(id);
- const [scene,ribbon,actor]=await Promise.all([load('/assets/journey/'+id+'.jpg'),load(header),load('/assets/brand/original-extensions/'+(actors[id]||actors.culture)+'.png')]);
+ const [scene,ribbon,actor]=await Promise.all([load(require('./visual-feedback').scene(id)),load(header),load('/assets/brand/original-extensions/'+(actors[id]||actors.culture)+'.png')]);
  canvas.width=600;canvas.height=480;const ctx=canvas.getContext('2d');
  // Keep the illustrated horizon and river, rather than the middle of the tall map.
  ctx.drawImage(scene,0,0,scene.width,Math.min(scene.height,scene.width*.8),0,0,600,480);

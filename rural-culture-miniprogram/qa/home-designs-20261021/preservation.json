@@ -1,69 +1,68 @@
 {
-  "date": "2026-10-21T07:53:39.513Z",
-  "branch": "design/home-two-directions",
+  "date": "2026-10-21T11:23:53.126Z",
+  "selection": "client approved A",
   "main": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
-  "baselineCommit": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
-  "previousDesignCommit": "72621d4e650fc4e17c4da4bd78ad1ff5e6a2f276",
-  "aScreenshots": [
+  "baselineTag": "ba141c2e9b2e7e8c03037a0c5805e1d0877d14f6",
+  "priorDesignCommit": "240379062e976daabe22d46f77877b554dd8c6af",
+  "branch": "design/approved-home-a",
+  "originalIP": [
     {
-      "file": "rural-culture-miniprogram/preview/home-directions-20261021/ecology-map.png",
-      "previousSha256": "c1fd34dd3b7bcd0a35564e99417483482bd7bc564a7cdfe5a3e3c6b1f2531423",
-      "sha256": "3136057812f4d710bce131a2f8a714970b2a203475fca0147d864257ffdde3a1",
-      "changed": true,
-      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
+      "file": "miniprogram/assets/brand/original-poses/spring.png",
+      "unchanged": true,
+      "sha256": "aeea691c61f452584f4fe9d9230caca256d2dca6461273dfbc14333981aa3571"
     },
     {
-      "file": "rural-culture-miniprogram/preview/home-directions-20261021/red-map.png",
-      "previousSha256": "439364b3254ed0af79ef6c0d1a250c216a450bf4854bd0d81665ec3451c1a737",
-      "sha256": "4814cf272ea166ffa3bbe961ba55c923929858a304cdc9bd612ac4afae7c7121",
-      "changed": true,
-      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
+      "file": "miniprogram/assets/brand/original-poses/summer.png",
+      "unchanged": true,
+      "sha256": "6a03a8829c5b715bc39fe7eda987ca0bb28d4860ea23cf0431215bbc905c0571"
     },
     {
-      "file": "rural-culture-miniprogram/preview/home-directions-20261021/culture-map.png",
-      "previousSha256": "5cf902bcc489a80bc378d35ff19b45b71be4c9148a79238d8d3e47727279cc4e",
-      "sha256": "422e5ac85c5ddaf5e61ed88510a9ff3ec59d29a908ac3ed9f6e12a658046bf12",
-      "changed": true,
-      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
+      "file": "miniprogram/assets/brand/original-poses/autumn.png",
+      "unchanged": true,
+      "sha256": "540520c2d9f5ba3e3b73c08215748cef7ee5e46eff3344906fa82f772bc61240"
     },
     {
-      "file": "rural-culture-miniprogram/preview/home-directions-20261021/industry-map.png",
-      "previousSha256": "7dbfd7c288f6574d0f26f5b3b974eb33d185c3ef8bf9d4b815a803c4e852e9f0",
-      "sha256": "4b45680e565f1ddb46f68d7a19c72265cd49e888941d1cf6003d8ba6a3469cf0",
-      "changed": true,
-      "reason": "A layout retained; recaptured after themed red/culture ribbon v3 update."
+      "file": "miniprogram/assets/brand/original-poses/winter.png",
+      "unchanged": true,
+      "sha256": "cd7f4f4818a50f71a8454d2f29c013ba3e9015aacedc40a13ccab33f2f4ec7fc"
     }
   ],
-  "productionConfigs": [
+  "projects": [
     {
       "project": "rural-culture-miniprogram",
       "gameId": "culture",
+      "homeDesign": "map",
       "reviewEnabled": false,
-      "defaultHome": "current"
+      "connectionAndIdentityPreserved": true
     },
     {
       "project": "交付/微信小程序四套/十步芳草",
       "gameId": "red",
+      "homeDesign": "map",
       "reviewEnabled": false,
-      "defaultHome": "current"
+      "connectionAndIdentityPreserved": true
     },
     {
       "project": "交付/微信小程序四套/千年文脉",
       "gameId": "culture",
+      "homeDesign": "map",
       "reviewEnabled": false,
-      "defaultHome": "current"
+      "connectionAndIdentityPreserved": true
     },
     {
       "project": "交付/微信小程序四套/金色产业",
       "gameId": "industry",
+      "homeDesign": "map",
       "reviewEnabled": false,
-      "defaultHome": "current"
+      "connectionAndIdentityPreserved": true
     },
     {
       "project": "交付/微信小程序四套/青山绿水",
       "gameId": "ecology",
+      "homeDesign": "map",
       "reviewEnabled": false,
-      "defaultHome": "current"
+      "connectionAndIdentityPreserved": true
     }
-  ]
+  ],
+  "evidence": "Source/Git readback, no release or real player data mutation"
 }

@@ -1,0 +1,21 @@
+/* Approved A: shared geometry, theme-specific material and restrained IP placement. */
+.game-device.activity-page.home-layout.home-design-map .route-number{top:calc(var(--home-node-w) * .41);font-size:15px;line-height:18px;color:var(--ink);text-shadow:0 1px #FFFFFFC0}
+.game-device.activity-page.home-layout.home-design-map .route-stop.locked .route-base{filter:grayscale(.65) saturate(.55) brightness(1.08);opacity:.82}
+.game-device.activity-page.home-layout.home-design-map .route-stop.completed .route-base{filter:saturate(.85);opacity:1}
+.game-device.activity-page.home-layout.home-design-map .route-stop.is-reached .route-base{filter:none;opacity:1}
+/* A diffused oval under the podium replaces the hard circular outline.
+ * All theme tokens below are declared here so a missing variable cannot fall back to currentColor. */
+.game-device.home-design-map.skin-red{--arrival-glow:#FFD49BA8}
+.game-device.home-design-map.skin-culture{--arrival-glow:#FFE4B0A8}
+.game-device.home-design-map.skin-industry{--arrival-glow:#FFF19BB8}
+.game-device.home-design-map.skin-ecology{--arrival-glow:#DEFFB6B8}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map .route-halo{left:-4px;right:-4px;top:calc(var(--home-node-w) * .19);bottom:auto;height:calc(var(--home-node-w) * .47);border:0;border-radius:50%;box-shadow:none;background:radial-gradient(ellipse at center,#FFFFFF00 42%,var(--arrival-glow) 66%,#FFFFFF00 94%);opacity:1;animation:none;transform:none}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map.skin-red button.route-caption{border-radius:14px 5px 14px 5px;background:linear-gradient(145deg,#FFFFFF,#FFF4ED);border-color:#FFC0AB}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map.skin-culture button.route-caption{border-radius:5px 13px 5px 13px;background:linear-gradient(145deg,#FFFEFA,#FFF5E6);border-color:#D5AD7B;box-shadow:0 3px 0 #A363261C,inset 3px 0 #D5AD7B55}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map.skin-industry button.route-caption{border-radius:19px 9px 19px 9px;background:linear-gradient(145deg,#FFFFFF,#FFFBE6);border-color:#E9CC66}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map.skin-ecology button.route-caption{border-radius:22px 13px 22px 13px;background:linear-gradient(145deg,#FFFFFF,#F2FFF8);border-color:#B7DFBF}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map .route-stop.is-reached button.route-caption{border:2px solid var(--panel-edge)}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map .route-stop.completed button.route-caption{border-color:var(--edge)}
+.game-device.feedback-20261019 .quest-banner{padding-right:12px}
+.game-device.feedback-20261019 .profile-card{padding-top:24px;padding-bottom:24px}
+.game-device.feedback-20261019 .points-user{justify-content:flex-start;gap:0}
