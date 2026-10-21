@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-21T12:27:35.549Z",
+  "date": "2026-10-21T13:13:28.158Z",
   "passed": true,
-  "scope": "Actual native Page/Canvas 2D in disposable project: four seasons, four themes, 100 Page-handler taps per season, original snapshot preserved, background cancels Canvas frame loop. Not physical phone touch/performance acceptance.",
+  "scope": "Actual native Page/Canvas 2D in disposable project: four seasons, four themes, 100 batched Page-handler taps then a fresh tap per season, original snapshot preserved; background and modal pause cancel the map canvas frame loop. Transparent-pixel disposal is covered separately by renderer regression and the native footer screenshot check. Not physical phone touch/performance acceptance.",
   "checks": [
     {
       "scenario": "home",
@@ -11,11 +11,13 @@
         "pose": "welcome",
         "ready": true,
         "responding": "ecology-1",
-        "touches": 100,
+        "touches": 101,
         "unchanged": true,
         "active": true,
         "hidden": "",
-        "canvasStopped": true
+        "canvasStopped": true,
+        "modalPlaying": "modal-rules",
+        "modalMapStopped": true
       }
     },
     {
@@ -26,11 +28,13 @@
         "pose": "celebrate",
         "ready": true,
         "responding": "ecology-2",
-        "touches": 100,
+        "touches": 101,
         "unchanged": true,
         "active": true,
         "hidden": "",
-        "canvasStopped": true
+        "canvasStopped": true,
+        "modalPlaying": "modal-rules",
+        "modalMapStopped": true
       }
     },
     {
@@ -41,11 +45,13 @@
         "pose": "observe",
         "ready": true,
         "responding": "ecology-3",
-        "touches": 100,
+        "touches": 101,
         "unchanged": true,
         "active": true,
         "hidden": "",
-        "canvasStopped": true
+        "canvasStopped": true,
+        "modalPlaying": "modal-rules",
+        "modalMapStopped": true
       }
     },
     {
@@ -56,11 +62,13 @@
         "pose": "think",
         "ready": true,
         "responding": "ecology-4",
-        "touches": 100,
+        "touches": 101,
         "unchanged": true,
         "active": true,
         "hidden": "",
-        "canvasStopped": true
+        "canvasStopped": true,
+        "modalPlaying": "modal-rules",
+        "modalMapStopped": true
       }
     },
     {

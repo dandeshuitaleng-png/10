@@ -1,0 +1,37 @@
+✔ seasonal figures render one original bitmap without cutout arms, painted patches or whole-body keyframes (2.032032ms)
+✔ all original RGBA files are byte-identical and the local deformation stays above the feet (3.954214ms)
+✔ shared vertices remain joined, fixed outer edges match the static body, and no triangle inverts at any motion frame (45.715205ms)
+✔ canvas playback is bounded and repeated property refresh does not restart it; disposal cancels the pending frame (1.146805ms)
+✔ a canvas drawing failure stops its frame loop and invokes the original-image fallback (0.318204ms)
+✖ idle, scroll/modal pause and component disposal leave a transparent canvas, not an un-clipped original frame (1.075427ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 186.377543
+
+✖ failing tests:
+
+test at tests/local-mascot-motion.test.cjs:45:1
+✖ idle, scroll/modal pause and component disposal leave a transparent canvas, not an un-clipped original frame (1.075427ms)
+  AssertionError [ERR_ASSERTION]: component ready must not paint a duplicate still figure
+  
+  true !== false
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/local-mascot-motion.test.cjs:49:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

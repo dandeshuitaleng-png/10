@@ -1,0 +1,39 @@
+✔ approved A is the only active homepage; stale B links cannot reactivate B (114.288152ms)
+✔ mother and four independent projects explicitly use A with review controls disabled (2.850277ms)
+✔ A retains illustration ratio and visible current chapter at three widths (0.812056ms)
+✔ catalog owns counts and sequence; four original seasons cycle in the client order (1.025673ms)
+✔ each theme has its own scene and podium with explicit state and reached-only figures (1.015205ms)
+✔ actual A Page preserves chapter start, completion, next unlock and resume (13.623586ms)
+✔ seasonal figures render one original bitmap without cutout arms, painted patches or whole-body keyframes (1.461269ms)
+✔ all original RGBA files are byte-identical and the local deformation stays above the feet (4.637723ms)
+✔ shared vertices remain joined, fixed outer edges match the static body, and no triangle inverts at any motion frame (48.498671ms)
+✔ canvas playback is bounded and repeated property refresh does not restart it; disposal cancels the pending frame (1.3632ms)
+✔ a canvas drawing failure stops its frame loop and invokes the original-image fallback (0.374651ms)
+✔ idle, scroll/modal pause and component disposal leave a transparent canvas, not an un-clipped original frame (0.398098ms)
+✔ visible current node plays once, finishes its full gesture, restarts exactly 8s after start (1.909346ms)
+✔ a reached noncurrent node has its own full thinking action; future nodes cannot play (0.396851ms)
+✔ background, offscreen and reduced-motion each cancel playback and scheduled work (0.529895ms)
+✔ frequent service refresh does not continually restart animation or postpone repeat (0.750025ms)
+✔ a catalog of 9 enabled nodes retains business IDs/order and cycles all four poses (1.414941ms)
+✔ a scheduled repeat lets a manual one-shot finish before resuming the current node (0.295615ms)
+✔ today-locked reached node still animates; all-completed map celebrates at the last reached node (1.222272ms)
+✔ rapid repeated taps do not reset a playing figure or delay its next automatic gesture (0.214183ms)
+✔ direct touch immediately upgrades idle action, deduplicates repeated touch and clears linked feedback (0.26844ms)
+✔ changing a visible scene pose cancels the previous gesture and uses the replacement duration (0.286864ms)
+✔ every supplied extension completes its own action and remains interruptible (0.394175ms)
+✔ each seasonal tap completes its shorter gesture; repeated taps refresh feedback without restarting the hand (0.920648ms)
+✔ a partly clipped figure uses its static image; animation stops before it can cross the map edge (0.213323ms)
+✔ 实际Page.resize四主题共用完整标题区域，覆盖三个视口 (27.254578ms)
+✔ 390×844原生屏幕：A地图294至738、标题与操作区可达，水纹不越出标题区域 (1.773897ms)
+✔ 不同进度和短屏按实际卡片边界定位，保留16px下方间距 (50.725701ms)
+✔ 宽横幅布局下当前产业关卡仍保留16px底部间距 (0.244178ms)
+✔ 浏览器WXSS导入器会内联实际共享样式，保持与原生的加载顺序 (7.622091ms)
+✔ 四主题标题保留屏幕中轴和光学基线，所有可见素材均位于标题区内 (0.771695ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 278.83559

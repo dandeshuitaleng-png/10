@@ -1,0 +1,23 @@
+✔ approved A is the only active homepage; stale B links cannot reactivate B (200.465333ms)
+✔ mother and four independent projects explicitly use A with review controls disabled (3.404548ms)
+✔ A retains illustration ratio and visible current chapter at three widths (0.978793ms)
+✔ catalog owns counts and sequence; four original seasons cycle in the client order (1.128972ms)
+✔ each theme has its own scene and podium with explicit state and reached-only figures (1.061856ms)
+✔ actual A Page preserves chapter start, completion, next unlock and resume (14.955983ms)
+✔ chapter presentation stays theme-specific without replacing configured layout or business names (1.890827ms)
+✔ generic share defaults become themed while authored campaign copy remains intact (0.39045ms)
+✔ four themes share to their own home and earned certificates do not hijack other page links (0.423062ms)
+✔ 实际Page.resize四主题共用完整标题区域，覆盖三个视口 (23.565338ms)
+✔ 390×844原生屏幕：A地图294至738、标题与操作区可达，水纹不越出标题区域 (1.227634ms)
+✔ 不同进度和短屏按实际卡片边界定位，保留16px下方间距 (48.112002ms)
+✔ 宽横幅布局下当前产业关卡仍保留16px底部间距 (0.256966ms)
+✔ 浏览器WXSS导入器会内联实际共享样式，保持与原生的加载顺序 (87.53588ms)
+✔ 四主题标题保留屏幕中轴和光学基线，所有可见素材均位于标题区内 (2.45032ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 352.850237

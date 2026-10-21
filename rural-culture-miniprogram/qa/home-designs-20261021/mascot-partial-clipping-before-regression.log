@@ -1,0 +1,44 @@
+✔ visible current node plays once, finishes its full gesture, restarts exactly 8s after start (1.664886ms)
+✔ a reached noncurrent node has its own full thinking action; future nodes cannot play (0.296925ms)
+✔ background, offscreen and reduced-motion each cancel playback and scheduled work (0.347278ms)
+✔ frequent service refresh does not continually restart animation or postpone repeat (0.504336ms)
+✔ a catalog of 9 enabled nodes retains business IDs/order and cycles all four poses (1.346798ms)
+✔ a scheduled repeat lets a manual one-shot finish before resuming the current node (0.279578ms)
+✔ today-locked reached node still animates; all-completed map celebrates at the last reached node (1.243748ms)
+✔ rapid repeated taps do not reset a playing figure or delay its next automatic gesture (0.221795ms)
+✔ direct touch immediately upgrades idle action, deduplicates repeated touch and clears linked feedback (0.328836ms)
+✔ changing a visible scene pose cancels the previous gesture and uses the replacement duration (0.279041ms)
+✔ every supplied extension completes its own action and remains interruptible (0.236296ms)
+✔ each seasonal tap completes its shorter gesture; repeated taps refresh feedback without restarting the hand (0.775764ms)
+✖ a partly clipped figure uses its static image; animation stops before it can cross the map edge (1.102574ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 12
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.880291
+
+✖ failing tests:
+
+test at tests/mascot-motion.test.cjs:47:1
+✖ a partly clipped figure uses its static image; animation stops before it can cross the map edge (1.102574ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'one' !== ''
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/mascot-motion.test.cjs:50:51)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'one',
+    expected: '',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

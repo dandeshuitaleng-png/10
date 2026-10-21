@@ -41,3 +41,13 @@ test('a canvas drawing failure stops its frame loop and invokes the original-ima
  const canvas={getContext:()=>ctx,requestAnimationFrame(){throw Error('must not schedule after failure');}};
  const a=createAnimator({canvas,image:{},rig:rigs.welcome,width:76,height:120,onError:()=>{failed=true;}});a.update({playing:true,responding:true,cycle:1});assert(failed);assert.equal(a.state().active,false);assert.equal(a.state().framePending,false);
 });
+
+test('idle, scroll/modal pause and component disposal leave a transparent canvas, not an un-clipped original frame',()=>{
+ let visible=false,next=0;const timers=new Map(),ctx={scale(){},clearRect(){visible=false;},drawImage(){visible=true;},save(){},restore(){},beginPath(){},moveTo(){},lineTo(){},closePath(){},clip(){},transform(){}};
+ const canvas={getContext:()=>ctx,requestAnimationFrame:fn=>{timers.set(++next,fn);return next;},cancelAnimationFrame:id=>timers.delete(id)};
+ const a=createAnimator({canvas,image:{},rig:rigs.welcome,width:76,height:120});
+ a.update({playing:false,responding:false,cycle:0});assert.equal(visible,false,'component ready must not paint a duplicate still figure');
+ a.update({playing:true,responding:true,cycle:1});assert.equal(visible,true);
+ a.update({playing:false,responding:false,cycle:1});assert.equal(visible,false,'scroll/modal pause must erase the canvas');assert.equal(timers.size,0);
+ a.update({playing:true,responding:true,cycle:2});assert.equal(visible,true);a.stop();assert.equal(visible,false,'hide/detach must erase the last frame');assert.equal(timers.size,0);
+});

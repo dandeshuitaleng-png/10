@@ -1,0 +1,1604 @@
+{
+  "date": "2026-10-21T12:53:01.917Z",
+  "passed": true,
+  "scope": "Actual WeChat renderer in isolated 320x568, 375x812 and 430x844 CSS-pixel containers. Label line boxes and conservative four-character glyph envelope checked against the central writing face; source artwork unchanged. No physical phone/browser acceptance.",
+  "checks": [
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "ecology",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 118,
+        "right": 202,
+        "top": 79.9296875,
+        "bottom": 103.9296875,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 11.75,
+        "right": 308.2578125,
+        "top": 48.5625,
+        "bottom": 147.3984375,
+        "width": 296.5078125,
+        "height": 98.8359375
+      },
+      "writingArea": {
+        "left": 84.88859375,
+        "right": 235.11921875000002,
+        "top": 79.79465625,
+        "bottom": 109.05009375
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 79.9296875,
+        "bottom": 103.9296875
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "ecology",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 46,
+        "right": 274,
+        "top": 82.0625,
+        "bottom": 110.0625,
+        "width": 228,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": -4,
+        "right": 324,
+        "top": 39,
+        "bottom": 165,
+        "width": 328,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 76.90666666666667,
+        "right": 243.09333333333333,
+        "top": 81.88266666666667,
+        "bottom": 114.24533333333332
+      },
+      "glyphEnvelope": {
+        "left": 114,
+        "right": 206,
+        "top": 82.0625,
+        "bottom": 110.0625
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "ecology",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 52,
+        "right": 268,
+        "top": 79.4453125,
+        "bottom": 103.4453125,
+        "width": 216,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 12,
+        "right": 308,
+        "top": 39,
+        "bottom": 155,
+        "width": 296,
+        "height": 116
+      },
+      "writingArea": {
+        "left": 85.01333333333334,
+        "right": 234.98666666666668,
+        "top": 78.84533333333334,
+        "bottom": 108.05066666666667
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 79.4453125,
+        "bottom": 103.4453125
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "red",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 118,
+        "right": 202,
+        "top": 86.5,
+        "bottom": 110.5,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 16.625,
+        "right": 303.65625,
+        "top": 53.265625,
+        "bottom": 148.9375,
+        "width": 287.03125,
+        "height": 95.671875
+      },
+      "writingArea": {
+        "left": 86.33660714285715,
+        "right": 233.94464285714287,
+        "top": 84.15397321428573,
+        "bottom": 109.84870535714286
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 86.5,
+        "bottom": 110.5
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "red",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 50,
+        "right": 270,
+        "top": 81.625,
+        "bottom": 109.625,
+        "width": 220,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 320,
+        "top": 36,
+        "bottom": 162,
+        "width": 320,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 77.71428571428571,
+        "right": 242.28571428571428,
+        "top": 80.1047619047619,
+        "bottom": 108.75238095238096
+      },
+      "glyphEnvelope": {
+        "left": 114,
+        "right": 206,
+        "top": 81.625,
+        "bottom": 109.625
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "red",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 53,
+        "right": 267,
+        "top": 76,
+        "bottom": 100,
+        "width": 214,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 13,
+        "right": 307,
+        "top": 28,
+        "bottom": 154,
+        "width": 294,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 84.39999999999999,
+        "right": 235.60000000000002,
+        "top": 73.64,
+        "bottom": 99.96
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 76,
+        "bottom": 100
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "culture",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 118,
+        "right": 202,
+        "top": 86.5,
+        "bottom": 110.5,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 17.203125,
+        "right": 302.796875,
+        "top": 55.65625,
+        "bottom": 150.8515625,
+        "width": 285.59375,
+        "height": 95.1953125
+      },
+      "writingArea": {
+        "left": 86.56361607142857,
+        "right": 233.43638392857144,
+        "top": 84.21484375,
+        "bottom": 109.78158482142857
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 86.5,
+        "bottom": 110.5
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "culture",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 51,
+        "right": 269,
+        "top": 80.2265625,
+        "bottom": 108.2265625,
+        "width": 218,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 1,
+        "right": 319,
+        "top": 37,
+        "bottom": 163,
+        "width": 318,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 78.22857142857143,
+        "right": 241.77142857142857,
+        "top": 78.8,
+        "bottom": 107.26857142857143
+      },
+      "glyphEnvelope": {
+        "left": 114,
+        "right": 206,
+        "top": 80.2265625,
+        "bottom": 108.2265625
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "culture",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 54,
+        "right": 266,
+        "top": 74.796875,
+        "bottom": 98.796875,
+        "width": 212,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 14,
+        "right": 306,
+        "top": 29,
+        "bottom": 155,
+        "width": 292,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 84.91428571428571,
+        "right": 235.0857142857143,
+        "top": 72.53333333333333,
+        "bottom": 98.67428571428573
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 74.796875,
+        "bottom": 98.796875
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "industry",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 118,
+        "right": 202,
+        "top": 85.4375,
+        "bottom": 109.4375,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 15.1953125,
+        "right": 304.2578125,
+        "top": 50.0859375,
+        "bottom": 147.8125,
+        "width": 289.0625,
+        "height": 97.7265625
+      },
+      "writingArea": {
+        "left": 85.39931778169014,
+        "right": 234.05380721830986,
+        "top": 84.49669894366197,
+        "bottom": 110.37359154929577
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 85.4375,
+        "bottom": 109.4375
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "industry",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 46,
+        "right": 274,
+        "top": 86.28125,
+        "bottom": 114.28125,
+        "width": 228,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": -4,
+        "right": 324,
+        "top": 39,
+        "bottom": 165,
+        "width": 328,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 75.65714285714286,
+        "right": 244.34285714285716,
+        "top": 85.60000000000001,
+        "bottom": 114.96380952380953
+      },
+      "glyphEnvelope": {
+        "left": 114,
+        "right": 206,
+        "top": 86.28125,
+        "bottom": 114.28125
+      }
+    },
+    {
+      "size": {
+        "w": 320,
+        "h": 568,
+        "status": 20,
+        "safe": 0
+      },
+      "theme": "industry",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 56,
+        "right": 264,
+        "top": 80.484375,
+        "bottom": 104.484375,
+        "width": 208,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 304,
+        "top": 31,
+        "bottom": 157,
+        "width": 288,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 85.94285714285714,
+        "right": 234.05714285714288,
+        "top": 79.6,
+        "bottom": 105.38285714285715
+      },
+      "glyphEnvelope": {
+        "left": 118,
+        "right": 202,
+        "top": 80.484375,
+        "bottom": 104.484375
+      }
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "ecology",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 145.5,
+        "right": 229.5,
+        "top": 100.796875,
+        "bottom": 124.796875,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 31.6171875,
+        "right": 343.3828125,
+        "top": 67.0703125,
+        "bottom": 170.9921875,
+        "width": 311.765625,
+        "height": 103.921875
+      },
+      "writingArea": {
+        "left": 108.519375,
+        "right": 266.48062500000003,
+        "top": 99.909625,
+        "bottom": 130.6705
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 100.796875,
+        "bottom": 124.796875
+      },
+      "screenshot": "compact-title-ecology-home.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "ecology",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 46,
+        "right": 329,
+        "top": 111.4609375,
+        "bottom": 139.4609375,
+        "width": 283,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": -4,
+        "right": 379,
+        "top": 69,
+        "bottom": 195,
+        "width": 383,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 91.74,
+        "right": 283.26,
+        "top": 108.816,
+        "bottom": 146.112
+      },
+      "glyphEnvelope": {
+        "left": 141.5,
+        "right": 233.5,
+        "top": 111.4609375,
+        "bottom": 139.4609375
+      },
+      "screenshot": "compact-title-ecology-heading.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "ecology",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 52,
+        "right": 323,
+        "top": 138.8203125,
+        "bottom": 162.8203125,
+        "width": 271,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 12,
+        "right": 363,
+        "top": 99,
+        "bottom": 215,
+        "width": 351,
+        "height": 116
+      },
+      "writingArea": {
+        "left": 99.33999999999999,
+        "right": 275.66,
+        "top": 135.656,
+        "bottom": 169.99200000000002
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 138.8203125,
+        "bottom": 162.8203125
+      },
+      "screenshot": "compact-title-ecology-modal.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "red",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 145.5,
+        "right": 229.5,
+        "top": 107.5,
+        "bottom": 131.5,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 36.7421875,
+        "right": 338.546875,
+        "top": 72.0078125,
+        "bottom": 172.609375,
+        "width": 301.8046875,
+        "height": 100.6015625
+      },
+      "writingArea": {
+        "left": 110.03761160714286,
+        "right": 265.2514508928571,
+        "top": 104.48774553571428,
+        "bottom": 131.50645089285715
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 107.5,
+        "bottom": 131.5
+      },
+      "screenshot": "compact-title-red-home.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "red",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 50,
+        "right": 325,
+        "top": 110.8359375,
+        "bottom": 138.8359375,
+        "width": 275,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 375,
+        "top": 66,
+        "bottom": 192,
+        "width": 375,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 91.07142857142857,
+        "right": 283.92857142857144,
+        "top": 106.85714285714286,
+        "bottom": 140.42857142857142
+      },
+      "glyphEnvelope": {
+        "left": 141.5,
+        "right": 233.5,
+        "top": 110.8359375,
+        "bottom": 138.8359375
+      },
+      "screenshot": "compact-title-red-heading.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "red",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 53,
+        "right": 322,
+        "top": 138.2109375,
+        "bottom": 162.2109375,
+        "width": 269,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 13,
+        "right": 362,
+        "top": 91,
+        "bottom": 217,
+        "width": 349,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 97.75714285714285,
+        "right": 277.24285714285713,
+        "top": 133.39238095238093,
+        "bottom": 164.63619047619048
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 138.2109375,
+        "bottom": 162.2109375
+      },
+      "screenshot": "compact-title-red-modal.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "culture",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 145.5,
+        "right": 229.5,
+        "top": 107.5,
+        "bottom": 131.5,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 37.3515625,
+        "right": 337.6484375,
+        "top": 74.5234375,
+        "bottom": 174.6171875,
+        "width": 300.296875,
+        "height": 100.09375
+      },
+      "writingArea": {
+        "left": 110.28482142857143,
+        "right": 264.71517857142857,
+        "top": 104.5515625,
+        "bottom": 131.43388392857142
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 107.5,
+        "bottom": 131.5
+      },
+      "screenshot": "compact-title-culture-home.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "culture",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 51,
+        "right": 324,
+        "top": 109.0234375,
+        "bottom": 137.0234375,
+        "width": 273,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 1,
+        "right": 374,
+        "top": 67,
+        "bottom": 193,
+        "width": 373,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 91.58571428571429,
+        "right": 283.4142857142857,
+        "top": 105.13333333333334,
+        "bottom": 138.5257142857143
+      },
+      "glyphEnvelope": {
+        "left": 141.5,
+        "right": 233.5,
+        "top": 109.0234375,
+        "bottom": 137.0234375
+      },
+      "screenshot": "compact-title-culture-heading.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "culture",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 54,
+        "right": 321,
+        "top": 135.59375,
+        "bottom": 159.59375,
+        "width": 267,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 14,
+        "right": 361,
+        "top": 91,
+        "bottom": 217,
+        "width": 347,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 98.27142857142857,
+        "right": 276.7285714285714,
+        "top": 130.86666666666667,
+        "bottom": 161.93142857142857
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 135.59375,
+        "bottom": 159.59375
+      },
+      "screenshot": "compact-title-culture-modal.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "industry",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 145.5,
+        "right": 229.5,
+        "top": 106.4609375,
+        "bottom": 130.4609375,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 35.2421875,
+        "right": 339.1875,
+        "top": 68.671875,
+        "bottom": 171.4296875,
+        "width": 303.9453125,
+        "height": 102.7578125
+      },
+      "writingArea": {
+        "left": 109.06101452464789,
+        "right": 265.3686729753521,
+        "top": 104.85420334507043,
+        "bottom": 132.06331426056337
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 106.4609375,
+        "bottom": 130.4609375
+      },
+      "screenshot": "compact-title-industry-home.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "industry",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 46,
+        "right": 329,
+        "top": 116.046875,
+        "bottom": 144.046875,
+        "width": 283,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": -4,
+        "right": 379,
+        "top": 69,
+        "bottom": 195,
+        "width": 383,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 91.66901408450704,
+        "right": 283.330985915493,
+        "top": 113.36619718309859,
+        "bottom": 146.72957746478872
+      },
+      "glyphEnvelope": {
+        "left": 141.5,
+        "right": 233.5,
+        "top": 116.046875,
+        "bottom": 144.046875
+      },
+      "screenshot": "compact-title-industry-heading.png"
+    },
+    {
+      "size": {
+        "w": 375,
+        "h": 812,
+        "status": 44,
+        "safe": 34
+      },
+      "theme": "industry",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 56,
+        "right": 319,
+        "top": 140.203125,
+        "bottom": 164.203125,
+        "width": 263,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 359,
+        "top": 91,
+        "bottom": 217,
+        "width": 343,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 99.3,
+        "right": 275.7,
+        "top": 136.85,
+        "bottom": 167.55666666666664
+      },
+      "glyphEnvelope": {
+        "left": 145.5,
+        "right": 229.5,
+        "top": 140.203125,
+        "bottom": 164.203125
+      },
+      "screenshot": "compact-title-industry-modal.png"
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "ecology",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 173,
+        "right": 257,
+        "top": 115.796875,
+        "bottom": 139.796875,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 59.1171875,
+        "right": 370.8828125,
+        "top": 82.0703125,
+        "bottom": 185.9921875,
+        "width": 311.765625,
+        "height": 103.921875
+      },
+      "writingArea": {
+        "left": 136.019375,
+        "right": 293.98062500000003,
+        "top": 114.909625,
+        "bottom": 145.6705
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 115.796875,
+        "bottom": 139.796875
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "ecology",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 46,
+        "right": 384,
+        "top": 126.4609375,
+        "bottom": 154.4609375,
+        "width": 338,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": -4,
+        "right": 434,
+        "top": 84,
+        "bottom": 210,
+        "width": 438,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 119.24,
+        "right": 310.76,
+        "top": 123.816,
+        "bottom": 161.112
+      },
+      "glyphEnvelope": {
+        "left": 169,
+        "right": 261,
+        "top": 126.4609375,
+        "bottom": 154.4609375
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "ecology",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 52,
+        "right": 378,
+        "top": 162.3203125,
+        "bottom": 186.3203125,
+        "width": 326,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 12,
+        "right": 418,
+        "top": 122.5,
+        "bottom": 238.5,
+        "width": 406,
+        "height": 116
+      },
+      "writingArea": {
+        "left": 126.83999999999999,
+        "right": 303.16,
+        "top": 159.156,
+        "bottom": 193.49200000000002
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 162.3203125,
+        "bottom": 186.3203125
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "red",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 173,
+        "right": 257,
+        "top": 122.5,
+        "bottom": 146.5,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 64.2421875,
+        "right": 366.046875,
+        "top": 87.0078125,
+        "bottom": 187.609375,
+        "width": 301.8046875,
+        "height": 100.6015625
+      },
+      "writingArea": {
+        "left": 137.53761160714288,
+        "right": 292.7514508928571,
+        "top": 119.48774553571427,
+        "bottom": 146.50645089285712
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 122.5,
+        "bottom": 146.5
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "red",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 50,
+        "right": 380,
+        "top": 125.796875,
+        "bottom": 153.796875,
+        "width": 330,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 430,
+        "top": 81,
+        "bottom": 207,
+        "width": 430,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 117.8,
+        "right": 312.2,
+        "top": 121.67999999999999,
+        "bottom": 155.51999999999998
+      },
+      "glyphEnvelope": {
+        "left": 169,
+        "right": 261,
+        "top": 125.796875,
+        "bottom": 153.796875
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "red",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 53,
+        "right": 377,
+        "top": 161.296875,
+        "bottom": 185.296875,
+        "width": 324,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 13,
+        "right": 417,
+        "top": 114.5,
+        "bottom": 240.5,
+        "width": 404,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 117.8,
+        "right": 312.2,
+        "top": 155.18,
+        "bottom": 189.01999999999998
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 161.296875,
+        "bottom": 185.296875
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "culture",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 173,
+        "right": 257,
+        "top": 122.5,
+        "bottom": 146.5,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 64.8515625,
+        "right": 365.1484375,
+        "top": 89.5234375,
+        "bottom": 189.6171875,
+        "width": 300.296875,
+        "height": 100.09375
+      },
+      "writingArea": {
+        "left": 137.78482142857143,
+        "right": 292.21517857142857,
+        "top": 119.5515625,
+        "bottom": 146.43388392857142
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 122.5,
+        "bottom": 146.5
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "culture",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 51,
+        "right": 379,
+        "top": 123.9140625,
+        "bottom": 151.9140625,
+        "width": 328,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 1,
+        "right": 429,
+        "top": 82,
+        "bottom": 208,
+        "width": 428,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 117.8,
+        "right": 312.2,
+        "top": 119.8,
+        "bottom": 153.64
+      },
+      "glyphEnvelope": {
+        "left": 169,
+        "right": 261,
+        "top": 123.9140625,
+        "bottom": 151.9140625
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "culture",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 54,
+        "right": 376,
+        "top": 158.4140625,
+        "bottom": 182.4140625,
+        "width": 322,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 14,
+        "right": 416,
+        "top": 114.5,
+        "bottom": 240.5,
+        "width": 402,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 117.8,
+        "right": 312.2,
+        "top": 152.3,
+        "bottom": 186.14
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 158.4140625,
+        "bottom": 182.4140625
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "industry",
+      "context": "home",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 173,
+        "right": 257,
+        "top": 121.4609375,
+        "bottom": 145.4609375,
+        "width": 84,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 62.7421875,
+        "right": 366.6875,
+        "top": 83.671875,
+        "bottom": 186.4296875,
+        "width": 303.9453125,
+        "height": 102.7578125
+      },
+      "writingArea": {
+        "left": 136.56101452464787,
+        "right": 292.8686729753521,
+        "top": 119.85420334507043,
+        "bottom": 147.06331426056337
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 121.4609375,
+        "bottom": 145.4609375
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "industry",
+      "context": "heading",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 46,
+        "right": 384,
+        "top": 131.046875,
+        "bottom": 159.046875,
+        "width": 338,
+        "height": 28
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": -4,
+        "right": 434,
+        "top": 84,
+        "bottom": 210,
+        "width": 438,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 119.16901408450704,
+        "right": 310.830985915493,
+        "top": 128.3661971830986,
+        "bottom": 161.72957746478872
+      },
+      "glyphEnvelope": {
+        "left": 169,
+        "right": 261,
+        "top": 131.046875,
+        "bottom": 159.046875
+      }
+    },
+    {
+      "size": {
+        "w": 430,
+        "h": 844,
+        "status": 59,
+        "safe": 34
+      },
+      "theme": "industry",
+      "context": "modal",
+      "passed": true,
+      "issues": [],
+      "label": {
+        "id": "",
+        "dataset": {},
+        "left": 56,
+        "right": 374,
+        "top": 163.546875,
+        "bottom": 187.546875,
+        "width": 318,
+        "height": 24
+      },
+      "image": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 414,
+        "top": 114.5,
+        "bottom": 240.5,
+        "width": 398,
+        "height": 126
+      },
+      "writingArea": {
+        "left": 119.16901408450704,
+        "right": 310.830985915493,
+        "top": 158.8661971830986,
+        "bottom": 192.22957746478872
+      },
+      "glyphEnvelope": {
+        "left": 173,
+        "right": 257,
+        "top": 163.546875,
+        "bottom": 187.546875
+      }
+    }
+  ],
+  "captureNote": "Title geometry predates the separate canvas-clipping correction; these constrained images accept title areas only. Updated whole-home review images are captured separately after the canvas fix."
+}

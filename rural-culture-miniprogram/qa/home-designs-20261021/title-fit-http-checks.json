@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21T13:12:57.429Z",
+  "passed": true,
+  "scope": "HTTP source byte integrity only; not browser visual acceptance.",
+  "checks": [
+    {
+      "file": "services-v4/home-layout.js",
+      "status": 200,
+      "matches": true,
+      "sha256": "0fbcac3b5dee8743c7de9758c2104cf8b33a2f63f6d21bec786d7676049eca7b"
+    },
+    {
+      "file": "services-v4/mascot-canvas.js",
+      "status": 200,
+      "matches": true,
+      "sha256": "387ace443bb64483f06c13a4477c9ea979aa486cad67185a9f34116ef2987396"
+    },
+    {
+      "file": "services-v4/mascot-motion.js",
+      "status": 200,
+      "matches": true,
+      "sha256": "0a2c1e47cdbaa16078d627e7edc467a19a2e975e54634430b9542c8c1debcf97"
+    },
+    {
+      "file": "pages/game/index.wxml",
+      "status": 200,
+      "matches": true,
+      "sha256": "b948d28cc24ca3e51b0ed46545e44420a415ac21c157841373e02f6c7a9b7b2c"
+    },
+    {
+      "file": "首页方案A-20261021.html",
+      "status": 200,
+      "matches": true
+    }
+  ]
+}

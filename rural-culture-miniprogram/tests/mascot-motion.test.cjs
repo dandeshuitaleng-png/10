@@ -43,3 +43,11 @@ test('each seasonal tap completes its shorter gesture; repeated taps refresh fee
   e.controller.react('one');assert.equal(e.controller.state().sequence,started+1);assert.equal(e.controller.state().touchSequence,102);e.controller.hide();assert.equal(e.controller.state().respondingId,'');e.controller.dispose();
  }
 });
+
+test('a partly clipped figure uses its static image; animation stops before it can cross the map edge',()=>{
+ const e=env(),node={id:'one',pose:'welcome',status:'current',actorTop:100,actorBottom:176};
+ e.controller.update({...e.context,nodes:[node],viewportHeight:200});assert.equal(e.controller.state().playingId,'one');
+ e.controller.update({viewportHeight:160});assert.equal(e.controller.state().playingId,'');assert.equal(e.controller.react('one'),false);assert.equal(e.timers.size,0);
+ e.controller.update({viewportTop:120,viewportHeight:200});assert.equal(e.controller.state().playingId,'');
+ e.controller.update({viewportTop:0,viewportHeight:200});assert.equal(e.controller.react('one'),true);e.controller.dispose();
+});

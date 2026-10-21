@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{spawn}=require('node:child_process');
+const root=path.resolve(__dirname,'..'),project=path.resolve(root,'../.rural-quiz-runtime/theme-content-review'),out=path.join(root,'qa/home-designs-20261021');
+async function call(tool,args=[]){return new Promise((resolve,reject)=>{const c=spawn('/usr/local/bin/wechatide',['-c','Codex',tool,'--project',project,...args]);let s='';c.stdout.on('data',b=>s+=b);c.stderr.on('data',b=>s+=b);const timer=setTimeout(()=>{c.kill();reject(Error(tool+' timeout'));},45000);c.on('close',code=>{clearTimeout(timer);let r;try{r=JSON.parse(s.slice(s.indexOf('{'),s.lastIndexOf('}')+1));}catch{return reject(Error(s.slice(0,600)));}if(code||!r.ok||r.result?.success===false)return reject(Error(r.message||s.slice(0,600)));resolve(r.result);});});}
+(async()=>{
+ await call('automation_navigate',['--action','reLaunch','--url','/pages/game/index?theme=red&review=1&controls=0&scenario=home']);
+ let r=await call('automation_evaluate',['--fn-source','async function(){const p=getCurrentPages().slice(-1)[0];p.setData({mapScrollTop:0});p.onMapScroll({detail:{scrollTop:0}});await new Promise(r=>setTimeout(r,500));const q=wx.createSelectorQuery();q.select(".game-device").boundingClientRect();q.select(".panel-body").boundingClientRect();q.select(".route-stop.current .chapter-mascot").boundingClientRect();return {playing:p.data.motion.playingId,rect:await new Promise(r=>q.exec(r))};}']);
+ for(let i=0;i<6&&r?.result!==undefined;i++)r=r.result;
+ const image=path.join(out,'mascot-clipping-'+(process.argv[2]||'current')+'.png');await call('simulator_screenshot',['--path',image,'--optimize','false']);
+ const sharp=require('./asset-runtime.cjs').sharp(),{data,info}=await sharp(image).removeAlpha().raw().toBuffer({resolveWithObject:true}),scale=info.width/r.rect[0].width,top=Math.ceil(r.rect[1].bottom*scale),pixels=[];
+ for(let y=top;y<info.height;y++)for(let x=0;x<info.width;x++){const i=(y*info.width+x)*3,[red,green,blue]=data.subarray(i,i+3);if(red<190&&green>160&&blue>200&&blue>green+8&&green>red+35)pixels.push([x,y]);}
+ const record={passed:pixels.length<30,blueMascotPixelsBelowMap:pixels.length,footerTop:top,rect:r.rect,playing:r.playing,screenshot:path.basename(image)};fs.writeFileSync(path.join(out,'mascot-clipping-'+(process.argv[2]||'current')+'.json'),JSON.stringify(record,null,2)+'\n');console.log(JSON.stringify(record,null,2));assert(record.passed,'Original mascot cyan face leaked below the map into the footer');
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -36,9 +36,13 @@ function createAnimator({canvas,image,rig,width,height,pixelRatio=2,clock=()=>Da
  canvas.width=Math.max(1,Math.round(width*ratio));canvas.height=Math.max(1,Math.round(height*ratio));ctx.scale(canvas.width/rig.width,canvas.height/rig.height);
  let frame=null,active=false,key='',started=0,duration=rig.duration,amount=.55,lastFrame=-Infinity;
  const schedule=fn=>canvas.requestAnimationFrame?canvas.requestAnimationFrame(fn):setTimeout(fn,33),cancel=id=>canvas.cancelAnimationFrame?canvas.cancelAnimationFrame(id):clearTimeout(id);
- function stop(){active=false;if(frame!==null)cancel(frame);frame=null;key='';}
+ function stop(){active=false;if(frame!==null)cancel(frame);frame=null;key='';
+  // Native canvas pixels can outlive CSS opacity/scroll clipping. The ordinary
+  // image owns the still pose; a stopped canvas must contain no duplicate IP.
+  try{ctx.clearRect(0,0,rig.width,rig.height);}catch(e){/* The native node may already be detached. */}
+ }
  function render(progress){paint(ctx,image,rig,mesh,angleAt(progress,rig.gesture.angles,amount));}
  function tick(){frame=null;if(!active)return;try{const now=clock(),p=Math.min(1,(now-started)/duration);if(now-lastFrame>=30||p===1){render(p);lastFrame=now;}if(p<1)frame=schedule(tick);else active=false;}catch(e){stop();onError(e);}}
- return {update({playing,responding,cycle}){if(!playing){stop();render(0);return;}const next=String(cycle)+':'+!!responding;if(next===key)return;stop();key=next;duration=responding?rig.responseDuration:rig.duration;amount=responding?1:.55;active=true;started=clock();lastFrame=-Infinity;tick();},stop,drawFrame(progress,responding=true){amount=responding?1:.55;render(progress);},state(){return {active,key,framePending:frame!==null};}};
+ return {update({playing,responding,cycle}){if(!playing){stop();return;}const next=String(cycle)+':'+!!responding;if(next===key)return;stop();key=next;duration=responding?rig.responseDuration:rig.duration;amount=responding?1:.55;active=true;started=clock();lastFrame=-Infinity;tick();},stop,drawFrame(progress,responding=true){amount=responding?1:.55;render(progress);},state(){return {active,key,framePending:frame!==null};}};
 }
 module.exports={geometry,deform,angleAt,paint,createAnimator};

@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "copies": [
+    {
+      "project": ".",
+      "part": "pages/game/index.wxml",
+      "matched": true
+    },
+    {
+      "project": ".",
+      "part": "services-v4/home-layout.js",
+      "matched": true
+    },
+    {
+      "project": ".",
+      "part": "services-v4/mascot-canvas.js",
+      "matched": true
+    },
+    {
+      "project": ".",
+      "part": "services-v4/mascot-motion.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/十步芳草",
+      "part": "pages/game/index.wxml",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/十步芳草",
+      "part": "services-v4/home-layout.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/十步芳草",
+      "part": "services-v4/mascot-canvas.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/十步芳草",
+      "part": "services-v4/mascot-motion.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/千年文脉",
+      "part": "pages/game/index.wxml",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/千年文脉",
+      "part": "services-v4/home-layout.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/千年文脉",
+      "part": "services-v4/mascot-canvas.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/千年文脉",
+      "part": "services-v4/mascot-motion.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/金色产业",
+      "part": "pages/game/index.wxml",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/金色产业",
+      "part": "services-v4/home-layout.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/金色产业",
+      "part": "services-v4/mascot-canvas.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/金色产业",
+      "part": "services-v4/mascot-motion.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/青山绿水",
+      "part": "pages/game/index.wxml",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/青山绿水",
+      "part": "services-v4/home-layout.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/青山绿水",
+      "part": "services-v4/mascot-canvas.js",
+      "matched": true
+    },
+    {
+      "project": "../交付/微信小程序四套/青山绿水",
+      "part": "services-v4/mascot-motion.js",
+      "matched": true
+    }
+  ]
+}
