@@ -5,8 +5,14 @@ const spec=Object.freeze({header:195,title:115,row:36,gutter:16,footerTop:8,foot
 function mapMetrics(width=375){
  const w=Number(width)||375,scale=Math.max(88/96,Math.min(110/96,w/375)),small=w<=350;
  const nodeWidth=Math.round(96*scale),nodeHeight=Math.round(86*scale),cardWidth=Math.round(Math.max(124,Math.min(150,w*.35)));
+ // Match the rendered podium face and seasonal actor, rather than the taller
+ // route-stop hit area. Reserve every figure's space before it is unlocked.
+ const actorHeight=small?66:w>=410?84:76,baseCenterY=6+nodeWidth*.375;
+ const cardCenterOffset=baseCenterY-nodeHeight/2;
+ const lowerExtent=Math.max(nodeHeight/2,cardCenterOffset+spec.cardHeight/2);
+ const minRowGap=Math.ceil(baseCenterY+spec.cardHeight/2-30+actorHeight+8);
  const guideWidth=small?48:spec.guideWidth,guideHeight=small?58:spec.guideHeight,guideLabelWidth=small?60:64,overhang=(guideLabelWidth-guideWidth)/2;
- return {nodeWidth,nodeHeight,cardWidth,cardHeight:spec.cardHeight,cardGap:spec.cardGap,guideWidth,guideHeight,guideBottom:small?48:spec.guideBottom,guideLabelWidth,guideFont:small?10:11,guideRight:Math.min(nodeWidth+(small?8:-8),Math.floor(w*.33+nodeWidth/2-guideWidth-8-overhang)),guideLeft:Math.max(-28,8+overhang-(w*.26-nodeWidth/2))};
+ return {nodeWidth,nodeHeight,cardWidth,cardHeight:spec.cardHeight,cardGap:spec.cardGap,actorHeight,baseCenterY,cardCenterOffset,lowerExtent,minRowGap,guideWidth,guideHeight,guideBottom:small?48:spec.guideBottom,guideLabelWidth,guideFont:small?10:11,guideRight:Math.min(nodeWidth+(small?8:-8),Math.floor(w*.33+nodeWidth/2-guideWidth-8-overhang)),guideLeft:Math.max(-28,8+overhang-(w*.26-nodeWidth/2))};
 }
 function metrics(info={},menu,gameId){
  const width=Math.min(Number(info.windowWidth)||375,430),height=Number(info.windowHeight)||812,status=Number(info.statusBarHeight)||44;

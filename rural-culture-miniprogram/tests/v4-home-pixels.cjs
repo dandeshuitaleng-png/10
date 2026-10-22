@@ -22,7 +22,7 @@ test('不同进度和短屏按实际卡片边界定位，保留16px下方间距'
   const rows=Array.from({length:4},(_,i)=>({id:'l'+i,status:state==='complete'?'completed':state==='locked'?(i<2?'completed':i===2?'today-locked':'locked'):i<state?'completed':i===state?'current':'locked'}));
   const r=layout(rows,game,width,p.mapViewport),focus=r.nodes.find(n=>n.id===r.guideId)||r.nodes.at(-1);
   const scale=Math.max(88/96,Math.min(110/96,width/375)),nodeHeight=Math.round(86*scale),center=r.height-focus.distance;
-  const bottom=center+Math.max(nodeHeight/2,45)-r.focusTop;
+  const bottom=center+home.mapMetrics(width).lowerExtent-r.focusTop;
   assert.ok(bottom<=p.mapViewport-15,'focus card is clipped at bottom');
   const guideHeight=width<=350?75:87,guideBottom=width<=350?48:60;
   const top=r.guideId?center+nodeHeight/2-guideBottom-guideHeight-r.focusTop:center-45-r.focusTop;
@@ -32,8 +32,8 @@ test('不同进度和短屏按实际卡片边界定位，保留16px下方间距'
 });
 test('宽横幅布局下当前产业关卡仍保留16px底部间距',()=>{
  const rows=Array.from({length:4},(_,i)=>({id:'l'+i,status:i===0?'current':'locked'})),r=layout(rows,'industry',390,497);
- const bottom=r.height-r.nodes[0].distance+45-r.focusTop;
- assert.ok(bottom<=497-15);assert.equal(r.focusTop,130);
+ const bottom=r.height-r.nodes[0].distance+home.mapMetrics(390).lowerExtent-r.focusTop;
+ assert.ok(bottom<=497-15&&bottom>=497-17);assert.ok(r.focusTop>=0&&r.focusTop<=r.maxScroll);
 });
 test('浏览器WXSS导入器会内联实际共享样式，保持与原生的加载顺序',async()=>{
  const source=fs.readFileSync(require.resolve('../preview/v4-runtime.js'),'utf8');

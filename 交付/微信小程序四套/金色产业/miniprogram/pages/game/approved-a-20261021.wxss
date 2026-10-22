@@ -19,3 +19,7 @@
 .game-device.feedback-20261019 .quest-banner{padding-right:12px}
 .game-device.feedback-20261019 .profile-card{padding-top:24px;padding-bottom:24px}
 .game-device.feedback-20261019 .points-user{justify-content:flex-start;gap:0}
+/* Pair each chapter card with the visible podium face, not the hit-area edge.
+ * Keep state badges within their own podium; neighbouring chapters stay clear. */
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map button.route-caption{top:calc(6px + var(--home-node-w) * .375 - var(--home-card-h) / 2);bottom:auto}
+.game-device.feedback-20261019.activity-page.home-layout.home-design-map .route-node-badge{width:24px;height:24px;right:2px;top:calc(6px + var(--home-node-w) * .75 - 26px);bottom:auto}

@@ -1,0 +1,33 @@
+✖ chapter cards stay with their bases and clear every neighbouring figure across scene boundaries (3.301316ms)
+✔ unlocking changes status and figures without moving the paired chapter units (1.721359ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 117.144706
+
+✖ failing tests:
+
+test at tests/journey-association.test.cjs:5:1
+✖ chapter cards stay with their bases and clear every neighbouring figure across scene boundaries (3.301316ms)
+  AssertionError [ERR_ASSERTION]: 320 1/0 card overlaps another chapter's figure
+  + actual - expected
+
+  + 382.46400000000085
+  - 0
+
+      at TestContext.<anonymous> (/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/tests/journey-association.test.cjs:9:166)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 382.46400000000085,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

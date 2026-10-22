@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "scope": "Shared geometry files match all four fixed-theme HTTP projects; no business/data migration.",
+  "checks": [
+    {
+      "theme": "十步芳草",
+      "gameId": "red",
+      "homeDesign": "map",
+      "mode": "http",
+      "files": [
+        {
+          "file": "services-v4/home-layout.js",
+          "sha256": "db6e341b6ea927d6629fc8f561835c0d6dd863e47c8079e2872c643a7958f9ce",
+          "matchesSource": true
+        },
+        {
+          "file": "services-v4/journey.js",
+          "sha256": "3ea8d32324e74e0098f57104a844d0d08a6eebd9e78136ef2e3981cfba2179b7",
+          "matchesSource": true
+        },
+        {
+          "file": "pages/game/approved-a-20261021.wxss",
+          "sha256": "6809aa25b4bc6ea19ae1ac37dd3737c4a68849aca3ce26fa1789146792f8a22e",
+          "matchesSource": true
+        }
+      ]
+    },
+    {
+      "theme": "千年文脉",
+      "gameId": "culture",
+      "homeDesign": "map",
+      "mode": "http",
+      "files": [
+        {
+          "file": "services-v4/home-layout.js",
+          "sha256": "db6e341b6ea927d6629fc8f561835c0d6dd863e47c8079e2872c643a7958f9ce",
+          "matchesSource": true
+        },
+        {
+          "file": "services-v4/journey.js",
+          "sha256": "3ea8d32324e74e0098f57104a844d0d08a6eebd9e78136ef2e3981cfba2179b7",
+          "matchesSource": true
+        },
+        {
+          "file": "pages/game/approved-a-20261021.wxss",
+          "sha256": "6809aa25b4bc6ea19ae1ac37dd3737c4a68849aca3ce26fa1789146792f8a22e",
+          "matchesSource": true
+        }
+      ]
+    },
+    {
+      "theme": "金色产业",
+      "gameId": "industry",
+      "homeDesign": "map",
+      "mode": "http",
+      "files": [
+        {
+          "file": "services-v4/home-layout.js",
+          "sha256": "db6e341b6ea927d6629fc8f561835c0d6dd863e47c8079e2872c643a7958f9ce",
+          "matchesSource": true
+        },
+        {
+          "file": "services-v4/journey.js",
+          "sha256": "3ea8d32324e74e0098f57104a844d0d08a6eebd9e78136ef2e3981cfba2179b7",
+          "matchesSource": true
+        },
+        {
+          "file": "pages/game/approved-a-20261021.wxss",
+          "sha256": "6809aa25b4bc6ea19ae1ac37dd3737c4a68849aca3ce26fa1789146792f8a22e",
+          "matchesSource": true
+        }
+      ]
+    },
+    {
+      "theme": "青山绿水",
+      "gameId": "ecology",
+      "homeDesign": "map",
+      "mode": "http",
+      "files": [
+        {
+          "file": "services-v4/home-layout.js",
+          "sha256": "db6e341b6ea927d6629fc8f561835c0d6dd863e47c8079e2872c643a7958f9ce",
+          "matchesSource": true
+        },
+        {
+          "file": "services-v4/journey.js",
+          "sha256": "3ea8d32324e74e0098f57104a844d0d08a6eebd9e78136ef2e3981cfba2179b7",
+          "matchesSource": true
+        },
+        {
+          "file": "pages/game/approved-a-20261021.wxss",
+          "sha256": "6809aa25b4bc6ea19ae1ac37dd3737c4a68849aca3ce26fa1789146792f8a22e",
+          "matchesSource": true
+        }
+      ]
+    }
+  ]
+}

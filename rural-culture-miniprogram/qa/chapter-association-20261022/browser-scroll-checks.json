@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-22T03:43:37.879Z",
+  "passed": true,
+  "scope": "Real browser Canvas pixels, repeated clicks with scrolling reversals after chapter pairing change; 375 CSS px; not phone touch proof.",
+  "checks": [
+    {
+      "animatedFrames": 85,
+      "buffer": [
+        151,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.00006103515625,
+      "maxFootError": 0.10503645603546374,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "welcome",
+      "scrollMax": 190.9090881347656,
+      "scrollMin": 0,
+      "stillFrames": 15,
+      "theme": "red",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "animatedFrames": 54,
+      "buffer": [
+        146,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.000030517578125,
+      "maxFootError": 0.07763564141743018,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "think",
+      "scrollMax": 48.18181610107422,
+      "scrollMin": 0,
+      "stillFrames": 46,
+      "theme": "red",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "animatedFrames": 85,
+      "buffer": [
+        151,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.00006103515625,
+      "maxFootError": 0.10503645603546374,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "welcome",
+      "scrollMax": 190.9090881347656,
+      "scrollMin": 0,
+      "stillFrames": 15,
+      "theme": "culture",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "animatedFrames": 54,
+      "buffer": [
+        146,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.000030517578125,
+      "maxFootError": 0.07763564141743018,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "think",
+      "scrollMax": 48.18181610107422,
+      "scrollMin": 0,
+      "stillFrames": 46,
+      "theme": "culture",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "animatedFrames": 85,
+      "buffer": [
+        151,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.00006103515625,
+      "maxFootError": 0.10503645603546374,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "welcome",
+      "scrollMax": 190.9090881347656,
+      "scrollMin": 0,
+      "stillFrames": 15,
+      "theme": "industry",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "animatedFrames": 54,
+      "buffer": [
+        146,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.000030517578125,
+      "maxFootError": 0.07763564141743018,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "think",
+      "scrollMax": 48.18181610107422,
+      "scrollMin": 0,
+      "stillFrames": 46,
+      "theme": "industry",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "animatedFrames": 85,
+      "buffer": [
+        151,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.00006103515625,
+      "maxFootError": 0.10503645603546374,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "welcome",
+      "scrollMax": 190.9090881347656,
+      "scrollMin": 0,
+      "stillFrames": 15,
+      "theme": "ecology",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "animatedFrames": 54,
+      "buffer": [
+        146,
+        239
+      ],
+      "dpr": 2.200000047683716,
+      "frames": 100,
+      "height": 812,
+      "maxAnchorError": 0.000030517578125,
+      "maxFootError": 0.07763564141743018,
+      "maxMatrixError": 1.0782749804150173e-8,
+      "maxPlaneError": 0,
+      "passed": true,
+      "pose": "think",
+      "scrollMax": 48.18181610107422,
+      "scrollMin": 0,
+      "stillFrames": 46,
+      "theme": "ecology",
+      "violations": [],
+      "width": 375
+    }
+  ]
+}

@@ -7,14 +7,14 @@
 </style>
 <style>.experience{display:none!important}</style></head>
 <body><main>
-<header><div class="eyebrow">趣味闯关 / A方案细化 · 2026.10.21</div><h1>A 方案 · 插画漫游</h1><p>按已确认的 A 方案细化。四主题分别补充纪念地标、书卷技艺、农田农产和溪流湿地，并采用各自的关卡底座。智小谷按春、夏、秋、冬排列，随关卡同步滚动，点击触发局部动作；信息页减少装饰性人物。横幅标题保留书写区留白；已修正人物滚动和动作切换时的缩放与漂移。</p></header>
+<header><div class="eyebrow">趣味闯关 / A方案细化 · 2026.10.21</div><h1>A 方案 · 插画漫游</h1><p>按已确认的 A 方案细化。四主题分别补充纪念地标、书卷技艺、农田农产和溪流湿地，并采用各自的关卡底座。智小谷按春、夏、秋、冬排列，随关卡同步滚动，点击触发局部动作；信息页减少装饰性人物。横幅标题保留书写区留白；已修正人物滚动和动作切换时的缩放与漂移。关卡卡片与底座水平对齐，相邻人物和锁标记留出间距，不增加连接线。</p></header>
 <div class="toolbar"><nav class="tabs" role="tablist" aria-label="选择评审主题"><button role="tab" aria-selected="true" data-theme="ecology">青山绿水</button><button role="tab" aria-selected="false" data-theme="red">十步芳草</button><button role="tab" aria-selected="false" data-theme="culture">千年文脉</button><button role="tab" aria-selected="false" data-theme="industry">金色产业</button></nav><span class="theme-note">四个独立主题 · A 方案</span></div>
 <section class="designs" aria-label="A方案首页">
 <article data-design="map"><div class="design-head"><span class="letter">A</span><div><h2>插画漫游</h2><p>让探索路线成为首页的视觉主角</p></div></div><a class="capture" href="home-directions-20261021/ecology-map.png" target="_blank" rel="noopener"><img src="home-directions-20261021/ecology-map.png" alt="青山绿水 A款插画漫游首页" width="852" height="1840"></a><div class="actions"><button class="experience" data-open="map">体验 A 款</button><a class="download" href="home-directions-20261021/ecology-map.png" download>下载评审图</a></div><p class="design-caption">横幅下方集中呈现闯关进度和常用入口，地图完整铺开。每个主题采用独立材质的关卡底座；已到达关卡保留人物，未来关卡以锁标记区分。春夏秋冬顺序固定，动作以手部和道具为主。</p></article>
 
 </section>
 
-<footer>评审图来自微信开发者工具实际页面。切换四个主题查看 A 方案，并下载单张原图。手机微信中的最终显示与触摸效果仍需复核。</footer>
+<footer>评审图来自微信开发者工具实际页面。交互入口采用相同页面源码；本轮已完成浏览器逐帧和微信模拟器核查，实体 iPhone、安卓微信效果仍需复核。</footer>
 </main>
 <div class="viewer" hidden role="dialog" aria-modal="true" aria-label="首页交互体验"><span class="viewer-label"></span><button class="viewer-close">关闭体验 ×</button><div class="viewport"><iframe title="主题首页交互体验" src="about:blank"></iframe></div></div>
 <script>
@@ -25,6 +25,6 @@ document.querySelectorAll('[data-theme]').forEach(b=>b.onclick=()=>choose(b.data
 document.querySelectorAll('[data-design] .capture').forEach(a=>{a.title='点击画面进入互动体验';a.onclick=e=>{const button=a.closest('article').querySelector('[data-open]');if(location.protocol==='file:'||!button||getComputedStyle(button).display==='none')return;e.preventDefault();button.click();};});
 function fit(){const scale=Math.min(1,(innerWidth-20)/375,(innerHeight-64)/812);viewport.style.width=375*scale+'px';viewport.style.height=812*scale+'px';frame.style.transform='scale('+scale+')';}
 function close(){viewer.hidden=true;frame.src='about:blank';document.body.classList.remove('viewing');previousFocus?.focus();}
-document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>{previousFocus=b;viewer.hidden=false;document.body.classList.add('viewing');viewer.querySelector('.viewer-label').textContent=names[theme]+' · '+'A 款 / 插画漫游';frame.src='v4.html?revision=20261021-scroll-buffer#/pages/game/index?theme='+theme+'&review=1&controls=0&scenario=home&homeDesign='+b.dataset.open;fit();viewer.querySelector('.viewer-close').focus();});
+document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>{previousFocus=b;viewer.hidden=false;document.body.classList.add('viewing');viewer.querySelector('.viewer-label').textContent=names[theme]+' · '+'A 款 / 插画漫游';frame.src='v4.html?revision=20261022-card-aligned#/pages/game/index?theme='+theme+'&review=1&controls=0&scenario=home&homeDesign='+b.dataset.open;fit();viewer.querySelector('.viewer-close').focus();});
 viewer.querySelector('.viewer-close').onclick=close;viewer.onclick=e=>{if(e.target===viewer)close();};addEventListener('keydown',e=>{if(e.key==='Escape'&&!viewer.hidden)close();if(e.key==='Tab'&&!viewer.hidden){if(e.shiftKey&&document.activeElement===viewer.querySelector('.viewer-close')){e.preventDefault();frame.focus();}else if(!e.shiftKey&&document.activeElement===frame){e.preventDefault();viewer.querySelector('.viewer-close').focus();}}});addEventListener('resize',fit);
 </script></body></html>
