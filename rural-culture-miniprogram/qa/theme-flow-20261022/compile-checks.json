@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-22T04:12:46.756Z",
+  "passed": true,
+  "scope": "Native WXML/WXSS compilers and syntax checks, effective source package bytes; not device or upload proof.",
+  "checks": [
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram",
+      "passed": true,
+      "bytes": 1649791,
+      "mainPackageUnder2MiB": true,
+      "checks": [
+        {
+          "name": "JSON and JavaScript syntax",
+          "passed": true,
+          "fileCount": 183
+        },
+        {
+          "name": "wcc",
+          "passed": true,
+          "fileCount": 4,
+          "exitCode": 0
+        },
+        {
+          "name": "wcsc",
+          "passed": true,
+          "fileCount": 15,
+          "exitCode": 0
+        }
+      ]
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草",
+      "passed": true,
+      "bytes": 1717193,
+      "mainPackageUnder2MiB": true,
+      "checks": [
+        {
+          "name": "JSON and JavaScript syntax",
+          "passed": true,
+          "fileCount": 175
+        },
+        {
+          "name": "wcc",
+          "passed": true,
+          "fileCount": 4,
+          "exitCode": 0
+        },
+        {
+          "name": "wcsc",
+          "passed": true,
+          "fileCount": 15,
+          "exitCode": 0
+        }
+      ]
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉",
+      "passed": true,
+      "bytes": 1723276,
+      "mainPackageUnder2MiB": true,
+      "checks": [
+        {
+          "name": "JSON and JavaScript syntax",
+          "passed": true,
+          "fileCount": 175
+        },
+        {
+          "name": "wcc",
+          "passed": true,
+          "fileCount": 4,
+          "exitCode": 0
+        },
+        {
+          "name": "wcsc",
+          "passed": true,
+          "fileCount": 15,
+          "exitCode": 0
+        }
+      ]
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业",
+      "passed": true,
+      "bytes": 1650391,
+      "mainPackageUnder2MiB": true,
+      "checks": [
+        {
+          "name": "JSON and JavaScript syntax",
+          "passed": true,
+          "fileCount": 175
+        },
+        {
+          "name": "wcc",
+          "passed": true,
+          "fileCount": 4,
+          "exitCode": 0
+        },
+        {
+          "name": "wcsc",
+          "passed": true,
+          "fileCount": 15,
+          "exitCode": 0
+        }
+      ]
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水",
+      "passed": true,
+      "bytes": 1833104,
+      "mainPackageUnder2MiB": true,
+      "checks": [
+        {
+          "name": "JSON and JavaScript syntax",
+          "passed": true,
+          "fileCount": 177
+        },
+        {
+          "name": "wcc",
+          "passed": true,
+          "fileCount": 4,
+          "exitCode": 0
+        },
+        {
+          "name": "wcsc",
+          "passed": true,
+          "fileCount": 15,
+          "exitCode": 0
+        }
+      ]
+    }
+  ]
+}

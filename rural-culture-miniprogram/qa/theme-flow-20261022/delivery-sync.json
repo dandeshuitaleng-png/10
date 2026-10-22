@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "theme": "十步芳草",
+      "mode": "http",
+      "gameId": "red",
+      "homeDesign": "map",
+      "files": [
+        {
+          "file": "pages/game/index.js",
+          "sha256": "89f6ba12c4efa275d90388503fc0420c1b11284c172be2ea57b05ca8dd21f1e1"
+        },
+        {
+          "file": "pages/game/index.wxml",
+          "sha256": "d9968eecc940f3abf213cc9047764df292b06ef96165d708982009ee49b5261f"
+        },
+        {
+          "file": "pages/game/theme-details-20261022.wxss",
+          "sha256": "61e35d4ba5d35665a75aeabc813d5709f2fd753dd5680a1ff46e96e52f668a93"
+        },
+        {
+          "file": "services-v4/visual-feedback.js",
+          "sha256": "5177d235f4c818a4bd6d4622c6d5eada29146c49bced0156ba63867ad604143b"
+        },
+        {
+          "file": "services-v4/theme-content.js",
+          "sha256": "a1aae14670c32faf843917af166de3fcbabd0574c3eeed2c6ae29cb872bdc964"
+        },
+        {
+          "file": "services-v4/share-cover.js",
+          "sha256": "ebc132f75ca4e7de03e7bacd7fe784f67cbe175a707910c5c77230345f518ce6"
+        },
+        {
+          "file": "assets/icons/flag.png",
+          "sha256": "16ab041f26b476a6cebf13fee3188bd4d94f5f531f92653e154f74251503b874"
+        },
+        {
+          "file": "assets/icons/wheat.png",
+          "sha256": "8c45df159f5f19873f83b661a0d1880f19394272a8cec677ef34b29a1a50de21"
+        }
+      ]
+    },
+    {
+      "theme": "千年文脉",
+      "mode": "http",
+      "gameId": "culture",
+      "homeDesign": "map",
+      "files": [
+        {
+          "file": "pages/game/index.js",
+          "sha256": "89f6ba12c4efa275d90388503fc0420c1b11284c172be2ea57b05ca8dd21f1e1"
+        },
+        {
+          "file": "pages/game/index.wxml",
+          "sha256": "d9968eecc940f3abf213cc9047764df292b06ef96165d708982009ee49b5261f"
+        },
+        {
+          "file": "pages/game/theme-details-20261022.wxss",
+          "sha256": "61e35d4ba5d35665a75aeabc813d5709f2fd753dd5680a1ff46e96e52f668a93"
+        },
+        {
+          "file": "services-v4/visual-feedback.js",
+          "sha256": "5177d235f4c818a4bd6d4622c6d5eada29146c49bced0156ba63867ad604143b"
+        },
+        {
+          "file": "services-v4/theme-content.js",
+          "sha256": "a1aae14670c32faf843917af166de3fcbabd0574c3eeed2c6ae29cb872bdc964"
+        },
+        {
+          "file": "services-v4/share-cover.js",
+          "sha256": "ebc132f75ca4e7de03e7bacd7fe784f67cbe175a707910c5c77230345f518ce6"
+        },
+        {
+          "file": "assets/icons/flag.png",
+          "sha256": "16ab041f26b476a6cebf13fee3188bd4d94f5f531f92653e154f74251503b874"
+        },
+        {
+          "file": "assets/icons/wheat.png",
+          "sha256": "8c45df159f5f19873f83b661a0d1880f19394272a8cec677ef34b29a1a50de21"
+        }
+      ]
+    },
+    {
+      "theme": "金色产业",
+      "mode": "http",
+      "gameId": "industry",
+      "homeDesign": "map",
+      "files": [
+        {
+          "file": "pages/game/index.js",
+          "sha256": "89f6ba12c4efa275d90388503fc0420c1b11284c172be2ea57b05ca8dd21f1e1"
+        },
+        {
+          "file": "pages/game/index.wxml",
+          "sha256": "d9968eecc940f3abf213cc9047764df292b06ef96165d708982009ee49b5261f"
+        },
+        {
+          "file": "pages/game/theme-details-20261022.wxss",
+          "sha256": "61e35d4ba5d35665a75aeabc813d5709f2fd753dd5680a1ff46e96e52f668a93"
+        },
+        {
+          "file": "services-v4/visual-feedback.js",
+          "sha256": "5177d235f4c818a4bd6d4622c6d5eada29146c49bced0156ba63867ad604143b"
+        },
+        {
+          "file": "services-v4/theme-content.js",
+          "sha256": "a1aae14670c32faf843917af166de3fcbabd0574c3eeed2c6ae29cb872bdc964"
+        },
+        {
+          "file": "services-v4/share-cover.js",
+          "sha256": "ebc132f75ca4e7de03e7bacd7fe784f67cbe175a707910c5c77230345f518ce6"
+        },
+        {
+          "file": "assets/icons/flag.png",
+          "sha256": "16ab041f26b476a6cebf13fee3188bd4d94f5f531f92653e154f74251503b874"
+        },
+        {
+          "file": "assets/icons/wheat.png",
+          "sha256": "8c45df159f5f19873f83b661a0d1880f19394272a8cec677ef34b29a1a50de21"
+        }
+      ]
+    },
+    {
+      "theme": "青山绿水",
+      "mode": "http",
+      "gameId": "ecology",
+      "homeDesign": "map",
+      "files": [
+        {
+          "file": "pages/game/index.js",
+          "sha256": "89f6ba12c4efa275d90388503fc0420c1b11284c172be2ea57b05ca8dd21f1e1"
+        },
+        {
+          "file": "pages/game/index.wxml",
+          "sha256": "d9968eecc940f3abf213cc9047764df292b06ef96165d708982009ee49b5261f"
+        },
+        {
+          "file": "pages/game/theme-details-20261022.wxss",
+          "sha256": "61e35d4ba5d35665a75aeabc813d5709f2fd753dd5680a1ff46e96e52f668a93"
+        },
+        {
+          "file": "services-v4/visual-feedback.js",
+          "sha256": "5177d235f4c818a4bd6d4622c6d5eada29146c49bced0156ba63867ad604143b"
+        },
+        {
+          "file": "services-v4/theme-content.js",
+          "sha256": "a1aae14670c32faf843917af166de3fcbabd0574c3eeed2c6ae29cb872bdc964"
+        },
+        {
+          "file": "services-v4/share-cover.js",
+          "sha256": "ebc132f75ca4e7de03e7bacd7fe784f67cbe175a707910c5c77230345f518ce6"
+        },
+        {
+          "file": "assets/icons/flag.png",
+          "sha256": "16ab041f26b476a6cebf13fee3188bd4d94f5f531f92653e154f74251503b874"
+        },
+        {
+          "file": "assets/icons/wheat.png",
+          "sha256": "8c45df159f5f19873f83b661a0d1880f19394272a8cec677ef34b29a1a50de21"
+        }
+      ]
+    }
+  ]
+}

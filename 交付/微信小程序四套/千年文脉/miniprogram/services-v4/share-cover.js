@@ -1,7 +1,7 @@
 'use strict';
 // Compose the current versioned theme artwork at the share-card ratio.
 const layout=require('./home-layout');
-const actors={culture:'scholar',red:'drummer',industry:'reader',ecology:'lotus'};
+const actors=require('./visual-feedback').contextActors;
 const captions={culture:['读一段湖湘往事','和智小谷一起探寻文脉'],red:['寻访家乡红色记忆','和智小谷一起读懂故事'],industry:['从一粒稻谷出发','和智小谷一起发现丰饶'],ecology:['认识一方青山绿水','和智小谷一起探索自然']};
 function configured(image,base){return image?(/^https?:/.test(image)?image:(base||'')+image):'';}
 async function render(wx,page,skin){

@@ -1,0 +1,2895 @@
+{
+  "date": "2026-10-22T04:12:05.610Z",
+  "passed": true,
+  "scope": "Actual WeChat renderer, actual host viewport; four themes x home/rules/quiz/revive/locked/result/sound. Browser width checks are separate. No physical iOS/Android or publication acceptance.",
+  "checks": [
+    {
+      "theme": "red",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "flag",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-home.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "red",
+      "scene": "rules",
+      "route": "home",
+      "modal": "rules",
+      "soundSettingsOpen": false,
+      "icon": "flag",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "rules",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 179.5,
+            "bottom": 747.5,
+            "width": 350,
+            "height": 568
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 21,
+            "right": 369,
+            "top": 286.5,
+            "bottom": 594.5,
+            "width": 348,
+            "height": 308
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 21,
+            "right": 369,
+            "top": 594.5,
+            "bottom": 746.5,
+            "width": 348,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "confirm-start"
+            },
+            "left": 41,
+            "right": 349,
+            "top": 610.5,
+            "bottom": 662.5,
+            "width": 308,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "dismiss"
+            },
+            "left": 41,
+            "right": 349,
+            "top": 678.5,
+            "bottom": 722.5,
+            "width": 308,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-rules.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "red",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "flag",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 321,
+            "right": 353,
+            "top": 314,
+            "bottom": 346,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 735,
+            "bottom": 787,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-quiz.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "red",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "soundSettingsOpen": false,
+      "icon": "flag",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 197.5,
+            "bottom": 729.5,
+            "width": 350,
+            "height": 532
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 21,
+            "right": 369,
+            "top": 304.5,
+            "bottom": 576.5,
+            "width": 348,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 21,
+            "right": 369,
+            "top": 576.5,
+            "bottom": 728.5,
+            "width": 348,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "revive-share"
+            },
+            "left": 41,
+            "right": 349,
+            "top": 592.5,
+            "bottom": 644.5,
+            "width": 308,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 41,
+            "right": 349,
+            "top": 660.5,
+            "bottom": 704.5,
+            "width": 308,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 321,
+            "right": 353,
+            "top": 314,
+            "bottom": 346,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 735,
+            "bottom": 787,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-revive.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "red",
+      "scene": "locked",
+      "route": "quiz",
+      "modal": "locked",
+      "soundSettingsOpen": false,
+      "icon": "flag",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "locked",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 227.5,
+            "bottom": 699.5,
+            "width": 350,
+            "height": 472
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 21,
+            "right": 369,
+            "top": 334.5,
+            "bottom": 606.5,
+            "width": 348,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 21,
+            "right": 369,
+            "top": 606.5,
+            "bottom": 698.5,
+            "width": 348,
+            "height": 92
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 41,
+            "right": 349,
+            "top": 622.5,
+            "bottom": 674.5,
+            "width": 308,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 321,
+            "right": 353,
+            "top": 314,
+            "bottom": 346,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 735,
+            "bottom": 787,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-locked.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "red",
+      "scene": "sound",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": true,
+      "icon": "flag",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 374,
+            "top": 390,
+            "bottom": 788,
+            "width": 358,
+            "height": 398
+          }
+        ],
+        ".sound-switch-hit": [
+          {
+            "id": "",
+            "dataset": {
+              "channel": "music"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 478,
+            "bottom": 522,
+            "width": 60,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "channel": "effects"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 583,
+            "bottom": 627,
+            "width": 60,
+            "height": 44
+          }
+        ],
+        ".sound-done-button": [
+          {
+            "id": "sound-settings-done",
+            "dataset": {
+              "pressKey": "press-4"
+            },
+            "left": 201,
+            "right": 355,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".sound-mute-button": [
+          {
+            "id": "sound-master",
+            "dataset": {
+              "pressKey": "press-3"
+            },
+            "left": 35,
+            "right": 189,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-sound.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "culture",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "book",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-home.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "culture",
+      "scene": "rules",
+      "route": "home",
+      "modal": "rules",
+      "soundSettingsOpen": false,
+      "icon": "book",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "rules",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 178.5,
+            "bottom": 748.5,
+            "width": 350,
+            "height": 570
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 22,
+            "right": 368,
+            "top": 286.5,
+            "bottom": 594.5,
+            "width": 346,
+            "height": 308
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 22,
+            "right": 368,
+            "top": 594.5,
+            "bottom": 746.5,
+            "width": 346,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "confirm-start"
+            },
+            "left": 42,
+            "right": 348,
+            "top": 610.5,
+            "bottom": 662.5,
+            "width": 306,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "dismiss"
+            },
+            "left": 42,
+            "right": 348,
+            "top": 678.5,
+            "bottom": 722.5,
+            "width": 306,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-rules.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "culture",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "book",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 320,
+            "right": 352,
+            "top": 315,
+            "bottom": 347,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 734,
+            "bottom": 786,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-quiz.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "culture",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "soundSettingsOpen": false,
+      "icon": "book",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 196.5,
+            "bottom": 730.5,
+            "width": 350,
+            "height": 534
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 22,
+            "right": 368,
+            "top": 304.5,
+            "bottom": 576.5,
+            "width": 346,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 22,
+            "right": 368,
+            "top": 576.5,
+            "bottom": 728.5,
+            "width": 346,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "revive-share"
+            },
+            "left": 42,
+            "right": 348,
+            "top": 592.5,
+            "bottom": 644.5,
+            "width": 306,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 42,
+            "right": 348,
+            "top": 660.5,
+            "bottom": 704.5,
+            "width": 306,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 320,
+            "right": 352,
+            "top": 315,
+            "bottom": 347,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 734,
+            "bottom": 786,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-revive.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "culture",
+      "scene": "locked",
+      "route": "quiz",
+      "modal": "locked",
+      "soundSettingsOpen": false,
+      "icon": "book",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "locked",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 226.5,
+            "bottom": 700.5,
+            "width": 350,
+            "height": 474
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 22,
+            "right": 368,
+            "top": 334.5,
+            "bottom": 606.5,
+            "width": 346,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 22,
+            "right": 368,
+            "top": 606.5,
+            "bottom": 698.5,
+            "width": 346,
+            "height": 92
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 42,
+            "right": 348,
+            "top": 622.5,
+            "bottom": 674.5,
+            "width": 306,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 320,
+            "right": 352,
+            "top": 315,
+            "bottom": 347,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 734,
+            "bottom": 786,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-locked.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "culture",
+      "scene": "sound",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": true,
+      "icon": "book",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 374,
+            "top": 390,
+            "bottom": 788,
+            "width": 358,
+            "height": 398
+          }
+        ],
+        ".sound-switch-hit": [
+          {
+            "id": "",
+            "dataset": {
+              "channel": "music"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 478,
+            "bottom": 522,
+            "width": 60,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "channel": "effects"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 583,
+            "bottom": 627,
+            "width": 60,
+            "height": 44
+          }
+        ],
+        ".sound-done-button": [
+          {
+            "id": "sound-settings-done",
+            "dataset": {
+              "pressKey": "press-4"
+            },
+            "left": 201,
+            "right": 355,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".sound-mute-button": [
+          {
+            "id": "sound-master",
+            "dataset": {
+              "pressKey": "press-3"
+            },
+            "left": 35,
+            "right": 189,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-sound.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "industry",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "wheat",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-home.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "industry",
+      "scene": "rules",
+      "route": "home",
+      "modal": "rules",
+      "soundSettingsOpen": false,
+      "icon": "wheat",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "rules",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 176.5,
+            "bottom": 750.5,
+            "width": 350,
+            "height": 574
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 286.5,
+            "bottom": 594.5,
+            "width": 342,
+            "height": 308
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 594.5,
+            "bottom": 746.5,
+            "width": 342,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "confirm-start"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 610.5,
+            "bottom": 662.5,
+            "width": 302,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "dismiss"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 678.5,
+            "bottom": 722.5,
+            "width": 302,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-rules.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "industry",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "wheat",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 318,
+            "right": 350,
+            "top": 317,
+            "bottom": 349,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-quiz.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "industry",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "soundSettingsOpen": false,
+      "icon": "wheat",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 194.5,
+            "bottom": 732.5,
+            "width": 350,
+            "height": 538
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 304.5,
+            "bottom": 576.5,
+            "width": 342,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 576.5,
+            "bottom": 728.5,
+            "width": 342,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "revive-share"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 592.5,
+            "bottom": 644.5,
+            "width": 302,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 660.5,
+            "bottom": 704.5,
+            "width": 302,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 318,
+            "right": 350,
+            "top": 317,
+            "bottom": 349,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-revive.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "industry",
+      "scene": "locked",
+      "route": "quiz",
+      "modal": "locked",
+      "soundSettingsOpen": false,
+      "icon": "wheat",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "locked",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 224.5,
+            "bottom": 702.5,
+            "width": 350,
+            "height": 478
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 334.5,
+            "bottom": 606.5,
+            "width": 342,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 606.5,
+            "bottom": 698.5,
+            "width": 342,
+            "height": 92
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 622.5,
+            "bottom": 674.5,
+            "width": 302,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 318,
+            "right": 350,
+            "top": 317,
+            "bottom": 349,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-locked.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "industry",
+      "scene": "sound",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": true,
+      "icon": "wheat",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 374,
+            "top": 390,
+            "bottom": 788,
+            "width": 358,
+            "height": 398
+          }
+        ],
+        ".sound-switch-hit": [
+          {
+            "id": "",
+            "dataset": {
+              "channel": "music"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 478,
+            "bottom": 522,
+            "width": 60,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "channel": "effects"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 583,
+            "bottom": 627,
+            "width": 60,
+            "height": 44
+          }
+        ],
+        ".sound-done-button": [
+          {
+            "id": "sound-settings-done",
+            "dataset": {
+              "pressKey": "press-4"
+            },
+            "left": 201,
+            "right": 355,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".sound-mute-button": [
+          {
+            "id": "sound-master",
+            "dataset": {
+              "pressKey": "press-3"
+            },
+            "left": 35,
+            "right": 189,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-sound.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "ecology",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "leaf",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-home.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "ecology",
+      "scene": "rules",
+      "route": "home",
+      "modal": "rules",
+      "soundSettingsOpen": false,
+      "icon": "leaf",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "rules",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 176.5,
+            "bottom": 750.5,
+            "width": 350,
+            "height": 574
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 286.5,
+            "bottom": 594.5,
+            "width": 342,
+            "height": 308
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 594.5,
+            "bottom": 746.5,
+            "width": 342,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "confirm-start"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 610.5,
+            "bottom": 662.5,
+            "width": 302,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "dismiss"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 678.5,
+            "bottom": 722.5,
+            "width": 302,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-rules.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "ecology",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "leaf",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 318,
+            "right": 350,
+            "top": 317,
+            "bottom": 349,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-quiz.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "ecology",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "soundSettingsOpen": false,
+      "icon": "leaf",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 194.5,
+            "bottom": 732.5,
+            "width": 350,
+            "height": 538
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 304.5,
+            "bottom": 576.5,
+            "width": 342,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 576.5,
+            "bottom": 728.5,
+            "width": 342,
+            "height": 152
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "revive-share"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 592.5,
+            "bottom": 644.5,
+            "width": 302,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [
+          {
+            "id": "modal-secondary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 660.5,
+            "bottom": 704.5,
+            "width": 302,
+            "height": 44
+          }
+        ],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 318,
+            "right": 350,
+            "top": 317,
+            "bottom": 349,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-revive.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "ecology",
+      "scene": "locked",
+      "route": "quiz",
+      "modal": "locked",
+      "soundSettingsOpen": false,
+      "icon": "leaf",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "locked",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 20,
+            "right": 370,
+            "top": 224.5,
+            "bottom": 702.5,
+            "width": 350,
+            "height": 478
+          }
+        ],
+        ".modal-inner": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 334.5,
+            "bottom": 606.5,
+            "width": 342,
+            "height": 272
+          }
+        ],
+        ".modal-actions": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 24,
+            "right": 366,
+            "top": 606.5,
+            "bottom": 698.5,
+            "width": 342,
+            "height": 92
+          }
+        ],
+        "#modal-primary": [
+          {
+            "id": "modal-primary",
+            "dataset": {
+              "action": "levels"
+            },
+            "left": 44,
+            "right": 346,
+            "top": 622.5,
+            "bottom": 674.5,
+            "width": 302,
+            "height": 52
+          }
+        ],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 318,
+            "right": 350,
+            "top": 317,
+            "bottom": 349,
+            "width": 32,
+            "height": 32
+          }
+        ],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-locked.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "ecology",
+      "scene": "sound",
+      "route": "home",
+      "modal": "",
+      "soundSettingsOpen": true,
+      "icon": "leaf",
+      "pose": "",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 374,
+            "top": 390,
+            "bottom": 788,
+            "width": 358,
+            "height": 398
+          }
+        ],
+        ".sound-switch-hit": [
+          {
+            "id": "",
+            "dataset": {
+              "channel": "music"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 478,
+            "bottom": 522,
+            "width": 60,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "channel": "effects"
+            },
+            "left": 295,
+            "right": 355,
+            "top": 583,
+            "bottom": 627,
+            "width": 60,
+            "height": 44
+          }
+        ],
+        ".sound-done-button": [
+          {
+            "id": "sound-settings-done",
+            "dataset": {
+              "pressKey": "press-4"
+            },
+            "left": 201,
+            "right": 355,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".sound-mute-button": [
+          {
+            "id": "sound-master",
+            "dataset": {
+              "pressKey": "press-3"
+            },
+            "left": 35,
+            "right": 189,
+            "top": 719,
+            "bottom": 769,
+            "width": 154,
+            "height": 50
+          }
+        ],
+        ".quest-theme-mark": [],
+        ".completion-hero": [],
+        ".result-companion": [],
+        ".stat-pair .stat": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-sound.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "red",
+      "scene": "result",
+      "route": "result",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "flag",
+      "pose": "drummer",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "result"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 365,
+            "top": 246,
+            "bottom": 447,
+            "width": 340,
+            "height": 201
+          }
+        ],
+        ".result-companion": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 155,
+            "right": 235,
+            "top": 246,
+            "bottom": 341,
+            "width": 80,
+            "height": 95
+          }
+        ],
+        ".stat-pair .stat": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 189,
+            "top": 463,
+            "bottom": 555,
+            "width": 164,
+            "height": 92
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 201,
+            "right": 365,
+            "top": 463,
+            "bottom": 555,
+            "width": 164,
+            "height": 92
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-2",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 671,
+            "bottom": 723,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "red-result.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "culture",
+      "scene": "result",
+      "route": "result",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "book",
+      "pose": "reader",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "result"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 364,
+            "top": 247,
+            "bottom": 448,
+            "width": 338,
+            "height": 201
+          }
+        ],
+        ".result-companion": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 155,
+            "right": 235,
+            "top": 247,
+            "bottom": 342,
+            "width": 80,
+            "height": 95
+          }
+        ],
+        ".stat-pair .stat": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 189,
+            "top": 464,
+            "bottom": 556,
+            "width": 163,
+            "height": 92
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 201,
+            "right": 364,
+            "top": 464,
+            "bottom": 556,
+            "width": 163,
+            "height": 92
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-2",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 670,
+            "bottom": 722,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "culture-result.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "industry",
+      "scene": "result",
+      "route": "result",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "wheat",
+      "pose": "scholar",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "result"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 249,
+            "bottom": 450,
+            "width": 334,
+            "height": 201
+          }
+        ],
+        ".result-companion": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 155,
+            "right": 235,
+            "top": 249,
+            "bottom": 344,
+            "width": 80,
+            "height": 95
+          }
+        ],
+        ".stat-pair .stat": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 189,
+            "top": 466,
+            "bottom": 558,
+            "width": 161,
+            "height": 92
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 201,
+            "right": 362,
+            "top": 466,
+            "bottom": 558,
+            "width": 161,
+            "height": 92
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-2",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 668,
+            "bottom": 720,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "industry-result.png",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "theme": "ecology",
+      "scene": "result",
+      "route": "result",
+      "modal": "",
+      "soundSettingsOpen": false,
+      "icon": "leaf",
+      "pose": "lotus",
+      "tapPreservesAward": true,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "result"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".theme-modal": [],
+        ".modal-inner": [],
+        ".modal-actions": [],
+        "#modal-primary": [],
+        "#modal-secondary": [],
+        ".sound-settings-panel": [],
+        ".sound-switch-hit": [],
+        ".sound-done-button": [],
+        ".sound-mute-button": [],
+        ".quest-theme-mark": [],
+        ".completion-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 249,
+            "bottom": 450,
+            "width": 334,
+            "height": 201
+          }
+        ],
+        ".result-companion": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 155,
+            "right": 235,
+            "top": 249,
+            "bottom": 344,
+            "width": 80,
+            "height": 95
+          }
+        ],
+        ".stat-pair .stat": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 189,
+            "top": 466,
+            "bottom": 558,
+            "width": 161,
+            "height": 92
+          },
+          {
+            "id": "",
+            "dataset": {},
+            "left": 201,
+            "right": 362,
+            "top": 466,
+            "bottom": 558,
+            "width": 161,
+            "height": 92
+          }
+        ],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-2",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 668,
+            "bottom": 720,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "screenshot": "ecology-result.png",
+      "passed": true,
+      "issues": []
+    }
+  ]
+}

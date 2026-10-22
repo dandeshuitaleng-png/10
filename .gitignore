@@ -53,6 +53,7 @@
 !/rural-culture-miniprogram/qa/home-designs-20261021/
 !/rural-culture-miniprogram/qa/theme-details-20261022/
 !/rural-culture-miniprogram/qa/chapter-association-20261022/
+!/rural-culture-miniprogram/qa/theme-flow-20261022/
 /rural-culture-miniprogram/qa/interaction-20261021/baseline/
 !/rural-culture-miniprogram/qa/certificate-20261021/*regression.log
 !/rural-culture-miniprogram/qa/interaction-20261021/*regression.log
@@ -60,5 +61,6 @@
 !/rural-culture-miniprogram/qa/theme-details-20261022/regression.log
 !/rural-culture-miniprogram/qa/chapter-association-20261022/regression.log
 !/rural-culture-miniprogram/qa/chapter-association-20261022/before.log
+!/rural-culture-miniprogram/qa/theme-flow-20261022/regression.log
 /rural-culture-miniprogram/qa/home-designs-20261021/first-*.png
 /rural-culture-miniprogram/qa/home-designs-20261021/capture-ready.png

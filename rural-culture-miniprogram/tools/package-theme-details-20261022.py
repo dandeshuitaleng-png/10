@@ -6,6 +6,7 @@ root=Path(__file__).resolve().parents[1]
 workspace=root.parent
 qa=root/'qa/theme-details-20261022'
 association=root/'qa/chapter-association-20261022'
+flow=root/'qa/theme-flow-20261022'
 delivery=workspace/'交付/四主题页面精修-20261022'
 target=workspace/'交付/四主题独立工程-A方案页面精修-20261022.zip'
 native=json.loads((qa/'native-checks.json').read_text())
@@ -22,20 +23,30 @@ for name,count in [('native-checks.json',52),('browser-checks.json',72),('browse
     report=json.loads((association/name).read_text())
     assert report['passed'] and len(report['checks'])==count
 assert 'ℹ pass 46' in (association/'regression.log').read_text()
+for name,count in [('native-checks.json',28),('browser-checks.json',84),('compile-checks.json',5)]:
+    report=json.loads((flow/name).read_text())
+    assert report['passed'] and len(report['checks'])==count
+assert all(c['mainPackageUnder2MiB'] for c in json.loads((flow/'compile-checks.json').read_text())['checks'])
+assert 'ℹ pass 61' in (flow/'regression.log').read_text()
 
 images=root/'preview/theme-details-20261022'
 images.mkdir(exist_ok=True)
 delivery.mkdir(exist_ok=True)
 for theme in ['red','culture','industry','ecology']:
-    shutil.copyfile(association/(theme+'-home.png'),images/(theme+'-home.png'))
+    shutil.copyfile(flow/(theme+'-home.png'),images/(theme+'-home.png'))
+    shutil.copyfile(flow/(theme+'-home.png'),root/'preview/home-directions-20261021'/(theme+'-map.png'))
     for scene in ['quiz','correct','profile']:
-        shutil.copyfile(qa/(theme+'-'+scene+'.png'),images/(theme+'-'+scene+'.png'))
+        source=flow if scene=='quiz' else qa
+        shutil.copyfile(source/(theme+'-'+scene+'.png'),images/(theme+'-'+scene+'.png'))
+    for scene in ['rules','revive','locked','result','sound']:
+        shutil.copyfile(flow/(theme+'-'+scene+'.png'),images/(theme+'-'+scene+'.png'))
 shutil.copytree(images,delivery/images.name,dirs_exist_ok=True)
 html=(root/'preview/四主题页面精修-20261022.html').read_text()
 html=html.replace('</head>','<style>.links{display:none!important}</style></head>')
 (delivery/'评审.html').write_text(html)
 shutil.copyfile(root/'docs/20261022-四主题A方案页面精修.md',delivery/'修改说明.md')
 shutil.copyfile(root/'docs/20261022-关卡卡片对齐与遮挡修正.md',delivery/'关卡对齐说明.md')
+shutil.copyfile(root/'docs/20261022-四主题配套流程完善.md',delivery/'配套流程说明.md')
 # Keep the existing A-only offline review in sync with its live counterpart.
 a_delivery=workspace/'交付/首页方案A-20261021'
 (a_delivery/'home-directions-20261021').mkdir(exist_ok=True)
@@ -69,11 +80,14 @@ for f in sorted(qa.iterdir()):
 for f in sorted(association.iterdir()):
     if f.is_file() and f.suffix in {'.png','.json','.log'} and f.name!='package-verification.json':
         add(f,'验证记录/关卡对齐/'+f.name)
-for name in ['20261022-四主题A方案页面精修.md','20261022-关卡卡片对齐与遮挡修正.md','20261021-地图滚动人物对齐修正.md']:
+for f in sorted(flow.iterdir()):
+    if f.is_file() and f.suffix in {'.png','.json','.log'} and f.name!='package-verification.json':
+        add(f,'验证记录/配套流程/'+f.name)
+for name in ['20261022-四主题A方案页面精修.md','20261022-关卡卡片对齐与遮挡修正.md','20261022-四主题配套流程完善.md','20261021-地图滚动人物对齐修正.md']:
     add(root/'docs'/name,'说明/'+name)
 add(workspace/'交付/微信小程序四套/交付入口.md','说明/交付入口.md')
 
-manifest={'scope':'Four fixed-theme independent A projects, aligned chapter cards and inner-page detail QA. Earlier inner-page and current chapter evidence are separately dated. No portal, private config, account data, physical-phone or publication acceptance.','files':[{'path':name,'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()} for name,f in sorted(entries.items())]}
+manifest={'scope':'Four fixed-theme independent A projects, aligned chapter cards and completed theme flow details. Earlier inner-page, chapter alignment and latest theme-flow evidence are separately dated. No portal, private config, account data, physical-phone or publication acceptance.','files':[{'path':name,'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()} for name,f in sorted(entries.items())]}
 temp=target.with_suffix('.zip.tmp')
 with zipfile.ZipFile(temp,'w',zipfile.ZIP_DEFLATED) as archive:
     for name,f in sorted(entries.items()):archive.write(f,name)
@@ -86,4 +100,5 @@ temp.replace(target)
 report={'passed':True,'file':str(target),'bytes':target.stat().st_size,'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'sourceReadbackVerified':True,'portalIncluded':False,'physicalDeviceVerified':False,'files':len(entries)+1}
 (qa/'package-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 (association/'package-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+(flow/'package-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(report,ensure_ascii=False,indent=2))

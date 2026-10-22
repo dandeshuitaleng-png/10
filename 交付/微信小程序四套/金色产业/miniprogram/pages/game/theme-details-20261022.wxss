@@ -28,3 +28,20 @@
 .game-device.feedback-20261019 .completion-hero .h2{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;font-size:22px;line-height:32px;font-weight:700}
 .game-device.feedback-20261019 .stat-pair .strong{font-variant-numeric:tabular-nums}
 @media(max-width:350px){.game-device.feedback-20261019 .points-hero{padding:12px 10px}.game-device.feedback-20261019 .points-hero .strong{font-size:42px;line-height:56px}.game-device.feedback-20261019 .rank-row{gap:6px;padding-left:8px;padding-right:8px}.game-device.feedback-20261019 .rank-number{width:24px}.game-device.feedback-20261019 .rank-score{font-size:16px}}
+
+/* Contextual details continue the same reference palettes through the flow. */
+.game-device.feedback-20261019 .quest-theme-mark{display:flex;align-items:center;justify-content:center;flex:0 0 32px;width:32px;height:32px;border:1px solid var(--edge);border-radius:10px;background:var(--pale)}
+.game-device.feedback-20261019 .quest-theme-mark game-icon{width:20px;height:20px}
+.game-device.feedback-20261019 .chapter-welcome{border-color:var(--edge);background:linear-gradient(135deg,#FFFFFF,var(--pale));box-shadow:0 2px 5px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .theme-modal .rule-grid{border:1px solid var(--edge);background:linear-gradient(155deg,#FFFFFF,var(--pale));box-shadow:0 2px 5px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .theme-modal .rule-grid .b{color:var(--accent);font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .theme-encouragement{display:block;max-width:100%;margin:12px 0 0;padding:8px 10px;border:1px solid var(--edge);border-radius:10px;background:#FFFFFFA6;color:var(--muted);font-size:12px;line-height:20px;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .completion-hero .eyebrow{color:var(--accent);font-weight:600;line-height:22px}
+.game-device.feedback-20261019 .stat-pair .stat{border-color:var(--edge);background:linear-gradient(155deg,#FFFFFF,var(--pale));box-shadow:0 2px 5px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .stat-pair .stat .strong{color:var(--ink)}
+.game-device.feedback-20261019 .summary-line,.game-device.feedback-20261019 .certificate-notice{border-color:var(--edge);background:#FFFFFF;box-shadow:0 2px 5px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .certificate-notice .notice-copy{flex:1;min-width:0}
+.game-device.feedback-20261019 .certificate-notice .small{color:var(--muted);line-height:20px;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .sound-settings-group{border-color:var(--edge);background:linear-gradient(145deg,#FFFFFF,var(--pale))}
+.game-device.feedback-20261019 .sound-volume-value{color:var(--accent);font-variant-numeric:tabular-nums}
+@media(max-width:350px){.game-device.feedback-20261019 .quest-theme-mark{flex-basis:28px;width:28px;height:28px;border-radius:8px}.game-device.feedback-20261019 .quest-theme-mark game-icon{width:18px;height:18px}.game-device.feedback-20261019 .theme-encouragement{margin-top:8px;padding:6px 8px}}

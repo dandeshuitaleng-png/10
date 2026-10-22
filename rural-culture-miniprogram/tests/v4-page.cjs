@@ -163,9 +163,17 @@ async function main() {
     await env.begin();assert.equal(page.data.pageActorPose,'');const beforeQuestion=env.service.exportState();page.inlineMascotTap();assert.deepEqual(env.service.exportState(),beforeQuestion);
     await env.answer(1);assert.equal(page.data.modalActorPose,'heart');const beforeRevive=env.service.exportState();page.inlineMascotTap();assert.equal(page.data.motion.respondingId,'modal-revive');assert.deepEqual(env.service.exportState(),beforeRevive);
     await env.action('revive-share');await env.action('share-success');await env.answer(0);assert.equal(page.data.pageActorPose,'');
-    await env.action('next');assert.equal(page.data.pageActorPose,'drummer');page.go('certificate');assert.equal(page.data.pageActorPose,'');
+    await env.action('next');assert.equal(page.data.pageActorPose,'reader');page.go('certificate');assert.equal(page.data.pageActorPose,'');
     page._systemReduced=true;page.readMotionPreference();const still=page.data.motion.sequence;page.inlineMascotTap();assert.equal(page.data.motion.sequence,still);assert.equal(page.data.motion.playingId,'');page.onUnload();
     const locked=environment();await locked.lock();assert.equal(locked.page.data.modalActorPose,'lotus');locked.page.onUnload();
+  });
+  await test('each theme completes with its supplied contextual figure and interaction preserves the award', async () => {
+    for(const [gameId,pose] of Object.entries({red:'drummer',culture:'reader',industry:'scholar',ecology:'lotus'})){
+      const env=environment({gameId,levelCount:1});await env.begin();await env.answer(0);await env.action('next');
+      assert.equal(env.page.data.route,'result');assert.equal(env.page.data.pageActorPose,pose);
+      const awarded=env.service.exportState();env.page.inlineMascotTap();assert.deepEqual(env.service.exportState(),awarded);
+      env.page.go('profile');assert.equal(env.page.data.pageActorPose,'');env.page.onUnload();
+    }
   });
   await test('share previews use composed artwork and interface labels do not expose environment modes', async () => {
     const env=environment(),page=env.page,before=env.service.exportState();
