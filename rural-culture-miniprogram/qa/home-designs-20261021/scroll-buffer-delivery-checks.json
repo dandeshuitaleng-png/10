@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "browserCases": 48,
+  "browserFrames": 4800,
+  "maxFootError": 0.2403279782113259,
+  "runtimeSha256": "5328ad46f4a25a2f0eaa6a2fef04006303a24402f28a2da3edc9b7c426330147",
+  "independentProjects": [
+    {
+      "theme": "十步芳草",
+      "identical": true
+    },
+    {
+      "theme": "千年文脉",
+      "identical": true
+    },
+    {
+      "theme": "金色产业",
+      "identical": true
+    },
+    {
+      "theme": "青山绿水",
+      "identical": true
+    }
+  ],
+  "servedFiles": [
+    {
+      "file": "v4-runtime.js",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "file": "首页方案A-20261021.html",
+      "status": 200,
+      "identical": true
+    }
+  ],
+  "offlineZipVerified": true,
+  "finalBrowserPreview": "scroll-buffer-final-preview.png",
+  "nativeChecks": {
+    "scroll": true,
+    "clickCount": 9,
+    "footerCyanPixels": 0
+  }
+}

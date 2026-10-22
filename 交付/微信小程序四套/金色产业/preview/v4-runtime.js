@@ -40,7 +40,9 @@
     if(tag==='switch'){element.type='checkbox';element.checked=!!value(node.getAttribute('checked'),scope);if(element.checked)element.setAttribute('checked','');else element.removeAttribute('checked');element.style.accentColor=value(node.getAttribute('color'),scope)||'#497B36';}
     if (tag === 'scroll-view') { const scrollY = value(node.getAttribute('scroll-y'), scope); if (scrollY === true || scrollY === '' && node.hasAttribute('scroll-y') || scrollY === 'true') element.style.overflowY = 'auto'; element.style.webkitOverflowScrolling = 'touch'; if (node.hasAttribute('scroll-top')) element._scrollTop = Number(value(node.getAttribute('scroll-top'), scope)) || 0; element._scrollInto = value(node.getAttribute('scroll-into-view'), scope); }
     if (tag === 'image') { if (node.getAttribute('mode') === 'widthFix') element.style.height = 'auto'; const mode = node.getAttribute('mode'); element.style.objectFit = mode === 'aspectFit' ? 'contain' : mode === 'aspectFill' ? 'cover' : element.style.objectFit; }
-    if (tag === 'canvas') { if (!element.hasAttribute('width')) element.setAttribute('width', '750'); if (!element.hasAttribute('height')) element.setAttribute('height', '1000'); }
+    // Mascot buffers are sized by their animator; export canvases retain the
+    // preview defaults until their certificate/share renderer sets a size.
+    if (tag === 'canvas' && !element.classList.contains('mascot-motion-canvas')) { if (!element.hasAttribute('width')) element.setAttribute('width', '750'); if (!element.hasAttribute('height')) element.setAttribute('height', '1000'); }
     if (tag === 'picker') { const range = value(node.getAttribute('range'), scope) || [], rangeKey = node.getAttribute('range-key'); range.forEach((item, index) => { const option = document.createElement('option'); option.value = index; option.textContent = rangeKey ? item[rangeKey] : item; option.selected = index === Number(value(node.getAttribute('value'), scope)); element.append(option); }); }
     else if (tag !== 'image') children(node, element, scope, owner);
     const events = { touchstart:'pointerdown',touchmove:'pointermove',touchend:'pointerup',touchcancel:'pointercancel',tap: 'click', input: 'input', changing:'input', change: 'change', error: 'error', loadedmetadata: 'loadedmetadata', load:'load', timeupdate: 'timeupdate', ended: 'ended', scroll: 'scroll' };
@@ -53,11 +55,11 @@
     if (previous.nodeType !== next.nodeType || previous.nodeName !== next.nodeName) { previous.replaceWith(next); return next; }
     if (next.nodeType === 3) { if (previous.textContent !== next.textContent) previous.textContent = next.textContent; return previous; }
     if (next.nodeType !== 1) return previous;
-    // The animator owns its drawing-buffer dimensions. Removing these runtime
-    // attributes resets Canvas2D's buffer and transform on a scroll repaint.
+    // The animator owns its drawing-buffer dimensions. Removing OR assigning
+    // these attributes resets Canvas2D's pixels and transform on a repaint.
     const liveCanvas = previous.tagName === 'CANVAS' && previous._mascotAnimator;
     for (const attribute of [...previous.attributes]) if (!next.hasAttribute(attribute.name) && !(liveCanvas && ['width','height'].includes(attribute.name))) previous.removeAttribute(attribute.name);
-    for (const attribute of next.attributes) if (previous.getAttribute(attribute.name) !== attribute.value) previous.setAttribute(attribute.name, attribute.value);
+    for (const attribute of next.attributes) if (!(liveCanvas && ['width','height'].includes(attribute.name)) && previous.getAttribute(attribute.name) !== attribute.value) previous.setAttribute(attribute.name, attribute.value);
     if(next.tagName==='INPUT'){previous.checked=next.checked;if(previous.value!==next.value)previous.value=next.value;}
     for (const event of ['onpointerdown','onpointermove','onpointerup','onpointercancel','onclick', 'oninput', 'onchange', 'onerror', 'onloadedmetadata','onload', 'ontimeupdate', 'onended', 'onscroll']) previous[event] = next[event];
     if (next._scrollTop != null && previous._scrollTop !== next._scrollTop) { previous.scrollTop = next._scrollTop; previous._scrollTop = next._scrollTop; }

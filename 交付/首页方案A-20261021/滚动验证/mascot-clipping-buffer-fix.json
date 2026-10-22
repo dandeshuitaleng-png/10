@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "blueMascotPixelsBelowMap": 0,
+  "footerTop": 1598,
+  "rect": [
+    {
+      "id": "",
+      "dataset": {
+        "game": "red",
+        "modal": "",
+        "route": "home"
+      },
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "bottom": 844,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "",
+      "dataset": {},
+      "left": 0,
+      "right": 390,
+      "top": 294,
+      "bottom": 738,
+      "width": 390,
+      "height": 444
+    },
+    {
+      "id": "",
+      "dataset": {
+        "id": "red-1"
+      },
+      "left": 229.296875,
+      "right": 293.296875,
+      "top": 769.2578125,
+      "bottom": 845.2578125,
+      "width": 64,
+      "height": 76
+    }
+  ],
+  "playing": "",
+  "screenshot": "mascot-clipping-buffer-fix.png"
+}
