@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram",
+      "passed": true,
+      "bytes": 1641640,
+      "mainPackageUnder2MiB": true
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/十步芳草",
+      "passed": true,
+      "bytes": 1709042,
+      "mainPackageUnder2MiB": true
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/千年文脉",
+      "passed": true,
+      "bytes": 1715125,
+      "mainPackageUnder2MiB": true
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/金色产业",
+      "passed": true,
+      "bytes": 1642240,
+      "mainPackageUnder2MiB": true
+    },
+    {
+      "project": "/Users/huangnianpeng/Desktop/yx/交付/微信小程序四套/青山绿水",
+      "passed": true,
+      "bytes": 1824953,
+      "mainPackageUnder2MiB": true
+    }
+  ]
+}

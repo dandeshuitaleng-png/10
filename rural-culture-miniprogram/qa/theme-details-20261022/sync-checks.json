@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "theme": "十步芳草",
+      "sharedStylesIdentical": true,
+      "connectionAndIdentityUnchanged": true
+    },
+    {
+      "theme": "千年文脉",
+      "sharedStylesIdentical": true,
+      "connectionAndIdentityUnchanged": true
+    },
+    {
+      "theme": "金色产业",
+      "sharedStylesIdentical": true,
+      "connectionAndIdentityUnchanged": true
+    },
+    {
+      "theme": "青山绿水",
+      "sharedStylesIdentical": true,
+      "connectionAndIdentityUnchanged": true
+    }
+  ],
+  "servedStylesMatchSource": true,
+  "sourceFiles": [
+    {
+      "path": "pages/game/index.wxss",
+      "sha256": "3c52f613d764b1647cd134a3bf897b76327bbc56995a44490e724f4d16668003"
+    },
+    {
+      "path": "pages/game/theme-details-20261022.wxss",
+      "sha256": "9fcfa7286254e102674898280025e05413d7f413aa5db0ff06ad8e46252c107a"
+    },
+    {
+      "path": "components/game-button/index.wxss",
+      "sha256": "baf0d11a4fd3fc55fd7a1fe8e56b2370f6295c6fd6ffce4d2d0996228bf77d9d"
+    }
+  ]
+}

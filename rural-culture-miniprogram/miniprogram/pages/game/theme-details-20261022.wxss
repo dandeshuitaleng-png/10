@@ -1,0 +1,30 @@
+/* Approved A detail pass: inherit the four reference palettes and original art.
+ * Correct-answer markers retain their semantic green; reading surfaces follow
+ * the active theme. No changes to title/map/mascot geometry or gesture layers. */
+.game-device.feedback-20261019 .quest-banner{border-left:3px solid var(--accent);background:linear-gradient(110deg,var(--pale),#FFFFFF 58%);box-shadow:0 2px 6px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .answer-feedback{background:linear-gradient(145deg,#FFFFFF,var(--pale));border-color:var(--edge);color:var(--ink);box-shadow:0 2px 6px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .answer-feedback .small{color:var(--muted);opacity:1;line-height:20px}
+.game-device.feedback-20261019 .answer-feedback .h3{align-items:flex-start;line-height:24px}
+.game-device.feedback-20261019 .answer-feedback .h3 game-icon{flex-shrink:0;width:20px;height:20px;margin-top:2px}
+.game-device.feedback-20261019 .profile-card{border-top:2px solid var(--edge);background:linear-gradient(155deg,#FFFFFF 60%,var(--pale));box-shadow:0 3px 10px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .profile-card .profile-badge{border-color:var(--edge);background:var(--pale);color:var(--accent)}
+.game-device.feedback-20261019 .profile-stats button{min-width:0;border-color:var(--edge);background:linear-gradient(155deg,#FFFFFF,var(--pale));box-shadow:0 2px 5px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .profile-stats .strong{font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .profile-link.white-card{border-color:var(--edge);box-shadow:0 2px 6px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .points-hero{padding:16px 12px;border:1px solid var(--edge);border-radius:16px;background:linear-gradient(155deg,#FFFFFF,var(--pale));box-shadow:0 2px 6px var(--ribbon-shadow)}
+.game-device.feedback-20261019 .points-hero .strong{max-width:100%;font-size:48px;line-height:64px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .record-row{border-bottom-color:var(--edge)}
+.game-device.feedback-20261019 .record-copy .small{color:var(--muted)}
+.game-device.feedback-20261019 .record-row>.b{color:var(--accent);font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .segmented{border-color:var(--edge);background:#FFFFFF}
+.game-device.feedback-20261019 .segmented .tab.active{background:var(--pale);color:var(--ink);box-shadow:inset 0 0 0 1px var(--edge),inset 0 -3px var(--accent);font-weight:700}
+.game-device.feedback-20261019 .rank-table-head{background:var(--pale);color:var(--muted)}
+.game-device.feedback-20261019 .rank-row{border-top-color:var(--edge)}
+.game-device.feedback-20261019 .rank-row.is-me{background:var(--pale);box-shadow:inset 3px 0 var(--accent)}
+.game-device.feedback-20261019 .rank-number{width:28px;text-align:center;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .rank-score{font-size:18px;line-height:24px;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .my-rank{border-color:var(--edge);align-items:center;gap:8px}
+.game-device.feedback-20261019 .my-rank>.b{flex-shrink:0;white-space:nowrap;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .completion-hero .h2{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;font-size:22px;line-height:32px;font-weight:700}
+.game-device.feedback-20261019 .stat-pair .strong{font-variant-numeric:tabular-nums}
+@media(max-width:350px){.game-device.feedback-20261019 .points-hero{padding:12px 10px}.game-device.feedback-20261019 .points-hero .strong{font-size:42px;line-height:56px}.game-device.feedback-20261019 .rank-row{gap:6px;padding-left:8px;padding-right:8px}.game-device.feedback-20261019 .rank-number{width:24px}.game-device.feedback-20261019 .rank-score{font-size:16px}}

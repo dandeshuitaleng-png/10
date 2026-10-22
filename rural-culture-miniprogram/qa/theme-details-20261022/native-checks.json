@@ -1,0 +1,2538 @@
+{
+  "passed": true,
+  "scope": "Actual WeChat simulator, disposable review data; host viewport only. Browser responsive geometry and service tests are separate. Physical iPhone/Android not tested.",
+  "checks": [
+    {
+      "theme": "red",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "red-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "red-home.png",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 40,
+            "right": 350,
+            "top": 389,
+            "bottom": 449,
+            "width": 310,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 472,
+            "bottom": 528,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 536,
+            "bottom": 592,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 600,
+            "bottom": 656,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 664,
+            "bottom": 720,
+            "width": 340,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 735,
+            "bottom": 787,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "red-quiz.png",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "scene": "profile",
+      "route": "profile",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "profile"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 365,
+            "top": 246,
+            "bottom": 401,
+            "width": 340,
+            "height": 155
+          }
+        ],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "red-profile.png",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "scene": "points",
+      "route": "points",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "points"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 25,
+            "right": 365,
+            "top": 339.5,
+            "bottom": 526,
+            "width": 340,
+            "height": 186.5
+          }
+        ],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "red-points.png",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "scene": "ranking-empty",
+      "route": "ranking",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "ranking"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "daily",
+              "pressKey": "press-23"
+            },
+            "left": 30,
+            "right": 193,
+            "top": 251,
+            "bottom": 295,
+            "width": 163,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "total",
+              "pressKey": "press-24"
+            },
+            "left": 197,
+            "right": 360,
+            "top": 251,
+            "bottom": 295,
+            "width": 163,
+            "height": 44
+          }
+        ],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "red-ranking-empty.png",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 40,
+            "right": 350,
+            "top": 389,
+            "bottom": 449,
+            "width": 310,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 472,
+            "bottom": 528,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 536,
+            "bottom": 592,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 600,
+            "bottom": 656,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 664,
+            "bottom": 720,
+            "width": 340,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 735,
+            "bottom": 787,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "red-revive.png",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "scene": "certificate",
+      "route": "certificate",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 671,
+            "bottom": 723,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": true,
+      "screenshot": "red-certificate.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "culture-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "culture-home.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 41,
+            "right": 349,
+            "top": 390,
+            "bottom": 420,
+            "width": 308,
+            "height": 30
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 443,
+            "bottom": 499,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 507,
+            "bottom": 563,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 571,
+            "bottom": 627,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 635,
+            "bottom": 691,
+            "width": 338,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 734,
+            "bottom": 786,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "culture-quiz.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "profile",
+      "route": "profile",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "profile"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 364,
+            "top": 247,
+            "bottom": 402,
+            "width": 338,
+            "height": 155
+          }
+        ],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "culture-profile.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "points",
+      "route": "points",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "points"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 26,
+            "right": 364,
+            "top": 340.5,
+            "bottom": 527,
+            "width": 338,
+            "height": 186.5
+          }
+        ],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "culture-points.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "ranking-empty",
+      "route": "ranking",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "ranking"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "daily",
+              "pressKey": "press-23"
+            },
+            "left": 31,
+            "right": 193,
+            "top": 252,
+            "bottom": 296,
+            "width": 162,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "total",
+              "pressKey": "press-24"
+            },
+            "left": 197,
+            "right": 359,
+            "top": 252,
+            "bottom": 296,
+            "width": 162,
+            "height": 44
+          }
+        ],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "culture-ranking-empty.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 41,
+            "right": 349,
+            "top": 390,
+            "bottom": 420,
+            "width": 308,
+            "height": 30
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 443,
+            "bottom": 499,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 507,
+            "bottom": 563,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 571,
+            "bottom": 627,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 635,
+            "bottom": 691,
+            "width": 338,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 734,
+            "bottom": 786,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "culture-revive.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "certificate",
+      "route": "certificate",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 670,
+            "bottom": 722,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": true,
+      "screenshot": "culture-certificate.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "industry-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "industry-home.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 43,
+            "right": 347,
+            "top": 392,
+            "bottom": 452,
+            "width": 304,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 475,
+            "bottom": 531,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 539,
+            "bottom": 595,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 603,
+            "bottom": 659,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 667,
+            "bottom": 723,
+            "width": 334,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "industry-quiz.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "profile",
+      "route": "profile",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "profile"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 249,
+            "bottom": 404,
+            "width": 334,
+            "height": 155
+          }
+        ],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "industry-profile.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "points",
+      "route": "points",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "points"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 342.5,
+            "bottom": 529,
+            "width": 334,
+            "height": 186.5
+          }
+        ],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "industry-points.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "ranking-empty",
+      "route": "ranking",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "ranking"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "daily",
+              "pressKey": "press-23"
+            },
+            "left": 33,
+            "right": 193,
+            "top": 254,
+            "bottom": 298,
+            "width": 160,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "total",
+              "pressKey": "press-24"
+            },
+            "left": 197,
+            "right": 357,
+            "top": 254,
+            "bottom": 298,
+            "width": 160,
+            "height": 44
+          }
+        ],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "industry-ranking-empty.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 43,
+            "right": 347,
+            "top": 392,
+            "bottom": 452,
+            "width": 304,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 475,
+            "bottom": 531,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 539,
+            "bottom": 595,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 603,
+            "bottom": 659,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 667,
+            "bottom": 723,
+            "width": 334,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "industry-revive.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "certificate",
+      "route": "certificate",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 668,
+            "bottom": 720,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": true,
+      "screenshot": "industry-certificate.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "home",
+      "route": "home",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "home"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "level",
+              "id": "ecology-1",
+              "route": ""
+            },
+            "left": 16,
+            "right": 374,
+            "top": 748,
+            "bottom": 800,
+            "width": 358,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "ecology-home.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "quiz",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 43,
+            "right": 347,
+            "top": 392,
+            "bottom": 452,
+            "width": 304,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 475,
+            "bottom": 531,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 539,
+            "bottom": 595,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 603,
+            "bottom": 659,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 667,
+            "bottom": 723,
+            "width": 334,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "ecology-quiz.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "profile",
+      "route": "profile",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "profile"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 249,
+            "bottom": 404,
+            "width": 334,
+            "height": 155
+          }
+        ],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "ecology-profile.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "points",
+      "route": "points",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "points"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 342.5,
+            "bottom": 529,
+            "width": 334,
+            "height": 186.5
+          }
+        ],
+        ".segmented .tab": [],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "ecology-points.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "ranking-empty",
+      "route": "ranking",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "ranking"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "daily",
+              "pressKey": "press-23"
+            },
+            "left": 33,
+            "right": 193,
+            "top": 254,
+            "bottom": 298,
+            "width": 160,
+            "height": 44
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "period",
+              "period": "total",
+              "pressKey": "press-24"
+            },
+            "left": 197,
+            "right": 357,
+            "top": 254,
+            "bottom": 298,
+            "width": 160,
+            "height": 44
+          }
+        ],
+        "#footer-primary": []
+      },
+      "certificateReady": false,
+      "screenshot": "ecology-ranking-empty.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "revive",
+      "route": "quiz",
+      "modal": "revive",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "revive",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 43,
+            "right": 347,
+            "top": 392,
+            "bottom": 452,
+            "width": 304,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 475,
+            "bottom": 531,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 539,
+            "bottom": 595,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 603,
+            "bottom": 659,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 667,
+            "bottom": 723,
+            "width": 334,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "submit",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "ecology-revive.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "certificate",
+      "route": "certificate",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "certificate"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".question-title": [],
+        ".option": [],
+        ".answer-feedback": [],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "save",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 668,
+            "bottom": 720,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": true,
+      "screenshot": "ecology-certificate.png",
+      "passed": true
+    },
+    {
+      "theme": "red",
+      "scene": "correct",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "red",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 13,
+            "right": 377,
+            "top": 292,
+            "bottom": 731,
+            "width": 364,
+            "height": 439
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 40,
+            "right": 350,
+            "top": 244,
+            "bottom": 304,
+            "width": 310,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 327,
+            "bottom": 383,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 391,
+            "bottom": 447,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 455,
+            "bottom": 511,
+            "width": 340,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 25,
+            "right": 365,
+            "top": 519,
+            "bottom": 575,
+            "width": 340,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [
+          {
+            "id": "answer-feedback",
+            "dataset": {},
+            "left": 25,
+            "right": 365,
+            "top": 595,
+            "bottom": 715,
+            "width": 340,
+            "height": 120
+          }
+        ],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "next",
+              "id": "",
+              "route": ""
+            },
+            "left": 25,
+            "right": 365,
+            "top": 735,
+            "bottom": 787,
+            "width": 340,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "red-correct.png",
+      "passed": true
+    },
+    {
+      "theme": "culture",
+      "scene": "correct",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "culture",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 14,
+            "right": 376,
+            "top": 293,
+            "bottom": 730,
+            "width": 362,
+            "height": 437
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 41,
+            "right": 349,
+            "top": 273,
+            "bottom": 303,
+            "width": 308,
+            "height": 30
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 326,
+            "bottom": 382,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 390,
+            "bottom": 446,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 454,
+            "bottom": 510,
+            "width": 338,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 26,
+            "right": 364,
+            "top": 518,
+            "bottom": 574,
+            "width": 338,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [
+          {
+            "id": "answer-feedback",
+            "dataset": {},
+            "left": 26,
+            "right": 364,
+            "top": 594,
+            "bottom": 714,
+            "width": 338,
+            "height": 120
+          }
+        ],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "next",
+              "id": "",
+              "route": ""
+            },
+            "left": 26,
+            "right": 364,
+            "top": 734,
+            "bottom": 786,
+            "width": 338,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "culture-correct.png",
+      "passed": true
+    },
+    {
+      "theme": "industry",
+      "scene": "correct",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "industry",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 374,
+            "top": 295,
+            "bottom": 728,
+            "width": 358,
+            "height": 433
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 43,
+            "right": 347,
+            "top": 215,
+            "bottom": 275,
+            "width": 304,
+            "height": 60
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 298,
+            "bottom": 354,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 362,
+            "bottom": 418,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 426,
+            "bottom": 482,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 490,
+            "bottom": 546,
+            "width": 334,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [
+          {
+            "id": "answer-feedback",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 566,
+            "bottom": 712,
+            "width": 334,
+            "height": 146
+          }
+        ],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "next",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "industry-correct.png",
+      "passed": true
+    },
+    {
+      "theme": "ecology",
+      "scene": "correct",
+      "route": "quiz",
+      "modal": "",
+      "loading": false,
+      "rect": {
+        ".game-device": [
+          {
+            "id": "",
+            "dataset": {
+              "game": "ecology",
+              "modal": "",
+              "route": "quiz"
+            },
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 844,
+            "width": 390,
+            "height": 844
+          }
+        ],
+        ".panel-body": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 16,
+            "right": 374,
+            "top": 295,
+            "bottom": 728,
+            "width": 358,
+            "height": 433
+          }
+        ],
+        ".question-title": [
+          {
+            "id": "",
+            "dataset": {},
+            "left": 43,
+            "right": 347,
+            "top": 271,
+            "bottom": 301,
+            "width": 304,
+            "height": 30
+          }
+        ],
+        ".option": [
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 0,
+              "pressKey": "press-14-0"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 324,
+            "bottom": 380,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 1,
+              "pressKey": "press-14-1"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 388,
+            "bottom": 444,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 2,
+              "pressKey": "press-14-2"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 452,
+            "bottom": 508,
+            "width": 334,
+            "height": 56
+          },
+          {
+            "id": "",
+            "dataset": {
+              "action": "option",
+              "index": 3,
+              "pressKey": "press-14-3"
+            },
+            "left": 28,
+            "right": 362,
+            "top": 516,
+            "bottom": 572,
+            "width": 334,
+            "height": 56
+          }
+        ],
+        ".answer-feedback": [
+          {
+            "id": "answer-feedback",
+            "dataset": {},
+            "left": 28,
+            "right": 362,
+            "top": 592,
+            "bottom": 712,
+            "width": 334,
+            "height": 120
+          }
+        ],
+        ".profile-card": [],
+        ".points-hero": [],
+        ".segmented .tab": [],
+        "#footer-primary": [
+          {
+            "id": "footer-primary",
+            "dataset": {
+              "action": "next",
+              "id": "",
+              "route": ""
+            },
+            "left": 28,
+            "right": 362,
+            "top": 732,
+            "bottom": 784,
+            "width": 334,
+            "height": 52
+          }
+        ]
+      },
+      "certificateReady": false,
+      "screenshot": "ecology-correct.png",
+      "passed": true
+    }
+  ]
+}
