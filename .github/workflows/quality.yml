@@ -22,10 +22,19 @@ jobs:
       - run: npm ci --ignore-scripts --prefix quiz-admin
       - run: npm ci --ignore-scripts --prefix rural-culture-miniprogram/tools
       - run: npm run build --prefix quiz-admin
-      - run: npm run check
+      - run: |
+          mkdir -p .rural-quiz-runtime/quality
+          npm run check 2>&1 | tee .rural-quiz-runtime/quality/check.log
+        shell: bash
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: recovery-evidence
           path: demo/design/full-development/evidence/operations-report.json
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-evidence
+          path: .rural-quiz-runtime/quality/
           retention-days: 14

@@ -1,0 +1,4 @@
+{
+  "scope": "Internal regression guard for management first-load JavaScript, not a contract or platform size limit.",
+  "maximumInitialJavaScriptBytes": 524288
+}

@@ -1,43 +1,17 @@
 'use strict';
 const fs = require('node:fs'),
   path = require('node:path'),
-  assert = require('node:assert/strict'),
-  { spawn } = require('node:child_process');
+  assert = require('node:assert/strict');
+const { nativeCall, reviewProject } = require('./lib/project-tools.cjs');
 const root = path.resolve(__dirname, '..');
-const project = path.resolve(
-  process.argv[2] || path.join(root, '../.rural-quiz-runtime/art-refinement-review-20261022')
-);
+const project = path.resolve(process.argv[2] || reviewProject());
+const fixtureConfig = require(path.join(project, 'miniprogram/game-config.js'));
+if (fixtureConfig.mode !== 'mock' || !fixtureConfig.reviewEnabled)
+  throw new Error('原生检查只能进入隔离评审工程');
 const out = path.resolve(process.argv[3] || path.join(root, 'qa/code-quality-20261025'));
 fs.mkdirSync(out, { recursive: true });
 async function call(tool, args = []) {
-  return new Promise((resolve, reject) => {
-    const p = spawn('/usr/local/bin/wechatide', [
-      '-c',
-      'Codex',
-      tool,
-      '--project',
-      project,
-      ...args
-    ]);
-    let s = '';
-    p.stdout.on('data', (b) => (s += b));
-    p.stderr.on('data', (b) => (s += b));
-    const timer = setTimeout(() => {
-      p.kill();
-      reject(Error(tool + ' timeout'));
-    }, 45000);
-    p.on('close', (code) => {
-      clearTimeout(timer);
-      let r;
-      try {
-        r = JSON.parse(s.slice(s.indexOf('{'), s.lastIndexOf('}') + 1));
-      } catch {
-        return reject(Error(s.slice(0, 600)));
-      }
-      if (code || !r.ok || r.result?.success === false) return reject(Error(s.slice(0, 600)));
-      resolve(r.result);
-    });
-  });
+  return nativeCall({ project, tool, args });
 }
 async function evaluate(fn) {
   let r = await call('automation_evaluate', ['--fn-source', fn]);

@@ -1,0 +1,14 @@
+{
+  "asset": "assets/ecology/banner-cartoon-v2.png",
+  "width": 750,
+  "height": 250,
+  "pixelSha256": "fee4560191050ff6c6ef5039452fd3612047041f2a5b615bfba9bc18e22274cd",
+  "originalSha256": "631a8a40a97c908f693e4315ece225816e114369eca53b225037f855da502c8b",
+  "optimizedSha256": "e84453f4cb765d2406a8e5cdf7c23f8a7cb6796877480162a79a7ad75b81ca4a",
+  "beforeBytes": 204451,
+  "afterBytes": 137875,
+  "savedBytes": 66576,
+  "written": true,
+  "projects": ["rural-culture-miniprogram", "交付/微信小程序四套/青山绿水"],
+  "scope": "PNG container optimization; dimensions, decoded RGBA and transparency verified identical. Original design source and high-resolution files are unchanged."
+}

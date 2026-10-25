@@ -10,6 +10,7 @@ module.exports = [
       'demo/server/**/*.cjs',
       'demo/scripts/**/*.cjs',
       'rural-culture-miniprogram/miniprogram/**/*.js',
+      'rural-culture-miniprogram/tests/**/*.cjs',
       'tools/**/*.cjs',
       'rural-culture-miniprogram/tools/**/*.cjs'
     ],

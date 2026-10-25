@@ -2,6 +2,8 @@
 
 当前只推进甲方确认的 A 方案。四套小程序各自固定主题，不增加正式汇总入口。主业务源码已提交，历史截图和旧阶段工具继续本地归档。
 
+当前功能、检查与待验边界统一见 [当前工程状态](CURRENT_STATUS.md)，不再从早期原型说明推定当前缺口。
+
 ## 安装、构建和运行
 
 使用 Node.js 24，在仓库根目录执行：
@@ -60,3 +62,7 @@ node rural-culture-miniprogram/tools/v4-serve.cjs .rural-quiz-runtime/art-refine
 当前源码包使用 `demo/scripts/package-contract-local-20261023.py`，文件范围取自 Git 跟踪内容和维护清单，附校验清单及已构建后台；不自动复制旧交付目录、会话或数据库。生成新路径后，用 `verify-contract-package-20261023.cjs` 在解压目录验证，不连接原工作区数据库。旧包保持不变。
 
 `npm run check` 包括规范、格式、服务与维护工具回归；`npm run check:recovery` 在临时数据库执行真实备份/恢复演练并更新报告。报告中的 `runtimeSha256` 是 `demo/scripts/lib/runtime-evidence.cjs` 定义的整套运行文件汇总指纹，不是单个浏览器文件的哈希。GitHub Actions 的原始日志与恢复报告单独留存。
+
+统一入口还检查五套工程包体和共用文件一致性、后台首屏资源预算；完整 Node 回归自动发现测试并生成 JUnit，运行前后源码指纹必须一致。输出位于 `.rural-quiz-runtime/quality/`，GitHub 工作流保存当次资料。`npm run check:native` 是本机额外编译入口，Linux CI 不替代微信编译器或实体手机。
+
+PNG 工具 `node rural-culture-miniprogram/tools/optimize-runtime-png.cjs assets/主题/文件.png` 默认只检查；显式 `--write` 才替换更小编码并同步已有相同副本。工具逐像素校验 RGBA，不启用调色板量化、不改设计源。内部预算和64KiB余量见根 `tools/package-budget.json`，并非合同数字上限。

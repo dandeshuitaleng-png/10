@@ -9,8 +9,11 @@
     "lint": "eslint demo/server quiz-admin/src rural-culture-miniprogram/miniprogram/pages/game rural-culture-miniprogram/miniprogram/services-v4 tools/quality-format.cjs rural-culture-miniprogram/tools/native-metrics-source.cjs rural-culture-miniprogram/tools/check-code-quality-native-20261025.cjs --max-warnings=0",
     "format:check": "node tools/quality-format.cjs --check",
     "format": "node tools/quality-format.cjs --write",
-    "test:quality": "node --test demo/tests/server*.test.cjs demo/tests/native-network.test.cjs quiz-admin/tests/*.test.js rural-culture-miniprogram/tests/remote-recovery.test.cjs rural-culture-miniprogram/tests/native-metrics-source.test.cjs rural-culture-miniprogram/tests/v4-page.cjs rural-culture-miniprogram/tests/v4-services.cjs",
-    "check": "npm run lint && npm run lint:maintenance && npm run format:check && npm run test:quality && npm run check:maintenance && npm run check:recovery",
+    "test:quality": "node tools/run-regression.cjs",
+    "check": "npm run lint && npm run lint:maintenance && npm run format:check && npm run check:packages && npm run check:admin && npm run test:quality && npm run check:maintenance && npm run check:recovery",
+    "check:packages": "node tools/check-packages.cjs",
+    "check:native": "node tools/check-packages.cjs --native",
+    "check:admin": "node tools/check-admin-build.cjs",
     "lint:maintenance": "node tools/check-maintenance.cjs --lint",
     "check:maintenance": "node tools/check-maintenance.cjs && node --test tools/tests/*.test.cjs",
     "check:recovery": "node demo/scripts/verify-backup-recovery.cjs"

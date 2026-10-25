@@ -3,6 +3,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { createRequire } = require('node:module');
 const { spawn } = require('node:child_process');
+const {
+  inspectPackage,
+  packageSummary,
+  budget: packagePolicy
+} = require('./mini-program-package.cjs');
 
 const projectRoot = path.resolve(__dirname, '../..');
 const workspaceRoot = path.dirname(projectRoot);
@@ -158,38 +163,19 @@ function mapBudget(theme) {
   const names = { red: '十步芳草', culture: '千年文脉', industry: '金色产业', ecology: '青山绿水' };
   if (!names[theme]) throw new Error('未知主题');
   const project = path.join(workspaceRoot, '交付/微信小程序四套', names[theme]);
-  const config = JSON.parse(fs.readFileSync(path.join(project, 'project.config.json'), 'utf8'));
-  const root = path.resolve(project, config.miniprogramRoot || 'miniprogram');
-  const matches = (relative, rule) => {
-    const value = String(rule.value).replace(/^\.\//, '').replace(/^\//, '').replace(/\/$/, '');
-    return rule.type === 'folder'
-      ? relative === value || relative.startsWith(value + '/')
-      : rule.type === 'file'
-        ? relative === value
-        : rule.type === 'prefix'
-          ? relative.startsWith(value)
-          : rule.type === 'suffix'
-            ? relative.endsWith(value)
-            : false;
-  };
-  let bytes = 0;
-  function walk(folder) {
-    for (const entry of fs.readdirSync(folder, { withFileTypes: true })) {
-      const file = path.join(folder, entry.name);
-      if (entry.isDirectory()) walk(file);
-      else if (entry.isFile()) {
-        const relative = path.relative(root, file).split(path.sep).join('/');
-        if (
-          (config.packOptions?.include || []).some((rule) => matches(relative, rule)) ||
-          !(config.packOptions?.ignore || []).some((rule) => matches(relative, rule))
-        )
-          bytes += fs.statSync(file).size;
-      }
-    }
-  }
-  walk(root);
-  const currentMap = fs.statSync(path.join(root, `assets/journey/${theme}-a-v4.jpg`)).size;
-  const budget = Math.min(240 * 1024, 2 * 1048576 - bytes + currentMap - 8192);
+  const inspection = inspectPackage(project),
+    summary = packageSummary(inspection);
+  const currentMap = inspection.packed.find(
+    (file) => file.relative === `assets/journey/${theme}-a-v4.jpg`
+  );
+  if (!currentMap) throw new Error('当前工程未打包对应地图');
+  const budget = Math.min(
+    240 * 1024,
+    packagePolicy.maximumBytes -
+      summary.bytes +
+      currentMap.bytes -
+      packagePolicy.minimumHeadroomBytes
+  );
   if (budget <= 0) throw new Error('当前主包没有可用地图预算，请先检查包体');
   return budget;
 }

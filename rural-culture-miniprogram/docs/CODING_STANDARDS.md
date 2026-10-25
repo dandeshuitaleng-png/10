@@ -16,12 +16,16 @@ npm run check
 
 `check` 依次运行 ESLint、格式检查、服务端/管理端/原生页面与服务回归。依赖版本通过根目录的 lockfile 固定。GitHub 工作流配置在 `.github/workflows/quality.yml`；本地通过不等于远端 CI 已执行。
 
+统一入口采用完整 Node 测试发现，还检查内部包体余量、五套共用源码和后台构建资源。JUnit与源码指纹输出到 `.rural-quiz-runtime/quality/`；原生编译另用 `npm run check:native`。预算来自根目录工程配置，不写成合同或平台新条款。
+
 `npm run format` 只格式化 `tools/quality-files.json` 中的维护文件。后续修改清单外的手写模块时，先把该文件加入清单，再格式化和检查。生成图片、编译输出和历史评审脚本不通过压缩源码来维护。
 
 ## 模块与变更
 
 - 手写 JS、Vue 和 WXSS 保留正常缩进与换行。业务流程、平台接口和文件传输各有明确模块；避免继续往页面对象或根组件中堆积独立职责。
 - 当前证书流程位于 `pages/game/certificate-flow.js`；管理端导入导出位于 `src/features/activity-transfer.js`；响应校验、版本检查、外部投递分别由专门模块负责。
+- 声音设置与评审场景分别位于 `pages/game/sound-settings.js`、`review-flow.js`，通过参数接收服务或平台依赖。新职责优先加入对应模块。
+- 管理端组件及样式在 `src/ui/` 显式维护；编辑、表格、详情延迟加载，中文配置通过 ConfigProvider 注入。关闭中的首次未用弹窗不触发表单资源加载。
 - 页面仍负责导航和状态连接。本轮是逐步拆分，不代表已重写全部旧模块或完成全部样式层的合并。
 - Vue 列表使用稳定的编号作 key；固定且不可重排的四个选项允许使用位置作 key。
 - 不无条件关闭 lint 规则。平台回调未使用的参数、可选能力探测的空 catch 按统一配置处理；单行豁免须说明原因。

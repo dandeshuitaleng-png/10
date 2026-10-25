@@ -46,6 +46,14 @@ const menuRef = ref(),
   pageSize = ref(10),
   applied = ref({ search: '', theme: '', level: '', status: '' }),
   detail = ref(null);
+const editorMounted = ref(false),
+  detailMounted = ref(false);
+watch(dialog, (opened) => {
+  if (opened) editorMounted.value = true;
+});
+watch(detail, (item) => {
+  if (item) detailMounted.value = true;
+});
 const pageStates = {};
 const title = computed(() => menus.find((m) => m[0] === page.value)?.[1]);
 const themeName = (id) => data.value.themes.find((t) => t.id === id)?.name || id;
@@ -593,6 +601,7 @@ const poolCount = (id) =>
       </main>
     </div>
     <el-dialog
+      v-if="editorMounted"
       v-model="dialog"
       :title="(editing ? '编辑' : '新增') + title.replace('管理', '')"
       width="min(640px, 94vw)"
@@ -703,6 +712,7 @@ const poolCount = (id) =>
       ></el-dialog
     >
     <el-dialog
+      v-if="detailMounted"
       :model-value="!!detail"
       title="题目详情"
       width="min(720px,94vw)"
