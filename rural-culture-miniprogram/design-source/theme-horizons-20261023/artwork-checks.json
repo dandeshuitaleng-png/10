@@ -1,0 +1,45 @@
+{
+  "scope": "Only the top distant scenery of red/industry/ecology is edited. Existing foreground, original road, UI and all rows below 280 are protected before JPEG export. Culture is byte-identical.",
+  "themes": {
+    "red": {
+      "sourceSha256": "0c2880dfdd987a915dc43d9e27eec2e6f4ac26571dc878e342beaa4a9bc0b680",
+      "resultSha256": "76fee439f5c614a1927f7b3afac57764999860a9d968b05540e35f04365a29cc",
+      "bytes": 196295,
+      "jpegQuality": 92,
+      "editedPixelsBeforeEncoding": 137668,
+      "maxEditedRow": 227,
+      "belowTopBandPixelsChangedBeforeEncoding": 0,
+      "roadPixelsChangedBeforeEncoding": 0
+    },
+    "culture": {
+      "sourceSha256": "0efe640e319fa244684aa1e4f3b6c1699e22ef6d7ae8e2364387d4db81c50dba",
+      "resultSha256": "0efe640e319fa244684aa1e4f3b6c1699e22ef6d7ae8e2364387d4db81c50dba",
+      "bytes": 150108,
+      "jpegQuality": null,
+      "editedPixelsBeforeEncoding": 0,
+      "maxEditedRow": -1,
+      "belowTopBandPixelsChangedBeforeEncoding": 0,
+      "roadPixelsChangedBeforeEncoding": 0
+    },
+    "industry": {
+      "sourceSha256": "b8898c320aa4c882b1f82d764249f6794b2c5d57ce666c29e1f6a3b27fd85eac",
+      "resultSha256": "8b3785b801bd8dfad083c39c9e5aae965ed81f21c1eb8596fdbfeb151a440aa1",
+      "bytes": 167935,
+      "jpegQuality": 92,
+      "editedPixelsBeforeEncoding": 129162,
+      "maxEditedRow": 198,
+      "belowTopBandPixelsChangedBeforeEncoding": 0,
+      "roadPixelsChangedBeforeEncoding": 0
+    },
+    "ecology": {
+      "sourceSha256": "ee3022fd870e7b74402dce29c55fa0b738e16291f3e151a41fb15d162789ad62",
+      "resultSha256": "bfb4f75c814f4b59155d4d89fc0fdb07a58914c11a3cc0b65e7bfd405dce977a",
+      "bytes": 216142,
+      "jpegQuality": 92,
+      "editedPixelsBeforeEncoding": 159909,
+      "maxEditedRow": 242,
+      "belowTopBandPixelsChangedBeforeEncoding": 0,
+      "roadPixelsChangedBeforeEncoding": 0
+    }
+  }
+}

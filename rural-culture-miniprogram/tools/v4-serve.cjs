@@ -5,7 +5,7 @@ const runner = path.resolve(__dirname, '../preview');
 const port = Number(process.argv[3] || process.env.RURAL_V4_PREVIEW_PORT || 6493);
 const config = JSON.parse(fs.readFileSync(path.join(project, 'project.config.json'), 'utf8'));
 const miniRoot = path.resolve(project, config.miniprogramRoot || 'miniprogram');
-const types = { '.html': 'text/html;charset=utf-8', '.js': 'text/javascript;charset=utf-8', '.wxml': 'text/plain;charset=utf-8', '.wxss': 'text/plain;charset=utf-8', '.json': 'application/json;charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.mp4': 'video/mp4', '.md': 'text/plain;charset=utf-8' };
+const types = { '.html': 'text/html;charset=utf-8', '.js': 'text/javascript;charset=utf-8', '.wxml': 'text/plain;charset=utf-8', '.wxss': 'text/plain;charset=utf-8', '.json': 'application/json;charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.gif': 'image/gif', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.mp4': 'video/mp4', '.md': 'text/plain;charset=utf-8' };
 http.createServer((request, response) => {
   let pathname; try { pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname); } catch { response.writeHead(400); response.end(); return; }
   const native = pathname.startsWith('/miniprogram/');

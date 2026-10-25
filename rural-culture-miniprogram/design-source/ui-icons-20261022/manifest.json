@@ -1,0 +1,188 @@
+{
+  "library": "lucide",
+  "version": "1.8.0",
+  "source": "https://lucide.dev",
+  "roles": {
+    "auxiliary": 16,
+    "regular": 20,
+    "entry": 24
+  },
+  "records": [
+    {
+      "name": "back",
+      "glyph": "ChevronLeft",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "next",
+      "glyph": "ChevronRight",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "book",
+      "glyph": "BookOpen",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": "book-ui"
+    },
+    {
+      "name": "certificate",
+      "glyph": "FileBadge",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": "certificate-ui"
+    },
+    {
+      "name": "check",
+      "glyph": "Check",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "clock",
+      "glyph": "Clock3",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "close",
+      "glyph": "X",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "flag",
+      "glyph": "Flag",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "info",
+      "glyph": "Info",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "leaf",
+      "glyph": "Leaf",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "lock",
+      "glyph": "LockKeyhole",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "play",
+      "glyph": "Play",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "points",
+      "glyph": "Trophy",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": "points-ui"
+    },
+    {
+      "name": "rank",
+      "glyph": "ChartColumnIncreasing",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": "rank-ui"
+    },
+    {
+      "name": "refresh",
+      "glyph": "RefreshCw",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "settings",
+      "glyph": "Settings",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "share",
+      "glyph": "Share2",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "sound-on",
+      "glyph": "Volume2",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "sound-off",
+      "glyph": "VolumeX",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "wheat",
+      "glyph": "Wheat",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "music",
+      "glyph": "Music2",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    },
+    {
+      "name": "effects",
+      "glyph": "AudioLines",
+      "stroke": 1.8,
+      "viewBox": 24,
+      "raster": 72,
+      "alias": null
+    }
+  ]
+}

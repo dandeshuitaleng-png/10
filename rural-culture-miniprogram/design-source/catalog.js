@@ -13,7 +13,7 @@ window.PROTOTYPE_CONFIG = {
       "order": 1,
       "enabled": true,
       "description": "走近乡村里的红色记忆",
-      "certificateName": "红色故事通"
+      "certificateName": "知识达人"
     },
     {
       "id": "culture",
@@ -21,7 +21,7 @@ window.PROTOTYPE_CONFIG = {
       "order": 2,
       "enabled": true,
       "description": "在乡音与古建中读懂湖南",
-      "certificateName": "千年文脉知识达人"
+      "certificateName": "知识达人"
     },
     {
       "id": "industry",
@@ -29,7 +29,7 @@ window.PROTOTYPE_CONFIG = {
       "order": 3,
       "enabled": true,
       "description": "发现一方水土的丰饶物产",
-      "certificateName": "金色产业知识达人"
+      "certificateName": "知识达人"
     },
     {
       "id": "ecology",
@@ -37,7 +37,7 @@ window.PROTOTYPE_CONFIG = {
       "order": 4,
       "enabled": true,
       "description": "认识家乡的山川与生态",
-      "certificateName": "青山绿水知识达人"
+      "certificateName": "知识达人"
     }
   ],
   "levels": [

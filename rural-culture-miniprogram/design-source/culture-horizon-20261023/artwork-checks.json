@@ -1,0 +1,12 @@
+{
+  "scope": "Culture top courtyard scenery added. Original road, near book monument, academy and all rows below 280 protected before JPEG encoding. Other three theme assets protected byte for byte.",
+  "sourceSha256": "0efe640e319fa244684aa1e4f3b6c1699e22ef6d7ae8e2364387d4db81c50dba",
+  "resultSha256": "40337fc01ebd65e9b0f8ec1a00f0d5a6d1a15880bc8ebcb3e81f1186cb7cfcab",
+  "bytes": 140565,
+  "jpegQuality": 92,
+  "editedPixelsBeforeEncoding": 105340,
+  "maxEditedRow": 251,
+  "belowTopBandPixelsChangedBeforeEncoding": 0,
+  "roadPixelsChangedBeforeEncoding": 0,
+  "solidForegroundPixelsChangedBeforeEncoding": 0
+}
