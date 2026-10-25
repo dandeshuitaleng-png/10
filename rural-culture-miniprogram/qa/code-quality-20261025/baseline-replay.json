@@ -1,0 +1,14 @@
+[
+  {
+    "name": "server",
+    "expectedFailure": true,
+    "exitCode": 1,
+    "scope": "Current regression tests against immutable pre-fix source snapshot; memory fixtures only."
+  },
+  {
+    "name": "remote",
+    "expectedFailure": true,
+    "exitCode": 1,
+    "scope": "Current regression tests against immutable pre-fix source snapshot; memory fixtures only."
+  }
+]

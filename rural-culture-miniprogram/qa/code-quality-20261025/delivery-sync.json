@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "project": "十步芳草",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    }
+  ]
+}

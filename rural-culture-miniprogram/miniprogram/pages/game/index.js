@@ -1,117 +1,1255 @@
-const defaultSkin=require('../../game-config');
-const presentation=require('../../services-v4/visual-feedback');
-let skin=presentation.apply(defaultSkin);
-const service=require('../../services-v4/index');
-const journey=require('../../services-v4/journey');
-const {createMotion}=require('../../services-v4/mascot-motion');
-const {createAudio}=require('../../services-v4/audio');
-const {createPressFeedback}=require('../../services-v4/press-feedback');
-const homeLayout=require('../../services-v4/home-layout');
-const homeDesigns=require('../../services-v4/home-designs');
-const shareCover=require('../../services-v4/share-cover');
-const certificateArt=require('../../services-v4/certificate-art');
-const themeContent=require('../../services-v4/theme-content');
-const scenarioNames=['home','quiz','selected','correct','revive','locked','result','certificate','long','image','video','long-explanation','empty','failure','disabled','ranking-empty','ranking-failure','save-failure','journey','chapter-2','chapter-3','chapter-4','ranking','ranking-loading','points','points-empty','points-loading','points-failure','certificate-empty','certificate-loading','certificate-failure','certificate-permission','certificate-saved','certificate-share'];
-const scenarioLabels=['首页（重置评审数据）','答题默认','选中答案','答对与解析','答错复活','次数耗尽锁定','本关结算','本游戏证书','长题和两行选项','图片题','视频题','长解析','空目录','加载失败和重试','已完成关卡停用','榜单空数据','榜单加载失败','证书保存失败','关卡探索步道','第2关视觉','第3关视觉','第4关视觉','排行榜','榜单加载中','积分明细','积分无记录','积分加载中','积分加载失败','未获得证书','证书生成中','证书生成失败','相册权限未开启','证书保存成功','证书分享'];
-const date=t=>{const d=new Date(t+8*3600000);return d.toISOString().slice(0,10).replace(/-/g,'/');};
+const defaultSkin = require('../../game-config');
+const presentation = require('../../services-v4/visual-feedback');
+let skin = presentation.apply(defaultSkin);
+const service = require('../../services-v4/index');
+const journey = require('../../services-v4/journey');
+const { createMotion } = require('../../services-v4/mascot-motion');
+const { createAudio } = require('../../services-v4/audio');
+const { createPressFeedback } = require('../../services-v4/press-feedback');
+const homeLayout = require('../../services-v4/home-layout');
+const homeDesigns = require('../../services-v4/home-designs');
+const shareCover = require('../../services-v4/share-cover');
+const { createCertificateFlow } = require('./certificate-flow');
+const themeContent = require('../../services-v4/theme-content');
+const scenarioNames = [
+  'home',
+  'quiz',
+  'selected',
+  'correct',
+  'revive',
+  'locked',
+  'result',
+  'certificate',
+  'long',
+  'image',
+  'video',
+  'long-explanation',
+  'empty',
+  'failure',
+  'disabled',
+  'ranking-empty',
+  'ranking-failure',
+  'save-failure',
+  'journey',
+  'chapter-2',
+  'chapter-3',
+  'chapter-4',
+  'ranking',
+  'ranking-loading',
+  'points',
+  'points-empty',
+  'points-loading',
+  'points-failure',
+  'certificate-empty',
+  'certificate-loading',
+  'certificate-failure',
+  'certificate-permission',
+  'certificate-saved',
+  'certificate-share'
+];
+const scenarioLabels = [
+  '首页（重置评审数据）',
+  '答题默认',
+  '选中答案',
+  '答对与解析',
+  '答错复活',
+  '次数耗尽锁定',
+  '本关结算',
+  '本游戏证书',
+  '长题和两行选项',
+  '图片题',
+  '视频题',
+  '长解析',
+  '空目录',
+  '加载失败和重试',
+  '已完成关卡停用',
+  '榜单空数据',
+  '榜单加载失败',
+  '证书保存失败',
+  '关卡探索步道',
+  '第2关视觉',
+  '第3关视觉',
+  '第4关视觉',
+  '排行榜',
+  '榜单加载中',
+  '积分明细',
+  '积分无记录',
+  '积分加载中',
+  '积分加载失败',
+  '未获得证书',
+  '证书生成中',
+  '证书生成失败',
+  '相册权限未开启',
+  '证书保存成功',
+  '证书分享'
+];
+const date = (t) => {
+  const d = new Date(t + 8 * 3600000);
+  return d.toISOString().slice(0, 10).replace(/-/g, '/');
+};
 Page({
- data:{recordsLoading:false,recordsError:'',homeDesign:'map',certificateImageLoading:false,certificateSaveMessage:'',certificateImage:'',certificateImageError:false,certificateImageRatio:1.4222,pressedKey:'',soundSettingsOpen:false,musicEnabled:true,effectsEnabled:true,musicVolume:40,effectsVolume:60,soundAvailable:false,soundEnabled:true,soundPlaying:false,soundErrorCount:0,soundEffectPlays:0,lastSoundEffect:'',rulePose:'welcome',chapterPose:'welcome',modalActorPose:'',pageActorId:'',pageActorPose:'welcome',mascotAnimationReady:presentation.motionReady,motion:{playingId:'',respondingId:'',sequence:0,touchSequence:0},reducedMotion:false,skin,titleArt:{visible:false,plain:false},certificates:[],mediaFailed:false,sharePreviewImage:'',shareCoverImage:'',shareCoverActor:'',certificateShareImage:'',content:themeContent.get(skin.gameId),shareCopy:{},mascots:presentation.actions,route:'home',modal:'',loading:true,error:'',busy:false,period:'daily',snapshot:{progress:{completed:0,total:0,ratio:0},points:0,certificates:[]},levels:[],options:[],ranking:{rows:[],me:{}},scene:presentation.scene(skin.gameId),header:presentation.header(skin.gameId),scrollInto:'',mapScrollTop:0,mapHintVisible:false,mapFadeTop:false,mapFadeBottom:false,review:false,reviewControls:true,scenarioLabels,scenarioIndex:0,journey:{height:0,nodes:[],tiles:[]},mapWidth:375,mapViewport:562,profile:presentation.readerProfile(service.profile()),chapterStyle:{key:'bookmark',companion:'/assets/brand/reader.png'},saveWarning:'',saveWarningCanRetry:false,smallScreen:false,shellStyle:'',footerPrimary:'',footerSecondary:'',footerDisabled:false,challenge:null,certificate:null,result:null,media:null,configuration:{},ledger:[],progressPercent:0},
- onLoad(p){skin=presentation.apply(defaultSkin);if(defaultSkin.allowThemeSwitch&&p.theme){const skins=require('../../services-v4/skins');if(skins[p.theme])skin=presentation.apply(skins[p.theme]);}if(service.activate)service.activate(skin);this.setData({skin,scene:presentation.scene(skin.gameId),header:presentation.header(skin.gameId)});this._alive=true;this._foreground=true;this._press=createPressFeedback({onChange:pressedKey=>{if(this._alive)this.setData({pressedKey});}});this._audio=createAudio(wx,{onChange:state=>{if(this._alive)this.setData({soundAvailable:state.available,soundEnabled:state.enabled,musicEnabled:state.musicEnabled,effectsEnabled:state.effectsEnabled,musicVolume:Math.round(state.musicLevel*100),effectsVolume:Math.round(state.effectsLevel*100),soundPlaying:state.musicPlaying,soundErrorCount:state.errors,soundEffectPlays:state.effectPlays,lastSoundEffect:state.lastPlayedEffect});}});this._motion=createMotion({onChange:motion=>{if(this._alive)this.setData({motion});}});this.readMotionPreference();this._review=p.review==='1'&&skin.reviewEnabled;this.setData({review:this._review,reviewControls:p.controls!=='0',homeDesign:homeDesigns.resolve(defaultSkin,p,this._review)});this.resize();const finish=()=>{if(!this._alive)return;if(!this._review&&service.leaveReview)service.leaveReview();if(this._review&&p.scenario)this.applyScenario(p.scenario).then(()=>{if(p.scenario==='home'&&['profile','points','ranking','certificate'].includes(p.route))this.go(p.route);});else{this.setData({route:p.route&&['home','levels','points','ranking','certificate','profile'].includes(p.route)?p.route:'home',error:''});this.refresh();if(['home','levels'].includes(this.data.route))wx.nextTick(()=>this.focusMap());}};try{const ready=service.ensureReady();if(ready&&typeof ready.then==='function'){this._ready=ready.then(finish).catch(e=>{if(this._alive)this.setData({loading:false,error:presentation.errorMessage(e.message)||'服务连接失败，请检查网络后重试。'});});}else finish();}catch(e){this.setData({loading:false,error:presentation.errorMessage(e.message)||'服务连接失败，请重试。'});}if(wx.showShareMenu)wx.showShareMenu({menus:['shareAppMessage']});},
- onShow(){if(!this._alive)return;this._foreground=true;if(this._audio)this._audio.show();this.readMotionPreference();clearInterval(this._timer);if(!this.data.loading&&!this.data.error){this.refresh();this.syncRemote();}this.tick();this._timer=setInterval(()=>this.tick(),250);},
- onHide(){this._foreground=false;this.clearMapMotion();this.cancelPress();this.setData({soundSettingsOpen:false});if(this._audio)this._audio.hide();if(this._motion)this._motion.hide();this.pauseMedia();clearInterval(this._timer);this._timer=null;if(service.flush)service.flush();},
- onUnload(){this.clearMapMotion();if(this._press)this._press.dispose();if(this._audio)this._audio.dispose();if(this._motion)this._motion.dispose();this.pauseMedia();this._alive=false;clearInterval(this._timer);if(service.flush)service.flush();},
- onResize(){this.cancelPress();this.readMotionPreference();this.resize();if(this.data.loading)return;this.refresh();if(['home','levels'].includes(this.data.route)){this.setData({mapScrollTop:0});wx.nextTick(()=>this.focusMap());}},
- resize(){const i=wx.getWindowInfo?wx.getWindowInfo():wx.getSystemInfoSync(),m=homeLayout.metrics(i,wx.getMenuButtonBoundingClientRect?wx.getMenuButtonBoundingClientRect():null,skin.gameId);const design=homeDesigns.metrics(m,this.data.homeDesign);this.setData({titleArt:homeLayout.titleArtwork(skin.gameId,m.width,m.titleArtWidth,m.titleCenterY),mapWidth:design.mapWidth,mapViewport:design.mapViewport,smallScreen:m.smallScreen,shellStyle:'--panel-top:'+Math.max(m.status+(m.smallScreen?68:98),m.smallScreen?112:142)+'px;--status:'+m.status+'px;--safe-bottom:'+m.safeBottom+'px;'+m.style+design.style});},
- refresh(){if(!this._alive)return;const s=service.snapshot(),cfg=service.configuration();if(s.network&&s.theme)skin=Object.assign({},skin,{name:s.theme.name||skin.name,description:s.theme.description||skin.description});let c=null;try{c=service.challenge();}catch(e){}const route=this.data.route;if(this._navigationRoute!==route&&wx.setNavigationBarColor){this._navigationRoute=route;wx.setNavigationBarColor({frontColor:'#000000',backgroundColor:skin.light});}const levels=s.levels.map((l,i)=>Object.assign({},l,{number:String(i+1).padStart(2,'0'),earnedPoints:s.ledger.filter(entry=>entry.levelId===l.id).reduce((total,entry)=>total+entry.points,0),visual:service.chapterPresentation(l,i),topic:themeContent.chapterLabel(skin.gameId,l,i),statusText:{completed:'已完成 · 可重温',current:l.resumable?'继续本关':'当前可闯关',locked:'完成上一关后开启','today-locked':'今日锁定 · 次日开放'}[l.status]}));const current=levels.find(l=>l.status==='current');const certificates=s.certificates.map(x=>Object.assign(presentation.certificateLabel(x),{date:date(x.completedAt)}));const cert=certificates.find(x=>x.id===this.data.certificateId)||certificates[0]||null;let ranking=service.rankings(this.data.period,this._rankEmpty);ranking.me=ranking.me||{rank:null,points:0};ranking.rows=ranking.rows.map(r=>{const name=presentation.readerName(r.name);return Object.assign({},r,{name,initial:name.slice(0,1)});});let media=c&&c.question&&c.question.media;if(media){media=Object.assign({},media);if(media.type!=='video'&&(!media.src||media.src.indexOf('assets/scene')>=0))media.src=this.data.scene;}const options=c?c.question.options.map((text,i)=>({index:i,letter:String.fromCharCode(65+i),text,selected:c.selected===i,correct:c.status==='correct'&&c.feedback.answer===i})):[];const ledger=s.ledger.slice().reverse().map((l,i)=>Object.assign({},l,{id:l.id||l.levelId+'-'+i,label:l.label||(levels.find(x=>x.id===l.levelId)||{}).label||l.levelId,date:date(l.at),time:new Date(l.at+8*3600000).toISOString().slice(11,16)}));const chapterIndex=c?Math.max(0,levels.findIndex(l=>l.id===c.levelId)):0;const map=this.data.homeDesign==='guide'?homeDesigns.chapters(levels,this.data.mapWidth,this.data.mapViewport):journey.layout(levels,skin.gameId,this.data.mapWidth,this.data.mapViewport);if(this.data.homeDesign!=='guide'&&s.network&&s.theme.mapImage)map.tiles=map.tiles.map(tile=>Object.assign({},tile,{src:/^https?:/.test(s.theme.mapImage)?s.theme.mapImage:skin.connection.apiBase+s.theme.mapImage}));const shareImage=(cfg.reviveShare&&cfg.reviveShare.image)||(cfg.share&&cfg.share.image);const pagePose=presentation.nodePose(chapterIndex).pose,pageActorId=route==='result'&&c?'page-result':'';if(pageActorId!==this.data.pageActorId)this._inlineActorVisible=true;const patch={loading:false,skin,chapterTopic:themeContent.chapterLabel(skin.gameId,c&&c.level,chapterIndex),nextChapter:current?{label:current.label,topic:current.topic,line:themeContent.chapter(skin.gameId,{},levels.indexOf(current)).line}:null,chapterPose:pagePose,pageActorId,pageActorPose:presentation.sceneActor(route,c&&c.status,skin.gameId),certificates,sharePreviewImage:shareCover.configured(shareImage,skin.connection?.apiBase)||this.data.shareCoverImage,shareCoverActor:'/assets/brand/original-extensions/'+(shareCover.actors[skin.gameId]||'scholar')+'.png',profile:presentation.readerProfile(service.profile()),content:themeContent.get(skin.gameId),shareCopy:themeContent.share(skin,cfg,true),certificateShareImage:shareCover.configured(cfg.share&&cfg.share.image,skin.connection?.apiBase)||this.data.shareCoverImage,chapterStyle:themeContent.chapter(skin.gameId,service.chapterPresentation(c&&c.level,chapterIndex),chapterIndex),snapshot:s,configuration:cfg,levels,journey:map,challenge:c,result:c&&c.result,certificate:cert,ranking,media,mediaFailed:this._mediaQuestion===c?.question?.id?this.data.mediaFailed:false,options,ledger,progressPercent:Math.round(s.progress.ratio*100),questionProgress:c?Math.round((c.index+(c.status==='correct'?1:0))/c.total*100):0,questionNumber:c?String(c.index+1).padStart(2,'0'):'01',questionTotal:c?String(c.total).padStart(2,'0'):'00',footerPrimary:'',footerSecondary:'',footerDisabled:false,footerId:'',footerRoute:'',footerAction:'go',secondaryAction:'go',secondaryRoute:'levels'};
- if(route==='home'||route==='levels'){const lockedToday=levels.find(l=>l.status==='today-locked');Object.assign(patch,current?{footerPrimary:(current.resumable?'继续':'开始')+current.label+' · '+current.name,footerAction:'level',footerId:current.id}:levels.length&&levels.every(l=>l.status==='completed')?{footerPrimary:'查看学习证书',footerRoute:'certificate'}:lockedToday?{footerPrimary:'查看今日锁定说明',footerAction:'level',footerId:lockedToday.id}:{footerPrimary:'内容准备中',footerDisabled:true});}else if(route==='quiz'&&c){Object.assign(patch,c.status==='correct'?{footerPrimary:c.index===c.total-1?'查看本关成果':'下一题',footerAction:'next'}:{footerPrimary:this.data.busy?'正在核验…':'提交答案',footerAction:'submit',footerDisabled:c.selected===null||c.status!=='playing'||this.data.busy||!!(media&&media.required&&this.data.mediaFailed)});}else if(route==='result'){Object.assign(patch,current?{footerPrimary:'继续下一关',footerAction:'level',footerId:current.id}:{footerPrimary:'查看学习证书',footerRoute:'certificate'});Object.assign(patch,{footerSecondary:'返回活动首页'});}else if(route==='certificate'&&cert){Object.assign(patch,this.certificateFooter());}
- const persist=service.getPersistenceStatus?service.getPersistenceStatus():{};patch.saveWarning=persist.warning&&persist.warning!=='CATALOG_CHANGED'?(persist.message||''):'';patch.saveWarningCanRetry=persist.warning==='STORAGE_WRITE_FAILED'||persist.warning==='NETWORK_UNAVAILABLE';if(this._mediaQuestion!==c?.question?.id)this._mediaTime=0;this._mediaQuestion=c&&c.question&&c.question.id;this.setData(patch);if(this._audio)this._audio.observe({route,challenge:c,media:route==='quiz'&&media&&media.type==='video'});this.prepareShareCover();if(route==='certificate'&&cert&&!this._certificateReviewState)this.prepareCertificate().catch(()=>{});if(!cert&&(this.data.certificateImage||this.data.certificateImageLoading||this.data.certificateImageError)){this._certificateKey='';this.certificateState({certificateImage:'',certificateImageLoading:false,certificateImageError:false,certificateSaveMessage:''});}this.syncMotion();if(pageActorId)wx.nextTick(()=>this.measureInlineActor());if(route==='quiz'&&c){if(c.status==='revive'&&!['share','exit'].includes(this.data.modal))this.showModal('revive');if(c.status==='locked')this.showModal('locked');}},
- tick(){if(this.data.mapHintVisible&&Date.now()>=this._mapHintUntil)this.setData({mapHintVisible:false});if(service.network&&!this.data.loading&&!this.data.error&&!this._polling){const poll=service.poll();if(poll&&typeof poll.then==='function'){this._polling=true;poll.then(()=>{if(this._alive){if(['ranking','points'].includes(this.data.route))this.setData({recordsError:''});this.refresh();}}).catch(e=>{if(this._alive){if(['ranking','points'].includes(this.data.route))this.setData({recordsLoading:false,recordsError:presentation.errorMessage(e.message)||'连接未完成，请稍后重试。'});this.refresh();}}).finally(()=>this._polling=false);}}try{service.expire();const c=service.challenge();if(this.data.route==='quiz'){if(!this.data.challenge||c.status!==this.data.challenge.status)this.refresh();else if(c.remaining!==this.data.challenge.remaining)this.setData({'challenge.remaining':c.remaining});}}catch(e){}},
- focusMap(){if(this.data.homeDesign==='guide'){const top=this.data.journey.focusTop||0;this._mapOffset=top;this.setData({scrollInto:'',mapScrollTop:1,mapHintVisible:false,mapFadeTop:false,mapFadeBottom:false});wx.nextTick(()=>{if(this._alive&&['home','levels'].includes(this.data.route))this.setData({mapScrollTop:top,scrollInto:top?'':'page-content-top'});});this.syncMotion();return;}const j=this.data.journey,top=j.focusTop||0;this._mapOffset=top;const hint=!!j.canScroll&&!this._mapHintShown;if(hint){this._mapHintShown=true;this._mapHintUntil=Date.now()+3500;}this.setData({scrollInto:'',mapScrollTop:top,mapHintVisible:hint,mapFadeTop:!!j.canScroll&&top>2,mapFadeBottom:!!j.canScroll&&j.maxScroll-top>2});this.syncMotion();},
- // Scroll with the ordinary image only. A native animation canvas can be
- // composited a frame apart from scroll-view; stop before finger displacement,
- // keep it empty through inertia, then resume after the final scroll event.
- clearMapMotion(){clearTimeout(this._mapMotionTimer);this._mapMotionTimer=null;this._mapTouching=false;this._mapScrolling=false;this._mapDragged=false;},
- pauseMapMotion(){clearTimeout(this._mapMotionTimer);this._mapMotionTimer=null;this._mapScrolling=true;this.syncMotion();},
- settleMapMotion(){clearTimeout(this._mapMotionTimer);this._mapMotionTimer=null;if(this._mapTouching)return;this._mapMotionTimer=setTimeout(()=>{this._mapMotionTimer=null;this._mapScrolling=false;if(this._alive&&this._foreground)this.syncMotion();},180);},
- onMapTouchStart(){if(!['home','levels'].includes(this.data.route)||!this.data.journey.canScroll)return;this._mapTouching=true;this._mapDragged=false;this.pauseMapMotion();},
- onMapTouchEnd(){if(!this._mapTouching)return;this._mapTouching=false;if(this._mapDragged)this.settleMapMotion();else{this._mapScrolling=false;this.syncMotion();}},
- onMapScroll(e){if(!['home','levels'].includes(this.data.route)){this.measureInlineActor();return;}const j=this.data.journey,top=Math.max(0,Math.min(j.maxScroll||0,Number(e.detail.scrollTop)||0)),patch={},moved=Math.abs(top-(this._mapOffset||0))>.25;if(moved){if(this._mapTouching)this._mapDragged=true;this.pauseMapMotion();this.settleMapMotion();}const above=!!j.canScroll&&top>2,below=!!j.canScroll&&j.maxScroll-top>2;if(above!==this.data.mapFadeTop)patch.mapFadeTop=above;if(below!==this.data.mapFadeBottom)patch.mapFadeBottom=below;if(this.data.mapHintVisible&&moved)patch.mapHintVisible=false;this._mapOffset=top;if(Object.keys(patch).length)this.setData(patch);if(!moved)this.syncMotion();},
- go(route){this.clearMapMotion();this.cancelPress();this.pauseMedia();this.setData({route,modal:'',soundSettingsOpen:false,error:'',recordsLoading:false,recordsError:'',scrollInto:'',mapScrollTop:0,mapHintVisible:false,mapFadeTop:false,mapFadeBottom:false,});this.refresh();this.syncRemote();wx.nextTick(()=>['home','levels'].includes(route)?this.focusMap():this.setData({scrollInto:'page-content-top'}));},
- mascotTap(e){if(this.data.busy||this.data.modal||!['home','levels'].includes(this.data.route))return;const id=e.currentTarget.dataset.id,node=this.data.journey.nodes.find(n=>n.id===id);if(!node||!node.showMascot)return;if(this._audio)this._audio.gesture('mascot');if(this.data.reducedMotion){this.toast(node.label+' · '+(node.status==='today-locked'?'今日锁定，明天可以继续':node.status==='completed'?'已经完成，可以重温':'准备好就点击关卡开始学习'));return;}if(this._motion)this._motion.react(id);},
- async level(id){this.refresh();const l=this.data.levels.find(x=>x.id===id);if(!l)return;if(this._motion)this._motion.play(id);if(l.status==='locked')return this.toast('完成上一关后，即可开启本关');if(l.status==='today-locked')return this.showModal('locked');if(l.resumable){await service.start(id);return this.go('quiz');}this.setData({ruleLevel:l,rulePose:presentation.nodePose(this.data.levels.findIndex(x=>x.id===l.id)).pose,chapterStyle:themeContent.chapter(skin.gameId,service.chapterPresentation(l,this.data.levels.findIndex(x=>x.id===l.id)),this.data.levels.findIndex(x=>x.id===l.id))});this.showModal('rules');},
- showModal(type){this.cancelPress();const c=this.data.challenge;const map={rules:['闯关须知','准备好了，开始','confirm-start','稍后再来','dismiss'],revive:[c&&c.feedback&&c.feedback.reason==='timeout'?'本题作答时间已到':'这道题，再想一想','分享复活','revive-share','返回关卡','levels'],share:['分享复活','继续答题','share-success','取消分享，不消耗次数','share-cancel'],locked:['今天先歇一歇','返回关卡','levels','',''],exit:['暂时离开答题？','继续答题','dismiss','返回关卡，保留进度','levels'],'certificate-share':['分享学习成果','分享给朋友','','返回证书','dismiss'],'album-permission':['需要相册权限','打开相册设置','album-settings','返回证书','dismiss'],video:['视频题目','返回题目','dismiss','',''],'save-failure':['保存暂未完成','重试保存','save','返回证书','dismiss']};const m=map[type];this.setData({modal:type,soundSettingsOpen:false,modalActorPose:presentation.modalActor(type,this.data.rulePose),modalTitle:m[0],modalPrimary:m[1],modalAction:m[2],modalSecondary:m[3],modalSecondaryAction:m[4]});this.syncMotion();},
- async action(e){if(this.data.busy)return;const d=e.currentTarget.dataset,a=d.action;if(a==='option'&&this.data.challenge&&this.data.challenge.status!=='playing')return;this.pressTap(e);if(this._audio)this._audio.gesture();try{if(a==='go')return this.go(d.route);if(a==='retry-records'){if(this._review&&!service.network){this.setData({recordsLoading:false,recordsError:''});this.refresh();return;}return await this.syncRemote();}if(a==='level')return await this.level(d.id);if(a==='confirm-start'){this.setData({busy:true});await service.start(this.data.ruleLevel.id);this.setData({busy:false});if(this._audio)this._audio.effect('click');return this.go('quiz');}if(a==='option'){const before=JSON.stringify(this.data.challenge&&this.data.challenge.selected);service.select(Number(d.index));this.refresh();if(this._audio&&before!==JSON.stringify(this.data.challenge&&this.data.challenge.selected))this._audio.effect('select');}if(a==='submit'){this.setData({busy:true});const pending=service.submit();if(!service.network)this.refresh();await pending;this.setData({busy:false});this.refresh();if(this.data.challenge.status==='result')return this.go('result');if(this.data.challenge.status==='correct')this.setData({scrollInto:'answer-feedback'});}if(a==='next'){this.setData({busy:true});const c=await service.next();this.setData({busy:false});if(this._audio&&c.status!=='result')this._audio.effect('click');this.go(c.status==='result'?'result':'quiz');}if(a==='exit')this.showModal('exit');if(a==='dismiss'){this.setData({modal:''});this.refresh();}if(a==='close-modal'){if(this.data.modal==='share'){service.revive(false);this.showModal('revive');}else if(['revive','locked'].includes(this.data.modal))this.go('levels');else{this.setData({modal:''});this.refresh();}}if(a==='levels')this.go('levels');if(a==='revive-share')this.showModal('share');if(a==='share-cancel'){service.revive(false);this.showModal('revive');}if(a==='share-success'){this.setData({busy:true});await service.revive(true);this.setData({busy:false});this.setData({modal:''});this.refresh();this.toast('复活成功，继续回答本题');}if(a==='period'){this.setData({period:d.period});await this.syncRemote();this.refresh();}if(a==='choose-certificate'){this.setData({certificateId:d.id});this.refresh();}if(a==='retry-media'){this.setData({mediaFailed:false});this._mediaQuestion='';this.refresh();}if(a==='share-cert')this.showModal('certificate-share');if(a==='retry-certificate')return this.prepareCertificate(true).catch(()=>{});if(a==='album-settings')return this.openAlbumSettings();if(a==='save')return await this.saveCertificate();if(a==='video')this.showModal('video');if(a==='retry-save'){const saved=service.flush();this.refresh();this.toast(saved.warning?'暂未保存，请稍后重试':'学习记录已保存');}if(a==='retry'){this.setData({loading:true,error:''});await service.ensureReady();if(service.sync)await service.sync();this.refresh();wx.nextTick(()=>this.focusMap());}}catch(err){this.setData({busy:false,loading:false,...(a==='retry'?{error:presentation.errorMessage(err.message)||'连接失败，请重试'}:{})});this.toast({TODAY_LOCKED:'本关今日锁定，次日可重新参与',NO_QUESTIONS:'本关题目尚未准备好',INVALID_QUESTIONS:'本关题库配置不完整',INVALID_GAME_LEVEL:'当前游戏没有这道关卡',BACKEND_NOT_CONFIGURED:'正式服务尚未配置'}[err.code||err.message]||presentation.errorMessage(err.message)||'操作未完成，请重试');try{this.refresh();}catch{}}},
- readMotionPreference(){const apply=value=>{if(!this._alive)return;this._systemReduced=value;this.setData({reducedMotion:!!value});this.syncMotion();};apply(!!this._systemReduced);if(!wx.createSelectorQuery)return;wx.nextTick(()=>{if(!this._alive)return;try{wx.createSelectorQuery().in(this).select('.motion-preference-probe').fields({computedStyle:['opacity']}).exec(rows=>{if(rows&&rows[0]&&rows[0].opacity!==undefined)apply(Number(rows[0].opacity)===1);});}catch{}});},
- syncMotion(){if(!this._motion)return;const width=this.data.mapWidth,j=this.data.journey,modal=this.data.modal,modalPose=presentation.modalActor(modal,this.data.rulePose),mapVisible=!modal&&['home','levels'].includes(this.data.route),inlineVisible=!modal&&this.data.pageActorId&&this._inlineActorVisible!==false,standalone=modalPose||inlineVisible,actorId=modalPose?'modal-'+modal:this.data.pageActorId,actorPose=modalPose||this.data.pageActorPose;this._motion.update({enabled:!!(this._alive&&this._foreground&&this.data.mascotAnimationReady&&!this.data.reducedMotion&&!this.data.soundSettingsOpen&&!this.data.loading&&!this.data.error&&((mapVisible&&!this._mapScrolling)||standalone)),nodes:standalone?[{id:actorId,pose:actorPose,status:'current',distance:50}]:(j.nodes||[]),canvasHeight:standalone?100:(j.height||0),viewportTop:standalone?0:(this._mapOffset||0),viewportHeight:standalone?100:this.data.mapViewport,nodeHeight:standalone?0:homeLayout.mapMetrics(width).nodeHeight,actorHeight:width<=350?66:width>=410?84:76});},
- toggleSound(e){this.pressTap(e);if(this._audio)this._audio.toggle();},
- openSoundSettings(e){this.pressTap(e);if(!this._audio||this.data.modal||this.data.busy)return;this._audio.gesture();this.setData({soundSettingsOpen:true});this.syncMotion();},
- closeSoundSettings(e){this.pressTap(e);if(this._audio)this._audio.save();this.setData({soundSettingsOpen:false});this.syncMotion();},
- toggleSoundChannel(e){const channel=e.currentTarget.dataset.channel;if(this._audio)this._audio.setChannel(channel,channel==='music'?!this.data.musicEnabled:!this.data.effectsEnabled);},
- changeSoundChannel(e){if(this._audio)this._audio.setChannel(e.currentTarget.dataset.channel,!!e.detail.value);},
- changeSoundVolume(e){if(this._audio)this._audio.setVolume(e.currentTarget.dataset.channel,Number(e.detail.value)/100,{preview:e.currentTarget.dataset.channel==='effects'});},
- changingSoundVolume(e){if(this._audio)this._audio.setVolume(e.currentTarget.dataset.channel,Number(e.detail.value)/100,{persist:false});},
- inlineMascotTap(){if(this._audio)this._audio.gesture('mascot');if(!this._motion||this.data.reducedMotion)return;const id=this.data.modal?'modal-'+this.data.modal:this.data.pageActorId;if(id)this._motion.react(id);},
- measureInlineActor(){if(!this._alive||!this.data.pageActorId||this.data.modal||!wx.createSelectorQuery)return;const id=this.data.pageActorId;wx.createSelectorQuery().in(this).select('.inline-actor').boundingClientRect(actor=>{if(!actor||typeof actor.bottom!=='number')return;wx.createSelectorQuery().in(this).select('.panel-body').boundingClientRect(panel=>{if(!this._alive||id!==this.data.pageActorId||!panel||typeof panel.bottom!=='number')return;const visible=actor.bottom>panel.top&&actor.top<panel.bottom;if(visible!==this._inlineActorVisible){this._inlineActorVisible=visible;this.syncMotion();}}).exec();}).exec();},
- pressStart(e){const d=e.currentTarget.dataset;if(this.data.busy||d.action==='option'&&this.data.challenge&&this.data.challenge.status!=='playing')return;if(this._press)this._press.start(d.pressKey,e);},
- pressMove(e){if(this._press)this._press.move(e);},
- pressEnd(){if(this._press)this._press.end();},
- cancelPress(){if(this._press)this._press.cancel();},
- pressTap(e){if(this._press&&e&&e.currentTarget)this._press.tap(e.currentTarget.dataset.pressKey);},
- async applyScenario(name){if(!this._review)return;this._rankEmpty=name==='ranking-empty';this._certificateReviewState=['certificate-loading','certificate-failure'].includes(name)?name:'';const certificateScenario=name.startsWith('certificate-')&&name!=='certificate-empty';const records=name.startsWith('ranking')||name.startsWith('points'),sample=['ranking','points'].includes(name)?'journey':records||name==='certificate-empty'?'home':certificateScenario?'certificate':name;await service.scenario(name==='save-failure'?'certificate':name==='failure'?'home':sample);let route=['home','disabled'].includes(name)?'home':name==='empty'||name==='failure'||name==='journey'?'levels':['result','complete'].includes(name)?'result':(name.startsWith('certificate')||name==='save-failure')?'certificate':name.startsWith('ranking')?'ranking':name.startsWith('points')?'points':'quiz';this.setData({route,modal:'',recordsLoading:records&&name.endsWith('loading'),recordsError:records&&name.endsWith('failure')?'连接暂未恢复，请检查网络后重试。':'',error:name==='failure'?'当前为加载失败评审状态，请重试。':'',scenarioIndex:Math.max(0,scenarioNames.indexOf(name)),});this.refresh();if(['home','levels'].includes(route))wx.nextTick(()=>this.focusMap());if(name==='save-failure')this.showModal('save-failure');if(this._certificateReviewState)this.certificateState({certificateImage:'',certificateImageLoading:name==='certificate-loading',certificateImageError:name==='certificate-failure',certificateSaveMessage:''});if(name==='certificate-permission')this.showModal('album-permission');if(name==='certificate-saved')this.certificateState({certificateSaveMessage:'证书图片已保存到相册'});if(name==='certificate-share')this.showModal('certificate-share');},
- pickScenario(e){this.applyScenario(scenarioNames[Number(e.detail.value)]);},
- async syncRemote(){
-  if(!service.network||this.data.loading)return;
-  const route=this.data.route,records=['ranking','points'].includes(route);
-  if(records)this.setData({recordsLoading:true,recordsError:''});
-  if(!this._syncPromise)this._syncPromise=Promise.resolve().then(()=>service.sync());
-  const pending=this._syncPromise;
-  try{await pending;if(this._alive){if(this.data.route===route&&records)this.setData({recordsLoading:false,recordsError:''});this.refresh();}}
-  catch(e){if(this._alive){if(records&&this.data.route===route)this.setData({recordsLoading:false,recordsError:presentation.errorMessage(e.message)||'连接未完成，请稍后重试。'});else if(this.data.route===route)try{this.refresh();}catch{this.setData({error:presentation.errorMessage(e.message),loading:false});}}}
-  finally{if(this._syncPromise===pending)this._syncPromise=null;}
- },
- pauseMedia(){if(wx.createVideoContext)try{wx.createVideoContext('question-video',this).pause();}catch{}},
- mediaLoaded(){this.setData({mediaFailed:false});},
- mediaProgress(e){this._mediaTime=Number(e.detail.currentTime)||0;},
- mediaReady(){if(this._mediaTime&&wx.createVideoContext)try{wx.createVideoContext('question-video',this).seek(this._mediaTime);}catch{}},
- toast(title){wx.showToast({title,icon:'none'});},blockTap(){},mediaError(){this.setData({mediaFailed:true});this.toast('媒体暂未加载，可重试；答题计时仍继续');},
- prepareShareCover(){if(this._shareCoverTask)return this._shareCoverTask;this._shareCoverTask=new Promise(resolve=>wx.nextTick(resolve)).then(()=>shareCover.render(wx,this,skin)).then(file=>{if(file&&this._alive){const cfg=this.data.configuration||{},custom=(cfg.reviveShare&&cfg.reviveShare.image)||(cfg.share&&cfg.share.image);this.setData({shareCoverImage:file,...(!custom?{sharePreviewImage:file}:{}),...(!(cfg.share&&cfg.share.image)?{certificateShareImage:file}:{})});}return file;}).catch(()=> '');return this._shareCoverTask;},
- certificateFooter(){return {footerPrimary:this.data.certificateImageLoading?'正在生成证书…':this.data.certificateImageError?'重新生成证书':'保存证书图片',footerAction:this.data.certificateImageError?'retry-certificate':'save',footerDisabled:this.data.certificateImageLoading,footerSecondary:'分享学习成果',secondaryAction:'share-cert'};},
- certificateState(patch){if(!this._alive)return;this.setData(patch);if(this.data.route==='certificate'&&this.data.certificate)this.setData(this.certificateFooter());},
- previewCertificate(){const file=this.data.certificateImage;if(!file||!wx.previewImage)return;wx.previewImage({current:file,urls:[file],fail:e=>{if(this._alive&&this.data.route==='certificate'&&!/cancel/i.test(e.errMsg||''))this.toast('暂未打开预览，请稍后重试');}});},
- certificateImageFailed(e){const file=e&&e.currentTarget&&e.currentTarget.dataset&&e.currentTarget.dataset.src;if(file&&file!==this.data.certificateImage)return;this.certificateState({certificateImage:'',certificateImageLoading:false,certificateImageError:true,certificateSaveMessage:''});this._certificateImageLost=true;},
- prepareCertificate(force=false){
-  const c=this.data.certificate;if(!c)return Promise.reject(Error('NO_CERTIFICATE'));
-  const document=certificateArt.model(c,skin),key=JSON.stringify(document);
-  if(!force&&this._certificateKey===key&&this._certificateTask)return this._certificateImageLost?Promise.reject(Error('CERTIFICATE_IMAGE_LOST')):this._certificateTask;
-  if(force)this._certificateReviewState='';this._certificateImageLost=false;
-  this._certificateKey=key;const generation=this._certificateGeneration=(this._certificateGeneration||0)+1;this.certificateState({certificateImage:'',certificateImageLoading:true,certificateImageError:false,certificateSaveMessage:''});
-  const previous=this._certificateQueue||Promise.resolve();
-  const task=previous.catch(()=>{}).then(()=>certificateArt.render(wx,this,document)).then(result=>{
-   if(this._alive&&key===this._certificateKey&&generation===this._certificateGeneration)this.certificateState({certificateImage:result.filePath,certificateImageRatio:result.height/result.width,certificateImageLoading:false,certificateImageError:false});
-   return result.filePath;
-  }).catch(error=>{if(this._alive&&key===this._certificateKey&&generation===this._certificateGeneration)this.certificateState({certificateImageLoading:false,certificateImageError:true});throw error;});
-  this._certificateQueue=task;this._certificateTask=task;return task;
- },
- albumPermission(){return new Promise(resolve=>{if(!wx.getSetting)return resolve(undefined);wx.getSetting({success:r=>resolve((r.authSetting||{})['scope.writePhotosAlbum']),fail:()=>resolve(undefined)});});},
- openAlbumSettings(){
-  if(this.data.busy)return;this.setData({busy:true});
-  const failed=e=>{if(this._alive)this.toast(e&&e.code==='BROWSER_PREVIEW_UNSUPPORTED'?'请在微信中打开相册设置':'暂未打开设置，请稍后重试');};
-  if(!wx.openSetting){this.setData({busy:false});failed();return;}
-  // Called directly by the explicit settings button, before any await.
-  try{wx.openSetting({success:r=>{if(!this._alive)return;if((r.authSetting||{})['scope.writePhotosAlbum']===true){this.setData({modal:''});this.toast('权限已开启，请再次点击保存');}else this.toast('相册权限尚未开启');},fail:failed,complete:()=>{if(this._alive)this.setData({busy:false});}});}catch(e){this.setData({busy:false});failed(e);}
- },
- async saveCertificate(){
-  if(!this.data.certificate||this.data.busy)return;
-  const certificateId=this.data.certificate.id;let stage='generate';this.setData({busy:true,modal:'',certificateSaveMessage:''});
-  const current=()=>this._alive&&this.data.route==='certificate'&&this.data.certificate&&this.data.certificate.id===certificateId;
-  try{
-   const filePath=await this.prepareCertificate();if(!current())return;
-   const allowed=await this.albumPermission();if(!current())return;
-   if(allowed===false){this.showModal('album-permission');return;}
-   stage='album';const result=await new Promise((resolve,reject)=>wx.saveImageToPhotosAlbum({filePath,success:resolve,fail:reject}));
-   if(current()){const message=result&&result.destination==='download'?'已发起证书图片下载':'证书图片已保存到相册';this.certificateState({certificateSaveMessage:message});this.toast(message);}
-  }catch(e){if(current()&&stage==='album'){const message=String(e&&e.errMsg||e&&e.message||'');if(/cancel/i.test(message))this.toast('已取消保存，可随时再试');else if(/auth(?:orize)?[ :_-]*(?:deny|denied)|permission|access[ :_-]*denied/i.test(message))this.showModal('album-permission');else this.showModal('save-failure');}}
-  finally{if(this._alive)this.setData({busy:false});}
- },
- onShareAppMessage(){const cfg=this.data.configuration||{},image=(this.data.modal==='share'&&(cfg.reviveShare||{}).image)||(cfg.share||{}).image;return themeContent.shareMessage(skin,this.data,shareCover.configured(image,skin.connection?.apiBase)||this.data.shareCoverImage||undefined);}
+  data: {
+    recordsLoading: false,
+    recordsError: '',
+    homeDesign: 'map',
+    certificateImageLoading: false,
+    certificateSaveMessage: '',
+    certificateImage: '',
+    certificateImageError: false,
+    certificateImageRatio: 1.4222,
+    pressedKey: '',
+    soundSettingsOpen: false,
+    musicEnabled: true,
+    effectsEnabled: true,
+    musicVolume: 40,
+    effectsVolume: 60,
+    soundAvailable: false,
+    soundEnabled: true,
+    soundPlaying: false,
+    soundErrorCount: 0,
+    soundEffectPlays: 0,
+    lastSoundEffect: '',
+    rulePose: 'welcome',
+    chapterPose: 'welcome',
+    modalActorPose: '',
+    pageActorId: '',
+    pageActorPose: 'welcome',
+    mascotAnimationReady: presentation.motionReady,
+    motion: { playingId: '', respondingId: '', sequence: 0, touchSequence: 0 },
+    reducedMotion: false,
+    skin,
+    titleArt: { visible: false, plain: false },
+    certificates: [],
+    mediaFailed: false,
+    sharePreviewImage: '',
+    shareCoverImage: '',
+    shareCoverActor: '',
+    certificateShareImage: '',
+    content: themeContent.get(skin.gameId),
+    shareCopy: {},
+    mascots: presentation.actions,
+    route: 'home',
+    modal: '',
+    loading: true,
+    error: '',
+    busy: false,
+    period: 'daily',
+    snapshot: { progress: { completed: 0, total: 0, ratio: 0 }, points: 0, certificates: [] },
+    levels: [],
+    options: [],
+    ranking: { rows: [], me: {} },
+    scene: presentation.scene(skin.gameId),
+    header: presentation.header(skin.gameId),
+    scrollInto: '',
+    mapScrollTop: 0,
+    mapHintVisible: false,
+    mapFadeTop: false,
+    mapFadeBottom: false,
+    review: false,
+    reviewControls: true,
+    scenarioLabels,
+    scenarioIndex: 0,
+    journey: { height: 0, nodes: [], tiles: [] },
+    mapWidth: 375,
+    mapViewport: 562,
+    profile: presentation.readerProfile(service.profile()),
+    chapterStyle: { key: 'bookmark', companion: '/assets/brand/reader.png' },
+    saveWarning: '',
+    saveWarningCanRetry: false,
+    smallScreen: false,
+    shellStyle: '',
+    footerPrimary: '',
+    footerSecondary: '',
+    footerDisabled: false,
+    challenge: null,
+    certificate: null,
+    result: null,
+    media: null,
+    configuration: {},
+    ledger: [],
+    progressPercent: 0
+  },
+  onLoad(p) {
+    skin = presentation.apply(defaultSkin);
+    if (defaultSkin.allowThemeSwitch && p.theme) {
+      const skins = require('../../services-v4/skins');
+      if (skins[p.theme]) skin = presentation.apply(skins[p.theme]);
+    }
+    if (service.activate) service.activate(skin);
+    this.setData({
+      skin,
+      scene: presentation.scene(skin.gameId),
+      header: presentation.header(skin.gameId)
+    });
+    this._alive = true;
+    this._foreground = true;
+    this._press = createPressFeedback({
+      onChange: (pressedKey) => {
+        if (this._alive) this.setData({ pressedKey });
+      }
+    });
+    this._audio = createAudio(wx, {
+      onChange: (state) => {
+        if (this._alive)
+          this.setData({
+            soundAvailable: state.available,
+            soundEnabled: state.enabled,
+            musicEnabled: state.musicEnabled,
+            effectsEnabled: state.effectsEnabled,
+            musicVolume: Math.round(state.musicLevel * 100),
+            effectsVolume: Math.round(state.effectsLevel * 100),
+            soundPlaying: state.musicPlaying,
+            soundErrorCount: state.errors,
+            soundEffectPlays: state.effectPlays,
+            lastSoundEffect: state.lastPlayedEffect
+          });
+      }
+    });
+    this._motion = createMotion({
+      onChange: (motion) => {
+        if (this._alive) this.setData({ motion });
+      }
+    });
+    this.readMotionPreference();
+    this._review = p.review === '1' && skin.reviewEnabled;
+    this.setData({
+      review: this._review,
+      reviewControls: p.controls !== '0',
+      homeDesign: homeDesigns.resolve(defaultSkin, p, this._review)
+    });
+    this.resize();
+    const finish = () => {
+      if (!this._alive) return;
+      if (!this._review && service.leaveReview) service.leaveReview();
+      if (this._review && p.scenario)
+        this.applyScenario(p.scenario).then(() => {
+          if (
+            p.scenario === 'home' &&
+            ['profile', 'points', 'ranking', 'certificate'].includes(p.route)
+          )
+            this.go(p.route);
+        });
+      else {
+        this.setData({
+          route:
+            p.route &&
+            ['home', 'levels', 'points', 'ranking', 'certificate', 'profile'].includes(p.route)
+              ? p.route
+              : 'home',
+          error: ''
+        });
+        this.refresh();
+        if (['home', 'levels'].includes(this.data.route)) wx.nextTick(() => this.focusMap());
+      }
+    };
+    try {
+      const ready = service.ensureReady();
+      if (ready && typeof ready.then === 'function') {
+        this._ready = ready.then(finish).catch((e) => {
+          if (this._alive)
+            this.setData({
+              loading: false,
+              error: presentation.errorMessage(e.message) || '服务连接失败，请检查网络后重试。'
+            });
+        });
+      } else finish();
+    } catch (e) {
+      this.setData({
+        loading: false,
+        error: presentation.errorMessage(e.message) || '服务连接失败，请重试。'
+      });
+    }
+    if (wx.showShareMenu) wx.showShareMenu({ menus: ['shareAppMessage'] });
+  },
+  onShow() {
+    if (!this._alive) return;
+    this._foreground = true;
+    if (this._audio) this._audio.show();
+    this.readMotionPreference();
+    clearInterval(this._timer);
+    if (!this.data.loading && !this.data.error) {
+      this.refresh();
+      this.syncRemote();
+    }
+    this.tick();
+    this._timer = setInterval(() => this.tick(), 250);
+  },
+  onHide() {
+    this._foreground = false;
+    this.clearMapMotion();
+    this.cancelPress();
+    this.setData({ soundSettingsOpen: false });
+    if (this._audio) this._audio.hide();
+    if (this._motion) this._motion.hide();
+    this.pauseMedia();
+    clearInterval(this._timer);
+    this._timer = null;
+    if (service.flush) service.flush();
+  },
+  onUnload() {
+    this.clearMapMotion();
+    if (this._press) this._press.dispose();
+    if (this._audio) this._audio.dispose();
+    if (this._motion) this._motion.dispose();
+    this.pauseMedia();
+    this._alive = false;
+    clearInterval(this._timer);
+    if (service.flush) service.flush();
+  },
+  onResize() {
+    this.cancelPress();
+    this.readMotionPreference();
+    this.resize();
+    if (this.data.loading) return;
+    this.refresh();
+    if (['home', 'levels'].includes(this.data.route)) {
+      this.setData({ mapScrollTop: 0 });
+      wx.nextTick(() => this.focusMap());
+    }
+  },
+  resize() {
+    const i = wx.getWindowInfo ? wx.getWindowInfo() : wx.getSystemInfoSync(),
+      m = homeLayout.metrics(
+        i,
+        wx.getMenuButtonBoundingClientRect ? wx.getMenuButtonBoundingClientRect() : null,
+        skin.gameId
+      );
+    const design = homeDesigns.metrics(m, this.data.homeDesign);
+    this.setData({
+      titleArt: homeLayout.titleArtwork(skin.gameId, m.width, m.titleArtWidth, m.titleCenterY),
+      mapWidth: design.mapWidth,
+      mapViewport: design.mapViewport,
+      smallScreen: m.smallScreen,
+      shellStyle:
+        '--panel-top:' +
+        Math.max(m.status + (m.smallScreen ? 68 : 98), m.smallScreen ? 112 : 142) +
+        'px;--status:' +
+        m.status +
+        'px;--safe-bottom:' +
+        m.safeBottom +
+        'px;' +
+        m.style +
+        design.style
+    });
+  },
+  refresh() {
+    if (!this._alive) return;
+    const s = service.snapshot(),
+      cfg = service.configuration();
+    if (s.network && s.theme)
+      skin = Object.assign({}, skin, {
+        name: s.theme.name || skin.name,
+        description: s.theme.description || skin.description
+      });
+    let c = null;
+    try {
+      c = service.challenge();
+    } catch (e) {}
+    const route = this.data.route;
+    if (this._navigationRoute !== route && wx.setNavigationBarColor) {
+      this._navigationRoute = route;
+      wx.setNavigationBarColor({ frontColor: '#000000', backgroundColor: skin.light });
+    }
+    const levels = s.levels.map((l, i) =>
+      Object.assign({}, l, {
+        number: String(i + 1).padStart(2, '0'),
+        earnedPoints: s.ledger
+          .filter((entry) => entry.levelId === l.id)
+          .reduce((total, entry) => total + entry.points, 0),
+        visual: service.chapterPresentation(l, i),
+        topic: themeContent.chapterLabel(skin.gameId, l, i),
+        statusText: {
+          completed: '已完成 · 可重温',
+          current: l.resumable ? '继续本关' : '当前可闯关',
+          locked: '完成上一关后开启',
+          'today-locked': '今日锁定 · 次日开放'
+        }[l.status]
+      })
+    );
+    const current = levels.find((l) => l.status === 'current');
+    const certificates = s.certificates.map((x) =>
+      Object.assign(presentation.certificateLabel(x), { date: date(x.completedAt) })
+    );
+    const cert =
+      certificates.find((x) => x.id === this.data.certificateId) || certificates[0] || null;
+    let ranking = service.rankings(this.data.period, this._rankEmpty);
+    ranking.me = ranking.me || { rank: null, points: 0 };
+    ranking.rows = ranking.rows.map((r) => {
+      const name = presentation.readerName(r.name);
+      return Object.assign({}, r, { name, initial: name.slice(0, 1) });
+    });
+    let media = c && c.question && c.question.media;
+    if (media) {
+      media = Object.assign({}, media);
+      if (media.type !== 'video' && (!media.src || media.src.indexOf('assets/scene') >= 0))
+        media.src = this.data.scene;
+    }
+    const options = c
+      ? c.question.options.map((text, i) => ({
+          index: i,
+          letter: String.fromCharCode(65 + i),
+          text,
+          selected: c.selected === i,
+          correct: c.status === 'correct' && c.feedback.answer === i
+        }))
+      : [];
+    const ledger = s.ledger
+      .slice()
+      .reverse()
+      .map((l, i) =>
+        Object.assign({}, l, {
+          id: l.id || l.levelId + '-' + i,
+          label: l.label || (levels.find((x) => x.id === l.levelId) || {}).label || l.levelId,
+          date: date(l.at),
+          time: new Date(l.at + 8 * 3600000).toISOString().slice(11, 16)
+        })
+      );
+    const chapterIndex = c
+      ? Math.max(
+          0,
+          levels.findIndex((l) => l.id === c.levelId)
+        )
+      : 0;
+    const map =
+      this.data.homeDesign === 'guide'
+        ? homeDesigns.chapters(levels, this.data.mapWidth, this.data.mapViewport)
+        : journey.layout(levels, skin.gameId, this.data.mapWidth, this.data.mapViewport);
+    if (this.data.homeDesign !== 'guide' && s.network && s.theme.mapImage)
+      map.tiles = map.tiles.map((tile) =>
+        Object.assign({}, tile, {
+          src: /^https?:/.test(s.theme.mapImage)
+            ? s.theme.mapImage
+            : skin.connection.apiBase + s.theme.mapImage
+        })
+      );
+    const shareImage = (cfg.reviveShare && cfg.reviveShare.image) || (cfg.share && cfg.share.image);
+    const pagePose = presentation.nodePose(chapterIndex).pose,
+      pageActorId = route === 'result' && c ? 'page-result' : '';
+    if (pageActorId !== this.data.pageActorId) this._inlineActorVisible = true;
+    const patch = {
+      loading: false,
+      skin,
+      chapterTopic: themeContent.chapterLabel(skin.gameId, c && c.level, chapterIndex),
+      nextChapter: current
+        ? {
+            label: current.label,
+            topic: current.topic,
+            line: themeContent.chapter(skin.gameId, {}, levels.indexOf(current)).line
+          }
+        : null,
+      chapterPose: pagePose,
+      pageActorId,
+      pageActorPose: presentation.sceneActor(route, c && c.status, skin.gameId),
+      certificates,
+      sharePreviewImage:
+        shareCover.configured(shareImage, skin.connection?.apiBase) || this.data.shareCoverImage,
+      shareCoverActor:
+        '/assets/brand/original-extensions/' +
+        (shareCover.actors[skin.gameId] || 'scholar') +
+        '.png',
+      profile: presentation.readerProfile(service.profile()),
+      content: themeContent.get(skin.gameId),
+      shareCopy: themeContent.share(skin, cfg, true),
+      certificateShareImage:
+        shareCover.configured(cfg.share && cfg.share.image, skin.connection?.apiBase) ||
+        this.data.shareCoverImage,
+      chapterStyle: themeContent.chapter(
+        skin.gameId,
+        service.chapterPresentation(c && c.level, chapterIndex),
+        chapterIndex
+      ),
+      snapshot: s,
+      configuration: cfg,
+      levels,
+      journey: map,
+      challenge: c,
+      result: c && c.result,
+      certificate: cert,
+      ranking,
+      media,
+      mediaFailed: this._mediaQuestion === c?.question?.id ? this.data.mediaFailed : false,
+      options,
+      ledger,
+      progressPercent: Math.round(s.progress.ratio * 100),
+      questionProgress: c
+        ? Math.round(((c.index + (c.status === 'correct' ? 1 : 0)) / c.total) * 100)
+        : 0,
+      questionNumber: c ? String(c.index + 1).padStart(2, '0') : '01',
+      questionTotal: c ? String(c.total).padStart(2, '0') : '00',
+      footerPrimary: '',
+      footerSecondary: '',
+      footerDisabled: false,
+      footerId: '',
+      footerRoute: '',
+      footerAction: 'go',
+      secondaryAction: 'go',
+      secondaryRoute: 'levels'
+    };
+    if (route === 'home' || route === 'levels') {
+      const lockedToday = levels.find((l) => l.status === 'today-locked');
+      Object.assign(
+        patch,
+        current
+          ? {
+              footerPrimary:
+                (current.resumable ? '继续' : '开始') + current.label + ' · ' + current.name,
+              footerAction: 'level',
+              footerId: current.id
+            }
+          : levels.length && levels.every((l) => l.status === 'completed')
+            ? { footerPrimary: '查看学习证书', footerRoute: 'certificate' }
+            : lockedToday
+              ? {
+                  footerPrimary: '查看今日锁定说明',
+                  footerAction: 'level',
+                  footerId: lockedToday.id
+                }
+              : { footerPrimary: '内容准备中', footerDisabled: true }
+      );
+    } else if (route === 'quiz' && c) {
+      Object.assign(
+        patch,
+        c.status === 'correct'
+          ? {
+              footerPrimary: c.index === c.total - 1 ? '查看本关成果' : '下一题',
+              footerAction: 'next'
+            }
+          : {
+              footerPrimary: this.data.busy ? '正在核验…' : '提交答案',
+              footerAction: 'submit',
+              footerDisabled:
+                c.selected === null ||
+                c.status !== 'playing' ||
+                this.data.busy ||
+                !!(media && media.required && this.data.mediaFailed)
+            }
+      );
+    } else if (route === 'result') {
+      Object.assign(
+        patch,
+        current
+          ? { footerPrimary: '继续下一关', footerAction: 'level', footerId: current.id }
+          : { footerPrimary: '查看学习证书', footerRoute: 'certificate' }
+      );
+      Object.assign(patch, { footerSecondary: '返回活动首页' });
+    } else if (route === 'certificate' && cert) {
+      Object.assign(patch, this.certificateFooter());
+    }
+    const persist = service.getPersistenceStatus ? service.getPersistenceStatus() : {};
+    patch.saveWarning =
+      persist.warning && persist.warning !== 'CATALOG_CHANGED' ? persist.message || '' : '';
+    patch.saveWarningCanRetry =
+      persist.warning === 'STORAGE_WRITE_FAILED' || persist.warning === 'NETWORK_UNAVAILABLE';
+    if (this._mediaQuestion !== c?.question?.id) this._mediaTime = 0;
+    this._mediaQuestion = c && c.question && c.question.id;
+    this.setData(patch);
+    if (this._audio)
+      this._audio.observe({
+        route,
+        challenge: c,
+        media: route === 'quiz' && media && media.type === 'video'
+      });
+    this.prepareShareCover();
+    if (route === 'certificate' && cert && !this._certificateReviewState)
+      this.prepareCertificate().catch(() => {});
+    if (
+      !cert &&
+      (this.data.certificateImage ||
+        this.data.certificateImageLoading ||
+        this.data.certificateImageError)
+    ) {
+      this._certificateKey = '';
+      this.certificateState({
+        certificateImage: '',
+        certificateImageLoading: false,
+        certificateImageError: false,
+        certificateSaveMessage: ''
+      });
+    }
+    this.syncMotion();
+    if (pageActorId) wx.nextTick(() => this.measureInlineActor());
+    if (route === 'quiz' && c) {
+      if (c.status === 'revive' && !['share', 'exit'].includes(this.data.modal))
+        this.showModal('revive');
+      if (c.status === 'locked') this.showModal('locked');
+    }
+  },
+  tick() {
+    if (this.data.mapHintVisible && Date.now() >= this._mapHintUntil)
+      this.setData({ mapHintVisible: false });
+    if (service.network && !this.data.loading && !this.data.error && !this._polling) {
+      const poll = service.poll();
+      if (poll && typeof poll.then === 'function') {
+        this._polling = true;
+        poll
+          .then(() => {
+            if (this._alive) {
+              if (['ranking', 'points'].includes(this.data.route))
+                this.setData({ recordsError: '' });
+              this.refresh();
+            }
+          })
+          .catch((e) => {
+            if (this._alive) {
+              if (['ranking', 'points'].includes(this.data.route))
+                this.setData({
+                  recordsLoading: false,
+                  recordsError: presentation.errorMessage(e.message) || '连接未完成，请稍后重试。'
+                });
+              this.refresh();
+            }
+          })
+          .finally(() => (this._polling = false));
+      }
+    }
+    try {
+      service.expire();
+      const c = service.challenge();
+      if (this.data.route === 'quiz') {
+        if (!this.data.challenge || c.status !== this.data.challenge.status) this.refresh();
+        else if (c.remaining !== this.data.challenge.remaining)
+          this.setData({ 'challenge.remaining': c.remaining });
+      }
+    } catch (e) {}
+  },
+  focusMap() {
+    if (this.data.homeDesign === 'guide') {
+      const top = this.data.journey.focusTop || 0;
+      this._mapOffset = top;
+      this.setData({
+        scrollInto: '',
+        mapScrollTop: 1,
+        mapHintVisible: false,
+        mapFadeTop: false,
+        mapFadeBottom: false
+      });
+      wx.nextTick(() => {
+        if (this._alive && ['home', 'levels'].includes(this.data.route))
+          this.setData({ mapScrollTop: top, scrollInto: top ? '' : 'page-content-top' });
+      });
+      this.syncMotion();
+      return;
+    }
+    const j = this.data.journey,
+      top = j.focusTop || 0;
+    this._mapOffset = top;
+    const hint = !!j.canScroll && !this._mapHintShown;
+    if (hint) {
+      this._mapHintShown = true;
+      this._mapHintUntil = Date.now() + 3500;
+    }
+    this.setData({
+      scrollInto: '',
+      mapScrollTop: top,
+      mapHintVisible: hint,
+      mapFadeTop: !!j.canScroll && top > 2,
+      mapFadeBottom: !!j.canScroll && j.maxScroll - top > 2
+    });
+    this.syncMotion();
+  },
+  // Scroll with the ordinary image only. A native animation canvas can be
+  // composited a frame apart from scroll-view; stop before finger displacement,
+  // keep it empty through inertia, then resume after the final scroll event.
+  clearMapMotion() {
+    clearTimeout(this._mapMotionTimer);
+    this._mapMotionTimer = null;
+    this._mapTouching = false;
+    this._mapScrolling = false;
+    this._mapDragged = false;
+  },
+  pauseMapMotion() {
+    clearTimeout(this._mapMotionTimer);
+    this._mapMotionTimer = null;
+    this._mapScrolling = true;
+    this.syncMotion();
+  },
+  settleMapMotion() {
+    clearTimeout(this._mapMotionTimer);
+    this._mapMotionTimer = null;
+    if (this._mapTouching) return;
+    this._mapMotionTimer = setTimeout(() => {
+      this._mapMotionTimer = null;
+      this._mapScrolling = false;
+      if (this._alive && this._foreground) this.syncMotion();
+    }, 180);
+  },
+  onMapTouchStart() {
+    if (!['home', 'levels'].includes(this.data.route) || !this.data.journey.canScroll) return;
+    this._mapTouching = true;
+    this._mapDragged = false;
+    this.pauseMapMotion();
+  },
+  onMapTouchEnd() {
+    if (!this._mapTouching) return;
+    this._mapTouching = false;
+    if (this._mapDragged) this.settleMapMotion();
+    else {
+      this._mapScrolling = false;
+      this.syncMotion();
+    }
+  },
+  onMapScroll(e) {
+    if (!['home', 'levels'].includes(this.data.route)) {
+      this.measureInlineActor();
+      return;
+    }
+    const j = this.data.journey,
+      top = Math.max(0, Math.min(j.maxScroll || 0, Number(e.detail.scrollTop) || 0)),
+      patch = {},
+      moved = Math.abs(top - (this._mapOffset || 0)) > 0.25;
+    if (moved) {
+      if (this._mapTouching) this._mapDragged = true;
+      this.pauseMapMotion();
+      this.settleMapMotion();
+    }
+    const above = !!j.canScroll && top > 2,
+      below = !!j.canScroll && j.maxScroll - top > 2;
+    if (above !== this.data.mapFadeTop) patch.mapFadeTop = above;
+    if (below !== this.data.mapFadeBottom) patch.mapFadeBottom = below;
+    if (this.data.mapHintVisible && moved) patch.mapHintVisible = false;
+    this._mapOffset = top;
+    if (Object.keys(patch).length) this.setData(patch);
+    if (!moved) this.syncMotion();
+  },
+  go(route) {
+    this.clearMapMotion();
+    this.cancelPress();
+    this.pauseMedia();
+    this.setData({
+      route,
+      modal: '',
+      soundSettingsOpen: false,
+      error: '',
+      recordsLoading: false,
+      recordsError: '',
+      scrollInto: '',
+      mapScrollTop: 0,
+      mapHintVisible: false,
+      mapFadeTop: false,
+      mapFadeBottom: false
+    });
+    this.refresh();
+    this.syncRemote();
+    wx.nextTick(() =>
+      ['home', 'levels'].includes(route)
+        ? this.focusMap()
+        : this.setData({ scrollInto: 'page-content-top' })
+    );
+  },
+  mascotTap(e) {
+    if (this.data.busy || this.data.modal || !['home', 'levels'].includes(this.data.route)) return;
+    const id = e.currentTarget.dataset.id,
+      node = this.data.journey.nodes.find((n) => n.id === id);
+    if (!node || !node.showMascot) return;
+    if (this._audio) this._audio.gesture('mascot');
+    if (this.data.reducedMotion) {
+      this.toast(
+        node.label +
+          ' · ' +
+          (node.status === 'today-locked'
+            ? '今日锁定，明天可以继续'
+            : node.status === 'completed'
+              ? '已经完成，可以重温'
+              : '准备好就点击关卡开始学习')
+      );
+      return;
+    }
+    if (this._motion) this._motion.react(id);
+  },
+  async level(id) {
+    this.refresh();
+    const l = this.data.levels.find((x) => x.id === id);
+    if (!l) return;
+    if (this._motion) this._motion.play(id);
+    if (l.status === 'locked') return this.toast('完成上一关后，即可开启本关');
+    if (l.status === 'today-locked') return this.showModal('locked');
+    if (l.resumable) {
+      await service.start(id);
+      return this.go('quiz');
+    }
+    this.setData({
+      ruleLevel: l,
+      rulePose: presentation.nodePose(this.data.levels.findIndex((x) => x.id === l.id)).pose,
+      chapterStyle: themeContent.chapter(
+        skin.gameId,
+        service.chapterPresentation(
+          l,
+          this.data.levels.findIndex((x) => x.id === l.id)
+        ),
+        this.data.levels.findIndex((x) => x.id === l.id)
+      )
+    });
+    this.showModal('rules');
+  },
+  showModal(type) {
+    this.cancelPress();
+    const c = this.data.challenge;
+    const map = {
+      rules: ['闯关须知', '准备好了，开始', 'confirm-start', '稍后再来', 'dismiss'],
+      revive: [
+        c && c.feedback && c.feedback.reason === 'timeout'
+          ? '本题作答时间已到'
+          : '这道题，再想一想',
+        '分享复活',
+        'revive-share',
+        '返回关卡',
+        'levels'
+      ],
+      share: ['分享复活', '继续答题', 'share-success', '取消分享，不消耗次数', 'share-cancel'],
+      locked: ['今天先歇一歇', '返回关卡', 'levels', '', ''],
+      exit: ['暂时离开答题？', '继续答题', 'dismiss', '返回关卡，保留进度', 'levels'],
+      'certificate-share': ['分享学习成果', '分享给朋友', '', '返回证书', 'dismiss'],
+      'album-permission': ['需要相册权限', '打开相册设置', 'album-settings', '返回证书', 'dismiss'],
+      video: ['视频题目', '返回题目', 'dismiss', '', ''],
+      'save-failure': ['保存暂未完成', '重试保存', 'save', '返回证书', 'dismiss']
+    };
+    const m = map[type];
+    this.setData({
+      modal: type,
+      soundSettingsOpen: false,
+      modalActorPose: presentation.modalActor(type, this.data.rulePose),
+      modalTitle: m[0],
+      modalPrimary: m[1],
+      modalAction: m[2],
+      modalSecondary: m[3],
+      modalSecondaryAction: m[4]
+    });
+    this.syncMotion();
+  },
+  async action(e) {
+    if (this.data.busy) return;
+    const d = e.currentTarget.dataset,
+      a = d.action;
+    if (a === 'option' && this.data.challenge && this.data.challenge.status !== 'playing') return;
+    this.pressTap(e);
+    if (this._audio) this._audio.gesture();
+    try {
+      if (a === 'go') return this.go(d.route);
+      if (a === 'retry-records') {
+        if (this._review && !service.network) {
+          this.setData({ recordsLoading: false, recordsError: '' });
+          this.refresh();
+          return;
+        }
+        return await this.syncRemote();
+      }
+      if (a === 'level') return await this.level(d.id);
+      if (a === 'confirm-start') {
+        this.setData({ busy: true });
+        await service.start(this.data.ruleLevel.id);
+        this.setData({ busy: false });
+        if (this._audio) this._audio.effect('click');
+        return this.go('quiz');
+      }
+      if (a === 'option') {
+        const before = JSON.stringify(this.data.challenge && this.data.challenge.selected);
+        service.select(Number(d.index));
+        this.refresh();
+        if (
+          this._audio &&
+          before !== JSON.stringify(this.data.challenge && this.data.challenge.selected)
+        )
+          this._audio.effect('select');
+      }
+      if (a === 'submit') {
+        this.setData({ busy: true });
+        const pending = service.submit();
+        if (!service.network) this.refresh();
+        await pending;
+        this.setData({ busy: false });
+        this.refresh();
+        if (this.data.challenge.status === 'result') return this.go('result');
+        if (this.data.challenge.status === 'correct')
+          this.setData({ scrollInto: 'answer-feedback' });
+      }
+      if (a === 'next') {
+        this.setData({ busy: true });
+        const c = await service.next();
+        this.setData({ busy: false });
+        if (this._audio && c.status !== 'result') this._audio.effect('click');
+        this.go(c.status === 'result' ? 'result' : 'quiz');
+      }
+      if (a === 'exit') this.showModal('exit');
+      if (a === 'dismiss') {
+        this.setData({ modal: '' });
+        this.refresh();
+      }
+      if (a === 'close-modal') {
+        if (this.data.modal === 'share') {
+          service.revive(false);
+          this.showModal('revive');
+        } else if (['revive', 'locked'].includes(this.data.modal)) this.go('levels');
+        else {
+          this.setData({ modal: '' });
+          this.refresh();
+        }
+      }
+      if (a === 'levels') this.go('levels');
+      if (a === 'revive-share') this.showModal('share');
+      if (a === 'share-cancel') {
+        service.revive(false);
+        this.showModal('revive');
+      }
+      if (a === 'share-success') {
+        this.setData({ busy: true });
+        await service.revive(true);
+        this.setData({ busy: false });
+        this.setData({ modal: '' });
+        this.refresh();
+        this.toast('复活成功，继续回答本题');
+      }
+      if (a === 'period') {
+        this.setData({ period: d.period });
+        await this.syncRemote();
+        this.refresh();
+      }
+      if (a === 'choose-certificate') {
+        this.setData({ certificateId: d.id });
+        this.refresh();
+      }
+      if (a === 'retry-media') {
+        this.setData({ mediaFailed: false });
+        this._mediaQuestion = '';
+        this.refresh();
+      }
+      if (a === 'share-cert') this.showModal('certificate-share');
+      if (a === 'retry-certificate') return this.prepareCertificate(true).catch(() => {});
+      if (a === 'album-settings') return this.openAlbumSettings();
+      if (a === 'save') return await this.saveCertificate();
+      if (a === 'video') this.showModal('video');
+      if (a === 'retry-save') {
+        const saved = service.flush();
+        this.refresh();
+        this.toast(saved.warning ? '暂未保存，请稍后重试' : '学习记录已保存');
+      }
+      if (a === 'retry') {
+        this.setData({ loading: true, error: '' });
+        await service.ensureReady();
+        if (service.sync) await service.sync();
+        this.refresh();
+        wx.nextTick(() => this.focusMap());
+      }
+    } catch (err) {
+      this.setData({
+        busy: false,
+        loading: false,
+        ...(a === 'retry'
+          ? { error: presentation.errorMessage(err.message) || '连接失败，请重试' }
+          : {})
+      });
+      this.toast(
+        {
+          TODAY_LOCKED: '本关今日锁定，次日可重新参与',
+          NO_QUESTIONS: '本关题目尚未准备好',
+          INVALID_QUESTIONS: '本关题库配置不完整',
+          INVALID_GAME_LEVEL: '当前游戏没有这道关卡',
+          BACKEND_NOT_CONFIGURED: '正式服务尚未配置'
+        }[err.code || err.message] ||
+          presentation.errorMessage(err.message) ||
+          '操作未完成，请重试'
+      );
+      try {
+        this.refresh();
+      } catch {}
+    }
+  },
+  readMotionPreference() {
+    const apply = (value) => {
+      if (!this._alive) return;
+      this._systemReduced = value;
+      this.setData({ reducedMotion: !!value });
+      this.syncMotion();
+    };
+    apply(!!this._systemReduced);
+    if (!wx.createSelectorQuery) return;
+    wx.nextTick(() => {
+      if (!this._alive) return;
+      try {
+        wx.createSelectorQuery()
+          .in(this)
+          .select('.motion-preference-probe')
+          .fields({ computedStyle: ['opacity'] })
+          .exec((rows) => {
+            if (rows && rows[0] && rows[0].opacity !== undefined)
+              apply(Number(rows[0].opacity) === 1);
+          });
+      } catch {}
+    });
+  },
+  syncMotion() {
+    if (!this._motion) return;
+    const width = this.data.mapWidth,
+      j = this.data.journey,
+      modal = this.data.modal,
+      modalPose = presentation.modalActor(modal, this.data.rulePose),
+      mapVisible = !modal && ['home', 'levels'].includes(this.data.route),
+      inlineVisible = !modal && this.data.pageActorId && this._inlineActorVisible !== false,
+      standalone = modalPose || inlineVisible,
+      actorId = modalPose ? 'modal-' + modal : this.data.pageActorId,
+      actorPose = modalPose || this.data.pageActorPose;
+    this._motion.update({
+      enabled: !!(
+        this._alive &&
+        this._foreground &&
+        this.data.mascotAnimationReady &&
+        !this.data.reducedMotion &&
+        !this.data.soundSettingsOpen &&
+        !this.data.loading &&
+        !this.data.error &&
+        ((mapVisible && !this._mapScrolling) || standalone)
+      ),
+      nodes: standalone
+        ? [{ id: actorId, pose: actorPose, status: 'current', distance: 50 }]
+        : j.nodes || [],
+      canvasHeight: standalone ? 100 : j.height || 0,
+      viewportTop: standalone ? 0 : this._mapOffset || 0,
+      viewportHeight: standalone ? 100 : this.data.mapViewport,
+      nodeHeight: standalone ? 0 : homeLayout.mapMetrics(width).nodeHeight,
+      actorHeight: width <= 350 ? 66 : width >= 410 ? 84 : 76
+    });
+  },
+  toggleSound(e) {
+    this.pressTap(e);
+    if (this._audio) this._audio.toggle();
+  },
+  openSoundSettings(e) {
+    this.pressTap(e);
+    if (!this._audio || this.data.modal || this.data.busy) return;
+    this._audio.gesture();
+    this.setData({ soundSettingsOpen: true });
+    this.syncMotion();
+  },
+  closeSoundSettings(e) {
+    this.pressTap(e);
+    if (this._audio) this._audio.save();
+    this.setData({ soundSettingsOpen: false });
+    this.syncMotion();
+  },
+  toggleSoundChannel(e) {
+    const channel = e.currentTarget.dataset.channel;
+    if (this._audio)
+      this._audio.setChannel(
+        channel,
+        channel === 'music' ? !this.data.musicEnabled : !this.data.effectsEnabled
+      );
+  },
+  changeSoundChannel(e) {
+    if (this._audio) this._audio.setChannel(e.currentTarget.dataset.channel, !!e.detail.value);
+  },
+  changeSoundVolume(e) {
+    if (this._audio)
+      this._audio.setVolume(e.currentTarget.dataset.channel, Number(e.detail.value) / 100, {
+        preview: e.currentTarget.dataset.channel === 'effects'
+      });
+  },
+  changingSoundVolume(e) {
+    if (this._audio)
+      this._audio.setVolume(e.currentTarget.dataset.channel, Number(e.detail.value) / 100, {
+        persist: false
+      });
+  },
+  inlineMascotTap() {
+    if (this._audio) this._audio.gesture('mascot');
+    if (!this._motion || this.data.reducedMotion) return;
+    const id = this.data.modal ? 'modal-' + this.data.modal : this.data.pageActorId;
+    if (id) this._motion.react(id);
+  },
+  measureInlineActor() {
+    if (!this._alive || !this.data.pageActorId || this.data.modal || !wx.createSelectorQuery)
+      return;
+    const id = this.data.pageActorId;
+    wx.createSelectorQuery()
+      .in(this)
+      .select('.inline-actor')
+      .boundingClientRect((actor) => {
+        if (!actor || typeof actor.bottom !== 'number') return;
+        wx.createSelectorQuery()
+          .in(this)
+          .select('.panel-body')
+          .boundingClientRect((panel) => {
+            if (
+              !this._alive ||
+              id !== this.data.pageActorId ||
+              !panel ||
+              typeof panel.bottom !== 'number'
+            )
+              return;
+            const visible = actor.bottom > panel.top && actor.top < panel.bottom;
+            if (visible !== this._inlineActorVisible) {
+              this._inlineActorVisible = visible;
+              this.syncMotion();
+            }
+          })
+          .exec();
+      })
+      .exec();
+  },
+  pressStart(e) {
+    const d = e.currentTarget.dataset;
+    if (
+      this.data.busy ||
+      (d.action === 'option' && this.data.challenge && this.data.challenge.status !== 'playing')
+    )
+      return;
+    if (this._press) this._press.start(d.pressKey, e);
+  },
+  pressMove(e) {
+    if (this._press) this._press.move(e);
+  },
+  pressEnd() {
+    if (this._press) this._press.end();
+  },
+  cancelPress() {
+    if (this._press) this._press.cancel();
+  },
+  pressTap(e) {
+    if (this._press && e && e.currentTarget) this._press.tap(e.currentTarget.dataset.pressKey);
+  },
+  async applyScenario(name) {
+    if (!this._review) return;
+    this._rankEmpty = name === 'ranking-empty';
+    this._certificateReviewState = ['certificate-loading', 'certificate-failure'].includes(name)
+      ? name
+      : '';
+    const certificateScenario = name.startsWith('certificate-') && name !== 'certificate-empty';
+    const records = name.startsWith('ranking') || name.startsWith('points'),
+      sample = ['ranking', 'points'].includes(name)
+        ? 'journey'
+        : records || name === 'certificate-empty'
+          ? 'home'
+          : certificateScenario
+            ? 'certificate'
+            : name;
+    await service.scenario(
+      name === 'save-failure' ? 'certificate' : name === 'failure' ? 'home' : sample
+    );
+    let route = ['home', 'disabled'].includes(name)
+      ? 'home'
+      : name === 'empty' || name === 'failure' || name === 'journey'
+        ? 'levels'
+        : ['result', 'complete'].includes(name)
+          ? 'result'
+          : name.startsWith('certificate') || name === 'save-failure'
+            ? 'certificate'
+            : name.startsWith('ranking')
+              ? 'ranking'
+              : name.startsWith('points')
+                ? 'points'
+                : 'quiz';
+    this.setData({
+      route,
+      modal: '',
+      recordsLoading: records && name.endsWith('loading'),
+      recordsError: records && name.endsWith('failure') ? '连接暂未恢复，请检查网络后重试。' : '',
+      error: name === 'failure' ? '当前为加载失败评审状态，请重试。' : '',
+      scenarioIndex: Math.max(0, scenarioNames.indexOf(name))
+    });
+    this.refresh();
+    if (['home', 'levels'].includes(route)) wx.nextTick(() => this.focusMap());
+    if (name === 'save-failure') this.showModal('save-failure');
+    if (this._certificateReviewState)
+      this.certificateState({
+        certificateImage: '',
+        certificateImageLoading: name === 'certificate-loading',
+        certificateImageError: name === 'certificate-failure',
+        certificateSaveMessage: ''
+      });
+    if (name === 'certificate-permission') this.showModal('album-permission');
+    if (name === 'certificate-saved')
+      this.certificateState({ certificateSaveMessage: '证书图片已保存到相册' });
+    if (name === 'certificate-share') this.showModal('certificate-share');
+  },
+  pickScenario(e) {
+    this.applyScenario(scenarioNames[Number(e.detail.value)]);
+  },
+  async syncRemote() {
+    if (!service.network || this.data.loading) return;
+    const route = this.data.route,
+      records = ['ranking', 'points'].includes(route);
+    if (records) this.setData({ recordsLoading: true, recordsError: '' });
+    if (!this._syncPromise) this._syncPromise = Promise.resolve().then(() => service.sync());
+    const pending = this._syncPromise;
+    try {
+      await pending;
+      if (this._alive) {
+        if (this.data.route === route && records)
+          this.setData({ recordsLoading: false, recordsError: '' });
+        this.refresh();
+      }
+    } catch (e) {
+      if (this._alive) {
+        if (records && this.data.route === route)
+          this.setData({
+            recordsLoading: false,
+            recordsError: presentation.errorMessage(e.message) || '连接未完成，请稍后重试。'
+          });
+        else if (this.data.route === route)
+          try {
+            this.refresh();
+          } catch {
+            this.setData({ error: presentation.errorMessage(e.message), loading: false });
+          }
+      }
+    } finally {
+      if (this._syncPromise === pending) this._syncPromise = null;
+    }
+  },
+  pauseMedia() {
+    if (wx.createVideoContext)
+      try {
+        wx.createVideoContext('question-video', this).pause();
+      } catch {}
+  },
+  mediaLoaded() {
+    this.setData({ mediaFailed: false });
+  },
+  mediaProgress(e) {
+    this._mediaTime = Number(e.detail.currentTime) || 0;
+  },
+  mediaReady() {
+    if (this._mediaTime && wx.createVideoContext)
+      try {
+        wx.createVideoContext('question-video', this).seek(this._mediaTime);
+      } catch {}
+  },
+  toast(title) {
+    wx.showToast({ title, icon: 'none' });
+  },
+  blockTap() {},
+  mediaError() {
+    this.setData({ mediaFailed: true });
+    this.toast('媒体暂未加载，可重试；答题计时仍继续');
+  },
+  prepareShareCover() {
+    if (this._shareCoverTask) return this._shareCoverTask;
+    this._shareCoverTask = new Promise((resolve) => wx.nextTick(resolve))
+      .then(() => shareCover.render(wx, this, skin))
+      .then((file) => {
+        if (file && this._alive) {
+          const cfg = this.data.configuration || {},
+            custom = (cfg.reviveShare && cfg.reviveShare.image) || (cfg.share && cfg.share.image);
+          this.setData({
+            shareCoverImage: file,
+            ...(!custom ? { sharePreviewImage: file } : {}),
+            ...(!(cfg.share && cfg.share.image) ? { certificateShareImage: file } : {})
+          });
+        }
+        return file;
+      })
+      .catch(() => '');
+    return this._shareCoverTask;
+  },
+  ...createCertificateFlow({ wx, getSkin: () => skin }),
+  onShareAppMessage() {
+    const cfg = this.data.configuration || {},
+      image =
+        (this.data.modal === 'share' && (cfg.reviveShare || {}).image) || (cfg.share || {}).image;
+    return themeContent.shareMessage(
+      skin,
+      this.data,
+      shareCover.configured(image, skin.connection?.apiBase) ||
+        this.data.shareCoverImage ||
+        undefined
+    );
+  }
 });

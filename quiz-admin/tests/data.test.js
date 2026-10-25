@@ -1,18 +1,149 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';
-import {createLocalApi} from '../src/api/index.js';import {encodeCSV,parseCSV,toRows,fromCSV} from '../src/utils/csv.js';
-function storage(){let value=null;return {getItem:()=>value,setItem:(_,v)=>value=v}}
-test('增删改与刷新持久化、关联删除保护',async()=>{const s=storage(),a=createLocalApi(s);let d=await a.load();assert.equal(d.levels.length,16);const q={...d.questions[0],id:'new',title:'新增题目'};await a.save('questions',q);assert.equal((await createLocalApi(s).load()).questions.length,241);await a.save('questions',{...q,title:'编辑题目'});assert.equal((await a.load()).questions.at(-1).title,'编辑题目');await assert.rejects(a.remove('levels','red-1'));await a.remove('questions','new');assert.equal((await a.load()).questions.length,240)});
-test('规则保存与整数校验',async()=>{const a=createLocalApi(storage());await a.save('rules',{reviveCount:2,dailyPointLimit:100,lockAfterFailure:false});assert.equal((await a.load()).rules.reviveCount,2);await assert.rejects(a.save('rules',{reviveCount:-1,dailyPointLimit:100}))});
-test('CSV中文、逗号、双引号、换行往返',()=>{const rows=[['甲','乙'],['包含,逗号','他说"你好"\n下一行']];assert.deepEqual(parseCSV(encodeCSV(rows)),rows);assert.throws(()=>parseCSV('"未闭合'))});
-test('题库和关卡CSV往返与原子校验',async()=>{const a=createLocalApi(storage()),d=await a.load();for(const kind of ['questions','levels'])assert.deepEqual(fromCSV(kind,encodeCSV(toRows(kind,d[kind]))),d[kind]);const q={...d.questions[0],id:'valid'};await assert.rejects(a.import('questions',[q,{...q,id:'invalid',levelId:'missing'}]));assert.equal((await a.load()).questions.length,240);await assert.rejects(a.import('questions',[q,q]));await a.import('questions',[q]);assert.equal((await a.load()).questions.length,241)});
-test('主题和关卡保存删除、关卡调整排序和容量',async()=>{const a=createLocalApi(storage());await a.save('themes',{id:'test',name:'测试主题',description:'测试',color:'#123456',enabled:true});await a.save('levels',{id:'test-1',themeId:'test',name:'测试关卡',sort:2,questionCount:5,timeLimit:60,points:20});let d=await a.load();const level=d.levels.at(-1);await a.save('levels',{...level,sort:1,timeLimit:90});assert.equal((await a.load()).levels.at(-1).timeLimit,90);await assert.rejects(a.remove('themes','test'));await a.remove('levels','test-1');await a.remove('themes','test');assert.equal((await a.load()).themes.length,4);await assert.rejects(a.save('levels',{...d.levels[0],themeId:'culture'}))});
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { createLocalApi } from '../src/api/index.js';
+import { encodeCSV, parseCSV, toRows, fromCSV } from '../src/utils/csv.js';
+test('CSV rejects characters after a closing quote instead of silently changing a field', () => {
+  for (const value of ['"title"suffix,value', '"title" suffix,value', 'a,"b"c', '"a""b"tail'])
+    assert.throws(() => parseCSV(value), /引号|字段/);
+  assert.deepEqual(parseCSV('"a""b",c\r\n"跨\n行",d'), [
+    ['a"b', 'c'],
+    ['跨\n行', 'd']
+  ]);
+  assert.deepEqual(parseCSV('a,,\r\n'), [['a', '', '']]);
+});
+test('spreadsheet-facing exports block formula cells without mutating round-trip data', () => {
+  for (const prefix of ['=', '+', '-', '@', '＝', '＋', '－', '＠', '\t=', '\r\n +', ' \uFEFF=']) {
+    const rows = [['title'], [prefix + '1+1']];
+    assert.throws(() => encodeCSV(rows, { spreadsheetSafe: true }), /完整活动JSON/);
+    assert.deepEqual(parseCSV(encodeCSV(rows)), rows);
+  }
+  assert.deepEqual(
+    parseCSV(encodeCSV([['题干'], ['包含,逗号和"引号"\n次行']], { spreadsheetSafe: true })),
+    [['题干'], ['包含,逗号和"引号"\n次行']]
+  );
+});
+function storage() {
+  let value = null;
+  return { getItem: () => value, setItem: (_, v) => (value = v) };
+}
+test('增删改与刷新持久化、关联删除保护', async () => {
+  const s = storage(),
+    a = createLocalApi(s);
+  let d = await a.load();
+  assert.equal(d.levels.length, 16);
+  const q = { ...d.questions[0], id: 'new', title: '新增题目' };
+  await a.save('questions', q);
+  assert.equal((await createLocalApi(s).load()).questions.length, 241);
+  await a.save('questions', { ...q, title: '编辑题目' });
+  assert.equal((await a.load()).questions.at(-1).title, '编辑题目');
+  await assert.rejects(a.remove('levels', 'red-1'));
+  await a.remove('questions', 'new');
+  assert.equal((await a.load()).questions.length, 240);
+});
+test('规则保存与整数校验', async () => {
+  const a = createLocalApi(storage());
+  await a.save('rules', { reviveCount: 2, dailyPointLimit: 100, lockAfterFailure: false });
+  assert.equal((await a.load()).rules.reviveCount, 2);
+  await assert.rejects(a.save('rules', { reviveCount: -1, dailyPointLimit: 100 }));
+});
+test('CSV中文、逗号、双引号、换行往返', () => {
+  const rows = [
+    ['甲', '乙'],
+    ['包含,逗号', '他说"你好"\n下一行']
+  ];
+  assert.deepEqual(parseCSV(encodeCSV(rows)), rows);
+  assert.throws(() => parseCSV('"未闭合'));
+});
+test('题库和关卡CSV往返与原子校验', async () => {
+  const a = createLocalApi(storage()),
+    d = await a.load();
+  for (const kind of ['questions', 'levels'])
+    assert.deepEqual(fromCSV(kind, encodeCSV(toRows(kind, d[kind]))), d[kind]);
+  const q = { ...d.questions[0], id: 'valid' };
+  await assert.rejects(a.import('questions', [q, { ...q, id: 'invalid', levelId: 'missing' }]));
+  assert.equal((await a.load()).questions.length, 240);
+  await assert.rejects(a.import('questions', [q, q]));
+  await a.import('questions', [q]);
+  assert.equal((await a.load()).questions.length, 241);
+});
+test('主题和关卡保存删除、关卡调整排序和容量', async () => {
+  const a = createLocalApi(storage());
+  await a.save('themes', {
+    id: 'test',
+    name: '测试主题',
+    description: '测试',
+    color: '#123456',
+    enabled: true
+  });
+  await a.save('levels', {
+    id: 'test-1',
+    themeId: 'test',
+    name: '测试关卡',
+    sort: 2,
+    questionCount: 5,
+    timeLimit: 60,
+    points: 20
+  });
+  let d = await a.load();
+  const level = d.levels.at(-1);
+  await a.save('levels', { ...level, sort: 1, timeLimit: 90 });
+  assert.equal((await a.load()).levels.at(-1).timeLimit, 90);
+  await assert.rejects(a.remove('themes', 'test'));
+  await a.remove('levels', 'test-1');
+  await a.remove('themes', 'test');
+  assert.equal((await a.load()).themes.length, 4);
+  await assert.rejects(a.save('levels', { ...d.levels[0], themeId: 'culture' }));
+});
 
-test('题库不再要求审核字段，旧存档和旧CSV审核列兼容且不会继续保存',async()=>{const s=storage(),a=createLocalApi(s),d=await a.load();const q={...d.questions[0],reviewStatus:'待审核',reviewNote:'旧字段'};s.setItem('',JSON.stringify({...d,questions:[q,...d.questions.slice(1)]}));assert.equal((await a.load()).questions[0].reviewStatus,undefined);const legacyRows=toRows('questions',[d.questions[0]]);legacyRows[0].push('reviewStatus');legacyRows[1].push('待审核');assert.deepEqual(fromCSV('questions',encodeCSV(legacyRows)),[d.questions[0]]);await a.save('questions',{...q,title:'保存后直接使用'});assert.equal((await a.load()).questions[0].reviewNote,undefined);assert.equal((await a.load()).questions.length,240);await assert.rejects(a.save('questions',{...q,options:['同','同','同','同']}));});
+test('题库不再要求审核字段，旧存档和旧CSV审核列兼容且不会继续保存', async () => {
+  const s = storage(),
+    a = createLocalApi(s),
+    d = await a.load();
+  const q = { ...d.questions[0], reviewStatus: '待审核', reviewNote: '旧字段' };
+  s.setItem('', JSON.stringify({ ...d, questions: [q, ...d.questions.slice(1)] }));
+  assert.equal((await a.load()).questions[0].reviewStatus, undefined);
+  const legacyRows = toRows('questions', [d.questions[0]]);
+  legacyRows[0].push('reviewStatus');
+  legacyRows[1].push('待审核');
+  assert.deepEqual(fromCSV('questions', encodeCSV(legacyRows)), [d.questions[0]]);
+  await a.save('questions', { ...q, title: '保存后直接使用' });
+  assert.equal((await a.load()).questions[0].reviewNote, undefined);
+  assert.equal((await a.load()).questions.length, 240);
+  await assert.rejects(a.save('questions', { ...q, options: ['同', '同', '同', '同'] }));
+});
 
-test('CSV保留难度启停媒体图注来源和多行解析，旧模板缺失字段保持未指定',()=>{
- const q={id:'Q',themeId:'red',levelId:'red-1',title:'题干',options:['甲','乙','丙','丁'],answer:2,explanation:'首行\n次行',imageUrl:'',videoUrl:'/media/observation.mp4',difficulty:'综合',enabled:false,mediaAlt:'说明',mediaCaption:'图注，"包含引号"',mediaRequired:true,sourceTitle:'来源',sourceUrl:'https://example.org/source',sourceIds:['a','b'],knowledgePoint:'知识',region:'湖南'};
- assert.deepEqual(fromCSV('questions',encodeCSV(toRows('questions',[q]))),[q]);
- const old=toRows('questions',[q]).map(row=>row.slice(0,12)),parsed=fromCSV('questions',encodeCSV(old))[0];assert.equal(parsed.difficulty,undefined);assert.equal(parsed.enabled,undefined);assert.equal(parsed.sourceIds,undefined);
- const bad=toRows('questions',[q]);bad[1][bad[0].indexOf('enabled')]='yes';assert.throws(()=>fromCSV('questions',encodeCSV(bad)),/true或false/);
- const source=toRows('questions',[q]);source[1][source[0].indexOf('sourceIds')]='[1]';assert.throws(()=>fromCSV('questions',encodeCSV(source)),/字符串数组/);
+test('CSV保留难度启停媒体图注来源和多行解析，旧模板缺失字段保持未指定', () => {
+  const q = {
+    id: 'Q',
+    themeId: 'red',
+    levelId: 'red-1',
+    title: '题干',
+    options: ['甲', '乙', '丙', '丁'],
+    answer: 2,
+    explanation: '首行\n次行',
+    imageUrl: '',
+    videoUrl: '/media/observation.mp4',
+    difficulty: '综合',
+    enabled: false,
+    mediaAlt: '说明',
+    mediaCaption: '图注，"包含引号"',
+    mediaRequired: true,
+    sourceTitle: '来源',
+    sourceUrl: 'https://example.org/source',
+    sourceIds: ['a', 'b'],
+    knowledgePoint: '知识',
+    region: '湖南'
+  };
+  assert.deepEqual(fromCSV('questions', encodeCSV(toRows('questions', [q]))), [q]);
+  const old = toRows('questions', [q]).map((row) => row.slice(0, 12)),
+    parsed = fromCSV('questions', encodeCSV(old))[0];
+  assert.equal(parsed.difficulty, undefined);
+  assert.equal(parsed.enabled, undefined);
+  assert.equal(parsed.sourceIds, undefined);
+  const bad = toRows('questions', [q]);
+  bad[1][bad[0].indexOf('enabled')] = 'yes';
+  assert.throws(() => fromCSV('questions', encodeCSV(bad)), /true或false/);
+  const source = toRows('questions', [q]);
+  source[1][source[0].indexOf('sourceIds')] = '[1]';
+  assert.throws(() => fromCSV('questions', encodeCSV(source)), /字符串数组/);
 });

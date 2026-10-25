@@ -1,0 +1,103 @@
+✖ stale config replacement returns conflict and preserves an unrelated editor change (101.691135ms)
+✖ stale activity import cannot reset configuration or remove a newly added level (71.027476ms)
+✖ stale question edits preserve the first saved question (72.1232ms)
+✖ a pending sync receiver leaves the database queue free and concurrent retries deliver once (109.781009ms)
+✖ sync receiver timeout releases its event for retry and a late success cannot change its status (148.192788ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 0
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 627.177629
+
+✖ failing tests:
+
+test at ../../.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:39:1
+✖ stale config replacement returns conflict and preserves an unrelated editor change (101.691135ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  200 !== 409
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:55:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 200,
+    expected: 409,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ../../.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:62:1
+✖ stale activity import cannot reset configuration or remove a newly added level (71.027476ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  200 !== 409
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:78:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 200,
+    expected: 409,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ../../.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:86:1
+✖ stale question edits preserve the first saved question (72.1232ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  200 !== 409
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:111:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 200,
+    expected: 409,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ../../.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:115:1
+✖ a pending sync receiver leaves the database queue free and concurrent retries deliver once (109.781009ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'blocked' !== 200
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:151:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'blocked',
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ../../.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:155:1
+✖ sync receiver timeout releases its event for retry and a late success cannot change its status (148.192788ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'blocked' !== 200
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/server-baseline-replay.cjs:177:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'blocked',
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,351 @@
+{
+  "baseCommit": "aea0aae6a4690222a5df5dc5d217fb541926af61",
+  "scope": "This fix scope in an already dirty worktree, not a manifest of every project change. No commit, push or release performed.",
+  "files": [
+    {
+      "path": ".github/workflows/quality.yml",
+      "bytes": 576,
+      "sha256": "a1de0d109365750bd8384fc95ee40a1ff561b781820226f2d64df3aa533d9cc6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 2191,
+      "sha256": "416f0ffd7cb4f2f141a2e4fe3ed192907252ab4615eb46f924632a72857622d4"
+    },
+    {
+      "path": ".node-version",
+      "bytes": 3,
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+    },
+    {
+      "path": ".prettierrc.json",
+      "bytes": 159,
+      "sha256": "5ae3d7d37792aac9f4839adce02e6fb8440b6e2b702b3f66592d7ea81cee55e6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5839,
+      "sha256": "02e178fa498c6474e92d6279e4f0ab8ee5dced4a35f94d7a1d92d067b48b9ad2"
+    },
+    {
+      "path": "demo/server/application.cjs",
+      "bytes": 70643,
+      "sha256": "df0f92b98d36892f7a7cc4a0a66461a139c6d4c4a52d54b3367c1a6bb97cedc4"
+    },
+    {
+      "path": "demo/server/catalog-config.cjs",
+      "bytes": 12672,
+      "sha256": "c3283ebea2fd2ae282e53555f79697459a6b12fbdf129c242484f1a86efc601e"
+    },
+    {
+      "path": "demo/server/outbox-delivery.cjs",
+      "bytes": 2984,
+      "sha256": "bc051da449c47f46302979584ccdaecac7ad2f320c797ca47f85e5df114c607f"
+    },
+    {
+      "path": "demo/server/revision.cjs",
+      "bytes": 1429,
+      "sha256": "55780b86f4de814cbc36e36b5939747831d3fe90e04972f269c2f0a2d5b89d4e"
+    },
+    {
+      "path": "demo/tests/server-quality.test.cjs",
+      "bytes": 5597,
+      "sha256": "a28cfe574037054b9a9a7b2bafba832d6f3af59509063f8135751f744d57a3d1"
+    },
+    {
+      "path": "eslint.config.cjs",
+      "bytes": 1188,
+      "sha256": "0e65c1644a5511627aaaceef7c6f5fab54385ff31608d22a2d63ba64ec095b4f"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 40909,
+      "sha256": "a6ad4eed22574315367bbfe4fde86066371f66c96b6a77544fb03ee61060f18e"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1199,
+      "sha256": "d1f03294c2fc75c9a3ba2b60f8a1007373f5fd697eaf06155f16e6a4e8980e32"
+    },
+    {
+      "path": "quiz-admin/src/App.vue",
+      "bytes": 29520,
+      "sha256": "402f32db74c63e6af4f8c233952f3f3f9f506c186d70969e5f62ec07638584c0"
+    },
+    {
+      "path": "quiz-admin/src/api/index.js",
+      "bytes": 12553,
+      "sha256": "95801df5d975b815cfab275e9d20a9e31e64bb6ba74e7d589eaeaebe2dc27ab9"
+    },
+    {
+      "path": "quiz-admin/src/features/activity-transfer.js",
+      "bytes": 3338,
+      "sha256": "93f87967c797b2b1418ea93fbddf1054218f20730f68b7dc83ec1e4082271f36"
+    },
+    {
+      "path": "quiz-admin/src/utils/csv.js",
+      "bytes": 5103,
+      "sha256": "91153dae5610484fa0f9a978839faa5f76f896767156280f6c892965f11cfd46"
+    },
+    {
+      "path": "quiz-admin/tests/data.test.js",
+      "bytes": 6295,
+      "sha256": "f11f7dc4e38da6d13d9acb0929cb005c58a7a8a1a3752c5dac7e6ca70b2420f1"
+    },
+    {
+      "path": "quiz-admin/tests/http-api.test.js",
+      "bytes": 4490,
+      "sha256": "7fc5f5e31d9f3a27916cf07a507b6150afa3e5f2635789cddec695be9e9c9ca4"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/20261025-代码质量修复与验证.md",
+      "bytes": 6373,
+      "sha256": "2bfd11e163dfae44ff6ea9cd803d4199ebac185fcdc5b5a833d50a6a90f02eff"
+    },
+    {
+      "path": "rural-culture-miniprogram/docs/CODING_STANDARDS.md",
+      "bytes": 3426,
+      "sha256": "85f0c63eabed8fddca4c4a90aef47cc4c5f62238df1a22307650490c528114b3"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/game/certificate-flow.js",
+      "bytes": 6956,
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/game/index.js",
+      "bytes": 42745,
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/pages/game/index.wxss",
+      "bytes": 105512,
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services-v4/remote-response.js",
+      "bytes": 1492,
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668"
+    },
+    {
+      "path": "rural-culture-miniprogram/miniprogram/services-v4/remote.js",
+      "bytes": 16213,
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30"
+    },
+    {
+      "path": "rural-culture-miniprogram/tests/native-metrics-source.test.cjs",
+      "bytes": 1004,
+      "sha256": "210077ca8464c8265dc086060b48844dfc81ca0ebd24a0e65afabd849b1a29fa"
+    },
+    {
+      "path": "rural-culture-miniprogram/tests/remote-recovery.test.cjs",
+      "bytes": 4363,
+      "sha256": "bfb49033859a59a7ff2a5d85adff4274004398db472856216dc376801c87b8ee"
+    },
+    {
+      "path": "rural-culture-miniprogram/tests/v4-page.cjs",
+      "bytes": 37423,
+      "sha256": "cd362b155f34a4885589f24632c1e87beb8ffa09e77e95bbe220b7f5577be522"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-adaptation-native-20261020.cjs",
+      "bytes": 11583,
+      "sha256": "59798d00c56d49033364a905cd9c7bf1a22152de0d39a0c2959b73bf1122dd31"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-art-refinement-small-native-20261022.cjs",
+      "bytes": 5212,
+      "sha256": "01f3c3721c52a3c8df7fe3c7530a0afc2510a1023381dbf441b334a9a8355cde"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-certificate-native-20261021.cjs",
+      "bytes": 9764,
+      "sha256": "fa496282fd15b3eecffd3bab6ed90550db1b456a4438fccaca6a8cae298829e1"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-chapter-association-native-20261022.cjs",
+      "bytes": 8060,
+      "sha256": "b4336b7d2d2a19e7d8c164d2e74faa2e30b32a95e876c411b57193699fd072b8"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-code-quality-native-20261025.cjs",
+      "bytes": 4892,
+      "sha256": "c78b91c5378e5229320c16d7aea3cd98514acd4b0f8d9071e9e71a5fe4e0c0c0"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-home-designs-native-20261021.cjs",
+      "bytes": 10304,
+      "sha256": "b81017b4c2a7afd3deef1da6acad7397bd52da9d11f49235d520f9d638576978"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-interaction-native-20261021.cjs",
+      "bytes": 10190,
+      "sha256": "922fc63032b24c2734d5ab79b4b0fb8ca1969f3991d3a8ad3843219a865a7fa1"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-map-legibility-native-20261023.cjs",
+      "bytes": 6493,
+      "sha256": "6df0fe5316b591a0021ee88c5b596398e920ffa953958b63c6d660f9c4027a41"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/check-title-writing-area-20261021.cjs",
+      "bytes": 7093,
+      "sha256": "7c4c105edff035edc5bb0338c1462224519ec1528ea29688660ad4836c05b743"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/native-metrics-source.cjs",
+      "bytes": 446,
+      "sha256": "0eb3e5ec562dec615461cc49222824ffaec0a2512e4d8697ba2666d9b3d560bd"
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/sync-feedback-20261019.cjs",
+      "bytes": 6076,
+      "sha256": "bca478830e812d053dc11cd2876e783420d972ae068e012c6b51183e98e04569"
+    },
+    {
+      "path": "tools/quality-files.json",
+      "bytes": 1078,
+      "sha256": "bec744c1b23b098572b13029c82cf24a5ff62fdb608212a0eef197787687b178"
+    },
+    {
+      "path": "tools/quality-format.cjs",
+      "bytes": 996,
+      "sha256": "bfe95b8fb48b954de1af612eb81fa27fc3df79954136ac60a1442081e8704556"
+    },
+    {
+      "path": "demo/tests/native-network.test.cjs",
+      "bytes": 11959,
+      "sha256": "0d25446426ace8870a6fc77b1d6f6d3dd3c46bbaafe7ad31219f5de925ad2d1d"
+    },
+    {
+      "path": "demo/media/observation.mp4",
+      "bytes": 326470,
+      "sha256": "46692cac5a089ef47f390fad22f0efe54de3d63a8619267a9f44961bb2cb66d3"
+    }
+  ],
+  "deleted": [
+    "demo/.eslintrc.js"
+  ],
+  "independentFiles": [
+    {
+      "project": "十步芳草",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "十步芳草",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "千年文脉",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "金色产业",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "pages/game/index.js",
+      "sha256": "20d165d6649497b2da83322a204506f9f5ec479c80ea590b16cd31a03c78dc1e",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "pages/game/index.wxss",
+      "sha256": "6e9863bccfbb55dcefdbdab889765562b5ffa9b42306d4ee8adf1a9def1ef05c",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "pages/game/certificate-flow.js",
+      "sha256": "f3c31dcb6399c5cb227bd52bea1734795132eaf999b8bd0819c515b77992f35b",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "services-v4/remote.js",
+      "sha256": "2d357425628bc010328a3169e42f0fde741f883353087ba0a0293f20895aef30",
+      "matchingMother": true
+    },
+    {
+      "project": "青山绿水",
+      "path": "services-v4/remote-response.js",
+      "sha256": "62411769265bcb0ff4455a528b92dc22ee02f7c5e3612a50af8b6f36e170c668",
+      "matchingMother": true
+    }
+  ]
+}

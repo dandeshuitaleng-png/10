@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": 6,
+  "results": [
+    "Unauthenticated admin questions denied",
+    "Player cannot access administrator questions",
+    "Unanswered challenge DTO omits answer and full question bank",
+    "Other fixture player cannot read owned challenge",
+    "SQLite prepared statement treats SQL-shaped identifier as data",
+    "Production mode rejects development login"
+  ],
+  "scope": "Offline handler calls, dummy principals and in-memory SQLite only; no deployed target or production credential tested."
+}

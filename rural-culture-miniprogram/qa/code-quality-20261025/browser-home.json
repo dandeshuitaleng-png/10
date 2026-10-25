@@ -1,0 +1,162 @@
+[
+  {
+    "count": 4,
+    "device": {
+      "height": 812,
+      "width": 375
+    },
+    "error": "",
+    "footers": [
+      {
+        "height": 52,
+        "width": 343
+      }
+    ],
+    "labels": [
+      "第1关 · 基础认知红色初识当前关卡首通奖励 +10 积分",
+      "第2关 · +15分故事寻根完成上一关开启首通奖励 +15 积分",
+      "第3关 · +20分史料细读完成上一关开启首通奖励 +20 积分",
+      "第4关 · +30分薪火相传完成上一关开启首通奖励 +30 积分"
+    ],
+    "route": "home",
+    "theme": "red"
+  },
+  {
+    "count": 4,
+    "device": {
+      "height": 812,
+      "width": 375
+    },
+    "error": "",
+    "footers": [
+      {
+        "height": 52,
+        "width": 343
+      }
+    ],
+    "labels": [
+      "第1关 · 基础认知文脉初识当前关卡首通奖励 +10 积分",
+      "第2关 · +15分乡土寻踪完成上一关开启首通奖励 +15 积分",
+      "第3关 · +20分文化细读完成上一关开启首通奖励 +20 积分",
+      "第4关 · +30分传承有方完成上一关开启首通奖励 +30 积分"
+    ],
+    "route": "home",
+    "theme": "culture"
+  },
+  {
+    "count": 4,
+    "device": {
+      "height": 812,
+      "width": 375
+    },
+    "error": "",
+    "footers": [
+      {
+        "height": 52,
+        "width": 343
+      }
+    ],
+    "labels": [
+      "第1关 · 基础认知物产初识当前关卡首通奖励 +10 积分",
+      "第2关 · +15分产地寻访完成上一关开启首通奖励 +15 积分",
+      "第3关 · +20分产业观察完成上一关开启首通奖励 +20 积分",
+      "第4关 · +30分丰收答卷完成上一关开启首通奖励 +30 积分"
+    ],
+    "route": "home",
+    "theme": "industry"
+  },
+  {
+    "count": 4,
+    "device": {
+      "height": 812,
+      "width": 375
+    },
+    "error": "",
+    "footers": [
+      {
+        "height": 52,
+        "width": 343
+      }
+    ],
+    "labels": [
+      "第1关 · 基础认知山水初识当前关卡首通奖励 +10 积分",
+      "第2关 · +15分自然观察完成上一关开启首通奖励 +15 积分",
+      "第3关 · +20分生态守护完成上一关开启首通奖励 +20 积分",
+      "第4关 · +30分绿色同行完成上一关开启首通奖励 +30 积分"
+    ],
+    "route": "home",
+    "theme": "ecology"
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "red",
+    "width": 320
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "culture",
+    "width": 320
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "industry",
+    "width": 320
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "ecology",
+    "width": 320
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "red",
+    "width": 430
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "culture",
+    "width": 430
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "industry",
+    "width": 430
+  },
+  {
+    "buttonHeight": 52,
+    "buttonInBounds": true,
+    "count": 4,
+    "error": "",
+    "route": "home",
+    "theme": "ecology",
+    "width": 430
+  }
+]

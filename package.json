@@ -1,0 +1,23 @@
+{
+  "name": "rural-quiz-workspace-quality",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "lint": "eslint demo/server quiz-admin/src rural-culture-miniprogram/miniprogram/pages/game rural-culture-miniprogram/miniprogram/services-v4 tools/quality-format.cjs rural-culture-miniprogram/tools/native-metrics-source.cjs rural-culture-miniprogram/tools/check-code-quality-native-20261025.cjs --max-warnings=0",
+    "format:check": "node tools/quality-format.cjs --check",
+    "format": "node tools/quality-format.cjs --write",
+    "test:quality": "node --test demo/tests/server*.test.cjs demo/tests/native-network.test.cjs quiz-admin/tests/*.test.js rural-culture-miniprogram/tests/remote-recovery.test.cjs rural-culture-miniprogram/tests/native-metrics-source.test.cjs rural-culture-miniprogram/tests/v4-page.cjs rural-culture-miniprogram/tests/v4-services.cjs",
+    "check": "npm run lint && npm run format:check && npm run test:quality"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.13.0",
+    "eslint-plugin-vue": "10.11.1",
+    "globals": "16.5.0",
+    "prettier": "3.9.10",
+    "vue-eslint-parser": "10.4.1"
+  }
+}

@@ -1,0 +1,72 @@
+✖ cold-start abandons a definitively rejected pending operation and loads authoritative progress (1.812236ms)
+✔ cold-start preserves the exact idempotency key when an operation outcome remains uncertain (1.059966ms)
+✖ malformed async success callbacks reject initialization instead of leaving it pending (52.970386ms)
+✖ malformed operation responses keep their idempotency key, and invalid endpoint field types reject (1.898625ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 167.407632
+
+✖ failing tests:
+
+test at ../../.codex/audits/yx/20261025-fixes/remote-baseline-replay.cjs:53:1
+✖ cold-start abandons a definitively rejected pending operation and loads authoritative progress (1.812236ms)
+  Error: 关卡未开放
+      at fail (/Users/huangnianpeng/.codex/audits/yx/20261025-quality/scratch/snapshot/rural-culture-miniprogram/miniprogram/services-v4/remote.js:4:42)
+      at Object.success (/Users/huangnianpeng/.codex/audits/yx/20261025-quality/scratch/snapshot/rural-culture-miniprogram/miniprogram/services-v4/remote.js:14:378)
+      at /Users/huangnianpeng/.codex/audits/yx/20261025-fixes/remote-baseline-replay.cjs:42:21
+      at node:internal/process/task_queues:151:7
+      at AsyncResource.runInAsyncScope (node:async_hooks:227:14)
+      at AsyncResource.runMicrotask (node:internal/process/task_queues:148:8) {
+    code: 'LEVEL_UNAVAILABLE'
+  }
+
+test at ../../.codex/audits/yx/20261025-fixes/remote-baseline-replay.cjs:88:1
+✖ malformed async success callbacks reject initialization instead of leaving it pending (52.970386ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'pending'
+  - 'INVALID_RESPONSE'
+  
+      at TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/remote-baseline-replay.cjs:98:12)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'pending',
+    expected: 'INVALID_RESPONSE',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ../../.codex/audits/yx/20261025-fixes/remote-baseline-replay.cjs:103:1
+✖ malformed operation responses keep their idempotency key, and invalid endpoint field types reject (1.898625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + Comparison {}
+  - Comparison {
+  -   code: 'INVALID_RESPONSE'
+  - }
+  
+      at async TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/remote-baseline-replay.cjs:108:3)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: TypeError: Cannot read properties of undefined (reading 'filter')
+        at /Users/huangnianpeng/.codex/audits/yx/20261025-quality/scratch/snapshot/rural-culture-miniprogram/miniprogram/services-v4/remote.js:18:35
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (/Users/huangnianpeng/.codex/audits/yx/20261025-fixes/remote-baseline-replay.cjs:108:3)
+        at async Test.run (node:internal/test_runner/test:1409:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:974:7),
+    expected: { code: 'INVALID_RESPONSE' },
+    operator: 'rejects',
+    diff: 'simple'
+  }

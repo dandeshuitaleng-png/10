@@ -8,7 +8,7 @@ async function evaluate(fn){let r=await call('automation_evaluate',['--fn-source
 const dirs=['pages/game','components/game-button','components/mascot-actor'];
 function stage(){
  for(const dir of dirs)for(const file of fs.readdirSync(path.join(root,'miniprogram',dir)).filter(x=>x.endsWith('.wxss'))){let s=fs.readFileSync(path.join(root,'miniprogram',dir,file),'utf8').replace(/@media\s*\(max-width:(\d+)px\)/g,(_,n)=>320<=Number(n)?'@media(min-width:0px)':'@media(max-width:0px)').replace(/([\d.]+)rpx\b/g,(_,n)=>(Number(n)*320/750)+'px').replace(/([\d.]+)v([wh])\b/g,(_,n,a)=>(Number(n)*(a==='w'?320:568)/100)+'px');if(dir==='pages/game'&&file==='index.wxss')s+='\n.game-device{width:320px!important;height:568px!important;max-width:none!important;margin:0!important}\n';fs.writeFileSync(path.join(project,'miniprogram',dir,file),s);}
- const from='const i=wx.getWindowInfo?wx.getWindowInfo():wx.getSystemInfoSync(),m=homeLayout.metrics(i,wx.getMenuButtonBoundingClientRect?wx.getMenuButtonBoundingClientRect():null,skin.gameId);',source=fs.readFileSync(path.join(root,'miniprogram/pages/game/index.js'),'utf8');assert(source.includes(from));
+ const from=require('./native-metrics-source.cjs'),source=fs.readFileSync(path.join(root,'miniprogram/pages/game/index.js'),'utf8');assert(from.test(source));
  fs.writeFileSync(path.join(project,'miniprogram/pages/game/index.js'),source.replace(from,'const i={windowWidth:320,windowHeight:568,screenWidth:320,screenHeight:568,statusBarHeight:20,safeArea:{bottom:568}},m=homeLayout.metrics(i,{left:226,bottom:58},skin.gameId);'));
 }
 const checks=[];

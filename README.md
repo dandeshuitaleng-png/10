@@ -43,3 +43,9 @@ node --test tests/certificate-art.test.cjs tests/option-measurement.test.cjs tes
 [查看 A 方案](交付/首页方案A-20261021/评审.html) · [要求与验收记录](rural-culture-miniprogram/docs/20261021-A方案确认与四项细化.md)
 
 预览使用隔离评审工程：执行 `node rural-culture-miniprogram/tools/prepare-theme-content-review-20261020.cjs`，再执行 `node rural-culture-miniprogram/tools/v4-serve.cjs .rural-quiz-runtime/theme-content-review 6499`，打开 `http://127.0.0.1:6499/preview/首页方案A-20261021.html`。主题选择仅用于评审，不出现在正式工程中。
+
+## 代码质量检查
+
+在工作区根目录使用 Node.js 24 执行 `npm ci --ignore-scripts` 后，运行 `npm run check`。
+该入口包含服务端、后台管理、原生页面与服务回归，以及 ESLint 和维护文件格式检查。
+维护约定见 [代码规范](rural-culture-miniprogram/docs/CODING_STANDARDS.md)，本轮修复与证据见 [20261025 修复记录](rural-culture-miniprogram/docs/20261025-代码质量修复与验证.md)。

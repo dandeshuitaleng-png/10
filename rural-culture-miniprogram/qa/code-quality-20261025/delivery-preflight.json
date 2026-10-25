@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "theme": "十步芳草",
+      "file": "pages/game/index.js",
+      "oldExists": true
+    },
+    {
+      "theme": "十步芳草",
+      "file": "pages/game/index.wxss",
+      "oldExists": true
+    },
+    {
+      "theme": "十步芳草",
+      "file": "pages/game/certificate-flow.js",
+      "oldExists": false
+    },
+    {
+      "theme": "十步芳草",
+      "file": "services-v4/remote.js",
+      "oldExists": true
+    },
+    {
+      "theme": "十步芳草",
+      "file": "services-v4/remote-response.js",
+      "oldExists": false
+    },
+    {
+      "theme": "千年文脉",
+      "file": "pages/game/index.js",
+      "oldExists": true
+    },
+    {
+      "theme": "千年文脉",
+      "file": "pages/game/index.wxss",
+      "oldExists": true
+    },
+    {
+      "theme": "千年文脉",
+      "file": "pages/game/certificate-flow.js",
+      "oldExists": false
+    },
+    {
+      "theme": "千年文脉",
+      "file": "services-v4/remote.js",
+      "oldExists": true
+    },
+    {
+      "theme": "千年文脉",
+      "file": "services-v4/remote-response.js",
+      "oldExists": false
+    },
+    {
+      "theme": "金色产业",
+      "file": "pages/game/index.js",
+      "oldExists": true
+    },
+    {
+      "theme": "金色产业",
+      "file": "pages/game/index.wxss",
+      "oldExists": true
+    },
+    {
+      "theme": "金色产业",
+      "file": "pages/game/certificate-flow.js",
+      "oldExists": false
+    },
+    {
+      "theme": "金色产业",
+      "file": "services-v4/remote.js",
+      "oldExists": true
+    },
+    {
+      "theme": "金色产业",
+      "file": "services-v4/remote-response.js",
+      "oldExists": false
+    },
+    {
+      "theme": "青山绿水",
+      "file": "pages/game/index.js",
+      "oldExists": true
+    },
+    {
+      "theme": "青山绿水",
+      "file": "pages/game/index.wxss",
+      "oldExists": true
+    },
+    {
+      "theme": "青山绿水",
+      "file": "pages/game/certificate-flow.js",
+      "oldExists": false
+    },
+    {
+      "theme": "青山绿水",
+      "file": "services-v4/remote.js",
+      "oldExists": true
+    },
+    {
+      "theme": "青山绿水",
+      "file": "services-v4/remote-response.js",
+      "oldExists": false
+    }
+  ]
+}

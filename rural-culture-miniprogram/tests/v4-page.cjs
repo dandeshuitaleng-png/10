@@ -64,6 +64,7 @@ function environment({ at = '2026-10-15T12:00:00+08:00', gameId = 'culture', lev
   class TestDate extends Date { static now() { return now; } }
   vm.runInNewContext(fs.readFileSync(process.env.OPTION_PAGE_SOURCE||pagePath, 'utf8'), {
     require(id) {
+      if (id === './certificate-flow') return require('../miniprogram/pages/game/certificate-flow');
       if (id === '../../game-config') return skin;
       if (id === '../../services-v4/index') return service;
       if (id === '../../services-v4/home-designs') return require('../miniprogram/services-v4/home-designs');

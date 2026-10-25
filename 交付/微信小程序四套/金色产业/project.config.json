@@ -116,6 +116,18 @@
       {
         "type": "file",
         "value": "assets/culture/banner-themed-v3.png"
+      },
+      {
+        "type": "folder",
+        "value": "assets/red"
+      },
+      {
+        "type": "folder",
+        "value": "assets/culture"
+      },
+      {
+        "type": "folder",
+        "value": "assets/ecology"
       }
     ],
     "include": []

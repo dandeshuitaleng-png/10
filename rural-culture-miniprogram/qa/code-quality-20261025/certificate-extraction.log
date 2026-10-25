@@ -1,0 +1,27 @@
+✔ all four themes share one generated PNG between preview, save and repeated refreshes (58.346158ms)
+✔ failed generation stays failed through refresh and retries only on an explicit action (14.425305ms)
+✔ known denied album permission opens guidance without making an album write (10.394048ms)
+✔ explicit settings action handles denied, failed and granted results without an automatic save (7.560882ms)
+✔ first save can ask permission and a denial receives the permission-specific recovery (6.627517ms)
+✔ cancelled album save has no permission error and preserves the award (6.624834ms)
+✔ ordinary save failure can retry the same image without claiming permission was denied (6.537704ms)
+✔ simultaneous save attempts make a single album request (11.018322ms)
+✔ leaving while checking permission prevents a write or a stale error on the destination (6.397376ms)
+✔ a save callback after unload does not show success or update the destroyed page (7.371869ms)
+✔ browser download feedback does not claim a phone album write (5.357925ms)
+✔ preview failures preserve the image, while stale image errors do not replace it (5.191027ms)
+✔ a superseded render cannot replace the loading state or image of the newer request (7.525537ms)
+✔ 实际Page.resize四主题共用完整标题区域，覆盖三个视口 (21.487701ms)
+✔ 390×844原生屏幕：A地图294至738、标题与操作区可达，水纹不越出标题区域 (1.460703ms)
+✔ 不同进度和短屏按实际卡片边界定位，保留16px下方间距 (54.547203ms)
+✔ 宽横幅布局下当前产业关卡仍保留16px底部间距 (0.325986ms)
+✔ 浏览器WXSS导入器会内联实际共享样式，保持与原生的加载顺序 (7.336549ms)
+✔ 四主题标题保留屏幕中轴和光学基线，所有可见素材均位于标题区内 (1.152998ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 272.175451

@@ -1,0 +1,191 @@
+✔ no music autoplays; first gesture starts one looping context with a gentle fade (2.19046ms)
+✔ only confirmed feedback plays once despite repeated refreshes and route changes (5.661298ms)
+✔ muting persists, stops every channel, and does not queue missed feedback (0.448572ms)
+✔ background pauses immediately and return resumes the same music without seeking to zero (0.861767ms)
+✔ video questions pause music and the next text question restores the quieter quiz level (0.29457ms)
+✔ repeated fast taps are limited and a failed music start can recover on a later gesture (0.248254ms)
+✔ loading an old result stays quiet; unavailable audio never blocks the page (0.507302ms)
+✔ natural feedback is sparse: no negative alarm and different rapid cues cannot overlap (0.287258ms)
+✔ music and effects have independent switches, levels, and durable preferences (0.454051ms)
+✔ dragging changes volume live, writes on commit, and mute restores prior active channels (0.302811ms)
+✔ effect volume commits preview one cue, clamp input, and respect video pause (0.258127ms)
+✔ approved copy aliases preserve custom awards, configured prose and the all-theme certificate (2.193977ms)
+✔ four legacy certificates use the common knowledge honor and gold palette without changing issued records (80.823096ms)
+✔ long names, award titles and descriptions wrap without loss or overlapping the signature (0.794045ms)
+✔ the actual Page saves the very same certificate PNG shown in its preview (33.73469ms)
+✔ a failed certificate export shows retry and can regenerate without changing the issued award (8.241937ms)
+✔ tapping a certificate previews the current document and a lost image can be regenerated (8.872545ms)
+✔ Chinese punctuation cannot be stranded at the beginning of a wrapped line (0.883809ms)
+✔ configured certificate titles wrap within the approved paper and keep all recipient and award text below (0.687726ms)
+✔ all four themes share one generated PNG between preview, save and repeated refreshes (307.282809ms)
+✔ failed generation stays failed through refresh and retries only on an explicit action (18.026101ms)
+✔ known denied album permission opens guidance without making an album write (9.874363ms)
+✔ explicit settings action handles denied, failed and granted results without an automatic save (12.439839ms)
+✔ first save can ask permission and a denial receives the permission-specific recovery (7.282068ms)
+✔ cancelled album save has no permission error and preserves the award (7.526043ms)
+✔ ordinary save failure can retry the same image without claiming permission was denied (70.110233ms)
+✔ simultaneous save attempts make a single album request (14.442694ms)
+✔ leaving while checking permission prevents a write or a stale error on the destination (10.340665ms)
+✔ a save callback after unload does not show success or update the destroyed page (6.496156ms)
+✔ browser download feedback does not claim a phone album write (17.611896ms)
+✔ preview failures preserve the image, while stale image errors do not replace it (6.76515ms)
+✔ a superseded render cannot replace the loading state or image of the newer request (9.391344ms)
+✔ approved A is the only active homepage; stale B links cannot reactivate B (430.979132ms)
+✔ mother and four independent projects explicitly use A with review controls disabled (3.722299ms)
+✔ A retains illustration ratio and visible current chapter at three widths (1.057038ms)
+✔ catalog owns counts and sequence; four original seasons cycle in the client order (1.049668ms)
+✔ each theme has its own scene and podium with explicit state and reached-only figures (1.223647ms)
+✔ actual A Page preserves chapter start, completion, next unlock and resume (17.652591ms)
+✔ chapter cards stay with their bases and clear every neighbouring figure across scene boundaries (8.850061ms)
+✔ unlocking changes status and figures without moving the paired chapter units (0.419209ms)
+✔ seasonal figures render one original bitmap without cutout arms, painted patches or whole-body keyframes (1.709202ms)
+✔ all original RGBA files are byte-identical and the local deformation stays above the feet (11.603101ms)
+✔ shared vertices remain joined, fixed outer edges match the static body, and no triangle inverts at any motion frame (230.270855ms)
+✔ canvas playback is bounded and repeated property refresh does not restart it; disposal cancels the pending frame (1.102432ms)
+✔ a canvas drawing failure stops its frame loop and invokes the original-image fallback (0.327128ms)
+✔ idle, scroll/modal pause and component disposal leave a transparent canvas, not an un-clipped original frame (0.308949ms)
+✔ winter easing starts and ends gently, joins with continuous velocity and has no flat frozen hold (3.210373ms)
+✔ map visibility uses the standing surface foot location without moving chapter units (3.174327ms)
+✔ each seasonal map framing translates its primary body foot point to the same anchor (0.33125ms)
+✔ both action rows of every strip return to the same original frame and keep identical feet through all frames (96.240225ms)
+✔ a map component never requests or creates a native canvas, including property refresh (2.273256ms)
+✔ winter snowman remains fixed while the candy and hand gesture plays (28.267307ms)
+✔ scrolling a fully visible map actor clears the live canvas for every direction reversal, then resumes after settling (103.089016ms)
+✔ finger down pauses before displacement; a held touch cannot restart and a tap still responds (16.779796ms)
+✔ an inertial-scroll timer cannot wake the page after hide or unload (14.450323ms)
+✔ inertia postpones resume and ordinary refresh cannot restart a canvas under the moving map (7.602666ms)
+✔ seasonal actors keep the same full-body image through play, stop and modal/map use; no native-canvas handoff (2.056644ms)
+✔ contextual figures retain their base and original part layers at rest, during action and on repeat (0.410077ms)
+✔ no actor allocates or clears a native animation surface on any property update (6.028841ms)
+✔ visible current node plays once, finishes its full gesture, restarts exactly 8s after start (2.071053ms)
+✔ a reached noncurrent node has its own full thinking action; future nodes cannot play (0.453368ms)
+✔ background, offscreen and reduced-motion each cancel playback and scheduled work (0.779033ms)
+✔ frequent service refresh does not continually restart animation or postpone repeat (1.067028ms)
+✔ a catalog of 9 enabled nodes retains business IDs/order and cycles all four poses (2.125501ms)
+✔ a scheduled repeat lets a manual one-shot finish before resuming the current node (2.976535ms)
+✔ today-locked reached node still animates; all-completed map celebrates at the last reached node (0.324426ms)
+✔ rapid repeated taps do not reset a playing figure or delay its next automatic gesture (0.215427ms)
+✔ direct touch immediately upgrades idle action, deduplicates repeated touch and clears linked feedback (101.235752ms)
+✔ changing a visible scene pose cancels the previous gesture and uses the replacement duration (0.7037ms)
+✔ every supplied extension completes its own action and remains interruptible (0.338933ms)
+✔ each seasonal tap completes its shorter gesture; repeated taps refresh feedback without restarting the hand (1.436177ms)
+✔ a partly clipped figure uses its static image; animation stops before it can cross the map edge (1.511918ms)
+✔ 100 actual selections cannot inflate answers with subpixel native geometry (164.949417ms)
+✔ late geometry from the previous question cannot resize the next one (8.633956ms)
+✔ every one of 100 repeated taps gets feedback and returns to rest (3.127834ms)
+✔ the previous release cannot end a new press, including the same answer (0.229805ms)
+✔ scroll gestures, touch cancellation and page disposal leave no stuck press (0.210995ms)
+✔ keyboard or accessible tap also gets feedback without a preceding touch event (0.147482ms)
+✔ the actual shared button continues to emit actions after 100 taps and guards disabled/loading (3.477013ms)
+✔ legacy canvas adapter, scroll morph and animation preserve pixels and dimensions for all four poses (2564.715179ms)
+✔ live animator owns buffer attributes even if an incoming template declares stale dimensions (0.567174ms)
+✔ certificate and share canvases retain generic defaults and declared size updates (11.253712ms)
+✔ cold-start abandons a definitively rejected pending operation and loads authoritative progress (10.287699ms)
+✔ cold-start preserves the exact idempotency key when an operation outcome remains uncertain (0.910336ms)
+✔ malformed async success callbacks reject initialization instead of leaving it pending (3.078745ms)
+✔ malformed operation responses keep their idempotency key, and invalid endpoint field types reject (1.266167ms)
+✔ four theme covers keep the original horizon, header and character inside a 5:4 image (5.50289ms)
+✔ presentation cleanup preserves real names, formal certificate copy and source records (1.346115ms)
+✔ chapter presentation stays theme-specific without replacing configured layout or business names (1.889897ms)
+✔ generic share defaults become themed while authored campaign copy remains intact (0.330131ms)
+✔ map topic headings preserve authored server names and never mutate the canonical level (0.267037ms)
+✔ four themes share to their own home and earned certificates do not hijack other page links (1.420232ms)
+✔ 实际Page.resize四主题共用完整标题区域，覆盖三个视口 (54.866626ms)
+✔ 390×844原生屏幕：A地图294至738、标题与操作区可达，水纹不越出标题区域 (11.766404ms)
+✔ 不同进度和短屏按实际卡片边界定位，保留16px下方间距 (76.095484ms)
+✔ 宽横幅布局下当前产业关卡仍保留16px底部间距 (0.26655ms)
+✔ 浏览器WXSS导入器会内联实际共享样式，保持与原生的加载顺序 (8.97415ms)
+✔ 四主题标题保留屏幕中轴和光学基线，所有可见素材均位于标题区内 (0.94619ms)
+PASS option press feedback survives 100 selection refreshes and cancels on scroll, navigation and background
+PASS sound settings preserve music/effect levels and never suspend quiz time or overlay answer feedback
+PASS red full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS red timeout revival and next-day release survive a cold restart
+PASS culture full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS culture timeout revival and next-day release survive a cold restart
+PASS industry full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS industry timeout revival and next-day release survive a cold restart
+PASS ecology full ten-question chapters restore progress, revive, unlock, avoid duplicate points and issue the theme certificate
+PASS ecology timeout revival and next-day release survive a cold restart
+PASS information pages omit decorative figures; contextual figures react without changing progress
+PASS each theme completes with its supplied contextual figure and interaction preserves the award
+PASS share previews use composed artwork and interface labels do not expose environment modes
+PASS sharing keeps the active theme and only uses certificate routing on certificate pages
+PASS direct profile entry sends the route through setData to the native view
+PASS onShow replaces an existing timer; hide/unload leave no live interval
+PASS ordinary hide/show preserves the active question, selection and absolute deadline
+PASS returning after a background timeout opens revival without revealing an answer
+PASS background timeout after revival updates the page to the real locked state
+PASS midnight foreground refresh releases a stale today-locked card and permits starting
+PASS tapping a stale lock card after midnight checks service state even without onShow
+PASS foreground refresh updates yesterday daily ranking without changing total earned points
+PASS saving an old certificate after catalog expansion preserves issued scope without printing the removed count
+PASS failed writes preserve the previous checkpoint and retry restores the active answer without restarting
+PASS retry that still fails keeps the warning and does not report a successful save
+PASS corrupt checkpoints show a non-destructive notice without a misleading retry control
+PASS theme homepage starts the current configured level directly and empty content stays disabled
+PASS homepage exposes locked explanation and earned rewards retain the historical ledger value
+PASS returning to activity homepage offers continue without changing the pending question
+PASS opening a route resets scrolling and the map focuses its current configured level
+PASS original-figure motion follows map/modal visibility, background and the reduced-motion setting without changing progress
+PASS non-character overlays pause map motion and quiz revival uses its own visible actor
+PASS mascots follow actual learning progress, keep completed poses and hide all future nodes
+PASS touching a figure responds without opening a level or changing progress, including today lock
+PASS only the result inline figure animates and pauses offscreen or in the background
+{"checks":35,"result":"passed","report":"/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/qa/v4/page-service-checks.json"}
+✔ tests/v4-page.cjs (1281.368537ms)
+PASS native catalog contains one fixed game and configured ten-question levels
+PASS new state does not touch original V2 storage or unrelated game keys
+PASS question DTO excludes answer and explanation before submission
+PASS random draws use configured count and restore the same question ID sequence
+PASS absolute deadline and selected option survive rebuilding the service
+PASS expired challenge enters revival after a cold start without receiving a new deadline
+PASS cancelled or unverified sharing never consumes revival allowance
+PASS verified revival survives rebuilding and a second failure locks only this level
+PASS Beijing next midnight releases daily level lock
+PASS correct analysis freezes remaining time across suspension and reconstruction
+PASS checkpoint contains question IDs and feedback types but no standard answers or explanation
+PASS wrong response and persisted feedback do not reveal the standard answer
+PASS first-attempt accuracy remains incorrect after revival and survives a reload
+PASS repeat completion and repeated result read cannot grant duplicate points
+PASS next challenge sequence remains unique after persistence restores previous sessions
+PASS complete game issues only own game certificate and restores it
+PASS catalog mismatch invalidates an active attempt while retaining historical points and certificate
+PASS disabled completed levels leave current progress but do not erase earned records or certificates
+PASS empty or disabled catalog has no fabricated progress, ranking or new certificate
+PASS rankings and ledger are scoped to fixed gameId with no cross-game points
+PASS save failure preserves previous checkpoint and exposes a recovery warning
+PASS corrupt checkpoint is not destroyed by ordinary actions
+PASS foreign game checkpoint cannot supply progress and is preserved without overwrite
+PASS no persistent storage explicitly reports that progress remains in memory
+PASS snapshot refresh expires a warm suspended attempt before calculating resumability
+PASS malformed inner challenge record cannot crash initialization or overwrite original data
+PASS duplicate submission while validation is pending produces one completion reward
+PASS deadline passing during submission rejects a late correct answer
+PASS restore after an interrupted pending submit clears busy without inventing an answer result
+PASS explicit ranking empty preview is passed through without changing ordinary player rankings
+PASS service and engine errors expose stable machine-readable codes
+PASS media preview never persists mutated questions or overwrites an active player checkpoint
+PASS review result and certificate fixtures stay in memory and do not grant player rewards
+PASS leaveReview restores original player session and absolute deadline without catalog mismatch
+PASS review reset cannot erase an existing player completion ledger
+PASS malformed completion or points records cannot crash launch or replace the damaged checkpoint
+PASS malformed certificate fields do not enter the public certificate DTO
+PASS production mode cannot silently use the mock question bank
+PASS review reset and scenario APIs are disabled in ordinary player configuration
+{"checks":39,"result":"passed","scope":"native local mock services; not backend or device acceptance"}
+✔ tests/v4-services.cjs (265.609241ms)
+✔ 空目录不生成假节点或底图 (1.138336ms)
+✔ 目录数量不限于四关，映射保留ID、名称与状态 (1.804849ms)
+✔ 当前节点获得定位锚点，主题底座不参与规则判断 (0.290721ms)
+✔ 四套底图共享节点位置并保留独立图片，320与430宽度下节点仍在画布内 (53.465178ms)
+✔ 今日锁定保留已到达主题底座，业务状态仍不可挑战 (5.369892ms)
+✔ 配置停用与改序后，地图仅跟随当前服务目录 (2.604913ms)
+✔ 人物只出现在已到达与已完成节点，解锁后按启用目录顺序换动作 (4.36099ms)
+ℹ tests 107
+ℹ suites 0
+ℹ pass 107
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3418.811716

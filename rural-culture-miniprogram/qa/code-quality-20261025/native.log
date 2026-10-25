@@ -1,0 +1,16 @@
+PASS red home
+PASS red quiz
+PASS red certificate
+PASS red certificate-failure
+PASS culture home
+PASS culture quiz
+PASS culture certificate
+PASS culture certificate-failure
+PASS industry home
+PASS industry quiz
+PASS industry certificate
+PASS industry certificate-failure
+PASS ecology home
+PASS ecology quiz
+PASS ecology certificate
+PASS ecology certificate-failure

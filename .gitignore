@@ -1,6 +1,13 @@
 # Only this project's maintained source and current independent deliveries are versioned.
 /*
 !/.gitignore
+!/package.json
+!/package-lock.json
+!/eslint.config.cjs
+!/.prettierrc.json
+!/.node-version
+!/.github/
+!/tools/
 !/README.md
 !/BASELINE_VERSION.md
 !/*.command
@@ -54,6 +61,7 @@
 !/rural-culture-miniprogram/qa/theme-details-20261022/
 !/rural-culture-miniprogram/qa/chapter-association-20261022/
 !/rural-culture-miniprogram/qa/theme-flow-20261022/
+!/rural-culture-miniprogram/qa/code-quality-20261025/
 /rural-culture-miniprogram/qa/interaction-20261021/baseline/
 !/rural-culture-miniprogram/qa/certificate-20261021/*regression.log
 !/rural-culture-miniprogram/qa/interaction-20261021/*regression.log

@@ -1,48 +1,496 @@
 'use strict';
-const presentation=require('./presentation');
-const copy=v=>JSON.parse(JSON.stringify(v));
-const fail=(code,message)=>Object.assign(new Error(message||code),{code});
-function createRemoteService(options){
- const opts=options||{},gameId=opts.gameId,wxapi=opts.transport||(typeof wx!=='undefined'?wx:null),clock=opts.clock||Date.now;
- const base=String(opts.apiBase||'').replace(/\/$/,'');
- if(!/^https?:\/\//.test(base))throw fail('BACKEND_NOT_CONFIGURED','请配置服务地址');
- const key='rural-quiz-network-v1:'+base+':'+gameId;
- let state={pending:{}},book=null,me=null,certs=[],ranks={},current=null,offset=0,ready=null,inflight=null,lastSync=0,lastError='',selected=null,mutation=null,mutationName='';
- try{const saved=wxapi.getStorageSync(key);if(saved&&saved.schemaVersion===1)state=saved;}catch{}
- state.pending=state.pending||{};
- function save(){try{wxapi.setStorageSync(key,{schemaVersion:1,token:state.token,pending:state.pending,selection:state.selection});}catch{lastError='本机会话暂未保存，请保留页面；服务器学习记录仍保留。';}}
- function http(route,method='GET',body,auth=true){return new Promise((resolve,reject)=>{wxapi.request({url:base+route,method,timeout:12000,header:{'Content-Type':'application/json',...(auth&&state.token?{Authorization:'Bearer '+state.token}:{})},data:body,success:r=>{if(r.statusCode>=200&&r.statusCode<300)resolve(r.data.data);else{const error=r.data&&r.data.error||{};reject(fail(error.code||'HTTP_ERROR',error.message||'服务暂不可用'));}},fail:()=>reject(fail('NETWORK_UNAVAILABLE','网络未连接，请检查服务后重试。'))});});}
- async function login(){let session;if(opts.identity==='platform'){const ticket=typeof opts.platformTicket==='function'?await opts.platformTicket():opts.platformTicket;if(!ticket)throw fail('IDENTITY_NOT_CONFIGURED','平台身份尚未配置');session=await http('/api/auth/platform','POST',{ticket},false);}else if(opts.identity==='local-shared')session=await http('/api/local/session','POST',{},false);else throw fail('IDENTITY_NOT_CONFIGURED');state.token=session.token;save();}
- async function request(route,method='GET',body){try{return await http(route,method,body);}catch(e){if(e.code!=='UNAUTHENTICATED')throw e;await login();return http(route,method,body);}}
- async function sync(internal=false){if(mutation&&!internal)return mutation.then(()=>snapshot());if(inflight)return inflight;inflight=(async()=>{try{if(!state.token)await login();for(const name of Object.keys(state.pending)){const operation=state.pending[name];current=await request(operation.route,'POST',operation.body);selected=current.selected??null;offset=Number(current.serverTime)-clock();delete state.pending[name];save();}const result=await Promise.all([request('/api/catalog'),request('/api/me'),request('/api/certificates'),request('/api/rankings?period=day'),request('/api/rankings?period=total')]);[book,me]=result;certs=result[2].certificates;ranks={daily:result[3],total:result[4]};const oldId=current&&current.id,oldQuestion=current&&current.question&&current.question.id;
- const active=me.activeChallenges.filter(c=>c.themeId===gameId);const restored=active.find(c=>c.id===oldId)||active[0];
- if(restored){current=restored;offset=Number(current.serverTime)-clock();if(current.question?.id!==oldQuestion)selected=state.selection?.challengeId===current.id&&state.selection?.questionId===current.question?.id?state.selection.index:current.selected??null;}
- else if(current&&!['completed','locked'].includes(current.state))current=await request('/api/challenges/'+current.id);
- lastSync=clock();lastError='';return snapshot();}catch(e){lastError=e.message;throw e;}finally{inflight=null;}})();return inflight;}
- function ensureReady(){if(!ready)ready=sync().catch(e=>{ready=null;throw e;});return ready;}
- function requireReady(){if(!book||!me)throw fail('SERVICE_NOT_READY','服务正在连接');}
- function profile(){return {nickname:me?.user.name||'连接中',avatarUrl:'/assets/brand/reader.png',badge:opts.identity==='local-shared'?'本地联网用户':'平台用户',source:opts.identity==='platform'?'platform':'local-network'};}
- function configuration(){requireReady();return {mode:me.mode,mock:false,reviewEnabled:false,reviewSession:false,timerSeconds:book.config.timer.seconds,reviveLimit:book.config.revive.limit,share:copy(book.config.share),reviveShare:{text:book.config.revive.shareText,image:book.config.revive.shareImage},certificates:copy(book.config.certificates),version:book.config.version};}
- function levels(){requireReady();const p=me.progress[gameId]||{nodes:[],levelIds:[]};return book.levels.filter(l=>l.themeId===gameId&&l.enabled&&!l.deleted&&book.themes.some(t=>t.id===gameId&&t.enabled)).sort((a,b)=>a.order-b.order).map((l,i)=>{const active=me.activeChallenges.find(c=>c.levelId===l.id);let status=p.nodes[p.levelIds.indexOf(l.id)]||'locked';if(current?.levelId===l.id&&current.state==='locked'&&current.lockedUntil>clock()+offset)status='today-locked';return {...l,label:'第'+(i+1)+'关',status:status==='available'?'current':status,resumable:!!active&&['answering','feedback','exited','revive'].includes(active.state),poolSize:l.availableQuestions};});}
- function certificates(){return certs.map(c=>({...c,scope:c.themeId?'game':'all',gameId:c.themeId,userName:me.user.name,completedAt:c.issuedAt,downloadUrl:base+c.downloadUrl})).sort((a,b)=>(a.themeId===null?-1:0)-(b.themeId===null?-1:0)||b.completedAt-a.completedAt);}
- function snapshot(){requireReady();const list=levels(),completed=list.filter(l=>l.status==='completed').length,all=Object.values(me.progress);return {gameId,levels:list,progress:{completed,total:list.length,ratio:list.length?completed/list.length:0},globalProgress:me.series||{completed:all.reduce((s,p)=>s+p.completed,0),total:all.reduce((s,p)=>s+p.total,0)},themeProgress:copy(me.progress),points:me.points,themePoints:me.ledger.filter(l=>book.levels.some(x=>x.id===l.levelId&&x.themeId===gameId)).reduce((s,l)=>s+l.points,0),ledger:me.ledger.map(entry=>{const l=book.levels.find(l=>l.id===entry.levelId),theme=book.themes.find(t=>t.id===l?.themeId);return {...entry,label:l?(theme?.name||'')+' · 第'+l.order+'关 · '+l.name:entry.levelId};}),certificates:certificates().filter(c=>c.themeId===gameId||c.themeId===null),allCertificates:certificates(),theme:copy(book.themes.find(t=>t.id===gameId)||{}),network:true};}
- function asset(url){return !url?'':url.startsWith('/')?base+url:url;}
- function challenge(){if(!current)throw fail('NO_ACTIVE_CHALLENGE');const c=current,level=levels().find(l=>l.id===c.levelId)||{id:c.levelId,name:c.levelName,label:'第'+c.levelOrder+'关',points:0};const status={answering:'playing',feedback:'correct',revive:'revive',locked:'locked',completed:'result',exited:'playing'}[c.state];let media=c.question?.media;if(media)media={...media,src:media.type==='image'?asset(media.url):'',videoSrc:media.type==='video'?asset(media.url):'',required:!!media.required};
- return {...copy(c),gameId,level,status,index:c.position,selected,remaining:c.deadline?Math.max(0,Math.ceil((c.deadline-clock()-offset)/1000)):0,reviveRemaining:c.revivesRemaining,question:{...copy(c.question||{options:[]}),media},feedback:c.feedback?{...copy(c.feedback),reason:c.feedback.timeout?'timeout':'answer',sourceTitle:c.feedback.sourceTitle||'活动题库'}:null,result:c.result?{...copy(c.result),accuracy:Math.round(c.result.accuracy*100),firstCompletion:c.result.requested>0}:null};}
- async function executeMutation(name,route,body){requireReady();if(inflight)await inflight;if(state.pending[name]&&state.pending[name].route!==route)throw fail('PENDING_OPERATION','有待恢复的操作，请先重新连接');if(!state.pending[name]){state.pending[name]={route,body:{...body,requestId:'native-'+clock()+'-'+Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2)}};save();}
- const pending=state.pending[name],previousSelection=state.selection;try{current=await request(pending.route,'POST',pending.body);offset=Number(current.serverTime)-clock();const resumeSelection=name==='start'&&['answering','exited'].includes(current.state)&&previousSelection?.challengeId===current.id&&previousSelection?.questionId===current.question?.id&&Number.isInteger(previousSelection.index)&&previousSelection.index>=0&&previousSelection.index<(current.question?.options.length||0);selected=resumeSelection?previousSelection.index:current.selected??null;state.selection=resumeSelection?previousSelection:null;delete state.pending[name];save();await sync(true);return challenge();}catch(e){if(e.code!=='NETWORK_UNAVAILABLE'&&e.code!=='HTTP_ERROR'){delete state.pending[name];save();}lastError=e.message;throw e;}}
- function mutate(name,route,body){if(mutation)return mutationName===name?mutation:Promise.reject(fail('OPERATION_PENDING','上一项操作正在恢复，请稍候'));mutationName=name;mutation=executeMutation(name,route,body).finally(()=>{mutation=null;mutationName='';});return mutation;}
- return {gameId,network:true,ensureReady,sync,profile,chapterPresentation:presentation.chapter,snapshot,configuration,challenge,
- start:id=>mutate('start','/api/challenges',{levelId:id}),
- select(index){const c=challenge();if(c.status!=='playing')throw fail('INVALID_STATE');if(!Number.isInteger(index)||index<0||index>=c.question.options.length)throw fail('INVALID_OPTION');selected=index;state.selection={challengeId:c.id,questionId:c.question.id,index};save();return challenge();},
- submit(){const c=challenge();if(selected===null)throw fail('OPTION_REQUIRED');return mutate('answer','/api/challenges/'+c.id+'/answer',{questionId:c.question.id,optionId:selected});},
- next(){const c=challenge();if(c.status==='result')return Promise.resolve(c);return mutate('advance','/api/challenges/'+c.id+'/advance',{});},
- revive(verified){if(!verified)return challenge();const c=challenge();return mutate('revive','/api/challenges/'+c.id+'/revive',{evidence:{type:'experience-test',challengeId:c.id}});},
- rankings(period){const r=ranks[period==='daily'?'daily':'total']||{entries:[],own:null};return {rows:r.entries.map(x=>({...x,accuracy:Math.round(x.accuracy*100),me:x.userId===me?.user.id})),me:r.own?{...r.own,accuracy:Math.round(r.own.accuracy*100)}:{rank:null,points:0}};},
- expire(){return null;},poll(){if(mutation)return null;if(current&&current.state==='answering'&&challenge().remaining===0||clock()-lastSync>5000)return sync();},
- getPersistenceStatus(){return {status:lastError?'warning':'connected',warning:lastError?'NETWORK_UNAVAILABLE':null,message:lastError,network:true};},
- flush(){save();return this.getPersistenceStatus();},leaveReview(){return ensureReady();},reset(){throw fail('REVIEW_DISABLED');},scenario(){throw fail('REVIEW_DISABLED');},
- async refreshChallenge(){if(current){current=await request('/api/challenges/'+current.id);offset=Number(current.serverTime)-clock();}return sync();}
- };
+const presentation = require('./presentation');
+const { validateResponse } = require('./remote-response');
+const copy = (v) => JSON.parse(JSON.stringify(v));
+const fail = (code, message) => Object.assign(new Error(message || code), { code });
+function createRemoteService(options) {
+  const opts = options || {},
+    gameId = opts.gameId,
+    wxapi = opts.transport || (typeof wx !== 'undefined' ? wx : null),
+    clock = opts.clock || Date.now;
+  const base = String(opts.apiBase || '').replace(/\/$/, '');
+  if (!/^https?:\/\//.test(base)) throw fail('BACKEND_NOT_CONFIGURED', '请配置服务地址');
+  const key = 'rural-quiz-network-v1:' + base + ':' + gameId;
+  let state = { pending: {} },
+    book = null,
+    me = null,
+    certs = [],
+    ranks = {},
+    current = null,
+    offset = 0,
+    ready = null,
+    inflight = null,
+    lastSync = 0,
+    lastError = '',
+    selected = null,
+    mutation = null,
+    mutationName = '';
+  try {
+    const saved = wxapi.getStorageSync(key);
+    if (saved && saved.schemaVersion === 1) state = saved;
+  } catch {}
+  state.pending = state.pending || {};
+  function save() {
+    try {
+      wxapi.setStorageSync(key, {
+        schemaVersion: 1,
+        token: state.token,
+        pending: state.pending,
+        selection: state.selection
+      });
+    } catch {
+      lastError = '本机会话暂未保存，请保留页面；服务器学习记录仍保留。';
+    }
+  }
+  function http(route, method = 'GET', body, auth = true) {
+    return new Promise((resolve, reject) => {
+      wxapi.request({
+        url: base + route,
+        method,
+        timeout: 12000,
+        header: {
+          'Content-Type': 'application/json',
+          ...(auth && state.token ? { Authorization: 'Bearer ' + state.token } : {})
+        },
+        data: body,
+        success: (r) => {
+          if (r.statusCode >= 200 && r.statusCode < 300) {
+            try {
+              resolve(validateResponse(route, r.data));
+            } catch (error) {
+              reject(error);
+            }
+          } else {
+            const error = (r.data && r.data.error) || {};
+            reject(
+              Object.assign(fail(error.code || 'HTTP_ERROR', error.message || '服务暂不可用'), {
+                status: r.statusCode
+              })
+            );
+          }
+        },
+        fail: () => reject(fail('NETWORK_UNAVAILABLE', '网络未连接，请检查服务后重试。'))
+      });
+    });
+  }
+  async function login() {
+    let session;
+    if (opts.identity === 'platform') {
+      const ticket =
+        typeof opts.platformTicket === 'function'
+          ? await opts.platformTicket()
+          : opts.platformTicket;
+      if (!ticket) throw fail('IDENTITY_NOT_CONFIGURED', '平台身份尚未配置');
+      session = await http('/api/auth/platform', 'POST', { ticket }, false);
+    } else if (opts.identity === 'local-shared')
+      session = await http('/api/local/session', 'POST', {}, false);
+    else throw fail('IDENTITY_NOT_CONFIGURED');
+    state.token = session.token;
+    save();
+  }
+  async function request(route, method = 'GET', body) {
+    try {
+      return await http(route, method, body);
+    } catch (e) {
+      if (e.code !== 'UNAUTHENTICATED') throw e;
+      await login();
+      return http(route, method, body);
+    }
+  }
+  // Only definitive business rejections may be discarded. Unknown outcomes keep
+  // their request ID so server idempotency can safely recover the result.
+  function uncertainOperation(error) {
+    return (
+      error.code === 'INVALID_RESPONSE' ||
+      !Number.isInteger(error.status) ||
+      error.status >= 500 ||
+      [401, 408, 425, 429].includes(error.status)
+    );
+  }
+  async function settlePending(name) {
+    const operation = state.pending[name];
+    try {
+      const response = await request(operation.route, 'POST', operation.body);
+      delete state.pending[name];
+      save();
+      return response;
+    } catch (error) {
+      if (!uncertainOperation(error)) {
+        delete state.pending[name];
+        save();
+      }
+      throw error;
+    }
+  }
+  async function sync(internal = false) {
+    if (mutation && !internal) return mutation.then(() => snapshot());
+    if (inflight) return inflight;
+    inflight = (async () => {
+      try {
+        if (!state.token) await login();
+        let recoveryMessage = '';
+        for (const name of Object.keys(state.pending)) {
+          try {
+            current = await settlePending(name);
+            selected = current.selected ?? null;
+            offset = Number(current.serverTime) - clock();
+          } catch (error) {
+            if (uncertainOperation(error)) throw error;
+            recoveryMessage = '上次操作未执行：' + error.message + '。已恢复最新学习进度。';
+          }
+        }
+        const result = await Promise.all([
+          request('/api/catalog'),
+          request('/api/me'),
+          request('/api/certificates'),
+          request('/api/rankings?period=day'),
+          request('/api/rankings?period=total')
+        ]);
+        [book, me] = result;
+        certs = result[2].certificates;
+        ranks = { daily: result[3], total: result[4] };
+        const oldId = current && current.id,
+          oldQuestion = current && current.question && current.question.id;
+        const active = me.activeChallenges.filter((c) => c.themeId === gameId);
+        const restored = active.find((c) => c.id === oldId) || active[0];
+        if (restored) {
+          current = restored;
+          offset = Number(current.serverTime) - clock();
+          if (current.question?.id !== oldQuestion)
+            selected =
+              state.selection?.challengeId === current.id &&
+              state.selection?.questionId === current.question?.id
+                ? state.selection.index
+                : (current.selected ?? null);
+        } else if (current && !['completed', 'locked'].includes(current.state))
+          current = await request('/api/challenges/' + current.id);
+        lastSync = clock();
+        lastError = recoveryMessage;
+        return snapshot();
+      } catch (e) {
+        lastError = e.message;
+        throw e;
+      } finally {
+        inflight = null;
+      }
+    })();
+    return inflight;
+  }
+  function ensureReady() {
+    if (!ready)
+      ready = sync().catch((e) => {
+        ready = null;
+        throw e;
+      });
+    return ready;
+  }
+  function requireReady() {
+    if (!book || !me) throw fail('SERVICE_NOT_READY', '服务正在连接');
+  }
+  function profile() {
+    return {
+      nickname: me?.user.name || '连接中',
+      avatarUrl: '/assets/brand/reader.png',
+      badge: opts.identity === 'local-shared' ? '本地联网用户' : '平台用户',
+      source: opts.identity === 'platform' ? 'platform' : 'local-network'
+    };
+  }
+  function configuration() {
+    requireReady();
+    return {
+      mode: me.mode,
+      mock: false,
+      reviewEnabled: false,
+      reviewSession: false,
+      timerSeconds: book.config.timer.seconds,
+      reviveLimit: book.config.revive.limit,
+      share: copy(book.config.share),
+      reviveShare: { text: book.config.revive.shareText, image: book.config.revive.shareImage },
+      certificates: copy(book.config.certificates),
+      version: book.config.version
+    };
+  }
+  function levels() {
+    requireReady();
+    const p = me.progress[gameId] || { nodes: [], levelIds: [] };
+    return book.levels
+      .filter(
+        (l) =>
+          l.themeId === gameId &&
+          l.enabled &&
+          !l.deleted &&
+          book.themes.some((t) => t.id === gameId && t.enabled)
+      )
+      .sort((a, b) => a.order - b.order)
+      .map((l, i) => {
+        const active = me.activeChallenges.find((c) => c.levelId === l.id);
+        let status = p.nodes[p.levelIds.indexOf(l.id)] || 'locked';
+        if (
+          current?.levelId === l.id &&
+          current.state === 'locked' &&
+          current.lockedUntil > clock() + offset
+        )
+          status = 'today-locked';
+        return {
+          ...l,
+          label: '第' + (i + 1) + '关',
+          status: status === 'available' ? 'current' : status,
+          resumable:
+            !!active && ['answering', 'feedback', 'exited', 'revive'].includes(active.state),
+          poolSize: l.availableQuestions
+        };
+      });
+  }
+  function certificates() {
+    return certs
+      .map((c) => ({
+        ...c,
+        scope: c.themeId ? 'game' : 'all',
+        gameId: c.themeId,
+        userName: me.user.name,
+        completedAt: c.issuedAt,
+        downloadUrl: base + c.downloadUrl
+      }))
+      .sort(
+        (a, b) =>
+          (a.themeId === null ? -1 : 0) - (b.themeId === null ? -1 : 0) ||
+          b.completedAt - a.completedAt
+      );
+  }
+  function snapshot() {
+    requireReady();
+    const list = levels(),
+      completed = list.filter((l) => l.status === 'completed').length,
+      all = Object.values(me.progress);
+    return {
+      gameId,
+      levels: list,
+      progress: { completed, total: list.length, ratio: list.length ? completed / list.length : 0 },
+      globalProgress: me.series || {
+        completed: all.reduce((s, p) => s + p.completed, 0),
+        total: all.reduce((s, p) => s + p.total, 0)
+      },
+      themeProgress: copy(me.progress),
+      points: me.points,
+      themePoints: me.ledger
+        .filter((l) => book.levels.some((x) => x.id === l.levelId && x.themeId === gameId))
+        .reduce((s, l) => s + l.points, 0),
+      ledger: me.ledger.map((entry) => {
+        const l = book.levels.find((l) => l.id === entry.levelId),
+          theme = book.themes.find((t) => t.id === l?.themeId);
+        return {
+          ...entry,
+          label: l ? (theme?.name || '') + ' · 第' + l.order + '关 · ' + l.name : entry.levelId
+        };
+      }),
+      certificates: certificates().filter((c) => c.themeId === gameId || c.themeId === null),
+      allCertificates: certificates(),
+      theme: copy(book.themes.find((t) => t.id === gameId) || {}),
+      network: true
+    };
+  }
+  function asset(url) {
+    return !url ? '' : url.startsWith('/') ? base + url : url;
+  }
+  function challenge() {
+    if (!current) throw fail('NO_ACTIVE_CHALLENGE');
+    const c = current,
+      level = levels().find((l) => l.id === c.levelId) || {
+        id: c.levelId,
+        name: c.levelName,
+        label: '第' + c.levelOrder + '关',
+        points: 0
+      };
+    const status = {
+      answering: 'playing',
+      feedback: 'correct',
+      revive: 'revive',
+      locked: 'locked',
+      completed: 'result',
+      exited: 'playing'
+    }[c.state];
+    let media = c.question?.media;
+    if (media)
+      media = {
+        ...media,
+        src: media.type === 'image' ? asset(media.url) : '',
+        videoSrc: media.type === 'video' ? asset(media.url) : '',
+        required: !!media.required
+      };
+    return {
+      ...copy(c),
+      gameId,
+      level,
+      status,
+      index: c.position,
+      selected,
+      remaining: c.deadline ? Math.max(0, Math.ceil((c.deadline - clock() - offset) / 1000)) : 0,
+      reviveRemaining: c.revivesRemaining,
+      question: { ...copy(c.question || { options: [] }), media },
+      feedback: c.feedback
+        ? {
+            ...copy(c.feedback),
+            reason: c.feedback.timeout ? 'timeout' : 'answer',
+            sourceTitle: c.feedback.sourceTitle || '活动题库'
+          }
+        : null,
+      result: c.result
+        ? {
+            ...copy(c.result),
+            accuracy: Math.round(c.result.accuracy * 100),
+            firstCompletion: c.result.requested > 0
+          }
+        : null
+    };
+  }
+  async function executeMutation(name, route, body) {
+    requireReady();
+    if (inflight) await inflight;
+    if (state.pending[name] && state.pending[name].route !== route)
+      throw fail('PENDING_OPERATION', '有待恢复的操作，请先重新连接');
+    if (!state.pending[name]) {
+      state.pending[name] = {
+        route,
+        body: {
+          ...body,
+          requestId:
+            'native-' +
+            clock() +
+            '-' +
+            Math.random().toString(36).slice(2) +
+            Math.random().toString(36).slice(2)
+        }
+      };
+      save();
+    }
+    const previousSelection = state.selection;
+    try {
+      current = await settlePending(name);
+      offset = Number(current.serverTime) - clock();
+      const resumeSelection =
+        name === 'start' &&
+        ['answering', 'exited'].includes(current.state) &&
+        previousSelection?.challengeId === current.id &&
+        previousSelection?.questionId === current.question?.id &&
+        Number.isInteger(previousSelection.index) &&
+        previousSelection.index >= 0 &&
+        previousSelection.index < (current.question?.options.length || 0);
+      selected = resumeSelection ? previousSelection.index : (current.selected ?? null);
+      state.selection = resumeSelection ? previousSelection : null;
+      delete state.pending[name];
+      save();
+      await sync(true);
+      return challenge();
+    } catch (e) {
+      lastError = e.message;
+      throw e;
+    }
+  }
+  function mutate(name, route, body) {
+    if (mutation)
+      return mutationName === name
+        ? mutation
+        : Promise.reject(fail('OPERATION_PENDING', '上一项操作正在恢复，请稍候'));
+    mutationName = name;
+    mutation = executeMutation(name, route, body).finally(() => {
+      mutation = null;
+      mutationName = '';
+    });
+    return mutation;
+  }
+  return {
+    gameId,
+    network: true,
+    ensureReady,
+    sync,
+    profile,
+    chapterPresentation: presentation.chapter,
+    snapshot,
+    configuration,
+    challenge,
+    start: (id) => mutate('start', '/api/challenges', { levelId: id }),
+    select(index) {
+      const c = challenge();
+      if (c.status !== 'playing') throw fail('INVALID_STATE');
+      if (!Number.isInteger(index) || index < 0 || index >= c.question.options.length)
+        throw fail('INVALID_OPTION');
+      selected = index;
+      state.selection = { challengeId: c.id, questionId: c.question.id, index };
+      save();
+      return challenge();
+    },
+    submit() {
+      const c = challenge();
+      if (selected === null) throw fail('OPTION_REQUIRED');
+      return mutate('answer', '/api/challenges/' + c.id + '/answer', {
+        questionId: c.question.id,
+        optionId: selected
+      });
+    },
+    next() {
+      const c = challenge();
+      if (c.status === 'result') return Promise.resolve(c);
+      return mutate('advance', '/api/challenges/' + c.id + '/advance', {});
+    },
+    revive(verified) {
+      if (!verified) return challenge();
+      const c = challenge();
+      return mutate('revive', '/api/challenges/' + c.id + '/revive', {
+        evidence: { type: 'experience-test', challengeId: c.id }
+      });
+    },
+    rankings(period) {
+      const r = ranks[period === 'daily' ? 'daily' : 'total'] || { entries: [], own: null };
+      return {
+        rows: r.entries.map((x) => ({
+          ...x,
+          accuracy: Math.round(x.accuracy * 100),
+          me: x.userId === me?.user.id
+        })),
+        me: r.own
+          ? { ...r.own, accuracy: Math.round(r.own.accuracy * 100) }
+          : { rank: null, points: 0 }
+      };
+    },
+    expire() {
+      return null;
+    },
+    poll() {
+      if (mutation) return null;
+      if (
+        (current && current.state === 'answering' && challenge().remaining === 0) ||
+        clock() - lastSync > 5000
+      )
+        return sync();
+    },
+    getPersistenceStatus() {
+      return {
+        status: lastError ? 'warning' : 'connected',
+        warning: lastError ? 'NETWORK_UNAVAILABLE' : null,
+        message: lastError,
+        network: true
+      };
+    },
+    flush() {
+      save();
+      return this.getPersistenceStatus();
+    },
+    leaveReview() {
+      return ensureReady();
+    },
+    reset() {
+      throw fail('REVIEW_DISABLED');
+    },
+    scenario() {
+      throw fail('REVIEW_DISABLED');
+    },
+    async refreshChallenge() {
+      if (current) {
+        current = await request('/api/challenges/' + current.id);
+        offset = Number(current.serverTime) - clock();
+      }
+      return sync();
+    }
+  };
 }
-module.exports={createRemoteService};
+module.exports = { createRemoteService };
