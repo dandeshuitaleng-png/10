@@ -65,4 +65,4 @@ node rural-culture-miniprogram/tools/v4-serve.cjs .rural-quiz-runtime/art-refine
 
 统一入口还检查五套工程包体和共用文件一致性、后台首屏资源预算；完整 Node 回归自动发现测试并生成 JUnit，运行前后源码指纹必须一致。输出位于 `.rural-quiz-runtime/quality/`，GitHub 工作流保存当次资料。`npm run check:native` 是本机额外编译入口，Linux CI 不替代微信编译器或实体手机。
 
-PNG 工具 `node rural-culture-miniprogram/tools/optimize-runtime-png.cjs assets/主题/文件.png` 默认只检查；显式 `--write` 才替换更小编码并同步已有相同副本。工具逐像素校验 RGBA，不启用调色板量化、不改设计源。内部预算和64KiB余量见根 `tools/package-budget.json`，并非合同数字上限。
+PNG 工具 `node rural-culture-miniprogram/tools/optimize-runtime-png.cjs assets/主题/文件.png` 默认只检查；显式 `--write` 才替换更小编码并同步已有相同副本。工具逐像素校验 RGBA，先预写所有副本并备份，再逐份替换；普通写入或替换异常会回滚并清理本次临时目录，可以重试。回滚本身失败时保留原文件备份，并在错误中列明路径，先恢复后再交付。已有旧临时文件不覆盖、不删除。该机制处理可捕获的文件操作异常，不保证突然断电或强制终止时跨文件原子提交。不启用调色板量化、不改设计源。内部预算和64KiB余量见根 `tools/package-budget.json`，并非合同数字上限。

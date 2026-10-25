@@ -49,3 +49,39 @@ test('source kit identity rejects manifest traversal and source symlinks', (t) =
   fs.symlinkSync('application.cjs', path.join(root, 'demo/server/link.cjs'));
   assert.throws(() => sourceIdentity(root), /symbolic link/);
 });
+
+test('source kit fingerprints include imported modules and new tests absent from the archive manifest', (t) => {
+  const root = sourceKit(t, {
+    'demo/server/application.cjs': "module.exports = require('./added.cjs');"
+  });
+  const added = path.join(root, 'demo/server/added.cjs');
+  fs.writeFileSync(added, 'module.exports = 1;');
+  const before = sourceIdentity(root);
+  assert.equal(require(path.join(root, 'demo/server/application.cjs')), 1);
+  fs.writeFileSync(added, 'module.exports = 999;');
+  delete require.cache[require.resolve(added)];
+  assert.equal(require(added), 999);
+  const changed = sourceIdentity(root);
+  assert.notEqual(changed.sourceSha256, before.sourceSha256);
+  assert.equal(changed.sourceFiles, 2);
+  fs.mkdirSync(path.join(root, 'demo/tests'));
+  fs.writeFileSync(
+    path.join(root, 'demo/tests/new.test.cjs'),
+    "require('node:test')('new', () => {});"
+  );
+  const withTest = sourceIdentity(root);
+  assert.equal(withTest.sourceFiles, 3);
+  assert.notEqual(withTest.sourceSha256, changed.sourceSha256);
+});
+
+test('source kit discovery skips installed dependencies and live data but rejects unlisted source symlinks', (t) => {
+  const root = sourceKit(t);
+  const before = sourceIdentity(root);
+  fs.mkdirSync(path.join(root, 'demo/server/data'));
+  fs.writeFileSync(path.join(root, 'demo/server/data/live.sqlite'), 'private runtime data');
+  fs.mkdirSync(path.join(root, 'tools'));
+  fs.symlinkSync(path.join(root, 'demo/server'), path.join(root, 'tools/node_modules'), 'dir');
+  assert.equal(sourceIdentity(root).sourceSha256, before.sourceSha256);
+  fs.symlinkSync('application.cjs', path.join(root, 'demo/server/unlisted.cjs'));
+  assert.throws(() => sourceIdentity(root), /symbolic link/);
+});

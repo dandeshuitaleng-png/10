@@ -8,6 +8,7 @@
 - 题库维护已取消审核流程。合法且启用的题目可用于新局；标准答案不进入玩家未作答数据。来源、内容正确性与最终文案的人工确认由内容负责人完成。
 - 原生页面的证书、声音设置、评审场景分别位于 `pages/game/certificate-flow.js`、`sound-settings.js`、`review-flow.js`。只有隔离评审配置能启用评审场景。
 - 管理端保留原菜单、顶部与表单，组件和样式在 `src/ui/` 显式维护；编辑、表格、详情延迟加载，构建资源统一从 `/management/` 提供，中文配置保留。
+- Element Plus 默认 CSS 放入独立级联层，应用定制保持非分层，确保延迟加载不覆盖表格、表单和弹窗间距。
 - 青山绿水运行横幅只优化 PNG 编码，尺寸、解码 RGBA 与透明度逐字节验证一致。设计源图和人物动作未改动；记录位于 `design-source/runtime-png-optimization-20261025.json`。
 
 ## 安装和检查
@@ -26,7 +27,7 @@ npm run check
 
 `npm run check:native` 另外执行五套 WXML/WXSS 原生编译。默认查找已安装的 macOS 微信编译器，可通过 `WECHAT_COMPILER_ROOT` 指定包含 `wcc` 和 `wcsc` 的目录；不存在时明确失败。Linux CI 的 `check:packages` 仅检查预算和一致性，不报告原生编译通过。
 
-完整回归通过 `tools/run-regression.cjs` 自动发现测试，记录运行前后源码汇总指纹、Git 提交及工作区是否有改动，并输出 JUnit。脱离 Git 的源码包从 `MANIFEST.json` 读取文件目录，重新计算真实文件指纹，并明确标注无 Git 提交信息。结果位于忽略的 `.rural-quiz-runtime/quality/`；GitHub Actions 保存当次日志、JUnit、资源报告和恢复报告，不包含真实数据库或会话。
+完整回归通过 `tools/run-regression.cjs` 自动发现测试，记录运行前后源码汇总指纹、Git 提交及工作区是否有改动，并输出 JUnit。脱离 Git 的源码包使用 `MANIFEST.json` 和实际源码目录共同确定范围，新增模块、测试也进入指纹；跳过依赖和运行数据，拒绝源码符号链接。结果明确标注无 Git 提交信息。输出位于忽略的 `.rural-quiz-runtime/quality/`；GitHub Actions 保存当次日志、JUnit、资源报告和恢复报告，不包含真实数据库或会话。
 
 ## 工程预算与合同范围
 
@@ -40,4 +41,4 @@ npm run check
 
 正式身份、分享资格、甲方同步、管理员授权接入、DM8/TongRDS、指定国产环境、真实 iPhone/安卓微信及上传发布仍需分别开发/联调/验收。旧管理调用继续兼容可选版本前提；新调用必须携带版本，强制切换需与接入方协调。
 
-本轮结果见 [工程优化与规范](20261025-工程优化与规范.md)，优先级基线见 [优化前完成度检查](20261025-项目完成情况与完善优先级.md)，操作见 [维护说明](MAINTENANCE.md)，现行接口见仓库 `demo/docs/full-development/API.md` 与 `miniprogram/services-v4/SERVICE-CONTRACT.md`。
+本轮结果见 [工程优化与规范](20261025-工程优化与规范.md)，审查后的修正见 [代码审查问题修正](20261025-代码审查问题修正.md)，优先级基线见 [优化前完成度检查](20261025-项目完成情况与完善优先级.md)，操作见 [维护说明](MAINTENANCE.md)，现行接口见仓库 `demo/docs/full-development/API.md` 与 `miniprogram/services-v4/SERVICE-CONTRACT.md`。

@@ -46,6 +46,7 @@
   "rural-culture-miniprogram/docs/20261023-证书流程专项验收.md",
   "rural-culture-miniprogram/docs/20261023-证书甲方反馈修订.md",
   "rural-culture-miniprogram/docs/20261023-顶部远景按主题调整.md",
+  "rural-culture-miniprogram/docs/20261025-代码审查问题修正.md",
   "rural-culture-miniprogram/docs/20261025-工程优化与规范.md",
   "rural-culture-miniprogram/docs/20261025-维护资料整理.md",
   "rural-culture-miniprogram/docs/20261025-项目完成情况与完善优先级.md",
@@ -124,8 +125,10 @@
   "tools/quality-format.cjs",
   "tools/run-regression.cjs",
   "tools/tests/admin-render.test.cjs",
+  "tools/tests/admin-style.test.cjs",
   "tools/tests/maintenance.test.cjs",
   "tools/tests/optimization.test.cjs",
   "tools/tests/package-budget.test.cjs",
+  "tools/tests/png-sync.test.cjs",
   "tools/tests/source-identity.test.cjs"
 ]
