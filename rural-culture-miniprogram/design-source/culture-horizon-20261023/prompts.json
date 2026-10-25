@@ -3,10 +3,10 @@
   "theme": "culture",
   "prompt": "Edit the supplied 750x280 top strip of an existing illustrated Chinese cultural-learning game map. This is a precise local scenery refinement, not a redesign. Preserve the original warm ochre and cream palette, hand-painted cheerful 2D mobile game illustration style, existing lighting, slightly elevated camera, scale, and composition exactly. Preserve the entire winding cream path including dashed markings in exactly the same position and width. Preserve the large open-book stone monument and pine on the left, and the near blue-tiled wooden academy building on the right, with their exact outlines and placements. Keep the bottom 70 pixels visually almost unchanged so the strip joins the existing map seamlessly.\nOnly enrich the empty far upper-ground areas BESIDE the existing path, mainly within the top 130 pixels: create a modest traditional academy/library courtyard background, with a small blue-gray tiled reading gallery and warm timber shelves of rolled books behind the left monument, and a compact group of pale stone inscription steles plus bamboo behind the shrubs on the right of the path. These should be clearly recognizable cultural heritage elements, secondary background scale, integrated softly into the same golden ochre ground and existing green plants. Keep the existing path open and unobstructed, with original perspective; do not create a sky horizon or mountains or lake. This is the 'Millennial Cultural Heritage' theme, distinct from agriculture, revolutionary history, and wetland ecology. It must feel like the same artist added restrained local details to the original illustration. No characters, text, lettering, labels, UI, borders, watermarks, photorealism, new colors or major reshaping. Output the same wide 750:280 aspect ratio.",
   "referenced_image_paths": [
-    "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/qa/culture-horizon-20261023/inputs/culture-top.png"
+    "rural-culture-miniprogram/design-source/build-inputs/culture-horizon/inputs/culture-top.png"
   ],
-  "generatedOriginal": "/Users/huangnianpeng/.codex/generated_images/01a1667a-aeed-7ef1-b13f-2b163606bc6e/exec-303a7077-2f37-4dc9-b818-a9720fa58fcf.png",
-  "savedEditPath": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/design-source/culture-horizon-20261023/culture-top-edited.png",
-  "runtimeAsset": "/Users/huangnianpeng/Desktop/yx/rural-culture-miniprogram/miniprogram/assets/journey/culture-a-v4.jpg",
+  "generatedOriginal": "external-generation/01a1667a-aeed-7ef1-b13f-2b163606bc6e/exec-303a7077-2f37-4dc9-b818-a9720fa58fcf.png",
+  "savedEditPath": "rural-culture-miniprogram/design-source/culture-horizon-20261023/culture-top-edited.png",
+  "runtimeAsset": "rural-culture-miniprogram/miniprogram/assets/journey/culture-a-v4.jpg",
   "scope": "Only top distant courtyard scenery; original road and near foreground protected."
 }

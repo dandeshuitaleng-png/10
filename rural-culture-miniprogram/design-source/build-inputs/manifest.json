@@ -1,0 +1,121 @@
+{
+  "scope": "Minimal authored inputs and protection masks for the maintained generators. No runtime changes; other QA captures remain local.",
+  "files": [
+    {
+      "path": "design-source/build-inputs/theme-horizons/inputs/red-current.jpg",
+      "sha256": "0c2880dfdd987a915dc43d9e27eec2e6f4ac26571dc878e342beaa4a9bc0b680"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/inputs/culture-current.jpg",
+      "sha256": "0efe640e319fa244684aa1e4f3b6c1699e22ef6d7ae8e2364387d4db81c50dba"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/inputs/industry-current.jpg",
+      "sha256": "b8898c320aa4c882b1f82d764249f6794b2c5d57ce666c29e1f6a3b27fd85eac"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/inputs/ecology-current.jpg",
+      "sha256": "ee3022fd870e7b74402dce29c55fa0b738e16291f3e151a41fb15d162789ad62"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/preserve-specs.json",
+      "sha256": "84049ceb0909d92a4f3bc3988cb8aa9a66203771eafb97ee1c3e218731a78506"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/preserve-masks/red-roof.png",
+      "sha256": "716c442e2bd07af5e43f6979684068622403f00fa9e3e351471b32a20a59d48a"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/preserve-masks/industry-granary.png",
+      "sha256": "bcfc524dead361277e873ce04d6787c290a03794343c5d1d5c35337b0a902fd1"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/preserve-masks/red-memorial.png",
+      "sha256": "bee440d5b8d957670cf92cf0e4f3f21997461528f1a3f56db79f4f7bac05cdb6"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/preserve-masks/ecology-waterfall.png",
+      "sha256": "e6843ab5129a55cdb2acb32fb0b50ee6f23109293d57531a2934c5b7add488d0"
+    },
+    {
+      "path": "design-source/build-inputs/culture-horizon/inputs/culture-current.jpg",
+      "sha256": "0efe640e319fa244684aa1e4f3b6c1699e22ef6d7ae8e2364387d4db81c50dba"
+    },
+    {
+      "path": "design-source/build-inputs/culture-horizon/preserve-masks/scroll.png",
+      "sha256": "296f40a50f12bf77b782c153bb9805c78234459ee78dab64b482b226c16f64ab"
+    },
+    {
+      "path": "design-source/build-inputs/culture-horizon/academy.png",
+      "sha256": "2fe17862df5a23e46ec6531917d0526c1bbd824d4ae4134235f006ccce7b88cd"
+    },
+    {
+      "path": "design-source/build-inputs/road-boundaries/red.json",
+      "sha256": "0acf9ebf3786090c4c4b122398156b0bfe2d6bf97fb92d537121af358c823d2c"
+    },
+    {
+      "path": "design-source/build-inputs/road-boundaries/culture.json",
+      "sha256": "40feca730c875323a87fe7ef9f9544be5eb2782038012ea2749c9dd5ada982fc"
+    },
+    {
+      "path": "design-source/build-inputs/road-boundaries/industry.json",
+      "sha256": "e2df6da0267caa8bc8ed46643ded3044e199bb7d4ceb62172e1bd0e8ce57772a"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/original/red-a-v4.jpg",
+      "sha256": "36faf7bfd1998be4add766b62171a6aacd941fa0a8bf1da55ec7565e901073a2"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/original/culture-a-v4.jpg",
+      "sha256": "ceffcd3375e6e2bef8dd4fe7ed55d81d10eb2d4a5cad1073a291b641a6d6052d"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/original/industry-a-v4.jpg",
+      "sha256": "3ecfa3ff9aa9d2cd35f782876ade34fe3f5a1f6afa5b1486e77c451ba21dcdcc"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/original/ecology-a-v4.jpg",
+      "sha256": "ee3022fd870e7b74402dce29c55fa0b738e16291f3e151a41fb15d162789ad62"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/masks/memorial.png",
+      "sha256": "8b3b2b72789971421d60390a4b0a51dc583811bca6151cfa8f83341b815de17d"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/masks/scroll.png",
+      "sha256": "9e8ecffc53ab1cfad1bf4201d93b7da7bffbc0bd3f661fd894e5902940dcfb51"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/masks/bench.png",
+      "sha256": "685f7a402e8734a51d269581e1945f804ae0a020ca435348d25b670e601dda82"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/masks/granary.png",
+      "sha256": "abff6ff680dbe4aecd618cf90c46cd63b3032e0a2e26c4b2a3b3312236150e3b"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/padded-masks/rocks.png",
+      "sha256": "160cce403f2e5189f5f138220c12fe6d7e82fe515d067d277bec1a1047aede8c"
+    },
+    {
+      "path": "design-source/build-inputs/landmark-cutouts/padded-masks/tea.png",
+      "sha256": "636fef591c816367c07de02db4acc6af5673fb4127f36aecc625d1d95e94c210"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/inputs/red-top.png",
+      "sha256": "bed266b7bf6da437852532843dd445d4212a80af0c5fa043e8d6ffac58425537"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/inputs/industry-top.png",
+      "sha256": "95f6ec8b14aed842afde9184f0560fcc88492c3a669a82b74c76d2a063539ec8"
+    },
+    {
+      "path": "design-source/build-inputs/theme-horizons/inputs/ecology-top.png",
+      "sha256": "0db98585f58b3c6e35d7854441792a6124d1b4d659a29d2793e4da14d80aa8f4"
+    },
+    {
+      "path": "design-source/build-inputs/culture-horizon/inputs/culture-top.png",
+      "sha256": "667f3414ec0671a9f65cb34051ca320ce2288c3594bcf4bd6338274bcedcbe92"
+    }
+  ]
+}

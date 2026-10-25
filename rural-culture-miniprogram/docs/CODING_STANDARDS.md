@@ -8,6 +8,9 @@
 
 ```sh
 npm ci --ignore-scripts
+npm ci --ignore-scripts --prefix quiz-admin
+npm ci --ignore-scripts --prefix rural-culture-miniprogram/tools
+npm run build --prefix quiz-admin
 npm run check
 ```
 

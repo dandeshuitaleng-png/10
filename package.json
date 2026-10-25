@@ -10,7 +10,10 @@
     "format:check": "node tools/quality-format.cjs --check",
     "format": "node tools/quality-format.cjs --write",
     "test:quality": "node --test demo/tests/server*.test.cjs demo/tests/native-network.test.cjs quiz-admin/tests/*.test.js rural-culture-miniprogram/tests/remote-recovery.test.cjs rural-culture-miniprogram/tests/native-metrics-source.test.cjs rural-culture-miniprogram/tests/v4-page.cjs rural-culture-miniprogram/tests/v4-services.cjs",
-    "check": "npm run lint && npm run format:check && npm run test:quality"
+    "check": "npm run lint && npm run lint:maintenance && npm run format:check && npm run test:quality && npm run check:maintenance && npm run check:recovery",
+    "lint:maintenance": "node tools/check-maintenance.cjs --lint",
+    "check:maintenance": "node tools/check-maintenance.cjs && node --test tools/tests/*.test.cjs",
+    "check:recovery": "node demo/scripts/verify-backup-recovery.cjs"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

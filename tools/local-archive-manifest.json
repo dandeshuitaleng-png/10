@@ -1,0 +1,655 @@
+{
+  "scope": "130 files preserved locally without content changes, not required by the published source. Their contents are not included.",
+  "files": [
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/back-white.png",
+      "sha256": "ab53586d74d3f638cb3a3b5a9cfc93b8c8329a00941ffa98aca40c35d23c58b8",
+      "bytes": 284
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/back.png",
+      "sha256": "46b84ade646f1d65d7a78a83f664695c35933fa9403bafe50161e178d44fd483",
+      "bytes": 314
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/book-white.png",
+      "sha256": "53869101f0d1a5c2b5c15ba24429802b973aff98ad8d5452b3dee9378f0f4839",
+      "bytes": 760
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/book.png",
+      "sha256": "444de88a65bb71fe2302bf772b5e953e588cee6be7038c04ef9708ed46c394c3",
+      "bytes": 931
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/certificate-white.png",
+      "sha256": "c584b6a3424ded5ce1ebe87894c7836f25fc451adb85ec4bfd53bc0633714732",
+      "bytes": 644
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/certificate.png",
+      "sha256": "de2219e7179e46ad6585cb55b8511cb8e8843ea7138f3c9a6fb618a6bcb9deec",
+      "bytes": 777
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/check-white.png",
+      "sha256": "d72a4730e2b86edd3654da24ba6225e25f0a366397c250f7b8eecad4e80472db",
+      "bytes": 317
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/check.png",
+      "sha256": "09a833576f433cdff3f609f71ed8abc6a936271b89e969c7093a3efbb355c0ee",
+      "bytes": 347
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/clock-white.png",
+      "sha256": "e7224fd7afe1cce98fd113ffa9a7c049e9965ef7d936fd687de885915ecc4cb8",
+      "bytes": 1320
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/clock.png",
+      "sha256": "2487a0d05b5baad40b85a08a5bf1063482c114ddfb2ff3c9fb18ddd41c70fc8a",
+      "bytes": 1633
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/close-white.png",
+      "sha256": "abc7b9cc81e77b2cf656e43268f16b0f0cc58c15068ae586e07e22cdb7d912c2",
+      "bytes": 399
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/close.png",
+      "sha256": "5ba82ae35c9f4213d03a0f9957b7ae337aaf222ec99f9c97b5b026ed5251a123",
+      "bytes": 437
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/flag.png",
+      "sha256": "16ab041f26b476a6cebf13fee3188bd4d94f5f531f92653e154f74251503b874",
+      "bytes": 943
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/info-white.png",
+      "sha256": "a567f54806dc113ca314029450300998526d817524bb14edd0960ac2719da6db",
+      "bytes": 1292
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/info.png",
+      "sha256": "cfb8fbd785b700cd0df175803c239d90479e51182a9b1fe3dc3e76027023c002",
+      "bytes": 1575
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/leaf-white.png",
+      "sha256": "e66380315b58e493a8a530a31e6f976664c971a5a258c1de3792eceec3aaa464",
+      "bytes": 1424
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/leaf.png",
+      "sha256": "2fd8b8a59283eeeadd0670b1f1b1976ba361344c1721bb49ee14fcd82db82427",
+      "bytes": 1771
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/lock-white.png",
+      "sha256": "b973a132c34e342df2b66df871dbfdf70c0a9830c306f2105c26cdb59d9bfaf4",
+      "bytes": 866
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/lock.png",
+      "sha256": "f141abd09dcac03b0b56fd8aab151cc4e9af33aa0efb3537a83c07fb73a04e03",
+      "bytes": 1093
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/next-white.png",
+      "sha256": "677c4c4aaa3d24832f92a80ce7c389dd14213cf17deecda2c9369b021a4569b0",
+      "bytes": 294
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/next.png",
+      "sha256": "367e4293737db512dcf8ef6e5b083f9341fa5c0d22d674e191d2f0ea31a83fc4",
+      "bytes": 324
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/play-white.png",
+      "sha256": "22058546bcea5f5e6fa2df39106092dc44f2e64c89d13de378c66e9fc298b931",
+      "bytes": 490
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/play.png",
+      "sha256": "714327d4aca534ef9f9fe088a17d6a4fb66a5c9c808378f18149ae474d230b09",
+      "bytes": 580
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/points-white.png",
+      "sha256": "51ef5b7bb604438b3718859f8af3fc3e1e07eaa1176a91cbb6420b50bbe05cba",
+      "bytes": 758
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/points.png",
+      "sha256": "8a8f383b23b379a7a6bb433d970a8214c19413b05bfec255dc9f6d91c59bd674",
+      "bytes": 882
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/rank-white.png",
+      "sha256": "8cd3f7995dc5c553a3843b4f189ac1eed1707a0b9af322c152027562bf294e19",
+      "bytes": 365
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/rank.png",
+      "sha256": "fba37644698d8a70ecfa55fc8a7655bd627a3a764a375ddf3814b2b2f41473b7",
+      "bytes": 408
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/refresh-white.png",
+      "sha256": "f4e835ec34eb52ededc9aab23e3751270e347ac22a3f57a0ff5309ae84c02c79",
+      "bytes": 1069
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/refresh.png",
+      "sha256": "85170bc54f3fbbb3bc06ff7bc99188bc1a1699a7a7b2277d0edc631bbcc93f1d",
+      "bytes": 1380
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/settings.png",
+      "sha256": "8fcfd7a03abb5b77b0dbdeae64f39252f3f820b9f2604b676f329cfdee00a4c3",
+      "bytes": 4037
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/share-white.png",
+      "sha256": "c611b08a3703c283f936c10123084f6752f3d23ab2d5be11c9ef32d4c4788aee",
+      "bytes": 503
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/share.png",
+      "sha256": "d7d50e84fca949cbda8c1a37145bc0212b5445a502bac54e5eb636b025d5c1bd",
+      "bytes": 555
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/sound-off.png",
+      "sha256": "cd1889810acf3a6999b2a8195fc437d4d123134efb1710d61f0081ee3b884d03",
+      "bytes": 676
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/sound-on.png",
+      "sha256": "f2b77595d4ccd24d143bea586519aa014630ea2a96ce352d31dab3a896db36da",
+      "bytes": 915
+    },
+    {
+      "path": "rural-culture-miniprogram/design-source/ui-icons-20261022/before/wheat.png",
+      "sha256": "8c45df159f5f19873f83b661a0d1880f19394272a8cec677ef34b29a1a50de21",
+      "bytes": 2251
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/before-ecology-long-320.png",
+      "sha256": "c734efcb9dc40a8048dfab3f37589c1bc9be10e478f07f99082cdf114bea46ac",
+      "bytes": 237615
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/before-ecology-quiz.png",
+      "sha256": "43f79d857da46e08aa270d631f1d72751f7b9d73256394f1b535b1018ad3d026",
+      "bytes": 385377
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-certificate.png",
+      "sha256": "23d26b230256608f2e07bd07dcd83d685c8db612fd468c0bce58c835648720d6",
+      "bytes": 245108
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-correct.png",
+      "sha256": "c2bb6c100c4f63549ce8256edab56d0ee0153f2829a7db51e6df343729e88705",
+      "bytes": 280214
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-home.png",
+      "sha256": "5272ea463d050aac8d5f276ba4204c800ba43f7d834674b1f4a401300b896d81",
+      "bytes": 752144
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-locked.png",
+      "sha256": "c7fbfbca7856b3479e5c675f23fc5701a72199fd4cf4b9df568dcdaa73105144",
+      "bytes": 464687
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-long-320.png",
+      "sha256": "89a0180dac3101a568edbfa9e117264e0831ae3c91a436e5b74e85ff37fb77c4",
+      "bytes": 199446
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-map-complete.png",
+      "sha256": "51871c878fe639893ea3002cb5c044b395bd3ad23624654569ead753e00605b1",
+      "bytes": 871329
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-points-failure.png",
+      "sha256": "c629ca2c4db842250a85281db6af55530a65e4ed8f1df0ea12fc985b4ff2dbf6",
+      "bytes": 205539
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-points.png",
+      "sha256": "18fd3da8dcff74b6e2c28785a703d394dd9664f5b1b85d70520eb09520380f0a",
+      "bytes": 248344
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-profile.png",
+      "sha256": "5b537ad0e55db236749f6079c78c920b4495fa47b56c6df529cb28427d709f45",
+      "bytes": 233820
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-quiz.png",
+      "sha256": "111de2356e94f139ef1b7f06a96ca39644f6c78bab866f31fb8db2a2f29644b8",
+      "bytes": 252012
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-ranking.png",
+      "sha256": "f3e99842498bcb9e8b0fe6a82df59e21170b41666ddd9df088bae1c9bce781cd",
+      "bytes": 309103
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-result.png",
+      "sha256": "0014f658f7abc455079a3d58de51c4879a086e2734b4f1d6dfdae712cb1ecff2",
+      "bytes": 309270
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-revive.png",
+      "sha256": "7bdcf39fbd64dfb9c5dfb781de7b8eafe4f338be56ebab4c08a1ced93d277022",
+      "bytes": 465294
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-rules.png",
+      "sha256": "8f48e510211a60986dcc4dfad20aac6e73c7fd4940d6b1fdf5a1bcf61a84b6bb",
+      "bytes": 538074
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/culture-sound.png",
+      "sha256": "3c3404c6a43ddb914c39b1650ce68ddcf2a51c03b57e05a8f95a97dae1de1267",
+      "bytes": 469927
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-certificate-empty.png",
+      "sha256": "06dced97eb7ca8947935bbc16d0a421834c18710f9c51bc2f518dd4c5383df97",
+      "bytes": 147345
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-certificate.png",
+      "sha256": "0c275c6e76f2ccaae30d0bf246bf52dbb6a2a27ab38d789cc9ac9b2570ed8193",
+      "bytes": 239437
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-correct.png",
+      "sha256": "c66e0e6413d464118c3e13bea5551baafd978208f1ac0bcd9c4b4789c5d3fad0",
+      "bytes": 295352
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-home.png",
+      "sha256": "17f10dd6d92fbdf80af1a97a6146ff23e373e742199a9190d1ee7a00e1cd6172",
+      "bytes": 1023245
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-locked.png",
+      "sha256": "504fa9b55895b2e9e8c83d13fd3f0b279cc8e5f9d50ff19ad21456964ec941a7",
+      "bytes": 449901
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-long-320.png",
+      "sha256": "ee995b9f224787b72a98bee70fb24d74e37c116c674213f79b5d4eccdbf2c60a",
+      "bytes": 197998
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-map-complete.png",
+      "sha256": "8af523fb93098b8a1b3a1ed5fb0476a0cc181efe277cc8c2d5b2efcd6c7a1432",
+      "bytes": 1075724
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-points-empty.png",
+      "sha256": "e588158f920e7da9f52ff5a171dee6301ef4cc58c015c3daa7be08108c7fc9ed",
+      "bytes": 243374
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-points-failure.png",
+      "sha256": "307efb4d8f19973f2e1a383998a64d479b41194e7ccb65b21191e8e6027ade5c",
+      "bytes": 207109
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-points.png",
+      "sha256": "c41025fd247333535bd4c0a361793d413e9aa09b41500200a72620430ba8934a",
+      "bytes": 247879
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-profile.png",
+      "sha256": "4d0ef64acbd83262a8f6d386ca7e8d79cec7fe472b13e4e4f2aef589dd7e1c9d",
+      "bytes": 233585
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-quiz.png",
+      "sha256": "f54e69f7d56766a68e6a2003823d23715b1fca3009abcc4fe988e4995a90c2d6",
+      "bytes": 250116
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-ranking-empty.png",
+      "sha256": "fd79814c50e6883a3bd652ef512578726a0311d1f2f93c9d12950e5bb75092df",
+      "bytes": 218797
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-ranking-failure.png",
+      "sha256": "75e3406bb75190c96b0fd6110cb39e6f390d8a58e05704b09ce709b0934058c0",
+      "bytes": 216594
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-ranking-loading.png",
+      "sha256": "d989d406a3ab4ae991c764e3aabbddf66ee781c0e2aae65e660dabf85f80082e",
+      "bytes": 217851
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-ranking.png",
+      "sha256": "4fdb63efab8f2bb4a80d28e461efc10bc30ab5158d6a3e4f4a237dfd93c01a5d",
+      "bytes": 304717
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-result.png",
+      "sha256": "cb2ef3394b3f469f67528fe1962a89a7d2ff304734867dabedf4910061adb9da",
+      "bytes": 313779
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-revive.png",
+      "sha256": "aedca6e40cce6a5427f74aef1f7e17f846258e940d445706f075049ccb81c3e1",
+      "bytes": 449452
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-rules.png",
+      "sha256": "00c327ead72666e1c7a7a2296b56906d5b77baa54116f25d9ed20b00496bf650",
+      "bytes": 532688
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/ecology-sound.png",
+      "sha256": "3817aa2c75d6c7a21f44cf9e597ffdd0bb770be229f2ce1c773aa90bd5ba6771",
+      "bytes": 557759
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-certificate.png",
+      "sha256": "8fe42c8cf4257fe26edec4dc846d78cebe13b487324a30ea551cd584ce574e9d",
+      "bytes": 230544
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-correct.png",
+      "sha256": "94f4e0d1d63b2b877caea274a4c6446b50098defe95f97d9c0e52774ccf6a806",
+      "bytes": 293654
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-home.png",
+      "sha256": "98b10877ebc47a0225b74114bd184a8cd13cc1454fb8da6fef8dd28071dd73dd",
+      "bytes": 881025
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-locked.png",
+      "sha256": "42183d8b60aabd14f89640f5f12bdbffd3da890356967bc548a9cf3c31bf5a4a",
+      "bytes": 449808
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-long-320.png",
+      "sha256": "771a7fb51f5302865fb46cba11e391edd4acd0e9ef2fef3f1f00bb99a43d959d",
+      "bytes": 190920
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-map-complete.png",
+      "sha256": "7b16612475076fdc08f3fcad674be131848e9e73503919f3c882b436c72a59fd",
+      "bytes": 970941
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-points-failure.png",
+      "sha256": "bb7b4f4e038df5982f662ff61ea88f7aafca16fdb8a9cc724797cdc823f63c67",
+      "bytes": 200563
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-points.png",
+      "sha256": "ad1d0d8e44a2cdd769936838216887d24f1cddc87cfd0496d7d05cdc6eace456",
+      "bytes": 239968
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-profile.png",
+      "sha256": "0800d5e32e2205ed89862577d6574674dde9c65dd52d90ebb49f15c49ad3ed4d",
+      "bytes": 224035
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-quiz.png",
+      "sha256": "0fc10198b8833b219214be344f1ad5d5b884a6cbbbf6130ade5448d695686a1f",
+      "bytes": 238230
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-ranking.png",
+      "sha256": "bead68bcd2c3e9c89d380ab50e04125fddb762efd04ba7cd75c80ae42a49d8f4",
+      "bytes": 298803
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-result.png",
+      "sha256": "2da81305a0c92facc9fbafa2eae0aafb216135015c2b1731cfce3a7bd8039d02",
+      "bytes": 312777
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-revive.png",
+      "sha256": "c368391831c07e8b6dd3d0836485536e1e80d2741c0f6e239fc903b11248caae",
+      "bytes": 451338
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-rules.png",
+      "sha256": "16a1bb44564427f3d1bc5d7994c5be1fb5403a18d7fd59ee6414e8c343556826",
+      "bytes": 524345
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/industry-sound.png",
+      "sha256": "8e702bc62c0f001eda60da20941863ade74f952c46e1cea92226acaa1364eb89",
+      "bytes": 502923
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-certificate.png",
+      "sha256": "1e8ec28b0b683c876cc5b3f53663a2c524d63a1e24863247e8707c89f25b43f8",
+      "bytes": 232605
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-correct.png",
+      "sha256": "9c472b44ecc058c2e958fd7a29a36270f0198e3ff01c12ee8360519625236f5f",
+      "bytes": 266488
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-home.png",
+      "sha256": "c71d0ae77820e24998e18984b3760073408c2b6a02c32ab2ca28175c96670456",
+      "bytes": 914390
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-locked.png",
+      "sha256": "7eae7d169a43f7860024ca0b7f956b9c0801047ebad943398d7026df598b64e1",
+      "bytes": 433149
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-long-320.png",
+      "sha256": "071e9df1e2a1550be8a28973c0ea1bffab017e6b66837117c92704e195c4107f",
+      "bytes": 178320
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-map-complete.png",
+      "sha256": "e12d10804ae7d26be6b845d6a4a336bce940b55a3a66533f06191804936dea3a",
+      "bytes": 1018743
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-points-failure.png",
+      "sha256": "a11ddc30cda395182839ac8dcaf2ff206ac1e4d26cb25e97209bc518db11e8bb",
+      "bytes": 175685
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-points.png",
+      "sha256": "25f4fa375c216c0bc7304f02be1b1a3c10559fc0c694bb0a9ab0199654e18102",
+      "bytes": 225168
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-profile.png",
+      "sha256": "5f07e00c03b758652b910da2fbb2387022a6addf5a65ffc5dc336a0b77890d64",
+      "bytes": 212839
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-quiz.png",
+      "sha256": "5a7825c1e488ee3789731759e221add63ed328a7e946251b08280fb313823e46",
+      "bytes": 233652
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-ranking.png",
+      "sha256": "5d435d075cc8dd4b8c25cfbc4624fce3d7ce41f73b179f5448083946e3bde3cd",
+      "bytes": 286417
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-result.png",
+      "sha256": "7410cd9bf1b821c8e6cc74cffdd186e4a67fed97769518d6c381cd6c0438aff0",
+      "bytes": 280308
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-revive.png",
+      "sha256": "a9f05ec92c515aca7b3f420d773f297e98df430cabf6bbdafbe348d161fd8c7f",
+      "bytes": 429430
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-rules.png",
+      "sha256": "434e717378b49eb8097e3c8a7f8987715c21cf0927a5849369b86d75f1216a5c",
+      "bytes": 509771
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/art-refinement-20261022/red-sound.png",
+      "sha256": "cea6182110042e906e928229b6e28f7e888b4712ed2423695346e8cd62eba807",
+      "bytes": 519912
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/winter-motion-before.png",
+      "sha256": "ec9f399d411855f9bd1190b97deb7b6f380bfb7c0a57bb4cd58f829273c97d9b",
+      "bytes": 32582
+    },
+    {
+      "path": "rural-culture-miniprogram/preview/地图滚动修正-浏览器.gif",
+      "sha256": "35fe13fb2330ad4247b585121da1aae1d45e1a6227efe9b580cccce3b34ee916",
+      "bytes": 2833913
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/build-certificate-client-board-20261023.cjs",
+      "sha256": "81a08e7de32146b9e857b50e9e0a6aaa5baa7be193728caf14d3051470cdefa8",
+      "bytes": 1996
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/build-certificate-unified-board-20261023.cjs",
+      "sha256": "bde509a04e6d324b07b75ae9adf9c2aaf1bb765fae152bc196adf01abff2a6a8",
+      "bytes": 2082
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/build-landmark-cutouts-board-20261023.cjs",
+      "sha256": "6fe8230e38c4872652239af108dcaf59b3e674aad8bf9d48e618fea91a5d9a03",
+      "bytes": 1120
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/build-theme-horizons-board-20261023.cjs",
+      "sha256": "0a4d1e99633e4e46f9bc9ad25f98717ef6bd6d332ded284285431a08db7a4b4f",
+      "bytes": 1246
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/build-theme-tone-20261023.cjs",
+      "sha256": "daa0318dddd6dffb8b3cc9802251f3ebbd0ad75839413b46185571baf08148c0",
+      "bytes": 3823
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/build-theme-tone-board-20261023.cjs",
+      "sha256": "d727f4c8647fcf94effbf286f711a5a3191a6f56142d2d44082fd89d8205b77d",
+      "bytes": 1108
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/measure-winter-motion-20261023.cjs",
+      "sha256": "433f256a32298775c3263f657135cc38e2e0554fe86a306e35cb8cde0d892ca3",
+      "bytes": 2303
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/normalize-home-ui-icons-20261022.cjs",
+      "sha256": "bfb9c979153ccaf7c4336f416747f838161cf0dedaf5dc6f7c8e9b97a4a2a484",
+      "bytes": 1713
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-art-refinement-20261022.py",
+      "sha256": "cb2167da6c32e7e8c4f5e6d1cd5a080b095a1f366dd214d4fc09b3a8719911c3",
+      "bytes": 12006
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-art-refinement-20261023.py",
+      "sha256": "be5199aa1bfd606f9eb6a9b63cef5bc2f48085eedda3f9f6080812f895d8729e",
+      "bytes": 14962
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-certificate-client-20261023.py",
+      "sha256": "40c41506ba8d0c7563d74b405be9038c9061ac7e2f49059738be91d4d14d0f27",
+      "bytes": 8827
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-certificate-unified-20261023.py",
+      "sha256": "f4c2480a995932ab7066d304ff376926c3711d5779661e2befe75841be2d72ea",
+      "bytes": 9629
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-culture-horizon-20261023.py",
+      "sha256": "a1db85f5fcecad4babd010252859b9754012366b3d5f284e47d9024bfaedda1b",
+      "bytes": 7512
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-landmark-cutouts-20261023.py",
+      "sha256": "d8045fa519e114b0486e7c32601346351e26c678b86443d35ac4d2e3c6190c0d",
+      "bytes": 5933
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-map-legibility-20261023.py",
+      "sha256": "3e0268b8f49669b7869bd08a2772bbf2bc0dcd4d95137bc63b62119fc2ed1370",
+      "bytes": 17231
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-mascot-continuity-20261023.py",
+      "sha256": "1b6c5947300d11e94dd65ca3cbf84f86a48d0c4f70cfb3008856edd478bde20c",
+      "bytes": 4790
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-mascot-handoff-20261023.py",
+      "sha256": "c8b53d8e912a7d6fd4068140a8ca48d1bc347416e09e457c5aeb5e13004058a2",
+      "bytes": 4946
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-theme-horizons-20261023.py",
+      "sha256": "5030bf093e6f82893bbf598cdb791fbccd1960a33e7a19c264f3b152cd7b928d",
+      "bytes": 6090
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-theme-tone-20261023.py",
+      "sha256": "52d1ee019bb5d016abd8cd29e41e281e8101a807c8b0d5b26c333e34fc3ca37d",
+      "bytes": 5260
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-winter-motion-20261023.py",
+      "sha256": "46537f65b2618cad89b866324908ee854b1183b20594f86a0f13087748865320",
+      "bytes": 6420
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/package-winter-soft-motion-20261023.py",
+      "sha256": "585c91b70055bcd3553c1d804cb624212a6318dfa138b262dea42d5bcb8db883",
+      "bytes": 7810
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/render-certificate-flow-board-20261023.py",
+      "sha256": "eb4a5154f375a75627e2594492889fd902e335a4587fd920f45658fa419f4442",
+      "bytes": 2004
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/render-map-legibility-board-20261023.py",
+      "sha256": "f82d126c38528eaf16c9ee5e15fea535dc28cddb0939bffa3a29185471fa9d9c",
+      "bytes": 1870
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/render-records-ui-board-20261022.py",
+      "sha256": "1c956b1b68ebbb5b56b145681485990265303f61a7e455b5736a28691a832a31",
+      "bytes": 2170
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/render-ui-system-board-20261022.py",
+      "sha256": "b75ecdf86e44caf9c6b69418b07160e0f13f771cac61ffc175baf077739fe425",
+      "bytes": 4136
+    },
+    {
+      "path": "rural-culture-miniprogram/tools/sync-art-refinement-20261022.cjs",
+      "sha256": "b0dc5e5eaa85952a546668238b148f484e88c07c759092a44099468d1c276974",
+      "bytes": 2940
+    }
+  ]
+}

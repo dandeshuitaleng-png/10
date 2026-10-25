@@ -1,6 +1,22 @@
 # 趣味闯关 · 四主题独立小程序
 
-当前开发版：2026-10-21 甲方确认的 A 方案细化。四个主题各自独立进入学习关卡，不包含平台总入口或主题选择页。
+当前源码包含四套独立小程序、后台管理和本机联调服务。安装、构建、运行与数据备份见[维护说明](rural-culture-miniprogram/docs/MAINTENANCE.md)。正式身份、分享验证、DM8/TongRDS 及目标环境验收仍待接入。
+
+当前开发版：2026-10-25，A 方案美术精修、代码质量修复与维护资料整理。四个主题各自独立进入学习关卡，不包含平台总入口或主题选择页。
+
+地图人物已改用随地图一起显示的原动作帧图，去掉滚动中的人物 Canvas 与完整人物双层切换。滑动暂停、停稳恢复；专项记录见 `rural-culture-miniprogram/docs/20261022-地图滑动人物重影修正.md`。
+
+四主题已统一 22 种功能图标，按 16／20／24px 区分角色；首页三卡、学习入口、主次按钮及窄长浏览器预览已修订，规范和专项记录见 `rural-culture-miniprogram/docs/20261022-首页图标与卡片规范修正.md`。
+
+答题选项、正确解析、复活与锁定状态已统一图标尺寸和视觉层级，浏览器弹窗支持焦点循环及关闭返回。[状态规范](rural-culture-miniprogram/docs/20261022-答题与弹窗状态规范.md)。
+
+排行榜与积分明细已统一列对齐、数字层级和来源时间排版；无记录、加载中、失败重试及未获证提示使用共同状态组件。四主题浏览器、微信模拟器和本地 HTTP 断网恢复专项已通过。[排行积分与状态规范](rural-culture-miniprogram/docs/20261022-排行榜积分与状态规范.md)。
+
+地图关卡卡片保持原高度，文字缩小一档并完整显示；四季人物按脚底对准台面中心。[地图文字与人物修正](rural-culture-miniprogram/docs/20261023-地图文字与人物居中修正.md)。
+
+证书生成、预览、保存、相册权限及分享操作已完成本地专项修订；实体手机相册与分享送达仍待验收。[证书流程记录](rural-culture-miniprogram/docs/20261023-证书流程专项验收.md)。
+
+本轮已缩小内页横幅、释放小屏答题空间、统一细边框与四主题阅读配色，精简未来关卡卡片，补充原人物接触阴影与结算的下一章提示。[本轮完成说明](rural-culture-miniprogram/docs/20261022-A方案美术精修完成说明.md) · [美术精修评审页](rural-culture-miniprogram/preview/美术精修-20261022.html)。
 
 - `rural-culture-miniprogram/`：母工程、共享页面、视觉组件、声音与证书绘制源。
 - `交付/微信小程序四套/{十步芳草,千年文脉,金色产业,青山绿水}/`：四个可分别导入微信开发者工具的独立工程。
@@ -46,6 +62,6 @@ node --test tests/certificate-art.test.cjs tests/option-measurement.test.cjs tes
 
 ## 代码质量检查
 
-在工作区根目录使用 Node.js 24 执行 `npm ci --ignore-scripts` 后，运行 `npm run check`。
+在工作区根目录使用 Node.js 24，先安装根目录、`quiz-admin` 和 `rural-culture-miniprogram/tools` 的锁定依赖并构建后台，再运行 `npm run check`。完整命令见[维护说明](rural-culture-miniprogram/docs/MAINTENANCE.md)。
 该入口包含服务端、后台管理、原生页面与服务回归，以及 ESLint 和维护文件格式检查。
 维护约定见 [代码规范](rural-culture-miniprogram/docs/CODING_STANDARDS.md)，本轮修复与证据见 [20261025 修复记录](rural-culture-miniprogram/docs/20261025-代码质量修复与验证.md)。

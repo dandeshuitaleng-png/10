@@ -1,0 +1,46 @@
+[
+  {
+    "theme": "red",
+    "id": "red-memorial",
+    "box": [
+      0,
+      60,
+      235,
+      240
+    ],
+    "color": "#F18463"
+  },
+  {
+    "theme": "red",
+    "id": "red-roof",
+    "box": [
+      525,
+      65,
+      225,
+      235
+    ],
+    "color": "#F18463"
+  },
+  {
+    "theme": "industry",
+    "id": "industry-granary",
+    "box": [
+      0,
+      100,
+      225,
+      180
+    ],
+    "color": "#F5BB59"
+  },
+  {
+    "theme": "ecology",
+    "id": "ecology-waterfall",
+    "box": [
+      0,
+      130,
+      215,
+      170
+    ],
+    "color": "#9ACB43"
+  }
+]

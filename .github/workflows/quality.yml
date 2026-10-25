@@ -17,7 +17,15 @@ jobs:
           cache-dependency-path: |
             package-lock.json
             quiz-admin/package-lock.json
+            rural-culture-miniprogram/tools/package-lock.json
       - run: npm ci --ignore-scripts
       - run: npm ci --ignore-scripts --prefix quiz-admin
+      - run: npm ci --ignore-scripts --prefix rural-culture-miniprogram/tools
       - run: npm run build --prefix quiz-admin
       - run: npm run check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recovery-evidence
+          path: demo/design/full-development/evidence/operations-report.json
+          retention-days: 14

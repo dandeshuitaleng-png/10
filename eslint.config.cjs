@@ -8,6 +8,7 @@ module.exports = [
   {
     files: [
       'demo/server/**/*.cjs',
+      'demo/scripts/**/*.cjs',
       'rural-culture-miniprogram/miniprogram/**/*.js',
       'tools/**/*.cjs',
       'rural-culture-miniprogram/tools/**/*.cjs'
@@ -27,6 +28,14 @@ module.exports = [
   {
     files: ['quiz-admin/src/**/*.js', 'quiz-admin/src/**/*.vue'],
     languageOptions: { sourceType: 'module', globals: globals.browser }
+  },
+  {
+    files: [
+      'rural-culture-miniprogram/tools/check-*.cjs',
+      'rural-culture-miniprogram/tools/lib/check-*.cjs',
+      'demo/scripts/verify-contract-local-20261023.cjs'
+    ],
+    languageOptions: { globals: globals.browser }
   },
   ...vue.configs['flat/essential'].map((config) => ({
     ...config,
