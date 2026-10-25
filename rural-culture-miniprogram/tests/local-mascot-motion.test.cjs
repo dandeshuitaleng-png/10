@@ -4,8 +4,7 @@ const root=path.resolve(__dirname,'..'),{rigs}=require('../miniprogram/services-
 test('seasonal figures render one original bitmap without cutout arms, painted patches or whole-body keyframes',()=>{
  const css=fs.readFileSync(path.join(root,'miniprogram/components/mascot-actor/index.wxss'),'utf8'),wxml=fs.readFileSync(path.join(root,'miniprogram/components/mascot-actor/index.wxml'),'utf8');
  assert(!/\.gesture-plane\{animation-name|\.extension-plane\{animation-name/.test(css));assert(!wxml.includes('limb-underlay')&&!wxml.includes('limb-pivot')&&!wxml.includes('mesh-triangle'));
- assert(wxml.includes('class="mascot-motion-canvas"'));assert(css.includes('.actor-original .gesture-original{opacity:1!important}'));
- assert(css.includes('.canvas-ready.is-playing .gesture-original{opacity:0}'));assert(wxml.includes('class="actor-original-image actor-art gesture-original"'));
+ assert(!wxml.includes('<canvas'));assert(wxml.includes('class="map-motion-strip"'));assert(!css.includes('.canvas-ready.is-playing'));
 });
 test('all original RGBA files are byte-identical and the local deformation stays above the feet',()=>{
  const source=require('../design-source/original-poses.json');
@@ -19,7 +18,7 @@ test('shared vertices remain joined, fixed outer edges match the static body, an
  for(const pose of ['welcome','celebrate','observe','think']){
   const r=rigs[pose],mesh=geometry(r);
   for(let frame=0;frame<=100;frame++){
-   const targets=deform(mesh,angleAt(frame/100,r.gesture.angles)),seen=new Map();
+   const targets=deform(mesh,angleAt(frame/100,r.gesture.angles,1,r.gesture)),seen=new Map();
    for(const ids of mesh.triangles){const [a,b,c,d,x,y]=affine(ids.map(i=>mesh.vertices[i].point),ids.map(i=>targets[i]));assert(a*d-b*c>.1);
     for(const id of ids){const p=mesh.vertices[id].point,dest=[a*p[0]+c*p[1]+x,b*p[0]+d*p[1]+y];assert(Math.hypot(dest[0]-targets[id][0],dest[1]-targets[id][1])<.00002);if(seen.has(id))assert(Math.hypot(dest[0]-seen.get(id)[0],dest[1]-seen.get(id)[1])<.00002);else seen.set(id,dest);}
    }
@@ -50,4 +49,13 @@ test('idle, scroll/modal pause and component disposal leave a transparent canvas
  a.update({playing:true,responding:true,cycle:1});assert.equal(visible,true);
  a.update({playing:false,responding:false,cycle:1});assert.equal(visible,false,'scroll/modal pause must erase the canvas');assert.equal(timers.size,0);
  a.update({playing:true,responding:true,cycle:2});assert.equal(visible,true);a.stop();assert.equal(visible,false,'hide/detach must erase the last frame');assert.equal(timers.size,0);
+});
+
+test('winter easing starts and ends gently, joins with continuous velocity and has no flat frozen hold',()=>{
+ const g=rigs.think.gesture,at=p=>angleAt(p,g.angles,1,g),e=1e-5;
+ assert.equal(at(0),0);assert.equal(at(1),0);assert(Math.abs(at(e)/e)<.02);assert(Math.abs(at(1-e)/e)<.02);
+ for(const t of g.stops.slice(1,-1)){const left=(at(t)-at(t-e))/e,right=(at(t+e)-at(t))/e;assert(Math.abs(left-right)<.05,'velocity jump at '+t);}
+ assert(at(.3)>at(.28)&&at(.34)>at(.3)&&at(.38)>at(.34),'held pose must continue a gentle drift');
+ for(let i=0;i<=1000;i++)assert(at(i/1000)>=-10.501&&at(i/1000)<=2.201,'no exaggerated overshoot');
+ assert.equal(rigs.think.spriteFrames,32);
 });

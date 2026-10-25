@@ -1,0 +1,15 @@
+/* Keep the approved certificate PNG; use shared reading surfaces around it. */
+.game-device.feedback-20261019 .certificate-placeholder.records-state{box-sizing:border-box;min-height:240px;padding:32px 20px;margin:0;border:1px solid var(--edge);border-radius:16px;background:#FFFFFF;gap:12px}
+.game-device.feedback-20261019 .certificate-placeholder.records-state game-icon{width:24px;height:24px}
+.game-device.feedback-20261019 .certificate-placeholder.records-state .h2{font:600 18px/26px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:0}
+.game-device.feedback-20261019 .certificate-switch button{min-height:44px;display:flex;align-items:center;justify-content:center;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .certificate-switch button[disabled]{opacity:.6}
+.game-device.feedback-20261019 .series-progress{padding:14px 16px;border:1px solid var(--edge);border-radius:16px;background:#FFFFFF;box-shadow:none}
+.game-device.feedback-20261019 .series-progress .strong{font-size:14px;line-height:22px;font-weight:600}
+.game-device.feedback-20261019 .series-progress .small{font-size:12px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .certificate-save-feedback{display:flex;align-items:center;justify-content:center;gap:6px;margin:14px 0 8px;font-size:13px;line-height:22px;color:var(--ink)}
+.game-device.feedback-20261019 .certificate-save-feedback game-icon{width:20px;height:20px;flex-shrink:0}
+.game-device.feedback-20261019 .certificate-share-button{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;padding:10px 20px;margin:0;border:1px solid var(--button-edge);border-radius:28px;background:linear-gradient(180deg,var(--fill-top),var(--fill-bottom));color:var(--label);font-size:18px;line-height:26px;font-weight:600;box-shadow:none}
+.game-device.feedback-20261019 .certificate-share-button::after{border:0}
+.game-device.feedback-20261019 .certificate-share-button.is-touching,.game-device.feedback-20261019 .certificate-share-button.native-pressed{transform:scale(.985);opacity:.9}
+@media(prefers-reduced-motion:reduce){.game-device.feedback-20261019 .certificate-share-button.is-touching,.game-device.feedback-20261019 .certificate-share-button.native-pressed{transform:none}}

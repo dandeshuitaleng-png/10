@@ -8,11 +8,13 @@ function mapMetrics(width=375){
  // Match the rendered podium face and seasonal actor, rather than the taller
  // route-stop hit area. Reserve every figure's space before it is unlocked.
  const actorHeight=small?66:w>=410?84:76,baseCenterY=6+nodeWidth*.375;
+ // The 220 x 165 podium artwork has its standing surface centered at (110, 65).
+ const actorFootY=6+nodeWidth*65/220;
  const cardCenterOffset=baseCenterY-nodeHeight/2;
  const lowerExtent=Math.max(nodeHeight/2,cardCenterOffset+spec.cardHeight/2);
  const minRowGap=Math.ceil(baseCenterY+spec.cardHeight/2-30+actorHeight+8);
  const guideWidth=small?48:spec.guideWidth,guideHeight=small?58:spec.guideHeight,guideLabelWidth=small?60:64,overhang=(guideLabelWidth-guideWidth)/2;
- return {nodeWidth,nodeHeight,cardWidth,cardHeight:spec.cardHeight,cardGap:spec.cardGap,actorHeight,baseCenterY,cardCenterOffset,lowerExtent,minRowGap,guideWidth,guideHeight,guideBottom:small?48:spec.guideBottom,guideLabelWidth,guideFont:small?10:11,guideRight:Math.min(nodeWidth+(small?8:-8),Math.floor(w*.33+nodeWidth/2-guideWidth-8-overhang)),guideLeft:Math.max(-28,8+overhang-(w*.26-nodeWidth/2))};
+ return {nodeWidth,nodeHeight,cardWidth,cardHeight:spec.cardHeight,cardGap:spec.cardGap,actorHeight,actorFootY,baseCenterY,cardCenterOffset,lowerExtent,minRowGap,guideWidth,guideHeight,guideBottom:small?48:spec.guideBottom,guideLabelWidth,guideFont:small?10:11,guideRight:Math.min(nodeWidth+(small?8:-8),Math.floor(w*.33+nodeWidth/2-guideWidth-8-overhang)),guideLeft:Math.max(-28,8+overhang-(w*.26-nodeWidth/2))};
 }
 function metrics(info={},menu,gameId){
  const width=Math.min(Number(info.windowWidth)||375,430),height=Number(info.windowHeight)||812,status=Number(info.statusBarHeight)||44;
@@ -32,7 +34,7 @@ function metrics(info={},menu,gameId){
  const navigationClearance=0,title=Math.max(spec.title,Math.ceil(artworkBottom)),header=title+row+44;
  const safeBottom=Math.max(24,safe+10),footer=spec.footerBorder+spec.footerTop+spec.button+safeBottom;
  const map=mapMetrics(width),{cardWidth,nodeWidth,nodeHeight}=map,artWidth=Math.min(348,width+20);
- const vars={'home-header-h':header+'px','home-title-h':title+'px','home-nav-clearance':navigationClearance+'px','home-title-area-w':titleAreaWidth+'px','home-title-label-top':(titleCenterY-spec.titleLine/2)+'px','home-row-h':row+'px','home-gutter':spec.gutter+'px','home-card-w':cardWidth+'px','home-card-h':map.cardHeight+'px','home-card-gap':map.cardGap+'px','home-guide-w':map.guideWidth+'px','home-guide-h':map.guideHeight+'px','home-guide-bottom':map.guideBottom+'px','home-guide-right':map.guideRight+'px','home-guide-left':map.guideLeft+'px','home-guide-label-w':map.guideLabelWidth+'px','home-guide-font':map.guideFont+'px','home-node-w':nodeWidth+'px','home-node-h':nodeHeight+'px','culture-card-width':cardWidth+'px','culture-node-w':nodeWidth+'px','culture-node-h':nodeHeight+'px','map-card-width':cardWidth+'px','map-node-w':nodeWidth+'px','map-node-h':nodeHeight+'px','culture-title-art-w':artWidth+'px','culture-title-art-h':(artWidth/3)+'px'};
+ const vars={'home-header-h':header+'px','home-title-h':title+'px','home-nav-clearance':navigationClearance+'px','home-title-area-w':titleAreaWidth+'px','home-title-label-top':(titleCenterY-spec.titleLine/2)+'px','home-row-h':row+'px','home-gutter':spec.gutter+'px','home-card-w':cardWidth+'px','home-card-h':map.cardHeight+'px','home-card-gap':map.cardGap+'px','home-actor-foot-y':map.actorFootY+'px','home-guide-w':map.guideWidth+'px','home-guide-h':map.guideHeight+'px','home-guide-bottom':map.guideBottom+'px','home-guide-right':map.guideRight+'px','home-guide-left':map.guideLeft+'px','home-guide-label-w':map.guideLabelWidth+'px','home-guide-font':map.guideFont+'px','home-node-w':nodeWidth+'px','home-node-h':nodeHeight+'px','culture-card-width':cardWidth+'px','culture-node-w':nodeWidth+'px','culture-node-h':nodeHeight+'px','map-card-width':cardWidth+'px','map-node-w':nodeWidth+'px','map-node-h':nodeHeight+'px','culture-title-art-w':artWidth+'px','culture-title-art-h':(artWidth/3)+'px'};
  return {width,height,status,safeBottom,footer,navigationClearance,header,title,titleAreaWidth,titleArtWidth,titleCenterY,mapViewport:Math.max(120,height-status-header-footer),smallScreen:height<700,style:Object.keys(vars).map(k=>'--'+k+':'+vars[k]).join(';')+';'};
 }
 // Alpha>=8 source bounds; faint export noise outside these bounds is visually transparent.
@@ -42,7 +44,7 @@ const artBounds={culture:{"width":1050,"height":350,"x":25,"y":40,"w":1000,"h":2
 const titleFaces={culture:{centerY:152,optical:-1.5,frame:2,width:540,height:94},red:{centerY:160,optical:-1.5,frame:1,width:540,height:94},industry:{centerY:172,optical:0,frame:4,width:540,height:94},ecology:{centerY:116,optical:2.5,frame:4,width:380,height:74}};
 // Compact lettering leaves visible ribbon above and below the glyphs. These
 // metrics are shared by home, inner pages and dialogs, independent of old CSS.
-const titleType=Object.freeze({home:{font:spec.titleFont,line:spec.titleLine},heading:{font:22,line:28},modal:{font:20,line:24}});
+const titleType=Object.freeze({home:{font:spec.titleFont,line:spec.titleLine},heading:{font:20,line:26},modal:{font:20,line:24}});
 function typeStyle(type){return 'font-size:'+type.font+'px;line-height:'+type.line+'px;height:'+type.line+'px;letter-spacing:1px;font-weight:800;';}
 function faceLabelTop(b,face,width,height,line,optical){
  const fit=Math.min(width/b.width,height/b.height);
@@ -53,8 +55,8 @@ function titleArtwork(gameId,width,artWidth,centerY=73){
  const fit=target/b.w,w=b.w*fit,h=b.h*fit,left=(width-32-w)/2,top=centerY-(b.centerY-b.y)*fit;
  const face=titleFaces[gameId]||titleFaces.culture;
  const labelTop=centerY+(face.centerY-b.centerY)*fit-titleType.home.line/2-face.optical;
- const wide=gameId==='industry'||gameId==='ecology',headingWidth=width-24-2*face.frame+(wide?40:26);
+ const headingWidth=Math.min(width-58,280);
  const modalWidth=width-40-2*face.frame+(gameId==='ecology'?24:16),modalHeight=gameId==='ecology'?116:126;
- return {visible:true,plain:false,native:false,frameStyle:'left:'+left+'px;top:'+top+'px;width:'+w+'px;height:'+h+'px;',imageStyle:'left:'+(-b.x*fit)+'px;top:'+(-b.y*fit)+'px;width:'+(b.width*fit)+'px;height:'+(b.height*fit)+'px;',labelStyle:'top:'+labelTop+'px;height:'+titleType.home.line+'px;',homeTextStyle:typeStyle(titleType.home),headingLabelStyle:'top:'+faceLabelTop(b,face,headingWidth,126,titleType.heading.line,face.optical*.8)+'px;'+typeStyle(titleType.heading),modalLabelStyle:'top:'+faceLabelTop(b,face,modalWidth,modalHeight,titleType.modal.line,face.optical*.8)+'px;'+typeStyle(titleType.modal),bounds:b};
+ return {visible:true,plain:false,native:false,frameStyle:'left:'+left+'px;top:'+top+'px;width:'+w+'px;height:'+h+'px;',imageStyle:'left:'+(-b.x*fit)+'px;top:'+(-b.y*fit)+'px;width:'+(b.width*fit)+'px;height:'+(b.height*fit)+'px;',labelStyle:'top:'+labelTop+'px;height:'+titleType.home.line+'px;',homeTextStyle:typeStyle(titleType.home),headingLabelStyle:'top:'+faceLabelTop(b,face,headingWidth,88,titleType.heading.line,face.optical*.8)+'px;'+typeStyle(titleType.heading),modalLabelStyle:'top:'+faceLabelTop(b,face,modalWidth,modalHeight,titleType.modal.line,face.optical*.8)+'px;'+typeStyle(titleType.modal),bounds:b};
 }
 module.exports={spec,metrics,mapMetrics,titleArtwork,artBounds,titleFaces,titleType};

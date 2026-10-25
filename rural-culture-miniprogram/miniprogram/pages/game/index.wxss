@@ -319,3 +319,15 @@ page{margin:0;background:#e9e8e5;color:var(--ink);font-family:-apple-system,Blin
 @import "./approved-a-20261021.wxss";
 
 @import "./theme-details-20261022.wxss";
+
+@import "./art-refinement-20261022.wxss";
+
+@import "./ui-system-20261022.wxss";
+
+@import "./records-ui-20261022.wxss";
+
+@import "certificate-flow-20261023.wxss";
+
+@import "map-legibility-20261023.wxss";
+
+@import "theme-tone-20261023.wxss";

@@ -43,6 +43,9 @@ const genericTitles=new Set(['乡村知识之旅','趣味闯关','一起认识�
 const genericText=new Set(['一起认识家乡的故事','一起探索乡村知识，挑战趣味关卡！','一起挑战乡村知识，开启下一关！']);
 function get(id){return themes[id]||themes.culture;}
 function chapter(id,base,index){const items=get(id).chapters,copy=items[Math.max(0,index)%items.length];return Object.assign({},base,{eyebrow:copy[0],line:copy[1]});}
+// The service name remains canonical; only generic progression labels receive
+// the already-authored theme topic as their visual heading.
+function chapterLabel(id,level,index){const name=String(level&&level.name||'');return ['', '基础认知','进阶理解','深度应用','综合挑战'].includes(name)?chapter(id,{},index).eyebrow:name;}
 function share(skin,configuration={},revive=false){const copy=get(skin.gameId),configured=configuration.share||{},revival=configuration.reviveShare||{},text=revive?revival.text||configured.text:configured.text;return {title:configured.title&&!genericTitles.has(configured.title)?configured.title:skin.name+' · '+copy.shareTitle,text:text&&!genericText.has(text)?text:copy.shareText};}
 function shareMessage(skin,data,imageUrl){const certificate=data.certificate,sharingCertificate=!!certificate&&(data.route==='certificate'||data.modal==='certificate-share'),copy=share(skin,data.configuration,data.modal==='share');return {title:sharingCertificate?'我获得了「'+certificate.name+'」 · '+copy.title:copy.title,path:'/pages/game/index?theme='+encodeURIComponent(skin.gameId)+'&route='+(sharingCertificate?'certificate':'home'),imageUrl};}
-module.exports={get,chapter,share,shareMessage};
+module.exports={get,chapter,chapterLabel,share,shareMessage};

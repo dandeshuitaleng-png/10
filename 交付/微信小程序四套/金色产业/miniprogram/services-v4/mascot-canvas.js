@@ -8,8 +8,14 @@ function geometry(rig){
  for(let row=0;row<4;row++)for(let col=0;col<4;col++){const a=row*5+col,b=a+1,c=a+5,d=c+1;triangles.push([a,b,d],[a,d,c]);}
  return {box,pivot,vertices,triangles};
 }
-function angleAt(progress,angles,amount=1){
+function angleAt(progress,angles,amount=1,profile){
  const p=Math.max(0,Math.min(1,progress)),values=[0,...angles,0];
+ if(profile&&profile.curve==='soft'){
+  const times=profile.stops,slopes=values.slice(1).map((v,i)=>(v-values[i])/(times[i+1]-times[i]));
+  const tangent=values.map((v,i)=>{if(i===0||i===values.length-1||slopes[i-1]*slopes[i]<=0)return 0;const left=times[i]-times[i-1],right=times[i+1]-times[i],a=2*right+left,b=right+2*left;return (a+b)/(a/slopes[i-1]+b/slopes[i]);});
+  for(let i=1;i<times.length;i++)if(p<=times[i]){const span=times[i]-times[i-1],t=(p-times[i-1])/span,t2=t*t,t3=t2*t;return ((2*t3-3*t2+1)*values[i-1]+(t3-2*t2+t)*span*tangent[i-1]+(-2*t3+3*t2)*values[i]+(t3-t2)*span*tangent[i])*amount;}
+  return 0;
+ }
  for(let i=1;i<stops.length;i++)if(p<=stops[i]){const t=(p-stops[i-1])/(stops[i]-stops[i-1]),ease=1-Math.pow(1-t,3);return (values[i-1]+(values[i]-values[i-1])*ease)*amount;}
  return 0;
 }
@@ -41,7 +47,7 @@ function createAnimator({canvas,image,rig,width,height,pixelRatio=2,clock=()=>Da
   // image owns the still pose; a stopped canvas must contain no duplicate IP.
   try{ctx.clearRect(0,0,rig.width,rig.height);}catch(e){/* The native node may already be detached. */}
  }
- function render(progress){paint(ctx,image,rig,mesh,angleAt(progress,rig.gesture.angles,amount));}
+ function render(progress){paint(ctx,image,rig,mesh,angleAt(progress,rig.gesture.angles,amount,rig.gesture));}
  function tick(){frame=null;if(!active)return;try{const now=clock(),p=Math.min(1,(now-started)/duration);if(now-lastFrame>=30||p===1){render(p);lastFrame=now;}if(p<1)frame=schedule(tick);else active=false;}catch(e){stop();onError(e);}}
  return {update({playing,responding,cycle}){if(!playing){stop();return;}const next=String(cycle)+':'+!!responding;if(next===key)return;stop();key=next;duration=responding?rig.responseDuration:rig.duration;amount=responding?1:.55;active=true;started=clock();lastFrame=-Infinity;tick();},stop,drawFrame(progress,responding=true){amount=responding?1:.55;render(progress);},state(){return {active,key,framePending:frame!==null};}};
 }

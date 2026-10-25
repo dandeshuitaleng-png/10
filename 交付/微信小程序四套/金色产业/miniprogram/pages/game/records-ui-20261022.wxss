@@ -1,0 +1,50 @@
+/* Ranking and ledger share reading surfaces, aligned number columns and state cards. */
+.game-device.feedback-20261019 .records-tabs{padding:4px;margin-bottom:12px;border:1px solid var(--edge);border-radius:12px;background:#FFFFFF;gap:4px}
+.game-device.feedback-20261019 .records-tabs .tab{height:44px;border-radius:8px;font-size:14px;font-weight:500;box-shadow:none}
+.game-device.feedback-20261019 .records-tabs .tab.active{background:var(--theme-fill);color:var(--ink);font-weight:600;box-shadow:none}
+.game-device.feedback-20261019 .ranking-rule{text-align:left;font-size:12px;line-height:20px;color:var(--muted);opacity:1;margin:0 0 12px}
+.game-device.feedback-20261019 .rank-table{padding:0;overflow:hidden;border:1px solid var(--edge);border-radius:16px;background:#FFFFFF;box-shadow:none}
+.game-device.feedback-20261019 .rank-table-head{display:flex;align-items:center;gap:10px;min-height:40px;padding:8px 14px;background:var(--pale);border:0;font-size:12px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .rank-col-place{flex:0 0 28px;width:28px;text-align:center}
+.game-device.feedback-20261019 .rank-col-reader{flex:1;min-width:0;margin-left:38px}
+.game-device.feedback-20261019 .rank-col-score{flex:0 0 48px;width:48px;text-align:right}
+.game-device.feedback-20261019 .rank-row{display:flex;align-items:center;gap:10px;min-height:72px;padding:12px 14px;border-top:1px solid var(--edge)}
+.game-device.feedback-20261019 .rank-number{flex:0 0 28px;width:28px;text-align:center;font-size:14px;line-height:22px;font-weight:600;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .rank-row .avatar{flex:0 0 28px;width:28px;height:28px;line-height:20px;font-size:13px;background:var(--pale);border:1px solid var(--edge);border-radius:50%}
+.game-device.feedback-20261019 .rank-name{gap:2px;min-width:0}
+.game-device.feedback-20261019 .rank-name .strong{font-size:14px;line-height:22px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.game-device.feedback-20261019 .rank-name .small{font-size:12px;line-height:18px;color:var(--muted)}
+.game-device.feedback-20261019 .rank-score{flex:0 0 auto;min-width:48px;font-size:18px;line-height:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .my-rank{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px;padding:12px 14px;min-height:72px;border-radius:16px;border:1px solid var(--edge);background:#FFFFFF;box-shadow:none}
+.game-device.feedback-20261019 .my-rank-copy{display:flex;flex-direction:column;gap:2px}
+.game-device.feedback-20261019 .my-rank-copy .small{font-size:12px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .my-rank-copy .strong{font-size:18px;line-height:26px;font-weight:600;margin:0}
+.game-device.feedback-20261019 .my-rank-points{display:flex;align-items:center;gap:4px;white-space:nowrap}
+.game-device.feedback-20261019 .my-rank-points .b{font-size:22px;line-height:30px;font-weight:600;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .my-rank-points .small{font-size:12px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .points-user{justify-content:flex-start;padding:0;margin:0 0 12px;background:transparent;align-items:flex-start;text-align:left}
+.game-device.feedback-20261019 .points-user .strong{font-size:14px;line-height:22px;font-weight:600}
+.game-device.feedback-20261019 .points-user .small{font-size:12px;line-height:20px;color:var(--muted);opacity:1}
+.game-device.feedback-20261019 .points-hero{gap:8px;margin:0 0 20px;padding:20px 14px;border:1px solid var(--edge);border-radius:16px;background:#FFFFFF;box-shadow:none}
+.game-device.feedback-20261019 .points-heading{display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .points-heading game-icon{width:20px;height:20px}
+.game-device.feedback-20261019 .points-total{display:flex;align-items:center;justify-content:center;gap:6px}
+.game-device.feedback-20261019 .points-total .strong{font-size:36px;line-height:44px;font-weight:700;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .points-total .points-unit{font-size:13px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .points-hero .p{font-size:12px;line-height:20px;color:var(--muted);margin:0}
+.game-device.feedback-20261019 .record-list{padding:0;border:1px solid var(--edge);border-radius:16px;overflow:hidden;box-shadow:none;background:#FFFFFF}
+.game-device.feedback-20261019 .record-list-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 14px;min-height:40px;background:var(--pale);font-size:12px;line-height:20px;color:var(--muted)}
+.game-device.feedback-20261019 .record-list .record-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;min-height:68px;border:0;border-top:1px solid var(--edge)}
+.game-device.feedback-20261019 .record-copy{display:flex;flex:1;min-width:0;gap:4px}
+.game-device.feedback-20261019 .record-copy .strong{font-size:14px;line-height:22px;font-weight:600;overflow-wrap:anywhere}
+.game-device.feedback-20261019 .record-copy .small{font-size:12px;line-height:18px;color:var(--muted)}
+.game-device.feedback-20261019 .record-row>.b{flex:0 0 auto;min-width:48px;text-align:right;white-space:nowrap;font-size:18px;line-height:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.game-device.feedback-20261019 .records-state{gap:12px;padding:24px 16px;margin:0 0 12px;border:1px solid var(--edge);border-radius:16px;background:#FFFFFF;box-shadow:none}
+.game-device.feedback-20261019 .records-state>game-icon{width:24px;height:24px}
+.game-device.feedback-20261019 .records-state .h2{font-size:18px;line-height:26px;font-weight:600}
+.game-device.feedback-20261019 .records-state .p{font-size:14px;line-height:24px;color:var(--muted);opacity:1;max-width:260px}
+.game-device.feedback-20261019 .records-state game-button{max-width:240px;margin:4px auto 0}
+
+.game-device.feedback-20261019[data-route="points"] .section-title{font-size:18px;line-height:26px;font-weight:600;margin:0 0 12px}
+
+.game-device.feedback-20261019 .points-user>view{display:flex;flex-direction:row;align-items:center;gap:8px;min-width:0}

@@ -1,10 +1,86 @@
 'use strict';
 // Presentation only. Rules, catalog, progress and identities stay with the service.
 const palettes={
- culture:{ink:'#59371E',accent:'#9E561D',light:'#FFF6E7',theme:'明亮木棕',top:'#A85F2A',bottom:'#8D451B',buttonText:'#FFFFFF',buttonEdge:'#C98245',muted:'#795633',edge:'#F0DEC6',panelEdge:'#D49958',paper:'#FFFFFF',fill:'#EDB576',shadow:'#A3632630',panelTop:'#FFE8C6',panelBottom:'#FFF9ED',frameWidth:2,buttonAngle:'180deg'},
- red:{ink:'#57251F',accent:'#CF3E16',light:'#FFF3F0',theme:'明亮朱红',top:'#FF7201',bottom:'#F03D17',buttonText:'#FFFFFF',buttonEdge:'#F88B52',muted:'#885143',edge:'#F7DDD4',panelEdge:'#FFC0AB',paper:'#FFFFFF',fill:'#FF9B76',shadow:'#EF4F242B',panelTop:'#FFF5DA',panelBottom:'#FFF2F3',frameWidth:1,buttonAngle:'180deg'},
- industry:{ink:'#674310',accent:'#98640D',light:'#FFFBE5',theme:'清亮谷金',top:'#FFDE1C',bottom:'#FFE84D',buttonText:'#674310',buttonEdge:'#F3CB26',muted:'#82652C',edge:'#F0E8BD',panelEdge:'#FEC620',paper:'#FFFFFF',fill:'#FFE86A',shadow:'#D6A91A2B',panelTop:'#FFF0A6',panelBottom:'#F9F8E7',frameWidth:4,buttonAngle:'100deg'},
- ecology:{ink:'#254C16',accent:'#34841C',light:'#F1FFF1',theme:'清亮草绿',top:'#E4FFC2',bottom:'#B6FFD9',buttonText:'#254C16',buttonEdge:'#B1E6A0',muted:'#58764B',edge:'#D9EED3',panelEdge:'#52D228',paper:'#FFFFFF',fill:'#C5F59D',shadow:'#59B62B25',panelTop:'#E0FFB8',panelBottom:'#F1FFF0',frameWidth:4,buttonAngle:'100deg'}
+  "culture": {
+    "ink": "#543B26",
+    "accent": "#8E592F",
+    "light": "#FBF2E2",
+    "theme": "木棕文脉",
+    "top": "#F3E3CD",
+    "bottom": "#EDDAC0",
+    "buttonText": "#674524",
+    "buttonEdge": "#E3CAAA",
+    "muted": "#776049",
+    "edge": "#E4D6C3",
+    "panelEdge": "#C9B292",
+    "paper": "#FFFAF2",
+    "fill": "#EEE1C9",
+    "shadow": "#6A4D2414",
+    "panelTop": "#FFFAF2",
+    "panelBottom": "#FBF2E2",
+    "frameWidth": 1,
+    "buttonAngle": "180deg"
+  },
+  "red": {
+    "ink": "#532E28",
+    "accent": "#AE432E",
+    "light": "#FCF0EA",
+    "theme": "朱红记忆",
+    "top": "#F5DFD6",
+    "bottom": "#F0D4CA",
+    "buttonText": "#7B3B2D",
+    "buttonEdge": "#EDC3B3",
+    "muted": "#805B50",
+    "edge": "#EAD8D0",
+    "panelEdge": "#D5A491",
+    "paper": "#FFFAF7",
+    "fill": "#F2D9CB",
+    "shadow": "#763B2814",
+    "panelTop": "#FFFAF7",
+    "panelBottom": "#FCF0EA",
+    "frameWidth": 1,
+    "buttonAngle": "180deg"
+  },
+  "industry": {
+    "ink": "#5A431D",
+    "accent": "#8A681F",
+    "light": "#FCF6E3",
+    "theme": "麦金物产",
+    "top": "#F7E9BA",
+    "bottom": "#F0DDA6",
+    "buttonText": "#674310",
+    "buttonEdge": "#EAD493",
+    "muted": "#78643B",
+    "edge": "#E5DABF",
+    "panelEdge": "#C7B171",
+    "paper": "#FFFCF3",
+    "fill": "#EBDCAB",
+    "shadow": "#76602214",
+    "panelTop": "#FFFCF3",
+    "panelBottom": "#FCF6E3",
+    "frameWidth": 1,
+    "buttonAngle": "180deg"
+  },
+  "ecology": {
+    "ink": "#2B4C3A",
+    "accent": "#416D4D",
+    "light": "#F2F7EB",
+    "theme": "山林生态",
+    "top": "#E5EED9",
+    "bottom": "#DCE8CF",
+    "buttonText": "#315C3C",
+    "buttonEdge": "#C8DFBC",
+    "muted": "#5E735B",
+    "edge": "#D8E3D2",
+    "panelEdge": "#A9C19C",
+    "paper": "#F9FCF4",
+    "fill": "#DFEBD6",
+    "shadow": "#3B5A3214",
+    "panelTop": "#F9FCF4",
+    "panelBottom": "#F2F7EB",
+    "frameWidth": 1,
+    "buttonAngle": "180deg"
+  }
 };
 const base='/assets/brand/original-poses/';
 const poses=['welcome','celebrate','observe','think'];
@@ -26,6 +102,6 @@ function nodeBase(gameId){return '/assets/journey/'+gameId+'-node-a-v4.png';}
 // User-facing labels do not expose connection modes or fixture account names.
 function readerName(name){return /^(本地联调用户|本地联网用户|本地联网体验者|演示用户|演示账号)$/.test(name||'')?'乡村阅读者':name;}
 function readerProfile(value){return Object.assign({},value,{nickname:readerName(value.nickname),badge:/本地|模拟|演示|联调|体验/.test(value.badge||'')?'阅读探索者':value.badge});}
-function certificateLabel(value){return Object.assign({},value,{userName:readerName(value.userName),displayId:/^DEMO-/i.test(value.id||'')?'':value.id,footer:!value.footer||/本地|模拟|演示|联调|非正式/.test(value.footer)?'学习活动纪念，不代表学历或教育资格':value.footer});}
+function certificateLabel(value){return Object.assign(require('./certificate-copy').present(value),{userName:readerName(value.userName),displayId:/^DEMO-/i.test(value.id||'')?'':value.id,footer:!value.footer||/本地|模拟|演示|联调|非正式/.test(value.footer)?'学习活动纪念，不代表学历或教育资格':value.footer});}
 function errorMessage(message){return /BACKEND_NOT_CONFIGURED/.test(message||'')?'服务暂不可用，请稍后重试。':message;}
 module.exports={palettes,actions,contextActors,apply,nodePose,sceneActor,modalActor,header,scene,nodeBase,readerName,readerProfile,certificateLabel,errorMessage,motionReady:true};

@@ -1,13 +1,11 @@
-<view class="actor actor-original {{rigs[pose].extension?'actor-extension':''}} pose-{{pose}} phase-{{cycle%2}} touch-phase-{{touchCycle%2}} {{playing?'is-playing':''}} {{canvasReady?'canvas-ready':''}} {{responding?'is-responding':''}}" data-pose="{{pose}}" data-playing="{{playing}}" data-artwork="user-original" data-movement="original-local-parts" data-touch-cycle="{{touchCycle}}" aria-hidden="true">
+<view class="actor actor-original {{rigs[pose].extension?'actor-extension':''}} pose-{{pose}} phase-{{cycle%2}} touch-phase-{{touchCycle%2}} {{playing?'is-playing':''}} {{responding?'is-responding':''}}" data-pose="{{pose}}" data-playing="{{playing}}" data-artwork="user-original" data-movement="original-local-parts" data-touch-cycle="{{touchCycle}}" aria-hidden="true">
   <view wx:if="{{rigs[pose].extension}}" class="extension-plane" style="{{rigs[pose].gestureStyle}}">
-    <image class="extension-art extension-still" src="{{rigs[pose].source}}" mode="aspectFit" />
-    <image class="extension-art extension-layered" src="{{rigs[pose].baseSource}}" mode="aspectFit" />
-    <image wx:for="{{rigs[pose].layers}}" wx:key="key" class="extension-art extension-layered extension-part part-{{item.key}}" src="{{item.source}}" style="{{item.style}}" mode="aspectFit" />
+    <image class="extension-art extension-base" src="{{rigs[pose].baseSource}}" mode="aspectFit" />
+    <image wx:for="{{rigs[pose].layers}}" wx:key="key" class="extension-art extension-part part-{{item.key}}" src="{{item.source}}" style="{{item.style}}" mode="aspectFit" />
   </view>
   <block wx:else="">
-  <view class="actor-source-plane"><view class="gesture-plane" style="{{rigs[pose].gestureStyle}}">
-    <image class="actor-original-image actor-art gesture-original" src="{{rigs[pose].source}}" mode="scaleToFill" />
-    <canvas type="2d" id="original-motion" class="mascot-motion-canvas" data-mascot-pose="{{pose}}" data-playing="{{playing}}" data-responding="{{responding}}" data-cycle="{{cycle}}" />
+  <view class="actor-source-plane" style="{{scrollSafe?rigs[pose].mapAnchorStyle:''}}"><view class="gesture-plane" style="{{rigs[pose].gestureStyle}}">
+    <view class="map-motion-window"><image class="map-motion-strip" src="{{rigs[pose].spriteSource}}" mode="scaleToFill" /></view>
     <block wx:if="{{playing}}">
       <view wx:for="{{rigs[pose].eyes}}" wx:key="key" class="eye-region" style="{{item.style}}"><view class="eye-copy"><image class="eye-source" src="{{rigs[pose].source}}" style="{{item.imageStyle}}" mode="scaleToFill" /></view></view>
       <view class="prop-glint glint-{{rigs[pose].kind}}" style="{{rigs[pose].glint.style}}"><view class="prop-shine" /></view>

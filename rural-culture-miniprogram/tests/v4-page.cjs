@@ -55,7 +55,7 @@ function environment({ at = '2026-10-15T12:00:00+08:00', gameId = 'culture', lev
       assert.equal(options.canvas, canvas); assert.equal(options.fileType, 'png');
       canvasExports++; if(canvasExportFails){options.fail(Error('TEST_CANVAS_EXPORT'));return;} options.success({ tempFilePath: '/mock-only/certificate.png' });
     },
-    previewImage(options){imagePreviews.push(clone(options));},
+    previewImage(options){imagePreviews.push(clone({current:options.current,urls:options.urls}));},
     saveImageToPhotosAlbum(options) {
       assert.equal(options.filePath, '/mock-only/certificate.png');
       albumRequests++; albumPaths.push(options.filePath); options.success({});
@@ -80,7 +80,7 @@ function environment({ at = '2026-10-15T12:00:00+08:00', gameId = 'culture', lev
     },
     Page(value) { definition = value; }, wx, Date: TestDate,
     setInterval(callback, milliseconds) { const id = nextTimer++; timers.set(id, { callback, milliseconds }); return id; },
-    clearInterval(id) { timers.delete(id); }, setTimeout, console
+    clearInterval(id) { timers.delete(id); }, setTimeout, clearTimeout, console
   }, { filename: pagePath });
   const page = Object.assign({}, definition, { data: clone(definition.data) });
   page.setData = patch => {
@@ -97,7 +97,7 @@ function environment({ at = '2026-10-15T12:00:00+08:00', gameId = 'culture', lev
   async function choose(index) { await action('option', { index }); }
   async function answer(index) { await choose(index); await action('submit'); }
   async function lock() { await begin(); await answer(1); assert.equal(page.data.modal, 'revive'); await action('revive-share'); await action('share-success'); await answer(1); assert.equal(page.data.modal, 'locked'); }
-  return { albumPaths, imagePreviews, setCanvasExportFailure:value=>{canvasExportFails=value;}, setStorageFailure: value => { storageWriteFails = value; }, page, service, book, memory, timers, patches, canvasText, toasts, action, begin, choose, answer, lock, advance: milliseconds => { now += milliseconds; }, time:()=>now, runTimers: () => [...timers.values()].forEach(timer => timer.callback()), canvasStats: () => ({ canvasExports, albumRequests }) };
+  return { wx, albumPaths, imagePreviews, setCanvasExportFailure:value=>{canvasExportFails=value;}, setStorageFailure: value => { storageWriteFails = value; }, page, service, book, memory, timers, patches, canvasText, toasts, action, begin, choose, answer, lock, advance: milliseconds => { now += milliseconds; }, time:()=>now, runTimers: () => [...timers.values()].forEach(timer => timer.callback()), canvasStats: () => ({ canvasExports, albumRequests }) };
 }
 
 async function test(name, fn) {
@@ -263,16 +263,16 @@ async function main() {
     await env.action('period', { period: 'total' }); assert.equal(env.page.data.ranking.me.points, 10); env.page.onUnload();
   });
 
-  await test('saving an old certificate after catalog expansion draws only its issued level scope', async () => {
+  await test('saving an old certificate after catalog expansion preserves issued scope without printing the removed count', async () => {
     const env = environment({ levelCount: 1 }); await env.begin(); await env.answer(0); await env.action('next');
     const certificate = env.service.snapshot().certificates[0]; assert.equal(certificate.levelIds.length, 1);
     env.service.updateCatalog(catalog(2)); env.page.go('certificate');
     assert.equal(env.page.data.snapshot.progress.completed, 1); assert.equal(env.page.data.snapshot.progress.total, 2); assert.equal(env.page.data.certificate.levelIds.length, 1);
     await env.page.saveCertificate();
     const text = env.canvasText.map(entry => entry.text);
-    assert.ok(text.join('').includes('已完成本证书记录的 1 个关卡')); assert.ok(!text.some(line => line.includes('全部启用关卡')));
+    assert.ok(!text.join('').includes('个关卡')); assert.ok(!text.some(line => line.includes('全部启用关卡')));assert.deepEqual(env.page.data.certificate.levelIds,certificate.levelIds);
     assert.ok(text.join('').includes(certificate.name)); assert.ok(!text.some(line=>/本地|模拟|演示|联调|DEMO-/.test(line))); assert.ok(text.join('').includes('学习活动纪念，不代表学历或教育资格')); assert.equal(env.service.snapshot().certificates[0].id,certificate.id);
-    assert.deepEqual(env.canvasStats(), { canvasExports: 1, albumRequests: 1 }); assert.equal(env.page.data.busy, false); assert.ok(env.toasts.includes('证书图片已保存'));
+    assert.deepEqual(env.canvasStats(), { canvasExports: 1, albumRequests: 1 }); assert.equal(env.page.data.busy, false); assert.ok(env.toasts.includes('证书图片已保存到相册'));
   });
 
   await test('failed writes preserve the previous checkpoint and retry restores the active answer without restarting', async () => {

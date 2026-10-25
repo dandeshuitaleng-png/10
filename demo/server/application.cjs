@@ -3,6 +3,7 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const { isDeepStrictEqual } = require('node:util');
 const { SQLiteStore } = require('./store.cjs');
 const { installContentMedia } = require('./content-media.cjs');
 const catalogConfig = require('./catalog-config.cjs');
@@ -27,29 +28,38 @@ function mediaURL(value) {
 function safeUser(user) { return { id: user.id, name: user.name, role: user.role, developmentIdentity: user.developmentIdentity || false }; }
 const defaultConfig = catalogConfig.defaultConfig;
 function normalizeQuestion(input, levels, old = null) {
-  requireValue(input && typeof input === 'object', 'INVALID_QUESTION', '题目须为对象');
+  requireValue(input && typeof input === 'object' && !Array.isArray(input), 'INVALID_QUESTION', '题目须为对象');
   requireValue(input.enabled === undefined || typeof input.enabled === 'boolean', 'INVALID_QUESTION', '启用状态须为布尔值');
+  requireValue(input.deleted === undefined || typeof input.deleted === 'boolean', 'INVALID_QUESTION', '删除标记须为布尔值');
   const levelId = text(input.levelId, '关卡ID', 80);
   const level = levels.find(item => item.id === levelId);
   requireValue(level, 'INVALID_LEVEL', '题目关卡不存在');
+  requireValue(input.themeId === undefined || input.themeId === level.themeId, 'INVALID_LEVEL', '题目主题与关卡不一致');
   requireValue(Array.isArray(input.options) && input.options.length === 4, 'INVALID_OPTIONS', '每题必须恰好4个选项');
   const options = input.options.map(option => text(option, '选项', 500));
   requireValue(new Set(options).size === 4, 'INVALID_OPTIONS', '选项不能重复');
   requireValue(Number.isInteger(input.answer) && input.answer >= 0 && input.answer <= 3, 'INVALID_ANSWER', '正确答案须为0至3');
-  const difficulty = input.difficulty || (level.order===1?'基础':level.order===2?'进阶':'综合');
+  const difficulty = input.difficulty ?? old?.difficulty ?? (level.order===1?'基础':level.order===2?'进阶':'综合');
   requireValue(['基础', '进阶', '综合'].includes(difficulty), 'INVALID_DIFFICULTY', '难度须为基础、进阶或综合');
-  let media = null;
-  if (input.media) {
-    requireValue(['image', 'video'].includes(input.media.type), 'INVALID_MEDIA', '媒体类型须为image或video');
-    media = { type: input.media.type, url: mediaURL(input.media.url || input.media.src), alt: String(input.media.alt || '').slice(0, 300), required: Boolean(input.media.required) };
+  const optional=(key,max=1000)=>{const v=input[key]??old?.[key]??'';requireValue(typeof v==='string'&&v.length<=max,'INVALID_QUESTION',`${key}格式不正确`);return v;};
+  const suppliedMedia=input.media===undefined?old?.media:input.media;let media = null;
+  requireValue(suppliedMedia===undefined||suppliedMedia===null||typeof suppliedMedia==='object'&&!Array.isArray(suppliedMedia),'INVALID_MEDIA','媒体须为对象或null');
+  if (suppliedMedia) {
+    requireValue(typeof suppliedMedia==='object'&&['image', 'video'].includes(suppliedMedia.type), 'INVALID_MEDIA', '媒体类型须为image或video');
+    requireValue(suppliedMedia.required===undefined||typeof suppliedMedia.required==='boolean','INVALID_MEDIA','媒体必要条件须为布尔值');
+    media = { type: suppliedMedia.type, url: mediaURL(suppliedMedia.url || suppliedMedia.src), alt: String(suppliedMedia.alt || '').slice(0, 300), caption:String(suppliedMedia.caption||'').slice(0,500), required: suppliedMedia.required===true };
     requireValue(media.url, 'INVALID_MEDIA', '媒体地址不能为空');
   }
-  return { id: input.id ? text(input.id, '题目ID', 100) : uuid(), levelId, themeId: level.themeId, title: text(input.title, '题干', 2000), options, answer: input.answer,
+  const sourceIds=input.sourceIds??old?.sourceIds??[];
+  requireValue(Array.isArray(sourceIds)&&sourceIds.length<=50&&sourceIds.every(v=>typeof v==='string'&&v.length<=200),'INVALID_QUESTION','资料来源编号格式不正确');
+  const deleted=input.deleted??false;
+  const question={ id: input.id ? text(input.id, '题目ID', 100) : uuid(), levelId, themeId: level.themeId, title: text(input.title, '题干', 2000), options, answer: input.answer,
     explanation: text(input.explanation, '解析', 4000), difficulty, media, version: (old ? old.version : 0) + 1,
-    enabled: input.enabled === undefined ? (old ? old.enabled !== false : true) : input.enabled !== false,
-    source: old ? old.source : 'admin', sourceIds: Array.isArray(input.sourceIds) ? input.sourceIds.slice(0, 50) : [],
-    sourceUrl: typeof input.sourceUrl === 'string' ? input.sourceUrl.slice(0, 2048) : '',
-    deleted: false, ...(old&&old.developmentOnly?{developmentOnly:true}:{}) };
+    enabled: !deleted&&(input.enabled === undefined ? (old ? old.enabled !== false : true) : input.enabled !== false),
+    source: old ? old.source : 'admin', sourceIds:sourceIds.slice(), sourceTitle:optional('sourceTitle'),sourceUrl:optional('sourceUrl',2048),knowledgePoint:optional('knowledgePoint'),region:optional('region',200),
+    deleted, ...(old&&old.developmentOnly?{developmentOnly:true}:{}) };
+  if(old){const previous={...old},candidate={...question};delete previous.version;delete candidate.version;if(isDeepStrictEqual(previous,candidate))return old;}
+  return question;
 }
 const validateConfig = catalogConfig.validateConfig;
 function xml(value) { return String(value).replace(/[<>&"']/g, char => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&apos;' }[char])); }
@@ -141,6 +151,21 @@ async function createApplication(options = {}) {
       await tx.set('questions',q.id,q);count++;
     }
     await tx.set('meta','questions-no-review-v1',{at:now(),questionCount:count});
+  });
+  // Earlier normalization omitted these authored fields. Recover only absent
+  // fields on unchanged source-bank questions; explicit blanks/edits stay owned
+  // by the administrator. Frozen questions and all player history stay intact.
+  await store.transaction(async tx=>{
+    if(await tx.get('meta','source-metadata-v1'))return;
+    const originals=new Map((seedBank.questions||[]).map(q=>[q.id,q]));let patched=0;
+    for(const q of await tx.list('questions')){
+      const raw=originals.get(q.id);
+      if(q.source!=='source-bank'||!raw||!['levelId','themeId','title','options','answer','explanation'].every(k=>isDeepStrictEqual(q[k],raw[k])))continue;
+      let changed=false;
+      for(const key of ['sourceTitle','knowledgePoint','region'])if(!Object.hasOwn(q,key)&&typeof raw[key]==='string'&&raw[key].length<=(key==='region'?200:1000)){q[key]=raw[key];changed=true;}
+      if(changed){q.version++;await tx.set('questions',q.id,q);patched++;}
+    }
+    await tx.set('meta','source-metadata-v1',{at:now(),patched});
   });
   const isEligible = question => !question.deleted && question.enabled !== false && (!question.developmentOnly || mode === 'development' || mode === 'test');
   async function config(tx) { return tx.get('meta', 'config'); }
@@ -451,19 +476,29 @@ async function createApplication(options = {}) {
         all=catalogConfig.validateLevels(all,next);await saveCatalog(next,all,'config.update','config');return {data:next};
       }
     }
-    if(pathname==='/api/admin/activity/export'&&method==='GET')return {data:{schemaVersion:'activity-2',exportedAt:now(),config:await config(tx),levels:await levels(tx)}};
+    if(pathname==='/api/admin/activity/export'&&method==='GET'){
+      const questions=(await tx.list('questions')).filter(q=>!q.developmentOnly);
+      const portable=questions.map(({id,levelId,themeId,title,options,answer,explanation,difficulty,media,enabled,deleted,sourceIds,sourceTitle,sourceUrl,knowledgePoint,region})=>({id,levelId,themeId,title,options,answer,explanation,difficulty,media,enabled:enabled!==false,deleted:!!deleted,sourceIds:sourceIds||[],sourceTitle:sourceTitle||'',sourceUrl:sourceUrl||'',knowledgePoint:knowledgePoint||'',region:region||''}));
+      return {data:{schemaVersion:'activity-3',contentMode:'snapshot',exportedAt:now(),config:await config(tx),levels:await levels(tx),questions:portable,assets:[...new Set([...(await config(tx)).themes.flatMap(t=>[t.cover,t.mapImage]),(await config(tx)).cover,(await config(tx)).share.image,(await config(tx)).revive.shareImage,...portable.map(q=>q.media?.url)].filter(Boolean))].sort()}};
+    }
     if(pathname==='/api/admin/activity/import'&&method==='POST'){
       requireValue(body.config&&Array.isArray(body.levels),'INVALID_IMPORT','请提供config和levels');
+      requireValue(body.levels.length<=1000&&body.levels.every(level=>level&&typeof level==='object'&&!Array.isArray(level)),'INVALID_IMPORT','关卡须为对象数组，最多1000关');
+      requireValue(!body.schemaVersion||['activity-2','activity-3'].includes(body.schemaVersion),'INVALID_IMPORT','不支持的活动数据版本');
+      const snapshot=body.schemaVersion==='activity-3';
+      requireValue(!snapshot||body.contentMode==='snapshot'&&Array.isArray(body.questions),'INVALID_IMPORT','完整活动快照须包含contentMode和questions');
       const old=await config(tx),next=validateConfig(body.config,old),previous=await levels(tx);
       const ids=new Set(body.levels.map(level=>level.id));
       let merged=[...body.levels,...previous.filter(level=>!ids.has(level.id)).map(level=>({...level,enabled:false,deleted:true}))];
       for(const level of body.levels){const before=previous.find(item=>item.id===level.id);requireValue(!before||before.themeId===level.themeId,'STABLE_ID','已有关卡的主题归属不可改变');}
       merged=catalogConfig.validateLevels(merged,next);
       const normalized=[];
-      if(body.questions!==undefined){requireValue(Array.isArray(body.questions)&&body.questions.length<=2000,'INVALID_IMPORT','题库一次最多导入2000题');for(const input of body.questions){const before=input.id?await tx.get('questions',input.id):null;const question=normalizeQuestion(input,merged,before);normalized.push(question);}requireValue(new Set(normalized.map(q=>q.id)).size===normalized.length,'DUPLICATE_ID','导入题号重复');}
+      if(body.questions!==undefined){requireValue(Array.isArray(body.questions)&&body.questions.length<=2000,'INVALID_IMPORT','题库一次最多导入2000题');for(const input of body.questions){requireValue(input&&typeof input.id==='string'&&input.id.trim(),'INVALID_IMPORT','导入题目必须有稳定编号');const before=await tx.get('questions',input.id);const question=normalizeQuestion(input,merged,before);normalized.push(question);}requireValue(new Set(normalized.map(q=>q.id)).size===normalized.length,'DUPLICATE_ID','导入题号重复');}
+      const missing=snapshot?(await tx.list('questions')).filter(q=>!q.developmentOnly&&!q.deleted&&!normalized.some(n=>n.id===q.id)):[];
       await saveCatalog(next,merged,'activity.import','activity',{questions:normalized.length});
       for(const question of normalized)await tx.set('questions',question.id,question);
-      return {data:{config:next,levels:merged,importedQuestions:normalized.length,enabled:normalized.filter(q=>q.enabled).length}};
+      for(const question of missing)await tx.set('questions',question.id,{...question,enabled:false,deleted:true,version:question.version+1});
+      return {data:{config:next,levels:merged,importedQuestions:normalized.length,enabled:normalized.filter(q=>q.enabled&&!q.deleted).length,disabledMissing:missing.length}};
     }
     if(pathname==='/api/admin/levels'||pathname.startsWith('/api/admin/levels/')){
       let all=await levels(tx);const levelId=pathname.split('/')[4];const cfg=await config(tx);

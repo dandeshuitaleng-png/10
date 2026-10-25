@@ -1,0 +1,7 @@
+/* Same theme colors as the page; generated from visual-feedback.palettes. */
+.game-button.skin-culture{--fill-top:#F3E3CD;--fill-bottom:#EDDAC0;--fill-angle:180deg;--label:#674524;--button-edge:#E3CAAA;--secondary-label:#543B26;--disabled-fill:#FBF2E2;--disabled-edge:#E4D6C3;--disabled-label:#776049}
+.game-button.skin-red{--fill-top:#F5DFD6;--fill-bottom:#F0D4CA;--fill-angle:180deg;--label:#7B3B2D;--button-edge:#EDC3B3;--secondary-label:#532E28;--disabled-fill:#FCF0EA;--disabled-edge:#EAD8D0;--disabled-label:#805B50}
+.game-button.skin-industry{--fill-top:#F7E9BA;--fill-bottom:#F0DDA6;--fill-angle:180deg;--label:#674310;--button-edge:#EAD493;--secondary-label:#5A431D;--disabled-fill:#FCF6E3;--disabled-edge:#E5DABF;--disabled-label:#78643B}
+.game-button.skin-ecology{--fill-top:#E5EED9;--fill-bottom:#DCE8CF;--fill-angle:180deg;--label:#315C3C;--button-edge:#C8DFBC;--secondary-label:#2B4C3A;--disabled-fill:#F2F7EB;--disabled-edge:#D8E3D2;--disabled-label:#5E735B}
+.game-button.secondary{border-color:var(--button-edge)}
+.game-button.primary.appearance-paper[disabled]{background:var(--disabled-fill);color:var(--disabled-label);border-color:var(--disabled-edge)}

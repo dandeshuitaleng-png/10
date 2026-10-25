@@ -12,7 +12,7 @@ module.exports = {
       "order": 2,
       "enabled": true,
       "description": "在乡音与古建中读懂湖南",
-      "certificateName": "千年文脉知识达人"
+      "certificateName": "知识达人"
     }
   ],
   "levels": [

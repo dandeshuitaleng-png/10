@@ -104,7 +104,7 @@ test('fifth level works without ID suffix parsing; dynamic pool checks, soft del
 });
 
 test('activity import validates atomically, exports dynamic configuration and cannot import approvals or erase history',async t=>{
- const h=await harness(t);const exported=(await h.call('GET','/api/admin/activity/export',null,h.admin)).data;assert.equal(exported.schemaVersion,'activity-2');assert.ok(!('questions' in exported));exported.questions=(await h.call('GET','/api/admin/questions/export',null,h.admin)).data.questions;assert.equal(exported.questions.length,240);
+ const h=await harness(t);const exported=(await h.call('GET','/api/admin/activity/export',null,h.admin)).data;assert.equal(exported.schemaVersion,'activity-3');assert.equal(exported.contentMode,'snapshot');assert.equal(exported.questions.length,240);
  const before=(await h.app.store.get('meta','config')).version;
  const bad={config:{...exported.config,points:{...exported.config.points,dailyPointCap:20}},levels:exported.levels,questions:[{...exported.questions[0],options:['invalid']}]};assert.equal((await h.call('POST','/api/admin/activity/import',bad,h.admin)).status,400);assert.equal((await h.app.store.get('meta','config')).version,before);
  const approved=await h.call('PUT',`/api/admin/questions/${exported.questions[0].id}`,{enabled:true},h.admin);assert.equal(approved.status,200);

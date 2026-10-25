@@ -24,12 +24,11 @@ class CanvasElement extends Element {
 const context={components:new Map(),document:{createElement:tag=>tag==='canvas'?new CanvasElement():new Element(tag.toUpperCase())}};
 vm.createContext(context);
 vm.runInContext(source.slice(source.indexOf('  function expression('),source.indexOf('  function parse('))+source.slice(source.indexOf('  function children('),source.indexOf('  // Canvas 2D'))+';this.morph=morph;this.renderNode=renderNode;',context);
-// Read the actual component template, then exercise the actual renderNode path.
-// Hand-constructing the next DOM canvas previously missed its injected defaults.
-const wxml=fs.readFileSync(path.join(__dirname,'../miniprogram/components/mascot-actor/index.wxml'),'utf8');
-const canvasAttributes=Object.fromEntries([...wxml.match(/<canvas\b[^>]*\/>/)[0].matchAll(/([\w-]+)="([^"]*)"/g)].map(m=>[m[1],m[2]]));
+// The shipped mascot is now image-only. Keep the legacy canvas adapter check
+// as an offline renderer/DOM-morph regression, not a current component fixture.
+const canvasAttributes={type:'2d',id:'original-motion',class:'mascot-motion-canvas','data-mascot-pose':'{{pose}}','data-playing':'{{playing}}','data-responding':'{{responding}}','data-cycle':'{{cycle}}'};
 function renderScroll(pose,cycle){const parent=new Element('DIV'),template=new Element('scroll-view',{'scroll-y':'true','scroll-top':'100'},[new Element('canvas',canvasAttributes)]);context.renderNode(template,parent,{pose,playing:true,responding:false,cycle},{});return parent.childNodes[0];}
-test('actual template render, scroll morph and animation preserve pixels and dimensions for all four poses',async()=>{
+test('legacy canvas adapter, scroll morph and animation preserve pixels and dimensions for all four poses',async()=>{
  for(const pose of ['welcome','celebrate','observe','think'])for(const pixelRatio of [1,2,3]){
   const rig=rigs[pose],scroll=renderScroll(pose,0),canvas=scroll.childNodes[0],image=await loadImage(path.join(__dirname,'../miniprogram',rig.source));
   const actor=createAnimator({canvas,image,rig,width:76,height:120,pixelRatio});canvas._mascotAnimator=actor;actor.drawFrame(.4);const before=canvas.buffer.toBuffer('image/png'),matrix=canvas.getContext('2d').getTransform();

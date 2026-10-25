@@ -24,11 +24,19 @@ const gestures={
  welcome:{box:[76,378,147,169],pivot:[184,503],angles:[12,-8,9,-5,1.5],responseDuration:1350,label:'春季抬手招呼，身体和脚底固定'},
  celebrate:{box:[220,430,156,184],pivot:[332,512],angles:[-9,-9,3,-2,0.5],responseDuration:1350,label:'夏季举起冰淇淋回应，身体和游泳圈固定'},
  observe:{box:[290,332,158,205],pivot:[316,513],angles:[-7,-7,1.5,-0.8,0.3],responseDuration:1450,label:'秋季举相机回应，身体与脚底固定'},
- think:{box:[93,386,157,215],pivot:[131,490],angles:[7,7,-4,3,-1],responseDuration:1500,label:'冬季抬手轻晃糖葫芦，身体与雪人固定'}
+ think:{box:[92,362,164,240],pivot:[133,538],angles:[-10.5,-10.2,2.2,-.9,.2],stops:[0,.26,.40,.64,.82,.94,1],curve:'soft',responseDuration:1500,label:'冬季柔和抬起糖葫芦，轻回摆后自然停稳，身体与雪人固定'}
 };
 for(const [pose,g] of Object.entries(gestures)){
  const r=rigs[pose];r.gesture=g;
+ r.spriteSource='/assets/brand/map-motion/'+pose+'.png';
  r.responseDuration=g.responseDuration;r.label=g.label;
+ if(pose==='think'){r.duration=2000;r.spriteFrames=32;r.spriteFrameWidth=128;}
+}
+// Primary body feet, excluding the spring companion, autumn leaves and winter snowman.
+// Only the map plane uses these anchors; dialog and result actors retain their framing.
+const mapFeet={welcome:[265,670],celebrate:[241,680],observe:[232,673],think:[220,673]};
+for(const [pose,[x,y]] of Object.entries(mapFeet)){
+ const r=rigs[pose];r.mapFoot={x,y};r.mapAnchorStyle='left:50%;top:100%;transform:translate('+percent(-x/r.width)+','+percent(-y/H)+');';
 }
 Object.assign(rigs,require('./mascot-extensions'));
 module.exports={rigs};

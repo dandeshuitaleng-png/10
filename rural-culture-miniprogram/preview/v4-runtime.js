@@ -46,7 +46,7 @@
     if (tag === 'picker') { const range = value(node.getAttribute('range'), scope) || [], rangeKey = node.getAttribute('range-key'); range.forEach((item, index) => { const option = document.createElement('option'); option.value = index; option.textContent = rangeKey ? item[rangeKey] : item; option.selected = index === Number(value(node.getAttribute('value'), scope)); element.append(option); }); }
     else if (tag !== 'image') children(node, element, scope, owner);
     const events = { touchstart:'pointerdown',touchmove:'pointermove',touchend:'pointerup',touchcancel:'pointercancel',tap: 'click', input: 'input', changing:'input', change: 'change', error: 'error', loadedmetadata: 'loadedmetadata', load:'load', timeupdate: 'timeupdate', ended: 'ended', scroll: 'scroll' };
-    for (const [native, browser] of Object.entries(events)) { const handler = node.getAttribute('bind' + native) || node.getAttribute('bind-' + native) || node.getAttribute('catch' + native) || node.getAttribute('catch-' + native); if (handler) element['on' + browser] = event => { if (node.hasAttribute('catch' + native) || node.hasAttribute('catch-' + native)) event.stopPropagation(); if (element.disabled) return; if(browser==='pointerdown'&&element.setPointerCapture)element.setPointerCapture(event.pointerId); const detail = browser === 'input' || browser === 'change' ? { value: tag==='switch'?event.target.checked:tag==='slider'?Number(event.target.value):event.target.value } : browser === 'timeupdate' ? {currentTime:event.target.currentTime,duration:event.target.duration} : browser === 'scroll' ? { scrollTop: event.target.scrollTop, scrollLeft: event.target.scrollLeft } : {}; if (typeof owner[handler] === 'function') owner[handler](eventData(node, scope, event, detail)); else console.error('Missing WXML handler', handler); }; }
+    for (const [native, browser] of Object.entries(events)) { const handler = node.getAttribute('bind' + native) || node.getAttribute('bind-' + native) || node.getAttribute('catch' + native) || node.getAttribute('catch-' + native); if (handler) element['on' + browser] = event => { if (node.hasAttribute('catch' + native) || node.hasAttribute('catch-' + native)) event.stopPropagation(); if (element.disabled) return; if(browser==='pointerdown'&&tag!=='scroll-view'&&element.setPointerCapture&&element.isConnected&&event.isTrusted){try{element.setPointerCapture(event.pointerId);}catch(error){if(!['InvalidStateError','NotFoundError'].includes(error.name))throw error;}} const detail = browser === 'input' || browser === 'change' ? { value: tag==='switch'?event.target.checked:tag==='slider'?Number(event.target.value):event.target.value } : browser === 'timeupdate' ? {currentTime:event.target.currentTime,duration:event.target.duration} : browser === 'scroll' ? { scrollTop: event.target.scrollTop, scrollLeft: event.target.scrollLeft } : {}; if (typeof owner[handler] === 'function') owner[handler](eventData(node, scope, event, detail)); else console.error('Missing WXML handler', handler); }; }
     if (node.getAttribute('open-type') === 'share') { const tap = element.onclick; element.onclick = event => { if (element.disabled) return; if (tap) tap(event); const info = current.onShareAppMessage ? current.onShareAppMessage({ from: 'button', target: { id: element.id, dataset: element.dataset } }) : {}; showDialog({ title: info.title || '分享学习成果', content: '可在微信中与朋友分享你的学习收获。', showCancel: false, confirmText: '返回游戏' }).then(() => current.onShow && current.onShow()); }; }
   }
   // Morphing retains the actual scroll-view, focus, image/video and canvas nodes
@@ -81,11 +81,57 @@
       update();
     }
   }
-  function paint() { if (!current?.xml || painting) return; painting = true; try { const next = document.createElement('main'); next.id = 'app'; children(current.xml, next, current.data, current); if(current._paintedRoute!==current.data.route){document.getElementById('app').replaceWith(next);current._paintedRoute=current.data.route;}else morph(document.getElementById('app'), next); } finally { painting = false; } syncMascotCanvases(); }
+  let overlayScope = null, overlayHistory = [];
+  const focusableIn = scope => [...scope.querySelectorAll('button:not([disabled]),input:not([disabled]),select:not([disabled]),[tabindex="0"]')].filter(node => node.getClientRects().length && !node.closest('[inert]'));
+  function syncOverlayFocus(origin) {
+    const native = [...document.querySelectorAll('.native-dialog')].at(-1);
+    const next = native || document.querySelector('.sound-settings-panel,.theme-modal');
+    const previous = overlayScope;
+    let restore = null;
+    if (next !== previous) {
+      const index = overlayHistory.findIndex(entry => entry.scope === next);
+      if (next && index >= 0) {
+        restore = overlayHistory.at(-1)?.trigger;
+        overlayHistory = overlayHistory.slice(0, index + 1);
+      } else if (next) {
+        overlayHistory.push({scope:next, trigger:origin || document.activeElement});
+      } else {
+        restore = overlayHistory[0]?.trigger;
+        overlayHistory = [];
+      }
+      overlayScope = next;
+    }
+    // Keep the overlay interactive while excluding its visible background from
+    // keyboard navigation and the browser accessibility tree.
+    for (const branch of document.querySelectorAll('#app > .game-device > *')) branch.inert = !!next && !branch.contains(next);
+    if (next && !next.contains(document.activeElement)) {
+      const preferred = restore?.isConnected && next.contains(restore) && !restore.disabled ? restore : next.querySelector('#modal-primary button:not([disabled])') || focusableIn(next)[0];
+      preferred?.focus({preventScroll:true});
+    } else if (!next && previous) {
+      const target = restore?.isConnected && !restore.disabled ? restore : focusableIn(document.getElementById('app'))[0];
+      target?.focus({preventScroll:true});
+    }
+  }
+  window.addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    syncOverlayFocus();
+    if (!overlayScope) return;
+    const items = focusableIn(overlayScope), first = items[0], last = items.at(-1);
+    if (!first) {event.preventDefault();return;}
+    if (event.shiftKey && document.activeElement === first) {event.preventDefault();last.focus();}
+    else if (!event.shiftKey && document.activeElement === last) {event.preventDefault();first.focus();}
+  });
+  function paint() { if (!current?.xml || painting) return; painting = true; try { const next = document.createElement('main'); next.id = 'app'; children(current.xml, next, current.data, current); if(current._paintedRoute!==current.data.route){document.getElementById('app').replaceWith(next);current._paintedRoute=current.data.route;}else morph(document.getElementById('app'), next); } finally { painting = false; } syncMascotCanvases(); syncOverlayFocus(); }
   function setPath(target, key, value) { const parts = key.replace(/\[(\d+)\]/g, '.$1').split('.'); let object = target; parts.slice(0, -1).forEach(part => { if (!object[part]) object[part] = {}; object = object[part]; }); object[parts.at(-1)] = value; }
   function toast(title) { const element = document.getElementById('native-toast'); element.textContent = title; element.style.display = 'block'; clearTimeout(window._nativeToastTimer); window._nativeToastTimer = setTimeout(() => { element.style.display = 'none'; }, 2400); }
-  function showDialog(options) { return new Promise(resolve => { const backdrop = document.createElement('div'); backdrop.className = 'native-dialog-backdrop'; const dialog = document.createElement('section'); dialog.className = 'native-dialog'; dialog.setAttribute('role', 'dialog'); dialog.setAttribute('aria-modal', 'true'); const heading = document.createElement('h2'); heading.textContent = options.title || '提示'; const content = document.createElement('p'); content.textContent = options.content || ''; if(options.imageSource){const image=document.createElement('img');image.src=options.imageSource;image.alt=options.title||'荣誉证书';image.style.cssText='display:block;width:100%;height:auto';content.replaceChildren(image);dialog.style.cssText='width:min(92vw,620px);max-height:92vh;overflow-y:auto';} const actions = document.createElement('div'); actions.className = 'native-dialog-actions'; const finish = confirm => { backdrop.remove(); const result = { confirm, cancel: !confirm }; options.success?.(result); options.complete?.(result); resolve(result); }; if (options.showCancel !== false) { const cancel = document.createElement('button'); cancel.textContent = options.cancelText || '取消'; cancel.onclick = () => finish(false); actions.append(cancel); } const confirm = document.createElement('button'); confirm.textContent = options.confirmText || '确定'; confirm.onclick = () => finish(true); actions.append(confirm); dialog.append(heading, content, actions); backdrop.append(dialog); document.body.append(backdrop); confirm.focus(); }); }
-  function windowInfo() { return { pixelRatio: window.devicePixelRatio || 1, windowWidth: innerWidth, windowHeight: innerHeight, screenWidth: innerWidth, screenHeight: innerHeight, statusBarHeight: 24, safeArea: { top: 24, bottom: innerHeight - 20, left: 0, right: innerWidth, width: innerWidth, height: innerHeight - 44 }, platform: 'devtools', system: 'Browser preview', model: 'WXML preview' }; }
+  function showDialog(options) { return new Promise(resolve => { const priorFocus = document.activeElement; const backdrop = document.createElement('div'); backdrop.className = 'native-dialog-backdrop'; const dialog = document.createElement('section'); dialog.className = 'native-dialog'; dialog.setAttribute('role', 'dialog'); dialog.setAttribute('aria-modal', 'true'); const heading = document.createElement('h2'); heading.textContent = options.title || '提示'; const content = document.createElement('p'); content.textContent = options.content || ''; if(options.imageSource){const image=document.createElement('img');image.src=options.imageSource;image.alt=options.title||'荣誉证书';image.style.cssText='display:block;width:100%;height:auto';content.replaceChildren(image);dialog.style.cssText='width:min(92vw,620px);max-height:92vh;overflow-y:auto';} const actions = document.createElement('div'); actions.className = 'native-dialog-actions'; const finish = confirm => { backdrop.remove(); syncOverlayFocus(); const result = { confirm, cancel: !confirm }; options.success?.(result); options.complete?.(result); resolve(result); }; if (options.showCancel !== false) { const cancel = document.createElement('button'); cancel.textContent = options.cancelText || '取消'; cancel.onclick = () => finish(false); actions.append(cancel); } const confirm = document.createElement('button'); confirm.textContent = options.confirmText || '确定'; confirm.onclick = () => finish(true); actions.append(confirm); dialog.append(heading, content, actions); backdrop.append(dialog); document.body.append(backdrop); syncOverlayFocus(priorFocus); confirm.focus(); }); }
+  // Very tall desktop panels show a bounded phone frame. Scene art keeps its
+  // original aspect ratio; native WeChat window metrics are unaffected.
+  function windowInfo() {
+    const width=Math.min(innerWidth,430),height=Math.min(innerHeight,Math.round(width*2.8));
+    document.documentElement.style.setProperty('--preview-height',height+'px');
+    return { pixelRatio: window.devicePixelRatio || 1, windowWidth: width, windowHeight: height, screenWidth: width, screenHeight: height, statusBarHeight: 24, safeArea: { top: 24, bottom: height - 20, left: 0, right: width, width, height: height - 44 }, platform: 'devtools', system: 'Browser preview', model: 'WXML preview' };
+  }
   window.Page = definition => { window._definition = definition; };
   window.Component = definition => { window._component = definition; };
   window.App = definition => { app = { ...definition, globalData: { ...(definition.globalData || {}) } }; };
@@ -115,9 +161,9 @@
     createSelectorQuery() { let selector = '', all = false, callback = null, mode = 'bounds', computedStyle = []; const query = { in() { return query; }, select(value) { selector = value; all = false; return query; }, selectAll(value) { selector = value; all = true; return query; }, fields(options, fn) { mode = options?.node ? 'node' : 'bounds'; computedStyle=options?.computedStyle||[]; callback = fn; return query; }, boundingClientRect(fn) { mode = 'bounds'; callback = fn; return query; }, exec(fn) { const elements = [...document.querySelectorAll(selector)]; const map = element => { const bounds = element.getBoundingClientRect(); if(mode==='node'&&element.tagName==='CANVAS'&&!element.createImage)element.createImage=()=>{const image=new Image(),src=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(image,'src',{get:()=>src.get.call(image),set:value=>src.set.call(image,typeof value==='string'&&value.startsWith('/assets/')?resourceURL('/miniprogram'+value):value)});return image;}; return { ...Object.fromEntries(computedStyle.map(key=>[key,getComputedStyle(element)[key]])), id: element.id, dataset: { ...element.dataset }, node: mode === 'node' ? element : undefined, left: bounds.left, top: bounds.top, right: bounds.right, bottom: bounds.bottom, width: bounds.width, height: bounds.height }; }; const result = all ? elements.map(map) : elements[0] ? map(elements[0]) : null; callback?.(result); fn?.([result]); } }; return query; },
     canvasToTempFilePath(options) { try { const canvas = options.canvas || document.querySelector('#' + options.canvasId); const result = { tempFilePath: canvas.toDataURL(options.fileType==='jpg'?'image/jpeg':'image/png',options.quality) }; options.success?.(result); } catch (error) { options.fail?.({ errMsg: error.message }); } },
     previewImage(options){return showDialog({title:'荣誉证书',imageSource:options.current||options.urls?.[0],showCancel:false,confirmText:'关闭',success:options.success});},
-    saveImageToPhotosAlbum({ filePath, success, fail }) { try { const anchor = document.createElement('a'); anchor.href = filePath; anchor.download = '荣誉证书.png'; anchor.click(); success?.({}); } catch (error) { fail?.({ errMsg: error.message }); } },
+    saveImageToPhotosAlbum({ filePath, success, fail }) { try { const anchor = document.createElement('a'); anchor.href = filePath; anchor.download = '荣誉证书.png'; anchor.click(); success?.({destination:'download'}); } catch (error) { fail?.({ errMsg: error.message }); } },
     downloadFile({ url, success, fail }) { fetch(url).then(response => response.blob()).then(blob => success?.({ statusCode: 200, tempFilePath: URL.createObjectURL(blob) })).catch(error => fail?.({ errMsg: error.message })); },
-    openSetting({ success }) { success?.({ authSetting: { 'scope.writePhotosAlbum': true } }); }, getSetting({ success }) { success?.({ authSetting: { 'scope.writePhotosAlbum': true } }); },
+    openSetting(options) { const result={code:'BROWSER_PREVIEW_UNSUPPORTED'};options.fail?.(result);options.complete?.(result); }, getSetting({ success }) { success?.({ authSetting: { 'scope.writePhotosAlbum': true } }); },
     pageScrollTo({ scrollTop = 0 }) { scrollTo({ top: scrollTop, behavior: 'smooth' }); }, nextTick(fn) { requestAnimationFrame(fn); }, onWindowResize(fn) { window.addEventListener('resize', () => fn({ size: { windowWidth: innerWidth, windowHeight: innerHeight } })); }
   };
   async function readStyle(file, trail = []) {
@@ -153,7 +199,7 @@
       if (page.onShow) await page.onShow(); document.title = (configuration.navigationBarTitleText || '趣味闯关') + ' · 原生预览';
     } catch (error) { console.error(error); const root = document.getElementById('app'); root.replaceChildren(); const panel = document.createElement('div'); panel.className = 'native-fatal'; panel.textContent = '页面加载失败：' + error.message; const retry = document.createElement('button'); retry.textContent = '重新加载'; retry.onclick = () => location.reload(); panel.append(retry); root.append(panel); }
   }
-  window.addEventListener('keydown',event=>{if(!current||/INPUT|TEXTAREA|SELECT/.test(event.target.tagName)||event.metaKey||event.ctrlKey)return;const options=[...document.querySelectorAll('button.option:not(:disabled)')];if(/^[1-4]$/.test(event.key)){options[Number(event.key)-1]?.click();event.preventDefault();}if(event.key==='Enter'&&current.data.route==='quiz'){document.querySelector('#footer-primary button:not(:disabled)')?.click();event.preventDefault();}});
+  window.addEventListener('keydown',event=>{if(event.defaultPrevented||!current||overlayScope||/INPUT|TEXTAREA|SELECT/.test(event.target.tagName)||event.metaKey||event.ctrlKey)return;const options=[...document.querySelectorAll('button.option:not(:disabled)')];if(/^[1-4]$/.test(event.key)){options[Number(event.key)-1]?.click();event.preventDefault();}if(event.key==='Enter'&&current.data.route==='quiz'&&!event.target.closest('button,[role=button]')){document.querySelector('#footer-primary button:not(:disabled)')?.click();event.preventDefault();}});
   window.addEventListener('resize',()=>current?.onResize?.());
   window.addEventListener('popstate', () => navigate(location.hash.slice(1) || firstPage, true, true));
   window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',()=>current?.readMotionPreference?.());

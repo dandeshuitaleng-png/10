@@ -1,0 +1,41 @@
+/* Shared roles across four themes. Glyphs share a 24-unit grid and 1.8-unit stroke.
+ * Visual sizes are separate from the existing >=44px button hit areas. */
+.game-device.feedback-20261019 .icon-button game-icon,
+.game-device.feedback-20261019 .sound-settings-close game-icon,
+.game-device.feedback-20261019 .sound-settings-label game-icon,
+.game-device.feedback-20261019 .summary-label game-icon,
+.game-device.feedback-20261019 .quest-theme-mark game-icon{width:20px;height:20px}
+.game-device.feedback-20261019 .profile-link>game-icon:last-child,
+.game-device.feedback-20261019 .certificate-notice>game-icon:last-child,
+.game-device.feedback-20261019 .result-next>game-icon:last-child{width:16px;height:16px;opacity:.7}
+.game-device.feedback-20261019 .profile-stats{gap:12px}
+.game-device.feedback-20261019 .profile-stats>button{border-radius:12px;padding:16px 8px;border-color:var(--edge);box-shadow:none}
+.game-device.feedback-20261019 .profile-stats .strong{font-size:24px;line-height:32px;font-weight:700;margin-bottom:6px}
+.game-device.feedback-20261019 .profile-stat-entry{display:flex;align-items:center;justify-content:center;gap:4px;font-size:13px;line-height:20px;white-space:nowrap}
+.game-device.feedback-20261019 .profile-stat-entry game-icon{width:16px;height:16px;opacity:.7}
+.game-device.feedback-20261019 .profile-link{border-radius:12px}
+.game-device.feedback-20261019 .profile-card,
+.game-device.feedback-20261019 .stat-pair .stat,
+.game-device.feedback-20261019 .series-progress{border-radius:16px}
+
+/* Answer states retain the existing card geometry and add consistent cues. */
+.game-device.feedback-20261019{--state-success:#305E2C;--state-success-fill:#EDF5E8;--state-success-edge:#5F8C4F}
+.game-device.feedback-20261019 .option .letter{display:flex;align-items:center;justify-content:center;line-height:20px;box-shadow:none}
+.game-device.feedback-20261019 .option-status{box-sizing:border-box;width:20px;height:20px}
+.game-device.feedback-20261019 .option-status game-icon,
+.game-device.feedback-20261019 .option-status .icon{width:16px;height:16px}
+.game-device.feedback-20261019 .options.is-answered .option[disabled]:not(.correct){color:var(--muted);background:#FFFFFF;box-shadow:none}
+.game-device.feedback-20261019 .options.is-answered .option[disabled]:not(.correct) .option-text,
+.game-device.feedback-20261019 .options.is-answered .option[disabled]:not(.correct) .letter{color:var(--muted)}
+.game-device.feedback-20261019 .option.correct[disabled],
+.game-device.feedback-20261019 .option.correct[disabled] .option-text{color:var(--state-success);background:var(--state-success-fill)}
+.game-device.feedback-20261019 .option.correct .letter{color:var(--state-success);background:#E0EDD9;border-color:#B4CCAA}
+.game-device.feedback-20261019 .option.correct .option-status{background:var(--state-success-edge);border-color:var(--state-success-edge)}
+.game-device.feedback-20261019[data-route="quiz"] .timer{height:28px;padding:0 3px;justify-content:center;border:1px solid transparent;border-radius:8px}
+.game-device.feedback-20261019[data-route="quiz"] .timer game-icon,
+.game-device.feedback-20261019[data-route="quiz"] .timer .icon{width:16px;height:16px}
+.game-device.feedback-20261019[data-route="quiz"] .timer.urgent{background:#FFF0E9;border-color:#DDB8A8;color:#983E2E}
+.game-device.feedback-20261019 .modal-topbar .modal-close game-icon{width:20px;height:20px}
+.game-device.feedback-20261019 .theme-modal .modal-state-line{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 0 12px}
+.game-device.feedback-20261019 .theme-modal .modal-state-line game-icon{display:flex;align-items:center;justify-content:center;width:20px;height:20px;flex:0 0 20px}
+.game-device.feedback-20261019 .theme-modal .modal-inner .modal-state-line .modal-lead{margin:0;line-height:24px}

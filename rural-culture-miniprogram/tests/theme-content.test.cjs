@@ -21,6 +21,13 @@ test('generic share defaults become themed while authored campaign copy remains 
   assert.equal(content.share(skin,custom,true).text,'客户复活邀请');
  }
 });
+test('map topic headings preserve authored server names and never mutate the canonical level',()=>{
+ const level={id:'configured-id',name:'基础认知',questionCount:17,points:23},before=structuredClone(level);
+ assert.equal(content.chapterLabel('ecology',level,0),'山水初识');
+ assert.equal(content.chapterLabel('industry',level,1),'产地寻访');
+ assert.equal(content.chapterLabel('red',{...level,name:'客户指定的史料专题'},0),'客户指定的史料专题');
+ assert.deepEqual(level,before);
+});
 test('four themes share to their own home and earned certificates do not hijack other page links',()=>{
  for(const skin of Object.values(skins)){
   const data={certificate:{name:'已获得的学习证书'},configuration:{},route:'home',modal:''};
